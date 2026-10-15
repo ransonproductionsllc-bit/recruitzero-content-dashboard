@@ -342,7 +342,7 @@
       <p>${escapeHtml(item.assets?.cover_dimensions || '')} · Updated ${escapeHtml(formatDate(item.updated_at))}</p>
       <div class="asset-actions">
         ${item.assets?.cover_url ? `<a class="button secondary" href="${escapeHtml(item.assets.cover_url)}" download>Download cover</a>` : ''}
-        ${item.assets?.review_page_url ? `<a class="button" href="${escapeHtml(item.assets.review_page_url)}" target="_blank" rel="noopener">Open review page</a>` : ''}
+        ${item.post?.body ? `<a class="button" href="review.html?id=${encodeURIComponent(item.id)}">Open review page</a>` : item.assets?.review_page_url ? `<a class="button" href="${escapeHtml(item.assets.review_page_url)}" target="_blank" rel="noopener">Open review page</a>` : ''}
       </div></div>
     </article>`).join('');
   }

@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-15T15:03:20-04:00",
+  "updated_at": "2026-10-15T16:45:39-04:00",
   "sync": {
     "status": "connected",
     "discord_guild_id": "1553886101003837561",
@@ -38,7 +38,7 @@
         "cover_status": "complete",
         "cover_url": "assets/facebook-your-algorithm-cover.png",
         "cover_dimensions": "1200x627",
-        "review_page_url": "https://ransonproductionsllc-bit.github.io/recruitzero-social-review/"
+        "review_page_url": "https://ransonproductionsllc-bit.github.io/recruitzero-content-dashboard/review.html?id=facebook-your-algorithm-test-2026-10-15"
       },
       "events": [
         {
@@ -208,7 +208,7 @@
         "cover_dimensions": "1200x627",
         "original_path": "/home/ranson/.hermes/social-queue/linkedin/2026-10-15-harrisquest-mcp-e2e-test-cover-original.png",
         "final_path": "/home/ranson/.hermes/social-queue/linkedin/2026-10-15-harrisquest-mcp-e2e-test-cover-1200x627.png",
-        "review_page_url": "https://ransonproductionsllc-bit.github.io/recruitzero-content-dashboard/"
+        "review_page_url": "https://ransonproductionsllc-bit.github.io/recruitzero-content-dashboard/review.html?id=harrisquest-mcp-e2e-test-2026-10-15"
       }
     }
   ]

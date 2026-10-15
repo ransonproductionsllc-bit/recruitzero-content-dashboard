@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>RecruitZero Article Review</title>
+  <style>
+    :root {
+      --navy:#102b3d;
+      --ink:#14232c;
+      --muted:#61717b;
+      --paper:#fffefa;
+      --canvas:#eef0ec;
+      --line:#ccd2cd;
+      --orange:#f0522d;
+      --green:#24734c;
+    }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--canvas); color:var(--ink); font:15px/1.55 Arial, Helvetica, sans-serif; }
+    a { color:#155b87; text-underline-offset:3px; }
+    header { background:var(--navy); color:white; border-bottom:4px solid var(--orange); }
+    .header-inner { width:min(1080px, calc(100% - 32px)); margin:auto; min-height:76px; display:flex; align-items:center; justify-content:space-between; gap:16px; }
+    .brand { font-weight:800; letter-spacing:.08em; text-transform:uppercase; }
+    .button {
+      min-height:44px;
+      max-width:100%;
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      padding:10px 15px;
+      border:1px solid currentColor;
+      border-radius:4px;
+      background:var(--ink);
+      color:white;
+      text-align:center;
+      text-decoration:none;
+      white-space:normal;
+      overflow-wrap:anywhere;
+      line-height:1.3;
+      cursor:pointer;
+      font-weight:700;
+      font-size:14px;
+    }
+    .button.secondary { background:transparent; color:white; }
+    .button.orange { background:var(--orange); border-color:var(--orange); }
+    .button:focus-visible, a:focus-visible { outline:3px solid #f5b24b; outline-offset:3px; }
+    main { width:min(1080px, calc(100% - 32px)); margin:30px auto 60px; }
+    .eyebrow { color:var(--orange); font-size:11px; font-weight:800; letter-spacing:.1em; text-transform:uppercase; }
+    h1 { margin:6px 0 12px; font:700 clamp(30px, 5vw, 50px)/1.06 Georgia, serif; letter-spacing:-.025em; }
+    .lede { margin:0 0 24px; color:var(--muted); }
+    .layout { display:grid; grid-template-columns:minmax(0, 1fr) 310px; gap:24px; align-items:start; }
+    .article, .panel { background:var(--paper); border:1px solid var(--line); }
+    .cover { width:100%; aspect-ratio:1200/627; object-fit:cover; display:block; border-bottom:1px solid var(--line); }
+    .article-inner { padding:clamp(22px, 4vw, 44px); }
+    .post-body { margin:0; white-space:pre-wrap; overflow-wrap:anywhere; font:18px/1.72 Georgia, serif; }
+    .panel { padding:20px; display:grid; gap:20px; }
+    .panel section { border-top:2px solid var(--ink); padding-top:12px; }
+    .panel h2 { margin:0 0 10px; font:700 18px/1.2 Georgia, serif; }
+    .panel p { margin:0; color:var(--muted); font-size:13px; }
+    .score { display:flex; justify-content:space-between; gap:12px; padding:7px 0; border-bottom:1px solid var(--line); }
+    .source-list { margin:0; padding-left:20px; display:grid; gap:9px; }
+    .actions { display:grid; gap:9px; }
+    .status { color:var(--green); font-weight:700; }
+    .error { background:#fff0ee; border:1px solid #e4bbb5; padding:24px; color:#8d2e25; }
+    @media (max-width:800px) { .layout { grid-template-columns:1fr; } }
+    @media (max-width:560px) {
+      .header-inner { min-height:0; padding:14px 0; align-items:flex-start; flex-direction:column; }
+      .header-inner .button { width:100%; }
+      main { margin-top:22px; }
+      .post-body { font-size:17px; }
+    }
+  </style>
+</head>
+<body>
+<header>
+  <div class="header-inner">
+    <div class="brand">RecruitZero <span style="font-weight:400;letter-spacing:0;text-transform:none;color:#c9d3da">Article review</span></div>
+    <a class="button secondary" href="./">Back to dashboard</a>
+  </div>
+</header>
+<main>
+  <div id="reviewRoot"><div class="panel">Loading article…</div></div>
+</main>
+<script>
+  const escapeHtml = value => String(value ?? '').replace(/[&<>'"]/g, char => ({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[char]));
+  const formatDate = value => value ? new Intl.DateTimeFormat('en-US', {dateStyle:'medium', timeStyle:'short'}).format(new Date(value)) : 'Not recorded';
+
+  function render(item) {
+    const post = item.post || {};
+    const assets = item.assets || {};
+    const sources = post.sources || item.topic_options?.find(option => option.option === item.topic?.option)?.sources || [];
+    const title = item.topic?.title || post.title || item.id;
+    const scoreRows = [
+      ['Stop-slop', post.stop_slop_score != null ? `${post.stop_slop_score}/50` : 'Not recorded'],
+      ['Voice fidelity', post.voice_fidelity_score != null ? `${post.voice_fidelity_score}/10` : 'Not recorded'],
+      ['Construction', post.construction_pass === true ? 'Pass' : post.construction_pass === false ? 'Needs review' : 'Not recorded'],
+      ['Word count', post.word_count ?? 'Not recorded']
+    ];
+    document.title = `${title} — RecruitZero Review`;
+    document.getElementById('reviewRoot').innerHTML = `
+      <div class="eyebrow">${escapeHtml(item.kind === 'test' ? 'Test review copy' : 'Completed article')}</div>
+      <h1>${escapeHtml(title)}</h1>
+      <p class="lede"><span class="status">${escapeHtml(post.status || item.status || 'complete')}</span> · Updated ${escapeHtml(formatDate(item.updated_at))}</p>
+      <div class="layout">
+        <article class="article">
+          ${assets.cover_url ? `<img class="cover" src="${escapeHtml(assets.cover_url)}" alt="Cover for ${escapeHtml(title)}">` : ''}
+          <div class="article-inner"><div class="post-body" id="postBody">${escapeHtml(post.body || 'No article text is stored for this item.')}</div></div>
+        </article>
+        <aside class="panel">
+          <div class="actions">
+            <button class="button orange" id="copyButton" type="button">Copy full article</button>
+            ${assets.cover_url ? `<a class="button" href="${escapeHtml(assets.cover_url)}" download>Download cover</a>` : ''}
+            <a class="button" href="./">Open dashboard</a>
+          </div>
+          <section>
+            <h2>Review</h2>
+            ${scoreRows.map(([label,value]) => `<div class="score"><span>${escapeHtml(label)}</span><strong>${escapeHtml(value)}</strong></div>`).join('')}
+          </section>
+          <section>
+            <h2>Sources</h2>
+            ${sources.length ? `<ol class="source-list">${sources.map(source => `<li><a href="${escapeHtml(source.url)}" target="_blank" rel="noopener">${escapeHtml(source.title || source.url)}</a></li>`).join('')}</ol>` : '<p>No sources are stored for this item.</p>'}
+          </section>
+          <section><h2>Publishing status</h2><p>${item.kind === 'test' ? 'TEST artifact only. Nothing was published to LinkedIn.' : 'Completed workflow asset. Publishing remains a separate manual action.'}</p></section>
+        </aside>
+      </div>`;
+    document.getElementById('copyButton').addEventListener('click', async event => {
+      await navigator.clipboard.writeText(post.body || '');
+      event.currentTarget.textContent = 'Copied';
+      window.setTimeout(() => event.currentTarget.textContent = 'Copy full article', 1600);
+    });
+  }
+
+  async function loadReview() {
+    const id = new URLSearchParams(location.search).get('id');
+    if (!id) {
+      document.getElementById('reviewRoot').innerHTML = '<div class="error"><strong>No article selected.</strong><br>Return to the dashboard and choose Open review page.</div>';
+      return;
+    }
+    try {
+      const response = await fetch(`state.json?v=${Date.now()}`, {cache:'no-store'});
+      if (!response.ok) throw new Error(`State request failed: ${response.status}`);
+      const state = await response.json();
+      const item = [...(state.active_queue || []), ...(state.archive || [])].find(entry => entry.id === id);
+      if (!item) throw new Error('The requested article was not found.');
+      render(item);
+    } catch (error) {
+      document.getElementById('reviewRoot').innerHTML = `<div class="error"><strong>Could not load article.</strong><br>${escapeHtml(error.message)}</div>`;
+    }
+  }
+  loadReview();
+</script>
+</body>
+</html>
