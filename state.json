@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-15T15:03:02-04:00",
+  "updated_at": "2026-10-15T15:03:20-04:00",
   "sync": {
     "status": "connected",
     "discord_guild_id": "1553886101003837561",
@@ -58,7 +58,7 @@
       "kind": "test",
       "title": "TEST — AI marketing topic approval queue",
       "created_at": "2026-10-15T14:57:37-04:00",
-      "updated_at": "2026-10-15T15:03:02-04:00",
+      "updated_at": "2026-10-15T15:03:20-04:00",
       "status": "complete",
       "stage": "assets_complete",
       "topic_options": [
@@ -169,7 +169,9 @@
         "test_approval": true
       },
       "post": {
-        "status": "awaiting_post_approval",
+        "status": "approved_test",
+        "approved_by": "workflow_test",
+        "approved_at": "2026-10-15T15:01:14-04:00",
         "title": "HarrisQuest MCP and survey-backed AI answers",
         "body": "AI assistants know what the internet says about your brand. HarrisQuest wants them to know what customers said.\n\nOn October 15, 2026, HarrisQuest launched an MCP connector that brings its licensed brand and reputation data into Claude, ChatGPT, Gemini, and Microsoft Copilot. Teams can ask questions in the assistant they already use and get answers with the sample size, definition, and method attached. It is available now as an add-on to a HarrisQuest subscription.\n\nThe useful shift is not another chat window. It is primary market research moving into the same workflow where marketers draft briefs, compare competitors, and prepare leadership updates. HarrisQuest says the data covers about 200 interviews per brand each week across more than 4,000 brand-market combinations in 24 countries, with over 50 licensed metrics updated daily.\n\nFor marketers, that changes the job:\n\n- Evidence stays with the answer. A brand metric is easier to defend when its sample and methodology survive the copy and paste.\n\n- Research gets closer to action. Teams can turn a question into a saved view, report, competitive set, or audience segment and write it back to HarrisQuest.\n\n- The guardrail is clear. The connector can create those outputs, but it cannot change the underlying survey data.\n\nThe takeaway: faster analysis matters when marketers can trace the answer back to the evidence. The shortcut should reduce tool switching without stripping away the audit trail.\n\nIf your AI assistant could query one trusted marketing dataset tomorrow, which one would you connect first?",
         "word_count": 247,
