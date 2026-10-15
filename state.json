@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-15T14:10:57-04:00",
+  "updated_at": "2026-10-15T14:57:37-04:00",
   "sync": {
     "status": "connected",
     "discord_guild_id": "1553886101003837561",
@@ -10,7 +10,93 @@
     "authorized_github_user": "ransonproductionsllc-bit",
     "dashboard_refresh_seconds": 60
   },
-  "active_queue": [],
+  "active_queue": [
+    {
+      "id": "harrisquest-mcp-e2e-test-2026-10-15",
+      "kind": "test",
+      "title": "TEST — AI marketing topic approval queue",
+      "created_at": "2026-10-15T14:57:37-04:00",
+      "updated_at": "2026-10-15T14:57:37-04:00",
+      "status": "awaiting_topic_approval",
+      "stage": "topic_approval",
+      "topic_options": [
+        {
+          "option": 1,
+          "title": "HarrisQuest puts survey-backed brand tracking inside AI assistants",
+          "proposed_hook": "AI assistants can summarize the web. HarrisQuest wants them to answer brand questions with actual survey evidence.",
+          "marketer_angle": "Brand teams can query licensed tracking data from Claude, ChatGPT, Gemini, or Copilot while keeping sample size, definitions, and method attached to the answer.",
+          "scores": {
+            "relevance": 10,
+            "topicality": 10,
+            "viral_potential": 9,
+            "total": 29
+          },
+          "sources": [
+            {
+              "title": "HarrisQuest — HarrisQuest MCP brings brand data into your AI",
+              "url": "https://www.harrisquest.com/blog/harrisquest-mcp-brings-brand-data-into-your-ai"
+            },
+            {
+              "title": "Newswire — HarrisQuest MCP launch announcement",
+              "url": "https://www.newswire.com/news/x-9615131"
+            }
+          ]
+        },
+        {
+          "option": 2,
+          "title": "Google gives Demand Gen advertisers a data-strength score",
+          "proposed_hook": "Google is putting a fuel gauge on Demand Gen. Marketers can now see whether weak first-party data is starving the campaign.",
+          "marketer_angle": "The new Data Strength Uplift metric and wider Data Manager connections make first-party data quality a visible campaign-performance input, not a back-office setup task.",
+          "scores": {
+            "relevance": 10,
+            "topicality": 9,
+            "viral_potential": 8,
+            "total": 27
+          },
+          "sources": [
+            {
+              "title": "Google Ads — October Demand Gen Drop",
+              "url": "https://blog.google/products/ads-commerce/demand-gen-drop-october-2026/"
+            },
+            {
+              "title": "Stacked Marketer — October 14 marketing news roundup",
+              "url": "https://www.stackedmarketer.com/news"
+            }
+          ]
+        },
+        {
+          "option": 3,
+          "title": "Salesforce moves to acquire Loops for agent monitoring",
+          "proposed_hook": "Salesforce is buying the smoke alarm for its AI agents. The next martech battle may be less about launching agents and more about catching them when they fail.",
+          "marketer_angle": "If the deal closes, Loops could give Salesforce customers faster root-cause analysis for broken agent workflows, which matters as marketing operations hand more decisions to autonomous systems.",
+          "scores": {
+            "relevance": 8,
+            "topicality": 9,
+            "viral_potential": 8,
+            "total": 25
+          },
+          "sources": [
+            {
+              "title": "Salesforce — Agreement to acquire Loops",
+              "url": "https://www.salesforce.com/news/stories/salesforce-signs-definitive-agreement-to-acquire-loops/"
+            },
+            {
+              "title": "MarTech — Salesforce acquires Loops to boost AI agent monitoring",
+              "url": "https://martech.org/salesforce-acquires-loops-to-boost-ai-powered-agent-monitoring/"
+            }
+          ]
+        }
+      ],
+      "events": [
+        {
+          "at": "2026-10-15T14:57:37-04:00",
+          "type": "test_topic_queue_created",
+          "actor": "workflow_test",
+          "detail": "Created three ranked TEST topics from the previous 72 hours; no non-test item changed."
+        }
+      ]
+    }
+  ],
   "archive": [
     {
       "id": "facebook-your-algorithm-test-2026-10-15",
