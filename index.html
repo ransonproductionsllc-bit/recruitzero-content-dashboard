@@ -69,6 +69,7 @@
     .toolbar-actions { display: flex; gap: 10px; flex-wrap: wrap; justify-content: flex-end; }
     .button {
       min-height: 44px;
+      max-width: 100%;
       display: inline-flex;
       align-items: center;
       justify-content: center;
@@ -78,7 +79,11 @@
       border-radius: 4px;
       background: var(--ink);
       color: white;
+      text-align: center;
       text-decoration: none;
+      white-space: normal;
+      overflow-wrap: anywhere;
+      line-height: 1.3;
       cursor: pointer;
       font-weight: 700;
       font-size: 14px;
@@ -176,12 +181,16 @@
     }
     @media (max-width: 620px) {
       .header-inner, .toolbar { align-items: flex-start; flex-direction: column; padding: 14px 0; }
-      .toolbar-actions { justify-content: flex-start; }
+      .toolbar-actions { width: 100%; justify-content: flex-start; }
+      .toolbar-actions .button { flex: 1 1 150px; }
+      .tabs { width: 100%; overflow-x: visible; }
+      .tab { flex: 1 1 0; min-width: 0; padding-inline: 8px; white-space: normal; overflow-wrap: anywhere; line-height: 1.25; }
       .stats { grid-template-columns: 1fr 1fr; }
       .stagebar { grid-template-columns: 1fr 1fr; }
       .stage { border-bottom: 1px solid var(--line); }
       .work-head { flex-direction: column; }
       .archive-row { grid-template-columns: 1fr; }
+      .topic-option .button, .asset-actions .button, .archive-row .button { width: 100%; }
     }
   </style>
 </head>
