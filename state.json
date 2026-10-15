@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "updated_at": "2026-10-15T14:10:57-04:00",
+  "sync": {
+    "status": "connected",
+    "discord_guild_id": "1553886101003837561",
+    "discord_channel_id": "1560290398272888914",
+    "discord_url": "https://discord.com/channels/1553886101003837561/1560290398272888914",
+    "approval_repo": "ransonproductionsllc-bit/recruitzero-content-dashboard",
+    "authorized_github_user": "ransonproductionsllc-bit",
+    "dashboard_refresh_seconds": 60
+  },
+  "active_queue": [],
+  "archive": [
+    {
+      "id": "facebook-your-algorithm-test-2026-10-15",
+      "kind": "test",
+      "created_at": "2026-10-15T10:09:23-04:00",
+      "updated_at": "2026-10-15T14:10:57-04:00",
+      "status": "completed_test",
+      "stage": "assets_complete",
+      "topic": {
+        "title": "Facebook gives users direct control over recommendations",
+        "source_url": "https://about.fb.com/news/2026/10/introducing-your-algorithm-facebook/",
+        "selected": true
+      },
+      "post": {
+        "status": "approved_test",
+        "title": "Facebook's Your Algorithm controls",
+        "body": "Facebook just gave users a steering wheel for its recommendation engine. Marketers should pay attention.\n\nMeta's new \"Your Algorithm\" controls let users tell Facebook what they want to see more or less of across Feed and Reels. People can also set temporary topic interests, and Facebook says those choices will directly shape future recommendations.\n\nThis is bigger than a settings update. It is another step away from passive, black-box feeds and toward recommendation systems that users can actively train.\n\nFor marketers, that changes the job:\n\n- Specificity beats broad reach. If users can explicitly choose topics, generic content becomes easier to tune out. Clear subject matter and a recognizable point of view matter more.\n\n- Audience intent gets more visible. Topic controls can create stronger interest clusters, giving relevant content a better chance to find the right people, not merely the largest audience.\n\n- Creative fatigue gets punished faster. \"Not interested\" is becoming a direct product input. Repetitive formats and bait-and-switch hooks may lose distribution more quickly.\n\nThe takeaway: don't build a content strategy around pleasing an algorithm you cannot see. Build one around being chosen by the people who can now help train it.\n\nIf your audience could directly tune your brand in or out, what would make them ask for more?",
+        "word_count": 210,
+        "stop_slop_score": 42,
+        "voice_fidelity_score": 9,
+        "construction_pass": true,
+        "markdown_path": "/home/ranson/.hermes/social-queue/linkedin/2026-10-15-facebook-your-algorithm-test.md"
+      },
+      "assets": {
+        "cover_status": "complete",
+        "cover_url": "assets/facebook-your-algorithm-cover.png",
+        "cover_dimensions": "1200x627",
+        "review_page_url": "https://ransonproductionsllc-bit.github.io/recruitzero-social-review/"
+      },
+      "events": [
+        {
+          "at": "2026-10-15T10:09:23-04:00",
+          "type": "test_completed",
+          "detail": "End-to-end workflow test completed; nothing published."
+        },
+        {
+          "at": "2026-10-15T13:37:16-04:00",
+          "type": "voice_calibrated",
+          "detail": "User-edited copy saved as the canonical writing reference."
+        }
+      ]
+    }
+  ]
+}

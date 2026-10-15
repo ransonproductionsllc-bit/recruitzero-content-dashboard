@@ -1,0 +1,385 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="description" content="RecruitZero social content approval queue and asset dashboard">
+  <title>RecruitZero Content Operations</title>
+  <style>
+    :root {
+      --bg: #eef0eb;
+      --paper: #f9faf6;
+      --ink: #17212b;
+      --muted: #68717a;
+      --line: #ccd1cb;
+      --navy: #142a3b;
+      --orange: #ee5b2a;
+      --green: #26704e;
+      --amber: #9a6513;
+      --red: #a33b32;
+      --blue: #245e7c;
+      --radius: 6px;
+      --shadow: 0 10px 30px rgba(16, 31, 43, .08);
+    }
+    * { box-sizing: border-box; }
+    html { color-scheme: light; }
+    body {
+      margin: 0;
+      min-width: 320px;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.45;
+    }
+    a { color: var(--blue); text-underline-offset: 3px; }
+    button, .button { font: inherit; }
+    .shell { min-height: 100vh; }
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      background: var(--navy);
+      color: #fff;
+      border-bottom: 4px solid var(--orange);
+    }
+    .header-inner {
+      width: min(1280px, calc(100% - 32px));
+      margin: auto;
+      min-height: 74px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+    .brand { display: flex; align-items: baseline; gap: 12px; }
+    .brand strong { font-size: 19px; letter-spacing: .08em; text-transform: uppercase; }
+    .brand span { color: #c9d3da; font-size: 13px; }
+    .sync-indicator { display: flex; align-items: center; gap: 8px; font-size: 13px; }
+    .dot { width: 9px; height: 9px; border-radius: 50%; background: #6ddd9b; box-shadow: 0 0 0 4px rgba(109,221,155,.14); }
+    main { width: min(1280px, calc(100% - 32px)); margin: 28px auto 64px; }
+    .toolbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      margin-bottom: 22px;
+    }
+    .toolbar h1 { margin: 0; font: 700 clamp(26px, 4vw, 42px)/1.05 Georgia, serif; letter-spacing: -.025em; }
+    .toolbar-actions { display: flex; gap: 10px; flex-wrap: wrap; justify-content: flex-end; }
+    .button {
+      min-height: 44px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 10px 15px;
+      border: 1px solid var(--ink);
+      border-radius: 4px;
+      background: var(--ink);
+      color: white;
+      text-decoration: none;
+      cursor: pointer;
+      font-weight: 700;
+      font-size: 14px;
+    }
+    .button.secondary { background: transparent; color: var(--ink); }
+    .button.orange { background: var(--orange); border-color: var(--orange); }
+    .button:focus-visible, a:focus-visible, button:focus-visible { outline: 3px solid #f5b24b; outline-offset: 3px; }
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 12px;
+      margin-bottom: 26px;
+    }
+    .stat {
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-top: 3px solid var(--ink);
+      padding: 17px 18px;
+    }
+    .stat span { display: block; color: var(--muted); font-size: 12px; font-weight: 700; letter-spacing: .07em; text-transform: uppercase; }
+    .stat strong { display: block; margin-top: 5px; font: 700 28px/1 Georgia, serif; }
+    .tabs { display: flex; gap: 2px; border-bottom: 1px solid var(--line); margin-bottom: 18px; overflow-x: auto; }
+    .tab {
+      min-height: 46px;
+      padding: 10px 18px;
+      border: 0;
+      border-bottom: 3px solid transparent;
+      background: transparent;
+      color: var(--muted);
+      cursor: pointer;
+      font-weight: 700;
+      white-space: nowrap;
+    }
+    .tab.active { color: var(--ink); border-bottom-color: var(--orange); }
+    .view[hidden] { display: none; }
+    .section-header { display: flex; align-items: end; justify-content: space-between; gap: 16px; margin: 0 0 14px; }
+    .section-header h2 { margin: 0; font: 700 24px/1.15 Georgia, serif; }
+    .section-header p { margin: 0; color: var(--muted); font-size: 14px; }
+    .empty {
+      background: var(--paper);
+      border: 1px dashed #9ea6a1;
+      padding: 42px 24px;
+      text-align: center;
+      color: var(--muted);
+    }
+    .empty strong { display: block; color: var(--ink); margin-bottom: 6px; }
+    .queue { display: grid; gap: 18px; }
+    .work-card {
+      background: var(--paper);
+      border: 1px solid var(--line);
+      box-shadow: var(--shadow);
+    }
+    .work-head { padding: 20px 22px; border-bottom: 1px solid var(--line); display: flex; justify-content: space-between; align-items: start; gap: 20px; }
+    .eyebrow { color: var(--orange); font-size: 11px; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; }
+    .work-head h3 { margin: 5px 0 0; font: 700 24px/1.15 Georgia, serif; }
+    .badge { display: inline-flex; align-items: center; min-height: 28px; padding: 5px 9px; border-radius: 999px; font-size: 11px; font-weight: 800; letter-spacing: .04em; text-transform: uppercase; background: #e3e7e2; color: var(--ink); }
+    .badge.pending { background: #f5e7c9; color: #70460a; }
+    .badge.complete { background: #dcecdf; color: #1f5b3d; }
+    .badge.test { background: #e5e5ef; color: #49495e; }
+    .stagebar { display: grid; grid-template-columns: repeat(4, 1fr); border-bottom: 1px solid var(--line); }
+    .stage { position: relative; padding: 14px 12px; text-align: center; color: var(--muted); font-size: 12px; font-weight: 700; border-right: 1px solid var(--line); }
+    .stage:last-child { border-right: 0; }
+    .stage.done { color: var(--green); background: #f2f8f3; }
+    .stage.current { color: var(--amber); background: #fff8e9; }
+    .work-body { padding: 22px; }
+    .topic-options { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+    .topic-option { border: 1px solid var(--line); background: #fff; padding: 16px; display: flex; flex-direction: column; gap: 10px; }
+    .topic-option h4 { margin: 0; font: 700 18px/1.2 Georgia, serif; }
+    .topic-option p { margin: 0; color: var(--muted); font-size: 14px; }
+    .topic-option .button { margin-top: auto; width: 100%; }
+    .post-layout { display: grid; grid-template-columns: minmax(0, 1fr) 290px; gap: 22px; }
+    .post-copy { white-space: pre-wrap; font-family: Georgia, serif; font-size: 17px; line-height: 1.62; }
+    .side-meta { display: grid; gap: 12px; align-content: start; }
+    .meta-box { border-top: 2px solid var(--ink); padding-top: 12px; }
+    .meta-box strong { display: block; margin-bottom: 5px; }
+    .meta-box span, .meta-box p { color: var(--muted); font-size: 13px; margin: 0; }
+    .score-row { display: flex; justify-content: space-between; gap: 10px; padding: 6px 0; border-bottom: 1px solid var(--line); font-size: 13px; }
+    .asset-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
+    .asset-card { background: var(--paper); border: 1px solid var(--line); overflow: hidden; }
+    .asset-card img { width: 100%; aspect-ratio: 1200 / 627; object-fit: cover; display: block; background: #dfe3df; }
+    .asset-copy { padding: 16px; }
+    .asset-copy h3 { margin: 0 0 6px; font: 700 19px/1.2 Georgia, serif; }
+    .asset-copy p { margin: 0 0 14px; color: var(--muted); font-size: 13px; }
+    .asset-actions { display: flex; flex-wrap: wrap; gap: 8px; }
+    .archive-list { display: grid; gap: 12px; }
+    .archive-row { display: grid; grid-template-columns: 1fr auto; gap: 18px; background: var(--paper); border: 1px solid var(--line); padding: 17px 18px; align-items: center; }
+    .archive-row h3 { margin: 0 0 5px; font: 700 19px/1.2 Georgia, serif; }
+    .archive-row p { margin: 0; color: var(--muted); font-size: 13px; }
+    .notice { margin-top: 24px; color: var(--muted); font-size: 12px; border-top: 1px solid var(--line); padding-top: 14px; }
+    .error { padding: 20px; color: var(--red); background: #fff0ee; border: 1px solid #e4bbb5; }
+    @media (max-width: 900px) {
+      .stats { grid-template-columns: repeat(2, 1fr); }
+      .topic-options, .asset-grid { grid-template-columns: 1fr; }
+      .post-layout { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 620px) {
+      .header-inner, .toolbar { align-items: flex-start; flex-direction: column; padding: 14px 0; }
+      .toolbar-actions { justify-content: flex-start; }
+      .stats { grid-template-columns: 1fr 1fr; }
+      .stagebar { grid-template-columns: 1fr 1fr; }
+      .stage { border-bottom: 1px solid var(--line); }
+      .work-head { flex-direction: column; }
+      .archive-row { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+<div class="shell">
+  <header>
+    <div class="header-inner">
+      <div class="brand"><strong>RecruitZero</strong><span>Content operations</span></div>
+      <div class="sync-indicator"><span class="dot"></span><span id="syncText">Loading workflow state…</span></div>
+    </div>
+  </header>
+
+  <main>
+    <div class="toolbar">
+      <div>
+        <div class="eyebrow">Approval and asset dashboard</div>
+        <h1>Social content pipeline</h1>
+      </div>
+      <div class="toolbar-actions">
+        <a class="button secondary" id="discordLink" href="#" target="_blank" rel="noopener">Open Discord thread</a>
+        <button class="button" id="refreshButton" type="button">Refresh status</button>
+      </div>
+    </div>
+
+    <section class="stats" aria-label="Workflow summary">
+      <div class="stat"><span>Awaiting approval</span><strong id="statApprovals">0</strong></div>
+      <div class="stat"><span>In production</span><strong id="statProduction">0</strong></div>
+      <div class="stat"><span>Finished assets</span><strong id="statAssets">0</strong></div>
+      <div class="stat"><span>Archived items</span><strong id="statArchive">0</strong></div>
+    </section>
+
+    <nav class="tabs" aria-label="Dashboard views">
+      <button class="tab active" type="button" data-view="queue">Approval queue</button>
+      <button class="tab" type="button" data-view="assets">Finished assets</button>
+      <button class="tab" type="button" data-view="archive">Archive</button>
+    </nav>
+
+    <section class="view" id="view-queue">
+      <div class="section-header"><div><h2>Approval queue</h2><p>Topic and post approvals appear here and in Discord.</p></div></div>
+      <div id="queueRoot"></div>
+    </section>
+
+    <section class="view" id="view-assets" hidden>
+      <div class="section-header"><div><h2>Finished downstream assets</h2><p>Approved copy, cover images, and external review pages.</p></div></div>
+      <div class="asset-grid" id="assetsRoot"></div>
+    </section>
+
+    <section class="view" id="view-archive" hidden>
+      <div class="section-header"><div><h2>Permanent archive</h2><p>Every completed and superseded workflow item remains available.</p></div></div>
+      <div class="archive-list" id="archiveRoot"></div>
+    </section>
+
+    <p class="notice">Unlisted public dashboard. Approval links require the authorized GitHub account. Status changes made in Discord or GitHub are synchronized by Hermes.</p>
+  </main>
+</div>
+
+<script>
+  const STATE_URL = `state.json?v=${Date.now()}`;
+  let state = null;
+
+  const escapeHtml = (value = '') => String(value).replace(/[&<>'"]/g, char => ({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[char]));
+  const formatDate = value => value ? new Intl.DateTimeFormat(undefined, {dateStyle:'medium', timeStyle:'short'}).format(new Date(value)) : 'Unknown';
+  const statusLabel = value => String(value || 'unknown').replaceAll('_', ' ');
+
+  function approvalUrl(item, action, option = '') {
+    const repo = state.sync.approval_repo;
+    const title = `${action} ${item.id}${option ? ` OPTION ${option}` : ''}`;
+    const body = [
+      `Workflow item: ${item.id}`,
+      `Action: ${action}`,
+      option ? `Option: ${option}` : '',
+      '',
+      'This approval was submitted from the RecruitZero content dashboard.'
+    ].filter(Boolean).join('\n');
+    return `https://github.com/${repo}/issues/new?title=${encodeURIComponent(title)}&body=${encodeURIComponent(body)}&labels=approval`;
+  }
+
+  function stageMarkup(item) {
+    const stages = [
+      ['topics', 'Topics'], ['post', 'Post'], ['cover', 'Cover'], ['assets', 'Assets']
+    ];
+    const order = {topic_approval:0, post_drafting:1, post_approval:1, cover_generation:2, assets_complete:3};
+    const current = order[item.stage] ?? -1;
+    return `<div class="stagebar">${stages.map(([key,label], index) => {
+      const cls = index < current || item.stage === 'assets_complete' ? 'done' : index === current ? 'current' : '';
+      return `<div class="stage ${cls}">${escapeHtml(label)}</div>`;
+    }).join('')}</div>`;
+  }
+
+  function topicOptions(item) {
+    return `<div class="topic-options">${(item.topic_options || []).map(topic => `
+      <article class="topic-option">
+        <span class="eyebrow">Option ${escapeHtml(topic.option)}</span>
+        <h4>${escapeHtml(topic.title)}</h4>
+        <p><strong>Hook:</strong> ${escapeHtml(topic.proposed_hook)}</p>
+        <p><strong>Marketer angle:</strong> ${escapeHtml(topic.marketer_angle)}</p>
+        <p>${(topic.sources || []).map(src => `<a href="${escapeHtml(src.url)}" target="_blank" rel="noopener">${escapeHtml(src.title)}</a>`).join(' · ')}</p>
+        <a class="button orange" href="${approvalUrl(item, 'APPROVE TOPIC', topic.option)}" target="_blank" rel="noopener">Approve option ${escapeHtml(topic.option)}</a>
+      </article>`).join('')}</div>`;
+  }
+
+  function postApproval(item) {
+    const post = item.post || {};
+    return `<div class="post-layout">
+      <div class="post-copy">${escapeHtml(post.body || '')}</div>
+      <aside class="side-meta">
+        <div class="meta-box"><strong>Review scores</strong>
+          <div class="score-row"><span>Stop-slop</span><b>${escapeHtml(post.stop_slop_score ?? '—')}/50</b></div>
+          <div class="score-row"><span>Voice fidelity</span><b>${escapeHtml(post.voice_fidelity_score ?? '—')}/10</b></div>
+          <div class="score-row"><span>Construction</span><b>${post.construction_pass ? 'Pass' : 'Pending'}</b></div>
+        </div>
+        <a class="button orange" href="${approvalUrl(item, 'APPROVE POST')}" target="_blank" rel="noopener">Approve post</a>
+        <a class="button secondary" href="${state.sync.discord_url}" target="_blank" rel="noopener">Discuss in Discord</a>
+      </aside>
+    </div>`;
+  }
+
+  function queueCard(item) {
+    const needsTopics = item.stage === 'topic_approval';
+    const needsPost = item.stage === 'post_approval';
+    const title = item.topic?.title || item.title || 'Untitled workflow item';
+    return `<article class="work-card">
+      <div class="work-head"><div><span class="eyebrow">${escapeHtml(item.kind || 'content')}</span><h3>${escapeHtml(title)}</h3></div><span class="badge pending">${escapeHtml(statusLabel(item.status))}</span></div>
+      ${stageMarkup(item)}
+      <div class="work-body">${needsTopics ? topicOptions(item) : needsPost ? postApproval(item) : `<p>Status: ${escapeHtml(statusLabel(item.stage))}. No approval action is required right now.</p>`}</div>
+    </article>`;
+  }
+
+  function renderQueue() {
+    const root = document.getElementById('queueRoot');
+    if (!state.active_queue.length) {
+      root.innerHTML = `<div class="empty"><strong>No approvals are waiting.</strong>The next research run will add three ranked topic options here and in Discord.</div>`;
+      return;
+    }
+    root.innerHTML = `<div class="queue">${state.active_queue.map(queueCard).join('')}</div>`;
+  }
+
+  function finishedItems() {
+    return [...state.active_queue, ...state.archive].filter(item => item.assets?.cover_status === 'complete' || item.assets?.review_page_url);
+  }
+
+  function renderAssets() {
+    const root = document.getElementById('assetsRoot');
+    const items = finishedItems();
+    if (!items.length) { root.innerHTML = `<div class="empty"><strong>No finished assets yet.</strong>Approved covers and review pages will appear here.</div>`; return; }
+    root.innerHTML = items.map(item => `<article class="asset-card">
+      ${item.assets?.cover_url ? `<img src="${escapeHtml(item.assets.cover_url)}" alt="Cover image for ${escapeHtml(item.topic?.title || item.post?.title || 'social post')}">` : ''}
+      <div class="asset-copy"><span class="eyebrow">${escapeHtml(item.kind || 'content')}</span><h3>${escapeHtml(item.topic?.title || item.post?.title || item.id)}</h3>
+      <p>${escapeHtml(item.assets?.cover_dimensions || '')} · Updated ${escapeHtml(formatDate(item.updated_at))}</p>
+      <div class="asset-actions">
+        ${item.assets?.cover_url ? `<a class="button secondary" href="${escapeHtml(item.assets.cover_url)}" download>Download cover</a>` : ''}
+        ${item.assets?.review_page_url ? `<a class="button" href="${escapeHtml(item.assets.review_page_url)}" target="_blank" rel="noopener">Open review page</a>` : ''}
+      </div></div>
+    </article>`).join('');
+  }
+
+  function renderArchive() {
+    const root = document.getElementById('archiveRoot');
+    if (!state.archive.length) { root.innerHTML = `<div class="empty"><strong>The archive is empty.</strong>Completed workflow items will be retained permanently.</div>`; return; }
+    root.innerHTML = state.archive.map(item => `<article class="archive-row"><div><span class="eyebrow">${escapeHtml(item.kind || 'content')}</span><h3>${escapeHtml(item.topic?.title || item.post?.title || item.id)}</h3><p>${escapeHtml(statusLabel(item.status))} · ${escapeHtml(formatDate(item.updated_at))}</p></div><span class="badge ${item.kind === 'test' ? 'test' : 'complete'}">${escapeHtml(item.kind === 'test' ? 'Test' : 'Complete')}</span></article>`).join('');
+  }
+
+  function renderStats() {
+    const approvals = state.active_queue.filter(item => ['topic_approval','post_approval'].includes(item.stage)).length;
+    const production = state.active_queue.filter(item => !['topic_approval','post_approval','assets_complete'].includes(item.stage)).length;
+    document.getElementById('statApprovals').textContent = approvals;
+    document.getElementById('statProduction').textContent = production;
+    document.getElementById('statAssets').textContent = finishedItems().length;
+    document.getElementById('statArchive').textContent = state.archive.length;
+    document.getElementById('syncText').textContent = `Synced ${formatDate(state.updated_at)}`;
+    document.getElementById('discordLink').href = state.sync.discord_url;
+  }
+
+  async function loadState() {
+    const button = document.getElementById('refreshButton');
+    button.disabled = true;
+    button.textContent = 'Refreshing…';
+    try {
+      const response = await fetch(`state.json?v=${Date.now()}`, {cache:'no-store'});
+      if (!response.ok) throw new Error(`State request failed: ${response.status}`);
+      state = await response.json();
+      renderStats(); renderQueue(); renderAssets(); renderArchive();
+    } catch (error) {
+      document.getElementById('queueRoot').innerHTML = `<div class="error">Could not load workflow state. ${escapeHtml(error.message)}</div>`;
+      document.getElementById('syncText').textContent = 'Sync unavailable';
+    } finally {
+      button.disabled = false;
+      button.textContent = 'Refresh status';
+    }
+  }
+
+  document.querySelectorAll('.tab').forEach(tab => tab.addEventListener('click', () => {
+    document.querySelectorAll('.tab').forEach(item => item.classList.toggle('active', item === tab));
+    document.querySelectorAll('.view').forEach(view => view.hidden = view.id !== `view-${tab.dataset.view}`);
+  }));
+  document.getElementById('refreshButton').addEventListener('click', loadState);
+  loadState();
+  window.setInterval(loadState, 60000);
+</script>
+</body>
+</html>
