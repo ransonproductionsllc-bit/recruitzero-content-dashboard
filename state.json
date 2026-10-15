@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-15T14:57:37-04:00",
+  "updated_at": "2026-10-15T14:57:54-04:00",
   "sync": {
     "status": "connected",
     "discord_guild_id": "1553886101003837561",
@@ -16,9 +16,9 @@
       "kind": "test",
       "title": "TEST — AI marketing topic approval queue",
       "created_at": "2026-10-15T14:57:37-04:00",
-      "updated_at": "2026-10-15T14:57:37-04:00",
-      "status": "awaiting_topic_approval",
-      "stage": "topic_approval",
+      "updated_at": "2026-10-15T14:57:54-04:00",
+      "status": "drafting",
+      "stage": "post_drafting",
       "topic_options": [
         {
           "option": 1,
@@ -93,8 +93,21 @@
           "type": "test_topic_queue_created",
           "actor": "workflow_test",
           "detail": "Created three ranked TEST topics from the previous 72 hours; no non-test item changed."
+        },
+        {
+          "at": "2026-10-15T14:57:54-04:00",
+          "type": "test_topic_approved",
+          "actor": "workflow_test",
+          "detail": "Simulated TEST approval of option 1 for drafting only."
         }
-      ]
+      ],
+      "topic": {
+        "option": 1,
+        "title": "HarrisQuest puts survey-backed brand tracking inside AI assistants",
+        "selected": true,
+        "source_url": "https://www.harrisquest.com/blog/harrisquest-mcp-brings-brand-data-into-your-ai",
+        "test_approval": true
+      }
     }
   ],
   "archive": [
