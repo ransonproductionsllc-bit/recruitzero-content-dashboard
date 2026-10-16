@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-16T08:19:48-04:00",
+  "updated_at": "2026-10-16T08:25:33-04:00",
   "sync": {
     "status": "connected",
     "discord_guild_id": "1553886101003837561",
@@ -16,15 +16,27 @@
       "kind": "content",
       "title": "AI marketing and martech topic approval queue",
       "created_at": "2026-10-16T08:07:24-04:00",
-      "updated_at": "2026-10-16T08:19:48-04:00",
-      "status": "drafting",
-      "stage": "post_drafting",
+      "updated_at": "2026-10-16T08:25:33-04:00",
+      "status": "awaiting_post_approval",
+      "stage": "post_approval",
       "topic": {
         "option": 2,
         "title": "Contentsquare starts measuring customer journeys taken by AI agents",
         "selected": true,
         "approved_via": "discord",
-        "approved_at": "2026-10-16T08:19:48-04:00"
+        "approved_at": "2026-10-16T08:19:48-04:00",
+        "proposed_hook": "Your next website visitor may be a shopping agent, not a shopper. Contentsquare wants analytics teams to see both journeys in the same system.",
+        "marketer_angle": "Digital analytics teams may need separate event taxonomies, attribution rules, anomaly checks, and experience tests for human sessions, AI referrals, and autonomous agent actions.",
+        "sources": [
+          {
+            "title": "Contentsquare — New AI-first Experience Platform",
+            "url": "https://contentsquare.com/press/new-ai-first-experience-platform/"
+          },
+          {
+            "title": "CDP Institute — AI agents are becoming a second audience for brands",
+            "url": "https://www.cdpinstitute.org/news/patterns/2026-10-14/"
+          }
+        ]
       },
       "topic_options": [
         {
@@ -106,8 +118,69 @@
           "type": "topic_approved",
           "actor": "discord_user",
           "detail": "User approved option 2, Contentsquare starts measuring customer journeys taken by AI agents, for drafting only."
+        },
+        {
+          "at": "2026-10-16T08:25:33-04:00",
+          "type": "github_approval_synced",
+          "actor": "ransonproductionsllc-bit",
+          "github_issue": 2,
+          "detail": "Synchronized GitHub issue #2 with the existing option 2 approval. Writer selected claude-opus-5-5 through claude-code; fallback not used."
+        },
+        {
+          "at": "2026-10-16T08:25:33-04:00",
+          "type": "post_reviewed",
+          "actor": "recruitzero_content_workflow",
+          "detail": "Reviewed copy passed stop-slop 46/50, voice fidelity 9/10, and every construction gate; awaiting explicit post approval."
         }
-      ]
+      ],
+      "post": {
+        "status": "awaiting_approval",
+        "title": "Contentsquare and AI-agent journey analytics",
+        "body": "Your next website visitor may be a shopping agent, not a shopper. Your analytics will need to tell the difference.\n\nOn October 13, 2026, Contentsquare announced a reimagined AI-first Experience Platform. Contentsquare says it captures human browsing alongside LLM and autonomous agent interactions, then separates and analyzes that traffic beside human sessions. It brings voice and text conversations, chatbot interactions, and agent dialogue into journeys as events. The platform also includes multi-session journey analysis, automated WebMCP monitoring, and multi-touch attribution that covers LLM- and AI-referred traffic. It is in beta for selected customers, with broader access planned in phases.\n\nCDP Institute interprets the shift as brands managing two audiences: people and AI systems. Marketers may now need to consider both AI discoverability and what agents do after finding a brand. Those are marketing implications, not requirements from Contentsquare.\n\nFor marketers, that changes the job:\n\n- Separate human and agent behavior in your event taxonomy. An agent adding an item to a cart may mean something different from a shopper doing it.\n\n- Give AI referrals their own view in attribution. You can then see LLM-driven visits as a distinct source.\n\n- Filter tests and anomaly checks by traffic type. A rise in agent activity could distort how you read a page or campaign result.\n\nThe takeaway: measure people and agents separately before deciding which journey needs work.\n\nCould your analytics tell a customer from their assistant today?",
+        "word_count": 234,
+        "sources": [
+          {
+            "title": "Contentsquare — New AI-first Experience Platform",
+            "url": "https://contentsquare.com/press/new-ai-first-experience-platform/"
+          },
+          {
+            "title": "CDP Institute — AI agents are becoming a second audience for brands",
+            "url": "https://www.cdpinstitute.org/news/patterns/2026-10-14/"
+          }
+        ],
+        "stop_slop_score": 46,
+        "stop_slop_breakdown": {
+          "directness": 9,
+          "rhythm": 9,
+          "trust": 10,
+          "authenticity": 9,
+          "density": 9
+        },
+        "voice_fidelity_score": 9,
+        "construction_pass": true,
+        "construction_checklist": {
+          "word_count_150_250": true,
+          "hook": true,
+          "verified_event_explanation": true,
+          "interpretation": true,
+          "exact_marketer_transition": true,
+          "two_to_three_visible_bullets": true,
+          "takeaway_label": true,
+          "closing_question": true,
+          "factual_fidelity": true
+        },
+        "review_notes": "Stop-slop 46/50; voice fidelity 9/10; all construction gates passed; no factual drift. Marketing implications remain explicitly qualified.",
+        "writer_model": "claude-opus-5-5",
+        "writer_provider": "claude-code",
+        "writer_fallback_used": false,
+        "writer_attempts": [
+          {
+            "model": "opus",
+            "status": "success"
+          }
+        ],
+        "markdown_path": "/home/ranson/.hermes/social-queue/linkedin/2026-10-16-contentsquare-ai-agent-journeys.md"
+      }
     }
   ],
   "archive": [
