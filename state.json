@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-16T08:27:46-04:00",
+  "updated_at": "2026-10-16T08:33:41-04:00",
   "sync": {
     "status": "connected",
     "discord_guild_id": "1553886101003837561",
@@ -16,9 +16,9 @@
       "kind": "content",
       "title": "AI marketing and martech topic approval queue",
       "created_at": "2026-10-16T08:07:24-04:00",
-      "updated_at": "2026-10-16T08:27:46-04:00",
-      "status": "awaiting_post_approval",
-      "stage": "post_approval",
+      "updated_at": "2026-10-16T08:33:41-04:00",
+      "status": "generating_cover",
+      "stage": "cover_generation",
       "topic": {
         "option": 2,
         "title": "Contentsquare starts measuring customer journeys taken by AI agents",
@@ -137,10 +137,18 @@
           "type": "post_review_refreshed",
           "actor": "scheduled_stage_2",
           "detail": "Re-ran the required writer and reviewer chain. Claude Opus produced the draft; reviewed copy passed stop-slop 45/50, voice fidelity 10/10, and every construction gate."
+        },
+        {
+          "at": "2026-10-16T08:33:41-04:00",
+          "type": "post_approved",
+          "actor": "discord_user",
+          "detail": "User explicitly approved the canonical reviewed post for cover generation. Nothing was published to LinkedIn."
         }
       ],
       "post": {
-        "status": "awaiting_post_approval",
+        "status": "approved",
+        "approved_via": "discord",
+        "approved_at": "2026-10-16T08:33:41-04:00",
         "title": "Contentsquare and AI-agent journey analytics",
         "body": "Your next website visitor may be a shopping agent, not a shopper. Your analytics need to know the difference.\n\nOn October 13, 2026, Contentsquare announced a reimagined Experience Platform designed to understand and optimize human and AI-agent journeys. It separates LLM and agent traffic from human sessions, brings voice and text conversations, chatbot interactions, and agent dialogue into the journey as events, and links them to on-site and in-app friction. The platform also adds multi-session journey analysis, automated WebMCP monitoring for autonomous-agent activity, and multi-touch attribution that includes LLM and AI-referred traffic. It is in beta for selected customers, with broader access planned in phases.\n\nThis goes beyond one product announcement. CDP Institute's analysis points to two related jobs for brands: becoming discoverable to AI systems, then understanding what agents do after discovery. The second job belongs in your analytics stack.\n\nFor marketers, that changes the job:\n\n- Define your visitor. If agent sessions blend into human sessions, conversion rates and drop-off points can give you the wrong read.\n\n- Diagnose friction for both. A flow that works for a person may still stop an agent, so teams need to examine each journey separately.\n\n- Give AI its own attribution path. AI-referred traffic should not disappear into a catch-all source.\n\nThe takeaway: check whether your current measurement can distinguish agents from people and trace what each does next.\n\nCan your analytics stack separate agent traffic from human sessions today?",
         "word_count": 239,
