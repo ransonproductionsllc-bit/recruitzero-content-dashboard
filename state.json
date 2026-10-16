@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-16T08:33:41-04:00",
+  "updated_at": "2026-10-16T08:36:12-04:00",
   "sync": {
     "status": "connected",
     "discord_guild_id": "1553886101003837561",
@@ -10,193 +10,7 @@
     "authorized_github_user": "ransonproductionsllc-bit",
     "dashboard_refresh_seconds": 60
   },
-  "active_queue": [
-    {
-      "id": "ai-martech-topic-queue-2026-10-16",
-      "kind": "content",
-      "title": "AI marketing and martech topic approval queue",
-      "created_at": "2026-10-16T08:07:24-04:00",
-      "updated_at": "2026-10-16T08:33:41-04:00",
-      "status": "generating_cover",
-      "stage": "cover_generation",
-      "topic": {
-        "option": 2,
-        "title": "Contentsquare starts measuring customer journeys taken by AI agents",
-        "selected": true,
-        "approved_via": "discord",
-        "approved_at": "2026-10-16T08:19:48-04:00",
-        "proposed_hook": "Your next website visitor may be a shopping agent, not a shopper. Contentsquare wants analytics teams to see both journeys in the same system.",
-        "marketer_angle": "Digital analytics teams may need separate event taxonomies, attribution rules, anomaly checks, and experience tests for human sessions, AI referrals, and autonomous agent actions.",
-        "sources": [
-          {
-            "title": "Contentsquare — New AI-first Experience Platform",
-            "url": "https://contentsquare.com/press/new-ai-first-experience-platform/"
-          },
-          {
-            "title": "CDP Institute — AI agents are becoming a second audience for brands",
-            "url": "https://www.cdpinstitute.org/news/patterns/2026-10-14/"
-          }
-        ]
-      },
-      "topic_options": [
-        {
-          "option": 1,
-          "title": "Google puts a cross-retailer cart inside Search and Gemini",
-          "proposed_hook": "Google is turning product discovery into a shared cart. The merchant site may no longer be the first place a shopper starts building an order.",
-          "marketer_angle": "Commerce teams need to treat feed quality, price and inventory freshness, promotions, checkout handoff, and Universal Commerce Protocol readiness as parts of the acquisition funnel.",
-          "scores": {
-            "relevance": 10,
-            "topicality": 10,
-            "viral_potential": 9,
-            "total": 29
-          },
-          "sources": [
-            {
-              "title": "Google — An intelligent new shopping cart",
-              "url": "https://blog.google/products-and-platforms/products/shopping/universal-cart-launch/"
-            },
-            {
-              "title": "Search Engine Land — Google launches Universal Cart",
-              "url": "https://searchengineland.com/google-launches-universal-cart-across-search-and-gemini-for-easier-shopping-496573"
-            }
-          ]
-        },
-        {
-          "option": 2,
-          "title": "Contentsquare starts measuring customer journeys taken by AI agents",
-          "proposed_hook": "Your next website visitor may be a shopping agent, not a shopper. Contentsquare wants analytics teams to see both journeys in the same system.",
-          "marketer_angle": "Digital analytics teams may need separate event taxonomies, attribution rules, anomaly checks, and experience tests for human sessions, AI referrals, and autonomous agent actions.",
-          "scores": {
-            "relevance": 10,
-            "topicality": 9,
-            "viral_potential": 9,
-            "total": 28
-          },
-          "sources": [
-            {
-              "title": "Contentsquare — New AI-first Experience Platform",
-              "url": "https://contentsquare.com/press/new-ai-first-experience-platform/"
-            },
-            {
-              "title": "CDP Institute — AI agents are becoming a second audience for brands",
-              "url": "https://www.cdpinstitute.org/news/patterns/2026-10-14/"
-            }
-          ]
-        },
-        {
-          "option": 3,
-          "title": "HubSpot adds budget controls for AI credits",
-          "proposed_hook": "AI usage is becoming a line item that martech teams can overspend. HubSpot is adding the controls finance teams will ask for next.",
-          "marketer_angle": "Account caps, overage choices, and seat-to-credit exchanges give operations teams a way to govern agent usage without waiting for a surprise renewal or consumption bill.",
-          "scores": {
-            "relevance": 10,
-            "topicality": 9,
-            "viral_potential": 8,
-            "total": 27
-          },
-          "sources": [
-            {
-              "title": "HubSpot — New AI spending controls and flexible pricing",
-              "url": "https://www.hubspot.com/company-news/flexible-pricing"
-            },
-            {
-              "title": "MarTech — HubSpot adds spending controls and flexible billing",
-              "url": "https://martech.org/hubspot-adds-spending-controls-and-flexible-billing-as-ai-usage-grows/"
-            }
-          ]
-        }
-      ],
-      "events": [
-        {
-          "at": "2026-10-16T08:07:24-04:00",
-          "type": "topic_queue_created",
-          "actor": "scheduled_research",
-          "detail": "Created three ranked AI marketing and martech topics from the previous 72 hours; awaiting Discord approval."
-        },
-        {
-          "at": "2026-10-16T08:19:48-04:00",
-          "type": "topic_approved",
-          "actor": "discord_user",
-          "detail": "User approved option 2, Contentsquare starts measuring customer journeys taken by AI agents, for drafting only."
-        },
-        {
-          "at": "2026-10-16T08:25:33-04:00",
-          "type": "github_approval_synced",
-          "actor": "ransonproductionsllc-bit",
-          "github_issue": 2,
-          "detail": "Synchronized GitHub issue #2 with the existing option 2 approval. Writer selected claude-opus-5-5 through claude-code; fallback not used."
-        },
-        {
-          "at": "2026-10-16T08:25:33-04:00",
-          "type": "post_reviewed",
-          "actor": "recruitzero_content_workflow",
-          "detail": "Reviewed copy passed stop-slop 46/50, voice fidelity 9/10, and every construction gate; awaiting explicit post approval."
-        },
-        {
-          "at": "2026-10-16T08:27:46-04:00",
-          "type": "post_review_refreshed",
-          "actor": "scheduled_stage_2",
-          "detail": "Re-ran the required writer and reviewer chain. Claude Opus produced the draft; reviewed copy passed stop-slop 45/50, voice fidelity 10/10, and every construction gate."
-        },
-        {
-          "at": "2026-10-16T08:33:41-04:00",
-          "type": "post_approved",
-          "actor": "discord_user",
-          "detail": "User explicitly approved the canonical reviewed post for cover generation. Nothing was published to LinkedIn."
-        }
-      ],
-      "post": {
-        "status": "approved",
-        "approved_via": "discord",
-        "approved_at": "2026-10-16T08:33:41-04:00",
-        "title": "Contentsquare and AI-agent journey analytics",
-        "body": "Your next website visitor may be a shopping agent, not a shopper. Your analytics need to know the difference.\n\nOn October 13, 2026, Contentsquare announced a reimagined Experience Platform designed to understand and optimize human and AI-agent journeys. It separates LLM and agent traffic from human sessions, brings voice and text conversations, chatbot interactions, and agent dialogue into the journey as events, and links them to on-site and in-app friction. The platform also adds multi-session journey analysis, automated WebMCP monitoring for autonomous-agent activity, and multi-touch attribution that includes LLM and AI-referred traffic. It is in beta for selected customers, with broader access planned in phases.\n\nThis goes beyond one product announcement. CDP Institute's analysis points to two related jobs for brands: becoming discoverable to AI systems, then understanding what agents do after discovery. The second job belongs in your analytics stack.\n\nFor marketers, that changes the job:\n\n- Define your visitor. If agent sessions blend into human sessions, conversion rates and drop-off points can give you the wrong read.\n\n- Diagnose friction for both. A flow that works for a person may still stop an agent, so teams need to examine each journey separately.\n\n- Give AI its own attribution path. AI-referred traffic should not disappear into a catch-all source.\n\nThe takeaway: check whether your current measurement can distinguish agents from people and trace what each does next.\n\nCan your analytics stack separate agent traffic from human sessions today?",
-        "word_count": 239,
-        "sources": [
-          {
-            "title": "Contentsquare — New AI-first Experience Platform",
-            "url": "https://contentsquare.com/press/new-ai-first-experience-platform/"
-          },
-          {
-            "title": "CDP Institute — AI agents are becoming a second audience for brands",
-            "url": "https://www.cdpinstitute.org/news/patterns/2026-10-14/"
-          }
-        ],
-        "stop_slop_score": 45,
-        "stop_slop_breakdown": {
-          "directness": 9,
-          "rhythm": 9,
-          "trust": 9,
-          "authenticity": 9,
-          "density": 9
-        },
-        "voice_fidelity_score": 10,
-        "construction_pass": true,
-        "construction_checklist": {
-          "word_count_150_250": true,
-          "hook": true,
-          "verified_event_explanation": true,
-          "interpretation": true,
-          "exact_marketer_transition": true,
-          "two_to_three_visible_bullets": true,
-          "takeaway_label": true,
-          "closing_question": true,
-          "factual_fidelity": true
-        },
-        "review_notes": "Stop-slop 45/50; voice fidelity 10/10; all construction gates passed; no factual drift. Removed an unsupported market-size sentence and preserved beta-access qualifications.",
-        "writer_model": "claude-opus-5-5",
-        "writer_provider": "claude-code",
-        "writer_fallback_used": false,
-        "writer_attempts": [
-          {
-            "model": "opus",
-            "status": "success"
-          }
-        ],
-        "markdown_path": "/home/ranson/.hermes/social-queue/linkedin/2026-10-16-contentsquare-ai-agent-journeys-reviewed.md"
-      }
-    }
-  ],
+  "active_queue": [],
   "archive": [
     {
       "id": "facebook-your-algorithm-test-2026-10-15",
@@ -395,6 +209,205 @@
         "original_path": "/home/ranson/.hermes/social-queue/linkedin/2026-10-15-harrisquest-mcp-e2e-test-cover-original.png",
         "final_path": "/home/ranson/.hermes/social-queue/linkedin/2026-10-15-harrisquest-mcp-e2e-test-cover-1200x627.png",
         "review_page_url": "https://ransonproductionsllc-bit.github.io/recruitzero-content-dashboard/review.html?id=harrisquest-mcp-e2e-test-2026-10-15"
+      }
+    },
+    {
+      "id": "ai-martech-topic-queue-2026-10-16",
+      "kind": "content",
+      "title": "AI marketing and martech topic approval queue",
+      "created_at": "2026-10-16T08:07:24-04:00",
+      "updated_at": "2026-10-16T08:36:12-04:00",
+      "status": "complete",
+      "stage": "assets_complete",
+      "topic": {
+        "option": 2,
+        "title": "Contentsquare starts measuring customer journeys taken by AI agents",
+        "selected": true,
+        "approved_via": "discord",
+        "approved_at": "2026-10-16T08:19:48-04:00",
+        "proposed_hook": "Your next website visitor may be a shopping agent, not a shopper. Contentsquare wants analytics teams to see both journeys in the same system.",
+        "marketer_angle": "Digital analytics teams may need separate event taxonomies, attribution rules, anomaly checks, and experience tests for human sessions, AI referrals, and autonomous agent actions.",
+        "sources": [
+          {
+            "title": "Contentsquare — New AI-first Experience Platform",
+            "url": "https://contentsquare.com/press/new-ai-first-experience-platform/"
+          },
+          {
+            "title": "CDP Institute — AI agents are becoming a second audience for brands",
+            "url": "https://www.cdpinstitute.org/news/patterns/2026-10-14/"
+          }
+        ]
+      },
+      "topic_options": [
+        {
+          "option": 1,
+          "title": "Google puts a cross-retailer cart inside Search and Gemini",
+          "proposed_hook": "Google is turning product discovery into a shared cart. The merchant site may no longer be the first place a shopper starts building an order.",
+          "marketer_angle": "Commerce teams need to treat feed quality, price and inventory freshness, promotions, checkout handoff, and Universal Commerce Protocol readiness as parts of the acquisition funnel.",
+          "scores": {
+            "relevance": 10,
+            "topicality": 10,
+            "viral_potential": 9,
+            "total": 29
+          },
+          "sources": [
+            {
+              "title": "Google — An intelligent new shopping cart",
+              "url": "https://blog.google/products-and-platforms/products/shopping/universal-cart-launch/"
+            },
+            {
+              "title": "Search Engine Land — Google launches Universal Cart",
+              "url": "https://searchengineland.com/google-launches-universal-cart-across-search-and-gemini-for-easier-shopping-496573"
+            }
+          ]
+        },
+        {
+          "option": 2,
+          "title": "Contentsquare starts measuring customer journeys taken by AI agents",
+          "proposed_hook": "Your next website visitor may be a shopping agent, not a shopper. Contentsquare wants analytics teams to see both journeys in the same system.",
+          "marketer_angle": "Digital analytics teams may need separate event taxonomies, attribution rules, anomaly checks, and experience tests for human sessions, AI referrals, and autonomous agent actions.",
+          "scores": {
+            "relevance": 10,
+            "topicality": 9,
+            "viral_potential": 9,
+            "total": 28
+          },
+          "sources": [
+            {
+              "title": "Contentsquare — New AI-first Experience Platform",
+              "url": "https://contentsquare.com/press/new-ai-first-experience-platform/"
+            },
+            {
+              "title": "CDP Institute — AI agents are becoming a second audience for brands",
+              "url": "https://www.cdpinstitute.org/news/patterns/2026-10-14/"
+            }
+          ]
+        },
+        {
+          "option": 3,
+          "title": "HubSpot adds budget controls for AI credits",
+          "proposed_hook": "AI usage is becoming a line item that martech teams can overspend. HubSpot is adding the controls finance teams will ask for next.",
+          "marketer_angle": "Account caps, overage choices, and seat-to-credit exchanges give operations teams a way to govern agent usage without waiting for a surprise renewal or consumption bill.",
+          "scores": {
+            "relevance": 10,
+            "topicality": 9,
+            "viral_potential": 8,
+            "total": 27
+          },
+          "sources": [
+            {
+              "title": "HubSpot — New AI spending controls and flexible pricing",
+              "url": "https://www.hubspot.com/company-news/flexible-pricing"
+            },
+            {
+              "title": "MarTech — HubSpot adds spending controls and flexible billing",
+              "url": "https://martech.org/hubspot-adds-spending-controls-and-flexible-billing-as-ai-usage-grows/"
+            }
+          ]
+        }
+      ],
+      "events": [
+        {
+          "at": "2026-10-16T08:07:24-04:00",
+          "type": "topic_queue_created",
+          "actor": "scheduled_research",
+          "detail": "Created three ranked AI marketing and martech topics from the previous 72 hours; awaiting Discord approval."
+        },
+        {
+          "at": "2026-10-16T08:19:48-04:00",
+          "type": "topic_approved",
+          "actor": "discord_user",
+          "detail": "User approved option 2, Contentsquare starts measuring customer journeys taken by AI agents, for drafting only."
+        },
+        {
+          "at": "2026-10-16T08:25:33-04:00",
+          "type": "github_approval_synced",
+          "actor": "ransonproductionsllc-bit",
+          "github_issue": 2,
+          "detail": "Synchronized GitHub issue #2 with the existing option 2 approval. Writer selected claude-opus-5-5 through claude-code; fallback not used."
+        },
+        {
+          "at": "2026-10-16T08:25:33-04:00",
+          "type": "post_reviewed",
+          "actor": "recruitzero_content_workflow",
+          "detail": "Reviewed copy passed stop-slop 46/50, voice fidelity 9/10, and every construction gate; awaiting explicit post approval."
+        },
+        {
+          "at": "2026-10-16T08:27:46-04:00",
+          "type": "post_review_refreshed",
+          "actor": "scheduled_stage_2",
+          "detail": "Re-ran the required writer and reviewer chain. Claude Opus produced the draft; reviewed copy passed stop-slop 45/50, voice fidelity 10/10, and every construction gate."
+        },
+        {
+          "at": "2026-10-16T08:33:41-04:00",
+          "type": "post_approved",
+          "actor": "discord_user",
+          "detail": "User explicitly approved the canonical reviewed post for cover generation. Nothing was published to LinkedIn."
+        },
+        {
+          "at": "2026-10-16T08:36:12-04:00",
+          "type": "assets_completed",
+          "actor": "scheduled_stage_3",
+          "detail": "Generated and visually inspected the approved 1200 x 627 cover, archived the item with its full reviewed article and metadata, and did not publish to LinkedIn."
+        }
+      ],
+      "post": {
+        "status": "approved",
+        "approved_via": "discord",
+        "approved_at": "2026-10-16T08:33:41-04:00",
+        "title": "Contentsquare and AI-agent journey analytics",
+        "body": "Your next website visitor may be a shopping agent, not a shopper. Your analytics need to know the difference.\n\nOn October 13, 2026, Contentsquare announced a reimagined Experience Platform designed to understand and optimize human and AI-agent journeys. It separates LLM and agent traffic from human sessions, brings voice and text conversations, chatbot interactions, and agent dialogue into the journey as events, and links them to on-site and in-app friction. The platform also adds multi-session journey analysis, automated WebMCP monitoring for autonomous-agent activity, and multi-touch attribution that includes LLM and AI-referred traffic. It is in beta for selected customers, with broader access planned in phases.\n\nThis goes beyond one product announcement. CDP Institute's analysis points to two related jobs for brands: becoming discoverable to AI systems, then understanding what agents do after discovery. The second job belongs in your analytics stack.\n\nFor marketers, that changes the job:\n\n- Define your visitor. If agent sessions blend into human sessions, conversion rates and drop-off points can give you the wrong read.\n\n- Diagnose friction for both. A flow that works for a person may still stop an agent, so teams need to examine each journey separately.\n\n- Give AI its own attribution path. AI-referred traffic should not disappear into a catch-all source.\n\nThe takeaway: check whether your current measurement can distinguish agents from people and trace what each does next.\n\nCan your analytics stack separate agent traffic from human sessions today?",
+        "word_count": 239,
+        "sources": [
+          {
+            "title": "Contentsquare — New AI-first Experience Platform",
+            "url": "https://contentsquare.com/press/new-ai-first-experience-platform/"
+          },
+          {
+            "title": "CDP Institute — AI agents are becoming a second audience for brands",
+            "url": "https://www.cdpinstitute.org/news/patterns/2026-10-14/"
+          }
+        ],
+        "stop_slop_score": 45,
+        "stop_slop_breakdown": {
+          "directness": 9,
+          "rhythm": 9,
+          "trust": 9,
+          "authenticity": 9,
+          "density": 9
+        },
+        "voice_fidelity_score": 10,
+        "construction_pass": true,
+        "construction_checklist": {
+          "word_count_150_250": true,
+          "hook": true,
+          "verified_event_explanation": true,
+          "interpretation": true,
+          "exact_marketer_transition": true,
+          "two_to_three_visible_bullets": true,
+          "takeaway_label": true,
+          "closing_question": true,
+          "factual_fidelity": true
+        },
+        "review_notes": "Stop-slop 45/50; voice fidelity 10/10; all construction gates passed; no factual drift. Removed an unsupported market-size sentence and preserved beta-access qualifications.",
+        "writer_model": "claude-opus-5-5",
+        "writer_provider": "claude-code",
+        "writer_fallback_used": false,
+        "writer_attempts": [
+          {
+            "model": "opus",
+            "status": "success"
+          }
+        ],
+        "markdown_path": "/home/ranson/.hermes/social-queue/linkedin/2026-10-16-contentsquare-ai-agent-journeys-reviewed.md"
+      },
+      "assets": {
+        "cover_status": "complete",
+        "cover_url": "assets/ai-martech-topic-queue-2026-10-16-cover.png",
+        "cover_dimensions": "1200x627",
+        "original_path": "/home/ranson/.hermes/social-queue/linkedin/2026-10-16-contentsquare-ai-agent-journeys-cover-original.png",
+        "final_path": "/home/ranson/.hermes/social-queue/linkedin/2026-10-16-contentsquare-ai-agent-journeys-cover-1200x627.png",
+        "review_page_url": "https://ransonproductionsllc-bit.github.io/recruitzero-content-dashboard/review.html?id=ai-martech-topic-queue-2026-10-16"
       }
     }
   ]
