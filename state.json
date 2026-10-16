@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-16T08:07:24-04:00",
+  "updated_at": "2026-10-16T08:19:48-04:00",
   "sync": {
     "status": "connected",
     "discord_guild_id": "1553886101003837561",
@@ -16,9 +16,16 @@
       "kind": "content",
       "title": "AI marketing and martech topic approval queue",
       "created_at": "2026-10-16T08:07:24-04:00",
-      "updated_at": "2026-10-16T08:07:24-04:00",
-      "status": "awaiting_topic_approval",
-      "stage": "topic_approval",
+      "updated_at": "2026-10-16T08:19:48-04:00",
+      "status": "drafting",
+      "stage": "post_drafting",
+      "topic": {
+        "option": 2,
+        "title": "Contentsquare starts measuring customer journeys taken by AI agents",
+        "selected": true,
+        "approved_via": "discord",
+        "approved_at": "2026-10-16T08:19:48-04:00"
+      },
       "topic_options": [
         {
           "option": 1,
@@ -93,6 +100,12 @@
           "type": "topic_queue_created",
           "actor": "scheduled_research",
           "detail": "Created three ranked AI marketing and martech topics from the previous 72 hours; awaiting Discord approval."
+        },
+        {
+          "at": "2026-10-16T08:19:48-04:00",
+          "type": "topic_approved",
+          "actor": "discord_user",
+          "detail": "User approved option 2, Contentsquare starts measuring customer journeys taken by AI agents, for drafting only."
         }
       ]
     }
