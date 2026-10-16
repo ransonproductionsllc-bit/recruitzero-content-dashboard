@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-15T16:45:39-04:00",
+  "updated_at": "2026-10-16T08:07:24-04:00",
   "sync": {
     "status": "connected",
     "discord_guild_id": "1553886101003837561",
@@ -10,7 +10,93 @@
     "authorized_github_user": "ransonproductionsllc-bit",
     "dashboard_refresh_seconds": 60
   },
-  "active_queue": [],
+  "active_queue": [
+    {
+      "id": "ai-martech-topic-queue-2026-10-16",
+      "kind": "content",
+      "title": "AI marketing and martech topic approval queue",
+      "created_at": "2026-10-16T08:07:24-04:00",
+      "updated_at": "2026-10-16T08:07:24-04:00",
+      "status": "awaiting_topic_approval",
+      "stage": "topic_approval",
+      "topic_options": [
+        {
+          "option": 1,
+          "title": "Google puts a cross-retailer cart inside Search and Gemini",
+          "proposed_hook": "Google is turning product discovery into a shared cart. The merchant site may no longer be the first place a shopper starts building an order.",
+          "marketer_angle": "Commerce teams need to treat feed quality, price and inventory freshness, promotions, checkout handoff, and Universal Commerce Protocol readiness as parts of the acquisition funnel.",
+          "scores": {
+            "relevance": 10,
+            "topicality": 10,
+            "viral_potential": 9,
+            "total": 29
+          },
+          "sources": [
+            {
+              "title": "Google — An intelligent new shopping cart",
+              "url": "https://blog.google/products-and-platforms/products/shopping/universal-cart-launch/"
+            },
+            {
+              "title": "Search Engine Land — Google launches Universal Cart",
+              "url": "https://searchengineland.com/google-launches-universal-cart-across-search-and-gemini-for-easier-shopping-496573"
+            }
+          ]
+        },
+        {
+          "option": 2,
+          "title": "Contentsquare starts measuring customer journeys taken by AI agents",
+          "proposed_hook": "Your next website visitor may be a shopping agent, not a shopper. Contentsquare wants analytics teams to see both journeys in the same system.",
+          "marketer_angle": "Digital analytics teams may need separate event taxonomies, attribution rules, anomaly checks, and experience tests for human sessions, AI referrals, and autonomous agent actions.",
+          "scores": {
+            "relevance": 10,
+            "topicality": 9,
+            "viral_potential": 9,
+            "total": 28
+          },
+          "sources": [
+            {
+              "title": "Contentsquare — New AI-first Experience Platform",
+              "url": "https://contentsquare.com/press/new-ai-first-experience-platform/"
+            },
+            {
+              "title": "CDP Institute — AI agents are becoming a second audience for brands",
+              "url": "https://www.cdpinstitute.org/news/patterns/2026-10-14/"
+            }
+          ]
+        },
+        {
+          "option": 3,
+          "title": "HubSpot adds budget controls for AI credits",
+          "proposed_hook": "AI usage is becoming a line item that martech teams can overspend. HubSpot is adding the controls finance teams will ask for next.",
+          "marketer_angle": "Account caps, overage choices, and seat-to-credit exchanges give operations teams a way to govern agent usage without waiting for a surprise renewal or consumption bill.",
+          "scores": {
+            "relevance": 10,
+            "topicality": 9,
+            "viral_potential": 8,
+            "total": 27
+          },
+          "sources": [
+            {
+              "title": "HubSpot — New AI spending controls and flexible pricing",
+              "url": "https://www.hubspot.com/company-news/flexible-pricing"
+            },
+            {
+              "title": "MarTech — HubSpot adds spending controls and flexible billing",
+              "url": "https://martech.org/hubspot-adds-spending-controls-and-flexible-billing-as-ai-usage-grows/"
+            }
+          ]
+        }
+      ],
+      "events": [
+        {
+          "at": "2026-10-16T08:07:24-04:00",
+          "type": "topic_queue_created",
+          "actor": "scheduled_research",
+          "detail": "Created three ranked AI marketing and martech topics from the previous 72 hours; awaiting Discord approval."
+        }
+      ]
+    }
+  ],
   "archive": [
     {
       "id": "facebook-your-algorithm-test-2026-10-15",
