@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-16T08:25:33-04:00",
+  "updated_at": "2026-10-16T08:27:46-04:00",
   "sync": {
     "status": "connected",
     "discord_guild_id": "1553886101003837561",
@@ -16,7 +16,7 @@
       "kind": "content",
       "title": "AI marketing and martech topic approval queue",
       "created_at": "2026-10-16T08:07:24-04:00",
-      "updated_at": "2026-10-16T08:25:33-04:00",
+      "updated_at": "2026-10-16T08:27:46-04:00",
       "status": "awaiting_post_approval",
       "stage": "post_approval",
       "topic": {
@@ -131,13 +131,19 @@
           "type": "post_reviewed",
           "actor": "recruitzero_content_workflow",
           "detail": "Reviewed copy passed stop-slop 46/50, voice fidelity 9/10, and every construction gate; awaiting explicit post approval."
+        },
+        {
+          "at": "2026-10-16T08:27:46-04:00",
+          "type": "post_review_refreshed",
+          "actor": "scheduled_stage_2",
+          "detail": "Re-ran the required writer and reviewer chain. Claude Opus produced the draft; reviewed copy passed stop-slop 45/50, voice fidelity 10/10, and every construction gate."
         }
       ],
       "post": {
-        "status": "awaiting_approval",
+        "status": "awaiting_post_approval",
         "title": "Contentsquare and AI-agent journey analytics",
-        "body": "Your next website visitor may be a shopping agent, not a shopper. Your analytics will need to tell the difference.\n\nOn October 13, 2026, Contentsquare announced a reimagined AI-first Experience Platform. Contentsquare says it captures human browsing alongside LLM and autonomous agent interactions, then separates and analyzes that traffic beside human sessions. It brings voice and text conversations, chatbot interactions, and agent dialogue into journeys as events. The platform also includes multi-session journey analysis, automated WebMCP monitoring, and multi-touch attribution that covers LLM- and AI-referred traffic. It is in beta for selected customers, with broader access planned in phases.\n\nCDP Institute interprets the shift as brands managing two audiences: people and AI systems. Marketers may now need to consider both AI discoverability and what agents do after finding a brand. Those are marketing implications, not requirements from Contentsquare.\n\nFor marketers, that changes the job:\n\n- Separate human and agent behavior in your event taxonomy. An agent adding an item to a cart may mean something different from a shopper doing it.\n\n- Give AI referrals their own view in attribution. You can then see LLM-driven visits as a distinct source.\n\n- Filter tests and anomaly checks by traffic type. A rise in agent activity could distort how you read a page or campaign result.\n\nThe takeaway: measure people and agents separately before deciding which journey needs work.\n\nCould your analytics tell a customer from their assistant today?",
-        "word_count": 234,
+        "body": "Your next website visitor may be a shopping agent, not a shopper. Your analytics need to know the difference.\n\nOn October 13, 2026, Contentsquare announced a reimagined Experience Platform designed to understand and optimize human and AI-agent journeys. It separates LLM and agent traffic from human sessions, brings voice and text conversations, chatbot interactions, and agent dialogue into the journey as events, and links them to on-site and in-app friction. The platform also adds multi-session journey analysis, automated WebMCP monitoring for autonomous-agent activity, and multi-touch attribution that includes LLM and AI-referred traffic. It is in beta for selected customers, with broader access planned in phases.\n\nThis goes beyond one product announcement. CDP Institute's analysis points to two related jobs for brands: becoming discoverable to AI systems, then understanding what agents do after discovery. The second job belongs in your analytics stack.\n\nFor marketers, that changes the job:\n\n- Define your visitor. If agent sessions blend into human sessions, conversion rates and drop-off points can give you the wrong read.\n\n- Diagnose friction for both. A flow that works for a person may still stop an agent, so teams need to examine each journey separately.\n\n- Give AI its own attribution path. AI-referred traffic should not disappear into a catch-all source.\n\nThe takeaway: check whether your current measurement can distinguish agents from people and trace what each does next.\n\nCan your analytics stack separate agent traffic from human sessions today?",
+        "word_count": 239,
         "sources": [
           {
             "title": "Contentsquare — New AI-first Experience Platform",
@@ -148,15 +154,15 @@
             "url": "https://www.cdpinstitute.org/news/patterns/2026-10-14/"
           }
         ],
-        "stop_slop_score": 46,
+        "stop_slop_score": 45,
         "stop_slop_breakdown": {
           "directness": 9,
           "rhythm": 9,
-          "trust": 10,
+          "trust": 9,
           "authenticity": 9,
           "density": 9
         },
-        "voice_fidelity_score": 9,
+        "voice_fidelity_score": 10,
         "construction_pass": true,
         "construction_checklist": {
           "word_count_150_250": true,
@@ -169,7 +175,7 @@
           "closing_question": true,
           "factual_fidelity": true
         },
-        "review_notes": "Stop-slop 46/50; voice fidelity 9/10; all construction gates passed; no factual drift. Marketing implications remain explicitly qualified.",
+        "review_notes": "Stop-slop 45/50; voice fidelity 10/10; all construction gates passed; no factual drift. Removed an unsupported market-size sentence and preserved beta-access qualifications.",
         "writer_model": "claude-opus-5-5",
         "writer_provider": "claude-code",
         "writer_fallback_used": false,
@@ -179,7 +185,7 @@
             "status": "success"
           }
         ],
-        "markdown_path": "/home/ranson/.hermes/social-queue/linkedin/2026-10-16-contentsquare-ai-agent-journeys.md"
+        "markdown_path": "/home/ranson/.hermes/social-queue/linkedin/2026-10-16-contentsquare-ai-agent-journeys-reviewed.md"
       }
     }
   ],
