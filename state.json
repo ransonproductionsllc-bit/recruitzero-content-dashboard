@@ -33,11 +33,11 @@
           },
           "sources": [
             {
-              "title": "Adobe \u2014 Make your Smart Campaigns smarter with agentic workflows",
+              "title": "Adobe — Make your Smart Campaigns smarter with agentic workflows",
               "url": "https://business.adobe.com/blog/smart-campaigns-agentic-workflows"
             },
             {
-              "title": "Puglisi Consulting \u2014 Three vendor launches moved the approval line",
+              "title": "Puglisi Consulting — Three vendor launches moved the approval line",
               "url": "https://puglisiconsulting.com/digital-marketing-ai-agents-approval-line/"
             }
           ]
@@ -55,11 +55,11 @@
           },
           "sources": [
             {
-              "title": "Profound \u2014 Introducing the next generation of Agents",
+              "title": "Profound — Introducing the next generation of Agents",
               "url": "https://www.tryprofound.com/blog/introducing-the-next-generation-of-marketing-agents"
             },
             {
-              "title": "Puglisi Consulting \u2014 Three vendor launches moved the approval line",
+              "title": "Puglisi Consulting — Three vendor launches moved the approval line",
               "url": "https://puglisiconsulting.com/digital-marketing-ai-agents-approval-line/"
             }
           ]
@@ -77,11 +77,11 @@
           },
           "sources": [
             {
-              "title": "Webflow \u2014 MCP adds analytics data and a Gemini connector",
+              "title": "Webflow — MCP adds analytics data and a Gemini connector",
               "url": "https://webflow.com/updates/mcp-optimize-analyze-aeo"
             },
             {
-              "title": "Webflow Help \u2014 AEO overview",
+              "title": "Webflow Help — AEO overview",
               "url": "https://help.webflow.com/hc/en-us/articles/51703818404243-Webflow-AEO-overview"
             }
           ]
@@ -142,7 +142,7 @@
     {
       "id": "harrisquest-mcp-e2e-test-2026-10-15",
       "kind": "test",
-      "title": "TEST \u2014 AI marketing topic approval queue",
+      "title": "TEST — AI marketing topic approval queue",
       "created_at": "2026-10-15T14:57:37-04:00",
       "updated_at": "2026-10-15T15:03:20-04:00",
       "status": "complete",
@@ -161,11 +161,11 @@
           },
           "sources": [
             {
-              "title": "HarrisQuest \u2014 HarrisQuest MCP brings brand data into your AI",
+              "title": "HarrisQuest — HarrisQuest MCP brings brand data into your AI",
               "url": "https://www.harrisquest.com/blog/harrisquest-mcp-brings-brand-data-into-your-ai"
             },
             {
-              "title": "Newswire \u2014 HarrisQuest MCP launch announcement",
+              "title": "Newswire — HarrisQuest MCP launch announcement",
               "url": "https://www.newswire.com/news/x-9615131"
             }
           ]
@@ -183,11 +183,11 @@
           },
           "sources": [
             {
-              "title": "Google Ads \u2014 October Demand Gen Drop",
+              "title": "Google Ads — October Demand Gen Drop",
               "url": "https://blog.google/products/ads-commerce/demand-gen-drop-october-2026/"
             },
             {
-              "title": "Stacked Marketer \u2014 October 14 marketing news roundup",
+              "title": "Stacked Marketer — October 14 marketing news roundup",
               "url": "https://www.stackedmarketer.com/news"
             }
           ]
@@ -205,11 +205,11 @@
           },
           "sources": [
             {
-              "title": "Salesforce \u2014 Agreement to acquire Loops",
+              "title": "Salesforce — Agreement to acquire Loops",
               "url": "https://www.salesforce.com/news/stories/salesforce-signs-definitive-agreement-to-acquire-loops/"
             },
             {
-              "title": "MarTech \u2014 Salesforce acquires Loops to boost AI agent monitoring",
+              "title": "MarTech — Salesforce acquires Loops to boost AI agent monitoring",
               "url": "https://martech.org/salesforce-acquires-loops-to-boost-ai-powered-agent-monitoring/"
             }
           ]
@@ -263,11 +263,11 @@
         "word_count": 247,
         "sources": [
           {
-            "title": "HarrisQuest \u2014 HarrisQuest MCP brings brand data into your AI",
+            "title": "HarrisQuest — HarrisQuest MCP brings brand data into your AI",
             "url": "https://www.harrisquest.com/blog/harrisquest-mcp-brings-brand-data-into-your-ai"
           },
           {
-            "title": "Newswire \u2014 HarrisQuest MCP launch announcement",
+            "title": "Newswire — HarrisQuest MCP launch announcement",
             "url": "https://www.newswire.com/news/x-9615131"
           }
         ],
@@ -315,11 +315,11 @@
         "marketer_angle": "Digital analytics teams may need separate event taxonomies, attribution rules, anomaly checks, and experience tests for human sessions, AI referrals, and autonomous agent actions.",
         "sources": [
           {
-            "title": "Contentsquare \u2014 New AI-first Experience Platform",
+            "title": "Contentsquare — New AI-first Experience Platform",
             "url": "https://contentsquare.com/press/new-ai-first-experience-platform/"
           },
           {
-            "title": "CDP Institute \u2014 AI agents are becoming a second audience for brands",
+            "title": "CDP Institute — AI agents are becoming a second audience for brands",
             "url": "https://www.cdpinstitute.org/news/patterns/2026-10-14/"
           }
         ]
@@ -338,11 +338,11 @@
           },
           "sources": [
             {
-              "title": "Google \u2014 An intelligent new shopping cart",
+              "title": "Google — An intelligent new shopping cart",
               "url": "https://blog.google/products-and-platforms/products/shopping/universal-cart-launch/"
             },
             {
-              "title": "Search Engine Land \u2014 Google launches Universal Cart",
+              "title": "Search Engine Land — Google launches Universal Cart",
               "url": "https://searchengineland.com/google-launches-universal-cart-across-search-and-gemini-for-easier-shopping-496573"
             }
           ]
@@ -360,11 +360,11 @@
           },
           "sources": [
             {
-              "title": "Contentsquare \u2014 New AI-first Experience Platform",
+              "title": "Contentsquare — New AI-first Experience Platform",
               "url": "https://contentsquare.com/press/new-ai-first-experience-platform/"
             },
             {
-              "title": "CDP Institute \u2014 AI agents are becoming a second audience for brands",
+              "title": "CDP Institute — AI agents are becoming a second audience for brands",
               "url": "https://www.cdpinstitute.org/news/patterns/2026-10-14/"
             }
           ]
@@ -382,11 +382,11 @@
           },
           "sources": [
             {
-              "title": "HubSpot \u2014 New AI spending controls and flexible pricing",
+              "title": "HubSpot — New AI spending controls and flexible pricing",
               "url": "https://www.hubspot.com/company-news/flexible-pricing"
             },
             {
-              "title": "MarTech \u2014 HubSpot adds spending controls and flexible billing",
+              "title": "MarTech — HubSpot adds spending controls and flexible billing",
               "url": "https://martech.org/hubspot-adds-spending-controls-and-flexible-billing-as-ai-usage-grows/"
             }
           ]
@@ -446,11 +446,11 @@
         "word_count": 239,
         "sources": [
           {
-            "title": "Contentsquare \u2014 New AI-first Experience Platform",
+            "title": "Contentsquare — New AI-first Experience Platform",
             "url": "https://contentsquare.com/press/new-ai-first-experience-platform/"
           },
           {
-            "title": "CDP Institute \u2014 AI agents are becoming a second audience for brands",
+            "title": "CDP Institute — AI agents are becoming a second audience for brands",
             "url": "https://www.cdpinstitute.org/news/patterns/2026-10-14/"
           }
         ],
