@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-19T08:09:45-04:00",
+  "updated_at": "2026-10-19T08:41:45-04:00",
   "sync": {
     "status": "connected",
     "discord_guild_id": "1553886101003837561",
@@ -16,7 +16,7 @@
       "kind": "content",
       "title": "AI marketing and martech topic approval queue",
       "created_at": "2026-10-19T08:03:12-04:00",
-      "updated_at": "2026-10-19T08:09:45-04:00",
+      "updated_at": "2026-10-19T08:41:45-04:00",
       "status": "awaiting_topic_approval",
       "stage": "topic_approval",
       "topic_options": [
@@ -81,6 +81,68 @@
               "url": "https://webflow.com/updates/mcp-optimize-analyze-aeo"
             }
           ]
+        },
+        {
+          "option": 4,
+          "title": "Google starts testing ads inside AI Mode with Personal Intelligence",
+          "proposed_hook": "Google is testing ads inside AI answers shaped by a user's connected content. Search advertising is moving closer to the personal context behind the query, not just the words in it.",
+          "marketer_angle": "Paid search teams need to watch how Personal Intelligence changes targeting, disclosure, measurement, and brand-safety expectations when AI Mode can use signals derived from connected Gmail, Calendar, and Photos data.",
+          "scores": {
+            "relevance": 10,
+            "topicality": 10,
+            "viral_potential": 9,
+            "total": 29
+          },
+          "sources": [
+            {
+              "title": "Search Engine Land — Google begins testing ads in AI Mode for users with Personal Intelligence enabled",
+              "url": "https://searchengineland.com/google-begins-testing-ads-in-ai-mode-for-users-with-personal-intelligence-enabled-496990"
+            },
+            {
+              "title": "Google — New settings for smart features and personalization in Gmail",
+              "url": "https://blog.google/products-and-platforms/products/gmail/new-settings-smart-features-and-personalization-gmail/"
+            },
+            {
+              "title": "Google Search Help — Personal Intelligence FAQ",
+              "url": "https://support.google.com/websearch/answer/16859283?p=lm-pi-faq"
+            }
+          ]
+        },
+        {
+          "option": 5,
+          "title": "Treasure AI launches a governed Digital Worker for marketing execution",
+          "proposed_hook": "Treasure AI wants an agent to move from customer signal to recommendation and action on a schedule. The product pitch puts permissions and approval moments inside the worker, not around it.",
+          "marketer_angle": "CRM and lifecycle teams should examine how roles, approved tools, schedules, and human approval gates are defined before a Digital Worker can turn customer data into live campaigns. Treasure AI also tied the launch to click-based email pricing, which could shift how teams evaluate channel cost.",
+          "scores": {
+            "relevance": 10,
+            "topicality": 9,
+            "viral_potential": 8,
+            "total": 27
+          },
+          "sources": [
+            {
+              "title": "Treasure AI — Builds a brand live and unveils Digital Worker",
+              "url": "https://www.treasure.ai/press-releases/agentic-world-2026-digital-worker"
+            }
+          ]
+        },
+        {
+          "option": 6,
+          "title": "MorningAI connects marketing agents to Microsoft 365 and adds spending limits",
+          "proposed_hook": "MorningAI can now read the inbox, open the spreadsheet, draft the reply, and schedule the meeting from one request. It also gives admins a kill switch when the AI bill reaches its limit.",
+          "marketer_angle": "Marketing teams get a practical model for governed agent work: per-user Microsoft connections, IT approval, draft-before-send controls, usage visibility, member limits, and automatic pauses when credits run out.",
+          "scores": {
+            "relevance": 9,
+            "topicality": 10,
+            "viral_potential": 7,
+            "total": 26
+          },
+          "sources": [
+            {
+              "title": "MorningAI — October 19, 2026 product updates",
+              "url": "https://www.morningai.com/blog/october-19-2026-product-updates"
+            }
+          ]
         }
       ],
       "events": [
@@ -95,6 +157,12 @@
           "type": "source_coverage_recorded",
           "actor": "scheduled_research",
           "detail": "Recorded Adobe retrieval failure and Webflow Help bot block; retained successfully retrieved primary coverage and removed the blocked Webflow Help page from the surfaced source list."
+        },
+        {
+          "at": "2026-10-19T08:41:45-04:00",
+          "type": "additional_topic_options_added",
+          "actor": "scheduled_research",
+          "detail": "User requested more choices; appended ranked options 4-6 after a new 72-hour AI marketing and martech sweep, preserving options 1-3."
         }
       ],
       "coverage_gaps": [
@@ -109,6 +177,12 @@
           "url": "https://help.webflow.com/hc/en-us/articles/51703818404243-Webflow-AEO-overview",
           "status": "blocked",
           "detail": "Cloudflare challenge blocked retrieval. The Webflow product update was retrieved successfully and used as the primary source."
+        },
+        {
+          "source": "Search Engine Land report on AI Mode ad testing",
+          "url": "https://searchengineland.com/google-begins-testing-ads-in-ai-mode-for-users-with-personal-intelligence-enabled-496990",
+          "status": "blocked",
+          "detail": "Cloudflare blocked full-page retrieval. The indexed report identifies the ad test, while Google's October 16 update and Search Help documentation were retrieved directly and confirm how connected-content signals can personalize AI Mode and be used to show ads."
         }
       ]
     }
