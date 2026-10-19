@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-19T08:43:19-04:00",
+  "updated_at": "2026-10-19T08:54:06-04:00",
   "sync": {
     "status": "connected",
     "discord_guild_id": "1553886101003837561",
@@ -16,9 +16,32 @@
       "kind": "content",
       "title": "AI marketing and martech topic approval queue",
       "created_at": "2026-10-19T08:03:12-04:00",
-      "updated_at": "2026-10-19T08:43:19-04:00",
-      "status": "awaiting_topic_approval",
-      "stage": "topic_approval",
+      "updated_at": "2026-10-19T08:54:06-04:00",
+      "status": "drafting",
+      "stage": "post_drafting",
+      "topic": {
+        "option": 4,
+        "title": "Google starts testing ads inside AI Mode with Personal Intelligence",
+        "selected": true,
+        "approved_via": "discord",
+        "approved_at": "2026-10-19T08:54:06-04:00",
+        "proposed_hook": "Google is testing ads inside AI answers shaped by a user's connected content. Search advertising is moving closer to the personal context behind the query, not just the words in it.",
+        "marketer_angle": "Paid search teams need to watch how Personal Intelligence changes targeting, disclosure, measurement, and brand-safety expectations when AI Mode can use signals derived from connected Gmail, Calendar, and Photos data.",
+        "sources": [
+          {
+            "title": "Search Engine Land — Google begins testing ads in AI Mode for users with Personal Intelligence enabled",
+            "url": "https://searchengineland.com/google-begins-testing-ads-in-ai-mode-for-users-with-personal-intelligence-enabled-496990"
+          },
+          {
+            "title": "Google — New settings for smart features and personalization in Gmail",
+            "url": "https://blog.google/products-and-platforms/products/gmail/new-settings-smart-features-and-personalization-gmail/"
+          },
+          {
+            "title": "Google Search Help — Connect your Google content apps to get a Search services experience that's tailored to you",
+            "url": "https://support.google.com/websearch/answer/16859283?p=lm-pi-faq"
+          }
+        ]
+      },
       "topic_options": [
         {
           "option": 1,
@@ -173,6 +196,12 @@
           "type": "topic_source_corroborated",
           "actor": "scheduled_research",
           "detail": "Added retrieved independent coverage corroborating option 5, including Digital Worker permissions and click-based email pricing."
+        },
+        {
+          "at": "2026-10-19T08:54:06-04:00",
+          "type": "topic_approved",
+          "actor": "discord_user",
+          "detail": "User approved option 4, Google starts testing ads inside AI Mode with Personal Intelligence, for drafting only."
         }
       ],
       "coverage_gaps": [
