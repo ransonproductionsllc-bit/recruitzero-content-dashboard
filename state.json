@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-16T08:36:12-04:00",
+  "updated_at": "2026-10-19T08:03:12-04:00",
   "sync": {
     "status": "connected",
     "discord_guild_id": "1553886101003837561",
@@ -10,7 +10,93 @@
     "authorized_github_user": "ransonproductionsllc-bit",
     "dashboard_refresh_seconds": 60
   },
-  "active_queue": [],
+  "active_queue": [
+    {
+      "id": "ai-martech-topic-queue-2026-10-19",
+      "kind": "content",
+      "title": "AI marketing and martech topic approval queue",
+      "created_at": "2026-10-19T08:03:12-04:00",
+      "updated_at": "2026-10-19T08:03:12-04:00",
+      "status": "awaiting_topic_approval",
+      "stage": "topic_approval",
+      "topic_options": [
+        {
+          "option": 1,
+          "title": "Adobe lets Marketo agents build and activate Smart Campaigns",
+          "proposed_hook": "Marketo agents can now move from campaign brief to executable workflow. The important question is no longer whether AI can suggest a campaign, but where the approval line sits before it touches your database.",
+          "marketer_angle": "Marketing operations teams need explicit review gates, permissions, and audit trails when AI agents can create Smart Campaigns, generate assets, validate setup, and activate work inside Marketo Engage.",
+          "scores": {
+            "relevance": 10,
+            "topicality": 8,
+            "viral_potential": 9,
+            "total": 27
+          },
+          "sources": [
+            {
+              "title": "Adobe \u2014 Make your Smart Campaigns smarter with agentic workflows",
+              "url": "https://business.adobe.com/blog/smart-campaigns-agentic-workflows"
+            },
+            {
+              "title": "Puglisi Consulting \u2014 Three vendor launches moved the approval line",
+              "url": "https://puglisiconsulting.com/digital-marketing-ai-agents-approval-line/"
+            }
+          ]
+        },
+        {
+          "option": 2,
+          "title": "Profound launches AI agents that run visibility workflows",
+          "proposed_hook": "AI-search monitoring is starting to act on its own findings. Profound now wants agents to audit brand visibility, spot gaps, and hand marketers the next move.",
+          "marketer_angle": "AEO and content teams need to decide which recurring analysis can run autonomously, which outputs need human review, and how agent recommendations connect to production work without becoming another dashboard backlog.",
+          "scores": {
+            "relevance": 9,
+            "topicality": 10,
+            "viral_potential": 8,
+            "total": 27
+          },
+          "sources": [
+            {
+              "title": "Profound \u2014 Introducing the next generation of Agents",
+              "url": "https://www.tryprofound.com/blog/introducing-the-next-generation-of-marketing-agents"
+            },
+            {
+              "title": "Puglisi Consulting \u2014 Three vendor launches moved the approval line",
+              "url": "https://puglisiconsulting.com/digital-marketing-ai-agents-approval-line/"
+            }
+          ]
+        },
+        {
+          "option": 3,
+          "title": "Webflow connects analytics and AEO data to AI assistants through MCP",
+          "proposed_hook": "Your AI assistant can now inspect Webflow traffic, conversions, and AI-search visibility without waiting for a dashboard export. That shortens the distance between a performance question and a site change.",
+          "marketer_angle": "Web and growth teams can bring Optimize and Analyze data into Gemini or other MCP clients, but they still need governance around data access, recommended edits, and how quickly insights become live experiments.",
+          "scores": {
+            "relevance": 9,
+            "topicality": 8,
+            "viral_potential": 8,
+            "total": 25
+          },
+          "sources": [
+            {
+              "title": "Webflow \u2014 MCP adds analytics data and a Gemini connector",
+              "url": "https://webflow.com/updates/mcp-optimize-analyze-aeo"
+            },
+            {
+              "title": "Webflow Help \u2014 AEO overview",
+              "url": "https://help.webflow.com/hc/en-us/articles/51703818404243-Webflow-AEO-overview"
+            }
+          ]
+        }
+      ],
+      "events": [
+        {
+          "at": "2026-10-19T08:03:12-04:00",
+          "type": "topic_queue_created",
+          "actor": "scheduled_research",
+          "detail": "Created three ranked AI marketing and martech topics from the previous 72 hours with overlap for late indexing; awaiting Discord approval."
+        }
+      ]
+    }
+  ],
   "archive": [
     {
       "id": "facebook-your-algorithm-test-2026-10-15",
@@ -56,7 +142,7 @@
     {
       "id": "harrisquest-mcp-e2e-test-2026-10-15",
       "kind": "test",
-      "title": "TEST — AI marketing topic approval queue",
+      "title": "TEST \u2014 AI marketing topic approval queue",
       "created_at": "2026-10-15T14:57:37-04:00",
       "updated_at": "2026-10-15T15:03:20-04:00",
       "status": "complete",
@@ -75,11 +161,11 @@
           },
           "sources": [
             {
-              "title": "HarrisQuest — HarrisQuest MCP brings brand data into your AI",
+              "title": "HarrisQuest \u2014 HarrisQuest MCP brings brand data into your AI",
               "url": "https://www.harrisquest.com/blog/harrisquest-mcp-brings-brand-data-into-your-ai"
             },
             {
-              "title": "Newswire — HarrisQuest MCP launch announcement",
+              "title": "Newswire \u2014 HarrisQuest MCP launch announcement",
               "url": "https://www.newswire.com/news/x-9615131"
             }
           ]
@@ -97,11 +183,11 @@
           },
           "sources": [
             {
-              "title": "Google Ads — October Demand Gen Drop",
+              "title": "Google Ads \u2014 October Demand Gen Drop",
               "url": "https://blog.google/products/ads-commerce/demand-gen-drop-october-2026/"
             },
             {
-              "title": "Stacked Marketer — October 14 marketing news roundup",
+              "title": "Stacked Marketer \u2014 October 14 marketing news roundup",
               "url": "https://www.stackedmarketer.com/news"
             }
           ]
@@ -119,11 +205,11 @@
           },
           "sources": [
             {
-              "title": "Salesforce — Agreement to acquire Loops",
+              "title": "Salesforce \u2014 Agreement to acquire Loops",
               "url": "https://www.salesforce.com/news/stories/salesforce-signs-definitive-agreement-to-acquire-loops/"
             },
             {
-              "title": "MarTech — Salesforce acquires Loops to boost AI agent monitoring",
+              "title": "MarTech \u2014 Salesforce acquires Loops to boost AI agent monitoring",
               "url": "https://martech.org/salesforce-acquires-loops-to-boost-ai-powered-agent-monitoring/"
             }
           ]
@@ -177,11 +263,11 @@
         "word_count": 247,
         "sources": [
           {
-            "title": "HarrisQuest — HarrisQuest MCP brings brand data into your AI",
+            "title": "HarrisQuest \u2014 HarrisQuest MCP brings brand data into your AI",
             "url": "https://www.harrisquest.com/blog/harrisquest-mcp-brings-brand-data-into-your-ai"
           },
           {
-            "title": "Newswire — HarrisQuest MCP launch announcement",
+            "title": "Newswire \u2014 HarrisQuest MCP launch announcement",
             "url": "https://www.newswire.com/news/x-9615131"
           }
         ],
@@ -229,11 +315,11 @@
         "marketer_angle": "Digital analytics teams may need separate event taxonomies, attribution rules, anomaly checks, and experience tests for human sessions, AI referrals, and autonomous agent actions.",
         "sources": [
           {
-            "title": "Contentsquare — New AI-first Experience Platform",
+            "title": "Contentsquare \u2014 New AI-first Experience Platform",
             "url": "https://contentsquare.com/press/new-ai-first-experience-platform/"
           },
           {
-            "title": "CDP Institute — AI agents are becoming a second audience for brands",
+            "title": "CDP Institute \u2014 AI agents are becoming a second audience for brands",
             "url": "https://www.cdpinstitute.org/news/patterns/2026-10-14/"
           }
         ]
@@ -252,11 +338,11 @@
           },
           "sources": [
             {
-              "title": "Google — An intelligent new shopping cart",
+              "title": "Google \u2014 An intelligent new shopping cart",
               "url": "https://blog.google/products-and-platforms/products/shopping/universal-cart-launch/"
             },
             {
-              "title": "Search Engine Land — Google launches Universal Cart",
+              "title": "Search Engine Land \u2014 Google launches Universal Cart",
               "url": "https://searchengineland.com/google-launches-universal-cart-across-search-and-gemini-for-easier-shopping-496573"
             }
           ]
@@ -274,11 +360,11 @@
           },
           "sources": [
             {
-              "title": "Contentsquare — New AI-first Experience Platform",
+              "title": "Contentsquare \u2014 New AI-first Experience Platform",
               "url": "https://contentsquare.com/press/new-ai-first-experience-platform/"
             },
             {
-              "title": "CDP Institute — AI agents are becoming a second audience for brands",
+              "title": "CDP Institute \u2014 AI agents are becoming a second audience for brands",
               "url": "https://www.cdpinstitute.org/news/patterns/2026-10-14/"
             }
           ]
@@ -296,11 +382,11 @@
           },
           "sources": [
             {
-              "title": "HubSpot — New AI spending controls and flexible pricing",
+              "title": "HubSpot \u2014 New AI spending controls and flexible pricing",
               "url": "https://www.hubspot.com/company-news/flexible-pricing"
             },
             {
-              "title": "MarTech — HubSpot adds spending controls and flexible billing",
+              "title": "MarTech \u2014 HubSpot adds spending controls and flexible billing",
               "url": "https://martech.org/hubspot-adds-spending-controls-and-flexible-billing-as-ai-usage-grows/"
             }
           ]
@@ -360,11 +446,11 @@
         "word_count": 239,
         "sources": [
           {
-            "title": "Contentsquare — New AI-first Experience Platform",
+            "title": "Contentsquare \u2014 New AI-first Experience Platform",
             "url": "https://contentsquare.com/press/new-ai-first-experience-platform/"
           },
           {
-            "title": "CDP Institute — AI agents are becoming a second audience for brands",
+            "title": "CDP Institute \u2014 AI agents are becoming a second audience for brands",
             "url": "https://www.cdpinstitute.org/news/patterns/2026-10-14/"
           }
         ],
