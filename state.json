@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-19T08:03:12-04:00",
+  "updated_at": "2026-10-19T08:09:45-04:00",
   "sync": {
     "status": "connected",
     "discord_guild_id": "1553886101003837561",
@@ -16,7 +16,7 @@
       "kind": "content",
       "title": "AI marketing and martech topic approval queue",
       "created_at": "2026-10-19T08:03:12-04:00",
-      "updated_at": "2026-10-19T08:03:12-04:00",
+      "updated_at": "2026-10-19T08:09:45-04:00",
       "status": "awaiting_topic_approval",
       "stage": "topic_approval",
       "topic_options": [
@@ -79,10 +79,6 @@
             {
               "title": "Webflow — MCP adds analytics data and a Gemini connector",
               "url": "https://webflow.com/updates/mcp-optimize-analyze-aeo"
-            },
-            {
-              "title": "Webflow Help — AEO overview",
-              "url": "https://help.webflow.com/hc/en-us/articles/51703818404243-Webflow-AEO-overview"
             }
           ]
         }
@@ -93,6 +89,26 @@
           "type": "topic_queue_created",
           "actor": "scheduled_research",
           "detail": "Created three ranked AI marketing and martech topics from the previous 72 hours with overlap for late indexing; awaiting Discord approval."
+        },
+        {
+          "at": "2026-10-19T08:09:45-04:00",
+          "type": "source_coverage_recorded",
+          "actor": "scheduled_research",
+          "detail": "Recorded Adobe retrieval failure and Webflow Help bot block; retained successfully retrieved primary coverage and removed the blocked Webflow Help page from the surfaced source list."
+        }
+      ],
+      "coverage_gaps": [
+        {
+          "source": "Adobe official Smart Campaigns agentic workflows post",
+          "url": "https://business.adobe.com/blog/smart-campaigns-agentic-workflows",
+          "status": "retrieval_failed",
+          "detail": "Browser returned an HTTP/2 protocol error and direct fetch timed out. The October 15 release details were corroborated by an independent report that links the Adobe page."
+        },
+        {
+          "source": "Webflow AEO Help overview",
+          "url": "https://help.webflow.com/hc/en-us/articles/51703818404243-Webflow-AEO-overview",
+          "status": "blocked",
+          "detail": "Cloudflare challenge blocked retrieval. The Webflow product update was retrieved successfully and used as the primary source."
         }
       ]
     }
