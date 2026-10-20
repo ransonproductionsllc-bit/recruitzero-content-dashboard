@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-10-20T07:35:20-04:00",
+  "updated_at": "2026-10-20T08:06:44-04:00",
   "sync": {
     "status": "connected",
     "discord_guild_id": "1553886101003837561",
@@ -10,7 +10,210 @@
     "authorized_github_user": "ransonproductionsllc-bit",
     "dashboard_refresh_seconds": 60
   },
-  "active_queue": [],
+  "active_queue": [
+    {
+      "id": "ai-martech-topic-queue-2026-10-20",
+      "kind": "content",
+      "title": "AI marketing and martech topic approval queue",
+      "created_at": "2026-10-20T08:06:44-04:00",
+      "updated_at": "2026-10-20T08:06:44-04:00",
+      "status": "awaiting_topic_approval",
+      "stage": "topic_approval",
+      "topic_options": [
+        {
+          "option": 1,
+          "rank": 1,
+          "title": "Different launches an AI system that runs the demand-generation loop",
+          "event_date": "2026-10-20",
+          "proposed_hook": "Different wants AI to run the work between a campaign brief and a budget decision. The marketer still approves the work, but the system builds, launches, measures, and reallocates spend.",
+          "marketer_angle": "B2B demand teams need to define approval boundaries, system access, attribution rules, and the evidence required before an agent can move money between programs.",
+          "why_it_passed": "The company launched a specific supervised product that reaches campaign activation and budget allocation, with a direct operator impact. Product and outcome claims remain attributed to the vendor.",
+          "operational_impact_chain": "Strategy and account data -> AI builds multichannel campaigns -> marketer approves work -> system launches and measures -> marketing leadership changes budget allocation based on pipeline or revenue results.",
+          "scores": {
+            "relevance": 10,
+            "relevance_rationale": "It changes campaign production, approval, activation, measurement, and spend allocation for B2B demand teams.",
+            "topicality": 10,
+            "topicality_rationale": "Different emerged from stealth and announced the product on October 20, 2026.",
+            "viral_potential": 9,
+            "viral_potential_rationale": "The tension between a small team, supervised agents, and budget control should prompt informed debate without relying on the vendor staffing claim as fact.",
+            "total": 29
+          },
+          "confidence": "qualified",
+          "confidence_limitation": "The launch is confirmed, but no substantive independent product test was found and the vendor did not publish pricing, supported channels, attribution methods, or security details.",
+          "novelty": {
+            "result": "distinct",
+            "rationale": "The archive covers individual agents and AI controls, not a new vendor attempting to operate the full B2B demand-generation loop and reallocate spend."
+          },
+          "predicted_audience_response": "Marketing operations leaders will ask where human approval sits, which systems the product replaces, and whether revenue measurement survives concurrent campaigns.",
+          "materiality_gates": {
+            "material_event": "pass",
+            "editorial_thesis_fit": "pass",
+            "primary_evidence": "pass",
+            "availability_clarity": "pass_with_limits",
+            "claim_discipline": "pass_with_vendor_attribution",
+            "operational_impact": "pass",
+            "contradiction_search": "pass_no_independent_test_found",
+            "archive_novelty": "pass"
+          },
+          "coverage_limitations": [
+            "No substantive independent product or funding coverage was found in the discovery window.",
+            "The release does not disclose pricing, supported channels, attribution methods, or security architecture."
+          ],
+          "sources": [
+            {
+              "type": "primary_company_release",
+              "title": "Different emerges from stealth with $48M for AI that runs demand generation",
+              "url": "https://www.prnewswire.com/news-releases/different-emerges-from-stealth-with-48m-for-ai-that-runs-demand-generation-for-lean-b2b-marketing-teams-302913497.html"
+            }
+          ]
+        },
+        {
+          "option": 2,
+          "rank": 2,
+          "title": "Contentstack gives CMS agents bring-your-own-model controls",
+          "event_date": "2026-10-17",
+          "proposed_hook": "Contentstack is letting companies choose which models power their CMS agents and which keys pay for them. Model selection is becoming an operating control, not a hidden vendor default.",
+          "marketer_angle": "Content operations teams need a shared policy with security, procurement, and FinOps for provider approval, credentials, per-agent overrides, logs, and token costs.",
+          "why_it_passed": "Contentstack documented a concrete organization-level control that changes model governance, auditability, and cost ownership inside content workflows.",
+          "operational_impact_chain": "Organization chooses provider and key -> CMS agents route work through that model -> admins inspect provider and token logs -> security, procurement, and content operations change model approval and cost-allocation decisions.",
+          "scores": {
+            "relevance": 9,
+            "relevance_rationale": "The feature creates a present governance and cost-allocation decision for CMS administrators and content operations.",
+            "topicality": 9,
+            "topicality_rationale": "Contentstack documented the new control on October 17, inside the 72-hour window with late-indexing overlap.",
+            "viral_potential": 8,
+            "viral_potential_rationale": "The story creates a practical ownership debate about whether model choice belongs with content, architecture, security, or finance.",
+            "total": 26
+          },
+          "confidence": "high",
+          "confidence_limitation": "The documentation supports the feature and availability claims. No independent implementation report was found, and bring-your-own-key does not by itself prove data residency or zero retention.",
+          "novelty": {
+            "result": "distinct",
+            "rationale": "Recent archive items cover agent execution and AI credit controls; this event concerns provider choice, credentials, audit logs, and cost ownership inside a CMS."
+          },
+          "predicted_audience_response": "Enterprise teams will compare provider support, data-handling terms, model cost, and audit logs before enabling agents.",
+          "materiality_gates": {
+            "material_event": "pass",
+            "editorial_thesis_fit": "pass",
+            "primary_evidence": "pass",
+            "availability_clarity": "pass",
+            "claim_discipline": "pass",
+            "operational_impact": "pass",
+            "contradiction_search": "pass_no_independent_report_found",
+            "archive_novelty": "pass"
+          },
+          "coverage_limitations": [
+            "No independent implementation report was found.",
+            "Polaris has narrower provider support than Custom Agents and organization-level enablement requires an account manager."
+          ],
+          "sources": [
+            {
+              "type": "primary_documentation",
+              "title": "Contentstack AI Settings: Custom Models (Bring Your Own Key)",
+              "url": "https://www.contentstack.com/docs/administration/ai-settings-custom-models"
+            },
+            {
+              "type": "primary_changelog",
+              "title": "Contentstack changelog",
+              "url": "https://www.contentstack.com/docs/changelog"
+            }
+          ]
+        },
+        {
+          "option": 3,
+          "rank": 3,
+          "title": "Teradata adds identity-reduction and access controls for AI data work",
+          "event_date": "2026-10-20",
+          "proposed_hook": "Marketing teams want agents to use customer data without handing every agent every identifier. Teradata is adding controls meant to preserve useful joins while reducing who can see the raw identity.",
+          "marketer_angle": "Customer-data and analytics teams need to separate usable data from exposed identity, define dynamic access for agents, and verify which protections qualify under their own privacy rules.",
+          "why_it_passed": "Teradata announced a specific package of privacy, authorization, encryption, and recovery controls with current and planned availability, backed by independent analyst context.",
+          "operational_impact_chain": "Customer data enters the analytics environment -> identifiers and access rights are reduced or constrained -> analysts and agents use protected data -> marketing teams change which models, segments, and workflows may access sensitive fields -> privacy exposure and recovery risk become measurable controls.",
+          "scores": {
+            "relevance": 9,
+            "relevance_rationale": "The controls affect how customer-data and marketing-analytics teams authorize analysts, models, and agents to use sensitive fields.",
+            "topicality": 10,
+            "topicality_rationale": "Teradata announced the new controls on October 20, 2026.",
+            "viral_potential": 7,
+            "viral_potential_rationale": "The topic is technical, but the distinction between protected, re-identifiable data and true anonymization should produce useful practitioner discussion.",
+            "total": 26
+          },
+          "confidence": "high",
+          "confidence_limitation": "The launch and availability distinctions are corroborated. Privacy protection is not the same as legal anonymization in every jurisdiction, and performance claims depend on configuration.",
+          "novelty": {
+            "result": "distinct",
+            "rationale": "No archived RecruitZero item addresses identity exposure, dynamic authorization, and recovery controls for marketing data and AI workloads."
+          },
+          "predicted_audience_response": "Data leaders will focus on the difference between protected, re-identifiable data and legal anonymization, plus which controls are available in each deployment model.",
+          "materiality_gates": {
+            "material_event": "pass",
+            "editorial_thesis_fit": "pass",
+            "primary_evidence": "pass",
+            "availability_clarity": "pass_current_and_planned_components",
+            "claim_discipline": "pass",
+            "operational_impact": "pass",
+            "contradiction_search": "pass_with_independent_analysis",
+            "archive_novelty": "pass"
+          },
+          "coverage_limitations": [
+            "Privacy protection is not equivalent to legal anonymization in every jurisdiction.",
+            "Performance claims have not been independently benchmarked across configurations."
+          ],
+          "sources": [
+            {
+              "type": "primary_company_release",
+              "title": "Teradata introduces privacy, security, and resiliency capabilities",
+              "url": "https://www.prnewswire.com/news-releases/teradata-introduces-new-privacy-security-and-resiliency-capabilities-as-ai-forces-change-in-enterprise-data-protection-302913579.html"
+            },
+            {
+              "type": "independent_context",
+              "title": "TechTarget: Teradata's new security measures aim to harness AI agents",
+              "url": "https://www.techtarget.com/data-technologies/news/366652361/Teradatas-new-security-measures-aim-to-harness-AI-agents"
+            }
+          ]
+        }
+      ],
+      "research": {
+        "source_cutoff": "2026-10-17T08:01:03-04:00",
+        "discovery_window_hours": 72,
+        "discovery_window_expansion": null,
+        "event_ledger_path": "/home/ranson/.hermes/social-queue/research/2026-10-20-ai-martech-event-ledger.json",
+        "decision_journal_path": "/home/ranson/.hermes/social-queue/research/2026-10-20-ai-martech-decision-journal.md",
+        "reserve_candidate_count": 3,
+        "reserve_candidates": [
+          "JustAI Marketing Harness",
+          "WisdomAI Owls",
+          "Sumsub Know Your Agent Module for MCP"
+        ],
+        "coverage_gaps": [
+          {
+            "source": "Meta Commercial Terms preview",
+            "url": "https://www.facebook.com/legal/commercial_terms_preview",
+            "status": "inconsistent_retrieval",
+            "cutoff_advanced": false,
+            "detail": "Regional wording may differ. Candidate deferred until the effective October 30 text can be compared."
+          },
+          {
+            "source": "Independent coverage for Different",
+            "status": "not_found",
+            "detail": "Vendor claims are labeled and confidence is qualified."
+          },
+          {
+            "source": "Independent coverage for Contentstack custom models",
+            "status": "not_found",
+            "detail": "Official documentation supports the surfaced feature and availability claims."
+          }
+        ]
+      },
+      "events": [
+        {
+          "at": "2026-10-20T08:06:44-04:00",
+          "type": "topic_queue_created",
+          "actor": "scheduled_research",
+          "detail": "Created exactly three ranked AI marketing and martech topics from the previous 72 hours with overlap for late indexing; awaiting approval."
+        }
+      ]
+    }
+  ],
   "archive": [
     {
       "id": "facebook-your-algorithm-test-2026-10-15",
