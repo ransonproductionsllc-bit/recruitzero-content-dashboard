@@ -91,6 +91,14 @@
     const assets = item.assets || {};
     const sources = post.sources || item.topic_options?.find(option => option.option === item.topic?.option)?.sources || [];
     const title = item.topic?.title || post.title || item.id;
+    const selectedTopic = item.topic_options?.find(option => option.option === item.topic?.option) || item.topic || {};
+    const editorial = item.editorial_intelligence || {};
+    const argumentReview = post.argument_review || editorial.argument_review || {};
+    const performance = item.performance || {};
+    const confidence = selectedTopic.confidence || editorial.confidence;
+    const novelty = selectedTopic.novelty || editorial.novelty;
+    const operationalImpact = selectedTopic.operational_impact || editorial.operational_impact;
+    const formatMeta = value => typeof value === 'string' ? value : value?.chain || value?.summary || value?.status || value?.level || 'Not recorded';
     const scoreRows = [
       ['Stop-slop', post.stop_slop_score != null ? `${post.stop_slop_score}/50` : 'Not recorded'],
       ['Voice fidelity', post.voice_fidelity_score != null ? `${post.voice_fidelity_score}/10` : 'Not recorded'],
@@ -116,6 +124,22 @@
           <section>
             <h2>Review</h2>
             ${scoreRows.map(([label,value]) => `<div class="score"><span>${escapeHtml(label)}</span><strong>${escapeHtml(value)}</strong></div>`).join('')}
+          </section>
+          <section>
+            <h2>Editorial intelligence</h2>
+            <div class="score"><span>Evidence confidence</span><strong>${escapeHtml(formatMeta(confidence))}</strong></div>
+            <div class="score"><span>Novelty</span><strong>${escapeHtml(formatMeta(novelty))}</strong></div>
+            <div class="score"><span>Argument review</span><strong>${escapeHtml(argumentReview.status || editorial.deep_review_status || 'Not recorded')}</strong></div>
+            <p style="margin-top:10px"><strong>Operational impact:</strong> ${escapeHtml(formatMeta(operationalImpact))}</p>
+            ${argumentReview.counterargument ? `<p style="margin-top:8px"><strong>Counterargument tested:</strong> ${escapeHtml(argumentReview.counterargument)}</p>` : ''}
+            ${Array.isArray(argumentReview.residual_risks) && argumentReview.residual_risks.length ? `<p style="margin-top:8px"><strong>Residual risks:</strong> ${escapeHtml(argumentReview.residual_risks.join('; '))}</p>` : ''}
+          </section>
+          <section>
+            <h2>Performance tracking</h2>
+            <div class="score"><span>Status</span><strong>${escapeHtml(performance.tracking_status || 'Not recorded')}</strong></div>
+            <div class="score"><span>7-day results</span><strong>${performance.day_7 ? 'Recorded' : 'Awaiting data'}</strong></div>
+            <div class="score"><span>30-day results</span><strong>${performance.day_30 ? 'Recorded' : 'Awaiting data'}</strong></div>
+            <p style="margin-top:10px">Publication remains manual. Analytics can be added later without changing the archived article.</p>
           </section>
           <section>
             <h2>Sources</h2>

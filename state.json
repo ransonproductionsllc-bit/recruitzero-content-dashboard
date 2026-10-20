@@ -1,6 +1,6 @@
 {
-  "schema_version": 1,
-  "updated_at": "2026-10-19T09:24:54-04:00",
+  "schema_version": 2,
+  "updated_at": "2026-10-20T07:35:20-04:00",
   "sync": {
     "status": "connected",
     "discord_guild_id": "1553886101003837561",
@@ -51,7 +51,27 @@
           "type": "voice_calibrated",
           "detail": "User-edited copy saved as the canonical writing reference."
         }
-      ]
+      ],
+      "editorial_intelligence": {
+        "workflow_version": 1,
+        "historical_record": true,
+        "deep_review_status": "not_recorded_pre_v2"
+      },
+      "performance": {
+        "tracking_status": "not_for_publication",
+        "publication_url": null,
+        "published_at": null,
+        "forecast": {
+          "relevance": null,
+          "topicality": null,
+          "viral_potential": null,
+          "predicted_audience_response": null
+        },
+        "day_7": null,
+        "day_30": null,
+        "qualitative_outcome": null,
+        "editorial_lesson": null
+      }
     },
     {
       "id": "harrisquest-mcp-e2e-test-2026-10-15",
@@ -209,6 +229,26 @@
         "original_path": "/home/ranson/.hermes/social-queue/linkedin/2026-10-15-harrisquest-mcp-e2e-test-cover-original.png",
         "final_path": "/home/ranson/.hermes/social-queue/linkedin/2026-10-15-harrisquest-mcp-e2e-test-cover-1200x627.png",
         "review_page_url": "https://ransonproductionsllc-bit.github.io/recruitzero-content-dashboard/review.html?id=harrisquest-mcp-e2e-test-2026-10-15"
+      },
+      "editorial_intelligence": {
+        "workflow_version": 1,
+        "historical_record": true,
+        "deep_review_status": "not_recorded_pre_v2"
+      },
+      "performance": {
+        "tracking_status": "not_for_publication",
+        "publication_url": null,
+        "published_at": null,
+        "forecast": {
+          "relevance": null,
+          "topicality": null,
+          "viral_potential": null,
+          "predicted_audience_response": null
+        },
+        "day_7": null,
+        "day_30": null,
+        "qualitative_outcome": null,
+        "editorial_lesson": null
       }
     },
     {
@@ -408,6 +448,26 @@
         "original_path": "/home/ranson/.hermes/social-queue/linkedin/2026-10-16-contentsquare-ai-agent-journeys-cover-original.png",
         "final_path": "/home/ranson/.hermes/social-queue/linkedin/2026-10-16-contentsquare-ai-agent-journeys-cover-1200x627.png",
         "review_page_url": "https://ransonproductionsllc-bit.github.io/recruitzero-content-dashboard/review.html?id=ai-martech-topic-queue-2026-10-16"
+      },
+      "editorial_intelligence": {
+        "workflow_version": 1,
+        "historical_record": true,
+        "deep_review_status": "not_recorded_pre_v2"
+      },
+      "performance": {
+        "tracking_status": "awaiting_publication_data",
+        "publication_url": null,
+        "published_at": null,
+        "forecast": {
+          "relevance": 10,
+          "topicality": 9,
+          "viral_potential": 9,
+          "predicted_audience_response": null
+        },
+        "day_7": null,
+        "day_30": null,
+        "qualitative_outcome": null,
+        "editorial_lesson": null
       }
     },
     {
@@ -702,7 +762,85 @@
         "original_path": "/home/ranson/.hermes/social-queue/linkedin/2026-10-19-google-ai-mode-personal-intelligence-ads-cover-original.png",
         "final_path": "/home/ranson/.hermes/social-queue/linkedin/2026-10-19-google-ai-mode-personal-intelligence-ads-cover-1200x627.png",
         "review_page_url": "https://ransonproductionsllc-bit.github.io/recruitzero-content-dashboard/review.html?id=ai-martech-topic-queue-2026-10-19"
+      },
+      "editorial_intelligence": {
+        "workflow_version": 1,
+        "historical_record": true,
+        "deep_review_status": "not_recorded_pre_v2"
+      },
+      "performance": {
+        "tracking_status": "awaiting_publication_data",
+        "publication_url": null,
+        "published_at": null,
+        "forecast": {
+          "relevance": 10,
+          "topicality": 10,
+          "viral_potential": 9,
+          "predicted_audience_response": null
+        },
+        "day_7": null,
+        "day_30": null,
+        "qualitative_outcome": null,
+        "editorial_lesson": null
       }
     }
-  ]
+  ],
+  "workflow_config": {
+    "version": 2,
+    "editorial_thesis": "RecruitZero explains where AI and martech changes alter the responsibilities, controls, economics, or measurement practices of marketing operators.",
+    "topic_queue_minimum": 3,
+    "topic_queue_maximum": 3,
+    "initial_research_window_hours": 72,
+    "expanded_research_window_days": [
+      7,
+      14
+    ],
+    "scoring": {
+      "relevance_max": 10,
+      "topicality_max": 10,
+      "viral_potential_max": 10,
+      "equal_weighting": true,
+      "requires_rationales": true
+    },
+    "pre_score_gates": [
+      "material_event",
+      "editorial_thesis_fit",
+      "primary_evidence",
+      "availability_clarity",
+      "claim_discipline",
+      "operational_impact",
+      "contradiction_search",
+      "archive_novelty"
+    ],
+    "post_draft_gates": [
+      "claim_evidence_complete",
+      "interpretation_red_team_pass",
+      "stop_slop_40_of_50",
+      "voice_fidelity_9_of_10",
+      "construction_pass",
+      "factual_fidelity"
+    ],
+    "automatic_linkedin_publishing": false
+  },
+  "performance_tracking": {
+    "status": "structure_active_awaiting_user_data",
+    "measurement_windows_days": [
+      7,
+      30
+    ],
+    "publication_is_manual": true,
+    "metrics": [
+      "impressions",
+      "members_reached",
+      "reactions",
+      "comments",
+      "reposts",
+      "link_clicks",
+      "click_through_rate",
+      "engagement_rate",
+      "relevant_practitioner_comments",
+      "corrections"
+    ],
+    "updated_at": "2026-10-20T07:35:20-04:00"
+  }
 }

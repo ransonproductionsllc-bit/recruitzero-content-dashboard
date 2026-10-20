@@ -281,15 +281,33 @@
   }
 
   function topicOptions(item) {
-    return `<div class="topic-options">${(item.topic_options || []).map(topic => `
+    return `<div class="topic-options">${(item.topic_options || []).map(topic => {
+      const scores = topic.scores || {};
+      const scoreSummary = [
+        scores.relevance != null ? `Relevance ${scores.relevance}/10` : '',
+        scores.topicality != null ? `Topicality ${scores.topicality}/10` : '',
+        scores.viral_potential != null ? `Viral ${scores.viral_potential}/10` : '',
+        scores.total != null ? `Total ${scores.total}/30` : ''
+      ].filter(Boolean).join(' · ');
+      const novelty = topic.novelty || topic.editorial_intelligence?.novelty;
+      const confidence = topic.confidence || topic.editorial_intelligence?.confidence;
+      const impact = topic.operational_impact || topic.editorial_intelligence?.operational_impact;
+      const passed = topic.why_it_passed || topic.editorial_intelligence?.why_it_passed;
+      return `
       <article class="topic-option">
         <span class="eyebrow">Option ${escapeHtml(topic.option)}</span>
         <h4>${escapeHtml(topic.title)}</h4>
         <p><strong>Hook:</strong> ${escapeHtml(topic.proposed_hook)}</p>
         <p><strong>Marketer angle:</strong> ${escapeHtml(topic.marketer_angle)}</p>
+        ${passed ? `<p><strong>Why it passed:</strong> ${escapeHtml(passed)}</p>` : ''}
+        ${impact ? `<p><strong>Operational impact:</strong> ${escapeHtml(typeof impact === 'string' ? impact : impact.chain || impact.summary || '')}</p>` : ''}
+        ${scoreSummary ? `<p><strong>Scores:</strong> ${escapeHtml(scoreSummary)}</p>` : ''}
+        ${confidence ? `<p><strong>Confidence:</strong> ${escapeHtml(typeof confidence === 'string' ? confidence : `${confidence.level || ''}${confidence.limitation ? ` — ${confidence.limitation}` : ''}`)}</p>` : ''}
+        ${novelty ? `<p><strong>Novelty:</strong> ${escapeHtml(typeof novelty === 'string' ? novelty : `${novelty.status || ''}${novelty.rationale ? ` — ${novelty.rationale}` : ''}`)}</p>` : ''}
         <p>${(topic.sources || []).map(src => `<a href="${escapeHtml(src.url)}" target="_blank" rel="noopener">${escapeHtml(src.title)}</a>`).join(' · ')}</p>
         <a class="button orange" href="${approvalUrl(item, 'APPROVE TOPIC', topic.option)}" target="_blank" rel="noopener">Approve option ${escapeHtml(topic.option)}</a>
-      </article>`).join('')}</div>`;
+      </article>`;
+    }).join('')}</div>`;
   }
 
   function postApproval(item) {

@@ -1,0 +1,27 @@
+{
+  "item_id": "replace-with-dashboard-item-id",
+  "tracking_status": "published_awaiting_day_7",
+  "publication_url": null,
+  "published_at": null,
+  "day_7": {
+    "measured_at": null,
+    "impressions": null,
+    "members_reached": null,
+    "reactions": null,
+    "comments": null,
+    "reposts": null,
+    "link_clicks": null,
+    "click_through_rate": null,
+    "engagement_rate": null,
+    "relevant_practitioner_comments": null,
+    "corrections": null
+  },
+  "day_30": null,
+  "qualitative_outcome": {
+    "intended_question_discussed": null,
+    "martech_practitioners_engaged": null,
+    "recurring_objections_or_questions": [],
+    "interpretation_result": null
+  },
+  "editorial_lesson": null
+}
