@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-10-20T10:41:05-04:00",
+  "updated_at": "2026-10-20T10:45:34-04:00",
   "sync": {
     "status": "connected",
     "discord_guild_id": "1553886101003837561",
@@ -16,9 +16,9 @@
       "kind": "content",
       "title": "AI marketing and martech topic approval queue",
       "created_at": "2026-10-20T08:06:44-04:00",
-      "updated_at": "2026-10-20T10:41:05-04:00",
-      "status": "revision_in_review",
-      "stage": "post_drafting",
+      "updated_at": "2026-10-20T10:45:34-04:00",
+      "status": "awaiting_post_approval",
+      "stage": "post_approval",
       "topic_options": [
         {
           "option": 1,
@@ -228,6 +228,12 @@
           "type": "editorial_direction_refined",
           "actor": "discord_user",
           "detail": "User required the article and future content to use products as evidence of broader, stack-independent changes in marketing work, workflows, controls, and considerations. Current article returned to drafting for reframing and review."
+        },
+        {
+          "at": "2026-10-20T10:45:34-04:00",
+          "type": "post_reframed_and_reviewed",
+          "actor": "recruitzero_content_workflow",
+          "detail": "Reframed the article around the broader, stack-independent marketing operating model. Product-as-evidence, argument, factual-fidelity, construction, stop-slop 47/50, and voice-fidelity 9/10 gates passed; awaiting post approval."
         }
       ],
       "topic": {
@@ -271,28 +277,31 @@
         },
         "argument_review": {
           "status": "pass",
-          "correction_cycles": 1,
+          "correction_cycles": 2,
           "unsupported_inferences": [],
           "missing_qualifications": [],
-          "vendor_framing_risks": [
-            "Product breadth and workflow remain supported primarily by Different's own materials; the post consistently attributes the capabilities and notes the lack of independent testing."
-          ],
-          "counterargument": "Different may be an integrated orchestration layer rather than an autonomous demand-generation system; activation and resource reallocation may still depend on conventional human decisions outside the platform.",
+          "vendor_framing_risks": [],
+          "counterargument": "Different may be an integrated orchestration layer rather than a genuinely autonomous demand-generation system, and activation or resource changes may still depend on conventional human decisions.",
           "operational_impact_status": "pass",
-          "operational_impact_rationale": "The article identifies the campaign workflow, responsible marketing team, approval decisions, and consequences for access, attribution, activation, and budget control without claiming autonomous reallocation.",
+          "operational_impact_rationale": "The article identifies workflow changes involving access, approval authority, intervention points, measurement quality, and resource decisions without claiming independent demonstration.",
           "novelty_status": "distinct",
+          "stack_independent_value": "pass",
+          "stack_independent_rationale": "The interpretation, impact bullets, takeaway, and question provide a vendor-neutral framework for permissions, approval paths, stop conditions, human checkpoints, and measurement requirements.",
           "required_corrections": [],
           "residual_risks": [
-            "No substantive independent product test was found.",
-            "General availability, customer eligibility, pricing, implementation scope, supported integrations, attribution methodology, security architecture, permission controls, and reallocation approval mechanics remain undisclosed."
+            "Different's product breadth and operating capabilities remain based on first-party launch materials rather than independent testing.",
+            "Precise approval mechanics for activation, optimization, and resource reallocation remain undisclosed.",
+            "The broader operating model is a reasoned possibility illustrated by one vendor launch, not evidence of an established industry direction."
           ]
-        }
+        },
+        "product_as_evidence": true,
+        "stack_independent_value": "pass"
       },
       "post": {
         "status": "awaiting_approval",
-        "title": "Different and the demand-generation approval line",
-        "body": "Different says its AI can run the work between a campaign brief and a budget decision. The question is who approves each step.\n\nDifferent emerged from stealth on October 20 with $48 million in total funding, according to its announcement. The company says its B2B platform builds campaigns across advertising, email, landing pages, and AEO content. Marketers review, direct, and approve the work before the platform connects to go-to-market systems to launch, measure, optimize, and reallocate resources.\n\nThis goes beyond campaign creation. Different is positioning AI closer to activation and resource decisions.\n\nThe available materials do not explain whether reallocation is automatic, recommended, or separately approved. They also do not establish general availability, customer eligibility, or implementation scope. No substantive independent product test was found.\n\nFor marketers, that changes the job:\n\n- Approval moves closer to activation. Teams need to define what the system may create, which tools it may access, and who authorizes a launch or budget change.\n\n- Measurement becomes a control surface. Resource decisions are only as reliable as the attribution behind them. Different has not disclosed its attribution methodology.\n\n- Access rules need to come first. The launch materials do not detail pricing, integrations, security, permissions, supported channels, or budget controls.\n\nThe takeaway: when AI moves from producing campaign pieces to acting across the campaign, judge it by what operators can inspect, approve, and stop.\n\nIf an AI system could launch your next campaign, where would you draw the approval line?",
-        "word_count": 242,
+        "title": "Different and the new marketing operating model",
+        "body": "Different puts a broader marketing operating model on display: AI participating beyond asset creation, closer to campaign operations.\n\nDifferent emerged from stealth on October 20, 2026 with $48 million in funding, according to its announcement. The company says its platform builds work across advertising, email, landing pages, and AEO content, then connects creation with activation, measurement, and resource reallocation. Marketers review, direct, and approve the work. The launch materials do not define the boundaries around activation or budget changes.\n\nDifferent illustrates one possible operating model. It does not prove a market-wide shift. Its product claims have not been independently tested, and the launch materials leave out pricing, complete channel and integration coverage, attribution methodology, security architecture, permission design, and detailed budget controls.\n\nFor marketers, that changes the job:\n\n- Teams move from reviewing assets to supervising workflows. Decide what AI can initiate, which systems it can access, and when a person must intervene.\n\n- Governance becomes part of campaign design. Set permissions, approval paths, and stop conditions before an agent enters production.\n\n- Measurement becomes an operating input. If performance data influences the next action or resource decision, attribution quality affects execution as well as reporting.\n\nThe takeaway: design how AI participates in marketing work before choosing a product. Evaluate any system by how clearly it defines roles, controls, and measurement.\n\nWhere would your team need a human checkpoint in an AI-supported campaign workflow?",
+        "word_count": 231,
         "sources": [
           {
             "type": "primary_company_release",
@@ -305,9 +314,9 @@
             "url": "https://ats.rippling.com/en-CA/differentai/jobs/1829b4c2-1db6-4a4c-b7f6-be852271b000"
           }
         ],
-        "stop_slop_score": 46,
+        "stop_slop_score": 47,
         "stop_slop_breakdown": {
-          "directness": 9,
+          "directness": 10,
           "rhythm": 9,
           "trust": 10,
           "authenticity": 9,
@@ -324,28 +333,30 @@
           "two_to_three_visible_bullets": true,
           "takeaway_label": true,
           "closing_question": true,
-          "factual_fidelity": true
+          "factual_fidelity": true,
+          "stack_independent_value": true
         },
         "argument_review": {
           "status": "pass",
-          "correction_cycles": 1,
+          "correction_cycles": 2,
           "unsupported_inferences": [],
           "missing_qualifications": [],
-          "vendor_framing_risks": [
-            "Product breadth and workflow remain supported primarily by Different's own materials; the post consistently attributes the capabilities and notes the lack of independent testing."
-          ],
-          "counterargument": "Different may be an integrated orchestration layer rather than an autonomous demand-generation system; activation and resource reallocation may still depend on conventional human decisions outside the platform.",
+          "vendor_framing_risks": [],
+          "counterargument": "Different may be an integrated orchestration layer rather than a genuinely autonomous demand-generation system, and activation or resource changes may still depend on conventional human decisions.",
           "operational_impact_status": "pass",
-          "operational_impact_rationale": "The article identifies the campaign workflow, responsible marketing team, approval decisions, and consequences for access, attribution, activation, and budget control without claiming autonomous reallocation.",
+          "operational_impact_rationale": "The article identifies workflow changes involving access, approval authority, intervention points, measurement quality, and resource decisions without claiming independent demonstration.",
           "novelty_status": "distinct",
+          "stack_independent_value": "pass",
+          "stack_independent_rationale": "The interpretation, impact bullets, takeaway, and question provide a vendor-neutral framework for permissions, approval paths, stop conditions, human checkpoints, and measurement requirements.",
           "required_corrections": [],
           "residual_risks": [
-            "No substantive independent product test was found.",
-            "General availability, customer eligibility, pricing, implementation scope, supported integrations, attribution methodology, security architecture, permission controls, and reallocation approval mechanics remain undisclosed."
+            "Different's product breadth and operating capabilities remain based on first-party launch materials rather than independent testing.",
+            "Precise approval mechanics for activation, optimization, and resource reallocation remain undisclosed.",
+            "The broader operating model is a reasoned possibility illustrated by one vendor launch, not evidence of an established industry direction."
           ]
         },
         "factual_fidelity": true,
-        "review_notes": "Initial red-team review required corrections to three overstatements. The corrected draft passed the second argument review, then passed stop-slop 46/50, voice fidelity 9/10, construction, and factual-fidelity gates.",
+        "review_notes": "Reframed after user feedback so Different functions as evidence of a broader marketing operating model. The final article passed the stack-independent argument gate, stop-slop 47/50, voice fidelity 9/10, construction, and factual-fidelity gates.",
         "writer_model": "claude-opus-5-5",
         "writer_provider": "claude-code",
         "writer_fallback_used": false,
@@ -355,7 +366,8 @@
             "status": "success"
           }
         ],
-        "markdown_path": "/home/ranson/.hermes/social-queue/linkedin/2026-10-20-different-demand-generation-reviewed.md"
+        "markdown_path": "/home/ranson/.hermes/social-queue/linkedin/2026-10-20-different-demand-generation-reviewed.md",
+        "stack_independent_value": true
       },
       "performance": {
         "tracking_status": "awaiting_publication_data",
@@ -1183,7 +1195,9 @@
       "construction_pass",
       "factual_fidelity"
     ],
-    "automatic_linkedin_publishing": false
+    "automatic_linkedin_publishing": false,
+    "product_as_evidence": true,
+    "stack_independent_value_required": true
   },
   "performance_tracking": {
     "status": "structure_active_awaiting_user_data",
