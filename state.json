@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-10-20T08:06:44-04:00",
+  "updated_at": "2026-10-20T10:26:18-04:00",
   "sync": {
     "status": "connected",
     "discord_guild_id": "1553886101003837561",
@@ -16,9 +16,9 @@
       "kind": "content",
       "title": "AI marketing and martech topic approval queue",
       "created_at": "2026-10-20T08:06:44-04:00",
-      "updated_at": "2026-10-20T08:06:44-04:00",
-      "status": "awaiting_topic_approval",
-      "stage": "topic_approval",
+      "updated_at": "2026-10-20T10:26:18-04:00",
+      "status": "drafting",
+      "stage": "post_drafting",
       "topic_options": [
         {
           "option": 1,
@@ -210,8 +210,30 @@
           "type": "topic_queue_created",
           "actor": "scheduled_research",
           "detail": "Created exactly three ranked AI marketing and martech topics from the previous 72 hours with overlap for late indexing; awaiting approval."
+        },
+        {
+          "at": "2026-10-20T10:26:18-04:00",
+          "type": "topic_approved",
+          "actor": "discord_user",
+          "detail": "User approved option 1, Different launches an AI system that runs the demand-generation loop, for drafting and review only."
         }
-      ]
+      ],
+      "topic": {
+        "option": 1,
+        "title": "Different launches an AI system that runs the demand-generation loop",
+        "selected": true,
+        "approved_via": "discord",
+        "approved_at": "2026-10-20T10:26:18-04:00",
+        "proposed_hook": "Different wants AI to run the work between a campaign brief and a budget decision. The marketer still approves the work, but the system builds, launches, measures, and reallocates spend.",
+        "marketer_angle": "B2B demand teams need to define approval boundaries, system access, attribution rules, and the evidence required before an agent can move money between programs.",
+        "sources": [
+          {
+            "type": "primary_company_release",
+            "title": "Different emerges from stealth with $48M for AI that runs demand generation",
+            "url": "https://www.prnewswire.com/news-releases/different-emerges-from-stealth-with-48m-for-ai-that-runs-demand-generation-for-lean-b2b-marketing-teams-302913497.html"
+          }
+        ]
+      }
     }
   ],
   "archive": [
