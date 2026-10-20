@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-10-20T10:26:18-04:00",
+  "updated_at": "2026-10-20T10:32:56-04:00",
   "sync": {
     "status": "connected",
     "discord_guild_id": "1553886101003837561",
@@ -16,9 +16,9 @@
       "kind": "content",
       "title": "AI marketing and martech topic approval queue",
       "created_at": "2026-10-20T08:06:44-04:00",
-      "updated_at": "2026-10-20T10:26:18-04:00",
-      "status": "drafting",
-      "stage": "post_drafting",
+      "updated_at": "2026-10-20T10:32:56-04:00",
+      "status": "awaiting_post_approval",
+      "stage": "post_approval",
       "topic_options": [
         {
           "option": 1,
@@ -216,6 +216,12 @@
           "type": "topic_approved",
           "actor": "discord_user",
           "detail": "User approved option 1, Different launches an AI system that runs the demand-generation loop, for drafting and review only."
+        },
+        {
+          "at": "2026-10-20T10:32:56-04:00",
+          "type": "post_reviewed",
+          "actor": "recruitzero_content_workflow",
+          "detail": "Claude Opus produced the initial draft with no fallback. One interpretation red-team correction cycle removed unsupported generalizations; the final article passed argument review, stop-slop 46/50, voice fidelity 9/10, construction, and factual-fidelity gates."
         }
       ],
       "topic": {
@@ -233,6 +239,132 @@
             "url": "https://www.prnewswire.com/news-releases/different-emerges-from-stealth-with-48m-for-ai-that-runs-demand-generation-for-lean-b2b-marketing-teams-302913497.html"
           }
         ]
+      },
+      "claim_evidence": {
+        "status": "complete",
+        "path": "/home/ranson/.hermes/social-queue/research/2026-10-20-different-claim-evidence.json",
+        "source_count": 2,
+        "verified_claim_count": 5,
+        "load_bearing_claims_traceable": true,
+        "qualifications_preserved": true,
+        "independent_product_test_found": false,
+        "prohibited_overstatements_enforced": true
+      },
+      "editorial_intelligence": {
+        "workflow_version": 2,
+        "deep_review_status": "pass",
+        "confidence": "qualified",
+        "confidence_limitation": "The launch is confirmed, but no substantive independent product test was found and the vendor did not publish pricing, supported channels, attribution methods, or security details.",
+        "novelty": {
+          "status": "distinct",
+          "rationale": "The archive covers individual agents and AI controls, not a new vendor attempting to operate the full B2B demand-generation loop and reallocate spend."
+        },
+        "operational_impact": {
+          "status": "pass",
+          "chain": "Strategy and account data -> AI builds multichannel campaigns -> marketer approves work -> system launches and measures -> marketing leadership changes budget allocation based on pipeline or revenue results."
+        },
+        "argument_review": {
+          "status": "pass",
+          "correction_cycles": 1,
+          "unsupported_inferences": [],
+          "missing_qualifications": [],
+          "vendor_framing_risks": [
+            "Product breadth and workflow remain supported primarily by Different's own materials; the post consistently attributes the capabilities and notes the lack of independent testing."
+          ],
+          "counterargument": "Different may be an integrated orchestration layer rather than an autonomous demand-generation system; activation and resource reallocation may still depend on conventional human decisions outside the platform.",
+          "operational_impact_status": "pass",
+          "operational_impact_rationale": "The article identifies the campaign workflow, responsible marketing team, approval decisions, and consequences for access, attribution, activation, and budget control without claiming autonomous reallocation.",
+          "novelty_status": "distinct",
+          "required_corrections": [],
+          "residual_risks": [
+            "No substantive independent product test was found.",
+            "General availability, customer eligibility, pricing, implementation scope, supported integrations, attribution methodology, security architecture, permission controls, and reallocation approval mechanics remain undisclosed."
+          ]
+        }
+      },
+      "post": {
+        "status": "awaiting_approval",
+        "title": "Different and the demand-generation approval line",
+        "body": "Different says its AI can run the work between a campaign brief and a budget decision. The question is who approves each step.\n\nDifferent emerged from stealth on October 20 with $48 million in total funding, according to its announcement. The company says its B2B platform builds campaigns across advertising, email, landing pages, and AEO content. Marketers review, direct, and approve the work before the platform connects to go-to-market systems to launch, measure, optimize, and reallocate resources.\n\nThis goes beyond campaign creation. Different is positioning AI closer to activation and resource decisions.\n\nThe available materials do not explain whether reallocation is automatic, recommended, or separately approved. They also do not establish general availability, customer eligibility, or implementation scope. No substantive independent product test was found.\n\nFor marketers, that changes the job:\n\n- Approval moves closer to activation. Teams need to define what the system may create, which tools it may access, and who authorizes a launch or budget change.\n\n- Measurement becomes a control surface. Resource decisions are only as reliable as the attribution behind them. Different has not disclosed its attribution methodology.\n\n- Access rules need to come first. The launch materials do not detail pricing, integrations, security, permissions, supported channels, or budget controls.\n\nThe takeaway: when AI moves from producing campaign pieces to acting across the campaign, judge it by what operators can inspect, approve, and stop.\n\nIf an AI system could launch your next campaign, where would you draw the approval line?",
+        "word_count": 242,
+        "sources": [
+          {
+            "type": "primary_company_release",
+            "title": "Different emerges from stealth with $48M for AI that runs demand generation",
+            "url": "https://www.prnewswire.com/news-releases/different-emerges-from-stealth-with-48m-for-ai-that-runs-demand-generation-for-lean-b2b-marketing-teams-302913497.html"
+          },
+          {
+            "type": "supporting_first_party",
+            "title": "Different — Applied AI Engineer",
+            "url": "https://ats.rippling.com/en-CA/differentai/jobs/1829b4c2-1db6-4a4c-b7f6-be852271b000"
+          }
+        ],
+        "stop_slop_score": 46,
+        "stop_slop_breakdown": {
+          "directness": 9,
+          "rhythm": 9,
+          "trust": 10,
+          "authenticity": 9,
+          "density": 9
+        },
+        "voice_fidelity_score": 9,
+        "construction_pass": true,
+        "construction_checklist": {
+          "word_count_150_250": true,
+          "hook": true,
+          "verified_event_explanation": true,
+          "interpretation": true,
+          "exact_marketer_transition": true,
+          "two_to_three_visible_bullets": true,
+          "takeaway_label": true,
+          "closing_question": true,
+          "factual_fidelity": true
+        },
+        "argument_review": {
+          "status": "pass",
+          "correction_cycles": 1,
+          "unsupported_inferences": [],
+          "missing_qualifications": [],
+          "vendor_framing_risks": [
+            "Product breadth and workflow remain supported primarily by Different's own materials; the post consistently attributes the capabilities and notes the lack of independent testing."
+          ],
+          "counterargument": "Different may be an integrated orchestration layer rather than an autonomous demand-generation system; activation and resource reallocation may still depend on conventional human decisions outside the platform.",
+          "operational_impact_status": "pass",
+          "operational_impact_rationale": "The article identifies the campaign workflow, responsible marketing team, approval decisions, and consequences for access, attribution, activation, and budget control without claiming autonomous reallocation.",
+          "novelty_status": "distinct",
+          "required_corrections": [],
+          "residual_risks": [
+            "No substantive independent product test was found.",
+            "General availability, customer eligibility, pricing, implementation scope, supported integrations, attribution methodology, security architecture, permission controls, and reallocation approval mechanics remain undisclosed."
+          ]
+        },
+        "factual_fidelity": true,
+        "review_notes": "Initial red-team review required corrections to three overstatements. The corrected draft passed the second argument review, then passed stop-slop 46/50, voice fidelity 9/10, construction, and factual-fidelity gates.",
+        "writer_model": "claude-opus-5-5",
+        "writer_provider": "claude-code",
+        "writer_fallback_used": false,
+        "writer_attempts": [
+          {
+            "model": "opus",
+            "status": "success"
+          }
+        ],
+        "markdown_path": "/home/ranson/.hermes/social-queue/linkedin/2026-10-20-different-demand-generation-reviewed.md"
+      },
+      "performance": {
+        "tracking_status": "awaiting_publication_data",
+        "publication_url": null,
+        "published_at": null,
+        "forecast": {
+          "relevance": 10,
+          "topicality": 10,
+          "viral_potential": 9,
+          "predicted_audience_response": "Marketing operations leaders will ask where human approval sits, which systems the product replaces, and whether revenue measurement survives concurrent campaigns."
+        },
+        "day_7": null,
+        "day_30": null,
+        "qualitative_outcome": null,
+        "editorial_lesson": null
       }
     }
   ],
