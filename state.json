@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-10-20T10:32:56-04:00",
+  "updated_at": "2026-10-20T10:41:05-04:00",
   "sync": {
     "status": "connected",
     "discord_guild_id": "1553886101003837561",
@@ -16,9 +16,9 @@
       "kind": "content",
       "title": "AI marketing and martech topic approval queue",
       "created_at": "2026-10-20T08:06:44-04:00",
-      "updated_at": "2026-10-20T10:32:56-04:00",
-      "status": "awaiting_post_approval",
-      "stage": "post_approval",
+      "updated_at": "2026-10-20T10:41:05-04:00",
+      "status": "revision_in_review",
+      "stage": "post_drafting",
       "topic_options": [
         {
           "option": 1,
@@ -222,6 +222,12 @@
           "type": "post_reviewed",
           "actor": "recruitzero_content_workflow",
           "detail": "Claude Opus produced the initial draft with no fallback. One interpretation red-team correction cycle removed unsupported generalizations; the final article passed argument review, stop-slop 46/50, voice fidelity 9/10, construction, and factual-fidelity gates."
+        },
+        {
+          "at": "2026-10-20T10:41:05-04:00",
+          "type": "editorial_direction_refined",
+          "actor": "discord_user",
+          "detail": "User required the article and future content to use products as evidence of broader, stack-independent changes in marketing work, workflows, controls, and considerations. Current article returned to drafting for reframing and review."
         }
       ],
       "topic": {
