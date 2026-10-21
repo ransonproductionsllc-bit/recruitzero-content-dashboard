@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-10-21T09:12:02-04:00",
+  "updated_at": "2026-10-21T09:18:00-04:00",
   "sync": {
     "status": "connected",
     "discord_guild_id": "1553886101003837561",
@@ -390,9 +390,9 @@
       "kind": "content",
       "title": "AI marketing and martech topic approval queue",
       "created_at": "2026-10-21T08:11:52-04:00",
-      "updated_at": "2026-10-21T09:12:02-04:00",
-      "status": "awaiting_topic_approval",
-      "stage": "topic_approval",
+      "updated_at": "2026-10-21T09:18:00-04:00",
+      "status": "drafting",
+      "stage": "writing_review",
       "topic_options": [
         {
           "option": 1,
@@ -766,8 +766,45 @@
           "type": "additional_topic_options_added",
           "actor": "discord_user_request",
           "detail": "Added three newly researched, distinct alternatives as options 4-6: Zoom shared customer context, Thought Industries knowledge governance, and monday.com AI voice-call governance. Awaiting explicit topic approval."
+        },
+        {
+          "at": "2026-10-21T09:18:00-04:00",
+          "type": "topic_approved",
+          "actor": "discord_user",
+          "detail": "User approved option 4, Zoom shared customer context for human and AI agents, for drafting and review only. Cover generation and LinkedIn publication remain unauthorized."
         }
-      ]
+      ],
+      "topic": {
+        "option": 4,
+        "title": "Zoom turns customer conversations into shared context for human and AI agents",
+        "selected": true,
+        "approved_via": "discord",
+        "approved_at": "2026-10-21T09:18:00-04:00",
+        "proposed_hook": "Zoom wants customer context to follow a person across calls, chats, contact-center interactions, and AI agents. The operating question is no longer only where customer data lives, but which context an agent may carry forward and act on.",
+        "marketer_angle": "CX, lifecycle, and marketing-operations teams need rules for context ownership, source freshness, consent, access, retention, and human escalation when conversation history becomes an execution input across channels.",
+        "sources": [
+          {
+            "type": "primary_company_release",
+            "title": "Zoom unites conversations, context, and action to transform customer experiences",
+            "url": "https://news.zoom.com/zoomtopia-cx-2026/"
+          },
+          {
+            "type": "independent_context",
+            "title": "CMSWire: Zoom launches Unified Context Layer for CX agents",
+            "url": "https://www.cmswire.com/contact-center/zoom-launches-unified-context-layer-for-cx-agents/"
+          }
+        ]
+      },
+      "claim_evidence": {
+        "status": "complete",
+        "path": "/home/ranson/.hermes/social-queue/research/2026-10-21-zoom-shared-context-claim-evidence.json",
+        "source_count": 2,
+        "verified_claim_count": 6,
+        "load_bearing_claims_traceable": true,
+        "qualifications_preserved": true,
+        "independent_product_test_found": false,
+        "prohibited_overstatements_enforced": true
+      }
     }
   ],
   "archive": [
