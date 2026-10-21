@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-10-20T10:45:34-04:00",
+  "updated_at": "2026-10-21T08:11:52-04:00",
   "sync": {
     "status": "connected",
     "discord_guild_id": "1553886101003837561",
@@ -384,6 +384,228 @@
         "qualitative_outcome": null,
         "editorial_lesson": null
       }
+    },
+    {
+      "id": "ai-martech-topic-queue-2026-10-21",
+      "kind": "content",
+      "title": "AI marketing and martech topic approval queue",
+      "created_at": "2026-10-21T08:11:52-04:00",
+      "updated_at": "2026-10-21T08:11:52-04:00",
+      "status": "awaiting_topic_approval",
+      "stage": "topic_approval",
+      "topic_options": [
+        {
+          "option": 1,
+          "rank": 1,
+          "title": "Salesforce agrees to acquire Braze, putting lifecycle stacks in transition",
+          "event_date": "2026-10-20",
+          "proposed_hook": "Salesforce has agreed to buy Braze, but the first marketing-operations decision arrives before the platforms integrate. Teams now have to manage a transition period with two roadmaps, uncertain packaging, and a $5.66 billion deal that may not close until Salesforce fiscal 2028.",
+          "marketer_angle": "Lifecycle and CRM teams need an acquisition-transition plan that protects current integrations, data flows, contract leverage, and roadmap options before a vendor publishes migration instructions.",
+          "why_it_passed": "Salesforce signed a definitive acquisition agreement with a disclosed value and closing conditions. The event changes procurement and architecture decisions now, while product-integration claims remain explicitly unmade.",
+          "operational_impact_chain": "Salesforce agrees to acquire Braze -> lifecycle engagement and CRM platforms may converge -> marketing operations, architecture, procurement, and data teams reassess contracts and integration roadmaps -> teams decide what to standardize, preserve, or delay before closing -> migration cost, vendor concentration, workflow continuity, and customer-data governance become measurable transition risks.",
+          "scores": {
+            "relevance": 10,
+            "relevance_rationale": "The agreement creates immediate procurement, architecture, roadmap, and governance decisions for teams using either platform.",
+            "topicality": 10,
+            "topicality_rationale": "Salesforce announced the definitive agreement on October 20, 2026, inside the current research window.",
+            "viral_potential": 9,
+            "viral_potential_rationale": "The size of the deal and the tension between consolidation and platform choice should prompt informed practitioner debate.",
+            "total": 29
+          },
+          "confidence": "high",
+          "confidence_limitation": "The agreement, value, and closing conditions are documented. The companies have not published an integration roadmap, packaging changes, migration policy, or post-close pricing.",
+          "novelty": {
+            "result": "distinct",
+            "rationale": "The archive includes a Salesforce agent-monitoring acquisition in a test item, but not consolidation of a major lifecycle-engagement platform into Salesforce customer and AI infrastructure."
+          },
+          "predicted_audience_response": "Braze and Salesforce users will ask what happens to roadmaps, pricing, integrations, data models, and existing investments while the companies remain separate.",
+          "materiality_gates": {
+            "material_event": "pass",
+            "editorial_thesis_fit": "pass",
+            "primary_evidence": "pass",
+            "availability_clarity": "pass_pending_close",
+            "claim_discipline": "pass",
+            "operational_impact": "pass",
+            "contradiction_search": "pass_with_integration_risk_context",
+            "archive_novelty": "pass"
+          },
+          "coverage_limitations": [
+            "The companies have not published a product-integration roadmap, packaging changes, migration plan, or post-close pricing.",
+            "The acquisition remains subject to Braze shareholder approval, regulatory approvals, and other closing conditions."
+          ],
+          "sources": [
+            {
+              "type": "primary_company_release",
+              "title": "Salesforce signs definitive agreement to acquire Braze",
+              "url": "https://www.salesforce.com/news/press-releases/2026/10/20/salesforce-signs-definitive-agreement-to-acquire-braze/?bc=OTH"
+            },
+            {
+              "type": "primary_regulatory_filing",
+              "title": "Salesforce Form 8-K: Braze merger agreement",
+              "url": "https://www.sec.gov/Archives/edgar/data/1108524/000119312526425881/d516983d8k.htm"
+            },
+            {
+              "type": "independent_context",
+              "title": "MarTech: Will Salesforce’s Braze deal bring clarity or chaos?",
+              "url": "https://martech.org/will-salesforces-braze-deal-bring-clarity-or-chaos/"
+            }
+          ]
+        },
+        {
+          "option": 2,
+          "rank": 2,
+          "title": "Databricks moves audience building and activation into the lakehouse",
+          "event_date": "2026-10-19",
+          "proposed_hook": "Databricks is moving CustomerLake from a private preview toward production. The bigger question for marketing teams is whether audience building still belongs in a separate CDP when marketers can work against governed lakehouse data.",
+          "marketer_angle": "CRM, data, and marketing-operations teams need to redraw ownership for segmentation, identity rules, steward overrides, activation quality, and the engineering work that sits between customer data and a live audience.",
+          "why_it_passed": "Campaign Agents advanced to Beta for more qualified customers, while Profile Agents entered Private Preview. The documentation makes availability and current limits clear, and independent coverage flags daily and micro-batch behavior that tempers real-time positioning.",
+          "operational_impact_chain": "CustomerLake Campaign Agents enter Beta -> marketers build audiences and sync them from governed lakehouse data -> CRM and data teams redefine who owns segmentation, identity rules, and activation quality -> teams decide which CDP functions stay separate and which move into the data platform -> engineering-ticket volume, audience turnaround, sync failures, and platform cost become transition measures.",
+          "scores": {
+            "relevance": 10,
+            "relevance_rationale": "The Beta changes segmentation ownership, CDP architecture, data-team handoffs, and activation controls for marketing operators.",
+            "topicality": 9,
+            "topicality_rationale": "The October 19 update is inside the 72-hour window and makes a June private preview more operationally actionable.",
+            "viral_potential": 8,
+            "viral_potential_rationale": "The prospect of replacing or shrinking a standalone CDP creates a concrete architecture and ownership debate.",
+            "total": 27
+          },
+          "confidence": "high",
+          "confidence_limitation": "Capabilities and preview status are documented, but general availability and pricing are unknown. Named performance and cost results come from Databricks and customers, not independent audits.",
+          "novelty": {
+            "result": "distinct",
+            "rationale": "Recent coverage addresses journey analytics and data protection, not moving audience creation, identity preparation, and activation into a governed lakehouse."
+          },
+          "predicted_audience_response": "Operators will compare marketer self-service against data-steward controls, sync latency, connector coverage, and the cost of replacing a current CDP.",
+          "materiality_gates": {
+            "material_event": "pass",
+            "editorial_thesis_fit": "pass",
+            "primary_evidence": "pass",
+            "availability_clarity": "pass_preview_limits",
+            "claim_discipline": "pass_with_vendor_result_attribution",
+            "operational_impact": "pass",
+            "contradiction_search": "pass_with_latency_and_maturity_limits",
+            "archive_novelty": "pass"
+          },
+          "coverage_limitations": [
+            "Databricks has not published general-availability timing or pricing.",
+            "Named results are vendor and customer claims rather than independently audited benchmarks.",
+            "Published workflows include daily syncs and micro-batch profile updates, so broad real-time claims require qualification."
+          ],
+          "sources": [
+            {
+              "type": "primary_company_blog",
+              "title": "Databricks CustomerLake enters Beta",
+              "url": "https://www.databricks.com/blog/customerlake-beta"
+            },
+            {
+              "type": "independent_context",
+              "title": "CMSWire: Databricks CustomerLake enters Beta as enterprises go live with agentic CDP",
+              "url": "https://www.cmswire.com/customer-data-platforms/databricks-customerlake-enters-beta-as-enterprises-go-live-with-agentic-cdp/"
+            }
+          ]
+        },
+        {
+          "option": 3,
+          "rank": 3,
+          "title": "FTC conditions the Publicis-LiveRamp deal on neutral access and data firewalls",
+          "event_date": "2026-10-19",
+          "proposed_hook": "Publicis can own shared adtech infrastructure only if LiveRamp keeps serving rivals on neutral terms. Marketers now have a concrete checklist for testing whether a supposedly neutral data layer stays neutral after an acquisition.",
+          "marketer_angle": "Advertisers and agencies need to turn neutrality into operating controls: service parity, pricing and support comparisons, customer-data firewalls, audit evidence, escalation rights, and exit plans if ownership changes behavior.",
+          "why_it_passed": "The FTC published a proposed consent order with specific nondiscrimination, data-separation, non-retaliation, and audit requirements. Independent reporting confirms the safeguards while questioning whether behavioral remedies will preserve market trust.",
+          "operational_impact_chain": "FTC conditions the Publicis-LiveRamp deal -> LiveRamp must preserve nondiscriminatory access and isolate customer data -> advertisers, agencies, and platform partners add neutrality and audit rights to vendor governance -> teams decide whether contractual safeguards offset ownership concentration -> access quality, support parity, audit findings, switching behavior, and measurement continuity become watch metrics.",
+          "scores": {
+            "relevance": 9,
+            "relevance_rationale": "The order directly affects vendor access, privacy controls, audit rights, and measurement infrastructure used by marketing operators.",
+            "topicality": 9,
+            "topicality_rationale": "The FTC published the order on October 19 and the practical effects remain tied to a pending acquisition and public-comment process.",
+            "viral_potential": 8,
+            "viral_potential_rationale": "Agency ownership of neutral data infrastructure creates a clear trust and control question for advertisers and rival agencies.",
+            "total": 26
+          },
+          "confidence": "high",
+          "confidence_limitation": "The order and required controls are documented, but the matter remains pending and behavioral safeguards do not prove that customers will view LiveRamp as equally neutral after closing.",
+          "novelty": {
+            "result": "distinct",
+            "rationale": "No archived RecruitZero item centers neutral access, customer-data firewalls, and audit rights for shared adtech infrastructure owned by an agency group."
+          },
+          "predicted_audience_response": "Teams will ask whether contractual safeguards and audits are enough to offset ownership concentration, and which service, pricing, support, and data-access metrics they should monitor.",
+          "materiality_gates": {
+            "material_event": "pass",
+            "editorial_thesis_fit": "pass",
+            "primary_evidence": "pass",
+            "availability_clarity": "pass_proposed_order",
+            "claim_discipline": "pass",
+            "operational_impact": "pass",
+            "contradiction_search": "pass_with_market_skepticism",
+            "archive_novelty": "pass"
+          },
+          "coverage_limitations": [
+            "The order is proposed and the matter remains pending.",
+            "Behavioral safeguards do not prove that competitors and customers will continue using LiveRamp at prior levels.",
+            "The long-term product and pricing consequences of Publicis ownership remain unknown."
+          ],
+          "sources": [
+            {
+              "type": "primary_regulator_release",
+              "title": "FTC order preserves competition in digital advertising ecosystem as part of Publicis acquisition of LiveRamp",
+              "url": "https://www.ftc.gov/news-events/news/press-releases/2026/10/ftc-order-preserves-competition-digital-advertising-ecosystem-part-publiciss-acquisition-liveramp"
+            },
+            {
+              "type": "independent_context",
+              "title": "Marketing Dive: Publicis agrees to preserve LiveRamp neutrality. Will it matter?",
+              "url": "https://www.marketingdive.com/news/publicis-agrees-to-preserve-liveramps-neutrality-will-it-matter/833463/"
+            }
+          ]
+        }
+      ],
+      "research": {
+        "source_cutoff": "2026-10-18T08:00:42-04:00",
+        "discovery_window_hours": 72,
+        "discovery_window_expansion": null,
+        "event_ledger_path": "/home/ranson/.hermes/social-queue/research/2026-10-21-ai-martech-event-ledger.json",
+        "decision_journal_path": "/home/ranson/.hermes/social-queue/research/2026-10-21-ai-martech-decision-journal.md",
+        "citation_ledger_path": "/home/ranson/.hermes/social-queue/research/2026-10-21-citations-ledger.json",
+        "reserve_candidate_count": 6,
+        "reserve_candidates": [
+          "Zoom Unified Context Layer and CX updates",
+          "monday.com Harmony voice agents",
+          "IAB Cross-Channel Measurement Decision Guide",
+          "Thought Industries Lens",
+          "WisdomAI Owls",
+          "Sumsub Know Your Agent for MCP"
+        ],
+        "coverage_gaps": [
+          {
+            "source": "Direct page extraction backend",
+            "status": "unavailable",
+            "cutoff_advanced": false,
+            "detail": "Search-indexed primary content and browser retrieval were used; the failure was not treated as no news."
+          },
+          {
+            "source": "Salesforce-Braze integration roadmap",
+            "status": "not_published",
+            "detail": "No product integration, packaging, migration, or post-close pricing plan is available."
+          },
+          {
+            "source": "Databricks CustomerLake independent benchmarks",
+            "status": "not_found",
+            "detail": "Named performance and cost results remain vendor and customer claims."
+          },
+          {
+            "source": "Publicis-LiveRamp post-close market behavior",
+            "status": "not_yet_observable",
+            "detail": "The order is proposed and the transaction has not produced a measurable post-close record."
+          }
+        ]
+      },
+      "events": [
+        {
+          "at": "2026-10-21T08:11:52-04:00",
+          "type": "topic_queue_created",
+          "actor": "scheduled_research",
+          "detail": "Created exactly three ranked AI marketing and martech topics from the previous 72 hours with late-indexing overlap; awaiting approval."
+        }
+      ]
     }
   ],
   "archive": [
