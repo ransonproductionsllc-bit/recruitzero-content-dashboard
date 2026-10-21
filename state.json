@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-10-21T10:23:33-04:00",
+  "updated_at": "2026-10-21T13:19:07-04:00",
   "sync": {
     "status": "connected",
     "discord_guild_id": "1553886101003837561",
@@ -390,9 +390,9 @@
       "kind": "content",
       "title": "AI marketing and martech topic approval queue",
       "created_at": "2026-10-21T08:11:52-04:00",
-      "updated_at": "2026-10-21T10:23:33-04:00",
-      "status": "awaiting_post_approval",
-      "stage": "post_approval",
+      "updated_at": "2026-10-21T13:19:07-04:00",
+      "status": "complete",
+      "stage": "assets_complete",
       "topic_options": [
         {
           "option": 1,
@@ -778,6 +778,18 @@
           "type": "post_reviewed",
           "actor": "recruitzero_content_workflow",
           "detail": "Claude Opus produced the initial draft with no fallback. One interpretation correction cycle removed unsupported examples and strengthened ownership, availability, and failure measurement. Final copy passed argument review, stop-slop 46/50, voice fidelity 9.5/10, construction, factual-fidelity, and stack-independent-value gates; awaiting explicit post approval."
+        },
+        {
+          "at": "2026-10-21T13:19:07-04:00",
+          "type": "post_approved_and_revised",
+          "actor": "discord_user",
+          "detail": "User supplied revised copy, requested Claude fallback, and explicitly authorized article update and cover generation. Claude Opus produced the final 245-word article; Claude Sonnet independently reviewed it. Zero-party terminology was removed because Zoom's primary announcement does not use it."
+        },
+        {
+          "at": "2026-10-21T13:19:07-04:00",
+          "type": "assets_completed",
+          "actor": "recruitzero_content_workflow",
+          "detail": "Generated and visually inspected the production cover with openai-codex gpt-image-2-medium, then exported the canonical 1200x627 PNG. Nothing was published to LinkedIn."
         }
       ],
       "topic": {
@@ -847,10 +859,10 @@
         "stack_independent_value": "pass"
       },
       "post": {
-        "status": "awaiting_approval",
+        "status": "approved",
         "title": "Zoom and the marketing value of shared customer context",
-        "body": "Customer context is about to have more readers. That gives it more chances to be wrong.\n\nAt Zoomtopia, Zoom announced a Unified Context Layer that it says combines transcripts, CRM data, and conversations for human and AI agents. Some functions are available now; others are planned through early 2027, with dates subject to change.\n\nThe potential marketing value is a clearer view of the customer journey. Teams could join direct-interaction signals with CRM data and, where available and permitted, campaign history. That can explain what behavioral data alone may miss. Needs and preferences customers intentionally provide can become zero-party signals; transcripts, metadata, and interaction history remain first-party data. This may reduce guesswork, but only when teams can match identities and correct conflicting records.\n\nFor marketing teams, the opportunity is a tighter feedback loop:\n\n- **See the journey from the customer's side.** Connect recurring questions, objections, and failed handoffs to the campaigns and journey stages around them.\n\n- **Build from expressed needs.** Use intentionally provided preferences to shape segments, messages, and content after confirming permission to act.\n\n- **Control how insights enter the journey.** Assign who preserves the source, corrects the record, and decides who may view a signal and who may use it in marketing.\n\nThe takeaway: unified context could turn direct interactions into customer-journey intelligence. The advantage comes from connecting what customers say to specific marketing changes, without treating capture or inference as permission to act.\n\nWhat would your customers' direct interactions explain that your current journey data cannot?",
-        "word_count": 247,
+        "body": "Customer context is about to have more readers. That gives it more chances to be wrong.\n\nOn October 20, Zoom announced a Unified Context Layer that brings together signals from customer engagements, transcripts, CRM data, and live conversations for human and AI agents. Availability varies through early 2027; Zoom calls dates estimates, subject to change.\n\nZoom says shared context helps businesses understand customer needs and put conversations in context across interactions. The catch: when every agent reads the same context, one wrong entry no longer misleads a single rep. It misleads them all at once.\n\nThat context can give marketers explanations clickstreams may not. Clicks show what customers did. Conversations can help explain why.\n\nPicture a hypothetical: support calls keep surfacing the same pricing objection, traced to one claim on one landing page. Conversation context may reveal explanations behavioral data alone does not.\n\nThree places to start:\n\n- **Trace friction to its source.** Link recurring questions, objections, and failed handoffs to preceding campaigns.\n- **Build from what customers tell you.** Let stated preferences shape segments and messaging, with permission confirmed.\n- **Watch the physical channel.** Zoom says kiosks can capture product interest and promotional feedback, intent signals it describes as historically available through digital channels.\n\nThe takeaway: unified context can turn conversations into journey intelligence. The advantage goes to teams that connect what customers say to marketing changes, vet sources, and correct the record.\n\nWhat would your customers' conversations explain that your journey data can't?",
+        "word_count": 245,
         "sources": [
           {
             "type": "primary_company_release",
@@ -863,15 +875,15 @@
             "url": "https://www.cmswire.com/contact-center/zoom-launches-unified-context-layer-for-cx-agents/"
           }
         ],
-        "stop_slop_score": 46,
+        "stop_slop_score": 42,
         "stop_slop_breakdown": {
-          "directness": 9,
-          "rhythm": 9,
-          "trust": 10,
-          "authenticity": 9,
+          "directness": 8,
+          "rhythm": 8,
+          "trust": 9,
+          "authenticity": 8,
           "density": 9
         },
-        "voice_fidelity_score": 9.5,
+        "voice_fidelity_score": 9,
         "construction_pass": true,
         "construction_checklist": {
           "word_count_150_250": true,
@@ -883,33 +895,33 @@
           "takeaway_label": true,
           "closing_question": true,
           "factual_fidelity": true,
-          "zero_party_distinction": true,
+          "source_terminology_aligned": true,
           "stack_independent_value": true
         },
         "argument_review": {
           "status": "pass",
-          "correction_cycles": 3,
+          "correction_cycles": 4,
           "unsupported_inferences": [],
           "missing_qualifications": [],
           "vendor_framing_risks": [],
-          "counterargument": "More interaction history can create a more complete-looking record without creating a more accurate journey. The article addresses this through identity matching, record correction, source preservation, and separate permissions to view and use signals.",
+          "counterargument": "A shared record can spread errors as easily as insight. The article makes that risk central and keeps the marketing benefit conditional on source vetting, permission, and correction.",
           "operational_impact_status": "pass",
-          "operational_impact_rationale": "The article identifies concrete practices: connect interaction patterns to journey stages, use intentionally provided preferences only with permission, preserve source information, correct records, assign decision ownership, and separate visibility from activation.",
+          "operational_impact_rationale": "The article gives marketers three stack-independent practices: trace recurring friction back to campaigns, use stated preferences with permission, and monitor physical-channel conversation signals while vetting sources and correcting records.",
           "novelty_status": "distinct",
           "stack_independent_value": "pass",
-          "stack_independent_rationale": "The guidance on direct feedback, zero-party and first-party distinctions, identity matching, correction, provenance, and activation permissions applies across marketing stacks.",
-          "zero_party_data_status": "pass",
+          "stack_independent_rationale": "The guidance on linking conversations to journey friction, permissioned use of stated preferences, physical-channel insight, source vetting, and correction applies beyond Zoom.",
+          "source_terminology_status": "pass",
           "transition_status": "pass",
           "required_corrections": [],
           "qualification_placement": "pass",
           "residual_risks": [
-            "The benefits remain prospective and depend on implementation quality, identity resolution, data permissions, and governance.",
-            "Zoom's public materials do not establish detailed retention, consent, correction, source-priority, or activation policies.",
-            "First-party classification depends on the lineage of transcripts, metadata, and interaction history in a given implementation."
+            "The marketing benefits remain prospective rather than demonstrated Zoom outcomes.",
+            "Zoom's public materials do not fully define retention, correction, source-priority, or activation policies.",
+            "The landing-page pricing-objection scenario is explicitly hypothetical and depends on lawful, reliable data linkage."
           ]
         },
         "factual_fidelity": true,
-        "review_notes": "The final revision focuses on customer-journey insight from direct interactions, limits zero-party data to intentionally provided needs and preferences, treats campaign linkage as a conditional cross-stack possibility, and varies the marketer-impact transition. Final prose passed stop-slop 46/50, voice fidelity 9.5/10, construction, factual fidelity, operational impact, and stack-independent value.",
+        "review_notes": "The user-supplied revision was completed through the Claude connection. Claude Opus produced the final 245-word article and Claude Sonnet independently passed it at stop-slop 42/50 and voice fidelity 9/10. Zero-party terminology was removed because Zoom's primary announcement does not use it. The hypothetical example, mixed availability, vendor attribution, permission, source vetting, and correction controls were preserved.",
         "writer_model": "claude-opus-5-5",
         "writer_provider": "claude-code",
         "writer_fallback_used": false,
@@ -919,8 +931,21 @@
             "status": "success"
           }
         ],
+        "review_model": "claude-sonnet-5",
+        "review_provider": "claude-code",
         "markdown_path": "/home/ranson/.hermes/social-queue/linkedin/2026-10-21-zoom-shared-context-reviewed.md",
         "stack_independent_value": true
+      },
+      "assets": {
+        "cover_status": "complete",
+        "cover_provider": "openai-codex",
+        "cover_model": "gpt-image-2-medium",
+        "cover_url": "assets/ai-martech-topic-queue-2026-10-21-cover.png",
+        "cover_local_path": "/home/ranson/.hermes/social-queue/linkedin/2026-10-21-zoom-shared-context-cover.png",
+        "cover_original_path": "/home/ranson/.hermes/social-queue/linkedin/2026-10-21-zoom-shared-context-cover-original.png",
+        "cover_dimensions": "1200x627",
+        "visual_inspection": "pass",
+        "review_page_url": "https://ransonproductionsllc-bit.github.io/recruitzero-content-dashboard/review.html?id=ai-martech-topic-queue-2026-10-21"
       },
       "performance": {
         "tracking_status": "awaiting_publication_data",
