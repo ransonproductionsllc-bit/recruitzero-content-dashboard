@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-10-21T09:59:15-04:00",
+  "updated_at": "2026-10-21T10:23:33-04:00",
   "sync": {
     "status": "connected",
     "discord_guild_id": "1553886101003837561",
@@ -390,7 +390,7 @@
       "kind": "content",
       "title": "AI marketing and martech topic approval queue",
       "created_at": "2026-10-21T08:11:52-04:00",
-      "updated_at": "2026-10-21T09:59:15-04:00",
+      "updated_at": "2026-10-21T10:23:33-04:00",
       "status": "awaiting_post_approval",
       "stage": "post_approval",
       "topic_options": [
@@ -581,7 +581,7 @@
             "result": "distinct",
             "rationale": "The archive covers AI-agent journey measurement and campaign controls, not governance of persistent customer context shared across human and AI service interactions."
           },
-          "predicted_audience_response": "Operators will ask who controls persistent context, how stale or incorrect history is corrected, and whether shared memory improves continuity without expanding privacy risk.",
+          "predicted_audience_response": "Operators will discuss whether direct customer interactions can reduce journey uncertainty, how intentionally provided preferences should be used, and where permissions should separate viewing a signal from activating it.",
           "materiality_gates": {
             "material_event": "pass",
             "editorial_thesis_fit": "pass",
@@ -848,9 +848,9 @@
       },
       "post": {
         "status": "awaiting_approval",
-        "title": "Zoom and the governance of shared customer context",
-        "body": "Customer context is about to get more readers, with more chances to be wrong.\n\nAt Zoomtopia on October 20, Zoom announced a Unified Context Layer. Zoom says it combines customer engagements, transcripts, CRM data, and live conversations for use by human and AI agents across its CX products. Availability varies by capability: the announcement includes functions available now and others planned through early 2027, with dates subject to change.\n\nThe operating model Zoom is proposing has wider implications. Giving people and AI agents the same conversation history makes customer experience depend on how teams move that context through the workflow. Teams need to decide which source takes priority, who can correct it, what an agent may change, and where a person steps in. The same decisions matter anywhere customer data passes between CRM, service, lifecycle, sales, and AI systems.\n\nFor marketers, that changes the job:\n\n- **Assign source authority.** Decide which record wins when a transcript, CRM field, and support case disagree, and who corrects stale context.\n\n- **Separate access from action.** Define what an agent may read, what it may change, and where a person must approve the next step.\n\n- **Measure context failures.** Track inaccurate records, inappropriate access, failed handoffs, and customers having to repeat information.\n\nThe takeaway: shared context needs governance before it becomes customer experience. Design the rules and failure measures before connecting another agent.\n\nWhere would unreliable customer context create the most risk for your team?",
-        "word_count": 238,
+        "title": "Zoom and the marketing value of shared customer context",
+        "body": "Customer context is about to have more readers. That gives it more chances to be wrong.\n\nAt Zoomtopia, Zoom announced a Unified Context Layer that it says combines transcripts, CRM data, and conversations for human and AI agents. Some functions are available now; others are planned through early 2027, with dates subject to change.\n\nThe potential marketing value is a clearer view of the customer journey. Teams could join direct-interaction signals with CRM data and, where available and permitted, campaign history. That can explain what behavioral data alone may miss. Needs and preferences customers intentionally provide can become zero-party signals; transcripts, metadata, and interaction history remain first-party data. This may reduce guesswork, but only when teams can match identities and correct conflicting records.\n\nFor marketing teams, the opportunity is a tighter feedback loop:\n\n- **See the journey from the customer's side.** Connect recurring questions, objections, and failed handoffs to the campaigns and journey stages around them.\n\n- **Build from expressed needs.** Use intentionally provided preferences to shape segments, messages, and content after confirming permission to act.\n\n- **Control how insights enter the journey.** Assign who preserves the source, corrects the record, and decides who may view a signal and who may use it in marketing.\n\nThe takeaway: unified context could turn direct interactions into customer-journey intelligence. The advantage comes from connecting what customers say to specific marketing changes, without treating capture or inference as permission to act.\n\nWhat would your customers' direct interactions explain that your current journey data cannot?",
+        "word_count": 247,
         "sources": [
           {
             "type": "primary_company_release",
@@ -863,9 +863,9 @@
             "url": "https://www.cmswire.com/contact-center/zoom-launches-unified-context-layer-for-cx-agents/"
           }
         ],
-        "stop_slop_score": 47,
+        "stop_slop_score": 46,
         "stop_slop_breakdown": {
-          "directness": 10,
+          "directness": 9,
           "rhythm": 9,
           "trust": 10,
           "authenticity": 9,
@@ -877,38 +877,39 @@
           "word_count_150_250": true,
           "hook": true,
           "verified_event_explanation": true,
-          "interpretation": true,
-          "exact_marketer_transition": true,
+          "marketing_benefit_interpretation": true,
+          "article_specific_transition": true,
           "two_to_three_visible_bullets": true,
           "takeaway_label": true,
           "closing_question": true,
           "factual_fidelity": true,
+          "zero_party_distinction": true,
           "stack_independent_value": true
         },
         "argument_review": {
           "status": "pass",
-          "correction_cycles": 2,
+          "correction_cycles": 3,
           "unsupported_inferences": [],
           "missing_qualifications": [],
-          "vendor_framing_risks": [
-            "The Unified Context Layer's composition and intended cross-product use remain vendor-described capabilities rather than independently demonstrated performance."
-          ],
-          "counterargument": "Source authority, permissions, correction, and escalation are established data-governance concerns, so Zoom's proposal may apply existing disciplines to shared human-and-AI context rather than introduce a wholly new operating model.",
+          "vendor_framing_risks": [],
+          "counterargument": "More interaction history can create a more complete-looking record without creating a more accurate journey. The article addresses this through identity matching, record correction, source preservation, and separate permissions to view and use signals.",
           "operational_impact_status": "pass",
-          "operational_impact_rationale": "The article connects shared context to concrete cross-system decisions: resolving conflicting records, assigning correction responsibility, separating access from action, defining human intervention, and measuring context failures.",
+          "operational_impact_rationale": "The article identifies concrete practices: connect interaction patterns to journey stages, use intentionally provided preferences only with permission, preserve source information, correct records, assign decision ownership, and separate visibility from activation.",
           "novelty_status": "distinct",
           "stack_independent_value": "pass",
-          "stack_independent_rationale": "The guidance applies across CRM, service, lifecycle, sales, and AI systems regardless of Zoom adoption.",
+          "stack_independent_rationale": "The guidance on direct feedback, zero-party and first-party distinctions, identity matching, correction, provenance, and activation permissions applies across marketing stacks.",
+          "zero_party_data_status": "pass",
+          "transition_status": "pass",
           "required_corrections": [],
           "qualification_placement": "pass",
           "residual_risks": [
-            "The Unified Context Layer's composition and intended cross-product use remain vendor-described capabilities rather than independently demonstrated performance.",
-            "Readers may interpret wider implications as evidence of current adoption, though the text presents applicability rather than a market trend.",
-            "The article prioritizes actionable workflow controls rather than covering every governance dimension."
+            "The benefits remain prospective and depend on implementation quality, identity resolution, data permissions, and governance.",
+            "Zoom's public materials do not establish detailed retention, consent, correction, source-priority, or activation policies.",
+            "First-party classification depends on the lineage of transcripts, metadata, and interaction history in a given implementation."
           ]
         },
         "factual_fidelity": true,
-        "review_notes": "The user-directed revision develops Zoom's proposed operating model into wider-industry workflow implications. Mixed availability remains beside the product claim, while secondary caveats remain in review metadata. Final prose passed stop-slop 47/50, voice fidelity 9.5/10, construction, factual fidelity, qualification placement, and stack-independent value.",
+        "review_notes": "The final revision focuses on customer-journey insight from direct interactions, limits zero-party data to intentionally provided needs and preferences, treats campaign linkage as a conditional cross-stack possibility, and varies the marketer-impact transition. Final prose passed stop-slop 46/50, voice fidelity 9.5/10, construction, factual fidelity, operational impact, and stack-independent value.",
         "writer_model": "claude-opus-5-5",
         "writer_provider": "claude-code",
         "writer_fallback_used": false,
@@ -929,7 +930,7 @@
           "relevance": 9,
           "topicality": 10,
           "viral_potential": 8,
-          "predicted_audience_response": "Operators will ask who controls persistent context, how stale or incorrect history is corrected, and whether shared memory improves continuity without expanding privacy risk."
+          "predicted_audience_response": "Operators will discuss whether direct customer interactions can reduce journey uncertainty, how intentionally provided preferences should be used, and where permissions should separate viewing a signal from activating it."
         },
         "day_7": null,
         "day_30": null,
