@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-10-21T08:11:52-04:00",
+  "updated_at": "2026-10-21T09:12:02-04:00",
   "sync": {
     "status": "connected",
     "discord_guild_id": "1553886101003837561",
@@ -390,7 +390,7 @@
       "kind": "content",
       "title": "AI marketing and martech topic approval queue",
       "created_at": "2026-10-21T08:11:52-04:00",
-      "updated_at": "2026-10-21T08:11:52-04:00",
+      "updated_at": "2026-10-21T09:12:02-04:00",
       "status": "awaiting_topic_approval",
       "stage": "topic_approval",
       "topic_options": [
@@ -556,6 +556,165 @@
               "url": "https://www.marketingdive.com/news/publicis-agrees-to-preserve-liveramps-neutrality-will-it-matter/833463/"
             }
           ]
+        },
+        {
+          "option": 4,
+          "rank": 4,
+          "title": "Zoom turns customer conversations into shared context for human and AI agents",
+          "event_date": "2026-10-20",
+          "proposed_hook": "Zoom wants customer context to follow a person across calls, chats, contact-center interactions, and AI agents. The operating question is no longer only where customer data lives, but which context an agent may carry forward and act on.",
+          "marketer_angle": "CX, lifecycle, and marketing-operations teams need rules for context ownership, source freshness, consent, access, retention, and human escalation when conversation history becomes an execution input across channels.",
+          "why_it_passed": "Zoom announced a Unified Context Layer that combines engagement signals, transcripts, CRM data, and live conversations for human and AI agents, with Customer Profiles and several CX functions arriving on mixed timelines. Independent coverage confirms the architecture while leaving outcome claims attributed to Zoom and its customers.",
+          "operational_impact_chain": "Conversation, CRM, and case data enter a shared context layer -> human and AI agents reuse that context across interactions -> CX, lifecycle, privacy, and operations teams define what persists and who may act on it -> teams monitor stale context, inappropriate access, escalation quality, and cross-channel continuity.",
+          "scores": {
+            "relevance": 9,
+            "relevance_rationale": "Shared customer context changes data ownership, consent, access, retention, and handoff decisions across CX and lifecycle operations.",
+            "topicality": 10,
+            "topicality_rationale": "Zoom announced the CX changes on October 20, 2026.",
+            "viral_potential": 8,
+            "viral_potential_rationale": "Persistent memory for customer-facing agents creates a clear tension between continuity and overreach.",
+            "total": 27
+          },
+          "confidence": "high",
+          "confidence_limitation": "The architecture and mixed availability dates are documented, but savings and productivity outcomes are company or customer projections rather than independent measurements. Several capabilities arrive in November 2026 or 2027.",
+          "novelty": {
+            "result": "distinct",
+            "rationale": "The archive covers AI-agent journey measurement and campaign controls, not governance of persistent customer context shared across human and AI service interactions."
+          },
+          "predicted_audience_response": "Operators will ask who controls persistent context, how stale or incorrect history is corrected, and whether shared memory improves continuity without expanding privacy risk.",
+          "materiality_gates": {
+            "material_event": "pass",
+            "editorial_thesis_fit": "pass",
+            "primary_evidence": "pass",
+            "availability_clarity": "pass_mixed_timeline",
+            "claim_discipline": "pass_with_vendor_outcome_attribution",
+            "operational_impact": "pass",
+            "contradiction_search": "pass_with_limits",
+            "archive_novelty": "pass"
+          },
+          "coverage_limitations": [
+            "The announcement combines available capabilities with November 2026 and 2027 roadmap items.",
+            "Customer savings and efficiency figures are projections or customer-reported outcomes, not independent audits.",
+            "The public materials do not fully define retention, correction, consent, or source-priority rules for persistent context."
+          ],
+          "sources": [
+            {
+              "type": "primary_company_release",
+              "title": "Zoom unites conversations, context, and action to transform customer experiences",
+              "url": "https://news.zoom.com/zoomtopia-cx-2026/"
+            },
+            {
+              "type": "independent_context",
+              "title": "CMSWire: Zoom launches Unified Context Layer for CX agents",
+              "url": "https://www.cmswire.com/contact-center/zoom-launches-unified-context-layer-for-cx-agents/"
+            }
+          ]
+        },
+        {
+          "option": 5,
+          "rank": 5,
+          "title": "Thought Industries makes conflicting customer knowledge a marketing-operations problem",
+          "event_date": "2026-10-20",
+          "proposed_hook": "AI can distribute a wrong product answer faster than a team can correct it. Thought Industries is treating conflicting customer knowledge as something companies must govern before it reaches customers or agents.",
+          "marketer_angle": "Content, customer education, product marketing, and support teams need a shared source-authority policy: which system wins when guidance conflicts, who approves corrections, and how questions from customers feed the content backlog.",
+          "why_it_passed": "Thought Industries launched Lens in Beta with agents designed to connect existing product and customer-education sources, flag conflicting guidance, apply trust rules, and distribute approved answers across products, support, the web, and AI tools. Independent reporting confirms the Beta status and conflict-review workflow.",
+          "operational_impact_chain": "Product documentation, academies, help centers, and blogs remain in separate systems -> a governed layer identifies conflicting guidance -> designated owners review source authority and corrections -> approved knowledge reaches customers and AI agents -> contradiction rate, correction time, unanswered questions, and adoption friction become operating measures.",
+          "scores": {
+            "relevance": 9,
+            "relevance_rationale": "The launch creates concrete ownership and approval decisions across product marketing, content, education, support, and customer success.",
+            "topicality": 10,
+            "topicality_rationale": "Thought Industries launched Lens on October 20, 2026.",
+            "viral_potential": 8,
+            "viral_potential_rationale": "The risk of AI confidently repeating contradictory product guidance is recognizable across many marketing and customer teams.",
+            "total": 27
+          },
+          "confidence": "qualified",
+          "confidence_limitation": "The Beta launch and described governance workflow are documented, but conflict-resolution quality, workflow reliability, pricing, security architecture, and general-availability timing have not been independently tested or disclosed.",
+          "novelty": {
+            "result": "distinct",
+            "rationale": "The archive covers content creation and AI-search visibility, not source-authority rules and contradiction resolution across customer-facing knowledge."
+          },
+          "predicted_audience_response": "Practitioners will compare their current documentation hierarchy and ask who has authority to resolve disagreements between product, support, marketing, and education content.",
+          "materiality_gates": {
+            "material_event": "pass",
+            "editorial_thesis_fit": "pass",
+            "primary_evidence": "pass",
+            "availability_clarity": "pass_beta",
+            "claim_discipline": "pass_with_vendor_attribution",
+            "operational_impact": "pass",
+            "contradiction_search": "pass_with_limits",
+            "archive_novelty": "pass"
+          },
+          "coverage_limitations": [
+            "Lens is in Beta; general availability and pricing are not published.",
+            "No independent product test of conflict detection or correction quality was found.",
+            "Security, permission, and source-priority mechanics are not fully disclosed in the launch materials."
+          ],
+          "sources": [
+            {
+              "type": "primary_company_release",
+              "title": "Thought Industries launches Lens and unveils Customer Knowledge AI Platform",
+              "url": "https://www.globenewswire.com/news-release/2026/10/20/3384448/0/en/thought-industries-launches-lens-and-unveils-customer-knowledge-ai-platform-breaking-the-knowledge-silos-holding-businesses-and-their-customers-back.html"
+            },
+            {
+              "type": "independent_context",
+              "title": "TokenPost: Thought Industries launches Lens to flag conflicting customer guidance",
+              "url": "https://tokenpost.com/news/technology/35975"
+            }
+          ]
+        },
+        {
+          "option": 6,
+          "rank": 6,
+          "title": "monday.com puts AI voice agents into the full sales-call workflow",
+          "event_date": "2026-10-19",
+          "proposed_hook": "When an AI agent can dial, qualify, handle objections, write back to the CRM, and transfer a live prospect, the governance problem moves from copy review to customer-conversation control.",
+          "marketer_angle": "Demand generation and revenue-operations teams need rules for disclosure, consent, suppression, scripts, objection boundaries, CRM write-back, call review, and the moment a human must take over—regardless of which voice platform they use.",
+          "why_it_passed": "monday.com launched Harmony for mid-market and enterprise customers in the United States, United Kingdom, Australia, and Singapore. The product combines outbound and inbound calling, consent controls, CRM write-back, and warm transfers; independent reporting confirms availability while noting that latency, contact-rate, and conversion claims are vendor or customer reported.",
+          "operational_impact_chain": "A lead enters a calling workflow -> an AI agent contacts, qualifies, and records the conversation -> CRM data and routing decisions update automatically -> demand generation, sales operations, legal, and compliance teams define disclosure, suppression, review, and handoff rules -> consent exceptions, complaint rates, data quality, conversion, and human takeover become operating measures.",
+          "scores": {
+            "relevance": 9,
+            "relevance_rationale": "Voice agents change how demand generation, revenue operations, CRM administration, legal, and compliance share responsibility for live customer contact.",
+            "topicality": 9,
+            "topicality_rationale": "Harmony launched on October 19, 2026, within the current 72-hour research window.",
+            "viral_potential": 8,
+            "viral_potential_rationale": "Human-sounding AI calls create immediate debate about disclosure, consent, quality, and where automation should stop.",
+            "total": 26
+          },
+          "confidence": "high",
+          "confidence_limitation": "Availability and workflow features are documented, but pricing is undisclosed and the reported latency, contact-rate, and deal-lift figures were not independently benchmarked.",
+          "novelty": {
+            "result": "distinct",
+            "rationale": "The archive covers campaign agents and analytics, not governance of AI-operated live phone conversations from dialing through CRM write-back and human transfer."
+          },
+          "predicted_audience_response": "Operators will focus on whether AI disclosure is mandatory, how suppression and consent are enforced, which calls require review, and who owns failures after CRM data is written automatically.",
+          "materiality_gates": {
+            "material_event": "pass",
+            "editorial_thesis_fit": "pass",
+            "primary_evidence": "pass",
+            "availability_clarity": "pass_geographic_limits",
+            "claim_discipline": "pass_with_vendor_metric_attribution",
+            "operational_impact": "pass",
+            "contradiction_search": "pass_with_limits",
+            "archive_novelty": "pass"
+          },
+          "coverage_limitations": [
+            "Public pricing was not found.",
+            "Latency, contact-rate, and conversion claims are company or customer reported rather than independently benchmarked.",
+            "The launch materials do not fully describe review sampling, suppression-list implementation, retention, or jurisdiction-specific compliance behavior."
+          ],
+          "sources": [
+            {
+              "type": "primary_company_release",
+              "title": "monday.com launches Harmony voice AI platform",
+              "url": "https://ir.monday.com/news-and-events/news-releases/news-details/2026/Voice-AI-Platform-Harmony-Launches-to-Convert-Customer-Conversations-into-Revenue/default.aspx"
+            },
+            {
+              "type": "independent_context",
+              "title": "The Next Web: monday.com launches Harmony for sales calls",
+              "url": "https://thenextweb.com/news/monday-harmony-voice-ai-sales"
+            }
+          ]
         }
       ],
       "research": {
@@ -565,12 +724,9 @@
         "event_ledger_path": "/home/ranson/.hermes/social-queue/research/2026-10-21-ai-martech-event-ledger.json",
         "decision_journal_path": "/home/ranson/.hermes/social-queue/research/2026-10-21-ai-martech-decision-journal.md",
         "citation_ledger_path": "/home/ranson/.hermes/social-queue/research/2026-10-21-citations-ledger.json",
-        "reserve_candidate_count": 6,
+        "reserve_candidate_count": 3,
         "reserve_candidates": [
-          "Zoom Unified Context Layer and CX updates",
-          "monday.com Harmony voice agents",
           "IAB Cross-Channel Measurement Decision Guide",
-          "Thought Industries Lens",
           "WisdomAI Owls",
           "Sumsub Know Your Agent for MCP"
         ],
@@ -604,6 +760,12 @@
           "type": "topic_queue_created",
           "actor": "scheduled_research",
           "detail": "Created exactly three ranked AI marketing and martech topics from the previous 72 hours with late-indexing overlap; awaiting approval."
+        },
+        {
+          "at": "2026-10-21T09:12:02-04:00",
+          "type": "additional_topic_options_added",
+          "actor": "discord_user_request",
+          "detail": "Added three newly researched, distinct alternatives as options 4-6: Zoom shared customer context, Thought Industries knowledge governance, and monday.com AI voice-call governance. Awaiting explicit topic approval."
         }
       ]
     }
