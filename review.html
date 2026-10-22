@@ -98,7 +98,7 @@
     const confidence = selectedTopic.confidence || editorial.confidence;
     const novelty = selectedTopic.novelty || editorial.novelty;
     const operationalImpact = selectedTopic.operational_impact || editorial.operational_impact;
-    const formatMeta = value => typeof value === 'string' ? value : value?.chain || value?.summary || value?.status || value?.level || 'Not recorded';
+    const formatMeta = value => typeof value === 'string' ? value : value?.chain || value?.summary || value?.status || value?.result || value?.level || 'Not recorded';
     const scoreRows = [
       ['Stop-slop', post.stop_slop_score != null ? `${post.stop_slop_score}/50` : 'Not recorded'],
       ['Voice fidelity', post.voice_fidelity_score != null ? `${post.voice_fidelity_score}/10` : 'Not recorded'],
