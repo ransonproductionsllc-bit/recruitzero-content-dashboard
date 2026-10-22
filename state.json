@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-10-21T13:19:07-04:00",
+  "updated_at": "2026-10-22T08:08:04-04:00",
   "sync": {
     "status": "connected",
     "discord_guild_id": "1553886101003837561",
@@ -962,6 +962,224 @@
         "qualitative_outcome": null,
         "editorial_lesson": null
       }
+    },
+    {
+      "id": "ai-martech-topic-queue-2026-10-22",
+      "kind": "content",
+      "title": "AI marketing and martech topic approval queue",
+      "created_at": "2026-10-22T08:08:04-04:00",
+      "updated_at": "2026-10-22T08:08:04-04:00",
+      "status": "awaiting_topic_approval",
+      "stage": "topic_approval",
+      "topic_options": [
+        {
+          "option": 1,
+          "rank": 1,
+          "title": "Walmart creates controlled identities and permissions for shopping agents",
+          "event_date": "2026-10-21",
+          "proposed_hook": "Walmart is giving shopping agents their own identities, permissions, and spending limits. Commerce teams now have to decide how a delegated buyer enters loyalty, attribution, offers, substitutions, and returns.",
+          "marketer_angle": "Commerce and retail-media teams need an operating model for agent-originated orders: authorization, offer parity, loyalty recognition, inventory decisions, attribution, customer confirmation, and post-purchase accountability. Those rules matter even outside Walmart.",
+          "why_it_passed": "Walmart announced a specific customer-control layer and a future machine-access gateway for third-party shopping agents. The primary source defines the planned identity and permission model, while market reporting supports the need for approved agent access without validating the unfinished gateway.",
+          "operational_impact_chain": "Walmart separates shopping agents into controlled profiles and a retailer gateway -> delegated shopping can bypass parts of the human storefront -> commerce, loyalty, retail-media, privacy, and analytics teams define agent permissions and reporting -> teams decide how prices, promotions, substitutions, returns, and attribution work for agent orders -> agent-order share, authorization failures, conversion, loyalty recognition, and retail-media exposure become measurable consequences.",
+          "scores": {
+            "relevance": 10,
+            "relevance_rationale": "Retailer-defined agent identity, permissions, spending controls, loyalty, attribution, and machine access create immediate cross-functional decisions for commerce operators.",
+            "topicality": 10,
+            "topicality_rationale": "Walmart announced Agent Profiles and the future gateway on October 21, 2026.",
+            "viral_potential": 9,
+            "viral_potential_rationale": "Delegated buying creates a practical debate about customer intent, offer parity, loyalty recognition, retail-media exposure, and agent accountability.",
+            "total": 29
+          },
+          "confidence": "high",
+          "confidence_limitation": "The announced control model is clear, but Agent Profiles are planned within a month and Walmart has not published gateway documentation, fees, approved-agent lists, or a firm beta date.",
+          "novelty": {
+            "result": "meaningful_advance",
+            "rationale": "The archive covers Google's cross-retailer cart, but not retailer-controlled identities, permissions, spending limits, and machine access for third-party shopping agents."
+          },
+          "predicted_audience_response": "Commerce teams will debate whether agents should receive the same offers as people, how delegated purchases enter loyalty and attribution, and which actions require customer confirmation.",
+          "materiality_gates": {
+            "material_event": "pass",
+            "editorial_thesis_fit": "pass",
+            "primary_evidence": "pass",
+            "availability_clarity": "pass_with_future_beta_limits",
+            "claim_discipline": "pass",
+            "operational_impact": "pass",
+            "contradiction_search": "pass_with_market_access_context",
+            "archive_novelty": "pass_meaningful_advance"
+          },
+          "coverage_limitations": [
+            "Agent Profiles are planned within a month rather than available today.",
+            "No public gateway documentation, approved-agent list, fees, beta date, or full technical specification was published."
+          ],
+          "sources": [
+            {
+              "type": "primary_company_release",
+              "title": "Walmart makes it possible for agents to shop on behalf of customers",
+              "url": "https://corporate.walmart.com/news/2026/10/Making-It-Possible-for-Agents-to-Shop-on-Behalf-of-Customers"
+            },
+            {
+              "type": "independent_market_context",
+              "title": "TechCrunch: The next hurdle for AI agents is getting websites to let them in",
+              "url": "https://techcrunch.com/2026/10/06/the-next-hurdle-for-ai-agents-getting-websites-to-let-them-in/"
+            }
+          ]
+        },
+        {
+          "option": 2,
+          "rank": 2,
+          "title": "OpenAI explains how conversational context enters ChatGPT ad selection",
+          "event_date": "2026-10-21",
+          "proposed_hook": "ChatGPT ads are selected from more than the latest prompt. OpenAI says its system maintains conversational state, can use nonsensitive past-chat context when personalization is enabled, and lets an LLM orchestrate retrieval, ranking, and auction calls.",
+          "marketer_angle": "Paid-media teams need a method for buying and evaluating ads against inferred customer jobs when the platform can read a multi-turn journey but the advertiser cannot. Creative strategy, privacy review, experimentation, and budget confidence all change.",
+          "why_it_passed": "OpenAI published the first detailed production architecture for its ad system, including stateful sessions, semantic intent summaries, separate ad services, and LLM auction orchestration. Independent buyer reporting supplies the counterweight: measurement gaps still constrain budget commitments.",
+          "operational_impact_chain": "ChatGPT ad selection uses evolving conversational intent and an LLM-operated auction workflow -> media teams optimize for inferred jobs rather than isolated keywords -> paid-media, creative, privacy, and analytics teams redefine targeting assumptions and evidence requirements -> teams decide how much budget to commit without conversation-level reporting -> test-budget share, attributed conversions, creative relevance, and measurement confidence become operating measures.",
+          "scores": {
+            "relevance": 10,
+            "relevance_rationale": "The architecture changes targeting assumptions, creative planning, privacy review, measurement, and budget decisions for paid-media operators.",
+            "topicality": 10,
+            "topicality_rationale": "OpenAI published the production ad-stack architecture on October 21, 2026.",
+            "viral_potential": 9,
+            "viral_potential_rationale": "The gap between rich conversational targeting and limited advertiser visibility creates a strong, practical measurement debate.",
+            "total": 29
+          },
+          "confidence": "high",
+          "confidence_limitation": "The production architecture is documented, but advertisers do not receive private conversation paths or semantic intent summaries, and no independent audit of separation, ranking, privacy, or auction behavior was found.",
+          "novelty": {
+            "result": "distinct",
+            "rationale": "The archive covers Google's AI Mode advertising with Personal Intelligence, not OpenAI's disclosed stateful targeting, semantic intent, LLM auction orchestration, and measurement constraints."
+          },
+          "predicted_audience_response": "Paid-media operators will ask how to optimize and measure ads selected from a private, multi-turn conversation they cannot inspect.",
+          "materiality_gates": {
+            "material_event": "pass_material_architecture_disclosure",
+            "editorial_thesis_fit": "pass",
+            "primary_evidence": "pass",
+            "availability_clarity": "pass_production_system",
+            "claim_discipline": "pass",
+            "operational_impact": "pass",
+            "contradiction_search": "pass_with_measurement_gap_context",
+            "archive_novelty": "pass"
+          },
+          "coverage_limitations": [
+            "No independent technical audit of the separation between ad and answer systems was found.",
+            "Advertisers do not receive the underlying private conversation, semantic intent summary, or full auction logic."
+          ],
+          "sources": [
+            {
+              "type": "primary_engineering_disclosure",
+              "title": "OpenAI: How we built ChatGPT ad stack",
+              "url": "https://openai.com/index/building-chatgpt-ad-stack/"
+            },
+            {
+              "type": "independent_buyer_context",
+              "title": "Digiday: OpenAI measurement gaps keep budgets at test level",
+              "url": "https://digiday.com/marketing/openais-measurement-gaps-are-keeping-chatgpt-ads-budgets-at-test-level/"
+            }
+          ]
+        },
+        {
+          "option": 3,
+          "rank": 3,
+          "title": "Safari 27 blocks third-party identity-resolution infrastructure",
+          "event_date": "2026-10-19",
+          "proposed_hook": "Safari is blocking the infrastructure that turns an email address or phone number into a persistent cross-site identity. Identity and measurement teams now have to separate real first-party relationships from resolution they only thought they controlled.",
+          "marketer_angle": "Marketing-data teams need browser-specific controls for identity coverage, audience sizing, attribution, enrichment, and vendor dependence. The broader lesson applies beyond Apple: every external identity layer needs a measurable failure mode and a first-party fallback.",
+          "why_it_passed": "WebKit documented a shipped domain-level block on designated identity-resolution infrastructure. Independent reporting confirms the policy and supplies a limitation: Apple has not published a complete stable list, and observed enforcement does not support sweeping claims about all adtech identity services.",
+          "operational_impact_chain": "Safari blocks designated identity-resolution domains -> resolver requests fail during login or form submission -> identity, advertising, and analytics teams lose part of their match and enrichment coverage -> teams decide which use cases can rely on direct first-party relationships and how to measure browser-specific loss -> match rate, addressable audience, attributed conversions, and Safari-specific data gaps become watch metrics.",
+          "scores": {
+            "relevance": 10,
+            "relevance_rationale": "The browser change directly affects identity architecture, match rates, audience reach, enrichment, attribution, and vendor selection.",
+            "topicality": 9,
+            "topicality_rationale": "WebKit announced the shipped change on October 19, 2026, at the edge of the 72-hour research window.",
+            "viral_potential": 9,
+            "viral_potential_rationale": "Privacy protection, adtech dependence, and Apple's own advertising interests create a concrete industry tension without requiring speculation about intent.",
+            "total": 28
+          },
+          "confidence": "high",
+          "confidence_limitation": "The shipped browser behavior is documented, but Apple has not published a complete stable blocklist or quantified impact; independent testing suggests the affected scope may be narrower or less consistent than broad interpretations imply.",
+          "novelty": {
+            "result": "distinct",
+            "rationale": "No archived RecruitZero item addresses browser-level blocking of third-party identity-resolution infrastructure and the resulting loss of match and attribution coverage."
+          },
+          "predicted_audience_response": "Identity and measurement teams will compare Safari match-rate loss, first-party alternatives, and whether Apple's privacy rules create uneven competitive effects.",
+          "materiality_gates": {
+            "material_event": "pass",
+            "editorial_thesis_fit": "pass",
+            "primary_evidence": "pass",
+            "availability_clarity": "pass_shipped",
+            "claim_discipline": "pass",
+            "operational_impact": "pass",
+            "contradiction_search": "pass_with_scope_uncertainty",
+            "archive_novelty": "pass"
+          },
+          "coverage_limitations": [
+            "Apple has not published a complete stable public blocklist or quantified market impact.",
+            "Independent testing suggests enforcement scope may be narrower or less consistent than broad interpretations imply."
+          ],
+          "sources": [
+            {
+              "type": "primary_engineering_post",
+              "title": "WebKit: Blocking identity resolution infrastructure",
+              "url": "https://webkit.org/blog/18438/blocking-identity-resolution-infrastructure/"
+            },
+            {
+              "type": "independent_context",
+              "title": "Digiday: Apple explains Safari identity-resolution block",
+              "url": "https://digiday.com/marketing/apples-growing-ads-business-puts-its-safari-blocklist-under-scrutiny/"
+            }
+          ]
+        }
+      ],
+      "research": {
+        "source_cutoff": "2026-10-19T08:08:04-04:00",
+        "discovery_window_hours": 72,
+        "discovery_window_expansion": null,
+        "event_ledger_path": "/home/ranson/.hermes/social-queue/research/2026-10-22-ai-martech-event-ledger.json",
+        "decision_journal_path": "/home/ranson/.hermes/social-queue/research/2026-10-22-ai-martech-decision-journal.md",
+        "citation_ledger_path": "/home/ranson/.hermes/social-queue/research/2026-10-22-citations-ledger.json",
+        "reserve_candidate_count": 6,
+        "reserve_candidates": [
+          "Contentful Content Operations Agent",
+          "Microsoft Monetize Deal Troubleshooting Agent",
+          "Meiro Local AI CDP",
+          "TransUnion/Fiserv Transaction Matching",
+          "Customer.io snapshot segments",
+          "Sanity MCP document validation"
+        ],
+        "coverage_gaps": [
+          {
+            "source": "Direct page extraction backend",
+            "status": "unavailable",
+            "cutoff_advanced": false,
+            "detail": "The configured extractor was search-only. Browser/search retrieval supplied source evidence; the failure was not treated as no news."
+          },
+          {
+            "source": "Walmart Agent Gateway documentation",
+            "status": "not_published",
+            "cutoff_advanced": false,
+            "detail": "No public technical documentation, approved-agent list, fees, or firm beta date."
+          },
+          {
+            "source": "OpenAI ad-stack independent audit",
+            "status": "not_found",
+            "cutoff_advanced": false,
+            "detail": "No independent audit of separation, privacy, ranking, or auction behavior was found."
+          },
+          {
+            "source": "Safari identity-resolution blocklist and impact data",
+            "status": "not_published",
+            "cutoff_advanced": false,
+            "detail": "Apple has not published a complete stable list or quantified match and attribution impact."
+          }
+        ]
+      },
+      "events": [
+        {
+          "at": "2026-10-22T08:08:04-04:00",
+          "type": "topic_queue_created",
+          "actor": "scheduled_research",
+          "detail": "Created exactly three ranked AI marketing and martech topics from the previous 72 hours with late-indexing overlap; awaiting approval."
+        }
+      ]
     }
   ],
   "archive": [
