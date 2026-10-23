@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-10-22T09:45:37-04:00",
+  "updated_at": "2026-10-23T08:13:01-04:00",
   "sync": {
     "status": "connected",
     "discord_guild_id": "1553886101003837561",
@@ -1370,6 +1370,236 @@
         "qualitative_outcome": null,
         "editorial_lesson": null
       }
+    },
+    {
+      "id": "ai-martech-topic-queue-2026-10-23",
+      "kind": "content",
+      "title": "AI marketing and martech topic approval queue",
+      "created_at": "2026-10-23T08:13:01-04:00",
+      "updated_at": "2026-10-23T08:13:01-04:00",
+      "status": "awaiting_topic_approval",
+      "stage": "topic_approval",
+      "topic_options": [
+        {
+          "option": 1,
+          "rank": 1,
+          "title": "Meta makes advertisers assume the risk for its AI commercial-content features",
+          "event_date": "2026-10-22",
+          "proposed_hook": "Meta's revised commercial terms put the advertiser on the hook for AI-made changes while warning that its features may produce inaccurate or unsuitable results. Paid teams now need approval and evidence controls for changes the platform can generate inside the buying workflow.",
+          "marketer_angle": "Paid-media teams need a vendor-neutral change-control model for platform-generated creative: feature inventories, opt-out audits, version capture, brand and legal approval, watermark preservation, client-agency responsibility, and incident escalation.",
+          "why_it_passed": "The current primary terms contain a specific AI Features clause that assigns the business user responsibility and risk for resulting commercial content. Independent reporting supplies advertiser experience and Meta’s counterposition, while the effective-date conflict is preserved rather than smoothed over.",
+          "operational_impact_chain": "Meta's terms cover AI features that optimize, enhance, or create commercial content -> platform-generated changes can enter paid creative workflows -> the advertiser must evaluate suitability and assumes the stated risk -> paid-media, creative, brand, legal, and agency teams add change controls and approval evidence -> unapproved edits, policy incidents, brand deviations, review time, and disabled-feature audits become measurable controls.",
+          "scores": {
+            "relevance": 10,
+            "relevance_rationale": "The terms create a present governance and liability decision for paid media, creative, legal, brand, and agency teams.",
+            "topicality": 10,
+            "topicality_rationale": "The revised clause drew material reporting on October 22, and the live primary preview now states an effective date of November 20, 2026.",
+            "viral_potential": 10,
+            "viral_potential_rationale": "A platform warning that its AI may be wrong while assigning advertisers the risk creates a concrete, discussable control problem.",
+            "total": 30
+          },
+          "confidence": "qualified",
+          "confidence_limitation": "The current primary page is clear, but it exposes no revision history. October 22 reporting cited an October 30 effective date, while the live preview now says November 20, and no independent audit quantifies auto-enabled creative changes.",
+          "novelty": {
+            "result": "distinct",
+            "rationale": "The archive covers AI credit budgets, campaign agents, and ad targeting architecture, but not a platform contract assigning advertisers responsibility for platform-generated commercial content while acknowledging AI errors."
+          },
+          "predicted_audience_response": "Paid-media and agency teams will debate whether platform AI edits need the same approval, audit, and indemnity controls as changes made by employees or vendors.",
+          "materiality_gates": {
+            "material_event": "pass_terms_revision",
+            "editorial_thesis_fit": "pass",
+            "primary_evidence": "pass",
+            "availability_clarity": "pass_current_preview_with_date_conflict",
+            "claim_discipline": "pass",
+            "operational_impact": "pass",
+            "contradiction_search": "pass_with_effective_date_conflict_and_meta_housekeeping_position",
+            "archive_novelty": "pass"
+          },
+          "coverage_limitations": [
+            "The preview page does not show a public revision timestamp or change history.",
+            "Independent reporting cited October 30; the current primary page says November 20, 2026.",
+            "No independent audit quantifies how often AI creative features are auto-enabled or changed without advertiser approval."
+          ],
+          "sources": [
+            {
+              "type": "primary_terms",
+              "title": "Meta Commercial Terms preview effective November 20, 2026",
+              "url": "https://www.facebook.com/legal/commercial_terms_preview"
+            },
+            {
+              "type": "independent_context",
+              "title": "PPC Land: Meta AI rewrites ads and shifts risk to advertisers",
+              "url": "https://ppc.land/metas-ai-rewrites-the-ads-from-october-30-advertisers-carry-the-risk/"
+            }
+          ]
+        },
+        {
+          "option": 2,
+          "rank": 2,
+          "title": "Pennsylvania signs an AI-ad disclosure law",
+          "event_date": "2026-10-22",
+          "proposed_hook": "Pennsylvania has turned some AI-ad disclosures into an enforcement requirement. Creative teams now need a repeatable way to classify synthetic assets, place the disclosure in the same medium, and prove what ran.",
+          "marketer_angle": "Advertising teams need a state-aware asset-governance model: provenance records, trigger rules, medium-specific disclosures, variant review, geo decisions, vendor responsibilities, and retained evidence. Those controls matter even where this law does not apply.",
+          "why_it_passed": "The governor approved Act 99 on October 22. The final text defines the disclosure, presentation rules, exceptions, enforcement, damages, and 60-day effective period; opposition testimony supplies a concrete over-labeling and intermediary-liability challenge.",
+          "operational_impact_chain": "Pennsylvania approves an AI-ad disclosure law -> covered synthetic image, video, or audio ads need a clear, medium-matched disclosure -> creative, legal, media, and platform teams classify assets and preserve disclosure evidence -> teams decide whether to geofence, disclose nationally, or restrict uncertain creative -> review time, blocked launches, disclosure defects, and enforcement exposure become operating measures.",
+          "scores": {
+            "relevance": 10,
+            "relevance_rationale": "The law changes creative classification, disclosure placement, evidence retention, geo strategy, and vendor responsibility for campaigns reaching Pennsylvania.",
+            "topicality": 10,
+            "topicality_rationale": "The governor approved Act 99 on October 22, 2026.",
+            "viral_potential": 9,
+            "viral_potential_rationale": "Teams must decide which AI modifications trigger disclosure and whether state-specific compliance should become a national asset rule.",
+            "total": 29
+          },
+          "confidence": "high",
+          "confidence_limitation": "The signed text and timing are documented, but no enforcement guidance exists. Application to intermediaries, asset variants, and multistate campaigns may require legal interpretation.",
+          "novelty": {
+            "result": "distinct",
+            "rationale": "No archived RecruitZero item addresses a signed state law that turns AI-ad disclosure placement, asset classification, and evidence retention into a campaign-operations requirement."
+          },
+          "predicted_audience_response": "Operators will ask which edits trigger disclosure, whether to apply Pennsylvania rules nationally, and who owns classification when a platform or agency modifies the asset.",
+          "materiality_gates": {
+            "material_event": "pass_signed_law",
+            "editorial_thesis_fit": "pass",
+            "primary_evidence": "pass",
+            "availability_clarity": "pass_signed_effective_in_60_days",
+            "claim_discipline": "pass_with_legal_interpretation_limits",
+            "operational_impact": "pass",
+            "contradiction_search": "pass_with_trade_association_opposition",
+            "archive_novelty": "pass"
+          },
+          "coverage_limitations": [
+            "No enforcement guidance or implementation examples have been published.",
+            "The law’s application to intermediaries, variants, and multistate campaigns may require legal interpretation.",
+            "Opponents predict over-labeling from the removed knowledge standard and intermediary carve-out; enforcement has not tested that claim."
+          ],
+          "sources": [
+            {
+              "type": "primary_legislative_status",
+              "title": "Pennsylvania Senate Bill 806 information and Act 99 status",
+              "url": "https://www.palegis.us/legislation/bills/2025/sb806"
+            },
+            {
+              "type": "primary_bill_text",
+              "title": "Pennsylvania SB 806 PN 1808 final bill text",
+              "url": "https://www.palegis.us/legislation/bills/text/HTM/2025/0/SB0806/PN1808"
+            },
+            {
+              "type": "independent_counterevidence",
+              "title": "NetChoice testimony opposing Pennsylvania SB 806",
+              "url": "https://netchoice.org/netchoice-testimony-in-opposition-to-pennsylvania-sb-806/"
+            }
+          ]
+        },
+        {
+          "option": 3,
+          "rank": 3,
+          "title": "TransUnion and Fiserv connect card payments to persistent shopper profiles",
+          "event_date": "2026-10-21",
+          "proposed_hook": "A new card or tap-to-pay transaction can stop looking like a new customer. Better classification sounds useful, but marketers cannot trust the result without match confidence, consent, retention, and false-merge controls.",
+          "marketer_angle": "CRM, loyalty, analytics, retail-media, and privacy teams need shared rules for payment-linked identity: permitted sources, confidence thresholds, pseudonymization, merge review, consent, retention, opt-outs, and measurement reconciliation.",
+          "why_it_passed": "TransUnion launched a specific matching product with Fiserv and named Red Lobster as the first user. The primary source defines the intended workflow; independent reporting identifies the missing accuracy, consent, data-flow, pricing, geography, and outcome evidence.",
+          "operational_impact_chain": "Fiserv transaction signals connect to persistent pseudonymized profiles -> new-versus-returning classification and customer enrichment change -> CRM, loyalty, analytics, retail-media, and privacy teams approve identity and confidence rules -> acquisition, retention, targeting, and measurement decisions shift -> duplicate rate, new-customer rate, match accuracy, false merges, opt-outs, and complaints become watch metrics.",
+          "scores": {
+            "relevance": 10,
+            "relevance_rationale": "Customer identity, CRM deduplication, acquisition classification, loyalty, retail-media targeting, and offline measurement all change.",
+            "topicality": 9,
+            "topicality_rationale": "TransUnion launched the product on October 21, inside the current 72-hour window.",
+            "viral_potential": 9,
+            "viral_potential_rationale": "Better new-versus-returning classification creates a direct tension with undisclosed accuracy, consent, retention, and false-merge controls.",
+            "total": 28
+          },
+          "confidence": "qualified",
+          "confidence_limitation": "The launch and intended workflow are documented, but no match rate, false-merge rate, pricing, geographic scope, consent flow, retention policy, data-transfer design, or measured Red Lobster outcome is public.",
+          "novelty": {
+            "result": "meaningful_advance",
+            "rationale": "The prior queue covered Safari blocking browser-based identity resolution. This event moves matching to card-based point-of-sale data and changes customer-acquisition classification, CRM deduplication, and offline measurement."
+          },
+          "predicted_audience_response": "CRM and privacy teams will challenge the value of better new-versus-returning classification without published match accuracy, consent, retention, or false-merge controls.",
+          "materiality_gates": {
+            "material_event": "pass_launch",
+            "editorial_thesis_fit": "pass",
+            "primary_evidence": "pass",
+            "availability_clarity": "pass_with_market_and_pricing_limits",
+            "claim_discipline": "pass_with_vendor_claim_attribution",
+            "operational_impact": "pass",
+            "contradiction_search": "pass_with_accuracy_consent_and_data_flow_gaps",
+            "archive_novelty": "pass_meaningful_advance"
+          },
+          "coverage_limitations": [
+            "No match rate, accuracy, false-merge rate, or measured Red Lobster outcome is published.",
+            "Pricing, geographic availability, data flows, retention, consent, and opt-out controls are undisclosed.",
+            "The public materials use privacy-conscious and pseudonymized language without defining the operative controls."
+          ],
+          "sources": [
+            {
+              "type": "primary_company_release",
+              "title": "TransUnion unveils Transaction Matching",
+              "url": "https://newsroom.transunion.com/transunion-unveils-transaction-matching-to-help-merchants-recognize-more-customers/"
+            },
+            {
+              "type": "independent_context",
+              "title": "PPC Land: TransUnion and Fiserv tie payment methods to shopper profiles",
+              "url": "https://ppc.land/transunion-and-fiserv-tie-tap-to-pay-and-new-cards-to-one-shopper-profile/"
+            }
+          ]
+        }
+      ],
+      "research": {
+        "source_cutoff": "2026-10-20T08:13:01-04:00",
+        "discovery_window_hours": 72,
+        "discovery_window_expansion": null,
+        "event_ledger_path": "/home/ranson/.hermes/social-queue/research/2026-10-23-ai-martech-event-ledger.json",
+        "decision_journal_path": "/home/ranson/.hermes/social-queue/research/2026-10-23-ai-martech-decision-journal.md",
+        "citation_ledger_path": "/home/ranson/.hermes/social-queue/research/2026-10-23-citations-ledger.json",
+        "reserve_candidate_count": 3,
+        "reserve_candidates": [
+          "Insightly CRM MCP Server",
+          "Customer.io snapshot segments",
+          "Sanity MCP document validation"
+        ],
+        "coverage_gaps": [
+          {
+            "source": "Configured direct page extraction backend",
+            "status": "unavailable_search_only",
+            "cutoff_advanced": false,
+            "detail": "Browser retrieval and direct downloads supplied page evidence where possible; the failure was not treated as no news."
+          },
+          {
+            "source": "Insightly CRM MCP documentation",
+            "url": "https://documentation.insightly.com/hc/en-us/articles/53666895075476-What-Is-the-Insightly-CRM-MCP-Server",
+            "status": "blocked_by_bot_challenge",
+            "cutoff_advanced": false,
+            "detail": "Independent reporting was retrieved, but the primary documentation could not be reopened during this run."
+          },
+          {
+            "source": "Meta Commercial Terms revision history",
+            "status": "not_published",
+            "cutoff_advanced": false,
+            "detail": "The current preview says November 20, 2026, while October 22 reporting cited October 30; no public revision history explains the change."
+          },
+          {
+            "source": "Pennsylvania implementation guidance",
+            "status": "not_published",
+            "cutoff_advanced": false,
+            "detail": "The signed law is available, but enforcement guidance and implementation examples are not."
+          },
+          {
+            "source": "TransUnion/Fiserv match-quality and privacy details",
+            "status": "not_published",
+            "cutoff_advanced": false,
+            "detail": "No match accuracy, false-merge rate, consent flow, retention period, pricing, geography, or data-transfer architecture was found."
+          }
+        ]
+      },
+      "events": [
+        {
+          "at": "2026-10-23T08:13:01-04:00",
+          "type": "topic_queue_created",
+          "actor": "scheduled_research",
+          "detail": "Created exactly three ranked AI marketing and martech topics from the previous 72 hours with late-indexing overlap; awaiting approval."
+        }
+      ]
     }
   ],
   "archive": [
