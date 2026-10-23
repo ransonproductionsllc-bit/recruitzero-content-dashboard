@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-10-23T08:13:01-04:00",
+  "updated_at": "2026-10-23T09:09:40-04:00",
   "sync": {
     "status": "connected",
     "discord_guild_id": "1553886101003837561",
@@ -956,414 +956,6 @@
           "topicality": 10,
           "viral_potential": 8,
           "predicted_audience_response": "Operators will discuss whether direct customer interactions can reduce journey uncertainty, how intentionally provided preferences should be used, and where permissions should separate viewing a signal from activating it."
-        },
-        "day_7": null,
-        "day_30": null,
-        "qualitative_outcome": null,
-        "editorial_lesson": null
-      }
-    },
-    {
-      "id": "ai-martech-topic-queue-2026-10-22",
-      "kind": "content",
-      "title": "AI marketing and martech topic approval queue",
-      "created_at": "2026-10-22T08:08:04-04:00",
-      "updated_at": "2026-10-22T09:56:05-04:00",
-      "status": "awaiting_post_approval",
-      "stage": "post_approval",
-      "topic_options": [
-        {
-          "option": 1,
-          "rank": 1,
-          "title": "Walmart creates controlled identities and permissions for shopping agents",
-          "event_date": "2026-10-21",
-          "proposed_hook": "Walmart is giving shopping agents their own identities, permissions, and spending limits. Commerce teams now have to decide how a delegated buyer enters loyalty, attribution, offers, substitutions, and returns.",
-          "marketer_angle": "Commerce and retail-media teams need an operating model for agent-originated orders: authorization, offer parity, loyalty recognition, inventory decisions, attribution, customer confirmation, and post-purchase accountability. Those rules matter even outside Walmart.",
-          "why_it_passed": "Walmart announced a specific customer-control layer and a future machine-access gateway for third-party shopping agents. The primary source defines the planned identity and permission model, while market reporting supports the need for approved agent access without validating the unfinished gateway.",
-          "operational_impact_chain": "Walmart separates shopping agents into controlled profiles and a retailer gateway -> delegated shopping can bypass parts of the human storefront -> commerce, loyalty, retail-media, privacy, and analytics teams define agent permissions and reporting -> teams decide how prices, promotions, substitutions, returns, and attribution work for agent orders -> agent-order share, authorization failures, conversion, loyalty recognition, and retail-media exposure become measurable consequences.",
-          "scores": {
-            "relevance": 10,
-            "relevance_rationale": "Retailer-defined agent identity, permissions, spending controls, loyalty, attribution, and machine access create immediate cross-functional decisions for commerce operators.",
-            "topicality": 10,
-            "topicality_rationale": "Walmart announced Agent Profiles and the future gateway on October 21, 2026.",
-            "viral_potential": 9,
-            "viral_potential_rationale": "Delegated buying creates a practical debate about customer intent, offer parity, loyalty recognition, retail-media exposure, and agent accountability.",
-            "total": 29
-          },
-          "confidence": "high",
-          "confidence_limitation": "The announced control model is clear, but Agent Profiles are planned within a month and Walmart has not published gateway documentation, fees, approved-agent lists, or a firm beta date.",
-          "novelty": {
-            "result": "meaningful_advance",
-            "rationale": "The archive covers Google's cross-retailer cart, but not retailer-controlled identities, permissions, spending limits, and machine access for third-party shopping agents."
-          },
-          "predicted_audience_response": "Commerce teams will debate whether agents should receive the same offers as people, how delegated purchases enter loyalty and attribution, and which actions require customer confirmation.",
-          "materiality_gates": {
-            "material_event": "pass",
-            "editorial_thesis_fit": "pass",
-            "primary_evidence": "pass",
-            "availability_clarity": "pass_with_future_beta_limits",
-            "claim_discipline": "pass",
-            "operational_impact": "pass",
-            "contradiction_search": "pass_with_market_access_context",
-            "archive_novelty": "pass_meaningful_advance"
-          },
-          "coverage_limitations": [
-            "Agent Profiles are planned within a month rather than available today.",
-            "No public gateway documentation, approved-agent list, fees, beta date, or full technical specification was published."
-          ],
-          "sources": [
-            {
-              "type": "primary_company_release",
-              "title": "Walmart makes it possible for agents to shop on behalf of customers",
-              "url": "https://corporate.walmart.com/news/2026/10/Making-It-Possible-for-Agents-to-Shop-on-Behalf-of-Customers"
-            },
-            {
-              "type": "independent_market_context",
-              "title": "TechCrunch: The next hurdle for AI agents is getting websites to let them in",
-              "url": "https://techcrunch.com/2026/10/06/the-next-hurdle-for-ai-agents-getting-websites-to-let-them-in/"
-            }
-          ]
-        },
-        {
-          "option": 2,
-          "rank": 2,
-          "title": "OpenAI explains how conversational context enters ChatGPT ad selection",
-          "event_date": "2026-10-21",
-          "proposed_hook": "ChatGPT ads are selected from more than the latest prompt. OpenAI says its system maintains conversational state, can use nonsensitive past-chat context when personalization is enabled, and lets an LLM orchestrate retrieval, ranking, and auction calls.",
-          "marketer_angle": "Paid-media teams need a method for buying and evaluating ads against inferred customer jobs when the platform can read a multi-turn journey but the advertiser cannot. Creative strategy, privacy review, experimentation, and budget confidence all change.",
-          "why_it_passed": "OpenAI published the first detailed production architecture for its ad system, including stateful sessions, semantic intent summaries, separate ad services, and LLM auction orchestration. Independent buyer reporting supplies the counterweight: measurement gaps still constrain budget commitments.",
-          "operational_impact_chain": "ChatGPT ad selection uses evolving conversational intent and an LLM-operated auction workflow -> media teams optimize for inferred jobs rather than isolated keywords -> paid-media, creative, privacy, and analytics teams redefine targeting assumptions and evidence requirements -> teams decide how much budget to commit without conversation-level reporting -> test-budget share, attributed conversions, creative relevance, and measurement confidence become operating measures.",
-          "scores": {
-            "relevance": 10,
-            "relevance_rationale": "The architecture changes targeting assumptions, creative planning, privacy review, measurement, and budget decisions for paid-media operators.",
-            "topicality": 10,
-            "topicality_rationale": "OpenAI published the production ad-stack architecture on October 21, 2026.",
-            "viral_potential": 9,
-            "viral_potential_rationale": "The gap between rich conversational targeting and limited advertiser visibility creates a strong, practical measurement debate.",
-            "total": 29
-          },
-          "confidence": "high",
-          "confidence_limitation": "The production architecture is documented, but advertisers do not receive private conversation paths or semantic intent summaries, and no independent audit of separation, ranking, privacy, or auction behavior was found.",
-          "novelty": {
-            "result": "distinct",
-            "rationale": "The archive covers Google's AI Mode advertising with Personal Intelligence, not OpenAI's disclosed stateful targeting, semantic intent, LLM auction orchestration, and measurement constraints."
-          },
-          "predicted_audience_response": "Paid-media operators will ask how to optimize and measure ads selected from a private, multi-turn conversation they cannot inspect.",
-          "materiality_gates": {
-            "material_event": "pass_material_architecture_disclosure",
-            "editorial_thesis_fit": "pass",
-            "primary_evidence": "pass",
-            "availability_clarity": "pass_production_system",
-            "claim_discipline": "pass",
-            "operational_impact": "pass",
-            "contradiction_search": "pass_with_measurement_gap_context",
-            "archive_novelty": "pass"
-          },
-          "coverage_limitations": [
-            "No independent technical audit of the separation between ad and answer systems was found.",
-            "Advertisers do not receive the underlying private conversation, semantic intent summary, or full auction logic."
-          ],
-          "sources": [
-            {
-              "type": "primary_engineering_disclosure",
-              "title": "OpenAI: How we built ChatGPT ad stack",
-              "url": "https://openai.com/index/building-chatgpt-ad-stack/"
-            },
-            {
-              "type": "independent_buyer_context",
-              "title": "Digiday: OpenAI measurement gaps keep budgets at test level",
-              "url": "https://digiday.com/marketing/openais-measurement-gaps-are-keeping-chatgpt-ads-budgets-at-test-level/"
-            }
-          ]
-        },
-        {
-          "option": 3,
-          "rank": 3,
-          "title": "Safari 27 blocks third-party identity-resolution infrastructure",
-          "event_date": "2026-10-19",
-          "proposed_hook": "Safari is blocking the infrastructure that turns an email address or phone number into a persistent cross-site identity. Identity and measurement teams now have to separate real first-party relationships from resolution they only thought they controlled.",
-          "marketer_angle": "Marketing-data teams need browser-specific controls for identity coverage, audience sizing, attribution, enrichment, and vendor dependence. The broader lesson applies beyond Apple: every external identity layer needs a measurable failure mode and a first-party fallback.",
-          "why_it_passed": "WebKit documented a shipped domain-level block on designated identity-resolution infrastructure. Independent reporting confirms the policy and supplies a limitation: Apple has not published a complete stable list, and observed enforcement does not support sweeping claims about all adtech identity services.",
-          "operational_impact_chain": "Safari blocks designated identity-resolution domains -> resolver requests fail during login or form submission -> identity, advertising, and analytics teams lose part of their match and enrichment coverage -> teams decide which use cases can rely on direct first-party relationships and how to measure browser-specific loss -> match rate, addressable audience, attributed conversions, and Safari-specific data gaps become watch metrics.",
-          "scores": {
-            "relevance": 10,
-            "relevance_rationale": "The browser change directly affects identity architecture, match rates, audience reach, enrichment, attribution, and vendor selection.",
-            "topicality": 9,
-            "topicality_rationale": "WebKit announced the shipped change on October 19, 2026, at the edge of the 72-hour research window.",
-            "viral_potential": 9,
-            "viral_potential_rationale": "Privacy protection, adtech dependence, and Apple's own advertising interests create a concrete industry tension without requiring speculation about intent.",
-            "total": 28
-          },
-          "confidence": "high",
-          "confidence_limitation": "The shipped browser behavior is documented, but Apple has not published a complete stable blocklist or quantified impact; independent testing suggests the affected scope may be narrower or less consistent than broad interpretations imply.",
-          "novelty": {
-            "result": "distinct",
-            "rationale": "No archived RecruitZero item addresses browser-level blocking of third-party identity-resolution infrastructure and the resulting loss of match and attribution coverage."
-          },
-          "predicted_audience_response": "Identity and measurement teams will compare Safari match-rate loss, first-party alternatives, and whether Apple's privacy rules create uneven competitive effects.",
-          "materiality_gates": {
-            "material_event": "pass",
-            "editorial_thesis_fit": "pass",
-            "primary_evidence": "pass",
-            "availability_clarity": "pass_shipped",
-            "claim_discipline": "pass",
-            "operational_impact": "pass",
-            "contradiction_search": "pass_with_scope_uncertainty",
-            "archive_novelty": "pass"
-          },
-          "coverage_limitations": [
-            "Apple has not published a complete stable public blocklist or quantified market impact.",
-            "Independent testing suggests enforcement scope may be narrower or less consistent than broad interpretations imply."
-          ],
-          "sources": [
-            {
-              "type": "primary_engineering_post",
-              "title": "WebKit: Blocking identity resolution infrastructure",
-              "url": "https://webkit.org/blog/18438/blocking-identity-resolution-infrastructure/"
-            },
-            {
-              "type": "independent_context",
-              "title": "Digiday: Apple explains Safari identity-resolution block",
-              "url": "https://digiday.com/marketing/apples-growing-ads-business-puts-its-safari-blocklist-under-scrutiny/"
-            }
-          ]
-        }
-      ],
-      "research": {
-        "source_cutoff": "2026-10-19T08:08:04-04:00",
-        "discovery_window_hours": 72,
-        "discovery_window_expansion": null,
-        "event_ledger_path": "/home/ranson/.hermes/social-queue/research/2026-10-22-ai-martech-event-ledger.json",
-        "decision_journal_path": "/home/ranson/.hermes/social-queue/research/2026-10-22-ai-martech-decision-journal.md",
-        "citation_ledger_path": "/home/ranson/.hermes/social-queue/research/2026-10-22-citations-ledger.json",
-        "reserve_candidate_count": 6,
-        "reserve_candidates": [
-          "Contentful Content Operations Agent",
-          "Microsoft Monetize Deal Troubleshooting Agent",
-          "Meiro Local AI CDP",
-          "TransUnion/Fiserv Transaction Matching",
-          "Customer.io snapshot segments",
-          "Sanity MCP document validation"
-        ],
-        "coverage_gaps": [
-          {
-            "source": "Direct page extraction backend",
-            "status": "unavailable",
-            "cutoff_advanced": false,
-            "detail": "The configured extractor was search-only. Browser/search retrieval supplied source evidence; the failure was not treated as no news."
-          },
-          {
-            "source": "Walmart Agent Gateway documentation",
-            "status": "not_published",
-            "cutoff_advanced": false,
-            "detail": "No public technical documentation, approved-agent list, fees, or firm beta date."
-          },
-          {
-            "source": "OpenAI ad-stack independent audit",
-            "status": "not_found",
-            "cutoff_advanced": false,
-            "detail": "No independent audit of separation, privacy, ranking, or auction behavior was found."
-          },
-          {
-            "source": "Safari identity-resolution blocklist and impact data",
-            "status": "not_published",
-            "cutoff_advanced": false,
-            "detail": "Apple has not published a complete stable list or quantified match and attribution impact."
-          }
-        ]
-      },
-      "events": [
-        {
-          "at": "2026-10-22T08:08:04-04:00",
-          "type": "topic_queue_created",
-          "actor": "scheduled_research",
-          "detail": "Created exactly three ranked AI marketing and martech topics from the previous 72 hours with late-indexing overlap; awaiting approval."
-        },
-        {
-          "at": "2026-10-22T09:36:04-04:00",
-          "type": "topic_approved",
-          "actor": "github_user:ransonproductionsllc-bit",
-          "github_issue_number": 3,
-          "detail": "Authorized dashboard approval selected option 2, OpenAI explains how conversational context enters ChatGPT ad selection, for drafting and review only. Cover generation and LinkedIn publication remain unauthorized."
-        },
-        {
-          "at": "2026-10-22T09:45:37-04:00",
-          "type": "post_reviewed",
-          "actor": "recruitzero_content_workflow",
-          "detail": "Claude Opus produced the initial draft with no fallback. One interpretation correction cycle narrowed the multi-turn context, advertiser-visibility, and mixed-measurement claims. Final copy passed argument review, stop-slop 45/50, voice fidelity 9.5/10, construction, factual-fidelity, operational-impact, novelty, and stack-independent-value gates; awaiting explicit post approval."
-        },
-        {
-          "at": "2026-10-22T09:56:05-04:00",
-          "type": "post_revised_after_deep_review",
-          "actor": "recruitzero_content_workflow",
-          "detail": "A second interpretation review narrowed the hook and source-bounded absence claims. Final 245-word copy passed factual fidelity, operational impact, novelty, stack-independent value, stop-slop 46/50, and voice fidelity 9.3/10; awaiting explicit post approval."
-        }
-      ],
-      "topic": {
-        "option": 2,
-        "title": "OpenAI explains how conversational context enters ChatGPT ad selection",
-        "selected": true,
-        "approved_via": "github_dashboard_issue",
-        "approved_at": "2026-10-22T09:36:04-04:00",
-        "approval_issue_number": 3,
-        "approval_issue_url": "https://github.com/ransonproductionsllc-bit/recruitzero-content-dashboard/issues/3",
-        "proposed_hook": "ChatGPT ads are selected from more than the latest prompt. OpenAI says its system maintains conversational state, can use nonsensitive past-chat context when personalization is enabled, and lets an LLM orchestrate retrieval, ranking, and auction calls.",
-        "marketer_angle": "Paid-media teams need a method for buying and evaluating ads against inferred customer jobs when the platform can read a multi-turn journey but the advertiser cannot. Creative strategy, privacy review, experimentation, and budget confidence all change.",
-        "sources": [
-          {
-            "type": "primary_engineering_disclosure",
-            "title": "OpenAI: How we built ChatGPT ad stack",
-            "url": "https://openai.com/index/building-chatgpt-ad-stack/"
-          },
-          {
-            "type": "independent_buyer_context",
-            "title": "Digiday: OpenAI measurement gaps keep budgets at test level",
-            "url": "https://digiday.com/marketing/openais-measurement-gaps-are-keeping-chatgpt-ads-budgets-at-test-level/"
-          }
-        ]
-      },
-      "claim_evidence": {
-        "status": "complete",
-        "path": "/home/ranson/.hermes/social-queue/research/2026-10-22-openai-chatgpt-ads-claim-evidence.json",
-        "source_count": 2,
-        "verified_claim_count": 8,
-        "load_bearing_claims_traceable": true,
-        "qualifications_preserved": true,
-        "independent_technical_audit_found": false,
-        "prohibited_overstatements_enforced": true,
-        "citation_ledger_path": "/home/ranson/.hermes/social-queue/research/2026-10-22-citations-ledger.json"
-      },
-      "editorial_intelligence": {
-        "workflow_version": 2,
-        "deep_review_status": "pass",
-        "confidence": "high",
-        "confidence_limitation": "OpenAI documents the production architecture, but advertisers do not receive prompt data and no independent audit of ad-and-answer separation, privacy handling, ranking, or auction behavior was found.",
-        "novelty": {
-          "status": "distinct",
-          "rationale": "The archive covers Google's AI Mode ad test with Personal Intelligence. This article addresses OpenAI's production architecture for stateful sessions, semantic intent, LLM tool orchestration, separate ad services, and the operator response to asymmetric context and measurement."
-        },
-        "operational_impact": {
-          "status": "pass",
-          "chain": "ChatGPT ad selection uses evolving conversational intent and an LLM-operated auction workflow -> media teams optimize for inferred customer jobs rather than isolated keywords -> paid-media, creative, privacy, and analytics teams redefine targeting assumptions and evidence requirements -> teams decide how much budget to commit without conversation-level reporting -> test-budget share, attributed conversions, creative relevance, and measurement confidence become operating measures."
-        },
-        "argument_review": {
-          "status": "pass",
-          "correction_cycles": 2,
-          "unsupported_inferences": [],
-          "missing_qualifications": [],
-          "vendor_framing_risks": [],
-          "counterargument": "This may be a platform-specific version of longstanding paid-media opacity rather than a new market-wide operating model. The article treats it as an example of an operating problem and does not claim improved outcomes.",
-          "operational_impact_status": "pass",
-          "operational_impact_rationale": "The article assigns a concrete sequence: privacy approves the contextual-inference test design, analytics validates platform-reported conversions against an independent source, and media scales only after predefined discrepancy and performance thresholds are met.",
-          "novelty_status": "distinct",
-          "stack_independent_value": "pass",
-          "stack_independent_rationale": "The privacy, analytics, and media decision sequence applies to any platform with opaque contextual targeting, regardless of whether the team buys ChatGPT Ads.",
-          "transition_status": "pass",
-          "required_corrections": [],
-          "residual_risks": [
-            "No independent technical audit of answer/ad separation, privacy handling, ranking behavior, or auction mechanics was identified in the reviewed public sources.",
-            "Exact advertiser visibility into intent categories, placement explanations, auction diagnostics, and reporting remains unclear.",
-            "The evidence does not establish that conversational intent inference improves relevance, conversion, or return.",
-            "Digiday reports mixed buyer experiences that cannot establish platform-wide measurement reliability or failure rates."
-          ]
-        },
-        "product_as_evidence": true,
-        "stack_independent_value": "pass"
-      },
-      "post": {
-        "status": "awaiting_approval",
-        "title": "ChatGPT Ads and the hidden targeting path",
-        "body": "ChatGPT Ads puts a familiar media problem in a new wrapper: can your team spend confidently on targeting it can't fully inspect?\n\nOn October 21, 2026, OpenAI published an engineering breakdown of its ChatGPT ad stack. OpenAI describes a stateful session that updates as an eligible conversation evolves. A post-trained orchestrator LLM can distill that context into a semantic summary for retrieval and nominate candidates; a separate auction tool selects the served ad and sets the price. With personalization enabled, nonsensitive information from past chats may also factor in.\n\nOpenAI's public architecture doesn't show advertisers receiving the conversation, its summary, or the full auction path. Their visibility into intent categories, explanations, diagnostics, and reporting remains unclear. Digiday reports mixed buyer experiences: some cite conversion, latency, and reporting gaps, while some agencies saw no click discrepancies. The reviewed public sources include no independent technical audit and do not independently establish that conversational intent improves relevance, conversion, or return.\n\nThe practical issue is bigger than one ad product. When a platform infers commercial intent from changing context, creative, privacy, measurement, and budget become one operating problem.\n\nEven if you never buy ChatGPT Ads, sequence the decisions:\n\n- Privacy approves the contextual-inference test design.\n- Analytics checks platform-reported conversions against an independent source.\n- Media scales only after predefined discrepancy and performance thresholds are met.\n\nThe takeaway: less visibility demands more discipline before money moves.\n\nWhat would you need to see before scaling spend you can't fully audit?",
-        "word_count": 245,
-        "sources": [
-          {
-            "type": "primary_engineering_disclosure",
-            "title": "OpenAI: How we built ChatGPT ad stack",
-            "url": "https://openai.com/index/building-chatgpt-ad-stack/"
-          },
-          {
-            "type": "independent_buyer_context",
-            "title": "Digiday: OpenAI measurement gaps keep budgets at test level",
-            "url": "https://digiday.com/marketing/openais-measurement-gaps-are-keeping-chatgpt-ads-budgets-at-test-level/"
-          }
-        ],
-        "stop_slop_score": 46,
-        "stop_slop_breakdown": {
-          "directness": 9,
-          "rhythm": 9,
-          "trust": 10,
-          "authenticity": 9,
-          "density": 9
-        },
-        "voice_fidelity_score": 9.3,
-        "construction_pass": true,
-        "construction_checklist": {
-          "word_count_150_250": true,
-          "hook": true,
-          "verified_event_explanation": true,
-          "interpretation": true,
-          "article_specific_transition": true,
-          "two_to_three_visible_bullets": true,
-          "takeaway_label": true,
-          "closing_question": true,
-          "factual_fidelity": true,
-          "stack_independent_value": true
-        },
-        "argument_review": {
-          "status": "pass",
-          "correction_cycles": 2,
-          "unsupported_inferences": [],
-          "missing_qualifications": [],
-          "vendor_framing_risks": [],
-          "counterargument": "This may be a platform-specific version of longstanding paid-media opacity rather than a new market-wide operating model. The article treats it as an example of an operating problem and does not claim improved outcomes.",
-          "operational_impact_status": "pass",
-          "operational_impact_rationale": "The article assigns a concrete sequence: privacy approves the contextual-inference test design, analytics validates platform-reported conversions against an independent source, and media scales only after predefined discrepancy and performance thresholds are met.",
-          "novelty_status": "distinct",
-          "stack_independent_value": "pass",
-          "stack_independent_rationale": "The privacy, analytics, and media decision sequence applies to any platform with opaque contextual targeting, regardless of whether the team buys ChatGPT Ads.",
-          "transition_status": "pass",
-          "required_corrections": [],
-          "residual_risks": [
-            "No independent technical audit of answer/ad separation, privacy handling, ranking behavior, or auction mechanics was identified in the reviewed public sources.",
-            "Exact advertiser visibility into intent categories, placement explanations, auction diagnostics, and reporting remains unclear.",
-            "The evidence does not establish that conversational intent inference improves relevance, conversion, or return.",
-            "Digiday reports mixed buyer experiences that cannot establish platform-wide measurement reliability or failure rates."
-          ]
-        },
-        "factual_fidelity": true,
-        "review_notes": "Claude Opus produced the initial draft and evidence-driven revision without fallback. Two interpretation-review cycles narrowed intent-inference, advertiser-visibility, and absence-of-evidence claims. Final copy passed stop-slop 46/50, voice fidelity 9.3/10, construction, factual fidelity, operational impact, novelty, and stack-independent-value gates.",
-        "writer_model": "claude-opus-5-5",
-        "writer_provider": "claude-code",
-        "writer_fallback_used": false,
-        "writer_attempts": [
-          {
-            "model": "opus",
-            "status": "success",
-            "purpose": "initial_draft"
-          },
-          {
-            "model": "opus",
-            "status": "success",
-            "purpose": "evidence_revision"
-          }
-        ],
-        "writer_session_id": "4b2e976d-10ae-43f2-be4f-04fee1946af1",
-        "review_model": "gpt-5.6-sol",
-        "review_provider": "openai-codex",
-        "markdown_path": "/home/ranson/.hermes/social-queue/linkedin/2026-10-22-openai-chatgpt-ads-reviewed.md",
-        "stack_independent_value": true
-      },
-      "performance": {
-        "tracking_status": "awaiting_publication_data",
-        "publication_url": null,
-        "published_at": null,
-        "forecast": {
-          "relevance": 10,
-          "topicality": 10,
-          "viral_potential": 9,
-          "predicted_audience_response": "Paid-media operators will ask how to optimize and measure ads selected from a private, multi-turn conversation they cannot inspect.",
-          "confidence": "high",
-          "novelty": "distinct"
         },
         "day_7": null,
         "day_30": null,
@@ -2373,6 +1965,449 @@
         "day_30": null,
         "qualitative_outcome": null,
         "editorial_lesson": null
+      }
+    },
+    {
+      "id": "ai-martech-topic-queue-2026-10-22",
+      "kind": "content",
+      "title": "AI marketing and martech topic approval queue",
+      "created_at": "2026-10-22T08:08:04-04:00",
+      "updated_at": "2026-10-23T09:09:40-04:00",
+      "status": "complete",
+      "stage": "assets_complete",
+      "topic_options": [
+        {
+          "option": 1,
+          "rank": 1,
+          "title": "Walmart creates controlled identities and permissions for shopping agents",
+          "event_date": "2026-10-21",
+          "proposed_hook": "Walmart is giving shopping agents their own identities, permissions, and spending limits. Commerce teams now have to decide how a delegated buyer enters loyalty, attribution, offers, substitutions, and returns.",
+          "marketer_angle": "Commerce and retail-media teams need an operating model for agent-originated orders: authorization, offer parity, loyalty recognition, inventory decisions, attribution, customer confirmation, and post-purchase accountability. Those rules matter even outside Walmart.",
+          "why_it_passed": "Walmart announced a specific customer-control layer and a future machine-access gateway for third-party shopping agents. The primary source defines the planned identity and permission model, while market reporting supports the need for approved agent access without validating the unfinished gateway.",
+          "operational_impact_chain": "Walmart separates shopping agents into controlled profiles and a retailer gateway -> delegated shopping can bypass parts of the human storefront -> commerce, loyalty, retail-media, privacy, and analytics teams define agent permissions and reporting -> teams decide how prices, promotions, substitutions, returns, and attribution work for agent orders -> agent-order share, authorization failures, conversion, loyalty recognition, and retail-media exposure become measurable consequences.",
+          "scores": {
+            "relevance": 10,
+            "relevance_rationale": "Retailer-defined agent identity, permissions, spending controls, loyalty, attribution, and machine access create immediate cross-functional decisions for commerce operators.",
+            "topicality": 10,
+            "topicality_rationale": "Walmart announced Agent Profiles and the future gateway on October 21, 2026.",
+            "viral_potential": 9,
+            "viral_potential_rationale": "Delegated buying creates a practical debate about customer intent, offer parity, loyalty recognition, retail-media exposure, and agent accountability.",
+            "total": 29
+          },
+          "confidence": "high",
+          "confidence_limitation": "The announced control model is clear, but Agent Profiles are planned within a month and Walmart has not published gateway documentation, fees, approved-agent lists, or a firm beta date.",
+          "novelty": {
+            "result": "meaningful_advance",
+            "rationale": "The archive covers Google's cross-retailer cart, but not retailer-controlled identities, permissions, spending limits, and machine access for third-party shopping agents."
+          },
+          "predicted_audience_response": "Commerce teams will debate whether agents should receive the same offers as people, how delegated purchases enter loyalty and attribution, and which actions require customer confirmation.",
+          "materiality_gates": {
+            "material_event": "pass",
+            "editorial_thesis_fit": "pass",
+            "primary_evidence": "pass",
+            "availability_clarity": "pass_with_future_beta_limits",
+            "claim_discipline": "pass",
+            "operational_impact": "pass",
+            "contradiction_search": "pass_with_market_access_context",
+            "archive_novelty": "pass_meaningful_advance"
+          },
+          "coverage_limitations": [
+            "Agent Profiles are planned within a month rather than available today.",
+            "No public gateway documentation, approved-agent list, fees, beta date, or full technical specification was published."
+          ],
+          "sources": [
+            {
+              "type": "primary_company_release",
+              "title": "Walmart makes it possible for agents to shop on behalf of customers",
+              "url": "https://corporate.walmart.com/news/2026/10/Making-It-Possible-for-Agents-to-Shop-on-Behalf-of-Customers"
+            },
+            {
+              "type": "independent_market_context",
+              "title": "TechCrunch: The next hurdle for AI agents is getting websites to let them in",
+              "url": "https://techcrunch.com/2026/10/06/the-next-hurdle-for-ai-agents-getting-websites-to-let-them-in/"
+            }
+          ]
+        },
+        {
+          "option": 2,
+          "rank": 2,
+          "title": "OpenAI explains how conversational context enters ChatGPT ad selection",
+          "event_date": "2026-10-21",
+          "proposed_hook": "ChatGPT ads are selected from more than the latest prompt. OpenAI says its system maintains conversational state, can use nonsensitive past-chat context when personalization is enabled, and lets an LLM orchestrate retrieval, ranking, and auction calls.",
+          "marketer_angle": "Paid-media teams need a method for buying and evaluating ads against inferred customer jobs when the platform can read a multi-turn journey but the advertiser cannot. Creative strategy, privacy review, experimentation, and budget confidence all change.",
+          "why_it_passed": "OpenAI published the first detailed production architecture for its ad system, including stateful sessions, semantic intent summaries, separate ad services, and LLM auction orchestration. Independent buyer reporting supplies the counterweight: measurement gaps still constrain budget commitments.",
+          "operational_impact_chain": "ChatGPT ad selection uses evolving conversational intent and an LLM-operated auction workflow -> media teams optimize for inferred jobs rather than isolated keywords -> paid-media, creative, privacy, and analytics teams redefine targeting assumptions and evidence requirements -> teams decide how much budget to commit without conversation-level reporting -> test-budget share, attributed conversions, creative relevance, and measurement confidence become operating measures.",
+          "scores": {
+            "relevance": 10,
+            "relevance_rationale": "The architecture changes targeting assumptions, creative planning, privacy review, measurement, and budget decisions for paid-media operators.",
+            "topicality": 10,
+            "topicality_rationale": "OpenAI published the production ad-stack architecture on October 21, 2026.",
+            "viral_potential": 9,
+            "viral_potential_rationale": "The gap between rich conversational targeting and limited advertiser visibility creates a strong, practical measurement debate.",
+            "total": 29
+          },
+          "confidence": "high",
+          "confidence_limitation": "The production architecture is documented, but advertisers do not receive private conversation paths or semantic intent summaries, and no independent audit of separation, ranking, privacy, or auction behavior was found.",
+          "novelty": {
+            "result": "distinct",
+            "rationale": "The archive covers Google's AI Mode advertising with Personal Intelligence, not OpenAI's disclosed stateful targeting, semantic intent, LLM auction orchestration, and measurement constraints."
+          },
+          "predicted_audience_response": "Paid-media operators will ask how to optimize and measure ads selected from a private, multi-turn conversation they cannot inspect.",
+          "materiality_gates": {
+            "material_event": "pass_material_architecture_disclosure",
+            "editorial_thesis_fit": "pass",
+            "primary_evidence": "pass",
+            "availability_clarity": "pass_production_system",
+            "claim_discipline": "pass",
+            "operational_impact": "pass",
+            "contradiction_search": "pass_with_measurement_gap_context",
+            "archive_novelty": "pass"
+          },
+          "coverage_limitations": [
+            "No independent technical audit of the separation between ad and answer systems was found.",
+            "Advertisers do not receive the underlying private conversation, semantic intent summary, or full auction logic."
+          ],
+          "sources": [
+            {
+              "type": "primary_engineering_disclosure",
+              "title": "OpenAI: How we built ChatGPT ad stack",
+              "url": "https://openai.com/index/building-chatgpt-ad-stack/"
+            },
+            {
+              "type": "independent_buyer_context",
+              "title": "Digiday: OpenAI measurement gaps keep budgets at test level",
+              "url": "https://digiday.com/marketing/openais-measurement-gaps-are-keeping-chatgpt-ads-budgets-at-test-level/"
+            }
+          ]
+        },
+        {
+          "option": 3,
+          "rank": 3,
+          "title": "Safari 27 blocks third-party identity-resolution infrastructure",
+          "event_date": "2026-10-19",
+          "proposed_hook": "Safari is blocking the infrastructure that turns an email address or phone number into a persistent cross-site identity. Identity and measurement teams now have to separate real first-party relationships from resolution they only thought they controlled.",
+          "marketer_angle": "Marketing-data teams need browser-specific controls for identity coverage, audience sizing, attribution, enrichment, and vendor dependence. The broader lesson applies beyond Apple: every external identity layer needs a measurable failure mode and a first-party fallback.",
+          "why_it_passed": "WebKit documented a shipped domain-level block on designated identity-resolution infrastructure. Independent reporting confirms the policy and supplies a limitation: Apple has not published a complete stable list, and observed enforcement does not support sweeping claims about all adtech identity services.",
+          "operational_impact_chain": "Safari blocks designated identity-resolution domains -> resolver requests fail during login or form submission -> identity, advertising, and analytics teams lose part of their match and enrichment coverage -> teams decide which use cases can rely on direct first-party relationships and how to measure browser-specific loss -> match rate, addressable audience, attributed conversions, and Safari-specific data gaps become watch metrics.",
+          "scores": {
+            "relevance": 10,
+            "relevance_rationale": "The browser change directly affects identity architecture, match rates, audience reach, enrichment, attribution, and vendor selection.",
+            "topicality": 9,
+            "topicality_rationale": "WebKit announced the shipped change on October 19, 2026, at the edge of the 72-hour research window.",
+            "viral_potential": 9,
+            "viral_potential_rationale": "Privacy protection, adtech dependence, and Apple's own advertising interests create a concrete industry tension without requiring speculation about intent.",
+            "total": 28
+          },
+          "confidence": "high",
+          "confidence_limitation": "The shipped browser behavior is documented, but Apple has not published a complete stable blocklist or quantified impact; independent testing suggests the affected scope may be narrower or less consistent than broad interpretations imply.",
+          "novelty": {
+            "result": "distinct",
+            "rationale": "No archived RecruitZero item addresses browser-level blocking of third-party identity-resolution infrastructure and the resulting loss of match and attribution coverage."
+          },
+          "predicted_audience_response": "Identity and measurement teams will compare Safari match-rate loss, first-party alternatives, and whether Apple's privacy rules create uneven competitive effects.",
+          "materiality_gates": {
+            "material_event": "pass",
+            "editorial_thesis_fit": "pass",
+            "primary_evidence": "pass",
+            "availability_clarity": "pass_shipped",
+            "claim_discipline": "pass",
+            "operational_impact": "pass",
+            "contradiction_search": "pass_with_scope_uncertainty",
+            "archive_novelty": "pass"
+          },
+          "coverage_limitations": [
+            "Apple has not published a complete stable public blocklist or quantified market impact.",
+            "Independent testing suggests enforcement scope may be narrower or less consistent than broad interpretations imply."
+          ],
+          "sources": [
+            {
+              "type": "primary_engineering_post",
+              "title": "WebKit: Blocking identity resolution infrastructure",
+              "url": "https://webkit.org/blog/18438/blocking-identity-resolution-infrastructure/"
+            },
+            {
+              "type": "independent_context",
+              "title": "Digiday: Apple explains Safari identity-resolution block",
+              "url": "https://digiday.com/marketing/apples-growing-ads-business-puts-its-safari-blocklist-under-scrutiny/"
+            }
+          ]
+        }
+      ],
+      "research": {
+        "source_cutoff": "2026-10-19T08:08:04-04:00",
+        "discovery_window_hours": 72,
+        "discovery_window_expansion": null,
+        "event_ledger_path": "/home/ranson/.hermes/social-queue/research/2026-10-22-ai-martech-event-ledger.json",
+        "decision_journal_path": "/home/ranson/.hermes/social-queue/research/2026-10-22-ai-martech-decision-journal.md",
+        "citation_ledger_path": "/home/ranson/.hermes/social-queue/research/2026-10-22-citations-ledger.json",
+        "reserve_candidate_count": 6,
+        "reserve_candidates": [
+          "Contentful Content Operations Agent",
+          "Microsoft Monetize Deal Troubleshooting Agent",
+          "Meiro Local AI CDP",
+          "TransUnion/Fiserv Transaction Matching",
+          "Customer.io snapshot segments",
+          "Sanity MCP document validation"
+        ],
+        "coverage_gaps": [
+          {
+            "source": "Direct page extraction backend",
+            "status": "unavailable",
+            "cutoff_advanced": false,
+            "detail": "The configured extractor was search-only. Browser/search retrieval supplied source evidence; the failure was not treated as no news."
+          },
+          {
+            "source": "Walmart Agent Gateway documentation",
+            "status": "not_published",
+            "cutoff_advanced": false,
+            "detail": "No public technical documentation, approved-agent list, fees, or firm beta date."
+          },
+          {
+            "source": "OpenAI ad-stack independent audit",
+            "status": "not_found",
+            "cutoff_advanced": false,
+            "detail": "No independent audit of separation, privacy, ranking, or auction behavior was found."
+          },
+          {
+            "source": "Safari identity-resolution blocklist and impact data",
+            "status": "not_published",
+            "cutoff_advanced": false,
+            "detail": "Apple has not published a complete stable list or quantified match and attribution impact."
+          }
+        ]
+      },
+      "events": [
+        {
+          "at": "2026-10-22T08:08:04-04:00",
+          "type": "topic_queue_created",
+          "actor": "scheduled_research",
+          "detail": "Created exactly three ranked AI marketing and martech topics from the previous 72 hours with late-indexing overlap; awaiting approval."
+        },
+        {
+          "at": "2026-10-22T09:36:04-04:00",
+          "type": "topic_approved",
+          "actor": "github_user:ransonproductionsllc-bit",
+          "github_issue_number": 3,
+          "detail": "Authorized dashboard approval selected option 2, OpenAI explains how conversational context enters ChatGPT ad selection, for drafting and review only. Cover generation and LinkedIn publication remain unauthorized."
+        },
+        {
+          "at": "2026-10-22T09:45:37-04:00",
+          "type": "post_reviewed",
+          "actor": "recruitzero_content_workflow",
+          "detail": "Claude Opus produced the initial draft with no fallback. One interpretation correction cycle narrowed the multi-turn context, advertiser-visibility, and mixed-measurement claims. Final copy passed argument review, stop-slop 45/50, voice fidelity 9.5/10, construction, factual-fidelity, operational-impact, novelty, and stack-independent-value gates; awaiting explicit post approval."
+        },
+        {
+          "at": "2026-10-22T09:56:05-04:00",
+          "type": "post_revised_after_deep_review",
+          "actor": "recruitzero_content_workflow",
+          "detail": "A second interpretation review narrowed the hook and source-bounded absence claims. Final 245-word copy passed factual fidelity, operational impact, novelty, stack-independent value, stop-slop 46/50, and voice fidelity 9.3/10; awaiting explicit post approval."
+        },
+        {
+          "at": "2026-10-23T09:09:40-04:00",
+          "type": "post_approved",
+          "actor": "github_user:ransonproductionsllc-bit",
+          "github_issue_number": 4,
+          "detail": "Authorized dashboard approval accepted the canonical reviewed post for production cover generation only. LinkedIn publication remains manual and was not performed."
+        },
+        {
+          "at": "2026-10-23T09:09:40-04:00",
+          "type": "assets_completed",
+          "actor": "recruitzero_content_workflow",
+          "github_issue_number": 4,
+          "detail": "Generated the production cover with openai-codex gpt-image-2-medium, exported and visually inspected the canonical 1200x627 PNG, archived the complete item, and did not publish to LinkedIn."
+        }
+      ],
+      "topic": {
+        "option": 2,
+        "title": "OpenAI explains how conversational context enters ChatGPT ad selection",
+        "selected": true,
+        "approved_via": "github_dashboard_issue",
+        "approved_at": "2026-10-22T09:36:04-04:00",
+        "approval_issue_number": 3,
+        "approval_issue_url": "https://github.com/ransonproductionsllc-bit/recruitzero-content-dashboard/issues/3",
+        "proposed_hook": "ChatGPT ads are selected from more than the latest prompt. OpenAI says its system maintains conversational state, can use nonsensitive past-chat context when personalization is enabled, and lets an LLM orchestrate retrieval, ranking, and auction calls.",
+        "marketer_angle": "Paid-media teams need a method for buying and evaluating ads against inferred customer jobs when the platform can read a multi-turn journey but the advertiser cannot. Creative strategy, privacy review, experimentation, and budget confidence all change.",
+        "sources": [
+          {
+            "type": "primary_engineering_disclosure",
+            "title": "OpenAI: How we built ChatGPT ad stack",
+            "url": "https://openai.com/index/building-chatgpt-ad-stack/"
+          },
+          {
+            "type": "independent_buyer_context",
+            "title": "Digiday: OpenAI measurement gaps keep budgets at test level",
+            "url": "https://digiday.com/marketing/openais-measurement-gaps-are-keeping-chatgpt-ads-budgets-at-test-level/"
+          }
+        ]
+      },
+      "claim_evidence": {
+        "status": "complete",
+        "path": "/home/ranson/.hermes/social-queue/research/2026-10-22-openai-chatgpt-ads-claim-evidence.json",
+        "source_count": 2,
+        "verified_claim_count": 8,
+        "load_bearing_claims_traceable": true,
+        "qualifications_preserved": true,
+        "independent_technical_audit_found": false,
+        "prohibited_overstatements_enforced": true,
+        "citation_ledger_path": "/home/ranson/.hermes/social-queue/research/2026-10-22-citations-ledger.json"
+      },
+      "editorial_intelligence": {
+        "workflow_version": 2,
+        "deep_review_status": "pass",
+        "confidence": "high",
+        "confidence_limitation": "OpenAI documents the production architecture, but advertisers do not receive prompt data and no independent audit of ad-and-answer separation, privacy handling, ranking, or auction behavior was found.",
+        "novelty": {
+          "status": "distinct",
+          "rationale": "The archive covers Google's AI Mode ad test with Personal Intelligence. This article addresses OpenAI's production architecture for stateful sessions, semantic intent, LLM tool orchestration, separate ad services, and the operator response to asymmetric context and measurement."
+        },
+        "operational_impact": {
+          "status": "pass",
+          "chain": "ChatGPT ad selection uses evolving conversational intent and an LLM-operated auction workflow -> media teams optimize for inferred customer jobs rather than isolated keywords -> paid-media, creative, privacy, and analytics teams redefine targeting assumptions and evidence requirements -> teams decide how much budget to commit without conversation-level reporting -> test-budget share, attributed conversions, creative relevance, and measurement confidence become operating measures."
+        },
+        "argument_review": {
+          "status": "pass",
+          "correction_cycles": 2,
+          "unsupported_inferences": [],
+          "missing_qualifications": [],
+          "vendor_framing_risks": [],
+          "counterargument": "This may be a platform-specific version of longstanding paid-media opacity rather than a new market-wide operating model. The article treats it as an example of an operating problem and does not claim improved outcomes.",
+          "operational_impact_status": "pass",
+          "operational_impact_rationale": "The article assigns a concrete sequence: privacy approves the contextual-inference test design, analytics validates platform-reported conversions against an independent source, and media scales only after predefined discrepancy and performance thresholds are met.",
+          "novelty_status": "distinct",
+          "stack_independent_value": "pass",
+          "stack_independent_rationale": "The privacy, analytics, and media decision sequence applies to any platform with opaque contextual targeting, regardless of whether the team buys ChatGPT Ads.",
+          "transition_status": "pass",
+          "required_corrections": [],
+          "residual_risks": [
+            "No independent technical audit of answer/ad separation, privacy handling, ranking behavior, or auction mechanics was identified in the reviewed public sources.",
+            "Exact advertiser visibility into intent categories, placement explanations, auction diagnostics, and reporting remains unclear.",
+            "The evidence does not establish that conversational intent inference improves relevance, conversion, or return.",
+            "Digiday reports mixed buyer experiences that cannot establish platform-wide measurement reliability or failure rates."
+          ]
+        },
+        "product_as_evidence": true,
+        "stack_independent_value": "pass"
+      },
+      "post": {
+        "status": "approved",
+        "title": "ChatGPT Ads and the hidden targeting path",
+        "body": "ChatGPT Ads puts a familiar media problem in a new wrapper: can your team spend confidently on targeting it can't fully inspect?\n\nOn October 21, 2026, OpenAI published an engineering breakdown of its ChatGPT ad stack. OpenAI describes a stateful session that updates as an eligible conversation evolves. A post-trained orchestrator LLM can distill that context into a semantic summary for retrieval and nominate candidates; a separate auction tool selects the served ad and sets the price. With personalization enabled, nonsensitive information from past chats may also factor in.\n\nOpenAI's public architecture doesn't show advertisers receiving the conversation, its summary, or the full auction path. Their visibility into intent categories, explanations, diagnostics, and reporting remains unclear. Digiday reports mixed buyer experiences: some cite conversion, latency, and reporting gaps, while some agencies saw no click discrepancies. The reviewed public sources include no independent technical audit and do not independently establish that conversational intent improves relevance, conversion, or return.\n\nThe practical issue is bigger than one ad product. When a platform infers commercial intent from changing context, creative, privacy, measurement, and budget become one operating problem.\n\nEven if you never buy ChatGPT Ads, sequence the decisions:\n\n- Privacy approves the contextual-inference test design.\n- Analytics checks platform-reported conversions against an independent source.\n- Media scales only after predefined discrepancy and performance thresholds are met.\n\nThe takeaway: less visibility demands more discipline before money moves.\n\nWhat would you need to see before scaling spend you can't fully audit?",
+        "word_count": 245,
+        "sources": [
+          {
+            "type": "primary_engineering_disclosure",
+            "title": "OpenAI: How we built ChatGPT ad stack",
+            "url": "https://openai.com/index/building-chatgpt-ad-stack/"
+          },
+          {
+            "type": "independent_buyer_context",
+            "title": "Digiday: OpenAI measurement gaps keep budgets at test level",
+            "url": "https://digiday.com/marketing/openais-measurement-gaps-are-keeping-chatgpt-ads-budgets-at-test-level/"
+          }
+        ],
+        "stop_slop_score": 46,
+        "stop_slop_breakdown": {
+          "directness": 9,
+          "rhythm": 9,
+          "trust": 10,
+          "authenticity": 9,
+          "density": 9
+        },
+        "voice_fidelity_score": 9.3,
+        "construction_pass": true,
+        "construction_checklist": {
+          "word_count_150_250": true,
+          "hook": true,
+          "verified_event_explanation": true,
+          "interpretation": true,
+          "article_specific_transition": true,
+          "two_to_three_visible_bullets": true,
+          "takeaway_label": true,
+          "closing_question": true,
+          "factual_fidelity": true,
+          "stack_independent_value": true
+        },
+        "argument_review": {
+          "status": "pass",
+          "correction_cycles": 2,
+          "unsupported_inferences": [],
+          "missing_qualifications": [],
+          "vendor_framing_risks": [],
+          "counterargument": "This may be a platform-specific version of longstanding paid-media opacity rather than a new market-wide operating model. The article treats it as an example of an operating problem and does not claim improved outcomes.",
+          "operational_impact_status": "pass",
+          "operational_impact_rationale": "The article assigns a concrete sequence: privacy approves the contextual-inference test design, analytics validates platform-reported conversions against an independent source, and media scales only after predefined discrepancy and performance thresholds are met.",
+          "novelty_status": "distinct",
+          "stack_independent_value": "pass",
+          "stack_independent_rationale": "The privacy, analytics, and media decision sequence applies to any platform with opaque contextual targeting, regardless of whether the team buys ChatGPT Ads.",
+          "transition_status": "pass",
+          "required_corrections": [],
+          "residual_risks": [
+            "No independent technical audit of answer/ad separation, privacy handling, ranking behavior, or auction mechanics was identified in the reviewed public sources.",
+            "Exact advertiser visibility into intent categories, placement explanations, auction diagnostics, and reporting remains unclear.",
+            "The evidence does not establish that conversational intent inference improves relevance, conversion, or return.",
+            "Digiday reports mixed buyer experiences that cannot establish platform-wide measurement reliability or failure rates."
+          ]
+        },
+        "factual_fidelity": true,
+        "review_notes": "Claude Opus produced the initial draft and evidence-driven revision without fallback. Two interpretation-review cycles narrowed intent-inference, advertiser-visibility, and absence-of-evidence claims. Final copy passed stop-slop 46/50, voice fidelity 9.3/10, construction, factual fidelity, operational impact, novelty, and stack-independent-value gates.",
+        "writer_model": "claude-opus-5-5",
+        "writer_provider": "claude-code",
+        "writer_fallback_used": false,
+        "writer_attempts": [
+          {
+            "model": "opus",
+            "status": "success",
+            "purpose": "initial_draft"
+          },
+          {
+            "model": "opus",
+            "status": "success",
+            "purpose": "evidence_revision"
+          }
+        ],
+        "writer_session_id": "4b2e976d-10ae-43f2-be4f-04fee1946af1",
+        "review_model": "gpt-5.6-sol",
+        "review_provider": "openai-codex",
+        "markdown_path": "/home/ranson/.hermes/social-queue/linkedin/2026-10-22-openai-chatgpt-ads-reviewed.md",
+        "stack_independent_value": true,
+        "approved_via": "github_dashboard_issue",
+        "approved_at": "2026-10-23T09:09:40-04:00",
+        "approval_issue_number": 4,
+        "approval_issue_url": "https://github.com/ransonproductionsllc-bit/recruitzero-content-dashboard/issues/4"
+      },
+      "performance": {
+        "tracking_status": "awaiting_publication_data",
+        "publication_url": null,
+        "published_at": null,
+        "forecast": {
+          "relevance": 10,
+          "topicality": 10,
+          "viral_potential": 9,
+          "predicted_audience_response": "Paid-media operators will ask how to optimize and measure ads selected from a private, multi-turn conversation they cannot inspect.",
+          "confidence": "high",
+          "novelty": "distinct"
+        },
+        "day_7": null,
+        "day_30": null,
+        "qualitative_outcome": null,
+        "editorial_lesson": null
+      },
+      "assets": {
+        "cover_status": "complete",
+        "cover_provider": "openai-codex",
+        "cover_model": "gpt-image-2-medium",
+        "cover_url": "assets/ai-martech-topic-queue-2026-10-22-cover.png",
+        "cover_local_path": "/home/ranson/.hermes/social-queue/linkedin/2026-10-22-openai-chatgpt-ads-cover-1200x627.png",
+        "cover_original_path": "/home/ranson/.hermes/social-queue/linkedin/2026-10-22-openai-chatgpt-ads-cover-original.png",
+        "cover_dimensions": "1200x627",
+        "visual_inspection": "pass",
+        "generation_request_id": "0599384e-63f5-4019-b860-7b918c0b3ef1",
+        "review_page_url": "https://ransonproductionsllc-bit.github.io/recruitzero-content-dashboard/review.html?id=ai-martech-topic-queue-2026-10-22"
+      },
+      "publishing": {
+        "status": "manual_not_published",
+        "linkedin_published": false,
+        "publication_url": null
       }
     }
   ],
