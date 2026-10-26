@@ -1198,9 +1198,9 @@
       "kind": "content",
       "title": "AI marketing and martech topic approval queue",
       "created_at": "2026-10-26T08:01:11-04:00",
-      "updated_at": "2026-10-26T08:01:11-04:00",
-      "status": "awaiting_topic_approval",
-      "stage": "topic_approval",
+      "updated_at": "2026-10-26T10:31:25-04:00",
+      "status": "drafting",
+      "stage": "post_drafting",
       "topic_options": [
         {
           "option": 1,
@@ -1426,8 +1426,53 @@
           "type": "topic_queue_created",
           "actor": "scheduled_research",
           "detail": "Created exactly three ranked AI marketing and martech topics. One passed inside the 72-hour window and two late-indexed October 22 events passed during the required seven-day expansion; awaiting approval."
+        },
+        {
+          "at": "2026-10-26T10:31:25-04:00",
+          "type": "topic_approved",
+          "actor": "discord_user",
+          "discord_message_id": "1564285252757885080",
+          "detail": "User selected option 1, TapClicks gives AI assistants read-only access to governed marketing data, for drafting and review only. Cover generation and LinkedIn publication remain unauthorized."
         }
-      ]
+      ],
+      "topic": {
+        "option": 1,
+        "title": "TapClicks gives AI assistants read-only access to governed marketing data",
+        "selected": true,
+        "approved_via": "discord",
+        "approved_at": "2026-10-26T10:31:25-04:00",
+        "approval_message_id": "1564285252757885080",
+        "proposed_hook": "TapClicks can now put governed marketing data inside Claude, ChatGPT, Copilot, and Gemini without giving those assistants write access. Read-only reduces one risk, but it does not tell an operator whether the answer is accurate enough to enter a client report or budget decision.",
+        "marketer_angle": "Marketing operations and agency teams need a vendor-neutral control model for AI analysis: inherited permissions, approved use cases, prompt and answer logging, evidence links, reviewer accountability, model retention, and a rule for which outputs may influence reporting or optimization.",
+        "sources": [
+          {
+            "type": "primary_company_release",
+            "title": "TapClicks launches MCP Server for AI-powered marketing intelligence",
+            "url": "https://www.businesswire.com/news/home/20261022062402/en/TapClicks-Launches-MCP-Server-for-AI-Powered-Marketing-Intelligence"
+          },
+          {
+            "type": "primary_demo",
+            "title": "TapClicks MCP Demo",
+            "url": "https://www.youtube.com/watch?v=d3Hnh5Jo7Yw"
+          },
+          {
+            "type": "independent_context",
+            "title": "MarTech: TapClicks launches MCP server for marketing data",
+            "url": "https://martech.org/tapclicks-launches-mcp-server-for-marketing-data/"
+          }
+        ]
+      },
+      "claim_evidence": {
+        "status": "complete",
+        "path": "/home/ranson/.hermes/social-queue/research/2026-10-26-tapclicks-mcp-claim-evidence.json",
+        "source_count": 4,
+        "verified_claim_count": 8,
+        "load_bearing_claims_traceable": true,
+        "qualifications_preserved": true,
+        "independent_security_or_accuracy_test_found": false,
+        "prohibited_overstatements_enforced": true,
+        "citation_ledger_path": "/home/ranson/.hermes/social-queue/research/2026-10-26-citations-ledger.json"
+      }
     }
   ],
   "archive": [
