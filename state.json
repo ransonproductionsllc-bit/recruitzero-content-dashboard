@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-10-23T09:09:40-04:00",
+  "updated_at": "2026-10-26T08:01:11-04:00",
   "sync": {
     "status": "connected",
     "discord_guild_id": "1553886101003837561",
@@ -1190,6 +1190,242 @@
           "type": "topic_queue_created",
           "actor": "scheduled_research",
           "detail": "Created exactly three ranked AI marketing and martech topics from the previous 72 hours with late-indexing overlap; awaiting approval."
+        }
+      ]
+    },
+    {
+      "id": "ai-martech-topic-queue-2026-10-26",
+      "kind": "content",
+      "title": "AI marketing and martech topic approval queue",
+      "created_at": "2026-10-26T08:01:11-04:00",
+      "updated_at": "2026-10-26T08:01:11-04:00",
+      "status": "awaiting_topic_approval",
+      "stage": "topic_approval",
+      "topic_options": [
+        {
+          "option": 1,
+          "rank": 1,
+          "title": "TapClicks gives AI assistants read-only access to governed marketing data",
+          "event_date": "2026-10-22",
+          "expanded_window_reason": "The event falls outside the initial 72-hour window. It was found through late indexing during the required seven-day expansion and remains current because customers can connect assistants now.",
+          "proposed_hook": "TapClicks can now put governed marketing data inside Claude, ChatGPT, Copilot, and Gemini without giving those assistants write access. Read-only reduces one risk, but it does not tell an operator whether the answer is accurate enough to enter a client report or budget decision.",
+          "marketer_angle": "Marketing operations and agency teams need a vendor-neutral control model for AI analysis: inherited permissions, approved use cases, prompt and answer logging, evidence links, reviewer accountability, model retention, and a rule for which outputs may influence reporting or optimization.",
+          "why_it_passed": "TapClicks launched a specific MCP server with read-only access, inherited platform permissions, named assistant support, and availability for current platform customers. Independent coverage confirms the workflow while leaving security and answer-quality claims untested.",
+          "operational_impact_chain": "TapClicks exposes governed marketing data through a read-only MCP server -> analysts and agencies can ask assistants for cross-channel answers without manual exports -> marketing operations, analytics, security, and account teams define access, prompt, review, and citation rules -> teams decide which answers may enter client reporting or optimization -> query turnaround, analyst hours, permission exceptions, answer defects, and report revisions become measurable controls.",
+          "scores": {
+            "relevance": 10,
+            "relevance_rationale": "The MCP server changes analysis, access review, client reporting, and AI governance for marketing operations and agency teams.",
+            "topicality": 8,
+            "topicality_rationale": "The October 22 launch is four days old but remains current because implementation and governance decisions begin as customers connect assistants.",
+            "viral_potential": 10,
+            "viral_potential_rationale": "Read-only access sounds safe, but an assistant can still misread governed data and turn it into a client-facing recommendation.",
+            "total": 28
+          },
+          "confidence": "qualified",
+          "confidence_limitation": "The launch, read-only model, supported assistants, and customer availability are documented. No independent security or answer-accuracy test was found, and public materials omit field-level controls, detailed audit logs, query limits, model retention, and answer-evidence mechanics.",
+          "novelty": {
+            "result": "distinct",
+            "rationale": "The archive covers survey data and CRM access through MCP, but not governed cross-channel marketing-performance data exposed to multiple general-purpose assistants with read-only controls."
+          },
+          "predicted_audience_response": "Operators will ask whether inherited permissions and read-only access are enough when prompts, answers, citations, and model retention sit outside the dashboard.",
+          "materiality_gates": {
+            "material_event": "pass_launch",
+            "editorial_thesis_fit": "pass",
+            "primary_evidence": "pass_release_and_demo",
+            "availability_clarity": "pass_existing_customers",
+            "claim_discipline": "pass_with_vendor_security_attribution",
+            "operational_impact": "pass",
+            "contradiction_search": "pass_with_independent_scope_limits",
+            "archive_novelty": "pass_distinct"
+          },
+          "coverage_limitations": [
+            "The Business Wire page failed direct browser retrieval, though indexed primary text and the official demo remained available.",
+            "No independent security or answer-accuracy test was found.",
+            "Field-level controls, detailed audit logs, query limits, model-side retention, and answer-evidence mechanics are not public."
+          ],
+          "sources": [
+            {
+              "type": "primary_company_release",
+              "title": "TapClicks launches MCP Server for AI-powered marketing intelligence",
+              "url": "https://www.businesswire.com/news/home/20261022062402/en/TapClicks-Launches-MCP-Server-for-AI-Powered-Marketing-Intelligence"
+            },
+            {
+              "type": "primary_demo",
+              "title": "TapClicks MCP Demo",
+              "url": "https://www.youtube.com/watch?v=d3Hnh5Jo7Yw"
+            },
+            {
+              "type": "independent_context",
+              "title": "MarTech: TapClicks launches MCP server for marketing data",
+              "url": "https://martech.org/tapclicks-launches-mcp-server-for-marketing-data/"
+            }
+          ]
+        },
+        {
+          "option": 2,
+          "rank": 2,
+          "title": "SPAR connects local retail media into one cross-market buying and measurement layer",
+          "event_date": "2026-10-23",
+          "expanded_window_reason": "The October 23 announcement sits at the edge of the 72-hour window and was included through late-indexing overlap.",
+          "proposed_hook": "SPAR wants advertisers to buy and measure retail media across independent country operations without forcing those retailers to surrender local data or commercial control. The hard part is proving that reach and incremental sales mean the same thing in every market.",
+          "marketer_angle": "Retail media and shopper-marketing teams need a federated operating model: common inventory definitions, campaign setup, privacy rules, measurement methods, revenue allocation, local approval, and evidence standards that work across independently operated markets.",
+          "why_it_passed": "SPAR announced a specific platform layer that connects store, screen, in-store radio, ecommerce, app, and POS assets into one advertiser-facing marketplace while local country organisations retain control. The release names the workflow and rollout direction, though measurement and privacy claims lack independent validation.",
+          "operational_impact_chain": "SPAR connects local retail media inventory and POS data through one platform layer -> advertisers can plan and measure campaigns across independently operated markets -> retail media, trade marketing, data, and local commercial teams define common inventory, measurement, privacy, and revenue rules -> teams decide which local assets and data can enter multi-market buys -> campaign setup time, comparable reach, incremental sales evidence, local revenue, and data-policy exceptions become operating measures.",
+          "scores": {
+            "relevance": 10,
+            "relevance_rationale": "The platform changes inventory, data, measurement, revenue-sharing, and campaign handoffs across independently operated retail markets.",
+            "topicality": 10,
+            "topicality_rationale": "SPAR announced the platform on October 23, at the edge of the current 72-hour window.",
+            "viral_potential": 8,
+            "viral_potential_rationale": "The tension between local data control and globally comparable retail-media measurement gives practitioners a specific operating-model question.",
+            "total": 28
+          },
+          "confidence": "qualified",
+          "confidence_limitation": "The partnership and intended platform model are documented, but SPAR did not publish participating markets, rollout dates, fees, attribution and holdout methods, privacy controls, or standardized reach definitions. No substantive independent implementation analysis was found.",
+          "novelty": {
+            "result": "distinct",
+            "rationale": "The archive covers identity, lifecycle platforms, and agentic commerce, but not a federated retail-media operating model that standardizes buying and measurement while local retailers keep data and commercial control."
+          },
+          "predicted_audience_response": "Retail media teams will ask which metrics are genuinely comparable across countries and how each local operator keeps control while joining a common marketplace.",
+          "materiality_gates": {
+            "material_event": "pass_partnership_and_platform_rollout",
+            "editorial_thesis_fit": "pass",
+            "primary_evidence": "pass",
+            "availability_clarity": "pass_with_market_rollout_limits",
+            "claim_discipline": "pass_with_vendor_measurement_attribution",
+            "operational_impact": "pass",
+            "contradiction_search": "pass_with_no_independent_validation",
+            "archive_novelty": "pass_distinct"
+          },
+          "coverage_limitations": [
+            "No substantive independent implementation analysis was found.",
+            "Participating markets, rollout dates, fees, attribution and holdout methods, privacy controls, and standardized reach definitions are not public.",
+            "Incremental ROAS and sales-lift statements remain company claims."
+          ],
+          "sources": [
+            {
+              "type": "primary_company_release",
+              "title": "SPAR International and Footprints AI collaborate on a retail media platform",
+              "url": "https://spar-international.com/news/spar-international-and-footprints-al-collaborate-to-increase-consumer-connections-using-new-platform/"
+            }
+          ]
+        },
+        {
+          "option": 3,
+          "rank": 3,
+          "title": "Cuttable connects creative generation to live performance data",
+          "event_date": "2026-10-22",
+          "expanded_window_reason": "The event falls outside the initial 72-hour window. It was found through late indexing during the required seven-day expansion and remains current for ecommerce teams planning holiday creative and spend.",
+          "proposed_hook": "Cuttable is feeding live ad results back into the next creative brief. That can shorten the learning loop, but it can also make a team produce more variants around an attribution signal it has not proved trustworthy.",
+          "marketer_angle": "Paid-media and creative teams need a stack-independent feedback-loop policy: approved performance inputs, experiment design, brand review, stop rules, fatigue thresholds, attribution windows, and ownership of the decision to create another variant or move spend.",
+          "why_it_passed": "Cuttable launched a specific workflow connecting brand inputs, video generation, publishing, and live results. The live product page confirms the feedback-loop model and supported channels; independent coverage supplies availability and pricing context, including a conflict with current public pricing.",
+          "operational_impact_chain": "Cuttable connects creative generation, publishing and performance feedback -> the next brief can inherit results from live ads -> paid social, creative, brand, and analytics teams define approval, test design, stop rules and learning ownership -> teams decide which signals justify new variants or more spend -> production time, approval time, variant volume, fatigue, spend concentration, and measured lift become operating controls.",
+          "scores": {
+            "relevance": 9,
+            "relevance_rationale": "The product changes the handoff between paid media, creative production, brand approval, testing, and analytics.",
+            "topicality": 8,
+            "topicality_rationale": "The October 22 launch is four days old and remains operationally current for ecommerce teams planning holiday creative and spend.",
+            "viral_potential": 9,
+            "viral_potential_rationale": "Feeding performance data back into creative generation creates a clear debate about faster learning versus faster optimization against noisy attribution.",
+            "total": 26
+          },
+          "confidence": "qualified",
+          "confidence_limitation": "The release and live product pages support the workflow, but the PR Newswire page was blocked during direct retrieval. Current public pricing starts at $1,110 per month while launch coverage cited $55 per month, and performance figures remain vendor or customer claims.",
+          "novelty": {
+            "result": "meaningful_advance",
+            "rationale": "The archive covers campaign agents and platform-generated creative liability. This event focuses on the operational loop between creative generation, live performance evidence, new variants, and spend decisions."
+          },
+          "predicted_audience_response": "Paid teams will debate whether faster feedback improves creative decisions or simply accelerates optimization against noisy attribution signals.",
+          "materiality_gates": {
+            "material_event": "pass_launch",
+            "editorial_thesis_fit": "pass",
+            "primary_evidence": "pass_with_release_retrieval_gap_and_live_product_page",
+            "availability_clarity": "pass_with_pricing_conflict",
+            "claim_discipline": "pass_with_vendor_result_attribution",
+            "operational_impact": "pass",
+            "contradiction_search": "pass_with_pricing_and_benchmark_limits",
+            "archive_novelty": "pass_meaningful_advance"
+          },
+          "coverage_limitations": [
+            "The PR Newswire release page was blocked during direct retrieval.",
+            "Current public pricing starts at $1,110 per month while launch coverage cited $55 per month; no public explanation reconciles the figures.",
+            "ROAS, speed, and scale results are company or customer claims, not independent benchmarks.",
+            "The public materials do not define attribution windows, incrementality tests, creative-quality review, or treatment of confounding campaign changes."
+          ],
+          "sources": [
+            {
+              "type": "primary_company_release",
+              "title": "Cuttable launches Intelligent Video Campaigns",
+              "url": "https://www.prnewswire.com/news-releases/cuttable-launches-intelligent-video-campaigns-to-connect-creative-and-performance-in-one-real-time-loop-302916878.html"
+            },
+            {
+              "type": "primary_product_page",
+              "title": "Cuttable product and integrations",
+              "url": "https://www.cuttable.com/"
+            },
+            {
+              "type": "independent_context",
+              "title": "PPC Land: Cuttable links AI video generation to live performance data",
+              "url": "https://ppc.land/cuttable-links-ai-video-generation-to-live-performance-data/"
+            }
+          ]
+        }
+      ],
+      "research": {
+        "source_cutoff": "2026-10-23T08:13:01-04:00",
+        "discovery_window_hours": 72,
+        "discovery_window_expansion": "seven_days",
+        "expansion_reason": "Only one candidate passed inside 72 hours; two late-indexed October 22 events passed during the required seven-day expansion.",
+        "event_ledger_path": "/home/ranson/.hermes/social-queue/research/2026-10-26-ai-martech-event-ledger.json",
+        "decision_journal_path": "/home/ranson/.hermes/social-queue/research/2026-10-26-ai-martech-decision-journal.md",
+        "citation_ledger_path": "/home/ranson/.hermes/social-queue/research/2026-10-26-citations-ledger.json",
+        "reserve_candidate_count": 2,
+        "reserve_candidates": [
+          "BigGeo Audience Composer",
+          "Octane AI Phoenix"
+        ],
+        "coverage_gaps": [
+          {
+            "source": "TapClicks Business Wire release",
+            "url": "https://www.businesswire.com/news/home/20261022062402/en/TapClicks-Launches-MCP-Server-for-AI-Powered-Marketing-Intelligence",
+            "status": "direct_browser_http2_failure",
+            "cutoff_advanced": true,
+            "detail": "Indexed primary text and the official demo were retrieved; no independent security or answer-accuracy test was found."
+          },
+          {
+            "source": "Cuttable PR Newswire release",
+            "url": "https://www.prnewswire.com/news-releases/cuttable-launches-intelligent-video-campaigns-to-connect-creative-and-performance-in-one-real-time-loop-302916878.html",
+            "status": "blocked",
+            "cutoff_advanced": false,
+            "detail": "The live Cuttable product and pricing pages were retrieved, but the source-specific release cutoff did not advance."
+          },
+          {
+            "source": "SPAR-Footprints independent implementation analysis",
+            "status": "not_found",
+            "cutoff_advanced": false,
+            "detail": "The official release was retrieved in full; no substantive independent implementation or measurement analysis was found."
+          },
+          {
+            "source": "Demandbase October 2026 update",
+            "url": "https://support.demandbase.com/hc/en-us/articles/56631899973531-October-2026-Product-Update",
+            "status": "blocked_by_bot_challenge",
+            "cutoff_advanced": false,
+            "detail": "The exact release date and full primary content could not be verified."
+          },
+          {
+            "source": "Klaviyo template version history",
+            "status": "page_not_found",
+            "cutoff_advanced": false,
+            "detail": "The indexed product page returned a 404 during verification."
+          }
+        ]
+      },
+      "events": [
+        {
+          "at": "2026-10-26T08:01:11-04:00",
+          "type": "topic_queue_created",
+          "actor": "scheduled_research",
+          "detail": "Created exactly three ranked AI marketing and martech topics. One passed inside the 72-hour window and two late-indexed October 22 events passed during the required seven-day expansion; awaiting approval."
         }
       ]
     }
