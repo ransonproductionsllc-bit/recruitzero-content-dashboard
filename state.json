@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-10-26T08:01:11-04:00",
+  "updated_at": "2026-10-26T11:16:55-04:00",
   "sync": {
     "status": "connected",
     "discord_guild_id": "1553886101003837561",
@@ -1198,7 +1198,7 @@
       "kind": "content",
       "title": "AI marketing and martech topic approval queue",
       "created_at": "2026-10-26T08:01:11-04:00",
-      "updated_at": "2026-10-26T10:40:17-04:00",
+      "updated_at": "2026-10-26T11:16:55-04:00",
       "status": "awaiting_post_approval",
       "stage": "post_approval",
       "topic_options": [
@@ -1439,6 +1439,13 @@
           "type": "post_reviewed",
           "actor": "recruitzero_content_workflow",
           "detail": "Claude Opus produced the draft without fallback. One evidence-correction cycle added Smart-package limits and separated TapClicks request logging from the team-maintained review record. Final 241-word copy passed argument review, accessibility, stop-slop 46/50, voice fidelity 9.5/10, factual fidelity, operational impact, novelty, and stack-independent-value gates; awaiting explicit post approval."
+        },
+        {
+          "at": "2026-10-26T11:16:55-04:00",
+          "type": "post_revised",
+          "actor": "recruitzero_content_workflow",
+          "discord_message_id": "1564295354701058171",
+          "detail": "Rewrote the TapClicks article as the canonical sample of the approved connected-prose format. The 244-word revision passed evidence, accessibility, factual-fidelity, updated-format, stop-slop 45/50, voice 9.2/10, operational-impact, novelty, and stack-independent-value gates. Cover generation and LinkedIn publication remain unauthorized."
         }
       ],
       "topic": {
@@ -1521,8 +1528,8 @@
       "post": {
         "status": "awaiting_approval",
         "title": "TapClicks MCP and the gap between access and trust",
-        "body": "Letting AI reach your marketing data is easy. Trusting its answer in front of a client is a separate decision.\n\nOn October 22, 2026, TapClicks released TapClicks MCP. MCP is a connector that lets AI assistants such as Claude, ChatGPT and Gemini ask questions of approved marketing data in TapClicks, without manual spreadsheet exports. TapClicks says it is available on Smart packages, with usage limits that vary by package.\n\nTapClicks says each person signs in with their own login, and the connection inherits existing client and data permissions. The company says it checks access on every request and logs those requests. It also says the assistant checks which data is available before searching and reports when a requested number does not exist.\n\nThose controls limit what someone can reach. They do not prove an answer is correct, complete or ready for a client report or spending decision.\n\nBefore an answer leaves your team, settle three things:\n\n- **Set the boundary.** An internal summary may be fine; client reports and spending recommendations need review.\n- **Check the numbers.** A person should compare important figures with the original TapClicks data.\n- **Keep your own record.** TapClicks logs requests, but your team should record who asked, which client data was available, what came back and who approved its use.\n\nThe takeaway: Login permissions govern access. Your team still decides whether an answer is sound enough to use.\n\nWho signs off before an AI answer reaches your clients?",
-        "word_count": 241,
+        "body": "On October 22, 2026, TapClicks released TapClicks MCP, a connector that lets AI assistants ask questions of approved marketing data. TapClicks says Claude, ChatGPT, Gemini and compatible assistants can query data in TapClicks without a manual spreadsheet export. Each user signs in, and the connection inherits that user's permissions. It is available on Smart packages, with usage limits that vary by package.\n\nThe workflow change is the removal of that export step. TapClicks says inherited permissions and checks on every request limit which data a user can reach. Request logs create an activity record. Field checks confirm what data is available and flag a metric that does not exist. These controls serve different purposes, and none proves that an answer is correct, complete or ready for a client report.\n\nThe wider point reaches beyond TapClicks. General-purpose assistants are moving closer to controlled marketing data. If that model spreads, marketers will need to decide when an AI-generated conclusion can shape a report, recommendation or spending decision, not merely who can see the data.\n\nTeams can draw that line now. An internal summary may need less review than a client report or budget recommendation. A person should compare important figures with the original source data. The team should maintain its own record of the request, the client data available, the answer returned and who approved its use.\n\nThe takeaway: permissions decide what an assistant may see. A team's review standards decide what its answers may change.",
+        "word_count": 244,
         "sources": [
           {
             "type": "primary_company_release",
@@ -1545,62 +1552,66 @@
             "url": "https://martech.org/tapclicks-launches-mcp-server-for-marketing-data/"
           }
         ],
-        "stop_slop_score": 46,
+        "stop_slop_score": 45,
         "stop_slop_breakdown": {
           "directness": 9,
           "rhythm": 9,
           "trust": 10,
-          "authenticity": 9,
+          "authenticity": 8,
           "density": 9
         },
-        "voice_fidelity_score": 9.5,
+        "voice_fidelity_score": 9.2,
         "accessibility_review": {
           "status": "pass",
           "remaining_jargon": [
-            "MCP, defined immediately as a connector",
-            "Smart packages, retained as TapClicks plan terminology"
+            "MCP, necessary product name and explained immediately",
+            "general-purpose assistants, explained through named examples",
+            "field checks, explained in the same sentence"
           ],
-          "rationale": "The event, limitation and actions are understandable without marketing-technology, analytics, security or AI expertise."
+          "rationale": "MCP is explained immediately, the article uses ordinary language, and access controls, logs, field checks and approval are distinguished without requiring technical knowledge."
         },
         "construction_pass": true,
         "construction_checklist": {
           "word_count_150_250": true,
-          "hook": true,
-          "verified_event_explanation": true,
-          "interpretation": true,
-          "article_specific_transition": true,
-          "two_to_three_visible_bullets": true,
-          "takeaway_label": true,
-          "closing_question": true,
+          "product_led_introduction": true,
+          "brief_market_implication": true,
+          "wider_industry_meaning": true,
+          "connected_workflow_considerations": true,
+          "takeaway_summary": true,
+          "bullets_used_only_if_helpful": true,
+          "closing_question_natural_or_omitted": true,
           "factual_fidelity": true,
           "stack_independent_value": true,
           "accessibility": true
         },
         "argument_review": {
           "status": "pass",
-          "correction_cycles": 1,
+          "correction_cycles": 0,
           "unsupported_inferences": [],
           "missing_qualifications": [],
-          "vendor_framing_risks": [],
-          "counterargument": "TapClicks' permission checks, field inspection, missing-metric handling and request logging may make low-risk internal questions acceptable with lighter review. The article distinguishes internal summaries from client-facing reports and spending recommendations.",
+          "vendor_framing_risks": [
+            "No blocking vendor-framing risk remains after final prose review."
+          ],
+          "counterargument": "Governed data access and human review already exist in analytics workflows, so TapClicks MCP may be an incremental interface change rather than a new industry-wide operating model. The article therefore keeps the broader implication conditional.",
           "operational_impact_status": "pass",
-          "operational_impact_rationale": "The article defines a concrete workflow: classify permitted uses, verify important figures against the governed source, keep a team-maintained review record, and require approval before external use.",
+          "operational_impact_rationale": "The article applies lighter review to internal summaries, stronger review to reports and spending recommendations, source-data verification, and a team-maintained request-and-approval record.",
           "novelty_status": "distinct",
           "stack_independent_value": "pass",
-          "stack_independent_rationale": "Separating data access from permission to use an AI conclusion, checking important figures, and recording approval apply to any governed data platform or general-purpose AI assistant.",
+          "stack_independent_rationale": "Review tiers, source-data checks, team records, and the boundary between access and authorized use apply to any governed data and AI stack.",
           "accessibility_status": "pass",
-          "accessibility_rationale": "MCP is defined immediately as a connector, and every control is explained in everyday language.",
-          "transition_status": "pass",
+          "accessibility_rationale": "MCP is immediately defined and each control is explained in ordinary language.",
+          "format_status": "pass",
+          "format_rationale": "The article follows the approved connected-prose order and omits bullets and a closing question because neither improves this argument.",
           "required_corrections": [],
           "residual_risks": [
-            "TapClicks' access-control, logging and missing-metric behavior remain vendor-described rather than independently validated.",
-            "The exact contents and retention period of TapClicks' native request logs remain unknown.",
-            "The complete connector tool-permission specification and model-provider retention behavior remain unresolved.",
-            "The public materials do not establish that every answer includes field-level evidence or a reproducible query trail."
+            "TapClicks' product behaviors remain vendor-described rather than independently validated.",
+            "No independent testing establishes answer accuracy, security behavior or suitability for client-facing decisions.",
+            "Model-provider retention, prompt storage, complete tool permissions and detailed request-log contents remain unresolved.",
+            "The broader operating-model interpretation remains conditional on similar governed assistant connections becoming more widely adopted."
           ]
         },
         "factual_fidelity": true,
-        "review_notes": "Claude Opus produced the initial draft without fallback. One correction cycle added Smart-package availability and varying limits, and distinguished TapClicks request logging from the review record the team should maintain. Final copy passed argument review, accessibility, stop-slop 46/50, voice fidelity 9.5/10, construction, factual fidelity, operational impact, novelty, and stack-independent-value gates.",
+        "review_notes": "Rewritten as the sample for RecruitZero’s connected-prose format. Claude Opus produced the rewrite without fallback. The article passed evidence review, updated-format review, accessibility, factual fidelity, stop-slop 45/50, voice fidelity 9.2/10, operational impact, novelty, and stack-independent-value gates.",
         "writer_model": "claude-opus-5-5",
         "writer_provider": "claude-code",
         "writer_fallback_used": false,
@@ -1609,13 +1620,29 @@
             "model": "opus",
             "status": "success",
             "purpose": "initial_draft"
+          },
+          {
+            "model": "opus",
+            "status": "success",
+            "purpose": "connected_prose_format_rewrite",
+            "session_id": "6a1fe57b-362f-40b2-bf7d-f7cf9669838d"
           }
         ],
-        "writer_session_id": "31e6507a-9c50-4558-8916-1f139bcf2fbb",
+        "writer_session_id": "6a1fe57b-362f-40b2-bf7d-f7cf9669838d",
         "review_model": "gpt-5.6-sol",
         "review_provider": "openai-codex",
         "markdown_path": "/home/ranson/.hermes/social-queue/linkedin/2026-10-26-tapclicks-mcp-reviewed.md",
-        "stack_independent_value": true
+        "stack_independent_value": true,
+        "revision_history": [
+          {
+            "at": "2026-10-26T11:16:55-04:00",
+            "requested_via": "discord",
+            "discord_message_id": "1564295354701058171",
+            "reason": "Rewrite the most recent article as a sample of the new connected-prose structure.",
+            "word_count": 244,
+            "format": "product announcement -> market implication -> wider industry meaning -> workflow considerations -> takeaway"
+          }
+        ]
       },
       "performance": {
         "tracking_status": "awaiting_publication_data",
