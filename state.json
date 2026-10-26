@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-10-26T11:35:36-04:00",
+  "updated_at": "2026-10-26T11:40:18-04:00",
   "sync": {
     "status": "connected",
     "discord_guild_id": "1553886101003837561",
@@ -1198,7 +1198,7 @@
       "kind": "content",
       "title": "AI marketing and martech topic approval queue",
       "created_at": "2026-10-26T08:01:11-04:00",
-      "updated_at": "2026-10-26T11:35:36-04:00",
+      "updated_at": "2026-10-26T11:40:18-04:00",
       "status": "awaiting_post_approval",
       "stage": "assets_complete",
       "topic_options": [
@@ -1466,6 +1466,13 @@
           "type": "cover_generated",
           "actor": "recruitzero_content_workflow",
           "detail": "Generated the approved cover through openai-codex using gpt-image-2-medium. The final image passed visual inspection and was center-cropped and exported at exactly 1200x627. LinkedIn publication remains manual and was not performed."
+        },
+        {
+          "at": "2026-10-26T11:40:18-04:00",
+          "type": "cover_revised",
+          "actor": "recruitzero_content_workflow",
+          "discord_message_id": "1564302056771293349",
+          "detail": "Revised the approved cover so the human reviewer is an African American woman. The data-access, permission-gateway, AI-interface, human-review and approved-report concept was preserved. Final image passed visual inspection at exactly 1200x627. LinkedIn publication was not performed."
         }
       ],
       "topic": {
@@ -1706,7 +1713,21 @@
         "cover_dimensions": "1200x627",
         "visual_inspection": "pass",
         "visual_concept": "Governed marketing data passes through a permission gateway into an AI interface, then reaches a human review checkpoint before an approved report.",
-        "review_page_url": "https://ransonproductionsllc-bit.github.io/recruitzero-content-dashboard/review.html?id=ai-martech-topic-queue-2026-10-26"
+        "review_page_url": "https://ransonproductionsllc-bit.github.io/recruitzero-content-dashboard/review.html?id=ai-martech-topic-queue-2026-10-26",
+        "reviewer_representation": "African American woman",
+        "cover_revised_at": "2026-10-26T11:40:18-04:00",
+        "revision_history": [
+          {
+            "at": "2026-10-26T11:40:18-04:00",
+            "requested_via": "discord",
+            "discord_message_id": "1564302056771293349",
+            "change": "Changed the human reviewer to an African American woman while preserving the approved visual concept and composition.",
+            "model": "gpt-image-2-medium",
+            "provider": "openai-codex",
+            "dimensions": "1200x627",
+            "visual_inspection": "pass"
+          }
+        ]
       }
     }
   ],
