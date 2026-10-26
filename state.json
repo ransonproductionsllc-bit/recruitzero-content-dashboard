@@ -1205,29 +1205,29 @@
         {
           "option": 1,
           "rank": 1,
-          "title": "TapClicks gives AI assistants read-only access to governed marketing data",
+          "title": "TapClicks gives AI assistants governed access to marketing data",
           "event_date": "2026-10-22",
           "expanded_window_reason": "The event falls outside the initial 72-hour window. It was found through late indexing during the required seven-day expansion and remains current because customers can connect assistants now.",
-          "proposed_hook": "TapClicks can now put governed marketing data inside Claude, ChatGPT, Copilot, and Gemini without giving those assistants write access. Read-only reduces one risk, but it does not tell an operator whether the answer is accurate enough to enter a client report or budget decision.",
+          "proposed_hook": "TapClicks can now connect governed marketing data to Claude, ChatGPT and Gemini through each user's existing permissions. That limits which data an assistant can reach, but it does not tell an operator whether the answer is accurate enough to enter a client report or budget decision.",
           "marketer_angle": "Marketing operations and agency teams need a vendor-neutral control model for AI analysis: inherited permissions, approved use cases, prompt and answer logging, evidence links, reviewer accountability, model retention, and a rule for which outputs may influence reporting or optimization.",
-          "why_it_passed": "TapClicks launched a specific MCP server with read-only access, inherited platform permissions, named assistant support, and availability for current platform customers. Independent coverage confirms the workflow while leaving security and answer-quality claims untested.",
-          "operational_impact_chain": "TapClicks exposes governed marketing data through a read-only MCP server -> analysts and agencies can ask assistants for cross-channel answers without manual exports -> marketing operations, analytics, security, and account teams define access, prompt, review, and citation rules -> teams decide which answers may enter client reporting or optimization -> query turnaround, analyst hours, permission exceptions, answer defects, and report revisions become measurable controls.",
+          "why_it_passed": "TapClicks launched a specific MCP server with inherited platform permissions, per-request access checks and logging, named assistant support, and availability for Smart-package customers. Independent coverage confirms the workflow while leaving security and answer-quality claims untested.",
+          "operational_impact_chain": "TapClicks exposes governed marketing data to AI assistants through MCP -> analysts and agencies can ask cross-channel questions without manual exports -> marketing operations, analytics, security, and account teams define access, review, and evidence rules -> teams decide which answers may enter client reporting or influence spending -> query turnaround, analyst hours, permission exceptions, answer defects, and report revisions become measurable controls.",
           "scores": {
             "relevance": 10,
             "relevance_rationale": "The MCP server changes analysis, access review, client reporting, and AI governance for marketing operations and agency teams.",
             "topicality": 8,
             "topicality_rationale": "The October 22 launch is four days old but remains current because implementation and governance decisions begin as customers connect assistants.",
             "viral_potential": 10,
-            "viral_potential_rationale": "Read-only access sounds safe, but an assistant can still misread governed data and turn it into a client-facing recommendation.",
+            "viral_potential_rationale": "Inherited permissions sound reassuring, but an assistant can still misread governed data and turn it into a client-facing recommendation.",
             "total": 28
           },
           "confidence": "qualified",
-          "confidence_limitation": "The launch, read-only model, supported assistants, and customer availability are documented. No independent security or answer-accuracy test was found, and public materials omit field-level controls, detailed audit logs, query limits, model retention, and answer-evidence mechanics.",
+          "confidence_limitation": "The launch, inherited-permission model, supported assistants, request controls, Smart-package availability and varying usage limits are documented. No independent security or answer-accuracy test was found, and public materials omit a complete tool-permission specification, detailed audit-log contents, model retention, and answer-evidence mechanics.",
           "novelty": {
             "result": "distinct",
-            "rationale": "The archive covers survey data and CRM access through MCP, but not governed cross-channel marketing-performance data exposed to multiple general-purpose assistants with read-only controls."
+            "rationale": "The archive covers survey data and CRM access through MCP, but not governed cross-channel marketing-performance data exposed to multiple general-purpose assistants with inherited access controls."
           },
-          "predicted_audience_response": "Operators will ask whether inherited permissions and read-only access are enough when prompts, answers, citations, and model retention sit outside the dashboard.",
+          "predicted_audience_response": "Operators will ask whether inherited permissions are enough when an AI answer may enter a client report or spending decision.",
           "materiality_gates": {
             "material_event": "pass_launch",
             "editorial_thesis_fit": "pass",
@@ -1432,7 +1432,7 @@
           "type": "topic_approved",
           "actor": "discord_user",
           "discord_message_id": "1564285252757885080",
-          "detail": "User selected option 1, TapClicks gives AI assistants read-only access to governed marketing data, for drafting and review only. Cover generation and LinkedIn publication remain unauthorized."
+          "detail": "User selected option 1, TapClicks gives AI assistants governed access to marketing data, for drafting and review only. Cover generation and LinkedIn publication remain unauthorized."
         },
         {
           "at": "2026-10-26T10:40:17-04:00",
@@ -1443,12 +1443,12 @@
       ],
       "topic": {
         "option": 1,
-        "title": "TapClicks gives AI assistants read-only access to governed marketing data",
+        "title": "TapClicks gives AI assistants governed access to marketing data",
         "selected": true,
         "approved_via": "discord",
         "approved_at": "2026-10-26T10:31:25-04:00",
         "approval_message_id": "1564285252757885080",
-        "proposed_hook": "TapClicks can now put governed marketing data inside Claude, ChatGPT, Copilot, and Gemini without giving those assistants write access. Read-only reduces one risk, but it does not tell an operator whether the answer is accurate enough to enter a client report or budget decision.",
+        "proposed_hook": "TapClicks can now connect governed marketing data to Claude, ChatGPT and Gemini through each user's existing permissions. That limits which data an assistant can reach, but it does not tell an operator whether the answer is accurate enough to enter a client report or budget decision.",
         "marketer_angle": "Marketing operations and agency teams need a vendor-neutral control model for AI analysis: inherited permissions, approved use cases, prompt and answer logging, evidence links, reviewer accountability, model retention, and a rule for which outputs may influence reporting or optimization.",
         "sources": [
           {
