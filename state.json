@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-10-26T11:28:37-04:00",
+  "updated_at": "2026-10-26T11:35:36-04:00",
   "sync": {
     "status": "connected",
     "discord_guild_id": "1553886101003837561",
@@ -1198,9 +1198,9 @@
       "kind": "content",
       "title": "AI marketing and martech topic approval queue",
       "created_at": "2026-10-26T08:01:11-04:00",
-      "updated_at": "2026-10-26T11:28:37-04:00",
+      "updated_at": "2026-10-26T11:35:36-04:00",
       "status": "awaiting_post_approval",
-      "stage": "post_approval",
+      "stage": "assets_complete",
       "topic_options": [
         {
           "option": 1,
@@ -1453,6 +1453,19 @@
           "actor": "recruitzero_content_workflow",
           "discord_message_id": "1564299310164746374",
           "detail": "Simplified the second paragraph by removing TapClicks request-log and field-check details. The 225-word revision passed factual-fidelity, accessibility, connected-format and flow review. Cover generation and LinkedIn publication remain unauthorized."
+        },
+        {
+          "at": "2026-10-26T11:33:12-04:00",
+          "type": "post_approved",
+          "actor": "discord_user",
+          "discord_message_id": "1564300775037865985",
+          "detail": "User explicitly approved the 225-word TapClicks post and authorized cover generation. LinkedIn publication remains manual and unauthorized."
+        },
+        {
+          "at": "2026-10-26T11:35:36-04:00",
+          "type": "cover_generated",
+          "actor": "recruitzero_content_workflow",
+          "detail": "Generated the approved cover through openai-codex using gpt-image-2-medium. The final image passed visual inspection and was center-cropped and exported at exactly 1200x627. LinkedIn publication remains manual and was not performed."
         }
       ],
       "topic": {
@@ -1533,7 +1546,7 @@
         "stack_independent_value": "pass"
       },
       "post": {
-        "status": "awaiting_approval",
+        "status": "approved",
         "title": "TapClicks MCP and the gap between access and trust",
         "body": "On October 22, 2026, TapClicks released TapClicks MCP, a connector that lets AI assistants ask questions of approved marketing data. TapClicks says Claude, ChatGPT, Gemini and compatible assistants can query data in TapClicks without a manual spreadsheet export. Each user signs in, and the connection inherits that user's permissions. It is available on Smart packages, with usage limits that vary by package.\n\nThe immediate implication is simpler access to governed marketing data through general-purpose AI assistants. Existing permissions still determine which data each person can reach. But access controls answer only who can see the data, not whether the assistant's interpretation is correct, complete or ready for a client report.\n\nThe wider point reaches beyond TapClicks. General-purpose assistants are moving closer to controlled marketing data. If that model spreads, marketers will need to decide when an AI-generated conclusion can shape a report, recommendation or spending decision, not merely who can see the data.\n\nTeams can draw that line now. An internal summary may need less review than a client report or budget recommendation. A person should compare important figures with the original source data. The team should maintain its own record of the request, the client data available, the answer returned and who approved its use.\n\nThe takeaway: permissions decide what an assistant may see. A team's review standards decide what its answers may change.",
         "word_count": 225,
@@ -1661,7 +1674,10 @@
               "flow": "pass"
             }
           }
-        ]
+        ],
+        "approved_at": "2026-10-26T11:33:12-04:00",
+        "approved_via": "discord",
+        "approval_message_id": "1564300775037865985"
       },
       "performance": {
         "tracking_status": "awaiting_publication_data",
@@ -1679,6 +1695,18 @@
         "day_30": null,
         "qualitative_outcome": null,
         "editorial_lesson": null
+      },
+      "assets": {
+        "cover_status": "complete",
+        "cover_provider": "openai-codex",
+        "cover_model": "gpt-image-2-medium",
+        "cover_url": "assets/ai-martech-topic-queue-2026-10-26-cover.png",
+        "cover_local_path": "/home/ranson/.hermes/social-queue/linkedin/2026-10-26-tapclicks-mcp-cover.png",
+        "cover_original_path": "/home/ranson/.hermes/social-queue/linkedin/2026-10-26-tapclicks-mcp-cover-original.png",
+        "cover_dimensions": "1200x627",
+        "visual_inspection": "pass",
+        "visual_concept": "Governed marketing data passes through a permission gateway into an AI interface, then reaches a human review checkpoint before an approved report.",
+        "review_page_url": "https://ransonproductionsllc-bit.github.io/recruitzero-content-dashboard/review.html?id=ai-martech-topic-queue-2026-10-26"
       }
     }
   ],
