@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-10-26T11:40:18-04:00",
+  "updated_at": "2026-10-27T08:05:51-04:00",
   "sync": {
     "status": "connected",
     "discord_guild_id": "1553886101003837561",
@@ -1729,6 +1729,213 @@
           }
         ]
       }
+    },
+    {
+      "id": "ai-martech-topic-queue-2026-10-27",
+      "kind": "content",
+      "title": "AI marketing and martech topic approval queue",
+      "created_at": "2026-10-27T08:05:51-04:00",
+      "updated_at": "2026-10-27T08:05:51-04:00",
+      "status": "awaiting_topic_approval",
+      "stage": "topic_approval",
+      "topic_options": [
+        {
+          "option": 1,
+          "rank": 1,
+          "title": "ProclaimRx turns marketing mix modeling into an on-demand budget workflow",
+          "event_date": "2026-10-26",
+          "proposed_hook": "ProclaimRx wants marketing mix modeling to behave less like an annual study and more like an operating tool. Faster answers can help a team revisit budget assumptions, but speed does not remove uncertainty from the model.",
+          "marketer_angle": "Measurement teams need a vendor-neutral operating policy for continuous MMM: approved inputs, documented assumptions, uncertainty thresholds, reviewer ownership, override records, decision rights and a test for when a model result may change spend.",
+          "why_it_passed": "ProclaimRx launched an available pharma MMM product with on-demand scenario modeling, follow-up analysis and traceability to underlying data and assumptions. The operating change is concrete, while speed and accuracy claims remain attributed to the company.",
+          "operational_impact_chain": "ProclaimRx makes MMM scenarios and follow-up analysis available on demand -> marketing and commercial teams can revisit channel and budget assumptions during the planning cycle -> analytics, finance and media owners define approved inputs, assumptions, review thresholds and decision rights -> teams decide when a model result can change spend -> model turnaround, scenario volume, assumption changes, recommendation overrides and measured lift become operating controls.",
+          "scores": {
+            "relevance": 10,
+            "relevance_rationale": "The product changes the timing, ownership, review and use of marketing-mix analysis in budget decisions.",
+            "topicality": 10,
+            "topicality_rationale": "ProclaimRx announced the available product on October 26, 2026.",
+            "viral_potential": 9,
+            "viral_potential_rationale": "On-demand MMM creates a practical tension between faster decisions and false precision from models whose assumptions still require human review.",
+            "total": 29
+          },
+          "confidence": "qualified",
+          "confidence_limitation": "The launch and availability are documented, but no independent benchmark or customer implementation report was found. Pricing, data requirements, uncertainty methods, validation design and observed lift are not public.",
+          "novelty": {
+            "result": "distinct",
+            "rationale": "The archive covers journey analytics, ad selection and identity matching, but not converting marketing mix modeling from a periodic study into a recurring budget-decision workflow."
+          },
+          "predicted_audience_response": "Measurement leaders will ask whether faster scenario modeling improves allocation or simply lets teams rerun uncertain assumptions more often.",
+          "materiality_gates": {
+            "material_event": "pass_launch",
+            "editorial_thesis_fit": "pass",
+            "primary_evidence": "pass_release",
+            "availability_clarity": "pass_available_now_with_commercial_limits",
+            "claim_discipline": "pass_with_vendor_accuracy_and_speed_attribution",
+            "operational_impact": "pass",
+            "contradiction_search": "pass_with_no_independent_validation",
+            "archive_novelty": "pass_distinct"
+          },
+          "coverage_limitations": [
+            "No independent benchmark or customer implementation report was found.",
+            "Pricing, required data volume, validation methods, uncertainty intervals, refresh cadence and observed lift are not public.",
+            "Speed, accuracy and confidence claims remain company or advisor claims."
+          ],
+          "sources": [
+            {
+              "type": "primary_company_release",
+              "title": "ProclaimRx launches the next-generation MMM product for commercial-stage biopharma companies",
+              "url": "https://www.prnewswire.com/news-releases/proclaimrx-launches-the-next-generation-marketing-mix-modeling-mmm-product-for-commercial-stage-biopharma-companies-302919546.html"
+            }
+          ]
+        },
+        {
+          "option": 2,
+          "rank": 2,
+          "title": "Demandbase changes the ruler for post-campaign engagement",
+          "event_date": "2026-10-23",
+          "expanded_window_reason": "The update falls outside the first 72 hours. It entered through the required seven-day expansion and remains current because teams must reconcile new definitions with existing reports and benchmarks.",
+          "proposed_hook": "Demandbase can now report account engagement for thirty days after a campaign ends, while using a stricter definition for an engaged website visit. A report can move because buyer behavior changed, because the measurement window changed, or both.",
+          "marketer_angle": "ABM and paid-media teams need a measurement-change protocol: definition versioning, backfills, old-versus-new baselines, overlap rules, causal limits, sales-handoff thresholds and a record of which metric definition governed each budget decision.",
+          "why_it_passed": "Demandbase documented a new post-reach measurement window, a revised engaged-visit definition and reporting controls. Direct retrieval remained blocked, so the evidence gate passes with an explicit primary-source coverage gap and qualified confidence.",
+          "operational_impact_chain": "Demandbase adds post-campaign engagement windows and revises an engaged-visit definition -> ABM reports can credit activity after media delivery stops -> paid media, analytics and sales teams choose which window and visit definition govern campaign evaluation -> teams change optimization, renewal and sales-follow-up decisions -> reported engagement, campaign comparisons, handoff timing and budget conclusions can move even when raw behavior does not.",
+          "scores": {
+            "relevance": 10,
+            "relevance_rationale": "The change can alter campaign evaluation, sales handoffs and budget decisions without changing the underlying customer behavior.",
+            "topicality": 8,
+            "topicality_rationale": "The October 23 update sits outside 72 hours but remains current because teams must reconcile the new definitions with existing reports and benchmarks.",
+            "viral_potential": 9,
+            "viral_potential_rationale": "A new attribution window and stricter engagement definition create a concrete debate about whether reported performance improved or the ruler changed.",
+            "total": 27
+          },
+          "confidence": "qualified",
+          "confidence_limitation": "The official support page remained behind a bot challenge. Indexed official content supplied the update details and exact update time, but no independent implementation analysis was found and the documentation does not prove campaign causality.",
+          "novelty": {
+            "result": "distinct",
+            "rationale": "The archive covers journey analytics and conversational ad targeting, but not a vendor changing the post-campaign measurement window and the definition of an engaged website visit in ABM reporting."
+          },
+          "predicted_audience_response": "ABM teams will compare old and new reports and challenge whether thirty-day post-reach activity should influence media credit or sales follow-up.",
+          "materiality_gates": {
+            "material_event": "pass_measurement_change",
+            "editorial_thesis_fit": "pass",
+            "primary_evidence": "pass_with_primary_retrieval_gap",
+            "availability_clarity": "pass_documented_product_update",
+            "claim_discipline": "pass_with_definition_limits",
+            "operational_impact": "pass",
+            "contradiction_search": "pass_with_source_and_attribution_limits",
+            "archive_novelty": "pass_distinct"
+          },
+          "coverage_limitations": [
+            "The official support page remained blocked by a bot challenge and its source-specific cutoff did not advance.",
+            "No independent implementation analysis was found.",
+            "The update does not prove that post-reach engagement was caused by the campaign or explain overlapping-campaign treatment."
+          ],
+          "sources": [
+            {
+              "type": "primary_product_update_with_retrieval_gap",
+              "title": "Demandbase October 2026 Product Update",
+              "url": "https://support.demandbase.com/hc/en-us/articles/56631899973531-October-2026-Product-Update"
+            }
+          ]
+        },
+        {
+          "option": 3,
+          "rank": 3,
+          "title": "Treasure Data adds one connector layer across ads, commerce and customer profiles",
+          "event_date": "2026-10-24",
+          "expanded_window_reason": "The October 24 announcement sits inside the initial 72-hour window through late-indexing overlap.",
+          "proposed_hook": "Treasure Data is connecting ad results, commerce activity, lead events and audiences through one customer-data layer. The integration map gets simpler on paper, but each connector creates another place where consent, identity and measurement can drift.",
+          "marketer_angle": "Data, media and lifecycle teams need a connector-governance model that survives any CDP: field ownership, schema versions, consent propagation, identity rules, refresh targets, retries, exception handling and reconciliation between source-platform and warehouse totals.",
+          "why_it_passed": "Treasure Data announced available connectors across OpenAI Ads, Equativ, Meta, TikTok, Amazon Marketing Cloud and Shopify, plus a Google Ads audience-sync reconnection. The workflow change is material, while implementation and performance claims remain untested.",
+          "operational_impact_chain": "Treasure Data adds connectors across ad, commerce and programmatic platforms -> profiles, performance data, leads and audiences move through one CDP layer -> paid media, lifecycle, commerce, data and privacy teams define schemas, permissions, consent, refresh and reconciliation rules -> teams decide which data may activate audiences or update customer records -> connector failures, match rates, audience freshness, lead latency, consent exceptions and reporting discrepancies become operating measures.",
+          "scores": {
+            "relevance": 9,
+            "relevance_rationale": "The connectors change data ownership, activation handoffs, schema governance and reporting reconciliation across marketing systems.",
+            "topicality": 9,
+            "topicality_rationale": "Treasure Data announced the integrations on October 24, inside the initial window with late-indexing overlap.",
+            "viral_potential": 8,
+            "viral_potential_rationale": "A single integration layer sounds simpler, but every added connector creates another place where consent, identity and measurement can drift.",
+            "total": 26
+          },
+          "confidence": "qualified",
+          "confidence_limitation": "The Business Wire page failed direct browser retrieval, though indexed primary text documented the integrations and availability. No independent implementation test was found, and pricing, mappings, latency, retries and consent propagation are not public.",
+          "novelty": {
+            "result": "meaningful_advance",
+            "rationale": "Recent coverage addresses MCP access to governed marketing data. This event concerns operational data movement and activation across advertising, commerce and programmatic systems rather than assistant query access."
+          },
+          "predicted_audience_response": "Operators will ask whether the connectors preserve consent and definitions across systems or only move inconsistencies faster.",
+          "materiality_gates": {
+            "material_event": "pass_integrations_launch",
+            "editorial_thesis_fit": "pass",
+            "primary_evidence": "pass_indexed_release_with_direct_retrieval_gap",
+            "availability_clarity": "pass_with_google_reconnection_limit",
+            "claim_discipline": "pass_with_vendor_performance_attribution",
+            "operational_impact": "pass",
+            "contradiction_search": "pass_with_missing_data_contract_detail",
+            "archive_novelty": "pass_meaningful_advance"
+          },
+          "coverage_limitations": [
+            "The Business Wire page failed direct browser retrieval with an HTTP/2 error and its source-specific cutoff did not advance.",
+            "No independent implementation test was found.",
+            "Pricing, field mappings, refresh latency, retry behavior, consent propagation, regional limits and measured outcomes are not public."
+          ],
+          "sources": [
+            {
+              "type": "primary_company_release_with_retrieval_gap",
+              "title": "Treasure Data announces new AI Marketing Cloud integrations",
+              "url": "https://www.businesswire.com/news/home/20261024062897/en/Treasure-Data-Announces-New-AI-Marketing-Cloud-Integrations-to-Unify-Customer-Data-and-Accelerate-Intelligent-Marketing"
+            }
+          ]
+        }
+      ],
+      "research": {
+        "source_cutoff": "2026-10-26T08:01:11-04:00",
+        "initial_window_start": "2026-10-24T08:00:47-04:00",
+        "discovery_window_hours": 168,
+        "discovery_window_expansion": "Expanded from 72 hours to seven days after only two candidates passed inside the initial window.",
+        "event_ledger_path": "/home/ranson/.hermes/social-queue/research/2026-10-27-ai-martech-event-ledger.json",
+        "decision_journal_path": "/home/ranson/.hermes/social-queue/research/2026-10-27-ai-martech-decision-journal.md",
+        "citation_ledger_path": "/home/ranson/.hermes/social-queue/research/2026-10-27-citations-ledger.json",
+        "reserve_candidate_count": 3,
+        "reserve_candidates": [
+          "Braiin generative-AI contact-center platform",
+          "BigGeo Audience Composer",
+          "Octane AI Phoenix"
+        ],
+        "coverage_gaps": [
+          {
+            "source": "Demandbase October 2026 Product Update",
+            "url": "https://support.demandbase.com/hc/en-us/articles/56631899973531-October-2026-Product-Update",
+            "status": "blocked_by_bot_challenge_indexed_content_available",
+            "cutoff_advanced": false,
+            "detail": "Indexed official content supplied the product changes and timestamp. Direct retrieval failed and the source-specific cutoff did not advance."
+          },
+          {
+            "source": "Treasure Data integration release",
+            "url": "https://www.businesswire.com/news/home/20261024062897/en/Treasure-Data-Announces-New-AI-Marketing-Cloud-Integrations-to-Unify-Customer-Data-and-Accelerate-Intelligent-Marketing",
+            "status": "http2_failure_indexed_primary_content_available",
+            "cutoff_advanced": false,
+            "detail": "Indexed primary text supplied the event evidence. Direct retrieval failed and the source-specific cutoff did not advance."
+          },
+          {
+            "source": "MorningAI product and blog pages",
+            "status": "dns_or_empty_response",
+            "cutoff_advanced": false,
+            "detail": "The candidate was deferred because the company pages could not be verified."
+          },
+          {
+            "source": "Independent implementation evidence for selected candidates",
+            "status": "not_found",
+            "detail": "No independent product test or customer implementation report was found for the three selected events."
+          }
+        ]
+      },
+      "events": [
+        {
+          "at": "2026-10-27T08:05:51-04:00",
+          "type": "topic_queue_created",
+          "actor": "scheduled_research",
+          "detail": "Created exactly three ranked AI marketing and martech topics. Two passed inside the 72-hour window; the queue expanded to seven days for the Demandbase measurement update. Awaiting topic approval."
+        }
+      ]
     }
   ],
   "archive": [
