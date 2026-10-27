@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-10-27T08:05:51-04:00",
+  "updated_at": "2026-10-27T09:23:40-04:00",
   "sync": {
     "status": "connected",
     "discord_guild_id": "1553886101003837561",
@@ -1735,7 +1735,7 @@
       "kind": "content",
       "title": "AI marketing and martech topic approval queue",
       "created_at": "2026-10-27T08:05:51-04:00",
-      "updated_at": "2026-10-27T08:05:51-04:00",
+      "updated_at": "2026-10-27T09:23:40-04:00",
       "status": "awaiting_topic_approval",
       "stage": "topic_approval",
       "topic_options": [
@@ -1884,6 +1884,62 @@
               "url": "https://www.businesswire.com/news/home/20261024062897/en/Treasure-Data-Announces-New-AI-Marketing-Cloud-Integrations-to-Unify-Customer-Data-and-Accelerate-Intelligent-Marketing"
             }
           ]
+        },
+        {
+          "option": 4,
+          "rank": 4,
+          "alternate_requested": true,
+          "would_rank_by_score": 1,
+          "title": "Instagram tests long-form video as a second layer beyond the feed",
+          "event_date": "2026-10-26",
+          "proposed_hook": "Instagram trained brands to win attention in seconds. Now it is testing longer videos and new formats that give creators more room to tell stories. The opportunity is depth; the risk is doubling production without a clear path from discovery to sustained attention.",
+          "marketer_angle": "Social and content teams need a format-portfolio model: decide which ideas deserve a short discovery asset, which can sustain a longer episode, how the two connect, what production budget each receives and which measures prove that deeper viewing changes an audience or business outcome.",
+          "why_it_passed": "Instagram head Adam Mosseri confirmed that the platform is testing longer videos and new formats. The change could alter content planning, production economics and Instagram’s role in the media mix, while the article must preserve that this is a test rather than a broad product launch.",
+          "operational_impact_chain": "Instagram tests longer video and new storytelling formats -> brands can consider short content for discovery and longer content for depth -> social, creative, production and media owners define series criteria, preview-to-episode handoffs, repurposing, budget and measurement -> teams decide which stories justify long-form production -> preview conversion, episode retention, engaged minutes, production hours, cost per engaged viewer and downstream actions become operating measures.",
+          "scores": {
+            "relevance": 10,
+            "relevance_rationale": "The test could change content strategy, production ownership, channel roles, measurement and creator-brand economics for a major marketing platform.",
+            "topicality": 10,
+            "topicality_rationale": "Mosseri announced the test on October 26, 2026, less than a day before this requested research update.",
+            "viral_potential": 10,
+            "viral_potential_rationale": "Instagram exploring long-form video after years of short-form emphasis creates a direct debate about attention, YouTube competition, creator economics and whether brands should build deeper programming on rented platforms.",
+            "total": 30
+          },
+          "confidence": "qualified",
+          "confidence_limitation": "Mosseri’s official post confirms testing longer videos and new formats, but Instagram has not published rollout scope, eligibility, maximum length, format specifications, discovery mechanics, monetization, analytics, brand availability or paid-distribution support. The independent Fast Company page was blocked by a device challenge during direct retrieval.",
+          "novelty": {
+            "result": "distinct",
+            "rationale": "The archive covers ad selection, journey analytics, measurement changes and governed AI access, but not a short-form discovery platform testing a separate long-form storytelling layer with new production and channel-economics decisions."
+          },
+          "predicted_audience_response": "Marketers and creators will debate whether Instagram can support serious long-form programming without YouTube-style search, monetization and durable discovery, and whether one idea should now produce both a short hook and a deeper episode.",
+          "materiality_gates": {
+            "material_event": "pass_platform_format_test",
+            "editorial_thesis_fit": "pass",
+            "primary_evidence": "pass_official_mosseri_post",
+            "availability_clarity": "pass_test_not_general_release",
+            "claim_discipline": "pass_with_test_and_unknowns_preserved",
+            "operational_impact": "pass",
+            "contradiction_search": "pass_with_creator_economics_and_distribution_limits",
+            "archive_novelty": "pass_distinct"
+          },
+          "coverage_limitations": [
+            "Instagram has not published the test population, rollout schedule, maximum length or complete format specifications.",
+            "Search, durable discovery, monetization, analytics, brand eligibility and paid-distribution support remain unresolved.",
+            "The Fast Company report was indexed but blocked by a device-check challenge during direct retrieval; the official Mosseri post remains the load-bearing source.",
+            "No brand or creator performance data establishes that long-form viewing on Instagram will improve attention, conversion or return."
+          ],
+          "sources": [
+            {
+              "type": "primary_platform_announcement",
+              "title": "Adam Mosseri: Instagram is testing longer videos and new formats",
+              "url": "https://www.instagram.com/mosseri/reel/De9m9lchZXj/"
+            },
+            {
+              "type": "independent_context_with_retrieval_gap",
+              "title": "Fast Company: Instagram head Adam Mosseri on new long-form video for Instagram",
+              "url": "https://www.fastcompany.com/91433423/instagram-head-adam-mosseri-new-long-form-video-for-instagram"
+            }
+          ]
         }
       ],
       "research": {
@@ -1925,8 +1981,16 @@
             "source": "Independent implementation evidence for selected candidates",
             "status": "not_found",
             "detail": "No independent product test or customer implementation report was found for the three selected events."
+          },
+          {
+            "source": "Fast Company report on Instagram long-form video testing",
+            "url": "https://www.fastcompany.com/91433423/instagram-head-adam-mosseri-new-long-form-video-for-instagram",
+            "status": "blocked_by_device_challenge_indexed_content_available",
+            "cutoff_advanced": false,
+            "detail": "The official Mosseri post was retrieved directly. Fast Company supplied independent indexed context but its live page remained behind a device challenge."
           }
-        ]
+        ],
+        "user_requested_alternative_count": 1
       },
       "events": [
         {
@@ -1934,6 +1998,13 @@
           "type": "topic_queue_created",
           "actor": "scheduled_research",
           "detail": "Created exactly three ranked AI marketing and martech topics. Two passed inside the 72-hour window; the queue expanded to seven days for the Demandbase measurement update. Awaiting topic approval."
+        },
+        {
+          "at": "2026-10-27T09:23:40-04:00",
+          "type": "topic_alternative_added",
+          "actor": "recruitzero_content_workflow",
+          "discord_message_id": "1564629382964711487",
+          "detail": "Researched and added user-requested option 4 on Instagram’s long-form video and new-format test. The alternative scored 30/30 and would rank first by score, while the original three-option queue and numbering remain intact. Awaiting topic approval."
         }
       ]
     }
