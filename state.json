@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-10-27T09:39:52-04:00",
+  "updated_at": "2026-10-27T10:29:02-04:00",
   "sync": {
     "status": "connected",
     "discord_guild_id": "1553886101003837561",
@@ -1735,9 +1735,9 @@
       "kind": "content",
       "title": "AI marketing and martech topic approval queue",
       "created_at": "2026-10-27T08:05:51-04:00",
-      "updated_at": "2026-10-27T09:39:52-04:00",
-      "status": "awaiting_post_approval",
-      "stage": "post_approval",
+      "updated_at": "2026-10-27T10:29:02-04:00",
+      "status": "complete",
+      "stage": "assets_complete",
       "topic_options": [
         {
           "option": 1,
@@ -2018,6 +2018,26 @@
           "type": "post_reviewed",
           "actor": "recruitzero_content_workflow",
           "detail": "Claude Opus produced the Instagram long-form draft without fallback. Two evidence-correction cycles preserved the test and unknown-product qualifications. The final 234-word connected-prose article passed factual fidelity, accessibility, stop-slop 46/50, voice fidelity 9.3/10, operational impact, novelty and stack-independent-value gates; awaiting explicit post approval."
+        },
+        {
+          "at": "2026-10-27T10:29:02-04:00",
+          "type": "post_revised",
+          "actor": "discord_user",
+          "discord_message_id": "1564645933772312608",
+          "detail": "User supplied a 202-word canonical revision. One narrow factual correction aligned the historical statement with Mosseri’s documented prior short-form position. The revision passed factual fidelity, accessibility, connected format, stop-slop 44/50 and voice fidelity 9.2/10."
+        },
+        {
+          "at": "2026-10-27T10:29:02-04:00",
+          "type": "post_approved",
+          "actor": "discord_user",
+          "discord_message_id": "1564645933772312608",
+          "detail": "The user explicitly instructed the workflow to update the dashboard with the supplied revision and create the cover. LinkedIn publication remains manual and was not performed."
+        },
+        {
+          "at": "2026-10-27T10:29:02-04:00",
+          "type": "cover_generated",
+          "actor": "recruitzero_content_workflow",
+          "detail": "Generated the approved cover through openai-codex using gpt-image-2-medium. The final image passed visual inspection and was center-cropped and exported at exactly 1200x627. LinkedIn publication remains manual and was not performed."
         }
       ],
       "topic": {
@@ -2091,10 +2111,10 @@
         "stack_independent_value": "pass"
       },
       "post": {
-        "status": "awaiting_approval",
-        "title": "Instagram long-form video and the cost of deeper attention",
-        "body": "On October 26, Instagram head Adam Mosseri said the platform is testing longer videos and new formats to give creators more room to tell their stories. This is a test, not a broad launch. Instagram has not published who can access it, when it might roll out or the detailed format rules.\n\nFor marketers, a platform known for quick, scrollable clips is exploring longer viewing. Do not assume today's mix of formats is fixed, but do not build a strategy around an unfinished test either.\n\nBeyond Instagram, one possible marketing model is to use short content to introduce an idea, then let a longer piece develop it once someone chooses to continue. Teams can use that structure across email, webinars, video and company publishing without depending on Instagram.\n\nSocial, creative, production and measurement owners still need to decide which topics have enough audience interest and depth to justify the added cost. Plan the path from the short piece to the deeper one before production starts. The reviewed announcement did not specify supporting analytics. Use the data you already have to judge whether people continue, stay and take a meaningful next step. Before committing to a series, set a rule for expanding or ending it based on how long people stay, cost and business response.\n\nThe takeaway: treat a new format as a production and measurement decision, not an automatic reason to make longer content.",
-        "word_count": 234,
+        "status": "approved",
+        "title": "Instagram Is Testing Long-Form Video. Here's How Marketers Should Respond.",
+        "body": "On October 26, Instagram head Adam Mosseri said the platform is testing longer videos and new formats. It's a test, not a launch, with no word yet on access, timing or format rules. It's also a shift from Mosseri's previous position that Instagram would stay focused on short-form video.\n\nDon't assume today's format mix is fixed, but don't build a strategy around an unfinished test either.\n\nA practical approach: use short content to introduce an idea, then let a longer piece develop it for people who choose to keep watching. That way you only invest in long-form for the concepts that earn it.\n\nBefore production, decide which topics have the audience interest and depth to justify the cost, and map how viewers will move from the short piece to the long one. Not every idea needs to be long-form just so your brand can say it does long-form.\n\nSet a rule for expanding or ending any series based on completion rate, saves, shares, click-through and production cost.\n\nThe takeaway: Treat a new format as a production and measurement decision, not an automatic reason to make longer content. A channel you can sustain beats a sporadic presence built to chase every new feature.",
+        "word_count": 202,
         "sources": [
           {
             "type": "primary_platform_announcement",
@@ -2112,7 +2132,7 @@
             "url": "https://www.fastcompany.com/91433423/instagram-head-adam-mosseri-new-long-form-video-for-instagram"
           }
         ],
-        "stop_slop_score": 46,
+        "stop_slop_score": 44,
         "stop_slop_breakdown": {
           "directness": 9,
           "rhythm": 9,
@@ -2120,11 +2140,11 @@
           "authenticity": 9,
           "density": 9
         },
-        "voice_fidelity_score": 9.3,
+        "voice_fidelity_score": 9.2,
         "accessibility_review": {
           "status": "pass",
           "remaining_jargon": [],
-          "rationale": "The article uses plain language, short paragraphs and concrete decisions; it explains the test status and unknowns directly."
+          "rationale": "Clear language, short paragraphs and direct guidance make the article accessible to its intended marketing audience."
         },
         "construction_pass": true,
         "construction_checklist": {
@@ -2142,7 +2162,7 @@
         },
         "argument_review": {
           "status": "pass",
-          "correction_cycles": 2,
+          "correction_cycles": 3,
           "unsupported_inferences": [],
           "missing_qualifications": [],
           "vendor_framing_risks": [],
@@ -2163,7 +2183,7 @@
           ]
         },
         "factual_fidelity": true,
-        "review_notes": "Claude Opus produced the initial draft without fallback. Two evidence-correction cycles preserved the test status, unknown rollout and format mechanics, made the short-to-long content model explicitly conditional, named accountable owners and bounded the analytics statement to the reviewed announcement. Final copy passed accessibility, factual fidelity, stop-slop 46/50, voice fidelity 9.3/10, connected-format, operational impact, novelty and stack-independent-value gates.",
+        "review_notes": "The user supplied the final canonical revision and explicitly authorized dashboard replacement and cover generation. A bounded review required one narrow correction: `Mosseri long kept [Instagram] focused on short-form` was replaced with the source-disciplined statement that the test shifts from Mosseri's previous position that Instagram would stay focused on short-form video. The corrected 202-word article passed factual fidelity, accessibility, connected format, stop-slop 44/50 and RecruitZero voice 9.2/10.",
         "writer_model": "claude-opus-5-5",
         "writer_provider": "claude-code",
         "writer_fallback_used": false,
@@ -2173,13 +2193,39 @@
             "status": "success",
             "purpose": "initial_draft",
             "session_id": "0e5f8314-7239-4796-9627-46e276febe03"
+          },
+          {
+            "model": "user_supplied_revision",
+            "status": "accepted_after_narrow_factual_correction",
+            "purpose": "final_canonical_revision",
+            "discord_message_id": "1564645933772312608"
           }
         ],
         "writer_session_id": "0e5f8314-7239-4796-9627-46e276febe03",
         "review_model": "gpt-5.6-sol",
         "review_provider": "openai-codex",
         "markdown_path": "/home/ranson/.hermes/social-queue/linkedin/2026-10-27-instagram-longform-reviewed.md",
-        "stack_independent_value": true
+        "stack_independent_value": true,
+        "approved_at": "2026-10-27T10:29:02-04:00",
+        "approved_via": "discord",
+        "approval_message_id": "1564645933772312608",
+        "revision_history": [
+          {
+            "at": "2026-10-27T10:29:02-04:00",
+            "requested_via": "discord",
+            "discord_message_id": "1564645933772312608",
+            "reason": "Replace the reviewed article with the user-supplied revision and generate the cover.",
+            "word_count": 202,
+            "factual_correction": "Narrowed the historical statement to Mosseri's documented previous position on short-form video.",
+            "review": {
+              "factual_fidelity": "pass",
+              "accessibility": "pass",
+              "format": "pass",
+              "stop_slop": 44,
+              "voice_fidelity": 9.2
+            }
+          }
+        ]
       },
       "performance": {
         "tracking_status": "awaiting_publication_data",
@@ -2195,6 +2241,18 @@
         "day_30": null,
         "qualitative_outcome": null,
         "editorial_lesson": null
+      },
+      "assets": {
+        "cover_status": "complete",
+        "cover_provider": "openai-codex",
+        "cover_model": "gpt-image-2-medium",
+        "cover_url": "assets/ai-martech-topic-queue-2026-10-27-cover.png",
+        "cover_local_path": "/home/ranson/.hermes/social-queue/linkedin/2026-10-27-instagram-longform-cover.png",
+        "cover_original_path": "/home/ranson/.hermes/social-queue/linkedin/2026-10-27-instagram-longform-cover-original.png",
+        "cover_dimensions": "1200x627",
+        "visual_inspection": "pass",
+        "visual_concept": "A short discovery video opens into a deliberate longer story sequence while a marketer evaluates creative selections, audience response and production cost.",
+        "review_page_url": "https://ransonproductionsllc-bit.github.io/recruitzero-content-dashboard/review.html?id=ai-martech-topic-queue-2026-10-27"
       }
     }
   ],
