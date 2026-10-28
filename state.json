@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-10-27T10:29:02-04:00",
+  "updated_at": "2026-10-28T08:17:47-04:00",
   "sync": {
     "status": "connected",
     "discord_guild_id": "1553886101003837561",
@@ -2254,6 +2254,221 @@
         "visual_concept": "A short discovery video opens into a deliberate longer story sequence while a marketer evaluates creative selections, audience response and production cost.",
         "review_page_url": "https://ransonproductionsllc-bit.github.io/recruitzero-content-dashboard/review.html?id=ai-martech-topic-queue-2026-10-27"
       }
+    },
+    {
+      "id": "ai-martech-topic-queue-2026-10-28",
+      "kind": "content",
+      "title": "AI marketing and martech topic approval queue",
+      "created_at": "2026-10-28T08:17:47-04:00",
+      "updated_at": "2026-10-28T08:17:47-04:00",
+      "status": "awaiting_topic_approval",
+      "stage": "topic_approval",
+      "topic_options": [
+        {
+          "option": 1,
+          "rank": 1,
+          "title": "Microsoft makes campaign setup easier and signal governance harder",
+          "event_date": "2026-10-28",
+          "proposed_hook": "Microsoft Advertising can now build a Performance Max campaign from a website, plans, brand rules and product images, then use server-side conversion data to optimize it. Less setup work puts more weight on the inputs, exclusions and conversion signals a team approves.",
+          "marketer_angle": "Paid-media teams need one control model for AI campaign creation and measurement: approved source material, claims and tone rules, editable launch checkpoints, audience and device exclusions, event schemas, consent, deduplication, identity matching and tests for whether server-side signals improve decisions rather than only platform attribution.",
+          "why_it_passed": "Microsoft documented a shipped AI campaign-creation flow, generally available Performance Max reporting and targeting controls, an open pilot for messaging guidelines, and a generally available Conversions API. The mixed maturity levels are explicit rather than presented as one universal release.",
+          "operational_impact_chain": "Microsoft turns business materials into an editable Performance Max setup and accepts server-side conversion events -> paid-media work shifts from manual configuration toward validating generated campaigns and governing data inputs -> media, creative, brand, analytics, CRM and privacy owners define launch, exclusion, schema, consent and deduplication rules -> teams decide which generated campaign and conversion signals may influence bids and budgets -> setup time, edit rate, guideline violations, duplicate events, match quality, attributed conversions and measured incremental lift become operating controls.",
+          "scores": {
+            "relevance": 10,
+            "relevance_rationale": "The release changes campaign setup, brand control, targeting, reporting and first-party conversion-data governance for paid-media teams.",
+            "topicality": 10,
+            "topicality_rationale": "Microsoft published the product update on October 28, 2026, the day of this research run.",
+            "viral_potential": 9,
+            "viral_potential_rationale": "The tension is concrete: AI can remove setup work while making approved source material and conversion signals more consequential.",
+            "total": 29
+          },
+          "confidence": "high",
+          "confidence_limitation": "Microsoft documents the features and their maturity levels, but performance and accuracy claims are not independently benchmarked. Messaging guidelines remain an open pilot, device targeting is still rolling out, and the company does not publish incrementality evidence for Conversions API.",
+          "novelty": {
+            "result": "meaningful_advance",
+            "rationale": "The archive covers Meta assigning risk for AI-generated ad changes and platform ad-selection tests. This event joins AI campaign construction, explicit brand guardrails, new Performance Max controls and server-side conversion signals in one operating workflow."
+          },
+          "predicted_audience_response": "Paid-media and analytics teams will debate whether easier campaign creation reduces labor or moves the real work into source approval, exclusions and conversion-signal quality.",
+          "materiality_gates": {
+            "material_event": "pass_product_update",
+            "editorial_thesis_fit": "pass",
+            "primary_evidence": "pass_blog_and_documentation",
+            "availability_clarity": "pass_mixed_ga_pilot_and_rollout",
+            "claim_discipline": "pass_with_vendor_performance_attribution",
+            "operational_impact": "pass",
+            "contradiction_search": "pass_with_mixed_maturity_and_no_incrementality_evidence",
+            "archive_novelty": "pass_meaningful_advance"
+          },
+          "coverage_limitations": [
+            "No independent benchmark was found for campaign quality, setup-time reduction, measurement accuracy or incremental lift.",
+            "Messaging guidelines are in open pilot, device targeting is rolling out, and landing-page reporting begins in mid-November.",
+            "Conversions API requires event-schema, consent, deduplication, identity and validation controls that the launch post does not resolve for advertisers."
+          ],
+          "sources": [
+            {
+              "type": "primary_product_update",
+              "title": "Microsoft Advertising October 2026 product update",
+              "url": "https://about.ads.microsoft.com/en/blog/post/october-2026/build-steer-and-measure-your-campaigns-with-ai-whats-new-in-microsoft-advertising-this-october"
+            },
+            {
+              "type": "primary_technical_documentation",
+              "title": "Microsoft Advertising Conversions API integration guide",
+              "url": "https://learn.microsoft.com/en-us/advertising/guides/uet-conversion-api-integration?view=bingads-13"
+            }
+          ]
+        },
+        {
+          "option": 2,
+          "rank": 2,
+          "title": "Sprinklr puts six agents across the campaign operating chain",
+          "event_date": "2026-10-27",
+          "proposed_hook": "Sprinklr wants connected agents to move a campaign from a live signal through creative, setup, compliance, community response and budget recommendations. The operating problem is deciding how much authority each agent gets before speed turns into an unreviewed action.",
+          "marketer_angle": "Marketing teams need an authority map for multi-agent campaign work: which agent may recommend, draft, configure or act; which evidence it may use; which exceptions require a person; who can change spend; how teams log handoffs; and how they roll back a bad action.",
+          "why_it_passed": "Sprinklr opened a beta for six connected marketing agents spanning planning, creative, campaign execution, compliance, community work and budget optimization. Independent reporting confirmed that this is a beta, found earlier adoption in creative variation and trafficking, and identified unresolved attribution and maturity limits.",
+          "operational_impact_chain": "Sprinklr connects six agents across campaign planning and execution -> work can pass from signals to creative, trafficking, compliance, community response and budget recommendations inside one system -> marketing, media, creative, legal and finance owners assign authority, review thresholds and exception handling by agent -> teams decide which actions can proceed and where a person must intervene -> cycle time, approval latency, exception volume, rollback rate, brand defects, response quality and budget overrides become operating measures.",
+          "scores": {
+            "relevance": 10,
+            "relevance_rationale": "The beta changes campaign production, cross-team handoffs, compliance review, community operations and budget governance.",
+            "topicality": 10,
+            "topicality_rationale": "Sprinklr opened the beta on October 27, 2026.",
+            "viral_potential": 9,
+            "viral_potential_rationale": "Six agents working across one campaign creates a practical debate about authority, handoffs and where human approval belongs.",
+            "total": 29
+          },
+          "confidence": "high",
+          "confidence_limitation": "The beta and agent scope are documented and independently reported, but there is no general-availability date or independent outcome test. Named customer examples are anonymous, speed claims come from Sprinklr, and attribution from AI visibility to campaign outcomes remains unresolved.",
+          "novelty": {
+            "result": "meaningful_advance",
+            "rationale": "The archive covers individual campaign agents and a full demand-generation system. Sprinklr adds a connected, role-specific agent chain with separate planning, creative, execution, compliance, community and budget functions, making inter-agent authority and handoffs the new operating issue."
+          },
+          "predicted_audience_response": "Operators will ask whether the agents share reliable context, which tasks can run without approval and who owns a failure after several agents touched the same campaign.",
+          "materiality_gates": {
+            "material_event": "pass_beta_launch",
+            "editorial_thesis_fit": "pass",
+            "primary_evidence": "pass_release",
+            "availability_clarity": "pass_beta_not_ga",
+            "claim_discipline": "pass_with_vendor_speed_and_customer_claim_attribution",
+            "operational_impact": "pass",
+            "contradiction_search": "pass_with_independent_beta_and_maturity_limits",
+            "archive_novelty": "pass_meaningful_advance"
+          },
+          "coverage_limitations": [
+            "Sprinklr has not published a general-availability date, pricing, entitlement matrix or independent outcome study.",
+            "Customer examples are unnamed and the campaign-build speed claim is vendor reported.",
+            "Independent reporting says creative variation and trafficking are seeing earlier adoption than recommendation and budget optimization, while AI-visibility attribution remains unresolved."
+          ],
+          "sources": [
+            {
+              "type": "primary_company_release",
+              "title": "Sprinklr launches Marketing AI Agents beta",
+              "url": "https://www.sprinklr.com/newsroom/sprinklr-launches-marketing-ai-agents-beta-to-help-enterprise-marketers-move-from-insight-to-action/"
+            },
+            {
+              "type": "independent_context",
+              "title": "CMSWire: Sprinklr launches six Marketing AI Agents in beta",
+              "url": "https://www.cmswire.com/customer-experience/sprinklr-launches-6-marketing-ai-agents-in-beta/"
+            }
+          ]
+        },
+        {
+          "option": 3,
+          "rank": 3,
+          "title": "Adobe turns sales-chat judgment into Marketo automation data",
+          "event_date": "2026-10-27",
+          "proposed_hook": "Adobe now requires a sales representative to score each live Brand Concierge chat before closing it, then writes that score and the conversation activity into Marketo. A human judgment can now trigger nurture, retargeting, personalization and CRM handoff, so score consistency becomes a marketing-operations control.",
+          "marketer_angle": "Marketing and sales operations teams need a shared scoring policy for conversational handoffs: definitions for each score, calibration and sampling, missing-score handling, routing ownership, automation limits, retention and a way to separate representative judgment from observed customer behavior.",
+          "why_it_passed": "Adobe documented generally available October features that add mandatory 0-to-3 representative scoring, three native Brand Concierge activity types, Marketo filters and triggers, meeting-status constraints and visitor context for live-chat handoff.",
+          "operational_impact_chain": "A visitor engages with Brand Concierge and may enter live chat or meeting booking -> a representative assigns a qualification score and Adobe writes structured activities to Marketo -> marketing and sales operations define score meanings, calibration, routing and automation rules -> teams decide which conversations may trigger lead scoring, nurture, retargeting, personalization or CRM handoff -> score distribution, representative variance, booking abandonment, routing latency, downstream conversion and false-positive handoffs become operating measures.",
+          "scores": {
+            "relevance": 10,
+            "relevance_rationale": "The release changes lead qualification, sales-to-marketing handoffs, automation triggers and the governance of conversational data.",
+            "topicality": 10,
+            "topicality_rationale": "Adobe last updated the release notes on October 27, 2026, and lists the features in the October release.",
+            "viral_potential": 8,
+            "viral_potential_rationale": "Turning a required human chat score into automated marketing action creates a useful debate about subjective judgment entering machine workflows.",
+            "total": 28
+          },
+          "confidence": "high",
+          "confidence_limitation": "Adobe documents the features and says unmarked items are generally available, but it does not publish score-calibration guidance, inter-representative consistency data, automation safeguards or independent evidence that the scores improve conversion.",
+          "novelty": {
+            "result": "meaningful_advance",
+            "rationale": "The archive covers Adobe agents building and activating Smart Campaigns. This update concerns the other side of the workflow: a representative scoring AI-assisted conversations and turning that subjective judgment into native Marketo triggers and handoffs."
+          },
+          "predicted_audience_response": "Marketing operations teams will question whether a mandatory score improves routing or simply makes inconsistent sales judgment executable at scale.",
+          "materiality_gates": {
+            "material_event": "pass_release_update",
+            "editorial_thesis_fit": "pass",
+            "primary_evidence": "pass_release_notes_and_documentation",
+            "availability_clarity": "pass_generally_available",
+            "claim_discipline": "pass",
+            "operational_impact": "pass",
+            "contradiction_search": "pass_with_subjective_score_and_missing_calibration_evidence",
+            "archive_novelty": "pass_meaningful_advance"
+          },
+          "coverage_limitations": [
+            "Adobe does not publish score definitions, calibration procedures, representative-variance data or independent conversion evidence.",
+            "The qualification score is assigned by a representative, not generated by AI, and should not be described as model scoring.",
+            "Public documentation does not establish which automation safeguards prevent a subjective or mistaken score from triggering inappropriate actions."
+          ],
+          "sources": [
+            {
+              "type": "primary_release_notes",
+              "title": "Adobe Brand Concierge October 2026 release notes",
+              "url": "https://experienceleague.adobe.com/en/docs/brand-concierge/content/release-notes/current"
+            },
+            {
+              "type": "primary_documentation",
+              "title": "Adobe Brand Concierge data in Marketo Engage",
+              "url": "https://experienceleague.adobe.com/en/docs/brand-concierge/content/documentation/sales-handoff/marketo-activities"
+            }
+          ]
+        }
+      ],
+      "research": {
+        "source_cutoff": "2026-10-27T08:05:51-04:00",
+        "initial_window_start": "2026-10-25T08:00:54-04:00",
+        "discovery_window_hours": 72,
+        "discovery_window_expansion": null,
+        "event_ledger_path": "/home/ranson/.hermes/social-queue/research/2026-10-28-ai-martech-event-ledger.json",
+        "decision_journal_path": "/home/ranson/.hermes/social-queue/research/2026-10-28-ai-martech-decision-journal.md",
+        "citation_ledger_path": "/home/ranson/.hermes/social-queue/research/2026-10-28-citations-ledger.json",
+        "reserve_candidate_count": 6,
+        "reserve_candidates": [
+          "Prophecy - prophecy-datagpt-2026-10-28",
+          "QorusDocs - qorusdocs-qpilot-workspace-2026-10-27",
+          "Salesforce - salesforce-b2c-commerce-october-release-2026-10-26",
+          "Brandi AI - brandi-content-compass-2-2026-10-27",
+          "Pinterest - pinterest-programmatic-deals-2026-10-26",
+          "BigGeo - biggeo-audience-composer-2026-10-23"
+        ],
+        "coverage_gaps": [
+          {
+            "source": "Independent outcome evidence for Microsoft Advertising and Adobe Brand Concierge",
+            "status": "not_found",
+            "detail": "Primary artifacts support the product facts, but no independent controlled implementation evidence was found."
+          },
+          {
+            "source": "Sprinklr Marketing AI Agents general availability",
+            "status": "not_published",
+            "detail": "Independent reporting confirms beta-only status; no GA date, public pricing or independent outcome test is available."
+          },
+          {
+            "source": "Salesforce B2C Commerce October release blog",
+            "url": "https://www.salesforce.com/blog/b2c-commerce-october-26-release/",
+            "status": "blocked_access_denied",
+            "cutoff_advanced": false,
+            "detail": "Direct verification failed, so the candidate stayed in reserve and the source-specific cutoff did not advance."
+          }
+        ]
+      },
+      "events": [
+        {
+          "at": "2026-10-28T08:17:47-04:00",
+          "type": "topic_queue_created",
+          "actor": "scheduled_research",
+          "detail": "Created exactly three ranked AI marketing and martech topics from the previous 72 hours with late-indexing overlap; no discovery-window expansion was required. Awaiting topic approval."
+        }
+      ]
     }
   ],
   "archive": [
