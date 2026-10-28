@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-10-28T08:17:47-04:00",
+  "updated_at": "2026-10-28T08:37:41-04:00",
   "sync": {
     "status": "connected",
     "discord_guild_id": "1553886101003837561",
@@ -2260,7 +2260,7 @@
       "kind": "content",
       "title": "AI marketing and martech topic approval queue",
       "created_at": "2026-10-28T08:17:47-04:00",
-      "updated_at": "2026-10-28T08:17:47-04:00",
+      "updated_at": "2026-10-28T08:37:41-04:00",
       "status": "awaiting_topic_approval",
       "stage": "topic_approval",
       "topic_options": [
@@ -2422,6 +2422,180 @@
               "url": "https://experienceleague.adobe.com/en/docs/brand-concierge/content/documentation/sales-handoff/marketo-activities"
             }
           ]
+        },
+        {
+          "option": 4,
+          "rank": 4,
+          "title": "Prophecy turns AI analysis into an auditable production workflow",
+          "event_date": "2026-10-28",
+          "proposed_hook": "AI analytics stops being just a chat answer when its joins, rules and calculations become a scheduled production workflow. Prophecy's launch puts marketers in a new role: approving the machinery behind the metric, not merely reading the result.",
+          "marketer_angle": "Marketing analytics, CRM and operations teams need a control model for AI-built reporting: approved sources, identity and join rules, metric definitions, reviewer accountability, versioning, deployment approval, schedule ownership and evidence that lets another operator reproduce the number.",
+          "why_it_passed": "Prophecy launched DataGPT with current availability, documented connectors, workflow inspection, publishing and scheduling controls, plus a marketing-attribution use case. It changes the handoff between marketers and data teams without requiring claims that generated logic is accurate.",
+          "operational_impact_chain": "A marketer requests attribution or recurring analysis in an AI assistant -> DataGPT builds an inspectable SQL workflow from advertising, web, spreadsheet, warehouse and CRM data -> marketing analytics, CRM operations, data engineering and privacy owners approve sources, joins, definitions, permissions, versions and deployment -> teams decide which generated logic may enter recurring reports or influence campaign decisions -> turnaround time, workflow edits, reconciliation defects, metric disputes, failed schedules and attribution variance become operating controls.",
+          "scores": {
+            "relevance": 9,
+            "relevance_rationale": "It changes attribution reconciliation, CRM reporting, spreadsheet preparation and the handoff between marketing analysts and data teams, although Prophecy is not marketing-specific.",
+            "topicality": 10,
+            "topicality_rationale": "Prophecy formally announced DataGPT on October 28, 2026 and documents it as available now.",
+            "viral_potential": 8,
+            "viral_potential_rationale": "The distinction between an AI answer and a reusable, auditable workflow creates a strong practitioner discussion, but the enterprise-data framing limits broad reach.",
+            "total": 27
+          },
+          "confidence": "qualified",
+          "confidence_limitation": "Launch status, supported clients, workflow functions, permissions and pricing are documented. No independent marketing implementation, accuracy test or production benchmark was found, and chat support has material project, version-control, scheduling and client-display limits.",
+          "novelty": {
+            "result": "meaningful_advance",
+            "rationale": "TapClicks covered governed assistant access to marketing data. DataGPT advances that pattern into visual workflow generation, spreadsheet ingestion, project publishing and scheduled analytics execution."
+          },
+          "predicted_audience_response": "Marketing operations and analytics practitioners will question whether a visual workflow is genuinely auditable by nontechnical reviewers, how generated joins are tested and whether the pricing beats existing BI, SQL and spreadsheet workflows.",
+          "materiality_gates": {
+            "material_event": "pass_product_launch",
+            "editorial_thesis_fit": "pass",
+            "primary_evidence": "pass_release_blog_and_documentation",
+            "availability_clarity": "pass_with_plan_project_and_client_limits",
+            "claim_discipline": "pass_with_vendor_attribution",
+            "operational_impact": "pass",
+            "contradiction_search": "pass_with_chat_publishing_permission_and_rendering_limits",
+            "archive_novelty": "pass_meaningful_advance"
+          },
+          "coverage_limitations": [
+            "No independent marketing customer case study, hands-on product test or accuracy benchmark was found.",
+            "DataGPT currently works with SQL projects; advanced version control and some scheduling changes require the Prophecy application.",
+            "Public materials do not fully explain automated testing, rollback after external writes or how business and data owners divide workflow approval."
+          ],
+          "sources": [
+            {
+              "type": "primary_company_release",
+              "title": "Prophecy launches DataGPT",
+              "url": "https://www.globenewswire.com/news-release/2026/10/28/3389911/0/en/prophecy-launches-datagpt-bringing-enterprise-data-workflows-to-claude-chatgpt-and-copilot.html"
+            },
+            {
+              "type": "primary_documentation",
+              "title": "What you can do with DataGPT",
+              "url": "https://docs.prophecy.ai/data-analysis/getting-started/datagpt/capabilities"
+            },
+            {
+              "type": "independent_reporting",
+              "title": "SiliconANGLE: Prophecy launches DataGPT",
+              "url": "https://siliconangle.com/2026/10/28/exclusive-prophecy-launches-datagpt-to-run-data-workflows-inside-chatgpt-claude-and-copilot/"
+            }
+          ]
+        },
+        {
+          "option": 5,
+          "rank": 5,
+          "title": "Salesforce shifts ecommerce search from rule building to model supervision",
+          "event_date": "2026-10-26",
+          "proposed_hook": "Salesforce is moving ecommerce merchandising from writing search rules to supervising an AI model. The catch is that old rules do not carry over and the new search engine does not get its own analytics dashboard.",
+          "marketer_angle": "Commerce teams need a migration and measurement policy: which search rules must be rebuilt, who approves AI category suggestions and rankings, how product and local-inventory data are validated, which add-ons the economics justify and how teams measure impact when reporting remains broad.",
+          "why_it_passed": "Salesforce documented AI-generated catalog filters and category suggestions, new Agentic Commerce Search capabilities, broader traffic-source reporting and lower connection requirements. The operating change is concrete when framed around merchandising governance rather than repeating the recent Google Universal Cart story.",
+          "operational_impact_chain": "Salesforce inserts AI-generated filters, category recommendations, model-ranked search and contextual assistance into ecommerce -> legacy merchandising rules no longer fully determine product visibility -> merchandising, ecommerce, product-data, analytics, engineering and finance owners rebuild controls, validate product eligibility, approve model behavior and govern separate add-ons -> teams decide which changes may reach shoppers and how results will be compared -> rule-migration defects, uncategorized products, zero-result rate, search conversion, revenue by traffic source, agent usage cost and checkout failures become operating measures.",
+          "scores": {
+            "relevance": 9,
+            "relevance_rationale": "The release changes daily merchandising, product-data governance, search controls, measurement and licensing decisions for commerce teams.",
+            "topicality": 10,
+            "topicality_rationale": "Salesforce published the release overview on October 26, 2026 and the phased 26.10 deployment remains active through October 29.",
+            "viral_potential": 8,
+            "viral_potential_rationale": "The tension between less manual rule-building and the need to rebuild controls and supervise rankings should prompt practitioner debate.",
+            "total": 27
+          },
+          "confidence": "qualified_high",
+          "confidence_limitation": "The features, deployment timing, migration effects and separate add-on requirements are documented. Public pricing, adoption, implementation cost, clean feature-level attribution and independent conversion or productivity tests were not found.",
+          "novelty": {
+            "result": "meaningful_advance",
+            "rationale": "A UCP-first treatment would repeat recent Google cart coverage. The distinct angle is Salesforce moving merchandising from portable native rules toward supervised AI search, with separate licensing and no dedicated search analytics dashboard."
+          },
+          "predicted_audience_response": "Commerce and martech operators will ask whether AI search improves conversion, how teams audit rankings, what the add-ons cost and whether broad Search or Chatbot reporting can prove incremental value.",
+          "materiality_gates": {
+            "material_event": "pass_release_update",
+            "editorial_thesis_fit": "pass",
+            "primary_evidence": "pass_blog_release_notes_and_documentation",
+            "availability_clarity": "pass_with_phased_deployment_add_on_and_google_access_limits",
+            "claim_discipline": "pass_with_vendor_performance_attribution",
+            "operational_impact": "pass",
+            "contradiction_search": "pass_with_rule_migration_measurement_and_licensing_limits",
+            "archive_novelty": "pass_if_merchandising_governance_led"
+          },
+          "coverage_limitations": [
+            "No independent test of the complete October release or its conversion and productivity claims was found.",
+            "Agentic Commerce Search and Shopper Agent require separate purchase, but public pricing and usage economics were not found.",
+            "The release does not establish a clean attribution method for separating search, Shopper Agent, UCP and generic chatbot traffic."
+          ],
+          "sources": [
+            {
+              "type": "primary_vendor_blog",
+              "title": "Salesforce October 2026 B2C Commerce release",
+              "url": "https://www.salesforce.com/blog/b2c-commerce-october-26-release/"
+            },
+            {
+              "type": "primary_product_documentation",
+              "title": "How Agentic Commerce Search affects native B2C Commerce search",
+              "url": "https://help.salesforce.com/s/articleView?id=cc.b2c_acs_introduction.htm&language=en_US&type=5"
+            },
+            {
+              "type": "primary_developer_documentation",
+              "title": "Universal Commerce Protocol integration",
+              "url": "https://developer.salesforce.com/docs/commerce/commerce-vibes/guide/ucp-index.html"
+            }
+          ]
+        },
+        {
+          "option": 6,
+          "rank": 6,
+          "title": "QorusDocs makes proposal evidence governance the marketer’s job",
+          "event_date": "2026-10-27",
+          "proposed_hook": "The important proposal-AI shift is not faster writing. It is the transfer of proposal operations from document production to evidence governance: marketers must decide what agents may reuse, who owns the source of truth and where human approval stays mandatory.",
+          "marketer_angle": "Proposal marketing, sales enablement and business-development teams need named owners for approved claims, case studies, credentials and brand templates; freshness rules for source libraries; limits on agent authority; expert-review routing; and measures that separate tool usage from proposal quality and revenue outcomes.",
+          "why_it_passed": "QorusDocs launched a shared pursuit workspace with documented retrieval, assignments, approvals, source refreshes, usage reporting and Microsoft 365 output. The product makes reusable evidence and review design more important, although availability and business outcomes remain qualified.",
+          "operational_impact_chain": "Higher proposal volume and shorter deadlines -> agents retrieve approved biographies, experience, prior answers and deal context -> baseline drafting and branded assembly require less manual searching -> proposal marketers govern source libraries, permissions, assignments and expert review -> teams decide which agent output may reach a buyer -> source freshness, cycle time, subject-matter-expert hours, compliance defects, reuse quality, submission capacity and win rate become operating measures.",
+          "scores": {
+            "relevance": 9,
+            "relevance_rationale": "It directly changes work for proposal marketers, sales enablement, content operations and professional-services business development.",
+            "topicality": 10,
+            "topicality_rationale": "QorusDocs announced QPilot Workspace on October 27, 2026.",
+            "viral_potential": 7,
+            "viral_potential_rationale": "The human-versus-agent ownership question is strong, but proposal operations is a specialized category with limited mainstream reach.",
+            "total": 26
+          },
+          "confidence": "qualified",
+          "confidence_limitation": "The launch and broader platform controls are documented, with independent analysis of the evidence-governance requirement. Pricing, production availability, detailed MCP permissions, independently verified deployment results and measured ROI remain unresolved.",
+          "novelty": {
+            "result": "distinct",
+            "rationale": "The archive covers general content agents and demand-generation systems, but not proposal marketing as governed evidence infrastructure with reusable institutional proof and buyer-facing accountability."
+          },
+          "predicted_audience_response": "Proposal and sales-enablement operators will focus on stale credentials, claim approval, expert accountability and whether saved production time is redirected to client strategy rather than simply increasing output.",
+          "materiality_gates": {
+            "material_event": "pass_product_launch",
+            "editorial_thesis_fit": "pass",
+            "primary_evidence": "pass_announcement_pages_and_documentation",
+            "availability_clarity": "pass_with_early_access_and_entitlement_limits",
+            "claim_discipline": "pass_with_vendor_security_performance_and_integration_attribution",
+            "operational_impact": "pass",
+            "contradiction_search": "pass_with_source_freshness_authority_pricing_and_outcome_limits",
+            "archive_novelty": "pass_distinct"
+          },
+          "coverage_limitations": [
+            "No pricing, edition matrix, agent-credit rates or independently verified QPilot Workspace deployment result was found.",
+            "Immediate sign-up language coexists with Early Access documentation, so general availability is unresolved.",
+            "Workspace-specific MCP tools, read/write permissions and required human approvals are not fully documented."
+          ],
+          "sources": [
+            {
+              "type": "primary_announcement",
+              "title": "QorusDocs launches QPilot Workspace",
+              "url": "https://www.qorusdocs.com/pressroom/qorusdocs-launches-qpilot-workspace"
+            },
+            {
+              "type": "primary_documentation",
+              "title": "Indexing content for AI",
+              "url": "https://helpcenter.qorusdocs.com/hc/en-us/articles/26466186315805-Indexing-your-content-for-AI"
+            },
+            {
+              "type": "independent_reporting",
+              "title": "Unite.AI: QorusDocs launches QPilot Workspace",
+              "url": "https://www.unite.ai/qorusdocs-launches-qpilot-workspace-to-ground-proposal-agents-in-firm-knowledge/"
+            }
+          ]
         }
       ],
       "research": {
@@ -2432,11 +2606,8 @@
         "event_ledger_path": "/home/ranson/.hermes/social-queue/research/2026-10-28-ai-martech-event-ledger.json",
         "decision_journal_path": "/home/ranson/.hermes/social-queue/research/2026-10-28-ai-martech-decision-journal.md",
         "citation_ledger_path": "/home/ranson/.hermes/social-queue/research/2026-10-28-citations-ledger.json",
-        "reserve_candidate_count": 6,
+        "reserve_candidate_count": 3,
         "reserve_candidates": [
-          "Prophecy - prophecy-datagpt-2026-10-28",
-          "QorusDocs - qorusdocs-qpilot-workspace-2026-10-27",
-          "Salesforce - salesforce-b2c-commerce-october-release-2026-10-26",
           "Brandi AI - brandi-content-compass-2-2026-10-27",
           "Pinterest - pinterest-programmatic-deals-2026-10-26",
           "BigGeo - biggeo-audience-composer-2026-10-23"
@@ -2455,9 +2626,9 @@
           {
             "source": "Salesforce B2C Commerce October release blog",
             "url": "https://www.salesforce.com/blog/b2c-commerce-october-26-release/",
-            "status": "blocked_access_denied",
-            "cutoff_advanced": false,
-            "detail": "Direct verification failed, so the candidate stayed in reserve and the source-specific cutoff did not advance."
+            "status": "resolved_via_revalidation",
+            "cutoff_advanced": true,
+            "detail": "Primary Salesforce materials and implementation documentation were retrieved during the user-requested alternative review. The candidate passed with merchandising-governance and measurement qualifications."
           }
         ]
       },
@@ -2467,6 +2638,12 @@
           "type": "topic_queue_created",
           "actor": "scheduled_research",
           "detail": "Created exactly three ranked AI marketing and martech topics from the previous 72 hours with late-indexing overlap; no discovery-window expansion was required. Awaiting topic approval."
+        },
+        {
+          "at": "2026-10-28T08:37:41-04:00",
+          "type": "alternative_topics_added",
+          "actor": "discord_user_request",
+          "detail": "User requested three additional options. Revalidated unused reserves and added Prophecy as option 4, Salesforce as option 5 and QorusDocs as option 6 without replacing or renumbering the original three. All remain awaiting explicit topic approval."
         }
       ]
     }
