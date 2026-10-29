@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-10-28T08:37:41-04:00",
+  "updated_at": "2026-10-29T08:10:14-04:00",
   "sync": {
     "status": "connected",
     "discord_guild_id": "1553886101003837561",
@@ -2644,6 +2644,232 @@
           "type": "alternative_topics_added",
           "actor": "discord_user_request",
           "detail": "User requested three additional options. Revalidated unused reserves and added Prophecy as option 4, Salesforce as option 5 and QorusDocs as option 6 without replacing or renumbering the original three. All remain awaiting explicit topic approval."
+        }
+      ]
+    },
+    {
+      "id": "ai-martech-topic-queue-2026-10-29",
+      "kind": "content",
+      "title": "AI marketing and martech topic approval queue",
+      "created_at": "2026-10-29T08:10:14-04:00",
+      "updated_at": "2026-10-29T08:10:14-04:00",
+      "status": "awaiting_topic_approval",
+      "stage": "topic_approval",
+      "topic_options": [
+        {
+          "option": 1,
+          "rank": 1,
+          "title": "Google puts ads into later turns of AI search",
+          "event_date": "2026-10-28",
+          "proposed_hook": "Google can now place an ad after a person refines a question in AI Mode, not only beside the first prompt. Paid-search teams gain more conversational context, but Google has not shown advertisers which turn triggered the placement or how to isolate incremental value.",
+          "marketer_angle": "Search teams need a control model for conversational placements: approved intent categories, exclusions, product-feed quality, creative-to-query fit, landing experiences, privacy review, conversion reconciliation and a rule for when platform attribution is strong enough to move budget.",
+          "why_it_passed": "Google expanded AI Mode ads to ten markets, plans three more during the fourth quarter, and launched multiturn ads for follow-up queries in the United States. The availability is specific, while performance statements remain labeled as Google findings rather than independent evidence.",
+          "operational_impact_chain": "Google places ads inside initial and follow-up AI Mode responses -> one paid-search opportunity can span a multi-step conversation instead of one query -> media, creative, feed, analytics and privacy teams define intent coverage, exclusions, landing experiences and measurement rules -> teams decide which conversational placements deserve budget -> query-path visibility, placement mix, conversion quality, attribution variance and incremental lift become operating measures.",
+          "scores": {
+            "relevance": 10,
+            "relevance_rationale": "The launch changes search-media planning, creative context, product-feed quality, privacy review and measurement for advertisers buying around conversational intent.",
+            "topicality": 10,
+            "topicality_rationale": "Google announced the market expansion and U.S. multiturn format on October 28, 2026.",
+            "viral_potential": 9,
+            "viral_potential_rationale": "Ads appearing after a user refines a question create a direct debate about relevance, control and measurement inside AI search.",
+            "total": 29
+          },
+          "confidence": "high",
+          "confidence_limitation": "The launch and market availability are documented. Google does not publish advertiser enrollment rules, query-level controls, a dedicated multiturn reporting breakdown, pricing differences or independent incrementality evidence. Its click-through-rate comparison is an internal finding.",
+          "novelty": {
+            "result": "meaningful_advance",
+            "rationale": "The archive covers Google's earlier AI Mode ad testing and OpenAI's conversational ad-selection architecture. This event moves Google's format into more markets and inserts ads into later turns of a live search conversation."
+          },
+          "predicted_audience_response": "Paid-search teams will ask which part of the conversation triggered an ad, what controls they receive and whether platform attribution can prove incremental value.",
+          "materiality_gates": {
+            "material_event": "pass_distribution_and_product_launch",
+            "editorial_thesis_fit": "pass",
+            "primary_evidence": "pass_official_announcement",
+            "availability_clarity": "pass_with_market_and_planned_rollout_limits",
+            "claim_discipline": "pass_with_google_internal_finding_attribution",
+            "operational_impact": "pass",
+            "contradiction_search": "pass_with_reporting_control_and_incrementality_gaps",
+            "archive_novelty": "pass_meaningful_advance"
+          },
+          "coverage_limitations": [
+            "Google does not publish advertiser enrollment rules, query-level controls, a dedicated multiturn reporting breakdown, pricing differences or independent incrementality evidence.",
+            "The comparable click-through-rate statement is a Google internal finding, not an independent benchmark."
+          ],
+          "sources": [
+            {
+              "type": "primary_company_announcement",
+              "title": "Google expands ads in AI Mode and launches multiturn ads",
+              "url": "https://blog.google/products/ads-commerce/ads-in-ai-mode-global/"
+            },
+            {
+              "type": "independent_context",
+              "title": "TechCrunch: Google expands AI Search ads globally",
+              "url": "https://techcrunch.com/2026/10/28/google-expands-ai-search-ads-globally-as-core-ad-growth-slows/"
+            }
+          ]
+        },
+        {
+          "option": 2,
+          "rank": 2,
+          "title": "Google turns Search and Gemini into app-distribution surfaces",
+          "event_date": "2026-10-28",
+          "proposed_hook": "A brand can now submit one connected app and let customers invoke its data or actions inside Search, Gemini or both. Discovery work starts to include permissions, service reliability and task completion, not only pages, feeds and rankings.",
+          "marketer_angle": "Search, commerce and lifecycle teams need a shared policy with product, engineering and security for which actions may leave the owned interface, what customer data an AI surface may request, how the brand appears during the task, and how teams measure completed actions against lost site or app traffic.",
+          "why_it_passed": "Google launched a phased Connected Apps Platform preview with hosted MCP and Android AppFunctions support, one submission console, surface selection, authenticated brand experiences, and traffic, latency and error monitoring. More than 50 integrations are live across Google surfaces, but Google has not announced broad availability.",
+          "operational_impact_chain": "A brand exposes authenticated data or actions through a connected app -> Google can surface that capability inside Search or Gemini -> search, product, engineering, security and analytics teams share ownership of discovery performance -> teams decide which actions, permissions and service levels may leave the owned interface -> invocation volume, task completion, latency, errors, attributed conversion and channel displacement become operating measures.",
+          "scores": {
+            "relevance": 10,
+            "relevance_rationale": "The preview changes search distribution from content visibility toward authenticated actions, shared ownership and service reliability.",
+            "topicality": 10,
+            "topicality_rationale": "Google launched the Connected Apps Platform preview on October 28, 2026.",
+            "viral_potential": 9,
+            "viral_potential_rationale": "Brands may gain task completion inside Google while losing visits to their own interfaces, creating a practical distribution and attribution tension.",
+            "total": 29
+          },
+          "confidence": "qualified",
+          "confidence_limitation": "The preview architecture is documented. Google does not publish ranking criteria, commercial terms, pricing, review service levels, broad market availability or conventional marketing-attribution treatment. Preview integration does not prove meaningful discovery or usage.",
+          "novelty": {
+            "result": "distinct",
+            "rationale": "The archive covers agentic checkout, retail gateways and AI-search advertising, but not one brand-controlled action layer distributed through both Search and Gemini."
+          },
+          "predicted_audience_response": "Search and commerce teams will debate which brand capabilities belong inside an AI answer, how Google selects competing apps and whether completed tasks compensate for lost owned-channel traffic.",
+          "materiality_gates": {
+            "material_event": "pass_platform_preview_launch",
+            "editorial_thesis_fit": "pass",
+            "primary_evidence": "pass_official_announcement_and_developer_documentation",
+            "availability_clarity": "pass_preview_with_phased_access",
+            "claim_discipline": "pass",
+            "operational_impact": "pass",
+            "contradiction_search": "pass_with_ranking_economics_and_attribution_gaps",
+            "archive_novelty": "pass_distinct"
+          },
+          "coverage_limitations": [
+            "Google does not publish ranking or recommendation criteria, commercial terms, pricing, review service levels or broad market availability.",
+            "The public materials do not explain how connected-app traffic appears in conventional search and marketing attribution."
+          ],
+          "sources": [
+            {
+              "type": "primary_company_announcement",
+              "title": "Google launches the Connected Apps Platform",
+              "url": "https://blog.google/innovation-and-ai/technology/developers-tools/connected-apps-one-place/"
+            },
+            {
+              "type": "primary_developer_documentation",
+              "title": "Google Connected Apps developer documentation",
+              "url": "https://developers.google.com/connected-apps"
+            },
+            {
+              "type": "independent_context",
+              "title": "TechCrunch: Google opens Gemini and Search to more apps",
+              "url": "https://techcrunch.com/2026/10/28/as-ai-agents-reshape-the-web-google-opens-gemini-and-search-to-more-apps/"
+            }
+          ]
+        },
+        {
+          "option": 3,
+          "rank": 3,
+          "title": "Triton moves media-deal review from each booking into system policy",
+          "event_date": "2026-10-28",
+          "proposed_hook": "Triton says a buyer agent and seller agent took one audio campaign from brief through negotiation and ad-server booking without a person moving the deal between steps. The human work moved earlier, into pricing, targeting, privacy and validation rules set before the agents acted.",
+          "marketer_angle": "Media teams need a transaction policy for agentic buying: approved inventory, price ranges, targeting and privacy limits, brand-safety checks, exception thresholds, audit records, cancellation rights and named accountability when an automated booking follows the rules but produces the wrong commercial result.",
+          "why_it_passed": "Triton launched a Seller Agent and documented a live Otrium campaign in Talpa Media inventory. The release names the participants, workflow and preconfigured safeguards. It supports a change in media operations without treating one campaign as proof of scaled reliability.",
+          "operational_impact_chain": "A campaign brief enters a buyer agent -> a seller agent evaluates inventory, terms and validation rules -> the systems book the campaign into the ad server -> advertiser, agency and publisher teams move pricing, targeting, privacy and brand-safety review into policies set before execution -> booking time, exception rate, overrides, errors, yield and audit completeness become operating measures.",
+          "scores": {
+            "relevance": 9,
+            "relevance_rationale": "The launch changes media buying, agency handoffs, publisher inventory governance and the placement of pricing and brand-safety review, though it begins in digital audio.",
+            "topicality": 10,
+            "topicality_rationale": "Triton announced the launched Seller Agent and live first transaction on October 28, 2026.",
+            "viral_potential": 9,
+            "viral_potential_rationale": "A media deal negotiated and booked by agents creates a concrete question about whether governance improves when humans review policy instead of each transaction.",
+            "total": 28
+          },
+          "confidence": "qualified",
+          "confidence_limitation": "Triton documents the live transaction and safeguard design, but the evidence covers one campaign. Public materials omit cancellation, make-good, pacing, discrepancy and accountability workflows. PPC Land's independent report was indexed, but its body was blocked by a Cloudflare challenge during final verification.",
+          "novelty": {
+            "result": "distinct",
+            "rationale": "The archive covers campaign agents and automated optimization, but not a live buyer-agent-to-seller-agent negotiation and ad-server booking that moves human review into preconfigured transaction policy."
+          },
+          "predicted_audience_response": "Media operators will focus on who sets the guardrails, which exceptions stop an automated deal and who owns the outcome when the booking is valid but commercially wrong.",
+          "materiality_gates": {
+            "material_event": "pass_live_transaction_and_product_launch",
+            "editorial_thesis_fit": "pass",
+            "primary_evidence": "pass_official_release",
+            "availability_clarity": "pass_with_sales_led_access_limits",
+            "claim_discipline": "pass_with_participant_speed_and_revenue_claim_attribution",
+            "operational_impact": "pass",
+            "contradiction_search": "pass_with_single_campaign_and_missing_exception_workflow",
+            "archive_novelty": "pass_distinct"
+          },
+          "coverage_limitations": [
+            "The evidence covers one campaign and does not establish scaled reliability.",
+            "Public materials do not define cancellation handling, make-goods, pacing changes, discrepancy resolution, audit exports or responsibility after a bad automated booking.",
+            "Independent reporting was indexed but blocked by a Cloudflare challenge during final verification."
+          ],
+          "sources": [
+            {
+              "type": "primary_company_release",
+              "title": "Triton Digital launches Seller Agent and completes first agentic audio transaction",
+              "url": "https://www.tritondigital.com/resources/audio-insights-and-news/triton-digital-launches-first-seller-agent-for-audio-completing-first-agentic-audio-transaction-with-otrium-draft-digital-and-talpa-media"
+            },
+            {
+              "type": "independent_context_coverage_gap",
+              "title": "PPC Land: Triton seller agent books Otrium audio campaign",
+              "url": "https://ppc.land/triton-digitals-seller-agent-books-otrium-audio-campaign-in-minutes/"
+            }
+          ]
+        }
+      ],
+      "research": {
+        "source_cutoff": "2026-10-28T08:17:47-04:00",
+        "initial_window_start": "2026-10-26T08:00:42-04:00",
+        "discovery_window_hours": 72,
+        "discovery_window_expansion": null,
+        "event_ledger_path": "/home/ranson/.hermes/social-queue/research/2026-10-29-ai-martech-event-ledger.json",
+        "decision_journal_path": "/home/ranson/.hermes/social-queue/research/2026-10-29-ai-martech-decision-journal.md",
+        "citation_ledger_path": "/home/ranson/.hermes/social-queue/research/2026-10-29-citations-ledger.json",
+        "reserve_candidate_count": 6,
+        "reserve_candidates": [
+          "Invoca Messaging Agents for Google Ads",
+          "Ataccama headless MDM",
+          "Shopify Fall 2026 Edition discrete changelogs",
+          "Fast Simon Commerce-Native AI",
+          "TrustArc consent and Brand Admin release",
+          "Circana predictive commerce signals"
+        ],
+        "coverage_gaps": [
+          {
+            "source": "Configured direct page extraction backend",
+            "status": "unavailable_search_only",
+            "cutoff_advanced": false,
+            "detail": "Browser retrieval, search results and delegated source verification were used; the failure was not treated as no news."
+          },
+          {
+            "source": "PPC Land Triton independent report",
+            "url": "https://ppc.land/triton-digitals-seller-agent-books-otrium-audio-campaign-in-minutes/",
+            "status": "blocked_by_cloudflare",
+            "cutoff_advanced": false,
+            "detail": "The page was indexed but its body could not be re-opened during parent verification."
+          },
+          {
+            "source": "Google AI Mode advertiser controls and incrementality",
+            "status": "not_published",
+            "cutoff_advanced": false,
+            "detail": "No query-level controls, dedicated multiturn report or independent incrementality evidence was found."
+          },
+          {
+            "source": "Google Connected Apps ranking, commercial terms and attribution",
+            "status": "not_published",
+            "cutoff_advanced": false,
+            "detail": "Preview materials do not define ranking, economics, broad availability or conventional marketing attribution."
+          }
+        ]
+      },
+      "events": [
+        {
+          "at": "2026-10-29T08:10:14-04:00",
+          "type": "topic_queue_created",
+          "actor": "scheduled_research",
+          "detail": "Created exactly three ranked AI marketing and martech topics from the previous 72 hours with late-indexing overlap; no discovery-window expansion was required. Awaiting topic approval."
         }
       ]
     }
