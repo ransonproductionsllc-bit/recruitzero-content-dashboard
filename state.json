@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-10-29T08:10:14-04:00",
+  "updated_at": "2026-10-30T08:11:39-04:00",
   "sync": {
     "status": "connected",
     "discord_guild_id": "1553886101003837561",
@@ -2867,6 +2867,238 @@
       "events": [
         {
           "at": "2026-10-29T08:10:14-04:00",
+          "type": "topic_queue_created",
+          "actor": "scheduled_research",
+          "detail": "Created exactly three ranked AI marketing and martech topics from the previous 72 hours with late-indexing overlap; no discovery-window expansion was required. Awaiting topic approval."
+        }
+      ]
+    },
+    {
+      "id": "ai-martech-topic-queue-2026-10-30",
+      "kind": "content",
+      "title": "AI marketing and martech topic approval queue",
+      "created_at": "2026-10-30T08:11:39-04:00",
+      "updated_at": "2026-10-30T08:11:39-04:00",
+      "status": "awaiting_topic_approval",
+      "stage": "topic_approval",
+      "topic_options": [
+        {
+          "option": 1,
+          "rank": 1,
+          "title": "Reddit tests logged-in access as the default",
+          "event_date": "2026-10-29",
+          "proposed_hook": "Reddit plans to test a primarily logged-in experience in selected markets outside the United States. That could give advertisers stronger account-level signals while reducing the anonymous reach that feeds search discovery and casual community participation.",
+          "marketer_angle": "Paid-social, community, SEO, analytics and privacy teams need separate plans for authenticated and logged-out audiences: reach baselines, frequency rules, referral measurement, consent, content access and a test for whether better targeting compensates for lost discovery.",
+          "why_it_passed": "Reddit disclosed a specific Q4 test rather than a general strategy. The company said logged-in users already drive more than 80% of monetization, but it has not named the test markets, anonymous-access exceptions or broader rollout date.",
+          "operational_impact_chain": "Reddit makes login the default in selected markets -> more activity connects to persistent accounts while anonymous access contracts -> paid-social, community, SEO, analytics and privacy teams separate logged-in targeting value from lost logged-out reach -> teams change budget, content-distribution and measurement decisions by audience state -> authenticated reach, search referrals, frequency control, conversion quality and opt-out behavior become operating measures.",
+          "scores": {
+            "relevance": 10,
+            "relevance_rationale": "The test changes audience identity, targeting, frequency control, referral traffic and measurement for paid-social, community and SEO teams.",
+            "topicality": 10,
+            "topicality_rationale": "Reddit disclosed the Q4 login-default test on October 29, 2026.",
+            "viral_potential": 10,
+            "viral_potential_rationale": "The trade between stronger first-party identity and reduced anonymous reach creates a clear operator debate across advertising, community and search distribution.",
+            "total": 30
+          },
+          "confidence": "qualified",
+          "confidence_limitation": "The test and business rationale are documented, but Reddit has not named markets, anonymous-access rules or rollout timing. No result shows that stronger logged-in monetization will offset lost anonymous reach.",
+          "novelty": {
+            "result": "distinct",
+            "rationale": "The archive covers recommendation controls, AI-search traffic and conversational ads, but not a social platform making authentication the default to reshape first-party identity, reach and monetization."
+          },
+          "predicted_audience_response": "Operators will debate whether better targeting and frequency control can justify weaker logged-out discovery, search referrals and community access.",
+          "materiality_gates": {
+            "material_event": "pass_distribution_and_identity_test",
+            "editorial_thesis_fit": "pass",
+            "primary_evidence": "pass_results_and_named_executive_statement",
+            "availability_clarity": "pass_planned_test_with_market_limits",
+            "claim_discipline": "pass",
+            "operational_impact": "pass",
+            "contradiction_search": "pass_with_multiple_motives_and_traffic_risk",
+            "archive_novelty": "pass_distinct"
+          },
+          "coverage_limitations": [
+            "Reddit has not named test markets, anonymous-access exceptions or a broader rollout date.",
+            "Declining search referrals are context, not a proven single cause of the login-default test.",
+            "No test results yet show whether stronger logged-in monetization will offset lost anonymous reach."
+          ],
+          "sources": [
+            {
+              "type": "primary_company_results",
+              "title": "Reddit reports third-quarter 2026 results",
+              "url": "https://investor.redditinc.com/news-events/news-releases/news-details/2026/Reddit-Reports-Third-Quarter-2026-Results/default.aspx"
+            },
+            {
+              "type": "named_executive_statement_transcript",
+              "title": "Reddit Q3 2026 earnings call transcript",
+              "url": "https://www.benzinga.com/news/26/10/62724067/reddit-q3-2026-earnings-call-transcript"
+            },
+            {
+              "type": "independent_advertising_context",
+              "title": "AdExchanger: Reddit is going login only",
+              "url": "https://www.adexchanger.com/platforms/reddit-is-going-login-only-blame-google/"
+            }
+          ]
+        },
+        {
+          "option": 2,
+          "rank": 2,
+          "title": "Amazon expands Alexa+ across discovery and post-purchase work",
+          "event_date": "2026-10-29",
+          "proposed_hook": "Alexa+ can now handle more than product discovery and buying. Amazon added account, subscription, billing, refund and return tasks, which moves the assistant deeper into the customer lifecycle and makes structured product and order data part of the storefront.",
+          "marketer_angle": "Commerce teams need a vendor-neutral plan for agent-mediated journeys: product-data eligibility, offer accuracy, attribution, service handoffs, return measurement and a way to compare assistant-originated actions with conventional search and app traffic.",
+          "why_it_passed": "Amazon announced more than 100 available U.S. shopping capabilities across lists, registries, Subscribe & Save, Prime benefits, account settings, order details, billing, refunds and returns. Its usage figures remain company claims, and Amazon has not published ranking or merchant-control details.",
+          "operational_impact_chain": "Alexa+ handles more discovery, replenishment, account and post-purchase tasks -> product, offer, eligibility and order data shape what the assistant can recommend or complete -> ecommerce, merchandising, loyalty, service and analytics teams test agent-visible data and handoffs -> teams change catalog, promotion, service and measurement decisions -> assistant-originated actions, conversion, return completion, support deflection and repeat purchase become operating measures.",
+          "scores": {
+            "relevance": 10,
+            "relevance_rationale": "The launch changes product-data readiness, merchandising, loyalty, post-purchase service and measurement for commerce operators.",
+            "topicality": 10,
+            "topicality_rationale": "Amazon announced the available U.S. capability expansion on October 29, 2026.",
+            "viral_potential": 9,
+            "viral_potential_rationale": "A shopping assistant that can manage returns and account tasks creates a practical debate about who owns the customer journey when the storefront is conversational.",
+            "total": 29
+          },
+          "confidence": "high",
+          "confidence_limitation": "The launch is documented, but Amazon has not published a complete capability list, ranking logic, merchant controls or attribution model. Usage figures are self-reported and do not show independent business impact.",
+          "novelty": {
+            "result": "meaningful_advance",
+            "rationale": "The archive covers retailer agent permissions and shared carts. This event expands an active shopping assistant across discovery, replenishment, account management and returns."
+          },
+          "predicted_audience_response": "Commerce teams will ask how products become eligible, how assistant actions are attributed and whether easier returns and replenishment improve lifetime value or raise service costs.",
+          "materiality_gates": {
+            "material_event": "pass_material_capability_expansion",
+            "editorial_thesis_fit": "pass",
+            "primary_evidence": "pass_official_product_announcement",
+            "availability_clarity": "pass_us_available_now",
+            "claim_discipline": "pass_with_amazon_usage_claim_attribution",
+            "operational_impact": "pass",
+            "contradiction_search": "pass_with_ranking_attribution_and_outcome_gaps",
+            "archive_novelty": "pass_meaningful_advance"
+          },
+          "coverage_limitations": [
+            "Amazon has not published a complete action-level capability list, ranking logic, merchant controls or attribution model.",
+            "The 400 million actions and nearly eightfold growth figures are company-reported and omit purchase-completion rates and denominators.",
+            "No independent evidence shows the new capabilities improve merchant conversion, retention or service cost."
+          ],
+          "sources": [
+            {
+              "type": "primary_company_announcement",
+              "title": "Amazon adds more than 100 Alexa+ shopping capabilities",
+              "url": "https://www.aboutamazon.com/news/retail/alexa-for-shopping-new-capabilities"
+            },
+            {
+              "type": "independent_commerce_context",
+              "title": "EMARKETER: Amazon expands AI shopping features",
+              "url": "https://www.emarketer.com/content/amazon-expands-ai-shopping-features-retain-holiday-shoppers-amid-earnings-miss"
+            }
+          ]
+        },
+        {
+          "option": 3,
+          "rank": 3,
+          "title": "Cordial moves CDP access into external AI assistants",
+          "event_date": "2026-10-29",
+          "proposed_hook": "Cordial is letting external AI assistants query real-time customer, event, order and product data without forcing the analyst back into the CDP interface. The current MCP tools are read-only, which gives teams a clear line to govern before the same workflow starts writing segments or launching campaigns.",
+          "marketer_angle": "CRM, lifecycle, data, security and privacy teams need one policy for AI access to customer data: approved tools, inherited permissions, evidence links, logs, reviewer accountability and a separate approval gate before read access becomes campaign action.",
+          "why_it_passed": "Cordial launched MCP, CLI and API access for its Headless CDP and named enterprise users. The release describes a path toward action, while current developer documentation limits MCP tools to reads and says write actions are planned.",
+          "operational_impact_chain": "External AI assistants query governed CDP data through MCP, CLI or API -> routine audience and customer analysis moves outside the CDP interface -> CRM, lifecycle, data, security and privacy teams define tool access, evidence and approval rules -> teams decide which outputs may become segments, briefs or campaigns and when write actions require human approval -> query time, analyst tickets, access exceptions, answer defects and activation errors become operating measures.",
+          "scores": {
+            "relevance": 10,
+            "relevance_rationale": "The launch changes customer-data access, analyst handoffs, permission design and the future approval boundary between AI analysis and campaign activation.",
+            "topicality": 10,
+            "topicality_rationale": "Cordial launched the Headless CDP on October 29, 2026.",
+            "viral_potential": 8,
+            "viral_potential_rationale": "Moving CDP access into general AI workspaces creates a strong governance discussion, though current tools remain read-only and the vendor has limited market visibility.",
+            "total": 28
+          },
+          "confidence": "qualified",
+          "confidence_limitation": "The launch and read-only MCP tools are documented. Public materials do not disclose tool-level authorization, write approvals, audit retention, pricing, plan entitlement or query limits. No substantive independent implementation test was found.",
+          "novelty": {
+            "result": "meaningful_advance",
+            "rationale": "The archive covers marketing-performance and CRM access through MCP. Cordial extends the pattern to real-time CDP data and a proposed analysis-to-activation path, while the current read-only boundary creates a distinct governance question."
+          },
+          "predicted_audience_response": "CRM and data teams will focus on whether inherited account permissions are enough, how answers remain auditable and where approval must sit before read access becomes campaign action.",
+          "materiality_gates": {
+            "material_event": "pass_product_launch",
+            "editorial_thesis_fit": "pass",
+            "primary_evidence": "pass_release_product_post_and_documentation",
+            "availability_clarity": "pass_read_access_now_write_actions_planned",
+            "claim_discipline": "pass_with_current_read_only_boundary",
+            "operational_impact": "pass",
+            "contradiction_search": "pass_with_write_scope_and_permission_gaps",
+            "archive_novelty": "pass_meaningful_advance"
+          },
+          "coverage_limitations": [
+            "Current MCP documentation describes read-only tools even though launch materials discuss future campaign action and write-back.",
+            "Public materials do not disclose tool-level authorization, write approvals, audit retention, pricing, plan entitlement or query limits.",
+            "No substantive independent implementation or answer-accuracy test was found."
+          ],
+          "sources": [
+            {
+              "type": "primary_company_release",
+              "title": "Cordial launches Headless CDP",
+              "url": "https://www.prnewswire.com/news-releases/cordial-launches-headless-cdp-bringing-real-time-customer-data-to-where-marketers-work-302922980.html"
+            },
+            {
+              "type": "primary_product_explanation",
+              "title": "Cordial: Introducing the Headless CDP",
+              "url": "https://cordial.com/resources/introducing-the-headless-cdp/"
+            },
+            {
+              "type": "primary_developer_documentation",
+              "title": "Cordial MCP Server documentation",
+              "url": "https://developers.cordial.com/mcp/"
+            }
+          ]
+        }
+      ],
+      "research": {
+        "source_cutoff": "2026-10-29T08:10:14-04:00",
+        "initial_window_start": "2026-10-27T08:00:44-04:00",
+        "discovery_window_hours": 72,
+        "discovery_window_expansion": null,
+        "event_ledger_path": "/home/ranson/.hermes/social-queue/research/2026-10-30-ai-martech-event-ledger.json",
+        "decision_journal_path": "/home/ranson/.hermes/social-queue/research/2026-10-30-ai-martech-decision-journal.md",
+        "citation_ledger_path": "/home/ranson/.hermes/social-queue/research/2026-10-30-citations-ledger.json",
+        "reserve_candidate_count": 6,
+        "reserve_candidates": [
+          "Akeneo Autumn Release and Dataggo acquisition",
+          "Adobe Analytics Coworker general availability",
+          "Cresta agent-platform developer self-service",
+          "Guideline digital pricing in AI Agent and MCP",
+          "Marketbridge acquisition of Channel99",
+          "Checkout.com Visa Payment Passkey"
+        ],
+        "coverage_gaps": [
+          {
+            "source": "Configured direct page extraction backend",
+            "status": "unavailable_search_only",
+            "cutoff_advanced": false,
+            "detail": "Search, browser and delegated verification supplied source evidence; the failure was not treated as no news."
+          },
+          {
+            "source": "Reddit login-default test detail",
+            "status": "not_published",
+            "cutoff_advanced": false,
+            "detail": "No market list, anonymous-access policy, test result or global rollout date was published."
+          },
+          {
+            "source": "Amazon Alexa+ ranking and attribution",
+            "status": "not_published",
+            "cutoff_advanced": false,
+            "detail": "No merchant controls, ranking explanation, attribution model or independent outcome evidence was found."
+          },
+          {
+            "source": "Cordial independent implementation and governance detail",
+            "status": "not_found_or_not_published",
+            "cutoff_advanced": false,
+            "detail": "No independent implementation test was found, and public materials omit tool-level authorization, write approvals, audit retention, pricing and usage limits."
+          }
+        ]
+      },
+      "events": [
+        {
+          "at": "2026-10-30T08:11:39-04:00",
           "type": "topic_queue_created",
           "actor": "scheduled_research",
           "detail": "Created exactly three ranked AI marketing and martech topics from the previous 72 hours with late-indexing overlap; no discovery-window expansion was required. Awaiting topic approval."
