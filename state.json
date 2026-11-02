@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-11-02T09:20:18-05:00",
+  "updated_at": "2026-11-02T09:40:37-05:00",
   "sync": {
     "status": "connected",
     "discord_guild_id": "1553886101003837561",
@@ -3110,14 +3110,14 @@
       "kind": "content",
       "title": "AI marketing and martech topic approval queue",
       "created_at": "2026-11-02T08:44:52-05:00",
-      "updated_at": "2026-11-02T09:20:18-05:00",
+      "updated_at": "2026-11-02T09:40:37-05:00",
       "status": "awaiting_post_approval",
       "stage": "post_approval",
       "topic_options": [
         {
           "option": 1,
           "rank": 1,
-          "title": "AI training controls are splitting from AI-search visibility",
+          "title": "The New AI Content Tradeoff: Training Control vs. Search Visibility",
           "event_date": "2026-10-30",
           "proposed_hook": "A shared robots.txt signal may let publishers reject model training across several AI providers. Microsoft is making the harder distinction explicit: blocking training does not have to mean disappearing from grounded AI answers, but restricting grounding can reduce citations and referral opportunities.",
           "marketer_angle": "SEO, content, legal and engineering teams need one content-use matrix for indexing, training, first-party grounding and third-party grounding. The policy should assign owners, path-level rules, exceptions and measurement before provider implementations arrive.",
@@ -3378,11 +3378,18 @@
           "type": "article_title_aligned",
           "actor": "recruitzero_content_workflow",
           "detail": "Aligned the selected-topic and review-page headline with the final reviewed article title; article body and approval stage are unchanged."
+        },
+        {
+          "at": "2026-11-02T09:40:37-05:00",
+          "type": "headline_revised",
+          "actor": "discord_user",
+          "detail": "User selected headline option 1: The New AI Content Tradeoff: Training Control vs. Search Visibility. Article body, approval stage, review scores, and publishing status remain unchanged.",
+          "message_id": "1566824306057412744"
         }
       ],
       "topic": {
         "option": 1,
-        "title": "AI training controls are splitting from AI-search visibility",
+        "title": "The New AI Content Tradeoff: Training Control vs. Search Visibility",
         "selected": true,
         "approved_via": "discord",
         "approved_at": "2026-11-02T09:15:57-05:00",
@@ -3468,7 +3475,7 @@
       },
       "post": {
         "status": "awaiting_approval",
-        "title": "AI training controls are splitting from AI-search visibility",
+        "title": "The New AI Content Tradeoff: Training Control vs. Search Visibility",
         "body": "AI companies are starting to face a sharper question: can they train on your content, or use it to support AI answers?\n\nOn October 30, an IETF Internet-Draft proposed a robots.txt signal for page-level training preferences. The shared signal covers training only. It is a working draft, not a finished standard, and it does not block access or create a license. OpenAI says support is coming in the next few months; Google says 2027.\n\nMicrosoft plans to honor training and “grounding” preferences separately from February 1, 2027. Grounding means using site content to support generated answers. Microsoft says restricting it can reduce eligibility for citations and referrals in its AI answers.\n\nThe split will not work the same way everywhere. Google plans to treat the training preference as Google-Extended when Google-Extended is not explicitly set. Google-Extended affects both training and Gemini grounding, so one provider’s implementation can still join the two.\n\nThis is bigger than a robots.txt update. Content governance is becoming an operating job.\n\nTeams need to:\n\n- Map which sections can be searched, used for training, or used to ground AI answers.\n- Assign owners: legal sets permitted uses, SEO sets discovery goals, engineering implements, and analytics tracks citations and referrals.\n- Test each provider before scaling, then revise the rules if protected pages appear where they should not.\n\nThe takeaway: “allow AI” versus “block AI” is the wrong question. Decide use by use, and remember that allowing grounding creates citation eligibility, not a guaranteed citation.",
         "word_count": 248,
         "sources": [
