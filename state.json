@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-11-02T09:15:57-05:00",
+  "updated_at": "2026-11-02T09:20:18-05:00",
   "sync": {
     "status": "connected",
     "discord_guild_id": "1553886101003837561",
@@ -3110,14 +3110,14 @@
       "kind": "content",
       "title": "AI marketing and martech topic approval queue",
       "created_at": "2026-11-02T08:44:52-05:00",
-      "updated_at": "2026-11-02T09:15:57-05:00",
+      "updated_at": "2026-11-02T09:20:18-05:00",
       "status": "awaiting_post_approval",
       "stage": "post_approval",
       "topic_options": [
         {
           "option": 1,
           "rank": 1,
-          "title": "AI training controls split from AI-search visibility",
+          "title": "AI training controls are splitting from AI-search visibility",
           "event_date": "2026-10-30",
           "proposed_hook": "A shared robots.txt signal may let publishers reject model training across several AI providers. Microsoft is making the harder distinction explicit: blocking training does not have to mean disappearing from grounded AI answers, but restricting grounding can reduce citations and referral opportunities.",
           "marketer_angle": "SEO, content, legal and engineering teams need one content-use matrix for indexing, training, first-party grounding and third-party grounding. The policy should assign owners, path-level rules, exceptions and measurement before provider implementations arrive.",
@@ -3372,11 +3372,17 @@
           "type": "post_reviewed",
           "actor": "recruitzero_content_workflow",
           "detail": "Claude Opus produced the initial draft with no fallback. After one evidence-correction revision, the article passed interpretation review, factual fidelity, accessibility, construction, stop-slop 46/50 and voice fidelity 9.4/10; awaiting explicit post approval."
+        },
+        {
+          "at": "2026-11-02T09:20:18-05:00",
+          "type": "article_title_aligned",
+          "actor": "recruitzero_content_workflow",
+          "detail": "Aligned the selected-topic and review-page headline with the final reviewed article title; article body and approval stage are unchanged."
         }
       ],
       "topic": {
         "option": 1,
-        "title": "AI training controls split from AI-search visibility",
+        "title": "AI training controls are splitting from AI-search visibility",
         "selected": true,
         "approved_via": "discord",
         "approved_at": "2026-11-02T09:15:57-05:00",
