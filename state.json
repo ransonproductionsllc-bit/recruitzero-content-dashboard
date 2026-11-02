@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-10-30T08:11:39-04:00",
+  "updated_at": "2026-11-02T08:44:52-05:00",
   "sync": {
     "status": "connected",
     "discord_guild_id": "1553886101003837561",
@@ -3102,6 +3102,264 @@
           "type": "topic_queue_created",
           "actor": "scheduled_research",
           "detail": "Created exactly three ranked AI marketing and martech topics from the previous 72 hours with late-indexing overlap; no discovery-window expansion was required. Awaiting topic approval."
+        }
+      ]
+    },
+    {
+      "id": "ai-martech-topic-queue-2026-11-02",
+      "kind": "content",
+      "title": "AI marketing and martech topic approval queue",
+      "created_at": "2026-11-02T08:44:52-05:00",
+      "updated_at": "2026-11-02T08:44:52-05:00",
+      "status": "awaiting_topic_approval",
+      "stage": "topic_approval",
+      "topic_options": [
+        {
+          "option": 1,
+          "rank": 1,
+          "title": "AI training controls split from AI-search visibility",
+          "event_date": "2026-10-30",
+          "proposed_hook": "A shared robots.txt signal may let publishers reject model training across several AI providers. Microsoft is making the harder distinction explicit: blocking training does not have to mean disappearing from grounded AI answers, but restricting grounding can reduce citations and referral opportunities.",
+          "marketer_angle": "SEO, content, legal and engineering teams need one content-use matrix for indexing, training, first-party grounding and third-party grounding. The policy should assign owners, path-level rules, exceptions and measurement before provider implementations arrive.",
+          "why_it_passed": "An IETF Internet-Draft and official provider commitments create a specific cross-vendor control change. The queue preserves that the draft is work in progress, implementation dates vary and the signal expresses a preference rather than enforceable access control.",
+          "operational_impact_chain": "Providers adopt shared training preferences while Microsoft separates training from grounding -> publishers can express broader content-use choices but may reduce AI-search eligibility when grounding is restricted -> SEO, legal, content and engineering teams inventory directives and assign decisions by use case -> teams choose which paths may support indexing, training, first-party grounding or third-party grounding -> directive coverage, AI citation visibility, referral traffic, licensing exceptions and implementation errors become operating measures.",
+          "scores": {
+            "relevance": 10,
+            "relevance_rationale": "The change creates a present policy, implementation and measurement decision across SEO, content, legal and engineering teams.",
+            "topicality": 10,
+            "topicality_rationale": "The IETF draft and provider commitments were published on October 30, 2026 inside the research window.",
+            "viral_potential": 10,
+            "viral_potential_rationale": "Publishers must separate training rights from AI-search visibility, creating a clear control-versus-distribution debate.",
+            "total": 30
+          },
+          "confidence": "high",
+          "confidence_limitation": "The draft and implementation statements are documented, but the proposal is not an RFC, has no public conformance audit and does not itself create licensing terms or legal enforcement.",
+          "novelty": {
+            "result": "distinct",
+            "rationale": "The archive covers AI-search visibility and platform-specific distribution controls, but not a proposed cross-provider training preference combined with a separate grounding decision that trades content control against AI citation eligibility."
+          },
+          "predicted_audience_response": "Operators will debate whether blocking training while allowing grounding is a workable compromise and who should own the directive matrix.",
+          "materiality_gates": {
+            "material_event": "pass_cross_vendor_draft_and_implementation_commitments",
+            "editorial_thesis_fit": "pass",
+            "primary_evidence": "pass_ietf_and_provider_announcements",
+            "availability_clarity": "pass_draft_and_mixed_implementation_dates",
+            "claim_discipline": "pass_work_in_progress_and_preference_not_enforcement",
+            "operational_impact": "pass",
+            "contradiction_search": "pass_with_visibility_tradeoff_and_no_conformance_mechanism",
+            "archive_novelty": "pass_distinct"
+          },
+          "coverage_limitations": [
+            "The Internet-Draft may change, be replaced or never become an RFC.",
+            "The signal expresses a preference rather than access control, licensing terms or guaranteed legal enforcement.",
+            "No public cross-provider conformance test or audit mechanism was found.",
+            "Provider-specific grounding semantics remain inconsistent."
+          ],
+          "sources": [
+            {
+              "type": "primary_standard_draft",
+              "title": "IETF Internet-Draft: Machine-Readable Training Preference Signal",
+              "url": "https://datatracker.ietf.org/doc/html/draft-kelley-aipref-training-preference-signal"
+            },
+            {
+              "type": "primary_provider_statement",
+              "title": "Google: Supporting a shared AI training control for websites",
+              "url": "https://developers.google.com/search/blog/2026/10/ai-training-control"
+            },
+            {
+              "type": "primary_provider_statement",
+              "title": "OpenAI: Making it easier for websites to express AI training preferences",
+              "url": "https://openai.com/index/helping-websites-express-ai-training-preferences/"
+            },
+            {
+              "type": "primary_provider_statement",
+              "title": "Microsoft Bing: Clearer preferences for training and grounding",
+              "url": "https://blogs.bing.com/search/2026/10/your-content-your-choice-clearer-preferences-for-training-and-grounding/"
+            },
+            {
+              "type": "independent_context",
+              "title": "Search Engine Land: Microsoft Bing gives publishers more control over AI use",
+              "url": "https://www.searchengineland.com/microsoft-bing-gives-publishers-more-control-over-how-ai-uses-their-content-499967"
+            }
+          ]
+        },
+        {
+          "option": 2,
+          "rank": 2,
+          "title": "Ad approval shifts from fixed creative to runtime guardrails",
+          "event_date": "2026-10-30",
+          "proposed_hook": "ChatGPT Ads can now rewrite copy, translate text, resize images and change destination URLs by default without showing advertisers every version before it runs. Approval is moving away from one final ad and toward the rules, source material and pages the system may use.",
+          "marketer_angle": "Paid-media teams need a vendor-neutral runtime-governance model: approved claims, eligible landing pages, language rules, variant capture, legal sampling, tracking validation, holdouts and an explicit default-on or default-off decision.",
+          "why_it_passed": "OpenAI changed a live campaign default rather than announcing a future concept. The official documentation and staff reporting define the available controls while exposing missing variant, page-exclusion and tracking detail.",
+          "operational_impact_chain": "ChatGPT Ads enables creative enhancements by default -> the platform can alter text, language, images and landing-page destination at runtime -> paid-media, creative, brand, legal and analytics teams move approval from fixed ads to source material and system guardrails -> teams decide which claims, pages, languages and variations may run and how exceptions are reviewed -> unapproved variation rate, destination defects, tracking loss, policy incidents, holdout lift and review workload become operating measures.",
+          "scores": {
+            "relevance": 10,
+            "relevance_rationale": "The default changes creative approval, landing-page governance, localization, tracking and compliance work for paid-media teams now.",
+            "topicality": 10,
+            "topicality_rationale": "The default took effect on October 30, 2026 inside the research window.",
+            "viral_potential": 9,
+            "viral_potential_rationale": "Unpreviewed, conversation-specific changes to approved ads create a strong debate about control, accountability and measurement.",
+            "total": 29
+          },
+          "confidence": "qualified",
+          "confidence_limitation": "The default and edit types are documented, but the primary help page was blocked during direct retrieval and public materials do not define variant exports, page exclusions or tracking behavior after destination changes.",
+          "novelty": {
+            "result": "meaningful_advance",
+            "rationale": "The archive covers Meta assigning advertiser risk for AI-generated commercial content. This event advances the category by making conversation-specific copy and destination changes the default while leaving every served variant unpreviewed."
+          },
+          "predicted_audience_response": "Paid-media teams will ask whether default-off is safer until variant capture, page exclusions and tracking behavior become inspectable.",
+          "materiality_gates": {
+            "material_event": "pass_default_control_change",
+            "editorial_thesis_fit": "pass",
+            "primary_evidence": "pass_official_help_page_with_direct_retrieval_gap_and_independent_staff_report",
+            "availability_clarity": "pass_live_default_with_opt_out",
+            "claim_discipline": "pass",
+            "operational_impact": "pass",
+            "contradiction_search": "pass_with_reporting_tracking_and_causality_gaps",
+            "archive_novelty": "pass_meaningful_advance"
+          },
+          "coverage_limitations": [
+            "The official help page triggered a Cloudflare challenge during direct browser retrieval; indexed official text and staff reporting linked to the page supplied the details.",
+            "Public documentation does not show every served variant or define a variant-level export.",
+            "Documentation does not explain how tracking parameters survive destination changes or whether advertisers can exclude individual pages.",
+            "Ordinary before-and-after results do not establish causal lift from the enhancements."
+          ],
+          "sources": [
+            {
+              "type": "primary_documentation",
+              "title": "OpenAI: Creative enhancements for ChatGPT Ads",
+              "url": "https://help.openai.com/en/articles/20001614-creative-enhancements-for-chatgpt-ads"
+            },
+            {
+              "type": "independent_staff_reporting",
+              "title": "Search Engine Journal: ChatGPT Ads turns on automatic ad changes by default",
+              "url": "https://www.searchenginejournal.com/chatgpt-ads-turns-on-automatic-ad-changes-by-default/595117/"
+            }
+          ]
+        },
+        {
+          "option": 3,
+          "rank": 3,
+          "title": "AI shopping adoption outruns trust in AI payments",
+          "event_date": "2026-10-30",
+          "proposed_hook": "Consumers are handing AI price comparison, stock checks and gift research faster than they are handing it payment authority. Commerce teams need to stop treating AI shopping as one adoption metric and measure the handoff from recommendation to checkout.",
+          "marketer_angle": "Ecommerce, product-data, analytics and fraud teams need separate controls and measures for assistant discovery, merchant handoff, customer confirmation, authorization and completed payment. Product feeds and offer evidence can mature before autonomous checkout does.",
+          "why_it_passed": "Visa published a current U.S. survey with sample, field dates, weighting and margin of error. The evidence supports a concrete behavioral gap while the queue preserves sponsor interest, self-reporting limits and the separate source of the payment-trust figure.",
+          "operational_impact_chain": "Consumers adopt AI for comparison and discovery faster than payment delegation -> assistants influence product consideration before they control checkout -> ecommerce, product-data, merchandising, analytics and fraud teams separate discovery readiness from transaction authorization -> teams change feed quality, offer evidence, handoff design and payment controls -> AI-assisted discovery, merchant handoff, authorization, completed payment, fraud and abandonment become separate measures.",
+          "scores": {
+            "relevance": 9,
+            "relevance_rationale": "The evidence changes how commerce teams structure product data, assistant handoffs, checkout controls and funnel measurement.",
+            "topicality": 10,
+            "topicality_rationale": "Visa released the survey on October 30, 2026 at the opening edge of the research window.",
+            "viral_potential": 9,
+            "viral_potential_rationale": "The sharp gap between using AI to shop and trusting it to pay creates a recognizable and useful commerce debate.",
+            "total": 28
+          },
+          "confidence": "qualified",
+          "confidence_limitation": "Visa commissioned the survey; it measures self-reported behavior rather than observed shopping sessions or transactions, and the payment-trust figure comes from a separate Visa study.",
+          "novelty": {
+            "result": "meaningful_advance",
+            "rationale": "The archive covers retailer controls and shopping-assistant capabilities. This evidence separates consumer adoption of AI research from willingness to delegate payment, creating a distinct measurement and handoff model."
+          },
+          "predicted_audience_response": "Commerce operators will question whether their agentic-commerce dashboards wrongly collapse assisted discovery, merchant handoff and autonomous payment into one adoption number.",
+          "materiality_gates": {
+            "material_event": "pass_new_consumer_behavior_research",
+            "editorial_thesis_fit": "pass",
+            "primary_evidence": "pass_survey_release_and_methodology",
+            "availability_clarity": "pass_us_self_reported_survey",
+            "claim_discipline": "pass_sponsor_and_intention_limits",
+            "operational_impact": "pass",
+            "contradiction_search": "pass_with_payment_trust_gap_and_no_behavioral_validation",
+            "archive_novelty": "pass_meaningful_advance"
+          },
+          "coverage_limitations": [
+            "Visa commissioned the Morning Consult survey and has a commercial interest in agentic-payment trust.",
+            "The survey measures self-reported use and comfort, not observed sessions, conversions or autonomous purchases.",
+            "The 23% payment-trust figure comes from Visa's separate Trust Index rather than the Holiday Spending Shift sample.",
+            "No independent replication was found inside the research window."
+          ],
+          "sources": [
+            {
+              "type": "primary_research_release",
+              "title": "Visa: 2026 Holiday Spending Shift Survey",
+              "url": "https://corporate.visa.com/en/sites/visa-perspectives/newsroom/secret-santai-visa-survey-finds-americans-turning-to-ai-for-holiday-help.html"
+            },
+            {
+              "type": "independent_context",
+              "title": "EMARKETER: Holiday shoppers turn to AI",
+              "url": "https://www.emarketer.com/content/holiday-shoppers-turn-ai-deals-price-consciousness-shapes-spending"
+            }
+          ]
+        }
+      ],
+      "research": {
+        "source_cutoff": "2026-10-30T08:11:39-04:00",
+        "discovery_window_hours": 72,
+        "discovery_window_expansion": null,
+        "event_ledger_path": "/home/ranson/.hermes/social-queue/research/2026-11-02-ai-martech-event-ledger.json",
+        "decision_journal_path": "/home/ranson/.hermes/social-queue/research/2026-11-02-ai-martech-decision-journal.md",
+        "citation_ledger_path": "/home/ranson/.hermes/social-queue/research/2026-11-02-citations-ledger.json",
+        "reserve_candidate_count": 4,
+        "reserve_candidates": [
+          "Metric Sherpa and Sprinklr AI Measurement Gap",
+          "Google AI Overviews versus News Boxes study",
+          "Radyant AI versus human content in AI search study",
+          "Northflank AI credential incident"
+        ],
+        "coverage_gaps": [
+          {
+            "source": "Axios Media Trends",
+            "status": "partial_member_only_no_in_window_edition",
+            "cutoff_advanced": false,
+            "detail": "No edition dated October 30 through November 2 was located; member-only coverage remains a gap."
+          },
+          {
+            "source": "Harvard Business Review",
+            "status": "partial_paywall",
+            "cutoff_advanced": false,
+            "detail": "Current summaries and author roles were retrieved, but full subscriber bodies remained restricted."
+          },
+          {
+            "source": "The Information",
+            "status": "partial_subscription_and_missing_primary",
+            "cutoff_advanced": false,
+            "detail": "Staff reporting was retrieved, but the agent-only advertising expansion lacked a public primary artifact."
+          },
+          {
+            "source": "MIT Sloan Management Review",
+            "status": "blocked_by_robots",
+            "cutoff_advanced": false,
+            "detail": "Direct retrieval failed; fallback search found no verified in-window publication, so coverage remains unknown."
+          },
+          {
+            "source": "Reddit direct access",
+            "status": "blocked_403_archive_fallback",
+            "cutoff_advanced": false,
+            "detail": "Arctic Shift supplied practitioner signals. r/SEO hit a 100-post cap and may omit part of October 30."
+          },
+          {
+            "source": "X named pool",
+            "status": "retrieval_failed",
+            "cutoff_advanced": false,
+            "detail": "No reliable in-window posts were retrieved for @randfish, @aripap, @lilyraynyc, @aleyda or @jason_kint."
+          },
+          {
+            "source": "OpenAI creative enhancements help page",
+            "status": "blocked_by_cloudflare_direct_browser",
+            "cutoff_advanced": false,
+            "detail": "Indexed official content and Search Engine Journal staff reporting supplied the material details; direct retrieval was not treated as successful."
+          }
+        ],
+        "concept_led_option_count": 3,
+        "broader_market_policy_behavior_option_count": 2,
+        "single_product_option_count": 1
+      },
+      "events": [
+        {
+          "at": "2026-11-02T08:44:52-05:00",
+          "type": "topic_queue_created",
+          "actor": "scheduled_research",
+          "detail": "Created exactly three concept-led AI marketing and martech topics from the previous 72 hours with late-indexing overlap; two use standards or behavioral evidence and one uses a qualified single-product control change. Awaiting approval."
         }
       ]
     }
