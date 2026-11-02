@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-11-02T08:44:52-05:00",
+  "updated_at": "2026-11-02T09:15:57-05:00",
   "sync": {
     "status": "connected",
     "discord_guild_id": "1553886101003837561",
@@ -3110,9 +3110,9 @@
       "kind": "content",
       "title": "AI marketing and martech topic approval queue",
       "created_at": "2026-11-02T08:44:52-05:00",
-      "updated_at": "2026-11-02T08:44:52-05:00",
-      "status": "awaiting_topic_approval",
-      "stage": "topic_approval",
+      "updated_at": "2026-11-02T09:15:57-05:00",
+      "status": "awaiting_post_approval",
+      "stage": "post_approval",
       "topic_options": [
         {
           "option": 1,
@@ -3360,8 +3360,237 @@
           "type": "topic_queue_created",
           "actor": "scheduled_research",
           "detail": "Created exactly three concept-led AI marketing and martech topics from the previous 72 hours with late-indexing overlap; two use standards or behavioral evidence and one uses a qualified single-product control change. Awaiting approval."
+        },
+        {
+          "at": "2026-11-02T09:15:57-05:00",
+          "type": "topic_approved",
+          "actor": "discord_user",
+          "detail": "User approved option 1, AI training controls split from AI-search visibility, for drafting and review only. Cover generation and LinkedIn publication remain unauthorized."
+        },
+        {
+          "at": "2026-11-02T09:15:57-05:00",
+          "type": "post_reviewed",
+          "actor": "recruitzero_content_workflow",
+          "detail": "Claude Opus produced the initial draft with no fallback. After one evidence-correction revision, the article passed interpretation review, factual fidelity, accessibility, construction, stop-slop 46/50 and voice fidelity 9.4/10; awaiting explicit post approval."
         }
-      ]
+      ],
+      "topic": {
+        "option": 1,
+        "title": "AI training controls split from AI-search visibility",
+        "selected": true,
+        "approved_via": "discord",
+        "approved_at": "2026-11-02T09:15:57-05:00",
+        "approval_message_id": "1566424903060693023",
+        "proposed_hook": "A shared robots.txt signal may let publishers reject model training across several AI providers. Microsoft is making the harder distinction explicit: blocking training does not have to mean disappearing from grounded AI answers, but restricting grounding can reduce citations and referral opportunities.",
+        "marketer_angle": "SEO, content, legal and engineering teams need one content-use matrix for indexing, training, first-party grounding and third-party grounding. The policy should assign owners, path-level rules, exceptions and measurement before provider implementations arrive.",
+        "sources": [
+          {
+            "type": "primary_standard_draft",
+            "title": "IETF Internet-Draft: Machine-Readable Training Preference Signal",
+            "url": "https://datatracker.ietf.org/doc/html/draft-kelley-aipref-training-preference-signal"
+          },
+          {
+            "type": "primary_provider_statement",
+            "title": "Google: Supporting a shared AI training control for websites",
+            "url": "https://developers.google.com/search/blog/2026/10/ai-training-control"
+          },
+          {
+            "type": "primary_provider_statement",
+            "title": "OpenAI: Making it easier for websites to express AI training preferences",
+            "url": "https://openai.com/index/helping-websites-express-ai-training-preferences/"
+          },
+          {
+            "type": "primary_provider_statement",
+            "title": "Microsoft Bing: Clearer preferences for training and grounding",
+            "url": "https://blogs.bing.com/search/2026/10/your-content-your-choice-clearer-preferences-for-training-and-grounding/"
+          },
+          {
+            "type": "independent_context",
+            "title": "Search Engine Land: Microsoft Bing gives publishers more control over AI use",
+            "url": "https://www.searchengineland.com/microsoft-bing-gives-publishers-more-control-over-how-ai-uses-their-content-499967"
+          }
+        ]
+      },
+      "claim_evidence": {
+        "status": "complete",
+        "path": "/home/ranson/.hermes/social-queue/research/2026-11-02-ai-training-grounding-claim-evidence.json",
+        "source_count": 5,
+        "verified_claim_count": 8,
+        "load_bearing_claims_traceable": true,
+        "qualifications_preserved": true,
+        "independent_context_found": true,
+        "prohibited_overstatements_enforced": true
+      },
+      "editorial_intelligence": {
+        "workflow_version": 2,
+        "deep_review_status": "pass",
+        "confidence": "high",
+        "confidence_limitation": "The draft and implementation statements are documented, but the proposal is not an RFC, has no public conformance audit and does not itself create licensing terms or legal enforcement.",
+        "novelty": {
+          "status": "distinct",
+          "rationale": "The archive covers AI-search visibility and platform-specific distribution controls, but not a proposed cross-provider training preference combined with a separate grounding decision that trades content control against AI citation eligibility."
+        },
+        "operational_impact": {
+          "status": "pass",
+          "chain": "Providers adopt shared training preferences while Microsoft separates training from grounding -> publishers can express broader content-use choices but may reduce AI-search eligibility when grounding is restricted -> SEO, legal, content and engineering teams inventory directives and assign decisions by use case -> teams choose which paths may support indexing, training, first-party grounding or third-party grounding -> directive coverage, AI citation visibility, referral traffic, licensing exceptions and implementation errors become operating measures."
+        },
+        "argument_review": {
+          "status": "pass",
+          "correction_cycles": 2,
+          "unsupported_inferences": [],
+          "missing_qualifications": [],
+          "vendor_framing_risks": [
+            "The visibility consequence is based on Microsoft's prospective description of its own implementation, and the article attributes the claim to Microsoft."
+          ],
+          "counterargument": "The shared signal may reduce implementation friction without increasing publisher leverage or legal control, while provider-specific mappings and path-level governance costs may limit its near-term value.",
+          "operational_impact_status": "pass",
+          "operational_impact_rationale": "The article classifies content by permitted use, assigns legal, SEO, engineering and analytics ownership, tests provider behavior, monitors citations and referrals, and revises rules when outcomes diverge from policy.",
+          "novelty_status": "distinct",
+          "stack_independent_value": "pass",
+          "stack_independent_rationale": "The use-by-use governance model, ownership structure and testing discipline apply across AI providers and publishing stacks.",
+          "required_corrections": [],
+          "residual_risks": [
+            "The IETF proposal remains a working Internet-Draft and may change or never become an RFC.",
+            "OpenAI, Google and Microsoft support is prospective rather than universally live.",
+            "Provider-specific semantics may remain fragmented, especially because Google maps the training preference to Google-Extended when that directive is unset.",
+            "Citation and referral effects may be difficult to measure consistently across providers."
+          ]
+        },
+        "product_as_evidence": false,
+        "concept_led": true,
+        "stack_independent_value": "pass"
+      },
+      "post": {
+        "status": "awaiting_approval",
+        "title": "AI training controls are splitting from AI-search visibility",
+        "body": "AI companies are starting to face a sharper question: can they train on your content, or use it to support AI answers?\n\nOn October 30, an IETF Internet-Draft proposed a robots.txt signal for page-level training preferences. The shared signal covers training only. It is a working draft, not a finished standard, and it does not block access or create a license. OpenAI says support is coming in the next few months; Google says 2027.\n\nMicrosoft plans to honor training and “grounding” preferences separately from February 1, 2027. Grounding means using site content to support generated answers. Microsoft says restricting it can reduce eligibility for citations and referrals in its AI answers.\n\nThe split will not work the same way everywhere. Google plans to treat the training preference as Google-Extended when Google-Extended is not explicitly set. Google-Extended affects both training and Gemini grounding, so one provider’s implementation can still join the two.\n\nThis is bigger than a robots.txt update. Content governance is becoming an operating job.\n\nTeams need to:\n\n- Map which sections can be searched, used for training, or used to ground AI answers.\n- Assign owners: legal sets permitted uses, SEO sets discovery goals, engineering implements, and analytics tracks citations and referrals.\n- Test each provider before scaling, then revise the rules if protected pages appear where they should not.\n\nThe takeaway: “allow AI” versus “block AI” is the wrong question. Decide use by use, and remember that allowing grounding creates citation eligibility, not a guaranteed citation.",
+        "word_count": 248,
+        "sources": [
+          {
+            "type": "primary_standard_draft",
+            "title": "IETF Internet-Draft: Machine-Readable Training Preference Signal",
+            "url": "https://datatracker.ietf.org/doc/html/draft-kelley-aipref-training-preference-signal"
+          },
+          {
+            "type": "primary_provider_statement",
+            "title": "Google: Supporting a shared AI training control for websites",
+            "url": "https://developers.google.com/search/blog/2026/10/ai-training-control"
+          },
+          {
+            "type": "primary_provider_statement",
+            "title": "OpenAI: Making it easier for websites to express AI training preferences",
+            "url": "https://openai.com/index/helping-websites-express-ai-training-preferences/"
+          },
+          {
+            "type": "primary_provider_statement",
+            "title": "Microsoft Bing: Clearer preferences for training and grounding",
+            "url": "https://blogs.bing.com/search/2026/10/your-content-your-choice-clearer-preferences-for-training-and-grounding/"
+          },
+          {
+            "type": "independent_context",
+            "title": "Search Engine Land: Microsoft Bing gives publishers more control over AI use",
+            "url": "https://www.searchengineland.com/microsoft-bing-gives-publishers-more-control-over-how-ai-uses-their-content-499967"
+          }
+        ],
+        "stop_slop_score": 46,
+        "stop_slop_breakdown": {
+          "directness": 9,
+          "rhythm": 9,
+          "trust": 10,
+          "authenticity": 9,
+          "density": 9
+        },
+        "voice_fidelity_score": 9.4,
+        "construction_pass": true,
+        "construction_checklist": {
+          "word_count_150_250": true,
+          "concept_led_introduction": true,
+          "verified_event_explanation": true,
+          "brief_market_implication": true,
+          "wider_industry_interpretation": true,
+          "connected_workflow_considerations": true,
+          "takeaway_label": true,
+          "closing_question_natural_or_omitted": true,
+          "factual_fidelity": true,
+          "accessibility": true,
+          "stack_independent_value": true
+        },
+        "accessibility_status": "pass",
+        "retained_specialist_terms": [
+          {
+            "term": "IETF Internet-Draft",
+            "explanation": "Immediately described as a working draft rather than a finished standard."
+          },
+          {
+            "term": "robots.txt signal",
+            "explanation": "Its page-level training-preference purpose is explained in the same sentence."
+          },
+          {
+            "term": "grounding",
+            "explanation": "Defined as using site content to support generated answers."
+          },
+          {
+            "term": "Google-Extended",
+            "explanation": "Explained as affecting both training and Gemini grounding."
+          },
+          {
+            "term": "citation eligibility",
+            "explanation": "Explicitly distinguished from a guaranteed citation."
+          }
+        ],
+        "argument_review": {
+          "status": "pass",
+          "correction_cycles": 2,
+          "unsupported_inferences": [],
+          "missing_qualifications": [],
+          "vendor_framing_risks": [
+            "The visibility consequence is based on Microsoft's prospective description of its own implementation, and the article attributes the claim to Microsoft."
+          ],
+          "counterargument": "The shared signal may reduce implementation friction without increasing publisher leverage or legal control, while provider-specific mappings and path-level governance costs may limit its near-term value.",
+          "operational_impact_status": "pass",
+          "operational_impact_rationale": "The article classifies content by permitted use, assigns legal, SEO, engineering and analytics ownership, tests provider behavior, monitors citations and referrals, and revises rules when outcomes diverge from policy.",
+          "novelty_status": "distinct",
+          "stack_independent_value": "pass",
+          "stack_independent_rationale": "The use-by-use governance model, ownership structure and testing discipline apply across AI providers and publishing stacks.",
+          "required_corrections": [],
+          "residual_risks": [
+            "The IETF proposal remains a working Internet-Draft and may change or never become an RFC.",
+            "OpenAI, Google and Microsoft support is prospective rather than universally live.",
+            "Provider-specific semantics may remain fragmented, especially because Google maps the training preference to Google-Extended when that directive is unset.",
+            "Citation and referral effects may be difficult to measure consistently across providers."
+          ]
+        },
+        "factual_fidelity": true,
+        "review_notes": "Claude Opus produced the initial draft with no fallback. The interpretation red-team required one revision cycle covering grounding terminology and Google-Extended mapping; the corrected copy passed on cycle two. Final prose passed factual fidelity, accessibility, construction, stop-slop 46/50 and voice fidelity 9.4/10.",
+        "writer_model": "claude-opus-5-5",
+        "writer_provider": "claude-code",
+        "writer_fallback_used": false,
+        "writer_attempts": [
+          {
+            "model": "opus",
+            "status": "success"
+          }
+        ],
+        "review_model": "delegated_reviewer",
+        "review_provider": "hermes_delegate",
+        "markdown_path": "/home/ranson/.hermes/social-queue/linkedin/2026-11-02-ai-training-grounding-reviewed.md",
+        "stack_independent_value": true
+      },
+      "performance": {
+        "tracking_status": "awaiting_publication_data",
+        "publication_url": null,
+        "published_at": null,
+        "forecast": {
+          "relevance": 10,
+          "topicality": 10,
+          "viral_potential": 10,
+          "predicted_audience_response": "Operators will debate whether blocking training while allowing grounding is a workable compromise and who should own the directive matrix."
+        },
+        "day_7": null,
+        "day_30": null,
+        "qualitative_outcome": null,
+        "editorial_lesson": null
+      }
     }
   ],
   "archive": [
