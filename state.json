@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-11-02T09:45:42-05:00",
+  "updated_at": "2026-11-03T08:14:59-05:00",
   "sync": {
     "status": "connected",
     "discord_guild_id": "1553886101003837561",
@@ -3629,6 +3629,248 @@
         "visual_inspection_notes": "Editorial split-path metaphor clearly distinguishes restricted training from open search visibility. Human operators control the routing decision. No logos, watermarks, readable accidental text, malformed anatomy, or crop defects were found.",
         "review_page_url": "https://ransonproductionsllc-bit.github.io/recruitzero-content-dashboard/review.html?id=ai-martech-topic-queue-2026-11-02"
       }
+    },
+    {
+      "id": "ai-martech-topic-queue-2026-11-03",
+      "kind": "content",
+      "title": "AI marketing and martech topic approval queue",
+      "created_at": "2026-11-03T08:14:59-05:00",
+      "updated_at": "2026-11-03T08:14:59-05:00",
+      "status": "awaiting_topic_approval",
+      "stage": "topic_approval",
+      "topic_options": [
+        {
+          "option": 1,
+          "rank": 1,
+          "title": "ChatGPT ad inventory needs its own value model",
+          "event_date": "2026-11-02",
+          "proposed_hook": "Conversational intent does not guarantee search-level economics. New ecommerce research found paid ChatGPT visits produced about one-third of paid-search visit value, so buyers need evidence before importing Google-style bids into AI inventory.",
+          "marketer_angle": "Paid-media, ecommerce, analytics and finance teams need a separate value model for conversational ads: downstream revenue, assisted conversions, incrementality, customer quality, test budgets and a break-even cost grounded in observed results rather than search-channel analogy.",
+          "why_it_passed": "The working paper uses first-party analytics from ecommerce websites and current independent reporting makes the budget implication explicit. The observational design, working-paper status and lack of a live ChatGPT auction benchmark remain visible.",
+          "operational_impact_chain": "Observed paid ChatGPT visits produce less revenue per session than paid search in the study -> media buyers cannot assume Google-style visit value or CPC economics -> paid media, ecommerce, analytics and finance teams define channel-specific value, assisted-conversion and incrementality rules -> teams set tests, bids and budget limits from observed downstream value -> revenue per visit, assisted conversion, incrementality, customer quality and break-even cost become operating measures.",
+          "scores": {
+            "relevance": 10,
+            "relevance_rationale": "The study changes how paid-media, ecommerce, analytics and finance teams value conversational inventory and set test budgets.",
+            "topicality": 9,
+            "topicality_rationale": "The working paper is dated October and received new independent coverage on November 2, keeping the decision current while the exact first-publication day remains unclear.",
+            "viral_potential": 10,
+            "viral_potential_rationale": "The gap between search-like intent and much lower observed visit value creates a direct challenge to Google-style pricing assumptions.",
+            "total": 29
+          },
+          "confidence": "qualified",
+          "confidence_limitation": "The working paper is observational and not a peer-reviewed final publication. The Google-CPC comparison comes from one advertiser, and no official ChatGPT auction or independent live-campaign benchmark validates the modeled break-even price.",
+          "novelty": {
+            "result": "meaningful_advance",
+            "rationale": "The archive covers how ChatGPT selects ads and how creative changes run at delivery time. This research adds observed visit economics and a concrete warning against importing Google search pricing assumptions into conversational inventory."
+          },
+          "predicted_audience_response": "Media buyers will question whether conversational ad inventory deserves search-level bids before assisted value, incrementality and downstream customer quality are visible.",
+          "materiality_gates": {
+            "material_event": "pass_new_observed_channel_economics_research",
+            "editorial_thesis_fit": "pass",
+            "primary_evidence": "pass_research_site_and_independent_reporting",
+            "availability_clarity": "pass_working_paper_not_platform_pricing",
+            "claim_discipline": "pass_observational_and_break_even_limits",
+            "operational_impact": "pass",
+            "contradiction_search": "pass_with_single_advertiser_cpc_comparison_and_no_live_auction_validation",
+            "archive_novelty": "pass_meaningful_advance"
+          },
+          "coverage_limitations": [
+            "The working paper is not a peer-reviewed final publication.",
+            "The data are observational and do not establish that the channel caused the revenue gap.",
+            "The Google CPC comparison cited by Search Engine Land comes from one advertiser.",
+            "No official ChatGPT auction, rate card or independent live-campaign benchmark validates the modeled break-even price."
+          ],
+          "sources": [
+            {
+              "type": "primary_research",
+              "title": "Kaiser and Schulze: E-Commerce Research on ChatGPT advertising and referrals",
+              "url": "https://ecommerceresearch.org/"
+            },
+            {
+              "type": "independent_context",
+              "title": "Search Engine Land: ChatGPT ad referrals generate less revenue per visit than Google search",
+              "url": "https://searchengineland.com/chatgpt-ads-generate-less-revenue-per-visit-than-google-search-study-500160"
+            }
+          ]
+        },
+        {
+          "option": 2,
+          "rank": 2,
+          "title": "AI answers may delay clicks rather than erase them",
+          "event_date": "2026-11-02",
+          "proposed_hook": "An AI summary can satisfy the first question and still create a later verification visit. New survey and clickstream evidence suggests teams should stop treating every missing immediate click as the same kind of loss.",
+          "marketer_angle": "SEO, content, analytics and commerce teams need to separate summary exposure, delayed verification visits and downstream action. Content should earn the later click with evidence, expertise, comparisons and purchase-risk reduction rather than restating the summary.",
+          "why_it_passed": "The research combines a U.S. survey, clickstream analysis and a large query audit around one measurable behavior question. Self-reporting, modeled AI Overview exposure, the study owner’s commercial interest and the lack of independent replication remain explicit.",
+          "operational_impact_chain": "AI summaries satisfy initial orientation but some users click later for proof or purchase confidence -> immediate click-through rate understates part of the journey -> SEO, content, analytics and commerce teams separate summary exposure, verification visits and downstream actions -> teams prioritize evidence, expert detail and high-risk decision support -> delayed click-through, qualified sessions, assisted conversions, cited-source visibility and revenue per visit become operating measures.",
+          "scores": {
+            "relevance": 9,
+            "relevance_rationale": "The evidence changes how SEO, content and analytics teams interpret AI-answer exposure, delayed clicks and downstream value.",
+            "topicality": 10,
+            "topicality_rationale": "The research article was published November 2 inside the current discovery window.",
+            "viral_potential": 9,
+            "viral_potential_rationale": "The finding challenges a common zero-click narrative without pretending AI summaries restore old traffic patterns.",
+            "total": 28
+          },
+          "confidence": "qualified",
+          "confidence_limitation": "Survey recruitment, weighting and margin of error are not fully disclosed. The query audit is not the same as observing every live AI Overview impression, Fractl sells related services, and no independent replication was found inside the window.",
+          "novelty": {
+            "result": "meaningful_advance",
+            "rationale": "The archive covers AI-search visibility, citations and platform controls. This study advances the category by separating immediate zero-click behavior from delayed verification visits and the evidence those visitors seek."
+          },
+          "predicted_audience_response": "SEO and content teams will debate whether fewer clicks can still produce more qualified visits and which evidence earns the verification click.",
+          "materiality_gates": {
+            "material_event": "pass_new_behavior_and_clickstream_research",
+            "editorial_thesis_fit": "pass",
+            "primary_evidence": "pass_original_research_article",
+            "availability_clarity": "pass_us_survey_clickstream_and_query_audit",
+            "claim_discipline": "pass_with_self_report_modeling_and_commercial_interest_limits",
+            "operational_impact": "pass",
+            "contradiction_search": "pass_with_zero_click_and_methodology_limits",
+            "archive_novelty": "pass_meaningful_advance"
+          },
+          "coverage_limitations": [
+            "Survey responses are self-reported and recruitment dates, weighting and margin of error are not fully disclosed.",
+            "The keyword audit is not the same as observing every live AI Overview impression.",
+            "Fractl sells content and AI-search services, creating a commercial interest in the interpretation.",
+            "No independent replication was found inside the discovery window."
+          ],
+          "sources": [
+            {
+              "type": "primary_research_article",
+              "title": "Search Engine Land / Fractl: Why people read AI answers, then click",
+              "url": "https://searchengineland.com/why-people-read-click-ai-answers-499684"
+            }
+          ]
+        },
+        {
+          "option": 3,
+          "rank": 3,
+          "title": "Modeled incrementality moves into the budget workflow",
+          "event_date": "2026-11-02",
+          "proposed_hook": "Smartly is putting modeled causal contribution beside attribution and planning signals. That shortens the path from measurement to budget movement, but it also forces teams to decide when a model can authorize spend and when only a controlled test will do.",
+          "marketer_angle": "Paid-media, analytics and finance teams need a vendor-neutral evidence hierarchy for budget changes: which modeled signals may recommend action, which thresholds trigger holdouts, who approves reallocation and how model-versus-observed variance is reviewed.",
+          "why_it_passed": "Smartly launched a current premium product that connects planning, headroom, benchmarks and INCRMNTAL-modeled contribution inside decision workflows. The launch is documented, while pricing, model definitions and independent holdout validation remain limited.",
+          "operational_impact_chain": "Modeled incremental contribution appears beside platform attribution and planning signals -> budget recommendations can change before a separate measurement review -> paid-media, analytics and finance teams define which signal can move money and when a controlled test is required -> teams approve scale, hold or reallocation decisions -> modeled-versus-observed variance, holdout lift, marginal return, decision latency and budget reversals become operating measures.",
+          "scores": {
+            "relevance": 10,
+            "relevance_rationale": "The launch changes who can use incrementality signals, when those signals enter planning and what evidence should authorize budget movement.",
+            "topicality": 10,
+            "topicality_rationale": "Smartly launched Intelligence Pro on November 2 inside the current window.",
+            "viral_potential": 8,
+            "viral_potential_rationale": "The tension between faster causal guidance and the absence of public holdout validation creates a useful measurement-governance debate.",
+            "total": 28
+          },
+          "confidence": "qualified",
+          "confidence_limitation": "No independent validation compares the causal model with randomized holdout results across customers. Public pricing, exact eligibility and full benchmark or model definitions are not disclosed.",
+          "novelty": {
+            "result": "distinct",
+            "rationale": "The archive covers reporting-definition changes and missing incrementality evidence, but not a paid-media platform putting modeled causal contribution directly beside attribution and planning signals that can influence budget allocation."
+          },
+          "predicted_audience_response": "Media and analytics teams will ask whether modeled incrementality may move budget directly or must remain a hypothesis until a controlled test confirms it.",
+          "materiality_gates": {
+            "material_event": "pass_product_launch",
+            "editorial_thesis_fit": "pass",
+            "primary_evidence": "pass_company_release_and_product_page",
+            "availability_clarity": "pass_eligible_customers_premium_offering",
+            "claim_discipline": "pass_vendor_claims_and_modeled_incrementality_limits",
+            "operational_impact": "pass",
+            "contradiction_search": "pass_with_no_independent_holdout_validation",
+            "archive_novelty": "pass_distinct"
+          },
+          "coverage_limitations": [
+            "No independent validation compares the causal model with randomized holdout results across customers.",
+            "Public pricing and exact eligibility are not disclosed.",
+            "Benchmarks and headroom outputs depend on Smartly data and model definitions that are not fully public.",
+            "The product integrates a prior INCRMNTAL acquisition, so the acquisition is old even though the decision workflow is new."
+          ],
+          "sources": [
+            {
+              "type": "primary_company_release",
+              "title": "Smartly: Intelligence Pro launch",
+              "url": "https://www.smartly.io/press/smartly-launches-intelligence-pro-to-connect-campaign-planning-performance-and-incrementality"
+            },
+            {
+              "type": "independent_context",
+              "title": "PPC Land: Smartly Intelligence Pro analysis",
+              "url": "https://ppc.land/smartlys-intelligence-pro-flags-where-extra-ad-spend-may-stop-paying-off/"
+            }
+          ]
+        }
+      ],
+      "research": {
+        "source_cutoff": "2026-11-02T08:00:42-05:00",
+        "discovery_window_hours": 72,
+        "discovery_window_expansion": null,
+        "event_ledger_path": "/home/ranson/.hermes/social-queue/research/2026-11-03-ai-martech-event-ledger.json",
+        "decision_journal_path": "/home/ranson/.hermes/social-queue/research/2026-11-03-ai-martech-decision-journal.md",
+        "citation_ledger_path": "/home/ranson/.hermes/social-queue/research/2026-11-03-citations-ledger.json",
+        "reserve_candidate_count": 5,
+        "reserve_candidates": [
+          "AI crawler hosting-cost incidents",
+          "Microsoft Advertising Conversions API GA",
+          "CrowdStrike AI Gateway kill switch",
+          "ANA adtech build-reality report",
+          "MIT Sloan AI governance paradox"
+        ],
+        "coverage_gaps": [
+          {
+            "source": "Search Engine Land and PPC Land direct browser retrieval",
+            "status": "blocked_by_cloudflare",
+            "cutoff_advanced": false,
+            "detail": "Indexed full content, original research pages and accessible primary pages supplied evidence; the failure was not treated as no news."
+          },
+          {
+            "source": "Axios Media Trends",
+            "status": "member_access_uncertainty",
+            "cutoff_advanced": false,
+            "detail": "No qualifying in-window event was found; member-only coverage remains a possible gap."
+          },
+          {
+            "source": "Marketing Week and Harvard Business Review",
+            "status": "partial_subscription",
+            "cutoff_advanced": false,
+            "detail": "Paywalled snippets were not used as factual evidence."
+          },
+          {
+            "source": "The Information OpenAI SSP report",
+            "status": "paywalled_and_no_primary_confirmation",
+            "cutoff_advanced": false,
+            "detail": "The reported arrangements were deferred rather than presented as verified."
+          },
+          {
+            "source": "MIT Sloan Management Review main site",
+            "status": "blocked",
+            "cutoff_advanced": false,
+            "detail": "Store, syndication and institutional pages supplied partial coverage; no new winter relaunch announcement was found."
+          },
+          {
+            "source": "Reddit direct JSON",
+            "status": "http_403_arctic_shift_fallback",
+            "cutoff_advanced": false,
+            "detail": "Date-complete post coverage was recovered, but deleted bodies and comments remain unknown."
+          },
+          {
+            "source": "X @randfish and @jason_kint",
+            "status": "retrieval_failed",
+            "cutoff_advanced": false,
+            "detail": "No signal was reported; this is not evidence of no posting."
+          },
+          {
+            "source": "X @aripap, @lilyraynyc and @aleyda",
+            "status": "partial_mirror_only",
+            "cutoff_advanced": false,
+            "detail": "Recovered posts were treated as expert signals; timeline completeness was not assumed."
+          }
+        ]
+      },
+      "events": [
+        {
+          "at": "2026-11-03T08:14:59-05:00",
+          "type": "topic_queue_created",
+          "actor": "scheduled_research",
+          "detail": "Created exactly three ranked AI marketing and martech topics from the previous 72 hours with late-indexing overlap; awaiting approval."
+        }
+      ]
     }
   ],
   "archive": [
