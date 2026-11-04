@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-11-03T08:14:59-05:00",
+  "updated_at": "2026-11-04T08:14:37-05:00",
   "sync": {
     "status": "connected",
     "discord_guild_id": "1553886101003837561",
@@ -3866,6 +3866,258 @@
       "events": [
         {
           "at": "2026-11-03T08:14:59-05:00",
+          "type": "topic_queue_created",
+          "actor": "scheduled_research",
+          "detail": "Created exactly three ranked AI marketing and martech topics from the previous 72 hours with late-indexing overlap; awaiting approval."
+        }
+      ]
+    },
+    {
+      "id": "ai-martech-topic-queue-2026-11-04",
+      "kind": "content",
+      "title": "AI marketing and martech topic approval queue",
+      "created_at": "2026-11-04T08:14:37-05:00",
+      "updated_at": "2026-11-04T08:14:37-05:00",
+      "status": "awaiting_topic_approval",
+      "stage": "topic_approval",
+      "topic_options": [
+        {
+          "option": 1,
+          "rank": 1,
+          "title": "AI search is pushing publishers beyond pageview economics",
+          "event_date": "2026-11-02",
+          "proposed_hook": "The traffic loss is becoming a business-model decision, not only an SEO problem. People Inc. reported weaker sessions while licensing grew, and it is moving AI partners from crawling toward structured feeds and APIs that preserve article and trust metadata.",
+          "marketer_angle": "Content, SEO, analytics and revenue teams need to treat machine distribution as its own operating channel: structured facts, update and retraction controls, partner terms, usage reporting, citation visibility and revenue that does not depend on a human page session.",
+          "why_it_passed": "Public-company results establish the revenue and traffic change, while independent reporting documents the move toward non-session revenue and machine-readable delivery.",
+          "operational_impact_chain": "AI answers and agent interfaces absorb more discovery -> search referrals and page sessions decline -> pageview and affiliate economics weaken -> content, SEO, revenue and analytics teams build machine-readable distribution and non-session revenue models -> teams change content packaging, partner controls and KPI ownership -> licensed or API usage, citation visibility, update propagation, downstream revenue and revenue per audience relationship become operating measures.",
+          "scores": {
+            "relevance": 10,
+            "relevance_rationale": "The evidence changes content packaging, distribution controls, revenue models and KPIs for content, SEO, analytics and commercial teams.",
+            "topicality": 10,
+            "topicality_rationale": "People Inc. disclosed the results on November 2, and the operating implications received current independent reporting on November 3.",
+            "viral_potential": 10,
+            "viral_potential_rationale": "A publisher moving from pageviews toward machine feeds and non-session revenue creates a direct challenge to traffic-first marketing economics.",
+            "total": 30
+          },
+          "confidence": "qualified",
+          "confidence_limitation": "The roughly 70% search-traffic decline is measured from a peak rather than as the Q3 year-over-year change. Direct and social traffic also weakened, so AI search is not the sole cause, and licensing growth does not prove every publisher can replace lost session revenue.",
+          "novelty": {
+            "result": "meaningful_advance",
+            "rationale": "The November 3 queue covered delayed verification clicks. This event adds issuer-level revenue evidence and a machine-distribution operating model rather than another click-behavior study."
+          },
+          "predicted_audience_response": "SEO, content and revenue leaders will ask whether machine-readable distribution can create measurable value without surrendering update control, attribution and licensing leverage.",
+          "materiality_gates": {
+            "material_event": "pass_public_company_results_and_distribution_change",
+            "editorial_thesis_fit": "pass",
+            "primary_evidence": "pass_issuer_results_with_independent_reporting",
+            "availability_clarity": "pass_current_results_selective_partner_distribution",
+            "claim_discipline": "pass_with_management_attribution_and_multifactor_limits",
+            "operational_impact": "pass",
+            "contradiction_search": "pass_other_traffic_channels_also_declined_and_replacement_economics_unproven",
+            "archive_novelty": "pass_meaningful_advance"
+          },
+          "coverage_limitations": [
+            "The roughly 70% decline is measured from a peak, not as the Q3 year-over-year comparison.",
+            "Direct and social traffic also declined, so AI search is not established as the sole cause.",
+            "Custom AI partner terms, prices, usage reporting and correction obligations are not public.",
+            "Licensing growth does not prove universal replacement economics."
+          ],
+          "sources": [
+            {
+              "type": "primary_financial_results",
+              "title": "People Incorporated Q3 2026 results",
+              "url": "https://ir.people-incorporated.com/static-files/015c35ab-2f0a-4f21-a48c-abbd092f723f"
+            },
+            {
+              "type": "independent_context",
+              "title": "AdExchanger: People Inc. bets on revenue beyond site visits",
+              "url": "https://www.adexchanger.com/publishers/with-search-traffic-down-70-people-inc-bets-on-revenue-beyond-site-visits/"
+            },
+            {
+              "type": "independent_context",
+              "title": "Digiday: People Inc. builds custom APIs for AI agents",
+              "url": "https://digiday.com/media/people-inc-is-building-custom-apis-to-make-its-journalism-easier-for-ai-agents-to-use/"
+            }
+          ]
+        },
+        {
+          "option": 2,
+          "rank": 2,
+          "title": "Connected marketing agents turn tool metadata into a security boundary",
+          "event_date": "2026-11-03",
+          "proposed_hook": "A connector can have legitimate credentials and still manipulate the rest of an agent's toolset. New MCP research shifts the governance question from who can connect to which server descriptions, permissions and actions the system can trust.",
+          "marketer_angle": "Martech, security and legal teams need one connector-control model for CRM, ad, analytics and content agents: approved servers, least privilege, signed artifacts, write boundaries, human approval, cross-tool logs, revocation and incident ownership.",
+          "why_it_passed": "One preprint reports that a malicious MCP server compromised all six tested agent frameworks through cross-server tool poisoning; a second identifies authorization, signing and supply-chain governance gaps across the ecosystem.",
+          "operational_impact_chain": "Marketing agents connect to CRM, advertising, analytics and content tools through MCP -> tool descriptions and server metadata enter the execution surface -> one malicious or compromised connector can redirect actions or expose data -> martech, security and legal teams jointly own allowlists, least privilege, signing, approvals, logging and revocation -> connector inventory, write scope, approval bypasses, anomalous calls and revocation time become operating measures.",
+          "scores": {
+            "relevance": 9,
+            "relevance_rationale": "The research changes how martech teams approve connectors, assign write authority and divide responsibility with security and legal.",
+            "topicality": 10,
+            "topicality_rationale": "The preprints appeared during the current window as MCP adoption expands across GTM and marketing tools.",
+            "viral_potential": 9,
+            "viral_potential_rationale": "A trusted connector manipulating another tool creates a clear challenge to connect-everything agent strategies.",
+            "total": 28
+          },
+          "confidence": "qualified",
+          "confidence_limitation": "Both sources are preprints. The six-framework test used a controlled environment, no named marketing-platform exploit was documented, and hardened production deployments may behave differently.",
+          "novelty": {
+            "result": "distinct",
+            "rationale": "The archive covers permissions and kill switches inside individual agent products, not cross-server manipulation at the interoperability layer connecting a marketing stack."
+          },
+          "predicted_audience_response": "Martech operators will question whether current connector approval, OAuth scopes and human review can detect a poisoned tool description before it changes live systems.",
+          "materiality_gates": {
+            "material_event": "pass_new_cross_framework_security_research",
+            "editorial_thesis_fit": "pass",
+            "primary_evidence": "pass_two_primary_preprints",
+            "availability_clarity": "pass_preprint_controlled_research",
+            "claim_discipline": "pass_no_claim_of_observed_marketing_breach",
+            "operational_impact": "pass",
+            "contradiction_search": "pass_controlled_test_and_no_named_vendor_response",
+            "archive_novelty": "pass_distinct"
+          },
+          "coverage_limitations": [
+            "Both sources are preprints rather than peer-reviewed final papers.",
+            "The six-framework experiment was controlled and may not reproduce every hardened production deployment.",
+            "No named marketing-platform exploit or vendor remediation statement was found inside the window.",
+            "Protocol risk and implementation risk must remain separate."
+          ],
+          "sources": [
+            {
+              "type": "primary_research",
+              "title": "MCP Tool Poisoning in Agentic AI Frameworks",
+              "url": "https://arxiv.org/abs/2611.03555"
+            },
+            {
+              "type": "primary_research",
+              "title": "Where Does MCP Security End?",
+              "url": "https://arxiv.org/abs/2611.02611"
+            }
+          ]
+        },
+        {
+          "option": 3,
+          "rank": 3,
+          "title": "Attention scores are becoming a pre-spend gate",
+          "event_date": "2026-11-02",
+          "proposed_hook": "Attention is moving from a report into the buying rule itself. Teads now lets advertisers exclude inventory below an Adelaide attention threshold before spend, which means a modeled score can decide where a campaign is allowed to run.",
+          "marketer_angle": "Media, analytics and procurement teams need validation and override rules before a proprietary attention score governs inventory: outcome tests, reach and CPM tradeoffs, excluded-publisher reviews, model drift checks and clear accountability when the score conflicts with business results.",
+          "why_it_passed": "The launch creates a current operational control inside Teads Ad Manager. Independent reporting confirms that the AU floor filters low-attention inventory before purchase, while industry guidance shows attention methods still vary.",
+          "operational_impact_chain": "Attention scores enter pre-bid inventory selection -> a modeled quality threshold filters supply before an impression is bought -> media teams trade reach and price for predicted attention -> buyers define validation, override and drift rules -> attention-qualified reach, CPM premium, excluded-supply concentration, incremental outcomes and model drift become operating measures.",
+          "scores": {
+            "relevance": 9,
+            "relevance_rationale": "The launch changes inventory eligibility, validation, override and measurement responsibilities for media and analytics teams.",
+            "topicality": 9,
+            "topicality_rationale": "The attention floor launched on November 2 inside the current window.",
+            "viral_potential": 8,
+            "viral_potential_rationale": "Using a proprietary modeled score to block supply before spend creates a useful debate about quality controls and hidden tradeoffs.",
+            "total": 26
+          },
+          "confidence": "qualified",
+          "confidence_limitation": "No independent outcome or incrementality test was published for the new floor. Attention models use different inputs and definitions, and the reach, CPM and publisher-mix effects of excluding low-score inventory remain unknown.",
+          "novelty": {
+            "result": "distinct",
+            "rationale": "Recent RecruitZero coverage addresses attribution and modeled incrementality after exposure. This event moves a modeled metric into inventory eligibility before spend."
+          },
+          "predicted_audience_response": "Media buyers will ask whether attention thresholds improve outcomes or replace one opaque platform quality score with another.",
+          "materiality_gates": {
+            "material_event": "pass_current_product_launch",
+            "editorial_thesis_fit": "pass",
+            "primary_evidence": "pass_company_release_with_independent_context",
+            "availability_clarity": "pass_teads_ad_manager",
+            "claim_discipline": "pass_modeled_proxy_not_settled_currency",
+            "operational_impact": "pass",
+            "contradiction_search": "pass_no_independent_outcomes_and_method_variation",
+            "archive_novelty": "pass_distinct"
+          },
+          "coverage_limitations": [
+            "No independent campaign outcome or incrementality result was published for the new floor.",
+            "Attention models use different inputs and definitions, so one AU threshold is not a universal currency.",
+            "The reach, CPM and publisher-mix consequences of excluding low-score inventory are undisclosed.",
+            "The score can govern spend before teams have validated it against their own business outcome."
+          ],
+          "sources": [
+            {
+              "type": "primary_company_release",
+              "title": "Teads and Adelaide attention optimization launch",
+              "url": "https://www.teads.com/blog/teads-and-adelaide-bring-attention-based-media-quality-measurement-and-real-time-optimization-to-teads-ad-manager/13054/"
+            },
+            {
+              "type": "independent_context",
+              "title": "PPC Land: Teads Adelaide AU floor analysis",
+              "url": "https://ppc.land/teads-lets-advertisers-cut-low-attention-placements-with-adelaide-au-floor/"
+            },
+            {
+              "type": "industry_guidance",
+              "title": "CESP Attention Grid 2026",
+              "url": "https://www.cesp.org/wp-content/uploads/Attention-grid-2026-10-06-26-Published.pdf"
+            }
+          ]
+        }
+      ],
+      "research": {
+        "source_cutoff": "2026-11-03T08:14:59-05:00",
+        "discovery_window_hours": 72,
+        "discovery_window_expansion": null,
+        "event_ledger_path": "/home/ranson/.hermes/social-queue/research/2026-11-04-ai-martech-event-ledger.json",
+        "decision_journal_path": "/home/ranson/.hermes/social-queue/research/2026-11-04-ai-martech-decision-journal.md",
+        "citation_ledger_path": "/home/ranson/.hermes/social-queue/research/2026-11-04-citations-ledger.json",
+        "reserve_candidate_count": 6,
+        "reserve_candidates": [
+          "HBR workflow-mapping field experiment",
+          "Agentic GTM control-plane cluster",
+          "Enterprise AI consumption budgets",
+          "Salesforce-Cresta acquisition",
+          "Hightouch Match Booster Europe",
+          "Claim-level AI-ad disclosure"
+        ],
+        "coverage_gaps": [
+          {
+            "source": "EMARKETER, Axios Media Trends, HBR and The Information",
+            "status": "partial_subscription_or_member_access",
+            "cutoff_advanced": false,
+            "detail": "Paywalled or truncated bodies were not used as standalone factual evidence; primary artifacts and accessible reporting supplied limited coverage."
+          },
+          {
+            "source": "MIT Sloan Management Review main site",
+            "status": "blocked",
+            "cutoff_advanced": false,
+            "detail": "Store, syndication and the public underlying paper supplied partial coverage; winter relaunch details remain unverified."
+          },
+          {
+            "source": "Reddit direct API and RSS",
+            "status": "http_403_or_stale",
+            "cutoff_advanced": false,
+            "detail": "Fresh listings and indexed pages supplied partial coverage; comments, deleted posts and some high-volume history remain incomplete."
+          },
+          {
+            "source": "X named account pool",
+            "status": "partial_nitter_mirror",
+            "cutoff_advanced": false,
+            "detail": "Direct X and xurl were unavailable. Current mirror timelines supplied partial coverage and may omit replies or posts."
+          },
+          {
+            "source": "People Inc. custom AI distribution terms",
+            "status": "not_public",
+            "cutoff_advanced": false,
+            "detail": "Partner pricing, usage reporting, correction duties and licensing terms are undisclosed."
+          },
+          {
+            "source": "MCP production incident evidence",
+            "status": "not_found",
+            "cutoff_advanced": false,
+            "detail": "The selected evidence consists of preprint research, not a named marketing-platform breach or remediation report."
+          },
+          {
+            "source": "Teads-Adelaide independent outcome validation",
+            "status": "not_found",
+            "cutoff_advanced": false,
+            "detail": "No independent campaign, incrementality or reach-cost result for the new AU floor was published."
+          }
+        ]
+      },
+      "events": [
+        {
+          "at": "2026-11-04T08:14:37-05:00",
           "type": "topic_queue_created",
           "actor": "scheduled_research",
           "detail": "Created exactly three ranked AI marketing and martech topics from the previous 72 hours with late-indexing overlap; awaiting approval."
