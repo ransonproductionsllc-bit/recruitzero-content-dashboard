@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-11-04T08:14:37-05:00",
+  "updated_at": "2026-11-04T10:10:49-05:00",
   "sync": {
     "status": "connected",
     "discord_guild_id": "1553886101003837561",
@@ -3877,9 +3877,9 @@
       "kind": "content",
       "title": "AI marketing and martech topic approval queue",
       "created_at": "2026-11-04T08:14:37-05:00",
-      "updated_at": "2026-11-04T08:14:37-05:00",
-      "status": "awaiting_topic_approval",
-      "stage": "topic_approval",
+      "updated_at": "2026-11-04T10:10:49-05:00",
+      "status": "awaiting_post_approval",
+      "stage": "post_approval",
       "topic_options": [
         {
           "option": 1,
@@ -4052,6 +4052,55 @@
               "url": "https://www.cesp.org/wp-content/uploads/Attention-grid-2026-10-06-26-Published.pdf"
             }
           ]
+        },
+        {
+          "option": 4,
+          "rank": 4,
+          "title": "A Creator Series Can Turn a Marketing Budget Into a Rights Decision",
+          "event_date": "2026-11-04",
+          "proposed_hook": "A creator series can turn a marketing budget into a rights decision. Once brands fund serialized work, they must decide whether they are buying sponsorship, reusable assets, a co-produced show or a stake in the property.",
+          "marketer_angle": "Marketing, creator partnerships, media, legal, finance and analytics teams need one investment model for production, distribution, reuse, ownership, renewal and cancellation before filming begins.",
+          "why_it_passed": "Current independent reporting provides concrete cost and deal examples while exposing a broader operating question: long-form creator work can combine campaign spending with production financing and intellectual-property governance.",
+          "operational_impact_chain": "A brand funds a serialized creator production -> the project creates first-run episodes, reusable cutdowns and potentially valuable rights -> production, distribution, usage and ownership decisions cross marketing, media, finance, legal and creator teams -> teams define rights, budget boundaries, renewal and cancellation rules before production -> cost per completed viewer, reusable-asset value, audience retention, downstream outcomes, rights use and renewal economics become operating measures.",
+          "scores": {
+            "relevance": 9,
+            "relevance_rationale": "The topic changes budget ownership, legal terms, distribution planning and measurement responsibilities across creator, marketing, media, finance and analytics teams.",
+            "topicality": 10,
+            "topicality_rationale": "The Digiday briefing was published on November 4, 2026.",
+            "viral_potential": 9,
+            "viral_potential_rationale": "Six- and seven-figure creator productions create a clear debate over whether brands are buying campaigns or financing properties.",
+            "total": 28
+          },
+          "confidence": "qualified",
+          "confidence_limitation": "The reported cost range and ownership examples are not market-wide benchmarks. Episode length, production specifications, distribution commitments and excluded costs were not standardized, and the reporting provides little observed business-outcome evidence.",
+          "novelty": {
+            "result": "distinct",
+            "rationale": "The archive covers creator discovery and platform formats, but not marketing teams financing serialized creator productions while governing reuse, ownership and renewal economics."
+          },
+          "predicted_audience_response": "Creator and marketing operators will debate whether brands need ownership at all, which rights justify additional cost and what evidence should unlock another season.",
+          "materiality_gates": {
+            "material_event": "pass_current_independent_reporting",
+            "editorial_thesis_fit": "pass",
+            "primary_evidence": "pass_independent_staff_reporting_with_attributed_examples",
+            "availability_clarity": "pass_reported_examples_not_market_benchmarks",
+            "claim_discipline": "pass_with_cost_and_outcome_limits",
+            "operational_impact": "pass",
+            "contradiction_search": "pass_sponsorship_and_limited_rights_alternatives_preserved",
+            "archive_novelty": "pass_distinct"
+          },
+          "coverage_limitations": [
+            "The cost range comes from industry participants and is not a representative market benchmark.",
+            "Episode length, production standards, distribution commitments and excluded costs were not standardized.",
+            "The evidence provides little observed data on incremental sales, completed viewing, retention or brand lift.",
+            "Ownership and licensing structures vary by contract; one reported split is not an industry norm."
+          ],
+          "sources": [
+            {
+              "type": "independent_staff_reporting",
+              "title": "Digiday: What it costs brands to fund long-form creator series",
+              "url": "https://digiday.com/future-of-tv/future-of-tv-briefing-what-it-costs-brands-to-fund-long-form-creator-series/"
+            }
+          ]
         }
       ],
       "research": {
@@ -4121,8 +4170,203 @@
           "type": "topic_queue_created",
           "actor": "scheduled_research",
           "detail": "Created exactly three ranked AI marketing and martech topics from the previous 72 hours with late-indexing overlap; awaiting approval."
+        },
+        {
+          "at": "2026-11-04T10:10:49-05:00",
+          "type": "alternative_topic_added",
+          "actor": "recruitzero_content_workflow",
+          "detail": "Added the separately requested Digiday creator-series analysis as option 4 without replacing the original three scheduled options."
+        },
+        {
+          "at": "2026-11-04T10:10:49-05:00",
+          "type": "topic_approved",
+          "actor": "discord_user",
+          "detail": "User instructed the workflow to proceed with option 4, the creator-series rights and intellectual-property topic, for drafting and review only. Cover generation and LinkedIn publication remain unauthorized.",
+          "message_id": "1567553869897269434"
+        },
+        {
+          "at": "2026-11-04T10:10:49-05:00",
+          "type": "post_reviewed",
+          "actor": "recruitzero_content_workflow",
+          "detail": "Claude Opus produced the initial draft with no fallback. After one evidence-correction cycle, the exact 249-word article passed interpretation review, factual fidelity, accessibility, construction, stop-slop 46/50 and voice fidelity 9.5/10; awaiting explicit post approval."
         }
-      ]
+      ],
+      "topic": {
+        "option": 4,
+        "title": "A Creator Series Can Turn a Marketing Budget Into a Rights Decision",
+        "selected": true,
+        "approved_via": "discord",
+        "approved_at": "2026-11-04T10:10:49-05:00",
+        "approval_message_id": "1567553869897269434",
+        "proposed_hook": "A creator series can turn a marketing budget into a rights decision. Once brands fund serialized work, they must decide whether they are buying sponsorship, reusable assets, a co-produced show or a stake in the property.",
+        "marketer_angle": "Marketing, creator partnerships, media, legal, finance and analytics teams need one investment model for production, distribution, reuse, ownership, renewal and cancellation before filming begins.",
+        "sources": [
+          {
+            "type": "independent_staff_reporting",
+            "title": "Digiday: What it costs brands to fund long-form creator series",
+            "url": "https://digiday.com/future-of-tv/future-of-tv-briefing-what-it-costs-brands-to-fund-long-form-creator-series/"
+          }
+        ]
+      },
+      "claim_evidence": {
+        "status": "complete",
+        "path": "/home/ranson/.hermes/social-queue/research/2026-11-04-long-form-creator-series-claim-evidence.json",
+        "source_count": 3,
+        "verified_claim_count": 9,
+        "load_bearing_claims_traceable": true,
+        "qualifications_preserved": true,
+        "independent_context_found": true,
+        "prohibited_overstatements_enforced": true
+      },
+      "editorial_intelligence": {
+        "workflow_version": 2,
+        "deep_review_status": "pass",
+        "confidence": "qualified",
+        "confidence_limitation": "The reported cost range and ownership examples are not market-wide benchmarks. Episode length, production specifications, distribution commitments and excluded costs were not standardized, and the reporting provides little observed business-outcome evidence.",
+        "novelty": {
+          "result": "distinct",
+          "rationale": "The archive covers creator discovery and platform formats, but not marketing teams financing serialized creator productions while governing reuse, ownership and renewal economics."
+        },
+        "operational_impact": {
+          "status": "pass",
+          "chain": "A brand funds a serialized creator production -> the project creates first-run episodes, reusable cutdowns and potentially valuable rights -> production, distribution, usage and ownership decisions cross marketing, media, finance, legal and creator teams -> teams define rights, budget boundaries, renewal and cancellation rules before production -> cost per completed viewer, reusable-asset value, audience retention, downstream outcomes, rights use and renewal economics become operating measures."
+        },
+        "argument_review": {
+          "status": "pass",
+          "correction_cycles": 1,
+          "unsupported_inferences": [],
+          "missing_qualifications": [],
+          "vendor_framing_risks": [],
+          "counterargument": "Many creator series remain sponsorship or campaign packages, and brands may rationally prefer limited usage rights over intellectual-property ownership; the creator's audience and distribution can be more valuable than control of the property.",
+          "operational_impact_status": "pass",
+          "operational_impact_rationale": "The article assigns concrete pre-production decisions to marketing, creator partnerships, media, legal, finance and analytics and connects rights and distribution choices to budget controls, success thresholds and renewal decisions.",
+          "novelty_status": "distinct",
+          "stack_independent_value": "pass",
+          "stack_independent_rationale": "The guidance applies across creators, agencies, production partners and platforms because it centers on deal classification, rights, total costs, distribution commitments and renewal governance.",
+          "required_corrections": [],
+          "residual_risks": [
+            "The reported cost examples come from industry participants and should not be generalized beyond the article’s explicit statement that they are examples rather than market rates.",
+            "The evidence provides limited observed business-outcome data and does not show that ownership, reuse or higher production spending creates incremental return.",
+            "Ownership structures and control rights vary by contract.",
+            "Whether brand ownership of creator-series intellectual property produces a measurable financial return remains unknown."
+          ]
+        },
+        "product_as_evidence": false,
+        "concept_led": true,
+        "stack_independent_value": "pass"
+      },
+      "post": {
+        "status": "awaiting_approval",
+        "title": "A Creator Series Can Turn a Marketing Budget Into a Rights Decision",
+        "body": "A creator series can turn a marketing budget into a rights decision.\n\nDigiday's November 4, 2026 Future of TV Briefing reported long-form creator productions ranging from roughly $150,000 to $5 million. One package of 10 long-form episodes and 30 short videos was estimated at $300,000 to $500,000.\n\nThose are examples, not market rates. Episode length, production standards and distribution commitments were not standardized. Paid promotion, internal labor and measurement may sit outside the estimates.\n\nPrice changes with creator fees, production, platform count, how the brand can reuse the work and intellectual property. Intellectual property means who owns or controls the concept, episodes, future seasons and clips. In one deal model Digiday described, creators keep 60% to 70% ownership. The brand gets integration rights, meaning it can build itself into the series, or first refusal, the first chance to negotiate for later seasons.\n\nWhat is the brand buying: sponsorship, reusable assets, a co-produced show or a stake in the property? The answer changes the cost, risk and definition of success.\n\nSettle that before filming:\n\n- Marketing and creator partnerships: deliverables and brand boundaries.\n- Media: distribution commitments, not just production.\n- Legal: ownership, reuse, sequels and how either side can leave.\n- Finance: separate cost lines and a limit for another season.\n- Analytics: define first-season success and when to stop.\n\nThe takeaway: a big production bill does not prove business value. Decide what you are buying, write the renewal rules up front, and make season two earn its budget.",
+        "word_count": 249,
+        "sources": [
+          {
+            "type": "independent_staff_reporting",
+            "title": "Digiday: What it costs brands to fund long-form creator series",
+            "url": "https://digiday.com/future-of-tv/future-of-tv-briefing-what-it-costs-brands-to-fund-long-form-creator-series/"
+          }
+        ],
+        "stop_slop_score": 46,
+        "stop_slop_breakdown": {
+          "directness": 9,
+          "rhythm": 9,
+          "trust": 10,
+          "authenticity": 9,
+          "density": 9
+        },
+        "voice_fidelity_score": 9.5,
+        "construction_pass": true,
+        "construction_checklist": {
+          "word_count_150_250": true,
+          "concept_led_introduction": true,
+          "verified_event_explanation": true,
+          "brief_market_implication": true,
+          "wider_industry_interpretation": true,
+          "connected_workflow_considerations": true,
+          "takeaway_label": true,
+          "closing_question_natural_or_omitted": true,
+          "factual_fidelity": true,
+          "accessibility": true,
+          "stack_independent_value": true
+        },
+        "accessibility_status": "pass",
+        "retained_specialist_terms": [
+          {
+            "term": "intellectual property",
+            "explanation": "Explained as who owns or controls the concept, episodes, future seasons and clips."
+          },
+          {
+            "term": "integration rights",
+            "explanation": "Explained as permission for the brand to build itself into the series."
+          },
+          {
+            "term": "first refusal",
+            "explanation": "Explained as the first chance to negotiate for later seasons."
+          }
+        ],
+        "argument_review": {
+          "status": "pass",
+          "correction_cycles": 1,
+          "unsupported_inferences": [],
+          "missing_qualifications": [],
+          "vendor_framing_risks": [],
+          "counterargument": "Many creator series remain sponsorship or campaign packages, and brands may rationally prefer limited usage rights over intellectual-property ownership; the creator's audience and distribution can be more valuable than control of the property.",
+          "operational_impact_status": "pass",
+          "operational_impact_rationale": "The article assigns concrete pre-production decisions to marketing, creator partnerships, media, legal, finance and analytics and connects rights and distribution choices to budget controls, success thresholds and renewal decisions.",
+          "novelty_status": "distinct",
+          "stack_independent_value": "pass",
+          "stack_independent_rationale": "The guidance applies across creators, agencies, production partners and platforms because it centers on deal classification, rights, total costs, distribution commitments and renewal governance.",
+          "required_corrections": [],
+          "residual_risks": [
+            "The reported cost examples come from industry participants and should not be generalized beyond the article’s explicit statement that they are examples rather than market rates.",
+            "The evidence provides limited observed business-outcome data and does not show that ownership, reuse or higher production spending creates incremental return.",
+            "Ownership structures and control rights vary by contract.",
+            "Whether brand ownership of creator-series intellectual property produces a measurable financial return remains unknown."
+          ]
+        },
+        "factual_fidelity": true,
+        "review_notes": "Claude Opus produced the initial draft with no fallback. The interpretation red-team required one correction cycle to qualify the opening and reported cost package. The exact revision then passed interpretation, factual fidelity, accessibility, construction, stop-slop 46/50 and voice fidelity 9.5/10.",
+        "writer_model": "claude-opus-5-5",
+        "writer_provider": "claude-code",
+        "writer_fallback_used": false,
+        "writer_attempts": [
+          {
+            "model": "opus",
+            "status": "success"
+          }
+        ],
+        "review_model": "delegated_reviewer",
+        "review_provider": "hermes_delegate",
+        "markdown_path": "/home/ranson/.hermes/social-queue/linkedin/2026-11-04-long-form-creator-series-reviewed.md",
+        "stack_independent_value": true
+      },
+      "performance": {
+        "tracking_status": "awaiting_publication_data",
+        "publication_url": null,
+        "published_at": null,
+        "forecast": {
+          "relevance": 9,
+          "topicality": 10,
+          "viral_potential": 9,
+          "predicted_audience_response": "Creator and marketing operators will debate whether brands need ownership at all, which rights justify additional cost and what evidence should unlock another season."
+        },
+        "day_7": null,
+        "day_30": null,
+        "qualitative_outcome": null,
+        "editorial_lesson": null
+      },
+      "assets": {
+        "cover_status": "awaiting_post_approval",
+        "cover_provider": null,
+        "cover_model": null,
+        "cover_url": null,
+        "cover_local_path": null,
+        "cover_original_path": null,
+        "cover_dimensions": null,
+        "visual_inspection": null,
+        "review_page_url": "https://ransonproductionsllc-bit.github.io/recruitzero-content-dashboard/review.html?id=ai-martech-topic-queue-2026-11-04"
+      }
     }
   ],
   "archive": [
