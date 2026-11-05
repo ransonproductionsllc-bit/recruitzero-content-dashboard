@@ -90,6 +90,7 @@
     }
     .button.secondary { background: transparent; color: var(--ink); }
     .button.orange { background: var(--orange); border-color: var(--orange); }
+    .button.danger { background: transparent; border-color: var(--red); color: var(--red); }
     .button:focus-visible, a:focus-visible, button:focus-visible { outline: 3px solid #f5b24b; outline-offset: 3px; }
     .stats {
       display: grid;
@@ -137,6 +138,8 @@
       box-shadow: var(--shadow);
     }
     .work-head { padding: 20px 22px; border-bottom: 1px solid var(--line); display: flex; justify-content: space-between; align-items: start; gap: 20px; }
+    .work-tools { display: flex; align-items: center; justify-content: flex-end; flex-wrap: wrap; gap: 8px; }
+    .work-tools .button { min-height: 36px; padding: 7px 11px; font-size: 12px; }
     .eyebrow { color: var(--orange); font-size: 11px; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; }
     .work-head h3 { margin: 5px 0 0; font: 700 24px/1.15 Georgia, serif; }
     .badge { display: inline-flex; align-items: center; min-height: 28px; padding: 5px 9px; border-radius: 999px; font-size: 11px; font-weight: 800; letter-spacing: .04em; text-transform: uppercase; background: #e3e7e2; color: var(--ink); }
@@ -153,7 +156,8 @@
     .topic-option { border: 1px solid var(--line); background: #fff; padding: 16px; display: flex; flex-direction: column; gap: 10px; }
     .topic-option h4 { margin: 0; font: 700 18px/1.2 Georgia, serif; }
     .topic-option p { margin: 0; color: var(--muted); font-size: 14px; }
-    .topic-option .button { margin-top: auto; width: 100%; }
+    .topic-actions { display: grid; gap: 8px; margin-top: auto; }
+    .topic-option .button { width: 100%; }
     .post-layout { display: grid; grid-template-columns: minmax(0, 1fr) 290px; gap: 22px; }
     .post-copy { white-space: pre-wrap; font-family: Georgia, serif; font-size: 17px; line-height: 1.62; }
     .side-meta { display: grid; gap: 12px; align-content: start; }
@@ -161,6 +165,9 @@
     .meta-box strong { display: block; margin-bottom: 5px; }
     .meta-box span, .meta-box p { color: var(--muted); font-size: 13px; margin: 0; }
     .score-row { display: flex; justify-content: space-between; gap: 10px; padding: 6px 0; border-bottom: 1px solid var(--line); font-size: 13px; }
+    .asset-groups { display: grid; gap: 26px; }
+    .asset-date-group { display: grid; gap: 12px; }
+    .asset-date-heading { margin: 0; padding-bottom: 8px; border-bottom: 2px solid var(--ink); font: 700 20px/1.2 Georgia, serif; }
     .asset-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
     .asset-card { background: var(--paper); border: 1px solid var(--line); overflow: hidden; }
     .asset-card img { width: 100%; aspect-ratio: 1200 / 627; object-fit: cover; display: block; background: #dfe3df; }
@@ -189,6 +196,8 @@
       .stagebar { grid-template-columns: 1fr 1fr; }
       .stage { border-bottom: 1px solid var(--line); }
       .work-head { flex-direction: column; }
+      .work-tools { width: 100%; justify-content: flex-start; }
+      .work-tools .button { flex: 1 1 170px; }
       .archive-row { grid-template-columns: 1fr; }
       .topic-option .button, .asset-actions .button, .archive-row .button { width: 100%; }
     }
@@ -235,7 +244,7 @@
 
     <section class="view" id="view-assets" hidden>
       <div class="section-header"><div><h2>Finished downstream assets</h2><p>Approved copy, cover images, and external review pages.</p></div></div>
-      <div class="asset-grid" id="assetsRoot"></div>
+      <div class="asset-groups" id="assetsRoot"></div>
     </section>
 
     <section class="view" id="view-archive" hidden>
@@ -247,25 +256,19 @@
   </main>
 </div>
 
+<script src="dashboard-logic.js"></script>
 <script>
   const STATE_URL = `state.json?v=${Date.now()}`;
   let state = null;
+  const { actionUrl, completionTimestamp, groupFinishedItems, itemDayKey } = window.RecruitZeroDashboard;
 
   const escapeHtml = (value = '') => String(value).replace(/[&<>'"]/g, char => ({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[char]));
   const formatDate = value => value ? new Intl.DateTimeFormat(undefined, {dateStyle:'medium', timeStyle:'short'}).format(new Date(value)) : 'Unknown';
+  const formatDateOnly = value => value && value !== 'unknown-date' ? new Intl.DateTimeFormat(undefined, {dateStyle:'long'}).format(new Date(`${value}T12:00:00`)) : 'Completion date unavailable';
   const statusLabel = value => String(value || 'unknown').replaceAll('_', ' ');
 
   function approvalUrl(item, action, option = '') {
-    const repo = state.sync.approval_repo;
-    const title = `${action} ${item.id}${option ? ` OPTION ${option}` : ''}`;
-    const body = [
-      `Workflow item: ${item.id}`,
-      `Action: ${action}`,
-      option ? `Option: ${option}` : '',
-      '',
-      'This approval was submitted from the RecruitZero content dashboard.'
-    ].filter(Boolean).join('\n');
-    return `https://github.com/${repo}/issues/new?title=${encodeURIComponent(title)}&body=${encodeURIComponent(body)}&labels=approval`;
+    return actionUrl(state.sync, item, action, option);
   }
 
   function stageMarkup(item) {
@@ -305,7 +308,10 @@
         ${confidence ? `<p><strong>Confidence:</strong> ${escapeHtml(typeof confidence === 'string' ? confidence : `${confidence.level || ''}${confidence.limitation ? ` — ${confidence.limitation}` : ''}`)}</p>` : ''}
         ${novelty ? `<p><strong>Novelty:</strong> ${escapeHtml(typeof novelty === 'string' ? novelty : `${novelty.status || ''}${novelty.rationale ? ` — ${novelty.rationale}` : ''}`)}</p>` : ''}
         <p>${(topic.sources || []).map(src => `<a href="${escapeHtml(src.url)}" target="_blank" rel="noopener">${escapeHtml(src.title)}</a>`).join(' · ')}</p>
-        <a class="button orange" href="${approvalUrl(item, 'APPROVE TOPIC', topic.option)}" target="_blank" rel="noopener">Approve option ${escapeHtml(topic.option)}</a>
+        <div class="topic-actions">
+          <a class="button orange" href="${approvalUrl(item, 'APPROVE TOPIC', topic.option)}" target="_blank" rel="noopener">Approve option ${escapeHtml(topic.option)}</a>
+          <a class="button danger" href="${approvalUrl(item, 'ARCHIVE TOPIC', topic.option)}" target="_blank" rel="noopener">Archive article</a>
+        </div>
       </article>`;
     }).join('')}</div>`;
   }
@@ -321,6 +327,7 @@
           <div class="score-row"><span>Construction</span><b>${post.construction_pass ? 'Pass' : 'Pending'}</b></div>
         </div>
         <a class="button orange" href="${approvalUrl(item, 'APPROVE POST')}" target="_blank" rel="noopener">Approve post</a>
+        <a class="button danger" href="${approvalUrl(item, 'ARCHIVE ITEM')}" target="_blank" rel="noopener">Archive article</a>
         <a class="button secondary" href="${state.sync.discord_url}" target="_blank" rel="noopener">Discuss in Discord</a>
       </aside>
     </div>`;
@@ -330,8 +337,9 @@
     const needsTopics = item.stage === 'topic_approval';
     const needsPost = item.stage === 'post_approval';
     const title = item.topic?.title || item.title || 'Untitled workflow item';
+    const dayKey = itemDayKey(item);
     return `<article class="work-card">
-      <div class="work-head"><div><span class="eyebrow">${escapeHtml(item.kind || 'content')}</span><h3>${escapeHtml(title)}</h3></div><span class="badge pending">${escapeHtml(statusLabel(item.status))}</span></div>
+      <div class="work-head"><div><span class="eyebrow">${escapeHtml(item.kind || 'content')} · ${escapeHtml(formatDateOnly(dayKey))}</span><h3>${escapeHtml(title)}</h3></div><div class="work-tools"><span class="badge pending">${escapeHtml(statusLabel(item.status))}</span>${needsTopics ? `<a class="button danger" href="${approvalUrl(item, 'CLEAR DAY')}" target="_blank" rel="noopener">Clear this day's search</a>` : ''}</div></div>
       ${stageMarkup(item)}
       <div class="work-body">${needsTopics ? topicOptions(item) : needsPost ? postApproval(item) : `<p>Status: ${escapeHtml(statusLabel(item.stage))}. No approval action is required right now.</p>`}</div>
     </article>`;
@@ -352,23 +360,31 @@
 
   function renderAssets() {
     const root = document.getElementById('assetsRoot');
-    const items = finishedItems();
-    if (!items.length) { root.innerHTML = `<div class="empty"><strong>No finished assets yet.</strong>Approved covers and review pages will appear here.</div>`; return; }
-    root.innerHTML = items.map(item => `<article class="asset-card">
-      ${item.assets?.cover_url ? `<img src="${escapeHtml(item.assets.cover_url)}" alt="Cover image for ${escapeHtml(item.topic?.title || item.post?.title || 'social post')}">` : ''}
-      <div class="asset-copy"><span class="eyebrow">${escapeHtml(item.kind || 'content')}</span><h3>${escapeHtml(item.topic?.title || item.post?.title || item.id)}</h3>
-      <p>${escapeHtml(item.assets?.cover_dimensions || '')} · Updated ${escapeHtml(formatDate(item.updated_at))}</p>
-      <div class="asset-actions">
-        ${item.assets?.cover_url ? `<a class="button secondary" href="${escapeHtml(item.assets.cover_url)}" download>Download cover</a>` : ''}
-        ${item.post?.body ? `<a class="button" href="review.html?id=${encodeURIComponent(item.id)}">Open review page</a>` : item.assets?.review_page_url ? `<a class="button" href="${escapeHtml(item.assets.review_page_url)}" target="_blank" rel="noopener">Open review page</a>` : ''}
-      </div></div>
-    </article>`).join('');
+    const groups = groupFinishedItems([...state.active_queue, ...state.archive]);
+    if (!groups.length) { root.innerHTML = `<div class="empty"><strong>No finished assets yet.</strong>Approved covers and review pages will appear here.</div>`; return; }
+    root.innerHTML = groups.map(group => `<section class="asset-date-group" aria-labelledby="assets-${escapeHtml(group.dateKey)}">
+      <h3 class="asset-date-heading" id="assets-${escapeHtml(group.dateKey)}">Completed ${escapeHtml(formatDateOnly(group.dateKey))}</h3>
+      <div class="asset-grid">${group.items.map(item => `<article class="asset-card">
+        ${item.assets?.cover_url ? `<img src="${escapeHtml(item.assets.cover_url)}" alt="Cover image for ${escapeHtml(item.topic?.title || item.post?.title || 'social post')}">` : ''}
+        <div class="asset-copy"><span class="eyebrow">${escapeHtml(item.kind || 'content')}</span><h3>${escapeHtml(item.topic?.title || item.post?.title || item.id)}</h3>
+        <p>${escapeHtml(item.assets?.cover_dimensions || '')} · Completed ${escapeHtml(formatDate(completionTimestamp(item)))}</p>
+        <div class="asset-actions">
+          ${item.assets?.cover_url ? `<a class="button secondary" href="${escapeHtml(item.assets.cover_url)}" download>Download cover</a>` : ''}
+          ${item.post?.body ? `<a class="button" href="review.html?id=${encodeURIComponent(item.id)}">Open review page</a>` : item.assets?.review_page_url ? `<a class="button" href="${escapeHtml(item.assets.review_page_url)}" target="_blank" rel="noopener">Open review page</a>` : ''}
+        </div></div>
+      </article>`).join('')}</div>
+    </section>`).join('');
   }
 
   function renderArchive() {
     const root = document.getElementById('archiveRoot');
-    if (!state.archive.length) { root.innerHTML = `<div class="empty"><strong>The archive is empty.</strong>Completed workflow items will be retained permanently.</div>`; return; }
-    root.innerHTML = state.archive.map(item => `<article class="archive-row"><div><span class="eyebrow">${escapeHtml(item.kind || 'content')}</span><h3>${escapeHtml(item.topic?.title || item.post?.title || item.id)}</h3><p>${escapeHtml(statusLabel(item.status))} · ${escapeHtml(formatDate(item.updated_at))}</p></div><span class="badge ${item.kind === 'test' ? 'test' : 'complete'}">${escapeHtml(item.kind === 'test' ? 'Test' : 'Complete')}</span></article>`).join('');
+    if (!state.archive.length) { root.innerHTML = `<div class="empty"><strong>The archive is empty.</strong>Completed, cleared, and individually archived items will appear here.</div>`; return; }
+    const items = [...state.archive].sort((left, right) => Date.parse(right.updated_at || right.created_at) - Date.parse(left.updated_at || left.created_at));
+    root.innerHTML = items.map(item => {
+      const badgeText = item.kind === 'test' ? 'Test' : item.status === 'cleared' ? 'Cleared' : item.status === 'archived' ? 'Archived' : 'Complete';
+      const badgeClass = item.kind === 'test' ? 'test' : ['cleared', 'archived'].includes(item.status) ? 'pending' : 'complete';
+      return `<article class="archive-row"><div><span class="eyebrow">${escapeHtml(item.kind || 'content')}</span><h3>${escapeHtml(item.topic?.title || item.post?.title || item.title || item.id)}</h3><p>${escapeHtml(statusLabel(item.status))} · ${escapeHtml(formatDate(item.updated_at))}</p></div><span class="badge ${badgeClass}">${escapeHtml(badgeText)}</span></article>`;
+    }).join('');
   }
 
   function renderStats() {
