@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-11-04T11:16:23-05:00",
+  "updated_at": "2026-11-05T08:17:51-05:00",
   "sync": {
     "status": "connected",
     "discord_guild_id": "1553886101003837561",
@@ -4431,6 +4431,242 @@
         "visual_inspection_notes": "The human creator-director is the clear focal point. Connected episode frames and derived clips flow to phone, laptop and television screens, communicating repeatable programming and reusable assets. The exact 1200x627 export has no readable accidental text, logos, watermarks, celebrity likenesses, malformed anatomy or crop defects.",
         "review_page_url": "https://ransonproductionsllc-bit.github.io/recruitzero-content-dashboard/review.html?id=ai-martech-topic-queue-2026-11-04"
       }
+    },
+    {
+      "id": "ai-martech-topic-queue-2026-11-05",
+      "kind": "content",
+      "title": "AI marketing and martech topic approval queue",
+      "created_at": "2026-11-05T08:17:51-05:00",
+      "updated_at": "2026-11-05T08:17:51-05:00",
+      "status": "awaiting_topic_approval",
+      "stage": "topic_approval",
+      "topic_options": [
+        {
+          "option": 1,
+          "rank": 1,
+          "title": "AI output is turning review capacity into marketing's bottleneck",
+          "event_date": "2026-11-05",
+          "proposed_hook": "AI can produce a campaign brief in minutes. Agencies are finding that the saved drafting time reappears as senior review, fact-checking and strategic reconstruction when the brief is long, disjointed or unsupported.",
+          "marketer_angle": "Brand and agency teams need to treat review capacity as part of AI unit economics. Brief acceptance tests, evidence requirements, named decision owners and maximum useful length matter more than raw output volume.",
+          "why_it_passed": "Digiday documented current agency experience, while Basis disclosed a 184-person survey conducted from July 16 through August 14. Among 94 respondents whose organizations use marketing agents, 56.4% reported campaign-brief creation.",
+          "operational_impact_chain": "AI agents create more briefs faster -> weak through-lines and unsupported claims increase review demand -> strategy, creative and account leaders become the control point -> teams define acceptance tests and budget review capacity -> review time, revision rate, unsupported-claim rate and downstream rework become operating measures.",
+          "scores": {
+            "relevance": 10,
+            "relevance_rationale": "The evidence changes how marketing and agency teams budget review, define brief acceptance and measure AI productivity.",
+            "topicality": 10,
+            "topicality_rationale": "Digiday published the current agency evidence on November 5, supported by a current 2026 survey with disclosed field dates and sample size.",
+            "viral_potential": 9,
+            "viral_potential_rationale": "The gap between faster drafting and slower judgment is recognizable across brand, agency and content teams.",
+            "total": 29
+          },
+          "confidence": "qualified",
+          "confidence_limitation": "The 85% AI-written-brief figure is one executive's estimate, not an audited market rate. The Basis survey measures self-reported use, and neither source proves that AI causes worse briefs across the industry.",
+          "novelty": {
+            "result": "distinct",
+            "rationale": "The archive covers AI workforce sentiment and agent authority, but not review capacity becoming the scarce production control as brief volume expands."
+          },
+          "predicted_audience_response": "Operators will compare hours saved at first draft with the senior review time, fact-checking and rework the output creates.",
+          "materiality_gates": {
+            "material_event": "pass_coherent_current_behavioral_evidence_set",
+            "editorial_thesis_fit": "pass",
+            "primary_evidence": "pass_method_disclosed_vendor_survey_with_independent_reporting",
+            "availability_clarity": "pass_observed_practice_not_product_availability",
+            "claim_discipline": "pass_single_executive_estimate_not_generalized",
+            "operational_impact": "pass",
+            "contradiction_search": "pass_efficiency_gains_and_sample_limits_preserved",
+            "archive_novelty": "pass_distinct"
+          },
+          "coverage_limitations": [
+            "The 85% figure is one executive estimate.",
+            "The Basis survey includes 184 respondents and relies on self-reporting.",
+            "Conference remarks include unattributed Chatham House comments.",
+            "No audited workflow telemetry proves a market-wide quality decline."
+          ],
+          "sources": [
+            {
+              "type": "independent_staff_reporting",
+              "title": "Digiday: Agencies find AI overuse is leading to brief bloat",
+              "url": "https://digiday.com/marketing/a-little-bit-ridiculous-agencies-find-ai-overuse-is-leading-to-brief-bloat"
+            },
+            {
+              "type": "primary_industry_survey",
+              "title": "Basis Technologies: AI and the Future of Marketing 2026",
+              "url": "https://basis.com/wp-content/uploads/2026/10/Basis_AI-and-the-Future-of-Marketing-2026-Edition.pdf"
+            }
+          ]
+        },
+        {
+          "option": 2,
+          "rank": 2,
+          "title": "Agent traffic needs its own analytics and failure metrics",
+          "event_date": "2026-11-04",
+          "proposed_hook": "An AI agent can reach checkout, fail and disappear without looking like a human abandonment. Microsoft Clarity now separates supported agent activity and lets teams simulate tasks before customers delegate them.",
+          "marketer_angle": "Web, SEO, commerce and analytics teams need a measurement policy for non-human actors: detection confidence, operator labels, task success, failure stage, downstream human conversion and rules for whether agent actions enter campaign reporting.",
+          "why_it_passed": "Microsoft's release documents a globally available Agent Activity dashboard, supported operators, observed on-site actions and simulation measures. It also discloses the scope of its underlying analysis: 5.23 million agentic sessions across 230,511 projects.",
+          "operational_impact_chain": "AI agents visit and act on websites -> analytics separates supported agent operators from human traffic -> teams inspect task attempts and failure points -> web, SEO and commerce owners change site design, testing and attribution rules -> agent-session share, task completion, failure stage, interaction count and downstream human conversion become operating measures.",
+          "scores": {
+            "relevance": 10,
+            "relevance_rationale": "The launch creates new analytics, QA and attribution responsibilities for web, SEO, commerce and conversion teams.",
+            "topicality": 10,
+            "topicality_rationale": "Microsoft launched the capabilities on November 4 after the previous queue cutoff.",
+            "viral_potential": 8,
+            "viral_potential_rationale": "Watching agents fail at checkout or booking gives practitioners a concrete new customer-journey problem to debate.",
+            "total": 28
+          },
+          "confidence": "qualified",
+          "confidence_limitation": "Microsoft has not published independent validation of detection precision or recall. Supported operators are limited to Google, OpenAI and Anthropic, and observed agent activity does not establish incremental customer or revenue value.",
+          "novelty": {
+            "result": "distinct",
+            "rationale": "Previous RecruitZero coverage addressed AI referrals, search visibility and agent governance, not behavioral analytics and preflight task simulation for autonomous web actors."
+          },
+          "predicted_audience_response": "Teams will ask how accurately agents can be detected, whether agent actions should enter conversion reporting, and which failures deserve web changes.",
+          "materiality_gates": {
+            "material_event": "pass_current_global_product_launch",
+            "editorial_thesis_fit": "pass",
+            "primary_evidence": "pass_official_release_and_dataset_scope",
+            "availability_clarity": "pass_global_with_operator_and_scenario_limits",
+            "claim_discipline": "pass_vendor_detection_not_ground_truth",
+            "operational_impact": "pass",
+            "contradiction_search": "pass_detection_accuracy_and_incrementality_unknown",
+            "archive_novelty": "pass_distinct"
+          },
+          "coverage_limitations": [
+            "No independent validation of agent-detection precision or recall was published.",
+            "The 5.23-million-session analysis is a Microsoft dataset.",
+            "Supported operators are limited to Google, OpenAI and Anthropic at launch.",
+            "Observed activity does not prove incremental customer or revenue value."
+          ],
+          "sources": [
+            {
+              "type": "primary_product_release",
+              "title": "Microsoft Clarity: Agents act, LLMs recommend, and people browse",
+              "url": "https://clarity.microsoft.com/blog/clarity-connects-agents-llms-people/"
+            },
+            {
+              "type": "independent_context",
+              "title": "Search Engine Land: Microsoft Clarity can analyze AI agent traffic",
+              "url": "https://searchengineland.com/microsoft-clarity-analyze-ai-agent-traffic-464164"
+            }
+          ]
+        },
+        {
+          "option": 3,
+          "rank": 3,
+          "title": "Platform audience growth is getting harder to verify by region",
+          "event_date": "2026-11-04",
+          "proposed_hook": "Snap will stop publishing regional daily-user and revenue-per-user figures in 2027. Global growth will remain visible, but buyers lose a public regional series they could compare with platform reach and advertising performance.",
+          "marketer_angle": "Paid-social, agency and finance teams need to name the denominator behind regional performance claims: global DAU, monetizable DAU, platform-estimated reach, delivered reach or another measure. Procurement may need explicit access and retention terms for region-level reporting.",
+          "why_it_passed": "Snap disclosed the reporting change in its Q3 results and set the 2027 timing. Independent reporting confirms that regional DAU and ARPU will end while global DAU, MAU and monetizable DAU remain.",
+          "operational_impact_chain": "Snap removes regional DAU and ARPU from public reporting -> global audience and monetization become harder to decompose by market -> media and finance teams lose an external regional denominator -> teams define which reach, frequency and monetization evidence supports local budget decisions -> regional reach variance, delivered audience quality, CPM, frequency and campaign outcomes carry more weight.",
+          "scores": {
+            "relevance": 9,
+            "relevance_rationale": "The change affects the external benchmarks media, agency and finance teams use to test regional audience and monetization claims.",
+            "topicality": 10,
+            "topicality_rationale": "Snap announced the 2027 reporting change in its November 4 quarterly results after the previous cutoff.",
+            "viral_potential": 8,
+            "viral_potential_rationale": "A platform reducing regional transparency while advertisers still make regional budget decisions creates a clear accountability tension.",
+            "total": 27
+          },
+          "confidence": "qualified",
+          "confidence_limitation": "The public reporting change is confirmed, but Snap will keep global DAU, MAU and monetizable DAU. The disclosure change does not prove advertisers will lose regional campaign reporting inside Ads Manager.",
+          "novelty": {
+            "result": "distinct",
+            "rationale": "The archive covers attribution opacity and modeled metrics, but not a major ad platform withdrawing regional audience and monetization series from public reporting."
+          },
+          "predicted_audience_response": "Media buyers will ask which regional metrics remain available in-platform and how they can verify market-level reach without a public comparison series.",
+          "materiality_gates": {
+            "material_event": "pass_public_company_reporting_change",
+            "editorial_thesis_fit": "pass",
+            "primary_evidence": "pass_issuer_results_with_independent_context",
+            "availability_clarity": "pass_2027_public_reporting_change",
+            "claim_discipline": "pass_public_disclosure_not_buyer_dashboard_loss",
+            "operational_impact": "pass",
+            "contradiction_search": "pass_global_and_monetizable_metrics_remain",
+            "archive_novelty": "pass_distinct"
+          },
+          "coverage_limitations": [
+            "Global DAU, MAU and monetizable DAU will remain public.",
+            "The reporting change does not prove that advertisers lose regional campaign data.",
+            "Snap says monetizable DAU better represents its business.",
+            "Future contractual or platform-level regional reporting access is unknown."
+          ],
+          "sources": [
+            {
+              "type": "primary_financial_results",
+              "title": "Snap Inc. Q3 2026 financial results",
+              "url": "https://investor.snap.com/news/news-details/2026/Snap-Inc--Announces-Third-Quarter-2026-Financial-Results/default.aspx"
+            },
+            {
+              "type": "independent_context",
+              "title": "Social Media Today: Snapchat stops reporting regional DAU and ARPU",
+              "url": "https://www.socialmediatoday.com/news/snapchat-stops-reporting-daily-active-users/806981/"
+            }
+          ]
+        }
+      ],
+      "research": {
+        "source_cutoff": "2026-11-04T08:14:37-05:00",
+        "discovery_window_hours": 72,
+        "discovery_window_expansion": null,
+        "event_ledger_path": "/home/ranson/.hermes/social-queue/research/2026-11-05-ai-martech-event-ledger.json",
+        "decision_journal_path": "/home/ranson/.hermes/social-queue/research/2026-11-05-ai-martech-decision-journal.md",
+        "citation_ledger_path": "/home/ranson/.hermes/social-queue/research/2026-11-05-citations-ledger.json",
+        "reserve_candidate_count": 6,
+        "reserve_candidates": [
+          "Google Ads Ask Advisor approval-gated execution",
+          "Google Data Manager row-level conversion diagnostics",
+          "Google Ads multi-party approval API changes",
+          "Dialpad agreement to acquire Ada",
+          "Synthetic-content suspicion and positive provenance",
+          "AI-training preference signal"
+        ],
+        "coverage_gaps": [
+          {
+            "source": "Search Engine Land",
+            "status": "cloudflare_blocked_article_bodies",
+            "cutoff_advanced": false,
+            "detail": "Current leads were traced to primary artifacts; author role and commercial label remained unavailable."
+          },
+          {
+            "source": "Marketing Week, EMARKETER and Axios Media Trends",
+            "status": "blocked_or_member_limited",
+            "cutoff_advanced": false,
+            "detail": "Search discovery was incomplete and no headline or snippet was used as factual evidence."
+          },
+          {
+            "source": "HBR, The Information, Inc., Fast Company and MIT Sloan",
+            "status": "partial_paywall_or_archive_gap",
+            "cutoff_advanced": false,
+            "detail": "Blocked bodies, author-role gaps or unstable routes were recorded and not treated as no news."
+          },
+          {
+            "source": "Reddit and X named pools",
+            "status": "partial_third_party_mirror_coverage",
+            "cutoff_advanced": false,
+            "detail": "Direct APIs were unavailable; removed posts, exhaustive comments and hidden timeline items may be missing."
+          },
+          {
+            "source": "Microsoft Clarity detection validation",
+            "status": "not_published",
+            "cutoff_advanced": false,
+            "detail": "No independent precision or recall test was found."
+          },
+          {
+            "source": "Snap regional advertiser reporting after 2027",
+            "status": "unknown",
+            "cutoff_advanced": false,
+            "detail": "The public filing change does not define future in-platform or contractual regional reporting access."
+          }
+        ]
+      },
+      "events": [
+        {
+          "at": "2026-11-05T08:17:51-05:00",
+          "type": "topic_queue_created",
+          "actor": "scheduled_research",
+          "detail": "Created exactly three ranked AI marketing and martech topics from the previous 72 hours with late-indexing overlap; awaiting approval."
+        }
+      ]
     }
   ],
   "archive": [
