@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-11-05T21:37:56Z",
+  "updated_at": "2026-11-09T08:00:00-05:00",
   "sync": {
     "status": "connected",
     "discord_guild_id": "1553886101003837561",
@@ -5911,6 +5911,263 @@
           "actor": "github_dashboard_action",
           "action_issue_number": 5,
           "detail": "Cleared this daily topic-search item through authorized GitHub issue #5. No topic was approved, no copy or cover was created, and nothing was published."
+        }
+      ]
+    },
+    {
+      "id": "ai-martech-topic-queue-2026-11-09",
+      "kind": "content",
+      "title": "AI marketing and martech topic approval queue",
+      "created_at": "2026-11-09T08:00:00-05:00",
+      "updated_at": "2026-11-09T08:00:00-05:00",
+      "status": "awaiting_topic_approval",
+      "stage": "topic_approval",
+      "topic_options": [
+        {
+          "option": 1,
+          "rank": 1,
+          "title": "Meta is about to change what your conversion data means",
+          "event_date": "2026-11-12",
+          "proposed_hook": "Starting November 12, Meta's Pixel measures some conversions on the customer's own device rather than on Meta's servers. For eligible pixels outside the EU and UK, the setting is on by default. Reported ROAS and CPA may change without anything changing in the actual campaign.",
+          "marketer_angle": "Paid media teams need a measurement-change protocol: record a baseline before November 12, track Meta-reported conversions against store orders separately, and decide which numbers govern Black Friday budget decisions.",
+          "why_it_passed": "Meta documented the setting and its defaults in the Business Help Center. It activates three days before the main pre-Black Friday measurement window. The unresolved questions about bidding and purchase value are stated, not speculated.",
+          "operational_impact_chain": "Meta enables on-device conversion matching by default -> reported conversions may rise for eligible pixels -> paid media teams cannot distinguish measurement change from performance improvement without a baseline -> budget and bid decisions during Black Friday and Cyber Monday may rest on inflated numbers -> teams need a parallel tracking protocol before November 12.",
+          "scores": {
+            "relevance": 10,
+            "relevance_rationale": "Directly changes how every eligible paid media team reads their Meta conversion data during the highest-stakes measurement window of the year.",
+            "topicality": 10,
+            "topicality_rationale": "November 12 is three days away; teams need a baseline before that date.",
+            "viral_potential": 9,
+            "viral_potential_rationale": "A platform changing its defaults in a way that makes ROAS look better without improving sales creates immediate tension and practical stakes for every paid team.",
+            "total": 29
+          },
+          "confidence": "qualified",
+          "confidence_limitation": "November 12 date comes from the Events Manager UI as reported by PPC Land and Stape, not from Meta's own help articles. Meta has not disclosed whether recovered conversions affect bid optimization or include purchase value. Login requirement means guest-checkout sites may not qualify.",
+          "novelty": {
+            "result": "distinct",
+            "rationale": "Archive has not covered a Meta default-on measurement change ahead of a retail season where reported metrics may diverge from actual sales."
+          },
+          "predicted_audience_response": "Paid media teams will immediately check their pixel eligibility, ask whether to opt out, and debate whether the change helps or muddies Black Friday measurement.",
+          "materiality_gates": {
+            "material_event": "pass",
+            "editorial_thesis_fit": "pass",
+            "primary_evidence": "pass",
+            "availability_clarity": "pass_with_eligibility_limits",
+            "claim_discipline": "pass_with_unresolved_bidding_impact_stated",
+            "operational_impact": "pass",
+            "contradiction_search": "pass_with_independent_scepticism_documented",
+            "archive_novelty": "pass"
+          },
+          "coverage_limitations": [
+            "November 12 date from Events Manager UI, not Meta's help articles directly.",
+            "Meta has not confirmed whether recovered conversions affect bid optimization.",
+            "Purchase value inclusion in on-device reporting is unconfirmed.",
+            "Login requirement may exclude guest-checkout sites; Meta's handling is not disclosed.",
+            "EU and UK ineligibility confirmed; broader geographic limits not stated."
+          ],
+          "sources": [
+            {
+              "type": "primary_platform_documentation",
+              "title": "About measuring conversions on customer devices | Meta Business Help Center",
+              "url": "https://www.facebook.com/business/help/4237575203200036"
+            },
+            {
+              "type": "independent_context",
+              "title": "Should You Turn Off Meta Measure Conversions on Customer Devices? | Noibu",
+              "url": "https://www.noibu.com/blog/turn-off-meta-measure-conversions-customer-devices"
+            },
+            {
+              "type": "independent_context",
+              "title": "Meta Pixel on-device conversion measurement explained | Relevant Audience",
+              "url": "https://www.relevantaudience.com/meta/meta-pixel-measure-conversions-on-customer-devices"
+            },
+            {
+              "type": "independent_context",
+              "title": "Marketing Changes in November 2026: Meta and Google Ads | CME Media",
+              "url": "https://cmemedia.com/digital-marketing-changes-november-2026/"
+            }
+          ]
+        },
+        {
+          "option": 2,
+          "rank": 2,
+          "title": "IAB Tech Lab's standard for agentic media buying closes for public comment tomorrow",
+          "event_date": "2026-11-10",
+          "expanded_window_reason": "AAMP 3.0 was announced September 22; the operative event for this run is the November 10 comment deadline. Marketers and publishers can still engage before it closes.",
+          "proposed_hook": "IAB Tech Lab's OpenProposal spec defines how AI agents evaluate media proposals and commit to buys. The public comment period closes tomorrow, November 10. Publishers and advertisers who don't engage now will have less say in how agentic buying actually works.",
+          "marketer_angle": "Media agencies, in-house media teams, and publishers need to decide whether this standard fits their workflow before comment closes — and begin mapping which inventory and proposal data would need to become agent-readable if the standard advances.",
+          "why_it_passed": "AAMP 3.0 is an IAB Tech Lab standards publication, not a vendor claim. Comment deadline is tomorrow; practitioner input is still possible. AdExchanger Nov 9 confirms industry scepticism about adoption timelines, which the article must carry as context.",
+          "operational_impact_chain": "IAB Tech Lab finalizes OpenProposal -> AI buying agents use the spec to evaluate and commit to media proposals -> publishers not structured for agent-readable inventory may not appear in agentic buying workflows -> agencies and media teams need a policy on which proposals must be readable by buying agents -> missing the comment window removes a chance to shape how the standard handles specific use cases.",
+          "scores": {
+            "relevance": 9,
+            "relevance_rationale": "A standard for agentic media buying affects how authority, proposal evaluation, and buy commitments work for everyone in the media ecosystem.",
+            "topicality": 9,
+            "topicality_rationale": "Comment period closes November 10; the operative deadline is tomorrow.",
+            "viral_potential": 8,
+            "viral_potential_rationale": "Standards that arrive quietly become requirements later; the tension between early engagement and adoption scepticism should produce useful debate.",
+            "total": 26
+          },
+          "confidence": "high",
+          "confidence_limitation": "Comment period close does not finalize the standard. Adoption by DSPs, SSPs, and agencies is unestablished. IAB itself acknowledges several false starts are expected.",
+          "novelty": {
+            "result": "distinct",
+            "rationale": "Archive covers FTC/LiveRamp infrastructure neutrality and MCP governed-data access; nothing on standards for how agentic buyers evaluate and commit to media proposals."
+          },
+          "predicted_audience_response": "Media agencies and in-house media teams will ask what AAMP 3.0 means for publisher selection and inventory strategy, and whether they need to file a comment.",
+          "materiality_gates": {
+            "material_event": "pass",
+            "editorial_thesis_fit": "pass",
+            "primary_evidence": "pass",
+            "availability_clarity": "pass_standards_development_stage",
+            "claim_discipline": "pass",
+            "operational_impact": "pass",
+            "contradiction_search": "pass_with_adoption_scepticism_documented",
+            "archive_novelty": "pass"
+          },
+          "coverage_limitations": [
+            "No production deployment or live campaign evidence yet.",
+            "IAB Tech Lab itself acknowledges several false starts are expected before widespread adoption.",
+            "Comment close (Nov 10) does not mean the standard is finalized; adjudication follows.",
+            "Publisher and agency adoption timelines are entirely unknown."
+          ],
+          "sources": [
+            {
+              "type": "primary_standards_body",
+              "title": "IAB Tech Lab Introduces AAMP 3.0 to Standardize the RFP-to-Buy Process for Agentic Advertising",
+              "url": "https://iabtechlab.com/press-releases/iab-tech-lab-introduces-aamp-3-0-with-openproposal/"
+            },
+            {
+              "type": "primary_press_release",
+              "title": "IAB Tech Lab Introduces AAMP 3.0 | PR Newswire",
+              "url": "https://www.prnewswire.com/news-releases/iab-tech-lab-introduces-aamp-3-0-to-standardize-the-rfp-to-buy-process-for-agentic-advertising-302885337.html"
+            },
+            {
+              "type": "independent_context",
+              "title": "Publishers: Agentic AI Isn't About Pricing, But Whether You Get Any Bids At All | AdExchanger",
+              "url": "https://www.adexchanger.com/the-sell-sider/publishers-agentic-ai-isnt-about-pricing-but-whether-you-get-any-bids-at-all/"
+            },
+            {
+              "type": "independent_context",
+              "title": "The State of Agentic Advertising, October 2026 | Alkimi",
+              "url": "https://www.alkimi.org/news/state-of-agentic-advertising-october-2026"
+            }
+          ]
+        },
+        {
+          "option": 3,
+          "rank": 3,
+          "title": "Adobe data: visitors sent by AI convert 90% better and are worth 83% more per visit",
+          "event_date": "2026-10-29",
+          "expanded_window_reason": "Published October 29, 11 days ago. Included under seven-day expansion because holiday season timing makes this directly operational now; Black Friday is November 27.",
+          "proposed_hook": "Fourteen months ago, shoppers arriving from AI converted 9% worse than everyone else. In September, they converted 90% better and generated 83% more revenue per visit. Adobe based that on 1 trillion US retail site visits. The question isn't whether this matters. It's whether your attribution setup can even see it.",
+          "marketer_angle": "Acquisition, content, and measurement teams need to verify they can attribute AI referral traffic separately, understand what content performs in AI discovery contexts, and decide how much of holiday budget should build presence on AI surfaces.",
+          "why_it_passed": "Adobe published primary research with stated methodology (1T+ visits, 100M SKUs, 18 categories, 5,000-consumer survey). Multiple independent outlets reported identical figures. The holiday projection is labeled as a forecast.",
+          "operational_impact_chain": "AI-referred visitors generate radically higher revenue per visit -> teams measuring all acquisition in one bucket are misreading their channel economics -> paid and owned channels need separate attribution for AI referral traffic -> content built for AI discovery may require different formats than search or social -> holiday budget allocation decisions now have an underrepresented channel.",
+          "scores": {
+            "relevance": 9,
+            "relevance_rationale": "Changes channel measurement, attribution assumptions, content strategy, and acquisition economics for retail and commerce marketers this week.",
+            "topicality": 8,
+            "topicality_rationale": "Data is 11 days old but directly operational with Black Friday 18 days away; expanded window justified.",
+            "viral_potential": 9,
+            "viral_potential_rationale": "A channel that inverted from worst to best performing in 13 months creates the kind of number practitioners want to share and debate.",
+            "total": 26
+          },
+          "confidence": "high",
+          "confidence_limitation": "Holiday projection (2x revenue-per-visit advantage) is Adobe's forecast, not observed data. Survey component has potential opt-in bias. Data is US retail-only. AI traffic share of total visits remains very small.",
+          "novelty": {
+            "result": "distinct",
+            "rationale": "Archive covers AI tools in marketing stacks, not AI platforms as an acquisition channel with separately measurable, radically different quality metrics."
+          },
+          "predicted_audience_response": "Growth and acquisition teams will check whether they track AI referrals separately, ask what content works in AI discovery, and assess how to build presence on AI surfaces before the holiday season.",
+          "materiality_gates": {
+            "material_event": "pass",
+            "editorial_thesis_fit": "pass",
+            "primary_evidence": "pass",
+            "availability_clarity": "pass",
+            "claim_discipline": "pass_with_forecast_labeled",
+            "operational_impact": "pass",
+            "contradiction_search": "pass_no_contradicting_research_found",
+            "archive_novelty": "pass"
+          },
+          "coverage_limitations": [
+            "Holiday RPV projection (2x) is Adobe's forecast, not observed data.",
+            "Survey component (5,000 consumers) may have opt-in bias.",
+            "Data is US retail-only and may not generalize to B2B or other verticals.",
+            "AI traffic remains a small absolute share of total visits."
+          ],
+          "sources": [
+            {
+              "type": "primary_research",
+              "title": "AI Traffic Drives 83% Higher Revenue Per Visit | Adobe",
+              "url": "https://business.adobe.com/blog/ai-traffic-higher-revenue-per-visit-retail-holiday"
+            },
+            {
+              "type": "independent_context",
+              "title": "AI referrals drive higher conversions and revenues for retailers | EMARKETER",
+              "url": "https://content-na1.emarketer.com/ai-referrals-drive-higher-conversions-revenues-retailers"
+            },
+            {
+              "type": "independent_context",
+              "title": "AI traffic drives 83% more revenue per visit | MarTech",
+              "url": "https://martech.org/ai-traffic-drives-83-more-traffic-per-visit"
+            }
+          ]
+        }
+      ],
+      "research": {
+        "source_cutoff": "2026-11-06T08:00:00-05:00",
+        "discovery_window_hours": 72,
+        "discovery_window_expansion": "seven_days",
+        "expansion_reason": "Adobe AI traffic data (Oct 29) and IAB AAMP 3.0 (comment closing Nov 10) required expanded window to meet the three-option minimum with concept-led candidates.",
+        "event_ledger_path": "/home/ranson/.hermes/social-queue/research/2026-11-09-ai-martech-event-ledger.json",
+        "decision_journal_path": "/home/ranson/.hermes/social-queue/research/2026-11-09-ai-martech-decision-journal.md",
+        "reserve_candidate_count": 5,
+        "reserve_candidates": [
+          "Salesforce Koa Decisions (agent routing/classification architecture)",
+          "Magnite Q3 agentic CTV adoption (earnings)",
+          "Braiin generative-AI contact-center platform",
+          "BigGeo Audience Composer",
+          "Octane AI Phoenix"
+        ],
+        "coverage_gaps": [
+          {
+            "source": "Marketing Week",
+            "status": "not_retrieved",
+            "cutoff_advanced": false,
+            "detail": "Not retrieved this run."
+          },
+          {
+            "source": "Axios Media Trends",
+            "status": "not_retrieved",
+            "cutoff_advanced": false,
+            "detail": "Not retrieved this run."
+          },
+          {
+            "source": "Reddit pool (r/adops, r/PPC, r/analytics, r/SEO, r/MarketingAutomation)",
+            "status": "not_scanned",
+            "cutoff_advanced": false,
+            "detail": "Not scanned this run."
+          },
+          {
+            "source": "X/Twitter named pool",
+            "status": "not_scanned",
+            "cutoff_advanced": false,
+            "detail": "Not scanned this run."
+          },
+          {
+            "source": "UK Cyber Security and Resilience Bill primary text",
+            "status": "not_retrieved",
+            "cutoff_advanced": false,
+            "detail": "Single secondary source for UK AI agent oversight; primary bill text not found. Candidate rejected."
+          }
+        ]
+      },
+      "events": [
+        {
+          "at": "2026-11-09T08:00:00-05:00",
+          "type": "topic_queue_created",
+          "actor": "scheduled_research",
+          "detail": "Created exactly three concept-led AI marketing and martech topic options. One (Meta pixel, Nov 12) is inside the 72-hour window; two required the seven-day expansion (Adobe data Oct 29, IAB AAMP comment Nov 10). Awaiting topic approval."
         }
       ]
     }
