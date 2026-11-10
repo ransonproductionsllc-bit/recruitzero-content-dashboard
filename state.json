@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-11-09T08:30:00-05:00",
+  "updated_at": "2026-11-10T09:00:00-05:00",
   "sync": {
     "status": "connected",
     "discord_guild_id": "1553886101003837561",
@@ -6366,6 +6366,258 @@
           "type": "additional_topic_options_added",
           "actor": "scheduled_research",
           "detail": "Added three newly researched, distinct alternatives as options 4-6 without replacing or renumbering the original three. Option 4: Ogilvy/CAA ECHO consent framework for AI celebrity ads (Nov 9, today, 29/30). Option 5: OpenAI ChatGPT Business Hub brand analytics dashboard in testing (Nov 6, 26/30). Option 6: YouTube description metadata as testable AI search visibility input via Peec AI study (Nov 6, 25/30). All six options remain awaiting explicit topic approval."
+        }
+      ]
+    },
+    {
+      "id": "ai-martech-topic-queue-2026-11-10",
+      "kind": "content",
+      "title": "AI marketing and martech topic approval queue",
+      "created_at": "2026-11-10T09:00:00-05:00",
+      "updated_at": "2026-11-10T09:00:00-05:00",
+      "status": "awaiting_topic_approval",
+      "stage": "topic_approval",
+      "topic_options": [
+        {
+          "option": 1,
+          "rank": 1,
+          "title": "The Trade Desk announces an open measurement product to replace last-click attribution",
+          "event_date": "2026-11-09",
+          "proposed_hook": "The Trade Desk is planning a formal measurement product that assigns ad value across the full customer journey — not just the last click before a conversion. It will be available inside the platform for advertisers who have first-party data and, separately, for advertisers who currently lack access to any sophisticated attribution. The product is not live yet.",
+          "marketer_angle": "Media, analytics, and finance teams need a measurement-change protocol: document which campaigns currently operate under last-click or last-view, record their baselines, decide which attribution model governs budget decisions during the transition, and define the evidence threshold before reallocating spend based on the new model.",
+          "why_it_passed": "CEO Jeff Green described the open measurement framework on The Trade Desk's Q3 2026 earnings call on November 9, 2026, with a formal product launch planned for later in Q4. The primary source is a live earnings call transcript and press release. The operating change is material: a DSP that grades buy-side performance now plans to introduce incrementality and cross-journey attribution for advertisers who currently rely on last-touch defaults. AdExchanger independently confirmed the measurement product is part of TTD's turnaround strategy.",
+          "operational_impact_chain": "The Trade Desk plans to launch an open measurement product in Q4 -> advertisers can access incrementality and cross-journey attribution inside the platform -> media, analytics, and finance teams decide which campaigns to migrate off last-click baselines and what evidence threshold authorizes a budget shift -> teams define what the new attribution shows versus prior models -> reported channel performance, budget allocation, and optimization decisions change without underlying customer behavior changing.",
+          "scores": {
+            "relevance": 10,
+            "relevance_rationale": "Attribution methodology directly determines how marketing budgets are allocated; a DSP making incrementality available to any advertiser changes the authority and measurement decisions of paid media, analytics, and finance teams.",
+            "topicality": 10,
+            "topicality_rationale": "Jeff Green announced the open measurement product on The Trade Desk's Q3 2026 earnings call on November 9, 2026 — today.",
+            "viral_potential": 9,
+            "viral_potential_rationale": "A DSP explicitly committing to independent measurement rather than self-grading creates a strong practitioner debate about whether last-click attribution has been suppressing the value of upper-funnel, CTV, and open-internet advertising.",
+            "total": 29
+          },
+          "confidence": "qualified",
+          "confidence_limitation": "The product has not launched. No feature specification, pricing, methodology detail, or independence audit is public. The incrementality claims are from Jeff Green's earnings commentary, not documented product capabilities. The formal launch target is Q4 2026.",
+          "novelty": {
+            "result": "distinct",
+            "rationale": "The archive covers agentic campaign tools, MCP-governed data access, and measurement-definition changes inside individual platforms. No archived item addresses a DSP committing to cross-journey, buy-side incrementality as a standard platform product independent of walled-garden reporting."
+          },
+          "predicted_audience_response": "Media and analytics teams will debate whether a DSP can produce unbiased measurement, what incrementality methodology the product uses, and whether a formal launch materially changes budget authority for upper-funnel media.",
+          "materiality_gates": {
+            "material_event": "pass_public_earnings_announcement",
+            "editorial_thesis_fit": "pass",
+            "primary_evidence": "pass_earnings_press_release_and_transcript",
+            "availability_clarity": "pass_announced_q4_launch_no_product_live",
+            "claim_discipline": "pass_with_attribution_method_and_launch_status_unconfirmed",
+            "operational_impact": "pass",
+            "contradiction_search": "pass_with_adexchanger_turnaround_context_and_no_independent_product_test",
+            "archive_novelty": "pass_distinct"
+          },
+          "coverage_limitations": [
+            "The formal product has not launched; no feature specification, incrementality methodology, pricing, or publisher data requirements are public.",
+            "All measurement capability claims are Jeff Green's earnings commentary, not documented and independently verified product features.",
+            "AdExchanger noted TTD's revenue declined year-over-year in Q3 2026, adding strategic pressure context to the measurement announcement."
+          ],
+          "sources": [
+            {
+              "type": "primary_earnings_press_release",
+              "title": "The Trade Desk Reports Third Quarter 2026 Financial Results",
+              "url": "https://investors.thetradedesk.com/news-and-events/news/news-details/2026/The-Trade-Desk-Reports-Third-Quarter-2026-Financial-Results/default.aspx"
+            },
+            {
+              "type": "primary_earnings_call_transcript",
+              "title": "The Trade Desk Q3 2026 Earnings Call Transcript | Motley Fool",
+              "url": "https://www.fool.com/earnings/call-transcripts/2026/11/10/the-trade-desk-ttd-q3-2026-earnings-call-transcript/"
+            },
+            {
+              "type": "independent_context",
+              "title": "The Trade Desk's Revenue Slipped In Q3 | AdExchanger",
+              "url": "https://www.adexchanger.com/programmatic/the-trade-desks-revenue-slipped-in-q3-if-it-wants-to-grow-it-must-evolve/"
+            }
+          ]
+        },
+        {
+          "option": 2,
+          "rank": 2,
+          "title": "IAB releases its AI attribution framework on November 12 — three days from now",
+          "event_date": "2026-11-12",
+          "expanded_window_reason": "Reported by Digiday and EMARKETER ahead of the November 12 release. Included because the operative deadline for practitioners to understand the framework before it shapes platform discussions and RFP requirements is immediate.",
+          "proposed_hook": "The IAB is releasing a framework on November 12 that defines how to attribute and credit conversions influenced by AI — the moment increasing standing between publishers, platforms, and advertisers. The working group could not agree on everything. That matters as much as what it did agree on.",
+          "marketer_angle": "Paid media, analytics, and publisher teams need to read the November 12 framework before it enters agency RFP language and platform reporting discussions: understand what AI-influenced conversion means under the new definitions, identify which current measurement tools and data signals map to the new standards, and decide whether the framework's coverage and gaps match the team's actual AI advertising inventory.",
+          "why_it_passed": "Digiday reported the framework with a named IAB executive (Caroline Giegerich, VP AI) and a specific release date. EMARKETER confirmed independently. The IAB already published a companion Measuring Visibility in the AI Era framework and an AI Transparency Disclosure update this month. The working group disagreement on 'everything' is documented and must be preserved — it means the framework will require interpretation, not just adoption.",
+          "operational_impact_chain": "IAB releases an AI attribution framework on November 12 -> the framework introduces new definitions for AI-influenced awareness and AI-influenced purchase decisions -> paid media, analytics, publisher, and measurement teams align their tracking, reporting, and contracts to the new standard -> teams decide which existing attribution signals and data sources qualify under the new definitions -> measurement gaps, coverage decisions, attribution disputes, and contractual language all require revisiting.",
+          "scores": {
+            "relevance": 10,
+            "relevance_rationale": "Attribution definitions from the IAB become the shared language in advertiser-agency-publisher contracts and platform reporting discussions, so this directly changes measurement governance for every team buying or selling AI-influenced advertising.",
+            "topicality": 9,
+            "topicality_rationale": "Release is November 12 — two days from today. Teams have a narrow window to review before the framework enters negotiation language.",
+            "viral_potential": 9,
+            "viral_potential_rationale": "The working group admitting it disagrees on 'everything' while still releasing a framework creates a concrete debate about whether industry standards can keep pace with AI platforms that remain opaque to measurement.",
+            "total": 28
+          },
+          "confidence": "qualified",
+          "confidence_limitation": "The framework has not been released. All details come from pre-release reporting. The final document may differ from what is described. The working group's disagreement on 'everything' (Giegerich's words, per EMARKETER) suggests standards will require significant interpretation by practitioners.",
+          "novelty": {
+            "result": "distinct",
+            "rationale": "The archive covers AAMP 3.0 (agentic media buying standards) and platform-specific AI ad controls. This event addresses the measurement and attribution side: how conversions influenced by AI are credited across the awareness-to-purchase journey."
+          },
+          "predicted_audience_response": "Measurement and paid-media teams will immediately check whether the framework's AI-influenced conversion definition matches their current tracking setup and ask which platform measurement tools are already compliant.",
+          "materiality_gates": {
+            "material_event": "pass_scheduled_framework_release",
+            "editorial_thesis_fit": "pass",
+            "primary_evidence": "pass_with_named_iab_executive_and_digiday_emarketer_independent_reporting",
+            "availability_clarity": "pass_release_date_november_12_framework_not_yet_public",
+            "claim_discipline": "pass_with_working_group_disagreement_preserved",
+            "operational_impact": "pass",
+            "contradiction_search": "pass_with_platform_opacity_as_documented_risk",
+            "archive_novelty": "pass_distinct"
+          },
+          "coverage_limitations": [
+            "Framework has not been released; final definitions may differ from pre-release reporting.",
+            "IAB working group members disagreed on 'everything' per Caroline Giegerich, so the released framework likely requires practitioner interpretation rather than offering definitive standards.",
+            "AI platforms may remain opaque to measurement even after the framework ships, limiting its practical enforceability.",
+            "The Digiday article was accessible only via search snippet; full body not directly retrieved."
+          ],
+          "sources": [
+            {
+              "type": "independent_reporting_primary_coverage",
+              "title": "The IAB is developing a framework to tackle AI advertising measurement | Digiday",
+              "url": "https://digiday.com/media/the-iab-is-developing-a-framework-to-tackle-ai-advertising-measurement/"
+            },
+            {
+              "type": "independent_context",
+              "title": "IAB's AI ad measurement plan could redraw attribution for marketers | EMARKETER",
+              "url": "https://www.emarketer.com/content/iab-ai-ad-measurement-plan-redraw-attribution-marketers"
+            },
+            {
+              "type": "primary_iab_companion_framework",
+              "title": "Measuring Visibility in the AI Era | IAB",
+              "url": "https://www.iab.com/guidelines/measuring-visibility-in-the-ai-era/"
+            }
+          ]
+        },
+        {
+          "option": 3,
+          "rank": 3,
+          "title": "ChatGPT Ads replaces bidding caps with average-cost targets",
+          "event_date": "2026-11-09",
+          "proposed_hook": "OpenAI replaced Max Bid and Max CPC in ChatGPT Ads today. New conversion campaigns default to Target CPA, new click campaigns to Target CPC. The old controls retire January 1. A target is not a cap — it is a goal the system works toward while bids float above and below it.",
+          "marketer_angle": "Paid media teams running or planning ChatGPT Ads need to audit every campaign this week: document the actual CPA or CPC used as the new target basis, migrate existing campaigns before January 1 when the legacy controls retire, and verify that any API integrations creating or modifying campaigns are updated before November 18 when the legacy bid fields change behavior.",
+          "why_it_passed": "OpenAI published a detailed help article on November 5 and sent an email to advertisers, with the change taking effect today (November 9). Search Engine Land covered the change as staff reporting. The primary documentation is complete, with the specific migration timeline, API change date (November 18), and legacy deprecation date (January 1, 2027) all verified from the OpenAI help center. The critical operational point — that a target is not a cap and individual results will exceed the target — is stated explicitly in the documentation.",
+          "operational_impact_chain": "OpenAI replaces Max Bid and Max CPC with Target CPA and Target CPC for new campaigns today, and retires the old controls January 1 -> paid media teams must audit existing ChatGPT Ads campaigns and decide whether to migrate to target bidding before the January 1 retirement -> API partners must update integrations before November 18 when the legacy fields change to target behavior without warning -> advertisers using Target CPA or Target CPC must supply sufficient conversion signals or delivery will be constrained -> budget spend, campaign delivery, and CPA or CPC management change as the system floats bids around a target rather than capping them.",
+          "scores": {
+            "relevance": 10,
+            "relevance_rationale": "Every team running or building ChatGPT Ads campaigns faces a mandatory migration and must reset their bid-management assumptions before January 1.",
+            "topicality": 10,
+            "topicality_rationale": "Target CPA and Target CPC launched today, November 9, 2026.",
+            "viral_potential": 8,
+            "viral_potential_rationale": "The distinction between a cap and an average-cost target — and what it means for teams accustomed to Max Bid controls — creates a concrete operational debate, though it affects a narrower audience than broader platform changes.",
+            "total": 28
+          },
+          "confidence": "high",
+          "confidence_limitation": "The documentation is thorough. The main unknown is whether the system can achieve target CPAs with meaningful delivery for advertisers who have limited conversion data, as OpenAI acknowledges this can constrain delivery. No independent head-to-head test of target bidding versus Max Bid performance on ChatGPT is yet available.",
+          "novelty": {
+            "result": "meaningful_advance",
+            "rationale": "The archive covers OpenAI's ChatGPT ad architecture (targeting and auction structure) and the creative enhancements default change. This event advances the operational layer to bidding mechanics: advertisers must now manage an average-cost system rather than a maximum-bid cap, and API integrations face a silent behavior change on November 18."
+          },
+          "predicted_audience_response": "Paid media teams with active ChatGPT Ads will immediately audit their campaigns and ask whether their conversion data is sufficient to support target bidding; API partners will check whether their integrations need updates before November 18.",
+          "materiality_gates": {
+            "material_event": "pass_live_bidding_change",
+            "editorial_thesis_fit": "pass",
+            "primary_evidence": "pass_openai_help_center_and_advertiser_email",
+            "availability_clarity": "pass_live_today_with_migration_and_deprecation_dates",
+            "claim_discipline": "pass_target_not_cap_stated_explicitly",
+            "operational_impact": "pass",
+            "contradiction_search": "pass_with_conversion_signal_delivery_risk_documented",
+            "archive_novelty": "pass_meaningful_advance"
+          },
+          "coverage_limitations": [
+            "No independent performance comparison of Target CPA versus Max Bid delivery on ChatGPT Ads is yet available.",
+            "Delivery constraints from insufficient conversion signals are documented by OpenAI but not independently tested.",
+            "The November 18 API behavior change may affect advertisers using third-party tools before they are notified by those tools."
+          ],
+          "sources": [
+            {
+              "type": "primary_openai_documentation",
+              "title": "Bidding strategies and how pricing works in ChatGPT Ads | OpenAI Help",
+              "url": "https://help.openai.com/en/articles/20001634-bidding-strategies-and-how-pricing-works-in-chatgpt-ads"
+            },
+            {
+              "type": "independent_staff_reporting",
+              "title": "ChatGPT Ads bidding options are changing on November 9th | Search Engine Land",
+              "url": "https://searchengineland.com/chatgpt-ads-bidding-options-are-changing-on-november-9th-500701"
+            }
+          ]
+        }
+      ],
+      "research": {
+        "source_cutoff": "2026-11-09T08:00:00-05:00",
+        "initial_window_start": "2026-11-07T08:00:00-05:00",
+        "discovery_window_hours": 72,
+        "discovery_window_expansion": "partial_seven_days",
+        "expansion_reason": "IAB framework (Nov 12 release) included via seven-day expansion because it closes the IAB measurement standards cycle and is immediately actionable before the release date.",
+        "event_ledger_path": "/home/ranson/.hermes/social-queue/research/2026-11-10-ai-martech-event-ledger.json",
+        "decision_journal_path": "/home/ranson/.hermes/social-queue/research/2026-11-10-ai-martech-decision-journal.md",
+        "reserve_candidate_count": 5,
+        "reserve_candidates": [
+          "Google AI Mode multiturn ads live (Nov 9) — archive-similar to 2026-10-29 Google multiturn ads announced; not surfaced as separate topic",
+          "Braze Decisioning Studio Go, Agentic Standards, Operator Connect (Sep 29/Oct 14 GA) — event date outside window; deferred from previous run",
+          "Digiday ChatGPT ads ROI data (Kaiser/Schulze working paper, $0.89 vs $2.45 Google) — single working paper under review, not yet peer-reviewed",
+          "Amazon Ads Agent / Full-Funnel Campaigns (Oct unBoxed conference) — outside window, covered in reserve from 2026-10-30 run",
+          "Creator rate cards shifting to cost-per-conversion (Digiday Nov 10) — adjacent; no primary source event"
+        ],
+        "coverage_gaps": [
+          {
+            "source": "Marketing Week",
+            "status": "not_retrieved",
+            "cutoff_advanced": false,
+            "detail": "Not retrieved this run."
+          },
+          {
+            "source": "Axios Media Trends",
+            "status": "not_retrieved",
+            "cutoff_advanced": false,
+            "detail": "Not retrieved this run."
+          },
+          {
+            "source": "Reddit pool (r/adops, r/PPC, r/analytics, r/SEO, r/MarketingAutomation)",
+            "status": "not_scanned",
+            "cutoff_advanced": false,
+            "detail": "Not scanned this run."
+          },
+          {
+            "source": "X/Twitter named pool",
+            "status": "not_scanned",
+            "cutoff_advanced": false,
+            "detail": "Not scanned this run."
+          },
+          {
+            "source": "Digiday IAB framework article full body",
+            "url": "https://digiday.com/media/the-iab-is-developing-a-framework-to-tackle-ai-advertising-measurement/",
+            "status": "accessible_via_search_snippet_only",
+            "cutoff_advanced": false,
+            "detail": "Full article body not directly retrieved; details confirmed through EMARKETER independent reporting and IAB primary sources."
+          },
+          {
+            "source": "IAB AI attribution framework text",
+            "status": "not_yet_released",
+            "cutoff_advanced": false,
+            "detail": "Framework releases November 12; primary text not available for review."
+          },
+          {
+            "source": "Trade Desk open measurement product specification",
+            "status": "not_yet_published",
+            "cutoff_advanced": false,
+            "detail": "Formal product planned for Q4 2026 launch; feature details, methodology, and pricing not public."
+          }
+        ]
+      },
+      "events": [
+        {
+          "at": "2026-11-10T09:00:00-05:00",
+          "type": "topic_queue_created",
+          "actor": "scheduled_research",
+          "detail": "Created exactly three ranked AI marketing and martech topics. Two fall inside the 72-hour window (Trade Desk earnings Nov 9, ChatGPT Ads bidding Nov 9); one uses the seven-day expansion (IAB attribution framework, release Nov 12). Awaiting topic approval."
         }
       ]
     }
