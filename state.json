@@ -6626,9 +6626,9 @@
       "kind": "content",
       "title": "AI marketing and martech topic approval queue",
       "created_at": "2026-11-11T09:00:00-05:00",
-      "updated_at": "2026-11-11T09:00:00-05:00",
-      "status": "awaiting_topic_approval",
-      "stage": "topic_approval",
+      "updated_at": "2026-11-11T14:30:00-05:00",
+      "status": "awaiting_post_approval",
+      "stage": "post_approval",
       "topic_options": [
         {
           "option": 1,
@@ -6884,12 +6884,192 @@
           }
         ]
       },
+      "topic": {
+        "option": 3,
+        "title": "Ogilvy and CAA build consent infrastructure for licensed AI celebrity replicas",
+        "selected": true,
+        "approved_via": "discord",
+        "approved_at": "2026-11-11T14:00:00-05:00",
+        "proposed_hook": "Ogilvy and CAA launched a platform that turns a single celebrity shoot into 30 to 50 AI-generated ad assets — with the talent's documented consent and a visible watermark on every output. The question for brand and legal teams is not whether this is legal under the partnership agreement. It is whether consent infrastructure changes who owns the approval decision in AI-generated creative.",
+        "marketer_angle": "Brand, creative, and legal teams need a consent-and-approval governance model before AI-generated talent content enters production: documented consent terms, approval rights, correction and retraction processes, watermark and disclosure requirements, usage-scope boundaries, and the evidence standard for demonstrating that an AI-generated asset is within the licensed terms of a talent agreement.",
+        "sources": [
+          {
+            "type": "primary_company_press",
+            "title": "Ogilvy Launches ECHO, the Industry's First Talent Consent-Based Creative AI Platform | Ogilvy",
+            "url": "https://www.ogilvy.com/ideas/ogilvy-launches-echo-industrys-first-talent-consent-based-creative-ai-platform"
+          },
+          {
+            "type": "independent_staff_reporting",
+            "title": "Ogilvy and CAA launch partnership to clone celebrity talent for AI ads | Digiday",
+            "url": "https://digiday.com/marketing/ogilvy-and-caa-launch-partnership-to-clone-celebrity-talent-for-ai-ads/"
+          },
+          {
+            "type": "independent_reporting",
+            "title": "CAA Wants to Create an AI-Generated Celebrity Advertising Machine | The Hollywood Reporter",
+            "url": "https://www.hollywoodreporter.com/business/business-news/caa-ai-celebrity-advertising-machine-1236751106/"
+          },
+          {
+            "type": "independent_reporting",
+            "title": "How AI replicas are changing the economics of celebrity endorsements | Ad Age",
+            "url": "https://adage.com/technology/ai/aa-changing-economics-celebrity-endorsements-ogilvy-caa-production/"
+          },
+          {
+            "type": "independent_reporting",
+            "title": "A.I.-Generated Celebrity Ads Get an Assist From Terry Crews | The New York Times",
+            "url": "https://www.nytimes.com/2026/11/09/business/media/ogilvy-caa-ai-ads.html"
+          }
+        ]
+      },
+      "claim_evidence": {
+        "status": "complete",
+        "path": "/home/ranson/.hermes/social-queue/research/2026-11-11-ogilvy-echo-claim-evidence.json",
+        "source_count": 5,
+        "verified_claim_count": 9,
+        "load_bearing_claims_traceable": true,
+        "qualifications_preserved": true,
+        "independent_product_test_found": false,
+        "prohibited_overstatements_enforced": true
+      },
+      "editorial_intelligence": {
+        "workflow_version": 2,
+        "deep_review_status": "pass",
+        "confidence": "qualified",
+        "confidence_limitation": "Platform launch and consent architecture documented from Ogilvy primary press and multiple independent sources. Cost reduction (up to 65-75%) and asset-volume (30-50) figures are company claims. Consent terms and usage-scope boundaries not publicly disclosed. No external legal review or independent brand/talent review. Digiday notes watermarks may not aid consumer comprehension.",
+        "novelty": {
+          "status": "distinct",
+          "rationale": "Archive covers AI-platform-generated creative liability and content production governance, not a formal consent-based licensing infrastructure for AI talent replicas that changes the approval-chain structure and evidence burden for brand and legal teams."
+        },
+        "operational_impact": {
+          "status": "pass",
+          "chain": "Ogilvy and CAA launch ECHO -> brands license approved AI replicas of talent -> brand, creative, and legal teams define consent terms, asset-level approval, correction/retraction, disclosure, usage scope -> teams decide how AI-generated talent content fits existing agreements and regulations -> production cost, asset volume, turnaround, approval-chain responsibility, and liability for out-of-scope use all change."
+        },
+        "argument_review": {
+          "status": "pass",
+          "correction_cycles": 0,
+          "unsupported_inferences": [],
+          "missing_qualifications": [],
+          "vendor_framing_risks": [],
+          "counterargument": "Talent has always had to approve ads; ECHO may be formalizing existing industry workflows rather than creating a genuinely novel governance model. The article does not assert ECHO is completely new — it uses the platform to surface the broader governance architecture question.",
+          "operational_impact_status": "pass",
+          "operational_impact_rationale": "Article identifies concrete decisions for brand, creative, and legal teams: consent terms, asset-level approval rights, correction/retraction processes, disclosure standards, evidence trails — all stack-independent.",
+          "novelty_status": "distinct",
+          "stack_independent_value": "pass",
+          "stack_independent_rationale": "The five governance bullets apply to any AI talent production workflow regardless of ECHO or WPP adoption.",
+          "required_corrections": [],
+          "residual_risks": [
+            "Consent terms not publicly disclosed; it is unknown whether machine-readable contract boundaries match what talent would want in practice.",
+            "Whether consent infrastructure changes legal liability in practice is an open question the launch does not resolve.",
+            "Watermark comprehension gap: Digiday notes the watermark may not help consumers understand what they see, even if it satisfies regulatory requirements.",
+            "Company figures (30-50 assets, up to 65-75% cost reduction) are estimates with no independent audit."
+          ]
+        },
+        "product_as_evidence": true,
+        "stack_independent_value": "pass"
+      },
+      "post": {
+        "status": "awaiting_approval",
+        "title": "Ogilvy and CAA build consent infrastructure for licensed AI celebrity replicas",
+        "body": "Ogilvy and CAA have built a consent layer between celebrity contracts and AI ad production. Brand and legal teams should study the structure, whatever they think of the product.\n\nOn November 9, Ogilvy and WPP launched ECHO across the WPP network. Brands generate AI ads from verified scans captured at the CAA Vault, a 204-camera studio built by Veritone. Talent chooses which businesses and markets they will appear in, and machine-readable contracts, meaning terms software can check, set the usage scope. Agents and talent approve every asset through a secure portal. Each cleared output carries a visible \"[Talent Name] Approved | Recreated with AI\" watermark. Terry Crews has opted in.\n\nOgilvy claims 30 to 50 assets per shoot and cost cuts of up to 65 to 75 percent. No independent audit backs those figures. Pilot clients remain unnamed, consent terms stay private, and no outside legal review exists. Digiday notes the watermark may not help consumers understand what they see.\n\nThe harder question: when AI turns one shoot into dozens of assets, who holds approval authority, and who carries the liability?\n\nAny brand using AI talent content needs answers before production:\n- Documented consent terms and usage boundaries\n- Approval rights for each asset\n- Correction and retraction processes\n- Clear disclosure standards\n- An evidence trail showing each asset sits within the licensed terms\n\nThe takeaway: treat consent as infrastructure you can audit. If you cannot show who approved an asset and under what terms, don't publish it.",
+        "word_count": 244,
+        "sources": [
+          {
+            "type": "primary_company_press",
+            "title": "Ogilvy Launches ECHO, the Industry's First Talent Consent-Based Creative AI Platform",
+            "url": "https://www.ogilvy.com/ideas/ogilvy-launches-echo-industrys-first-talent-consent-based-creative-ai-platform"
+          },
+          {
+            "type": "independent_staff_reporting",
+            "title": "Ogilvy and CAA launch partnership to clone celebrity talent for AI ads | Digiday",
+            "url": "https://digiday.com/marketing/ogilvy-and-caa-launch-partnership-to-clone-celebrity-talent-for-ai-ads/"
+          },
+          {
+            "type": "independent_reporting",
+            "title": "CAA Wants to Create an AI-Generated Celebrity Advertising Machine | The Hollywood Reporter",
+            "url": "https://www.hollywoodreporter.com/business/business-news/caa-ai-celebrity-advertising-machine-1236751106/"
+          },
+          {
+            "type": "independent_reporting",
+            "title": "How AI replicas are changing the economics of celebrity endorsements | Ad Age",
+            "url": "https://adage.com/technology/ai/aa-changing-economics-celebrity-endorsements-ogilvy-caa-production/"
+          },
+          {
+            "type": "independent_reporting",
+            "title": "A.I.-Generated Celebrity Ads Get an Assist From Terry Crews | The New York Times",
+            "url": "https://www.nytimes.com/2026/11/09/business/media/ogilvy-caa-ai-ads.html"
+          }
+        ],
+        "stop_slop_score": 45,
+        "stop_slop_breakdown": {
+          "directness": 9,
+          "rhythm": 9,
+          "trust": 9,
+          "authenticity": 9,
+          "density": 9
+        },
+        "voice_fidelity_score": 9,
+        "construction_pass": true,
+        "construction_checklist": {
+          "word_count_150_250": true,
+          "hook": true,
+          "verified_event_explanation": true,
+          "interpretation": true,
+          "exact_marketer_transition": true,
+          "two_to_five_visible_bullets": true,
+          "takeaway_label": true,
+          "factual_fidelity": true,
+          "stack_independent_value": true
+        },
+        "argument_review": {
+          "status": "pass",
+          "correction_cycles": 0
+        },
+        "factual_fidelity": true,
+        "review_notes": "Claude Opus produced the initial draft without fallback. Zero correction cycles required. All qualifications from the evidence packet are present in the article: company figures attributed as claims, consent terms noted as private, pilot clients unnamed, watermark comprehension gap noted per Digiday, no external legal review asserted. Stack-independent value confirmed: five governance bullets apply regardless of ECHO or WPP adoption.",
+        "writer_model": "claude-opus-5-5",
+        "writer_provider": "claude-code",
+        "writer_fallback_used": false,
+        "writer_attempts": [
+          {
+            "model": "opus",
+            "status": "success"
+          }
+        ],
+        "markdown_path": "/home/ranson/.hermes/social-queue/linkedin/2026-11-11-ogilvy-echo-reviewed.md",
+        "stack_independent_value": true
+      },
+      "performance": {
+        "tracking_status": "awaiting_publication_data",
+        "publication_url": null,
+        "published_at": null,
+        "forecast": {
+          "relevance": 8,
+          "topicality": 10,
+          "viral_potential": 9,
+          "predicted_audience_response": "Brand and legal teams will ask what consent infrastructure actually requires, how it differs from existing talent agreements, and who bears liability when an AI-generated asset is used outside the documented scope."
+        },
+        "day_7": null,
+        "day_30": null,
+        "qualitative_outcome": null,
+        "editorial_lesson": null
+      },
       "events": [
         {
           "at": "2026-11-11T09:00:00-05:00",
           "type": "topic_queue_created",
           "actor": "scheduled_research",
           "detail": "Created exactly three ranked AI marketing and martech topics from November 8-11, 2026 within the 72-hour window. All three fall inside the window (OpenAI Business Hub Nov 10, Google AI Mode expansion Nov 9, Ogilvy/CAA ECHO Nov 9). Awaiting topic approval."
+        },
+        {
+          "at": "2026-11-11T14:00:00-05:00",
+          "type": "topic_approved",
+          "actor": "discord_user",
+          "detail": "User approved option 3, Ogilvy and CAA build consent infrastructure for licensed AI celebrity replicas, for drafting and review only. Cover generation and LinkedIn publication remain unauthorized."
+        },
+        {
+          "at": "2026-11-11T14:30:00-05:00",
+          "type": "post_reviewed",
+          "actor": "recruitzero_content_workflow",
+          "detail": "Claude Opus produced the initial draft without fallback. Zero correction cycles required. All qualifications preserved. Argument review pass, stop-slop 45/50, voice fidelity 9/10, construction pass, factual fidelity pass, stack-independent value pass. Awaiting explicit post approval."
         }
       ]
     }
