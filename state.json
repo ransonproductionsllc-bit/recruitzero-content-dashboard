@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-11-11T10:01:42-05:00",
+  "updated_at": "2026-11-11T10:04:54-05:00",
   "sync": {
     "status": "connected",
     "discord_guild_id": "1553886101003837561",
@@ -6008,9 +6008,9 @@
       "kind": "content",
       "title": "AI marketing and martech topic approval queue",
       "created_at": "2026-11-11T09:00:00-05:00",
-      "updated_at": "2026-11-11T10:01:42-05:00",
-      "status": "approved",
-      "stage": "post_approval",
+      "updated_at": "2026-11-11T10:04:54-05:00",
+      "status": "complete",
+      "stage": "assets_complete",
       "topic_options": [
         {
           "option": 1,
@@ -6477,12 +6477,25 @@
           "type": "cover_generation_authorized",
           "actor": "discord_user",
           "detail": "User explicitly authorized Stage 3 cover generation for the approved revised post. LinkedIn publication remains manual and unauthorized."
+        },
+        {
+          "at": "2026-11-11T10:04:54-05:00",
+          "type": "assets_completed",
+          "actor": "recruitzero_content_workflow",
+          "detail": "Generated the approved cover with openai-codex gpt-image-2-medium, visually inspected the original, exported and re-inspected the canonical 1200x627 PNG, and synchronized the final asset. Nothing was published to LinkedIn."
         }
       ],
       "assets": {
-        "cover_status": "authorized_pending_generation",
+        "cover_status": "complete",
         "cover_provider": "openai-codex",
-        "cover_model": "gpt-image-2-medium"
+        "cover_model": "gpt-image-2-medium",
+        "cover_url": "assets/ai-martech-topic-queue-2026-11-11-cover.png",
+        "cover_local_path": "/home/ranson/.hermes/social-queue/linkedin/2026-11-11-ogilvy-echo-cover.png",
+        "cover_original_path": "/home/ranson/.hermes/social-queue/linkedin/2026-11-11-ogilvy-echo-cover-original.png",
+        "cover_dimensions": "1200x627",
+        "original_dimensions": "1735x907",
+        "visual_inspection": "pass",
+        "review_page_url": "https://ransonproductionsllc-bit.github.io/recruitzero-content-dashboard/review.html?id=ai-martech-topic-queue-2026-11-11"
       }
     },
     {
