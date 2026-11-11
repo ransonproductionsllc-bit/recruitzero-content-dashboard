@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-11-11T10:04:54-05:00",
+  "updated_at": "2026-11-11T12:30:00-05:00",
   "sync": {
     "status": "connected",
     "discord_guild_id": "1553886101003837561",
@@ -11,6 +11,238 @@
     "dashboard_refresh_seconds": 60
   },
   "active_queue": [
+    {
+      "id": "chatgpt-business-profiles-2026-11-11",
+      "kind": "content",
+      "title": "ChatGPT Business Profiles Turn Company Data Into Discovery Infrastructure",
+      "created_at": "2026-11-11T12:30:00-05:00",
+      "updated_at": "2026-11-11T12:30:00-05:00",
+      "status": "awaiting_post_approval",
+      "stage": "post_approval",
+      "source_item_note": "Meaningful-advance follow-up to ai-martech-topic-queue-2026-11-11 Option 1 (not selected in that queue; Option 3 Ogilvy/ECHO was selected). This item covers business-information management as a cross-platform marketing responsibility. It is a separate stable item and does not alter, reopen, or overwrite the completed Ogilvy/ECHO article.",
+      "topic": {
+        "option": "user_approved_direct",
+        "title": "ChatGPT Business Profiles Turn Company Data Into Discovery Infrastructure",
+        "selected": true,
+        "approved_via": "discord",
+        "approved_at": "2026-11-11T12:00:00-05:00",
+        "proposed_hook": "ChatGPT may have created its Google Business Profile moment. That does not mean marketers know how to rank in it.",
+        "marketer_angle": "Business-information management is becoming a cross-platform marketing responsibility. When ChatGPT, Google, your website, and product feeds hold conflicting data about your business, there is no documented tiebreaker and no guarantee that what you submit wins.",
+        "event_date": "2026-11-10",
+        "novelty": "meaningful_advance",
+        "novelty_rationale": "The completed Ogilvy/ECHO article covered AI avatar consent infrastructure. This article covers a distinct operating-model change: business-information management becoming a cross-platform marketing responsibility as AI surfaces multiply. The November 11 queue surfaced this topic as Option 1 but selected Option 3; this item records the user-approved follow-up treatment.",
+        "sources": [
+          {
+            "type": "primary_company_announcement",
+            "title": "Introducing Businesses in ChatGPT | OpenAI",
+            "url": "https://openai.com/index/introducing-businesses-chatgpt"
+          },
+          {
+            "type": "primary_help_documentation",
+            "title": "Setting up your business on ChatGPT | OpenAI Help Center",
+            "url": "https://help.openai.com/en/articles/20001635-businesses-in-chatgpt"
+          },
+          {
+            "type": "primary_policy_terms",
+            "title": "Businesses in ChatGPT Terms | OpenAI",
+            "url": "https://openai.com/policies/businesses-in-chatgpt-terms"
+          },
+          {
+            "type": "primary_policy",
+            "title": "Businesses in ChatGPT Policy | OpenAI",
+            "url": "https://openai.com/policies/businesses-in-chatgpt"
+          },
+          {
+            "type": "primary_policy",
+            "title": "Business Agents Policy | OpenAI",
+            "url": "https://openai.com/policies/business-agents-policy/"
+          },
+          {
+            "type": "independent_context",
+            "title": "ChatGPT Business Hub: Claiming Your Business, Explained | SearchOps",
+            "url": "https://searchops.co/blog/chatgpt-business-hub-claim-your-business"
+          },
+          {
+            "type": "independent_context",
+            "title": "OpenAI launches Businesses in ChatGPT, with claimable profiles and Business Agents | IT SalesaaS",
+            "url": "https://itsalesaas.com/news/openai-businesses-in-chatgpt-business-agents"
+          },
+          {
+            "type": "practitioner_commentary_discovery_only",
+            "title": "Greg Isenberg X post on Businesses in ChatGPT",
+            "url": "https://x.com/gregisenberg/status/2120250534670012721",
+            "note": "Practitioner hypothesis and commentary only — not factual evidence; used for concept discovery."
+          },
+          {
+            "type": "openai_x_announcement",
+            "title": "OpenAI X post: Now in beta: Businesses in ChatGPT",
+            "url": "https://x.com/OpenAI/status/2120216592395174382"
+          }
+        ]
+      },
+      "claim_evidence": {
+        "status": "complete",
+        "path": "/home/ranson/.hermes/cache/scratch/chatgpt-business-profiles-claim-evidence.json",
+        "source_count": 7,
+        "verified_claim_count": 9,
+        "load_bearing_claims_traceable": true,
+        "qualifications_preserved": true,
+        "prohibited_overstatements_enforced": true,
+        "coverage_gaps": [
+          "Greg Isenberg's specific X post text was not fully retrieved (X login wall); content treated as practitioner commentary/hypothesis only.",
+          "Whether profile completeness has any undocumented influence on organic recommendation frequency — genuinely unknown; treated as unresolved unknown."
+        ]
+      },
+      "editorial_intelligence": {
+        "workflow_version": 2,
+        "deep_review_status": "pass",
+        "confidence": "qualified",
+        "confidence_limitation": "Beta only; availability depends on business location and type. The no-ranking guarantee is explicit in OpenAI terms. ChatGPT's actual source-priority behavior remains opaque. Future pricing not ruled out.",
+        "novelty": {
+          "status": "meaningful_advance",
+          "rationale": "Distinct operating-model change from the completed Ogilvy/ECHO article. Covers business-information management as a cross-platform marketing responsibility, not AI avatar consent."
+        },
+        "operational_impact": {
+          "status": "pass",
+          "chain": "OpenAI creates first-party business data channel in ChatGPT -> marketing teams now have an official mechanism to submit and update business data -> ChatGPT may supplement or override with other sources, creating source-authority conflicts -> businesses need to audit consistency across website, GBP, product feeds, and ChatGPT profile -> update workflows require new ownership -> Business Hub Insights provide first native mention and click data but are aggregated/threshold-gated."
+        },
+        "argument_review": {
+          "status": "pass",
+          "correction_cycles": 0,
+          "unsupported_inferences": [],
+          "missing_qualifications": [],
+          "vendor_framing_risks": [],
+          "counterargument": "The launch may be primarily a paid/advertising play (Business Agent sponsorships, ChatGPT Ads) rather than an organic data infrastructure change. The article addresses this directly by separating the paid layer and noting it does not influence organic answers.",
+          "operational_impact_status": "pass",
+          "operational_impact_rationale": "Article identifies the data-consistency job, concrete workflow bullets (audit, feeds as accuracy tools, insights as one signal), and frames takeaway as accuracy management, not ranking optimization.",
+          "novelty_status": "meaningful_advance",
+          "stack_independent_value": "pass",
+          "stack_independent_rationale": "The data-consistency and source-authority framing applies to any AI discovery surface, not just ChatGPT Business Hub.",
+          "required_corrections": [],
+          "residual_risks": [
+            "Business Hub beta terms may change; the no-ranking guarantee may be revised as the product matures.",
+            "ChatGPT's actual source-priority behavior remains opaque; 'no documented tiebreaker' is accurate but may become outdated.",
+            "Business Agents expansion timeline and future pricing not disclosed."
+          ]
+        },
+        "product_as_evidence": true,
+        "stack_independent_value": "pass"
+      },
+      "post": {
+        "status": "awaiting_approval",
+        "title": "ChatGPT Business Profiles Turn Company Data Into Discovery Infrastructure",
+        "body": "ChatGPT may have created its Google Business Profile moment. That does not mean marketers know how to rank in it.\n\nOpenAI launched Businesses in ChatGPT in beta on November 10. Eligible businesses can claim a profile, update key details, and add product feeds with pricing and availability, depending on location and business type.\n\nBut OpenAI is explicit: claiming does not guarantee higher placement or more sales. It may also supplement, edit, or replace your information using other sources.\n\nThat is where the GBP analogy stops. Google's profile has documented local-pack influence. Business Hub does not.\n\nWhat changes is data management. Your business data now lives across ChatGPT, Google, your website, and product feeds. When they disagree, there is no documented tiebreaker.\n\nFor marketers:\n\n- Audit for consistency. Hours, pricing, and product details should match across every source a model might read.\n- Treat feeds as accuracy tools, not ranking levers.\n- Use insights as one signal. Business Hub shows aggregated mentions and clicks only past reporting thresholds, not the questions behind them.\n\nThe paid layer is separate. Sponsorships and ChatGPT Ads do not influence organic answers. Business Agents, which let customers chat directly with your business, are currently US-only for ecommerce and online services.\n\nThe takeaway: claim the profile for accuracy, not ranking. The work is making your business data agree with itself.\n\nWho owns that consistency job on your team today?",
+        "word_count": 207,
+        "sources": [
+          {
+            "type": "primary_company_announcement",
+            "title": "Introducing Businesses in ChatGPT | OpenAI",
+            "url": "https://openai.com/index/introducing-businesses-chatgpt"
+          },
+          {
+            "type": "primary_help_documentation",
+            "title": "Setting up your business on ChatGPT | OpenAI Help Center",
+            "url": "https://help.openai.com/en/articles/20001635-businesses-in-chatgpt"
+          },
+          {
+            "type": "primary_policy_terms",
+            "title": "Businesses in ChatGPT Terms | OpenAI",
+            "url": "https://openai.com/policies/businesses-in-chatgpt-terms"
+          },
+          {
+            "type": "independent_context",
+            "title": "ChatGPT Business Hub: Claiming Your Business, Explained | SearchOps",
+            "url": "https://searchops.co/blog/chatgpt-business-hub-claim-your-business"
+          },
+          {
+            "type": "independent_context",
+            "title": "OpenAI launches Businesses in ChatGPT, with claimable profiles and Business Agents | IT SalesaaS",
+            "url": "https://itsalesaas.com/news/openai-businesses-in-chatgpt-business-agents"
+          }
+        ],
+        "stop_slop_score": 44,
+        "stop_slop_breakdown": {
+          "directness": 9,
+          "rhythm": 9,
+          "trust": 9,
+          "authenticity": 9,
+          "density": 8
+        },
+        "voice_fidelity_score": 9,
+        "construction_pass": true,
+        "construction_checklist": {
+          "word_count_150_250": true,
+          "hook": true,
+          "verified_event_explanation": true,
+          "interpretation": true,
+          "exact_marketer_transition": true,
+          "two_to_three_visible_bullets": true,
+          "takeaway_label": true,
+          "closing_question": true,
+          "factual_fidelity": true,
+          "stack_independent_value": true
+        },
+        "argument_review": {
+          "status": "pass",
+          "correction_cycles": 0,
+          "unsupported_inferences": [],
+          "missing_qualifications": [],
+          "vendor_framing_risks": [],
+          "counterargument": "The launch may be primarily a paid/advertising play. The article directly addresses this by separating the paid layer and noting it does not influence organic answers.",
+          "operational_impact_status": "pass",
+          "novelty_status": "meaningful_advance",
+          "stack_independent_value": "pass",
+          "required_corrections": [],
+          "residual_risks": [
+            "Business Hub beta terms may change; the no-ranking guarantee may be revised as the product matures.",
+            "ChatGPT's actual source-priority behavior remains opaque.",
+            "Business Agents expansion timeline and future pricing not disclosed."
+          ]
+        },
+        "factual_fidelity": true,
+        "review_notes": "Claude Opus produced the initial draft without fallback. Zero argument-review correction cycles required. All qualifications preserved per evidence packet. Stop-slop and humanizer pass applied; GBP analogy boundary tightened. Paid/organic separation integrated into argument flow rather than appended as trailing caveat.",
+        "writer_model": "claude-opus-5-5",
+        "writer_provider": "claude-code",
+        "writer_fallback_used": false,
+        "writer_attempts": [
+          {
+            "model": "opus",
+            "status": "success"
+          }
+        ],
+        "markdown_path": "/home/ranson/.hermes/social-queue/linkedin/2026-11-11-chatgpt-business-profiles-reviewed.md",
+        "stack_independent_value": true
+      },
+      "performance": {
+        "tracking_status": "awaiting_publication_data",
+        "publication_url": null,
+        "published_at": null,
+        "forecast": {
+          "relevance": 10,
+          "topicality": 10,
+          "viral_potential": 9,
+          "predicted_audience_response": "GEO, digital, and marketing operations practitioners will ask what claiming a profile changes operationally, who owns data consistency across AI surfaces, and whether Business Hub insights are sufficient for attribution."
+        },
+        "day_7": null,
+        "day_30": null,
+        "qualitative_outcome": null,
+        "editorial_lesson": null
+      },
+      "events": [
+        {
+          "at": "2026-11-11T12:30:00-05:00",
+          "type": "item_created",
+          "actor": "recruitzero_content_workflow",
+          "detail": "New standalone item created for the ChatGPT Business Profiles meaningful-advance article. User explicitly approved this angle in Discord, citing OpenAI X post and Greg Isenberg X post as evidence for one underlying event (OpenAI Business Hub beta launch). This item is separate from and does not alter the completed ai-martech-topic-queue-2026-11-11 Ogilvy/ECHO article."
+        },
+        {
+          "at": "2026-11-11T12:30:00-05:00",
+          "type": "post_reviewed",
+          "actor": "recruitzero_content_workflow",
+          "detail": "Claude Opus produced the draft without fallback. Zero interpretation red-team correction cycles. All qualifications preserved. Argument review pass, stop-slop 44/50, voice fidelity 9/10, construction pass, factual fidelity pass, stack-independent value pass. Awaiting explicit post approval."
+        }
+      ]
+    },
     {
       "id": "ai-martech-topic-queue-2026-10-20",
       "kind": "content",
