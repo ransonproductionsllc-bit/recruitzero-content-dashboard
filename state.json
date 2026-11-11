@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-11-10T09:00:00-05:00",
+  "updated_at": "2026-11-11T09:00:00-05:00",
   "sync": {
     "status": "connected",
     "discord_guild_id": "1553886101003837561",
@@ -6618,6 +6618,278 @@
           "type": "topic_queue_created",
           "actor": "scheduled_research",
           "detail": "Created exactly three ranked AI marketing and martech topics. Two fall inside the 72-hour window (Trade Desk earnings Nov 9, ChatGPT Ads bidding Nov 9); one uses the seven-day expansion (IAB attribution framework, release Nov 12). Awaiting topic approval."
+        }
+      ]
+    },
+    {
+      "id": "ai-martech-topic-queue-2026-11-11",
+      "kind": "content",
+      "title": "AI marketing and martech topic approval queue",
+      "created_at": "2026-11-11T09:00:00-05:00",
+      "updated_at": "2026-11-11T09:00:00-05:00",
+      "status": "awaiting_topic_approval",
+      "stage": "topic_approval",
+      "topic_options": [
+        {
+          "option": 1,
+          "rank": 1,
+          "title": "OpenAI establishes first-party data terms inside ChatGPT for brands",
+          "event_date": "2026-11-10",
+          "proposed_hook": "OpenAI now gives brands a profile, a business agent, and aggregated data on how customers find them in ChatGPT — and keeps the transcripts. The data brands get back is themes, not conversations. The data OpenAI keeps is the full record.",
+          "marketer_angle": "Brand, digital, and measurement teams need an operating policy for ChatGPT presence before they claim a profile: what information is supplied and who governs it, how aggregated discovery data fits into the measurement stack, what the absence of transcript access means for attribution and optimization, and whether organic presence and paid placement are governed by separate rules.",
+          "why_it_passed": "OpenAI published its primary announcement on November 10. The launch is live and available to eligible US ecommerce and online service businesses. Digiday (staff, Krystal Scanlon, November 10), ContentGrip, TechCrunch, and Particle News independently confirmed the architecture and terms. The operating distinction — brands supply information and govern the agent, OpenAI controls the model, transcript access, and organic ranking — is stated explicitly by OpenAI's VP of monetization and confirmed by an OpenAI spokesperson. The first-party visibility data the Business Hub provides is structurally different from search analytics, and the absence of prompt-level data, share of voice, and direct conversion evidence creates a gap between presence and performance that measurement teams must resolve.",
+          "operational_impact_chain": "OpenAI makes Business Hub and Business Agents available for eligible US brands -> brands supply product information and agent instructions while OpenAI controls the model and transcript access -> brand, digital, and GEO teams decide how to represent the business in ChatGPT and how to govern content accuracy -> measurement teams decide how to incorporate aggregated ChatGPT mention and click data alongside existing attribution signals -> paid and organic ChatGPT presences operate under separate governance rules -> brand performance, measurement completeness, and content-accuracy decisions change without underlying customer behavior being directly observable.",
+          "scores": {
+            "relevance": 10,
+            "relevance_rationale": "The launch changes information governance, measurement architecture, and the organic/paid boundary for brand, digital, GEO, and measurement teams with any customer base using ChatGPT.",
+            "topicality": 10,
+            "topicality_rationale": "OpenAI published the launch on November 10, 2026 — yesterday. Business Hub is live and available to eligible businesses now.",
+            "viral_potential": 9,
+            "viral_potential_rationale": "The structure — brand supplies data, OpenAI keeps the transcripts and controls organic ranking — creates an immediate tension between building presence and understanding whether that presence converts.",
+            "total": 29
+          },
+          "confidence": "qualified",
+          "confidence_limitation": "The launch is confirmed with specific architecture details from OpenAI primary sources. The first-party data Business Hub provides (mentions, website clicks, discovery topics) is live but limited: privacy thresholds withhold low-volume counts, share of voice is not included in this beta, and OpenAI says it may add paid options for Business Hub later. Claiming a profile does not guarantee higher placement in organic recommendations.",
+          "novelty": {
+            "result": "distinct",
+            "rationale": "The archive covers agentic campaign tools, ChatGPT ad bidding mechanics, ChatGPT ad architecture, and AI search discovery concepts. No archived item addresses a brand governance layer inside ChatGPT where brands supply information and an agent, OpenAI controls the model and transcripts, and measurement teams must reconcile aggregated platform-native visibility data with existing attribution signals."
+          },
+          "predicted_audience_response": "GEO and measurement teams will immediately ask what claiming a profile changes operationally, how ChatGPT mention counts fit into existing attribution models, and whether the absence of transcript access and share-of-voice data makes the Business Hub a governance tool rather than an analytics tool.",
+          "materiality_gates": {
+            "material_event": "pass_live_launch",
+            "editorial_thesis_fit": "pass",
+            "primary_evidence": "pass_openai_primary_announcement_and_vp_quotes",
+            "availability_clarity": "pass_live_us_ecommerce_and_online_services_limited",
+            "claim_discipline": "pass_with_data_gaps_and_absence_of_ranking_impact_documented",
+            "operational_impact": "pass",
+            "contradiction_search": "pass_with_limited_analytics_coverage_and_organic_ranking_independence_documented",
+            "archive_novelty": "pass_distinct"
+          },
+          "coverage_limitations": [
+            "Business Hub is in beta and limited to eligible US ecommerce and online service businesses; rollout to other markets and business categories has no announced timeline.",
+            "Privacy thresholds withhold low-volume mention and click counts; share of voice and prompt-level data are absent from this beta.",
+            "OpenAI did not share a timeline for further development but did not rule out paid options for Business Hub.",
+            "The organic vs. paid ranking distinction is stated by OpenAI but cannot be independently verified.",
+            "Reddit pool, X/Twitter named pool, and Marketing Week not retrieved this run."
+          ],
+          "sources": [
+            {
+              "type": "primary_company_announcement",
+              "title": "Introducing Businesses in ChatGPT | OpenAI",
+              "url": "https://openai.com/index/introducing-businesses-chatgpt"
+            },
+            {
+              "type": "independent_staff_reporting",
+              "title": "OpenAI's new business agents give brands a free way into the conversation it's also selling as an ad | Digiday",
+              "url": "https://digiday.com/marketing/openais-new-business-agents-give-brands-a-free-way-into-the-conversation-its-also-selling-as-an-ad/"
+            },
+            {
+              "type": "independent_context",
+              "title": "ChatGPT Business Hub gives brands new visibility data | ContentGrip",
+              "url": "https://contentgrip.com/openai-chatgpt-business-hub-agents/"
+            },
+            {
+              "type": "independent_context",
+              "title": "OpenAI rolls out new business profiles, making ChatGPT just a little bit more like Google | TechCrunch",
+              "url": "https://techcrunch.com/2026/11/10/openai-rolls-out-new-business-profiles-making-chatgpt-just-a-little-bit-more-like-google"
+            }
+          ]
+        },
+        {
+          "option": 2,
+          "rank": 2,
+          "title": "Google expands paid conversational search without giving advertisers a view of their results",
+          "event_date": "2026-11-09",
+          "proposed_hook": "Google's multiturn ads are now live in US AI Mode, and ads in AI Mode are reaching ten more countries in English. Advertisers are spending in those placements already. They cannot see what those placements cost or what they converted separately from everything else.",
+          "marketer_angle": "Paid media teams running Search, Shopping, or Performance Max campaigns need to tell stakeholders the truth now: AI Mode results are folded into campaign totals, there is no separate AI Mode CPA or ROAS, and the search terms showing in reports may approximate user intent rather than reproduce the exact query. That is not a minor reporting gap — it is the official state of affairs, and Black Friday arrives in sixteen days.",
+          "why_it_passed": "Google announced the multiturn and international expansion from the official Google Ads X account on November 9. Google's own advertiser documentation confirms AI Mode impressions, clicks, conversions, and costs are blended into standard campaign reporting with no separate breakdown. Search Engine Journal (staff), PPC Land, and multiple independent sources confirmed the reporting gap. Separately, Digiday published staff reporting on November 10 drawing on 18 named media buyers who described 10–30% of Google search budgets under scrutiny, with Alphabet's own Q3 earnings showing 12% search revenue growth, the slowest pace of the year. This is a cluster of events — official ad format expansion, official documentation of a measurement gap, and practitioner-level budget scrutiny — expressing the same operating problem: scale is growing but measurement authority is not keeping pace.",
+          "operational_impact_chain": "Google expands AI Mode ads to 10+ countries and launches multiturn ads in the US -> existing Search, Shopping, and Performance Max campaigns enter the auction automatically without opt-out or separate budget -> AI Mode impressions, clicks, and conversions are blended into standard campaign totals with no separate breakdown -> paid media teams cannot calculate an AI Mode-specific CPA or ROAS or verify whether reported search terms reflect the exact query -> budget holders demand channel-level performance evidence that campaign reporting cannot provide -> measurement processes, stakeholder communication, and budget authority decisions change before separate reporting exists.",
+          "scores": {
+            "relevance": 10,
+            "relevance_rationale": "Every team running Google Search, Shopping, or Performance Max campaigns is already spending in AI Mode placements that cannot be isolated in reporting, with Black Friday sixteen days away.",
+            "topicality": 10,
+            "topicality_rationale": "Google announced the AI Mode expansion and multiturn launch from its official X account on November 9; Digiday published the buyer-scrutiny report on November 10; Google's own documentation confirms the reporting limitation.",
+            "viral_potential": 9,
+            "viral_potential_rationale": "The structure — Google scales ad placements faster than it provides reporting, with Black Friday approaching — creates a concrete professional crisis and clear practitioner debate.",
+            "total": 29
+          },
+          "confidence": "high",
+          "confidence_limitation": "The ad format expansion, multiturn launch, and reporting limitations are documented from Google's own sources and independently confirmed. The 10–30% budget scrutiny figures come from named media buyer interviews (staff reporting) rather than a systematic study. Alphabet's Q3 earnings figures are filed. No independent audit of AI Mode placement performance exists.",
+          "novelty": {
+            "result": "distinct",
+            "rationale": "The archive covers ChatGPT ad bidding mechanics and TTD's measurement product announcement. No archived item addresses the specific operating problem of Google scaling conversational search ad inventory across markets while withholding placement-level reporting, forcing teams to manage budget authority without channel-specific performance data."
+          },
+          "predicted_audience_response": "PPC and paid media teams will immediately check whether their campaigns are eligible, ask how to explain the reporting gap to clients, and revisit what 'AI Mode' means for Black Friday conversion data.",
+          "materiality_gates": {
+            "material_event": "pass_official_expansion_announcement_and_documented_reporting_gap",
+            "editorial_thesis_fit": "pass",
+            "primary_evidence": "pass_google_ads_official_account_and_advertiser_documentation",
+            "availability_clarity": "pass_live_us_multiturn_and_10_plus_countries_expansion",
+            "claim_discipline": "pass_reporting_gap_is_stated_in_google_documentation",
+            "operational_impact": "pass",
+            "contradiction_search": "pass_with_google_citing_ai_mode_queries_as_incremental",
+            "archive_novelty": "pass_distinct"
+          },
+          "coverage_limitations": [
+            "Google has not provided a timeline for separate AI Mode reporting.",
+            "The 10–30% budget scrutiny figures are from named media buyer interviews, not a systematic industry study.",
+            "Alphabet's Q3 'lower monetization in AI Mode' statement does not disaggregate AI Mode revenue from total search revenue.",
+            "Reddit pool, X/Twitter named pool, and Marketing Week not retrieved this run.",
+            "EMARKETER and Axios Media Trends not retrieved this run."
+          ],
+          "sources": [
+            {
+              "type": "primary_official_announcement",
+              "title": "Ads in AI Mode just went global — Google Ads on X",
+              "url": "https://x.com/GoogleAds/status/2119835957184602518"
+            },
+            {
+              "type": "primary_advertiser_documentation",
+              "title": "Ads in AI Overviews and AI Mode | Google Ads Help",
+              "url": "https://support.google.com/google-ads/answer/18826097?hl=en"
+            },
+            {
+              "type": "independent_staff_reporting",
+              "title": "Google Expands Ads In AI Mode To 10+ Countries, Adds Multiturn Ads | Search Engine Journal",
+              "url": "https://searchenginejournal.com/google-expands-ads-in-ai-mode-multiturn-ads/596540"
+            },
+            {
+              "type": "independent_staff_reporting",
+              "title": "Google Search loses its free pass with buyers | Digiday",
+              "url": "https://digiday.com/marketing/google-search-loses-its-free-pass-with-buyers/"
+            }
+          ]
+        },
+        {
+          "option": 3,
+          "rank": 3,
+          "title": "Ogilvy and CAA build consent infrastructure for licensed AI celebrity replicas",
+          "event_date": "2026-11-09",
+          "proposed_hook": "Ogilvy and CAA launched a platform that turns a single celebrity shoot into 30 to 50 AI-generated ad assets — with the talent's documented consent and a visible watermark on every output. The question for brand and legal teams is not whether this is legal under the partnership agreement. It is whether consent infrastructure changes who owns the approval decision in AI-generated creative.",
+          "marketer_angle": "Brand, creative, and legal teams need a consent-and-approval governance model before AI-generated talent content enters production: documented consent terms, approval rights, correction and retraction processes, watermark and disclosure requirements, usage-scope boundaries, and the evidence standard for demonstrating that an AI-generated asset is within the licensed terms of a talent agreement.",
+          "why_it_passed": "Ogilvy and CAA announced the ECHO platform and their partnership on November 9. Ogilvy's own press page documents the consent-first architecture and watermarking requirement. The Hollywood Reporter, New York Times, Ad Age, and Digiday (Sam Bradley, staff) independently covered the launch. CAA's head of strategic development is named and quoted on consent mechanics. The platform uses CAA's existing Vault scanning infrastructure. The operative change is a formal consent-based licensing layer for AI replica production: talent approves all consumer-facing assets, every output carries a declared watermark, and usage is contractually bounded.",
+          "operational_impact_chain": "Ogilvy and CAA launch ECHO, a consent-based AI replica platform, on November 9 -> brands can license approved digital replicas of talent for new ad variations without full reshoots -> brand, creative production, and legal teams must define consent documentation, approval rights, usage scope, correction processes, and watermark requirements -> teams decide how AI-generated talent content fits within existing talent agreements and applicable regulations -> production cost, asset volume, creative turnaround, approval-chain responsibility, and liability for out-of-scope use all change.",
+          "scores": {
+            "relevance": 8,
+            "relevance_rationale": "The platform changes approval-chain responsibility, evidence standards for licensed AI creative, and legal team accountability for brand and creative production teams working with talent — but the immediate audience is narrower than platform-wide changes.",
+            "topicality": 10,
+            "topicality_rationale": "Ogilvy and CAA announced the launch on November 9, 2026 — yesterday. The Hollywood Reporter, New York Times, Digiday, and Ad Age covered it as staff reporting on the same day.",
+            "viral_potential": 9,
+            "viral_potential_rationale": "The consent-infrastructure framing — a formal licensed-replica model with explicit governance requirements — creates immediate debate about where brand accountability sits when AI scales what a single shoot produces.",
+            "total": 27
+          },
+          "confidence": "qualified",
+          "confidence_limitation": "The platform launch, consent architecture, and watermarking requirement are documented from Ogilvy's official press page and multiple independent sources. No external legal review of the consent terms, usage boundaries, or talent agreement specifics is public. The stated cost reduction (up to 75%) and asset-volume figures (30–50 from one shoot) are company claims. The initial pilot clients are not named and no independent brand or talent review is yet available.",
+          "novelty": {
+            "result": "distinct",
+            "rationale": "The archive covers AI-platform-generated creative liability and content production governance, but no archived item addresses a formal consent-based licensing infrastructure for AI-generated talent replicas that changes the approval-chain structure and evidence burden for brand and legal teams."
+          },
+          "predicted_audience_response": "Brand and legal teams will ask what consent infrastructure actually requires, how it differs from existing talent agreements, and who bears liability when an AI-generated asset is used outside the documented scope.",
+          "materiality_gates": {
+            "material_event": "pass_formal_launch_with_documented_consent_architecture",
+            "editorial_thesis_fit": "pass",
+            "primary_evidence": "pass_ogilvy_press_page_and_named_executive_quotes",
+            "availability_clarity": "pass_live_initial_pilot_clients_unnamed",
+            "claim_discipline": "pass_with_cost_and_volume_claims_attributed_to_company",
+            "operational_impact": "pass",
+            "contradiction_search": "pass_with_no_external_legal_review_or_independent_product_test",
+            "archive_novelty": "pass_distinct"
+          },
+          "coverage_limitations": [
+            "Initial pilot clients are not named; no independent brand or talent review is yet available.",
+            "Cost reduction and asset-volume figures are company claims, not independently verified.",
+            "The consent terms, usage-scope boundaries, and talent agreement specifics are not publicly disclosed.",
+            "No external legal review of compliance implications or regulatory exposure is available.",
+            "Reddit pool, X/Twitter named pool, Marketing Week, Axios Media Trends, and EMARKETER not retrieved this run."
+          ],
+          "sources": [
+            {
+              "type": "primary_company_press",
+              "title": "Ogilvy Launches ECHO, the Industry's First Consent-Based Creative AI Platform | Ogilvy",
+              "url": "https://www.ogilvy.com/ideas/ogilvy-launches-echo-industrys-first-talent-consent-based-creative-ai-platform"
+            },
+            {
+              "type": "independent_staff_reporting",
+              "title": "Ogilvy and CAA launch partnership to clone celebrity talent for AI ads | Digiday",
+              "url": "https://digiday.com/marketing/ogilvy-and-caa-launch-partnership-to-clone-celebrity-talent-for-ai-ads/"
+            },
+            {
+              "type": "independent_reporting",
+              "title": "CAA Wants to Create an AI-Generated Celebrity Advertising Machine | The Hollywood Reporter",
+              "url": "https://www.hollywoodreporter.com/business/business-news/caa-ai-celebrity-advertising-machine-1236751106/"
+            },
+            {
+              "type": "independent_reporting",
+              "title": "How AI replicas are changing the economics of celebrity endorsements | Ad Age",
+              "url": "https://adage.com/technology/ai/aa-changing-economics-celebrity-endorsements-ogilvy-caa-production/"
+            },
+            {
+              "type": "independent_reporting",
+              "title": "A.I.-Generated Celebrity Ads Get an Assist From Terry Crews | The New York Times",
+              "url": "https://www.nytimes.com/2026/11/09/business/media/ogilvy-caa-ai-ads.html"
+            }
+          ]
+        }
+      ],
+      "research": {
+        "source_cutoff": "2026-11-11T09:00:00-05:00",
+        "initial_window_start": "2026-11-08T09:00:00-05:00",
+        "discovery_window_hours": 72,
+        "discovery_window_expansion": null,
+        "event_ledger_path": "/home/ranson/.hermes/social-queue/research/2026-11-11-ai-martech-event-ledger.json",
+        "decision_journal_path": "/home/ranson/.hermes/social-queue/research/2026-11-11-ai-martech-decision-journal.md",
+        "reserve_candidate_count": 4,
+        "reserve_candidates": [
+          "Supermetrics Campaign Manager with AI chat-to-action (Nov 10) — MCP/AI-data-action space partially covered by TapClicks archive item",
+          "Adobe GenStudio CX Enterprise Coworker at Adobe MAX (Nov 10) — agentic content workflow; operating terrain partially covered by prior CMS and content items",
+          "Creator rate cards shifting to cost-per-conversion (Digiday, Nov 10) — no primary platform event",
+          "IAB AI attribution framework (Nov 12 release) — reserve from prior run; awaiting actual release tomorrow"
+        ],
+        "coverage_gaps": [
+          {
+            "source": "Marketing Week",
+            "status": "retrieved_no_new_material_event",
+            "cutoff_advanced": true,
+            "detail": "Retrieved. Staff articles on AI effectiveness and B2B brand visibility found; no new primary-event candidate within window."
+          },
+          {
+            "source": "Axios Media Trends",
+            "status": "not_retrieved",
+            "cutoff_advanced": false,
+            "detail": "Not retrieved this run."
+          },
+          {
+            "source": "Reddit pool (r/adops, r/PPC, r/analytics, r/SEO, r/MarketingAutomation)",
+            "status": "not_scanned",
+            "cutoff_advanced": false,
+            "detail": "Not scanned this run."
+          },
+          {
+            "source": "X/Twitter named pool",
+            "status": "not_scanned",
+            "cutoff_advanced": false,
+            "detail": "Not scanned this run."
+          },
+          {
+            "source": "EMARKETER",
+            "status": "partial_snippet_access",
+            "cutoff_advanced": false,
+            "detail": "Some content retrieved via search snippets; full article body not directly retrieved for all items."
+          },
+          {
+            "source": "IAB AI attribution framework text",
+            "status": "not_yet_released",
+            "cutoff_advanced": false,
+            "detail": "Framework releases November 12; primary text not available for review."
+          }
+        ]
+      },
+      "events": [
+        {
+          "at": "2026-11-11T09:00:00-05:00",
+          "type": "topic_queue_created",
+          "actor": "scheduled_research",
+          "detail": "Created exactly three ranked AI marketing and martech topics from November 8-11, 2026 within the 72-hour window. All three fall inside the window (OpenAI Business Hub Nov 10, Google AI Mode expansion Nov 9, Ogilvy/CAA ECHO Nov 9). Awaiting topic approval."
         }
       ]
     }
