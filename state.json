@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-11-12T10:17:36-05:00",
+  "updated_at": "2026-11-12T10:30:20-05:00",
   "sync": {
     "status": "connected",
     "discord_guild_id": "1553886101003837561",
@@ -14,15 +14,15 @@
     {
       "id": "chatgpt-business-profiles-2026-11-11",
       "kind": "content",
-      "title": "Your Business Is Telling ChatGPT Different Stories. Which Version Gets Shown?",
+      "title": "Your business is telling ChatGPT different stories. It picks which one to believe.",
       "created_at": "2026-11-11T12:30:00-05:00",
-      "updated_at": "2026-11-12T10:17:36-05:00",
+      "updated_at": "2026-11-12T10:30:20-05:00",
       "status": "complete",
       "stage": "assets_complete",
       "source_item_note": "Meaningful-advance follow-up to ai-martech-topic-queue-2026-11-11 Option 1 (not selected in that queue; Option 3 Ogilvy/ECHO was selected). This item covers business-information management as a cross-platform marketing responsibility. It is a separate stable item and does not alter, reopen, or overwrite the completed Ogilvy/ECHO article.",
       "topic": {
         "option": "user_approved_direct",
-        "title": "Your Business Is Telling ChatGPT Different Stories. Which Version Gets Shown?",
+        "title": "Your business is telling ChatGPT different stories. It picks which one to believe.",
         "selected": true,
         "approved_via": "discord",
         "approved_at": "2026-11-11T12:00:00-05:00",
@@ -130,9 +130,9 @@
       },
       "post": {
         "status": "approved",
-        "title": "Your Business Is Telling ChatGPT Different Stories. Which Version Gets Shown?",
-        "body": "OpenAI launched Businesses in ChatGPT in beta on November 10. It’s tempting to call it ChatGPT’s Google Business Profile moment. That framing is half right.\n\nOnce verified, eligible businesses can update profile details. Retailers can add product feeds with pricing and availability.\n\nGoogle documents local results around relevance, distance, and prominence, and says complete information can improve relevance. OpenAI has published no comparable ranking factors and says claiming does not guarantee higher placement or sales.\n\nWhat changes is who’s telling your story. For many businesses, hours, prices, and products may appear across ChatGPT, Google, websites, and product feeds. When those versions disagree, there is no documented tiebreaker. OpenAI may supplement, edit, replace, or decline submitted information using other sources.\n\nI’ve spent 15 years helping brands sound like one company across every channel. This is the same problem with a new reader.\n\nWhat to do now:\n\n- Audit for consistency. Key details should match everywhere a model might look.\n- Treat feeds as accuracy tools; do not assume they are ranking levers.\n- Read insights as one signal. Business Hub shows aggregated mentions and clicks past reporting thresholds, not exact prompts.\n\nSponsored placements and ChatGPT Ads do not influence organic answers. Business Agents are clearly labeled AI agents representing businesses, US-only and limited to ecommerce and online services.\n\nThe takeaway: claim your profile for accuracy, not ranking. The real work is getting your business to tell one story.\n\nWho owns that job on your team? Or is it falling between SEO, ecommerce, and brand?",
-        "word_count": 250,
+        "title": "Your business is telling ChatGPT different stories. It picks which one to believe.",
+        "body": "OpenAI launched Businesses in ChatGPT in beta on November 10. It's tempting to call it ChatGPT's Google Business Profile moment, but that framing is only half right.\nEligible businesses can now claim a profile, update key details, and add product feeds with pricing and availability, depending on location and business type.\nBut OpenAI is clear: claiming does not guarantee higher placement or more sales. ChatGPT may also supplement, edit, or replace your information using other sources.\nThat's where the GBP comparison falls flat. Google's profile has documented influence on the local pack. Business Hub doesn't. Paying won't fix it either. Sponsorships and ChatGPT Ads don't influence organic answers.\nWhat it does change is who's telling your story. Your hours, prices, and product details now live on ChatGPT, Google, your website, and your product feeds. When those versions disagree, there's no documented rule for which one wins. The model picks.\nI've spent years helping brands sound like one company across every channel. Same problem, new reader.\nWhat to do now:\nAudit for consistency. Hours, pricing, and product details should match everywhere a model might look.\nTreat feeds as accuracy tools, not ranking levers.\nRead the insights as one signal. Business Hub shows aggregated mentions and clicks once you pass reporting thresholds, not the exact prompts behind them.\nThe takeaway: claim your profile for accuracy, not ranking. The real work is getting your business to tell one story.\nSo who owns that job on your team? Or is it falling between SEO, ecommerce, and brand?",
+        "word_count": 253,
         "sources": [
           {
             "type": "primary_company_announcement",
@@ -171,36 +171,25 @@
         "voice_fidelity_score": 10,
         "construction_pass": true,
         "construction_checklist": {
-          "word_count_150_250": true,
+          "verbatim_user_copy_preserved": true,
+          "word_count_150_250": false,
+          "word_count_user_override": true,
           "hook": true,
           "verified_event_explanation": true,
           "interpretation": true,
           "workflow_guidance": true,
-          "three_visible_bullets": true,
           "takeaway_label": true,
           "closing_question": true,
-          "factual_fidelity": true,
           "stack_independent_value": true
         },
         "argument_review": {
-          "status": "pass",
-          "correction_cycles": 2,
-          "unsupported_inferences": [],
-          "missing_qualifications": [],
-          "vendor_framing_risks": [],
-          "counterargument": "Consistency is an accuracy practice, not evidence that profiles or feeds improve organic placement. The article states that boundary directly.",
-          "operational_impact_status": "pass",
-          "novelty_status": "meaningful_advance",
-          "stack_independent_value": "pass",
+          "status": "user_verbatim_override",
+          "correction_cycles": 0,
           "required_corrections": [],
-          "residual_risks": [
-            "Business Hub remains a beta and eligibility, terminology, thresholds, and availability may change.",
-            "OpenAI has not documented source-priority or ranking factors comparable to Google local search.",
-            "Consistent business data may improve accuracy but is not evidence of improved placement, traffic, or sales."
-          ]
+          "note": "The user explicitly instructed update without editing. Copy was stored verbatim; prior evidence qualifications remain in revision history and editorial metadata."
         },
-        "factual_fidelity": true,
-        "review_notes": "User supplied a post-approval replacement. Evidence review qualified profile/feed eligibility, replaced unsupported ranking and source-selection claims, aligned Google local-ranking language to primary documentation, clarified Business Agents, and preserved the user’s 15-year first-person experience. Final body is exactly 250 words and passed stop-slop 46/50 and voice 10/10.",
+        "factual_fidelity": false,
+        "review_notes": "Stored exactly as supplied after the user explicitly instructed “Update without editing.” No words or claims were changed. Body mechanically counted at 253 words. Existing approval, cover, sources, publishing boundary, and revision history were preserved.",
         "writer_model": "claude-opus-5-5",
         "writer_provider": "claude-code",
         "writer_fallback_used": false,
@@ -222,10 +211,39 @@
             "word_count": 207,
             "status": "approved",
             "reason": "Superseded by user-supplied post-approval copy revision; existing cover retained because the data-consistency concept remains aligned."
+          },
+          {
+            "at": "2026-11-12T10:30:20-05:00",
+            "title": "Your Business Is Telling ChatGPT Different Stories. Which Version Gets Shown?",
+            "body": "OpenAI launched Businesses in ChatGPT in beta on November 10. It’s tempting to call it ChatGPT’s Google Business Profile moment. That framing is half right.\n\nOnce verified, eligible businesses can update profile details. Retailers can add product feeds with pricing and availability.\n\nGoogle documents local results around relevance, distance, and prominence, and says complete information can improve relevance. OpenAI has published no comparable ranking factors and says claiming does not guarantee higher placement or sales.\n\nWhat changes is who’s telling your story. For many businesses, hours, prices, and products may appear across ChatGPT, Google, websites, and product feeds. When those versions disagree, there is no documented tiebreaker. OpenAI may supplement, edit, replace, or decline submitted information using other sources.\n\nI’ve spent 15 years helping brands sound like one company across every channel. This is the same problem with a new reader.\n\nWhat to do now:\n\n- Audit for consistency. Key details should match everywhere a model might look.\n- Treat feeds as accuracy tools; do not assume they are ranking levers.\n- Read insights as one signal. Business Hub shows aggregated mentions and clicks past reporting thresholds, not exact prompts.\n\nSponsored placements and ChatGPT Ads do not influence organic answers. Business Agents are clearly labeled AI agents representing businesses, US-only and limited to ecommerce and online services.\n\nThe takeaway: claim your profile for accuracy, not ranking. The real work is getting your business to tell one story.\n\nWho owns that job on your team? Or is it falling between SEO, ecommerce, and brand?",
+            "word_count": 250,
+            "status": "approved",
+            "stop_slop_score": 46,
+            "voice_fidelity_score": 10,
+            "argument_review": {
+              "status": "pass",
+              "correction_cycles": 2,
+              "unsupported_inferences": [],
+              "missing_qualifications": [],
+              "vendor_framing_risks": [],
+              "counterargument": "Consistency is an accuracy practice, not evidence that profiles or feeds improve organic placement. The article states that boundary directly.",
+              "operational_impact_status": "pass",
+              "novelty_status": "meaningful_advance",
+              "stack_independent_value": "pass",
+              "required_corrections": [],
+              "residual_risks": [
+                "Business Hub remains a beta and eligibility, terminology, thresholds, and availability may change.",
+                "OpenAI has not documented source-priority or ranking factors comparable to Google local search.",
+                "Consistent business data may improve accuracy but is not evidence of improved placement, traffic, or sales."
+              ]
+            },
+            "reason": "Superseded by an explicitly requested verbatim user revision."
           }
         ],
         "revision_author": "discord_user",
-        "revision_reviewed_at": "2026-11-12T10:17:36-05:00"
+        "revision_reviewed_at": "2026-11-12T10:30:20-05:00",
+        "factual_fidelity_override": "user_requested_verbatim_copy",
+        "verbatim_user_revision": true
       },
       "performance": {
         "tracking_status": "awaiting_publication_data",
@@ -272,6 +290,12 @@
           "type": "approved_post_copy_revised",
           "actor": "discord_user",
           "detail": "User supplied replacement copy after approval. The article was evidence-reviewed, compressed to exactly 250 words, and updated in place. Stop-slop 46/50, voice 10/10, factual fidelity, accessibility, construction, and stack-independent value passed. The existing approved cover was retained because its business-data consistency concept still matches. LinkedIn remains unpublished."
+        },
+        {
+          "at": "2026-11-12T10:30:20-05:00",
+          "type": "approved_post_copy_revised_verbatim",
+          "actor": "discord_user",
+          "detail": "User explicitly instructed “Update without editing.” The supplied headline and 253-word body were stored verbatim. Existing approval, sources, cover, asset history, and manual LinkedIn publishing boundary were preserved."
         }
       ],
       "assets": {
