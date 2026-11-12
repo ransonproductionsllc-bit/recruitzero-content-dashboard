@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-11-12T06:20:43-05:00",
+  "updated_at": "2026-11-12T09:30:00-05:00",
   "sync": {
     "status": "connected",
     "discord_guild_id": "1553886101003837561",
@@ -11,6 +11,264 @@
     "dashboard_refresh_seconds": 60
   },
   "active_queue": [
+    {
+      "id": "ai-martech-topic-queue-2026-11-12",
+      "kind": "content",
+      "title": "AI marketing and martech topic approval queue",
+      "created_at": "2026-11-12T09:30:00-05:00",
+      "updated_at": "2026-11-12T09:30:00-05:00",
+      "status": "awaiting_topic_approval",
+      "stage": "topic_approval",
+      "topic_options": [
+        {
+          "option": 1,
+          "rank": 1,
+          "title": "Attribution now has a vocabulary for AI — marketers need to decide if the words fit their stack",
+          "event_date": "2026-11-12",
+          "proposed_hook": "The IAB released a framework this morning that names, for the first time, three conversion types that existing analytics cannot track: agent-initiated, agent-recommended, and signal-triggered. Naming them is the easy part. Deciding which evidence standard your team accepts is the work.",
+          "marketer_angle": "Analytics, measurement, and paid media teams need to review the IAB AI-Era Attribution Blueprint before it enters agency RFP language and platform reporting discussions: understand which of the three conversion categories apply to their current AI advertising inventory, identify which existing measurement tools and data signals map to the new claim-and-evidence standard, and decide whether the framework's coverage and gaps match their actual attribution practice.",
+          "why_it_passed": "IAB released the AI-Era Attribution Blueprint today (November 12). The release was confirmed by MediaPost (staff, today) and cross-referenced against the IAB AI organization page, which documents the initiative, conversion categories, and working-group composition. The framework introduces agent-initiated, agent-recommended, and signal-triggered conversions as distinct claim types, each requiring a specific evidence standard. IAB's own VP of AI, Caroline Giegerich, confirmed the working group could not agree on everything — meaning the framework requires practitioner interpretation, not just adoption. The companion Measuring Visibility in the AI Era framework and AI Transparency Disclosure update were also released this month, making today's blueprint part of a coordinated measurement standards push.",
+          "operational_impact_chain": "IAB releases AI-Era Attribution Blueprint -> framework introduces three AI conversion categories with claim-and-evidence standards -> paid media, analytics, publisher, and measurement teams review whether their current tracking tools and data signals qualify under the new definitions -> teams decide which platform reporting claims are eligible vs. verified under the new framework -> attribution disputes, coverage gaps, RFP language, and contractual measurement standards all require revisiting as the framework enters industry use.",
+          "scores": {
+            "relevance": 10,
+            "relevance_rationale": "Attribution definitions from the IAB become the shared language in advertiser-agency-publisher contracts and platform reporting discussions, so this directly changes measurement governance for every team buying or evaluating AI-influenced advertising.",
+            "topicality": 10,
+            "topicality_rationale": "Released today, November 12, 2026. Framework is now a public industry document teams can act on.",
+            "viral_potential": 9,
+            "viral_potential_rationale": "IAB releasing a framework while its own working group disagreed on key points creates a concrete debate about whether industry standards can keep pace with AI platforms that remain opaque to measurement.",
+            "total": 29
+          },
+          "confidence": "qualified",
+          "confidence_limitation": "The IAB blueprint PDF is released but was not directly text-readable during this run. Conversion category definitions (agent-initiated, agent-recommended, signal-triggered) are documented from pre-release reporting and confirmed by the IAB AI organization page. The full document may contain additional constraints, definitions, or qualifications not yet retrieved. Working group disagreement on scope was confirmed by IAB VP of AI; exact nature of disagreements not fully documented. Framework creates a vocabulary and evidence standard, not enforcement — AI platforms are not required to disclose attribution signals.",
+          "novelty": {
+            "result": "meaningful_advance",
+            "rationale": "The reserve candidate entry from the November 11 queue noted the framework was 'not yet released.' It is now released with actual content details and conversion-category definitions. The November 10 queue covered ChatGPT ad bidding mechanics and Google AI Mode reporting gaps. No archived item covers a cross-industry attribution vocabulary for AI-influenced conversions."
+          },
+          "predicted_audience_response": "Measurement and paid-media teams will immediately check whether the framework's AI-influenced conversion definitions match their current tracking setup and ask which platform measurement tools are already compliant or building toward compliance.",
+          "materiality_gates": {
+            "material_event": "pass_framework_released_today",
+            "editorial_thesis_fit": "pass",
+            "primary_evidence": "pass_iab_organization_page_and_mediapost_staff_coverage_today",
+            "availability_clarity": "pass_public_today",
+            "claim_discipline": "pass_with_working_group_disagreement_preserved",
+            "operational_impact": "pass",
+            "contradiction_search": "pass_with_platform_opacity_and_non_enforcement_documented",
+            "archive_novelty": "pass_meaningful_advance"
+          },
+          "coverage_limitations": [
+            "IAB attribution blueprint PDF not directly text-readable during this run; full document content not independently verified line-by-line.",
+            "Working group disagreement on 'everything' (Giegerich's words) means the framework likely requires significant practitioner interpretation.",
+            "AI platforms are not required to implement or disclose attribution signals under this framework.",
+            "CMSWire, Marketing Week, Axios Media Trends, Reddit pool, and X/Twitter pool not retrieved this run."
+          ],
+          "sources": [
+            {
+              "type": "primary_iab_initiative_page",
+              "title": "IAB Artificial Intelligence — AI-Era Attribution Blueprint initiative",
+              "url": "https://www.iab.com/organizations/artificial-intelligence/"
+            },
+            {
+              "type": "independent_staff_reporting_release_coverage",
+              "title": "IAB Releases AI-Era Attribution Blueprint | MediaPost",
+              "url": "https://www.mediapost.com/publications/article/419316/iab-releases-ai-era-attribution-blueprint.html"
+            },
+            {
+              "type": "independent_staff_reporting_pre_release",
+              "title": "The IAB is developing a framework to tackle AI advertising measurement | Digiday",
+              "url": "https://digiday.com/media/the-iab-is-developing-a-framework-to-tackle-ai-advertising-measurement/"
+            },
+            {
+              "type": "independent_context",
+              "title": "IAB's AI ad measurement plan could redraw attribution for marketers | EMARKETER",
+              "url": "https://www.emarketer.com/content/iab-ai-ad-measurement-plan-redraw-attribution-marketers"
+            }
+          ]
+        },
+        {
+          "option": 2,
+          "rank": 2,
+          "title": "Amazon Ads Agent asks advertisers to trust the platform that regulators say hid its pricing",
+          "event_date": "2026-11-05",
+          "expanded_window_reason": "FTC unredacted complaint published November 5 — 7 days ago. The concept (advertising platform automation trust when auction transparency is under legal challenge) became acute this week with the Digiday framing connecting the FTC case to Ads Agent's launch. The operating question is current and gaining coverage.",
+          "proposed_hook": "Amazon is asking advertisers to hand campaign planning, targeting, and optimization to Ads Agent. The FTC says Amazon spent years hiding how its auction pricing actually worked. Advertisers cannot independently verify either story — and that is the operating problem.",
+          "marketer_angle": "Advertisers running or evaluating Amazon Ads Agent need to decide what verification rights, audit standards, and performance evidence they will require before extending automation authority to a platform that is simultaneously under active regulatory scrutiny for undisclosed pricing changes. The question applies to any AI ad platform that controls the auction, sets pricing rules, and reports on performance.",
+          "why_it_passed": "Two primary events: (1) FTC unredacted complaint November 5, confirmed directly from FTC.gov, alleges Amazon secretly imposed surcharges of 50–250% above auction results on ordinary and major shopping days. Amazon's official response is filed and disputes the characterization. (2) Amazon Ads Agent, launched at unBoxed, lets advertisers set objectives and budgets while AI handles targeting, allocation, and optimization. Amazon reports beta testers saw 67% higher long-term ad spend return and 29% lower cost per new-to-brand customer — company-reported, not independently verified. Digiday staff reporting November 10 (confirmed) explicitly frames both events as the same operating tension. The concept is stack-independent: the question of how to govern AI automation on a platform you cannot independently audit applies beyond Amazon.",
+          "operational_impact_chain": "FTC unredacted complaint publishes alleged auction manipulation details -> Amazon simultaneously asks advertisers to adopt Ads Agent AI automation -> advertisers must decide whether to extend automation authority to a platform accused of undisclosed pricing changes -> teams define what audit rights, verification standards, independent performance benchmarks, and contractual protections they require before adopting AI-managed campaign allocation -> oversight responsibility, budget governance, performance measurement, and automation scope decisions all change.",
+          "scores": {
+            "relevance": 9,
+            "relevance_rationale": "Every advertiser on Amazon must now make an explicit governance decision about whether to extend campaign automation authority to a platform under active regulatory scrutiny for the same pricing systems those campaigns will operate through.",
+            "topicality": 9,
+            "topicality_rationale": "FTC complaint unredacted November 5 (within 7-day expansion); Digiday framing connecting to Ads Agent published November 10–11; Amazon Ads Agent is live now.",
+            "viral_potential": 9,
+            "viral_potential_rationale": "The structure — a platform accused of secretly inflating prices now asking advertisers to trust its AI with campaign decisions — is a concrete and discussable conflict for anyone with Amazon ad budgets.",
+            "total": 27
+          },
+          "confidence": "qualified",
+          "confidence_limitation": "FTC allegations are unproven. Amazon disputes the characterization and argues advertisers optimize on outcomes, not auction descriptions. The legal proceedings are ongoing. Amazon reports Ads Agent performance figures that are company-reported and not independently tested. The operating question (whether to trust automation from an auditable-only-on-outcomes platform) is real regardless of whether the allegations are proven.",
+          "novelty": {
+            "result": "distinct",
+            "rationale": "The archive covers agentic campaign tools, ChatGPT ad architecture, and AI automation controls. No archived item addresses the structural conflict between AI advertising automation adoption and verifiable platform pricing trust when the platform is under active legal scrutiny for the same pricing it now automates. The FTC-plus-AI-automation framing is not in the archive."
+          },
+          "predicted_audience_response": "Amazon advertisers and media buyers will ask what audit rights they have, how to independently verify Ads Agent performance, and whether the FTC case changes what they should require from Amazon in contracts or platform reporting.",
+          "materiality_gates": {
+            "material_event": "pass_ftc_complaint_unredacted_plus_ads_agent_live",
+            "editorial_thesis_fit": "pass",
+            "primary_evidence": "pass_ftc_gov_press_release_and_amazon_response",
+            "availability_clarity": "pass_ads_agent_live_ftc_case_active",
+            "claim_discipline": "pass_all_allegations_attributed_amazon_response_included",
+            "operational_impact": "pass",
+            "contradiction_search": "pass_with_amazon_dispute_and_advertiser_savings_estimate_included",
+            "archive_novelty": "pass_distinct"
+          },
+          "coverage_limitations": [
+            "FTC allegations are allegations; Amazon disputes them. Legal proceedings are ongoing. The operating question is real regardless of the legal outcome.",
+            "Amazon's Ads Agent performance figures (67% higher ROAS, 29% lower cost per new customer) are company-reported, not independently verified.",
+            "Exact approval mechanics and opt-out options for Ads Agent not fully documented from primary sources retrieved.",
+            "Reddit pool, X/Twitter pool, Marketing Week, and Axios Media Trends not retrieved this run."
+          ],
+          "sources": [
+            {
+              "type": "primary_regulatory",
+              "title": "New Details Emerge in Amazon Ads Auction-Rigging Case | FTC.gov",
+              "url": "https://www.ftc.gov/news-events/news/press-releases/2026/11/new-details-emerge-amazon-ads-auction-rigging-case"
+            },
+            {
+              "type": "primary_company_response",
+              "title": "Amazon's response to the FTC's lawsuit regarding Sponsored Ads | About Amazon",
+              "url": "https://www.aboutamazon.com/company-news/amazon-ftc-sponsored-ads-lawsuit-response"
+            },
+            {
+              "type": "independent_staff_reporting",
+              "title": "Ad Tech Briefing: Amazon's auction trial puts agentic advertising's trust problem in focus | Digiday",
+              "url": "https://digiday.com/media-buying/ad-tech-briefing-amazons-auction-trial-puts-agentic-advertisings-trust-problem-in-focus"
+            }
+          ]
+        },
+        {
+          "option": 3,
+          "rank": 3,
+          "title": "Shopify's pay-per-sale model moves media risk — and merchant control — in opposite directions",
+          "event_date": "2026-10-28",
+          "expanded_window_reason": "Shopify Changelog published October 28 — 15 days ago, within the 7-day expansion window. AdExchanger staff reporting was November 10 (within 72 hours). Broad availability to all merchants is new as of October 28; the concept of platform-managed pay-per-sale cross-channel allocation including SEO is new as of this release.",
+          "proposed_hook": "Shopify now handles cross-channel media allocation and SEO for any merchant, charges per sale, and takes on the media risk. That is a genuinely different economics model. What merchants give up is the decision above each spend — and that is worth examining before signing up.",
+          "marketer_angle": "Merchants and marketing operators evaluating Campaign Autopilot need to understand what 'guardrails' means in practice: not setting bids, but setting the conditions under which Shopify's system can allocate their brand across channels, regions, and formats. The decision changes from optimizing a campaign to defining the terms a campaign must respect — and verification of those terms is not transparent by design.",
+          "why_it_passed": "Shopify Changelog confirms: Campaign Autopilot is now available to all merchants (October 28). Shopify VP of product Samir Pradhan confirmed to AdExchanger (November 10 staff reporting) that SEO optimization was added in the past few weeks. Merchants set a cost-per-sale target and guardrails; Shopify builds and allocates across Meta Advantage+, Microsoft Performance Max, Snapchat, Shop Campaigns, and Shopify Messaging — with X in the pipeline. Shopify bears the media cost risk; merchants pay only on confirmed sales. The SEO integration extends the system from paid into organic for the first time. Shopify's own documentation confirms Campaign Autopilot runs Meta Advantage+ and Microsoft Performance Max — both AI-driven optimization layers — meaning Shopify is orchestrating multiple AI systems that neither Shopify nor the merchant fully controls.",
+          "operational_impact_chain": "Shopify makes Campaign Autopilot available to all merchants with pay-per-sale pricing and SEO integration -> merchants set a target cost per sale and guardrails rather than optimizing bids -> Shopify allocates across six channels using AI optimization layers -> merchants cannot see the within-system allocation decisions or the channel-level CPA -> merchant decisions shift from media buying to defining guardrails, verifying attribution, and auditing whether Shopify's choices match the business's actual margins and priorities -> production cost, channel mix, SEO-paid integration, and performance measurement all change.",
+          "scores": {
+            "relevance": 9,
+            "relevance_rationale": "The model changes what marketing operations manages (guardrails vs. bidding), who bears media risk, and how performance is measured for any merchant using the system.",
+            "topicality": 8,
+            "topicality_rationale": "Changelog is October 28 (7-day expansion); AdExchanger reporting is November 10 (within 72 hours). The broad availability to all merchants is the material change — previously limited.",
+            "viral_potential": 9,
+            "viral_potential_rationale": "Pay-per-sale with platform-controlled allocation creates a concrete debate about whether merchants gain simplicity and lose governance, and whether SEO folded into the same system as paid changes the brand-safety calculus.",
+            "total": 26
+          },
+          "confidence": "high",
+          "confidence_limitation": "The product features and pricing model are confirmed from primary sources. The claim that Shopify 'takes the media risk' is stated by Shopify VP and confirmed in product documentation. Within-campaign allocation decisions are not transparent — merchants set guardrails and see conversion outcomes, not channel-by-channel spend decisions. No independent performance comparison versus merchant-managed paid campaigns is available.",
+          "novelty": {
+            "result": "distinct",
+            "rationale": "No archived item covers a commerce platform that assumes media risk, manages cross-channel allocation using AI optimization layers, and extends into SEO — all behind a single per-sale pricing model. The Shopify Fall 2026 Edition reserve candidate from October 29 was flagged as partially covered; the full commercial availability and SEO integration are new and make this a distinct operating-model story."
+          },
+          "predicted_audience_response": "Merchants and marketing operators will ask what 'guardrails' they actually control, whether the per-sale model works for their margin economics, and whether SEO recommendations coming from the same system as paid allocation create a conflict of priorities.",
+          "materiality_gates": {
+            "material_event": "pass_broad_availability_and_seo_integration_new",
+            "editorial_thesis_fit": "pass",
+            "primary_evidence": "pass_shopify_changelog_and_named_vp_adexchanger_interview",
+            "availability_clarity": "pass_all_merchants_now_with_channel_requirements_documented",
+            "claim_discipline": "pass_with_media_risk_and_per_sale_pricing_attributed",
+            "operational_impact": "pass",
+            "contradiction_search": "pass_with_allocation_opacity_and_ai_optimization_layers_documented",
+            "archive_novelty": "pass_distinct"
+          },
+          "coverage_limitations": [
+            "Within-campaign allocation decisions are not disclosed to merchants; transparency limited to conversion outcomes.",
+            "No independent performance comparison versus merchant-managed paid campaigns available.",
+            "SEO optimization capability is in recommendation form (merchants review and approve); full SEO automation is not yet implemented.",
+            "X integration is in pipeline, not yet live.",
+            "Event date is 15 days ago; primary evidence is within 7-day expansion window."
+          ],
+          "sources": [
+            {
+              "type": "primary_changelog",
+              "title": "More channels and features now available in Campaign Autopilot | Shopify Changelog",
+              "url": "https://changelog.shopify.com/posts/more-channels-and-features-now-available-in-campaign-autopilot"
+            },
+            {
+              "type": "independent_staff_reporting",
+              "title": "Shopify Noses Further Into Ad Tech With Campaign Autopilot Expansion | AdExchanger",
+              "url": "https://www.adexchanger.com/commerce/shopifyautopilot/"
+            }
+          ]
+        }
+      ],
+      "research": {
+        "source_cutoff": "2026-11-12T09:30:00-05:00",
+        "initial_window_start": "2026-11-09T00:00:00-05:00",
+        "discovery_window_hours": 72,
+        "discovery_window_expansion": "7_days_used_for_options_2_and_3",
+        "event_ledger_path": "/home/ranson/.hermes/social-queue/research/2026-11-12-ai-martech-event-ledger.json",
+        "decision_journal_path": "/home/ranson/.hermes/social-queue/research/2026-11-12-ai-martech-decision-journal.md",
+        "reserve_candidate_count": 4,
+        "reserve_candidates": [
+          "OpenAI ad business 'advertisers come third' framing — Shomair at LUMA Summit, Nov 9–10",
+          "Google AI Mode search terms invisible study — Kerhoas agency study of 400+ accounts, Nov 9",
+          "Mars / LLM brand visibility for agentic commerce — Reynolds Digiday interview, Nov 11",
+          "IAB Advertising to AI Agents companion initiative (machines as audience)"
+        ],
+        "coverage_gaps": [
+          {
+            "source": "CMSWire",
+            "status": "not_retrieved",
+            "cutoff_advanced": false,
+            "detail": "Not retrieved this run."
+          },
+          {
+            "source": "Marketing Week",
+            "status": "not_retrieved",
+            "cutoff_advanced": false,
+            "detail": "Not retrieved this run."
+          },
+          {
+            "source": "Axios Media Trends",
+            "status": "not_retrieved",
+            "cutoff_advanced": false,
+            "detail": "Not retrieved this run."
+          },
+          {
+            "source": "Reddit pool (r/adops, r/PPC, r/analytics, r/SEO, r/MarketingAutomation)",
+            "status": "not_scanned",
+            "cutoff_advanced": false,
+            "detail": "Not scanned this run."
+          },
+          {
+            "source": "X/Twitter named pool",
+            "status": "not_scanned",
+            "cutoff_advanced": false,
+            "detail": "Not scanned this run."
+          },
+          {
+            "source": "EMARKETER",
+            "status": "partial_snippet_access",
+            "cutoff_advanced": false,
+            "detail": "IAB framework coverage retrieved via snippet; full article body not directly retrieved."
+          },
+          {
+            "source": "IAB AI-Era Attribution Blueprint PDF",
+            "status": "released_not_text_readable",
+            "cutoff_advanced": false,
+            "detail": "PDF confirmed released today; not text-readable via browser. Content confirmed via IAB organization page and multiple independent sources."
+          }
+        ]
+      },
+      "events": [
+        {
+          "at": "2026-11-12T09:30:00-05:00",
+          "type": "topic_queue_created",
+          "actor": "scheduled_research",
+          "detail": "Created exactly three ranked AI marketing and martech topics. Option 1 (IAB attribution blueprint) is released today (Nov 12) — meaningful advance over the reserve candidate from the Nov 11 run. Options 2 (Amazon FTC + Ads Agent) and 3 (Shopify Campaign Autopilot) used the 7-day expansion window. All three passed all eight materiality gates. Awaiting topic approval."
+        }
+      ]
+    },
     {
       "id": "chatgpt-business-profiles-2026-11-11",
       "kind": "content",
