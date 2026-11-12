@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-11-11T12:30:00-05:00",
+  "updated_at": "2026-11-12T06:20:43-05:00",
   "sync": {
     "status": "connected",
     "discord_guild_id": "1553886101003837561",
@@ -16,9 +16,9 @@
       "kind": "content",
       "title": "ChatGPT Business Profiles Turn Company Data Into Discovery Infrastructure",
       "created_at": "2026-11-11T12:30:00-05:00",
-      "updated_at": "2026-11-11T12:30:00-05:00",
-      "status": "awaiting_post_approval",
-      "stage": "post_approval",
+      "updated_at": "2026-11-12T06:20:43-05:00",
+      "status": "complete",
+      "stage": "assets_complete",
       "source_item_note": "Meaningful-advance follow-up to ai-martech-topic-queue-2026-11-11 Option 1 (not selected in that queue; Option 3 Ogilvy/ECHO was selected). This item covers business-information management as a cross-platform marketing responsibility. It is a separate stable item and does not alter, reopen, or overwrite the completed Ogilvy/ECHO article.",
       "topic": {
         "option": "user_approved_direct",
@@ -129,7 +129,7 @@
         "stack_independent_value": "pass"
       },
       "post": {
-        "status": "awaiting_approval",
+        "status": "approved",
         "title": "ChatGPT Business Profiles Turn Company Data Into Discovery Infrastructure",
         "body": "ChatGPT may have created its Google Business Profile moment. That does not mean marketers know how to rank in it.\n\nOpenAI launched Businesses in ChatGPT in beta on November 10. Eligible businesses can claim a profile, update key details, and add product feeds with pricing and availability, depending on location and business type.\n\nBut OpenAI is explicit: claiming does not guarantee higher placement or more sales. It may also supplement, edit, or replace your information using other sources.\n\nThat is where the GBP analogy stops. Google's profile has documented local-pack influence. Business Hub does not.\n\nWhat changes is data management. Your business data now lives across ChatGPT, Google, your website, and product feeds. When they disagree, there is no documented tiebreaker.\n\nFor marketers:\n\n- Audit for consistency. Hours, pricing, and product details should match across every source a model might read.\n- Treat feeds as accuracy tools, not ranking levers.\n- Use insights as one signal. Business Hub shows aggregated mentions and clicks only past reporting thresholds, not the questions behind them.\n\nThe paid layer is separate. Sponsorships and ChatGPT Ads do not influence organic answers. Business Agents, which let customers chat directly with your business, are currently US-only for ecommerce and online services.\n\nThe takeaway: claim the profile for accuracy, not ranking. The work is making your business data agree with itself.\n\nWho owns that consistency job on your team today?",
         "word_count": 207,
@@ -211,7 +211,9 @@
           }
         ],
         "markdown_path": "/home/ranson/.hermes/social-queue/linkedin/2026-11-11-chatgpt-business-profiles-reviewed.md",
-        "stack_independent_value": true
+        "stack_independent_value": true,
+        "approved_at": "2026-11-12T06:20:43-05:00",
+        "approved_via": "discord"
       },
       "performance": {
         "tracking_status": "awaiting_publication_data",
@@ -240,8 +242,32 @@
           "type": "post_reviewed",
           "actor": "recruitzero_content_workflow",
           "detail": "Claude Opus produced the draft without fallback. Zero interpretation red-team correction cycles. All qualifications preserved. Argument review pass, stop-slop 44/50, voice fidelity 9/10, construction pass, factual fidelity pass, stack-independent value pass. Awaiting explicit post approval."
+        },
+        {
+          "at": "2026-11-12T06:20:43-05:00",
+          "type": "post_approved",
+          "actor": "discord_user",
+          "detail": "User explicitly approved the reviewed ChatGPT Business Profiles article and authorized Stage 3 cover generation. LinkedIn publication remains manual and unauthorized."
+        },
+        {
+          "at": "2026-11-12T06:20:43-05:00",
+          "type": "assets_completed",
+          "actor": "recruitzero_content_workflow",
+          "detail": "Generated and visually inspected the production cover with openai-codex gpt-image-2-medium, then exported and re-inspected the canonical 1200x627 PNG. Nothing was published to LinkedIn."
         }
-      ]
+      ],
+      "assets": {
+        "cover_status": "complete",
+        "cover_provider": "openai-codex",
+        "cover_model": "gpt-image-2-medium",
+        "cover_url": "assets/chatgpt-business-profiles-2026-11-11-cover.png",
+        "cover_local_path": "/home/ranson/.hermes/social-queue/linkedin/2026-11-11-chatgpt-business-profiles-cover.png",
+        "cover_original_path": "/home/ranson/.hermes/social-queue/linkedin/2026-11-11-chatgpt-business-profiles-cover-original.png",
+        "cover_dimensions": "1200x627",
+        "original_dimensions": "1734x907",
+        "visual_inspection": "pass",
+        "review_page_url": "https://ransonproductionsllc-bit.github.io/recruitzero-content-dashboard/review.html?id=chatgpt-business-profiles-2026-11-11"
+      }
     },
     {
       "id": "ai-martech-topic-queue-2026-10-20",
