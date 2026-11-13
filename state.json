@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-11-12T10:30:20-05:00",
+  "updated_at": "2026-11-13T09:30:00-05:00",
   "sync": {
     "status": "connected",
     "discord_guild_id": "1553886101003837561",
@@ -11,6 +11,283 @@
     "dashboard_refresh_seconds": 60
   },
   "active_queue": [
+    {
+      "id": "ai-martech-topic-queue-2026-11-13",
+      "kind": "content",
+      "title": "AI marketing and martech topic approval queue",
+      "created_at": "2026-11-13T09:30:00-05:00",
+      "updated_at": "2026-11-13T09:30:00-05:00",
+      "status": "awaiting_topic_approval",
+      "stage": "topic_approval",
+      "topic_options": [
+        {
+          "option": 1,
+          "rank": 1,
+          "title": "Google is running AI Mode ads in 10 markets without giving advertisers the query data",
+          "event_date": "2026-11-09",
+          "expanded_window_reason": "Search Engine Land study published November 9 (96 hours before this run). The underlying market event (AI Mode ad expansion to 10 additional markets) was October 28. The reporting gap is confirmed and operationally current: advertisers in those markets are now receiving AI Mode placements with no dedicated performance reporting.",
+          "proposed_hook": "Google says AI Mode queries run three times longer than standard searches. An independent analysis of 400+ Google Ads accounts found no sign of that in search terms reports. Advertisers are now spending money in a placement type that doesn't surface in their data.",
+          "marketer_angle": "Paid search, analytics, and media operations teams need to decide what measurement evidence they will require before allocating budget to AI Mode placements. The practical work is: document which campaigns now run in AI Mode markets, establish a baseline using the November 3-9 week before the core update, define what attribution evidence your team will accept for AI-influenced conversions, and decide what spend authorization requires that evidence to exist.",
+          "why_it_passed": "Rémi Kerhoas (Performance Director, Eskimoz) published an independent analysis in Search Engine Land (November 9, staff-edited and reviewed) covering 400+ Google Ads accounts across the US, UK, and France. The analysis found no evidence of the 3x longer query pattern Google publicly attributes to AI Mode appearing in standard search terms reports. TechWyse independently confirmed the same gap for Canadian advertisers after Google expanded AI Mode ads to 10 additional markets on October 28. This is not a theoretical measurement concern: advertisers in those markets are receiving placements. The IAB AI-Era Attribution Blueprint (November 12) explicitly names cross-channel AI conversion tracking as the industry's top measurement challenge — 44% of ad buyers are using branded search and direct traffic as proxies for AI influence they cannot track.",
+          "operational_impact_chain": "Google expands AI Mode ads to 10 additional markets without dedicated performance reporting -> advertisers receive AI Mode placements in search terms reports that don't isolate AI Mode queries -> paid search teams cannot distinguish AI Mode traffic from standard traffic in standard reporting -> measurement, bid optimization, and attribution decisions are made without AI-specific signal -> teams must decide what spend authorization requires attribution evidence to exist, and what constitutes sufficient evidence in its absence.",
+          "scores": {
+            "relevance": 10,
+            "relevance_rationale": "Directly changes the measurement authority and decision accountability of every paid search team now running in AI Mode markets — which include the US, Canada, UK, Australia, India, and others.",
+            "topicality": 9,
+            "topicality_rationale": "Study published November 9 (7-day expansion); AI Mode ad expansion confirmed October 28. The measurement gap is a present operating condition, not a forecast.",
+            "viral_potential": 9,
+            "viral_potential_rationale": "A platform simultaneously expanding placements and withholding the query-level data that would let advertisers evaluate them creates a concrete governance conflict every paid search team can recognize.",
+            "total": 28
+          },
+          "confidence": "qualified",
+          "confidence_limitation": "Single-agency dataset (Eskimoz). Accounts may skew commercial, which could suppress AI Mode queries that tend toward informational. TechWyse confirmed the same pattern independently for Canadian markets. Google has not commented on the reporting gap. The 7-day window expansion is used because the study is 96h old; the market event is 16 days old but the operational gap is current.",
+          "novelty": {
+            "result": "distinct",
+            "rationale": "No archived RecruitZero item covers the specific measurement gap created when a platform expands AI-driven ad placements without surfacing the query-level data in standard reporting. The IAB attribution blueprint item (cleared Nov 12 queue) covered attribution taxonomy; this item covers active spend accountability."
+          },
+          "predicted_audience_response": "Paid search and analytics teams will check whether their own accounts show the same gap, ask what reporting Google plans to add, and debate whether to hold AI Mode spend until the data exists.",
+          "materiality_gates": {
+            "material_event": "pass_independent_study_400plus_accounts",
+            "editorial_thesis_fit": "pass",
+            "primary_evidence": "pass_search_engine_land_staff_article_named_author",
+            "availability_clarity": "pass_ai_mode_ads_live_in_10_markets",
+            "claim_discipline": "pass_with_agency_scope_and_commercial_skew_stated",
+            "operational_impact": "pass",
+            "contradiction_search": "pass_with_non_ai_specific_explanations_documented",
+            "archive_novelty": "pass_distinct"
+          },
+          "coverage_limitations": [
+            "Single-agency dataset; Eskimoz accounts may skew commercial, which could suppress informational AI Mode queries.",
+            "Google has not responded to the study or confirmed a timeline for AI Mode-specific reporting.",
+            "The study covers Q1 2024 to Q3 2026; exact pre/post AI Mode expansion comparison is not isolated.",
+            "CMSWire, Marketing Week, Axios Media Trends, Reddit pool, and X/Twitter pool not retrieved this run."
+          ],
+          "sources": [
+            {
+              "type": "primary_independent_study",
+              "title": "AI search activity is nearly invisible in Google Ads search terms reports: Study | Search Engine Land",
+              "url": "https://searchengineland.com/ai-search-activity-invisible-google-ads-search-terms-reports-study-500872",
+              "author": "Rémi Kerhoas",
+              "editors": "Angel Niñofranco, Danny Goodwin",
+              "published": "2026-11-09"
+            },
+            {
+              "type": "independent_confirmation",
+              "title": "Google Ads AI Search Reporting Gap Exposed by Study | TechWyse",
+              "url": "https://www.techwyse.com/news/ai-search/google-ads-ai-search-terms-reporting-gap",
+              "published": "2026-11-10"
+            },
+            {
+              "type": "primary_platform_announcement",
+              "title": "Google AI Mode multiturn ads are now rolling out | Search Engine Land",
+              "url": "https://searchengineland.com/google-ai-mode-multiturn-ads-are-now-rolling-out-501176",
+              "published": "2026-11-09"
+            },
+            {
+              "type": "independent_context_standards",
+              "title": "IAB Releases AI-Era Attribution Blueprint | IAB.com",
+              "url": "https://www.iab.com/news/iab-releases-ai-era-attribution-blueprint/",
+              "note": "Provides market-scale context: 44% of ad buyers using branded search and direct traffic as proxies for AI influence. Used for context, not as a claim source.",
+              "published": "2026-11-12"
+            }
+          ]
+        },
+        {
+          "option": 2,
+          "rank": 2,
+          "title": "OpenAI says advertiser goals come third in ChatGPT. That's a governance document.",
+          "event_date": "2026-11-09",
+          "primary_article_date": "2026-11-10",
+          "proposed_hook": "OpenAI's VP of monetization said publicly that in ChatGPT advertising, user trust comes first, user value comes second, and advertisers come third. Some partner requests have already been refused. That is not just a philosophy statement — it is a constraint list that advertisers should be building governance checklists against.",
+          "marketer_angle": "Advertisers running or planning ChatGPT campaigns need to build a governance layer against the five public constraints OpenAI has stated: mission alignment, answer independence, conversation privacy, choice and control, and user trust over revenue. The practical work is confirming which of those constraints your current campaign briefs and measurement expectations respect, and which require renegotiation with your agency or directly with OpenAI's partner team.",
+          "why_it_passed": "Benji Shomair (VP of Monetization, OpenAI) stated five governing principles for the ChatGPT ad business at LUMA Partners' Digital Media Summit in New York City on November 9. AdExchanger (staff, Allison Schiff) published the report on November 10. The five principles are stated publicly and explicitly: mission alignment, answer independence, conversation privacy, choice and control, and user trust > revenue. Shomair confirmed some partner requests have been refused. The statement 'answers are separate from ads and not influenced by ads' creates a verifiable constraint for advertisers. The company has onboarded 50+ ad tech, measurement, and agency partners in under a year.",
+          "operational_impact_chain": "OpenAI states five public governing constraints for ChatGPT advertising and confirms some partner requests refused -> advertisers building ChatGPT campaigns must map their creative, targeting, measurement, and optimization requests against those constraints -> governance checklist needed before each brief to confirm compliance with answer independence, conversation privacy, and mission alignment principles -> advertisers who cannot verify constraint compliance face undocumented campaign refusal risk -> brand safety, measurement, and media-buying authority decisions change.",
+          "scores": {
+            "relevance": 9,
+            "relevance_rationale": "Every advertiser running or planning ChatGPT campaigns now has five named constraints to build governance against, and confirmation that some partners have already been refused for violating them.",
+            "topicality": 9,
+            "topicality_rationale": "LUMA Digital Media Summit was November 9; AdExchanger staff report published November 10 — within 72 hours.",
+            "viral_potential": 9,
+            "viral_potential_rationale": "A major platform declaring advertisers' interests explicitly rank below users' creates an immediate debate about whether this governance model is principled or performative — and what it means for ad budgets.",
+            "total": 27
+          },
+          "confidence": "qualified",
+          "confidence_limitation": "The five principles are stated, not documented in a public policy file (no equivalent of a Business Hub terms document). Enforcement and refusal criteria are not public. What 'answer independence' prohibits in practice is not documented beyond Shomair's statement. AdExchanger web_extract was blocked; content confirmed via AdExchanger snippet, Digital Influence summary, and multiple independent corroborating sources.",
+          "novelty": {
+            "result": "distinct",
+            "rationale": "No archived item covers the named governance constraints of OpenAI's ChatGPT ad business or what advertiser compliance looks like against them. The ChatGPT business profiles item (Nov 11) covers business information management; this item covers ad campaign governance constraints."
+          },
+          "predicted_audience_response": "Advertisers and agencies will ask what 'answer independence' prohibits in practice, whether the five principles are contractual, and how to verify that a campaign brief complies before submitting to OpenAI's partner team.",
+          "materiality_gates": {
+            "material_event": "pass_named_executive_public_statement_named_event",
+            "editorial_thesis_fit": "pass",
+            "primary_evidence": "pass_adexchanger_staff_article_named_author",
+            "availability_clarity": "pass_chatgpt_ads_live_50plus_partners",
+            "claim_discipline": "pass_with_enforcement_mechanism_unverifiable_stated",
+            "operational_impact": "pass",
+            "contradiction_search": "pass_no_independent_refusal_documentation_available",
+            "archive_novelty": "pass_distinct"
+          },
+          "coverage_limitations": [
+            "Five governing principles stated by Shomair; not documented in a public policy file. Enforcement and refusal criteria not public.",
+            "AdExchanger full article text not retrieved (web_extract blocked); content confirmed via multiple independent summaries.",
+            "What specific partner requests were refused, and on which principle, is not disclosed."
+          ],
+          "sources": [
+            {
+              "type": "primary_independent_staff_reporting",
+              "title": "In OpenAI's Ad Business, Advertisers Come Third | AdExchanger",
+              "url": "https://www.adexchanger.com/ai/in-openais-ad-business-advertisers-come-third/",
+              "author": "Allison Schiff (staff)",
+              "published": "2026-11-10"
+            },
+            {
+              "type": "independent_confirmation",
+              "title": "OpenAI ranks advertisers third behind user trust and value in ChatGPT ads | Digital Influence",
+              "url": "https://digitalinfluence.com/news/openai-ranks-advertisers-third-behind-user-trust-and-value-in-chatgpt",
+              "published": "2026-11-10"
+            }
+          ]
+        },
+        {
+          "option": 3,
+          "rank": 3,
+          "title": "Mars is measuring how AI assistants describe its brands. That's a new marketing job.",
+          "event_date": "2026-11-11",
+          "proposed_hook": "Mars's global chief customer officer told Digiday the company is buying data from emerging tech companies to understand how its brands show up in LLMs — and which sources those LLMs pull from. That is not a future-state initiative. It is running now, and it is a measurement job that didn't exist two years ago.",
+          "marketer_angle": "Consumer brands and B2B marketers need to decide who owns AI-platform brand visibility measurement: the brand team, the SEO team, the insights team, or a new cross-functional structure. Mars's operational answer — 'One Demand performance squads' connecting brand, insights, key accounts, category management, and agency — is a blueprint worth examining against your own org chart before agentic purchase behavior reaches your category.",
+          "why_it_passed": "Neil Reynolds (global chief customer officer, Mars) described the company's current operating response to agentic shopping in a Digiday staff interview published November 11. Specific, verifiable operational details: (1) active partnerships with emerging tech companies to measure how Mars brands surface in LLMs and which data sources those LLMs draw from; (2) 'One Demand performance squads' as a named organizational structure; (3) Publicis relationship extended to commerce and connected ID beyond media and creative; (4) tech-to-tech and data-team-to-data-team retailer conversations replacing salesperson-to-buyer meetings. The Mars/Kantar/Synthesis future of retail report (October 6, 180,000+ data signals) is the research foundation. McKinsey Agentic Commerce Consumer Survey (October 28, 21,000 consumers, 11 markets) provides independent market-scale context: AI search is 3.2x more influential than traditional search for AI users; 53% of global consumers now use AI for shopping.",
+          "operational_impact_chain": "Agentic shopping assistants increasingly build purchase consideration sets from LLM-sourced product information -> brands have no native visibility into how they appear in LLM recommendations or which data those recommendations draw from -> Mars acquires data from tech partners to establish a baseline for LLM brand presence -> cross-functional team structure ('One Demand performance squads') created to connect brand, insights, commerce, and agency around this measurement problem -> brand measurement, agency scope, retailer data relationships, and content strategy decisions change.",
+          "scores": {
+            "relevance": 9,
+            "relevance_rationale": "Describes an operating-model change happening now at a major consumer brand: new measurement programs, new team structures, and new agency scope being created specifically to manage brand visibility in AI shopping surfaces.",
+            "topicality": 9,
+            "topicality_rationale": "Digiday staff interview published November 11 — within 72 hours. Reynolds describes programs that are active, not planned.",
+            "viral_potential": 9,
+            "viral_potential_rationale": "A named CCO describing the specific organizational and measurement response to agentic commerce creates a concrete 'does our org have this?' discussion for every brand marketer.",
+            "total": 27
+          },
+          "confidence": "qualified",
+          "confidence_limitation": "Single executive interview. Mars's LLM brand performance data is not public; we know the measurement programs exist, not what they show. McKinsey survey (21,000 consumers) is cited for market scale context; it was published October 28, outside the 72h window but within the 7-day expansion threshold and used as independent corroboration, not as the primary event.",
+          "novelty": {
+            "result": "distinct",
+            "rationale": "No archived item covers the organizational and measurement response to agentic commerce brand visibility — the specific question of who owns LLM brand monitoring and how it integrates with existing teams. The ChatGPT Business Profiles item (Nov 11) covers claiming and managing structured business data in a single platform. This item covers cross-platform LLM brand measurement programs across commerce and retail surfaces."
+          },
+          "predicted_audience_response": "Brand managers, CMOs, and insights leaders will ask whether their organization has an equivalent measurement program, who would own it, and what technology partners they should be evaluating.",
+          "materiality_gates": {
+            "material_event": "pass_named_cco_digiday_staff_interview",
+            "editorial_thesis_fit": "pass",
+            "primary_evidence": "pass_digiday_staff_interview_plus_mars_kantar_synthesis_research_report",
+            "availability_clarity": "pass_programs_active_not_planned",
+            "claim_discipline": "pass_with_no_performance_data_public_stated",
+            "operational_impact": "pass",
+            "contradiction_search": "pass_mckinsey_independent_consumer_survey_corroborates_market_shift",
+            "archive_novelty": "pass_distinct"
+          },
+          "coverage_limitations": [
+            "Single executive interview; LLM brand appearance data not disclosed.",
+            "No naming of specific tech partners providing LLM visibility measurement.",
+            "McKinsey survey (October 28) used as independent market context; original event date is outside 72h window."
+          ],
+          "sources": [
+            {
+              "type": "primary_executive_interview_staff_reporting",
+              "title": "Mars prepares for the rise of AI grocery shopping | Digiday",
+              "url": "https://digiday.com/marketing/mars-wants-to-future-proof-impulse-buys-as-ai-poised-to-take-over-more-grocery-runs",
+              "subject": "Neil Reynolds, global chief customer officer, Mars",
+              "published": "2026-11-11"
+            },
+            {
+              "type": "primary_research_report",
+              "title": "Mars unveils the future of shopping and retail | Mars.com",
+              "url": "https://www.mars.com/news-and-stories/press-releases-statements/mars-unveils-future-shopping-retail-new-research",
+              "published": "2026-10-06",
+              "note": "Research foundation cited by Reynolds; 180,000+ data signals across four continents with Kantar and Synthesis."
+            },
+            {
+              "type": "independent_market_research",
+              "title": "Who wins when AI does the shopping? New evidence on agentic commerce | McKinsey",
+              "url": "https://www.mckinsey.com/capabilities/growth-marketing-and-sales/our-insights/who-wins-when-ai-does-the-shopping-new-evidence-on-agentic-commerce",
+              "published": "2026-10-28",
+              "note": "21,000-consumer survey, 11 markets. Used as independent market-scale corroboration, not as primary event."
+            }
+          ]
+        }
+      ],
+      "research": {
+        "source_cutoff": "2026-11-13T09:30:00-05:00",
+        "initial_window_start": "2026-11-10T00:00:00-05:00",
+        "discovery_window_hours": 72,
+        "discovery_window_expansion": "7_days_used_for_option_1",
+        "event_ledger_path": "/home/ranson/.hermes/social-queue/research/2026-11-13-ai-martech-event-ledger.json",
+        "decision_journal_path": "/home/ranson/.hermes/social-queue/research/2026-11-13-ai-martech-decision-journal.md",
+        "reserve_candidate_count": 4,
+        "reserve_candidates": [
+          "Constant Contact Catalyst agentic marketing agent (waitlist-only; resurface at GA)",
+          "Google November 2026 Core Update + Black Friday timing (standard update; no AI-specific angle for primary option)",
+          "IAB Agentic Ad Management Protocol (AAMP) agent registry (secondary blog summary; await primary IAB release)",
+          "McKinsey Agentic Commerce Consumer Survey standalone (Oct 28 primary event, 16 days old; used as corroboration for Option 3)"
+        ],
+        "coverage_gaps": [
+          {
+            "source": "CMSWire",
+            "status": "not_retrieved",
+            "cutoff_advanced": false,
+            "detail": "Not retrieved this run."
+          },
+          {
+            "source": "Marketing Week",
+            "status": "not_retrieved",
+            "cutoff_advanced": false,
+            "detail": "Not retrieved this run."
+          },
+          {
+            "source": "Axios Media Trends",
+            "status": "not_retrieved",
+            "cutoff_advanced": false,
+            "detail": "Not retrieved this run."
+          },
+          {
+            "source": "Reddit pool (r/adops, r/PPC, r/analytics, r/SEO, r/MarketingAutomation)",
+            "status": "not_scanned",
+            "cutoff_advanced": false,
+            "detail": "Not scanned this run."
+          },
+          {
+            "source": "X/Twitter named pool",
+            "status": "not_scanned",
+            "cutoff_advanced": false,
+            "detail": "Not scanned this run."
+          },
+          {
+            "source": "EMARKETER",
+            "status": "partial_snippet_access",
+            "cutoff_advanced": false,
+            "detail": "IAB framework context retrieved via snippet; full article body not directly retrieved."
+          },
+          {
+            "source": "AdExchanger (full article text)",
+            "status": "web_extract_blocked",
+            "cutoff_advanced": false,
+            "detail": "web_extract blocked in cron context. Key content confirmed via AdExchanger search snippets and multiple independent summaries."
+          },
+          {
+            "source": "The Information",
+            "status": "paywalled",
+            "cutoff_advanced": false,
+            "detail": "Google/Meta ad budget reallocation story referenced in AdExchanger Nov 11 roundup. Headline confirms direction; article body not retrieved. Not used as primary evidence."
+          }
+        ]
+      },
+      "events": [
+        {
+          "at": "2026-11-13T09:30:00-05:00",
+          "type": "topic_queue_created",
+          "actor": "scheduled_research",
+          "detail": "Created exactly three concept-led AI marketing and martech topic options. All three passed all eight materiality gates. Option 1 (Google AI Mode reporting gap, 28/30) uses the 7-day expansion window (study published Nov 9, 96h before run). Options 2 (OpenAI advertiser governance, 27/30) and 3 (Mars LLM brand measurement, 27/30) are within 72 hours. All three are distinct from archive. Awaiting topic approval."
+        }
+      ]
+    },
     {
       "id": "chatgpt-business-profiles-2026-11-11",
       "kind": "content",
