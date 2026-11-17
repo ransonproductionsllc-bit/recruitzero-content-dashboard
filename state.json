@@ -16,9 +16,9 @@
       "kind": "content",
       "title": "When AI Does the Shopping, Your Product Data Does the Selling",
       "created_at": "2026-11-17T08:00:00-05:00",
-      "updated_at": "2026-11-17T10:53:41-05:00",
-      "status": "cover_generation",
-      "stage": "cover_generation",
+      "updated_at": "2026-11-17T10:56:44-05:00",
+      "status": "complete",
+      "stage": "assets_complete",
       "topic_options": [
         {
           "option": 1,
@@ -378,6 +378,18 @@
           "actor": "user_via_discord",
           "detail": "User explicitly approved the supplied revision and authorized cover generation. LinkedIn publication remains manual and unauthorized.",
           "message_id": "1572278463962808401"
+        },
+        {
+          "at": "2026-11-17T10:55:50-05:00",
+          "type": "cover_generated",
+          "actor": "openai-codex/gpt-image-2-medium",
+          "detail": "Generated one approved landscape cover illustrating an AI shopping assistant selecting the product with the complete replacement-data path. No embedded text or third-party branding."
+        },
+        {
+          "at": "2026-11-17T10:56:44-05:00",
+          "type": "assets_completed",
+          "actor": "workflow",
+          "detail": "Exported and visually verified the final cover at exactly 1200x627. Dashboard package completed. LinkedIn remains unpublished and manual."
         }
       ],
       "topic": {
@@ -587,7 +599,7 @@
         "claim_evidence_path": "/home/ranson/.hermes/social-queue/research/2026-11-17-amazon-world-product-graph-claim-evidence.json",
         "stack_independent_value": true,
         "reviewed_at": "2026-11-17T10:22:36-05:00",
-        "cover_status": "authorized_pending_generation",
+        "cover_status": "complete",
         "publishing_status": "not_published_manual_only",
         "revision_history": [
           {
@@ -646,11 +658,25 @@
         "day_30": null
       },
       "assets": {
-        "cover_status": "generating",
+        "cover_status": "complete",
         "cover_authorized_at": "2026-11-17T10:53:41-05:00",
         "cover_authorized_via": "discord",
-        "cover_approval_message_id": "1572278463962808401"
-      }
+        "cover_approval_message_id": "1572278463962808401",
+        "cover_provider": "openai-codex",
+        "cover_model": "gpt-image-2-medium",
+        "cover_url": "assets/ai-martech-topic-queue-2026-11-17-cover.png",
+        "cover_local_path": "/home/ranson/.hermes/social-queue/linkedin/2026-11-17-amazon-world-product-graph-cover.png",
+        "cover_original_path": "/home/ranson/.hermes/social-queue/linkedin/2026-11-17-amazon-world-product-graph-cover-original.png",
+        "provider_output_path": "/home/ranson/.hermes/cache/images/openai_codex_gpt-image-2-medium_20261117_105550_708b2b2b.png",
+        "cover_dimensions": "1200x627",
+        "original_dimensions": "1672x941",
+        "visual_inspection": "pass",
+        "visual_inspection_notes": "Clear human-to-assistant comparison flow, visible incomplete gray path and complete orange selected path, no readable text, logos, watermarks, anatomy defects, generic robot imagery, or crop damage.",
+        "review_page_url": "https://ransonproductionsllc-bit.github.io/recruitzero-content-dashboard/review.html?id=ai-martech-topic-queue-2026-11-17",
+        "generated_at": "2026-11-17T10:55:50-05:00",
+        "completed_at": "2026-11-17T10:56:44-05:00"
+      },
+      "completed_at": "2026-11-17T10:56:44-05:00"
     },
     {
       "id": "ai-martech-topic-queue-2026-11-13",
