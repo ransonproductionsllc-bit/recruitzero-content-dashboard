@@ -16,7 +16,7 @@
       "kind": "content",
       "title": "If AI Shops for Customers, Who Owns the Product Record?",
       "created_at": "2026-11-17T08:00:00-05:00",
-      "updated_at": "2026-11-17T10:02:21-05:00",
+      "updated_at": "2026-11-17T10:22:36-05:00",
       "status": "awaiting_post_approval",
       "stage": "post_approval",
       "topic_options": [
@@ -172,10 +172,10 @@
           "rank": 3,
           "title": "If AI Shops for Customers, Who Owns the Product Record?",
           "event_date": "2026-11-13",
-          "proposed_hook": "Reuters reviewed an internal Amazon document describing a plan to index data on virtually every product for sale globally — including products Amazon doesn't sell — so AI shopping agents can't route buyers to competitors with richer product data. Amazon called it a brainstorming document. The race to become the canonical product record for AI agents is confirmed regardless.",
-          "marketer_angle": "Brand and ecommerce teams need to audit product data consistency and relationship quality across every platform where AI agents look — Amazon, Google, ChatGPT Business Hub, and their own sites. The race for product data authority means brands that don't actively manage this lose recommendations before the agent reaches their checkout.",
+          "proposed_hook": "AI shopping assistants may become a new layer between marketers and customers, reading and comparing product information before a person reaches a product page. Amazon's draft World Product Graph is evidence that major commerce platforms are preparing for that possibility, even though adoption remains limited and the proposal may never ship.",
+          "marketer_angle": "Marketing teams may need to assess product information for software as well as people: assign an accountable owner, define authoritative product facts and relationships, test representative assistant questions, document correction routes, and use an accuracy threshold before expanding feeds or automation.",
           "why_it_passed": "Reuters published an exclusive on November 13 based on an internal Amazon PR/FAQ document reviewed directly, corroborated by people familiar with the matter. Amazon confirmed the document exists and confirmed the catalog systems unit (Robert Tekiela, VP) leads the work, while calling it 'brainstorming' and disputing specific usage figures. The document describes: Amazon's own Alexa for Shopping producing inaccurate answers; shoppers leaving to research on Google/brand sites/forums; the goal of indexing product relationships across the whole internet including competitors' products; Coca-Cola and Bayer as early data contributors; a CEO-level P&G trial summit. Amazon blocked Meta's Muse agent in September and is in Perplexity litigation — corroborating the defensive posture. EMARKETER, The Verge, Engadget, and others provided independent secondary coverage. The broader operating concept is confirmed by parallel moves: Walmart Agent Gateway (agent-ready product/fulfillment data), OpenAI Business Hub (product feeds), Amazon Shop Direct and Buy for Me.",
-          "operational_impact_chain": "AI shopping agents use product data quality and relationship accuracy to build recommendation sets -> brands with inconsistent, incomplete, or relationship-poor product data are excluded from agent recommendation pools before the purchase decision -> Amazon, Walmart, OpenAI, and others are racing to become the canonical product record that agents use -> brand and ecommerce teams that do not audit and govern their product data across discovery surfaces lose the agent recommendation battle before it starts -> product catalog governance, cross-platform consistency, relationship documentation (variants, compatibility, succession), and feed accuracy become measurable controls.",
+          "operational_impact_chain": "AI shopping assistants may read and compare product facts before a customer reaches a product page -> platform incentives favor broader and more complete product records -> marketers need one accountable owner and an authoritative source for product relationships -> teams test assistant outputs across surfaces and log correction paths -> feeds or automation expand only after material facts meet a team-defined accuracy threshold.",
           "scores": {
             "relevance": 9,
             "relevance_rationale": "Product catalog quality and relationship documentation directly change what ecommerce, brand, and marketing operations teams are responsible for maintaining across AI discovery surfaces.",
@@ -186,7 +186,7 @@
             "total": 27
           },
           "confidence": "qualified",
-          "confidence_limitation": "Internal document only; Amazon called it 'brainstorming' and disputed specific figures. Reuters could not confirm implementation timeline. Aspirational release date Oct 1, 2027. The World Product Graph itself has not launched. The article angle rests on the confirmed broader race for product data authority (supported by multiple company actions), not on Amazon's specific internal plan.",
+          "confidence_limitation": "AI shopping-agent adoption remains limited and uneven. Amazon says the internal draft may not reflect current plans, Reuters could not confirm implementation, and platform behavior and correction routes vary.",
           "novelty": {
             "result": "distinct",
             "rationale": "No archived RecruitZero item covers product catalog data quality and relationship architecture as the multi-platform strategic battleground for AI shopping recommendations. ChatGPT Business Profiles (Nov 11) covered cross-platform business information accuracy in a single AI platform context. This covers the broader market structure question of who becomes the canonical product record for AI agents, and what brands should do to maintain their position in that race."
@@ -351,6 +351,19 @@
           "type": "post_queued_for_approval",
           "actor": "workflow",
           "detail": "Reviewed post deployed for approval. Cover generation remains locked pending explicit post approval; LinkedIn publication remains manual."
+        },
+        {
+          "at": "2026-11-17T10:17:00-05:00",
+          "type": "thesis_revision_requested",
+          "actor": "user_via_discord",
+          "detail": "User directed the article to center the rise of AI shopping assistants and workflow assessment, using Reuters and Amazon as evidence for the shift.",
+          "message_id": "1572269167720013845"
+        },
+        {
+          "at": "2026-11-17T10:22:36-05:00",
+          "type": "post_revised_and_reviewed",
+          "actor": "workflow",
+          "detail": "Claude Opus concept-led rewrite passed after one argument correction cycle. Final body: 237 words, stop-slop 46/50, voice 10/10, thesis alignment pass. Awaiting post approval; cover remains locked."
         }
       ],
       "topic": {
@@ -358,10 +371,10 @@
         "rank": 3,
         "title": "If AI Shops for Customers, Who Owns the Product Record?",
         "event_date": "2026-11-13",
-        "proposed_hook": "Reuters reviewed an internal Amazon document describing a plan to index data on virtually every product for sale globally — including products Amazon doesn't sell — so AI shopping agents can't route buyers to competitors with richer product data. Amazon called it a brainstorming document. The race to become the canonical product record for AI agents is confirmed regardless.",
-        "marketer_angle": "Brand and ecommerce teams need to audit product data consistency and relationship quality across every platform where AI agents look — Amazon, Google, ChatGPT Business Hub, and their own sites. The race for product data authority means brands that don't actively manage this lose recommendations before the agent reaches their checkout.",
+        "proposed_hook": "AI shopping assistants may become a new layer between marketers and customers, reading and comparing product information before a person reaches a product page. Amazon's draft World Product Graph is evidence that major commerce platforms are preparing for that possibility, even though adoption remains limited and the proposal may never ship.",
+        "marketer_angle": "Marketing teams may need to assess product information for software as well as people: assign an accountable owner, define authoritative product facts and relationships, test representative assistant questions, document correction routes, and use an accuracy threshold before expanding feeds or automation.",
         "why_it_passed": "Reuters published an exclusive on November 13 based on an internal Amazon PR/FAQ document reviewed directly, corroborated by people familiar with the matter. Amazon confirmed the document exists and confirmed the catalog systems unit (Robert Tekiela, VP) leads the work, while calling it 'brainstorming' and disputing specific usage figures. The document describes: Amazon's own Alexa for Shopping producing inaccurate answers; shoppers leaving to research on Google/brand sites/forums; the goal of indexing product relationships across the whole internet including competitors' products; Coca-Cola and Bayer as early data contributors; a CEO-level P&G trial summit. Amazon blocked Meta's Muse agent in September and is in Perplexity litigation — corroborating the defensive posture. EMARKETER, The Verge, Engadget, and others provided independent secondary coverage. The broader operating concept is confirmed by parallel moves: Walmart Agent Gateway (agent-ready product/fulfillment data), OpenAI Business Hub (product feeds), Amazon Shop Direct and Buy for Me.",
-        "operational_impact_chain": "AI shopping agents use product data quality and relationship accuracy to build recommendation sets -> brands with inconsistent, incomplete, or relationship-poor product data are excluded from agent recommendation pools before the purchase decision -> Amazon, Walmart, OpenAI, and others are racing to become the canonical product record that agents use -> brand and ecommerce teams that do not audit and govern their product data across discovery surfaces lose the agent recommendation battle before it starts -> product catalog governance, cross-platform consistency, relationship documentation (variants, compatibility, succession), and feed accuracy become measurable controls.",
+        "operational_impact_chain": "AI shopping assistants may read and compare product facts before a customer reaches a product page -> platform incentives favor broader and more complete product records -> marketers need one accountable owner and an authoritative source for product relationships -> teams test assistant outputs across surfaces and log correction paths -> feeds or automation expand only after material facts meet a team-defined accuracy threshold.",
         "scores": {
           "relevance": 9,
           "relevance_rationale": "Product catalog quality and relationship documentation directly change what ecommerce, brand, and marketing operations teams are responsible for maintaining across AI discovery surfaces.",
@@ -372,7 +385,7 @@
           "total": 27
         },
         "confidence": "qualified",
-        "confidence_limitation": "Internal document only; Amazon called it 'brainstorming' and disputed specific figures. Reuters could not confirm implementation timeline. Aspirational release date Oct 1, 2027. The World Product Graph itself has not launched. The article angle rests on the confirmed broader race for product data authority (supported by multiple company actions), not on Amazon's specific internal plan.",
+        "confidence_limitation": "AI shopping-agent adoption remains limited and uneven. Amazon says the internal draft may not reflect current plans, Reuters could not confirm implementation, and platform behavior and correction routes vary.",
         "novelty": {
           "result": "distinct",
           "rationale": "No archived RecruitZero item covers product catalog data quality and relationship architecture as the multi-platform strategic battleground for AI shopping recommendations. ChatGPT Business Profiles (Nov 11) covered cross-platform business information accuracy in a single AI platform context. This covers the broader market structure question of who becomes the canonical product record for AI agents, and what brands should do to maintain their position in that race."
@@ -447,14 +460,14 @@
         "workflow_version": 2,
         "deep_review_status": "pass",
         "confidence": "qualified",
-        "confidence_limitation": "The underlying Amazon PR/FAQ is unpublished and may be outdated. Amazon says it may not reflect current plans. Reuters could not confirm implementation, and the proposal may change or be abandoned.",
+        "confidence_limitation": "AI shopping-agent adoption remains limited and uneven. Amazon says the internal proposal may be outdated or not reflect current plans, and Reuters could not confirm whether it will proceed.",
         "novelty": {
           "status": "distinct",
           "rationale": "Recent RecruitZero work covered cross-platform business-information consistency and AI-avatar consent. This article addresses product relationships and governance as inputs to AI-assisted shopping."
         },
         "operational_impact": {
           "status": "pass",
-          "chain": "AI shopping systems may rely on product facts and relationships -> inconsistent records can produce conflicts or omissions -> teams need a named owner, an authoritative record, cross-surface checks, correction routes, and an accuracy threshold -> teams pause expansion while material facts remain wrong."
+          "chain": "AI shopping assistants may read and compare product facts before a customer reaches a product page -> platform incentives favor broader and more complete product records -> marketers need one accountable owner and an authoritative source for product relationships -> teams test assistant outputs across surfaces and log correction paths -> feeds or automation expand only after material facts meet a team-defined accuracy threshold."
         },
         "argument_review": {
           "status": "pass",
@@ -462,18 +475,18 @@
           "unsupported_inferences": [],
           "missing_qualifications": [],
           "vendor_framing_risks": [],
-          "counterargument": "Product-data governance is already a standard ecommerce discipline, and one unlaunched Amazon proposal does not prove a new market-wide function or a universal AI-shopping ranking mechanism.",
+          "counterargument": "Shopping-agent adoption remains limited, product-data governance already exists in ecommerce, and no evidence establishes one universal set of assistant fields or a universal ranking mechanism.",
           "operational_impact_status": "pass",
-          "operational_impact_rationale": "The body identifies an accountable owner, source-of-truth rule, relationship documentation, cross-surface checks, representative questions, correction paths, and a scale-or-pause accuracy threshold.",
+          "operational_impact_rationale": "The workflow assigns one accountable owner, defines authoritative records, tests representative shopping questions, logs conflicts and correction routes, and applies an accuracy-based scale/stop rule.",
           "novelty_status": "distinct",
           "stack_independent_value": "pass",
-          "stack_independent_rationale": "The governance model applies across brand sites, retailer feeds, search and discovery surfaces, and AI assistants even if Amazon abandons the proposal.",
+          "stack_independent_rationale": "The controls apply across brand sites, retailer feeds, search surfaces, and AI assistants regardless of whether Amazon implements World Product Graph.",
           "required_corrections": [],
           "residual_risks": [
-            "The internal PR/FAQ is not public, so details depend on Reuters characterization.",
-            "No evidence establishes that World Product Graph will ship or retain the reported scope.",
-            "No independent evidence establishes product-record accuracy as a ranking factor across AI shopping assistants.",
-            "No benchmark establishes the effect of cross-surface governance on recommendation visibility or conversion."
+            "The statement that adoption remains limited is attributed to Andy Jassy rather than an independent adoption benchmark.",
+            "The Amazon proposal may change or be abandoned.",
+            "Assistant behavior, supported product fields, and correction routes vary by platform.",
+            "No evidence establishes product-data quality as a universal ranking factor across shopping assistants."
           ]
         },
         "product_as_evidence": true,
@@ -482,8 +495,8 @@
       "post": {
         "status": "awaiting_approval",
         "title": "If AI Shops for Customers, Who Owns the Product Record?",
-        "body": "Reuters reviewed an internal Amazon draft proposing a \"World Product Graph,\" a system to gather information on products Amazon sells and does not sell using brand and retailer contributions plus crawling of retail sites. Amazon says the draft may be outdated and may not reflect current plans. The proposal may change or be abandoned.\n\nEven unlaunched, the draft shows one possible direction platform competition could take. It says shoppers leave Amazon for Google, brand sites, review sites, and forums to understand product relationships: newer versions, accessory compatibility, and fit for a specific need.\n\nIf AI shopping assistants rely on these facts and relationships, accurate product records could become part of discovery infrastructure: the information layer that helps products get found and understood. Brands that leave source information to others lose influence over those records and have less leverage to find and correct inconsistent descriptions.\n\nA practical workflow:\n- Assign an owner, typically catalog or ecommerce operations, with brand and analytics review.\n- Keep one source of truth, the authoritative record for material product facts.\n- Record variants, compatibility, successor models, and use-case fit.\n- Compare records across your site and major shopping and discovery sites.\n- Test representative shopping questions for conflicts and omissions.\n- Track each error through the correction route each site or tool provides.\n- Set an accuracy threshold before expanding feeds or automation. Pause while material facts remain wrong.\n\nAmazon may never build this. Marketers should still treat governing product records as discovery work and assign one accountable owner.",
-        "word_count": 246,
+        "body": "AI shopping assistants may become a new layer between marketers and customers: software that reads, compares, and acts on product information for a shopper.\n\nAdoption is still limited. Amazon CEO Andy Jassy said few customers shop much through agents yet. But Reuters reviewed an internal Amazon draft proposing a \"World Product Graph,\" combining data contributed by brands or retailers with information crawled from other retail sites, to map product relationships: which model is newer, which variant is current, what suits a given need. Amazon said drafts may not reflect current plans; Reuters couldn't confirm whether it will proceed. Amazon executives reportedly worry outside agents could route customers to sites with more complete product information.\n\nThe signal for marketers: product facts may need to work for software as well as people. An assistant may weigh compatibility, successor models, availability, and use-case fit before a customer arrives.\n\nReassess the workflow:\n\n- Ownership: assign one product-catalog or ecommerce-operations owner, with brand and analytics review.\n- Source of truth: identify the authoritative record and relationship fields.\n- Assistant testing: run representative shopping questions across available assistants and search surfaces.\n- Correction: log conflicts and omissions, plus each platform's correction route.\n- Scale/stop rule: set an accuracy threshold; resolve material errors before expanding feeds or automation, and pause when key facts remain wrong.\n\nYou can't control third-party descriptions. You can make your inputs clear, consistent, and correctable. That work matters whether or not Amazon's proposal ever ships.",
+        "word_count": 237,
         "sources": [
           {
             "type": "primary_news_exclusive",
@@ -519,24 +532,24 @@
           "authenticity": 9,
           "density": 9
         },
-        "voice_fidelity_score": 9,
+        "voice_fidelity_score": 10,
         "accessibility_status": "pass",
         "retained_specialist_terms": [
           {
+            "term": "AI shopping assistants",
+            "explanation": "Defined as software that reads, compares, and acts on product information for a shopper."
+          },
+          {
             "term": "World Product Graph",
-            "explanation": "Defined as a system gathering information on products Amazon sells and does not sell."
-          },
-          {
-            "term": "product relationships",
-            "explanation": "Explained through newer versions, accessory compatibility, and fit for a specific need."
-          },
-          {
-            "term": "discovery infrastructure",
-            "explanation": "Defined as the information layer that helps products get found and understood."
+            "explanation": "Described as a proposed system for mapping relationships among models, variants, and customer needs."
           },
           {
             "term": "source of truth",
-            "explanation": "Defined as the authoritative record for material product facts."
+            "explanation": "Translated in the article as the authoritative record and relationship fields."
+          },
+          {
+            "term": "scale/stop rule",
+            "explanation": "Defined through an accuracy threshold, error-resolution requirement, and pause condition."
           }
         ],
         "construction_pass": true,
@@ -547,18 +560,18 @@
           "unsupported_inferences": [],
           "missing_qualifications": [],
           "vendor_framing_risks": [],
-          "counterargument": "Product-data governance is already a standard ecommerce discipline, and one unlaunched Amazon proposal does not prove a new market-wide function or a universal AI-shopping ranking mechanism.",
+          "counterargument": "Shopping-agent adoption remains limited, product-data governance already exists in ecommerce, and no evidence establishes one universal set of assistant fields or a universal ranking mechanism.",
           "operational_impact_status": "pass",
-          "operational_impact_rationale": "The body identifies an accountable owner, source-of-truth rule, relationship documentation, cross-surface checks, representative questions, correction paths, and a scale-or-pause accuracy threshold.",
+          "operational_impact_rationale": "The workflow assigns one accountable owner, defines authoritative records, tests representative shopping questions, logs conflicts and correction routes, and applies an accuracy-based scale/stop rule.",
           "novelty_status": "distinct",
           "stack_independent_value": "pass",
-          "stack_independent_rationale": "The governance model applies across brand sites, retailer feeds, search and discovery surfaces, and AI assistants even if Amazon abandons the proposal.",
+          "stack_independent_rationale": "The controls apply across brand sites, retailer feeds, search surfaces, and AI assistants regardless of whether Amazon implements World Product Graph.",
           "required_corrections": [],
           "residual_risks": [
-            "The internal PR/FAQ is not public, so details depend on Reuters characterization.",
-            "No evidence establishes that World Product Graph will ship or retain the reported scope.",
-            "No independent evidence establishes product-record accuracy as a ranking factor across AI shopping assistants.",
-            "No benchmark establishes the effect of cross-surface governance on recommendation visibility or conversion."
+            "The statement that adoption remains limited is attributed to Andy Jassy rather than an independent adoption benchmark.",
+            "The Amazon proposal may change or be abandoned.",
+            "Assistant behavior, supported product fields, and correction routes vary by platform.",
+            "No evidence establishes product-data quality as a universal ranking factor across shopping assistants."
           ]
         },
         "writer_model": "claude-opus-5-5",
@@ -567,15 +580,35 @@
         "writer_attempts": [
           {
             "model": "opus",
-            "status": "success"
+            "status": "rejected_word_limit",
+            "word_count": 261
+          },
+          {
+            "model": "opus",
+            "status": "success",
+            "word_count_before_review": 238
           }
         ],
         "markdown_path": "/home/ranson/.hermes/social-queue/linkedin/2026-11-17-amazon-world-product-graph-reviewed.md",
         "claim_evidence_path": "/home/ranson/.hermes/social-queue/research/2026-11-17-amazon-world-product-graph-claim-evidence.json",
         "stack_independent_value": true,
-        "reviewed_at": "2026-11-17T10:02:21-05:00",
+        "reviewed_at": "2026-11-17T10:22:36-05:00",
         "cover_status": "not_authorized",
-        "publishing_status": "not_published_manual_only"
+        "publishing_status": "not_published_manual_only",
+        "revision_history": [
+          {
+            "at": "2026-11-17T10:22:36-05:00",
+            "reason": "User redirected the article to center the rise of AI shopping assistants and workflow assessment, using Reuters and Amazon as evidence rather than the subject.",
+            "title": "If AI Shops for Customers, Who Owns the Product Record?",
+            "body": "Reuters reviewed an internal Amazon draft proposing a \"World Product Graph,\" a system to gather information on products Amazon sells and does not sell using brand and retailer contributions plus crawling of retail sites. Amazon says the draft may be outdated and may not reflect current plans. The proposal may change or be abandoned.\n\nEven unlaunched, the draft shows one possible direction platform competition could take. It says shoppers leave Amazon for Google, brand sites, review sites, and forums to understand product relationships: newer versions, accessory compatibility, and fit for a specific need.\n\nIf AI shopping assistants rely on these facts and relationships, accurate product records could become part of discovery infrastructure: the information layer that helps products get found and understood. Brands that leave source information to others lose influence over those records and have less leverage to find and correct inconsistent descriptions.\n\nA practical workflow:\n- Assign an owner, typically catalog or ecommerce operations, with brand and analytics review.\n- Keep one source of truth, the authoritative record for material product facts.\n- Record variants, compatibility, successor models, and use-case fit.\n- Compare records across your site and major shopping and discovery sites.\n- Test representative shopping questions for conflicts and omissions.\n- Track each error through the correction route each site or tool provides.\n- Set an accuracy threshold before expanding feeds or automation. Pause while material facts remain wrong.\n\nAmazon may never build this. Marketers should still treat governing product records as discovery work and assign one accountable owner.",
+            "word_count": 246,
+            "stop_slop_score": 46,
+            "voice_fidelity_score": 9,
+            "status": "awaiting_approval"
+          }
+        ],
+        "thesis_alignment": "pass",
+        "review_notes": "Rebuilt around the user-directed thesis: AI shopping assistants are the central concept; Reuters and Amazon are supporting evidence. Final body passed evidence, operational-impact, accessibility, construction, stop-slop, voice, and thesis-alignment gates."
       },
       "performance_tracking": {
         "publication_status": "not_published",
