@@ -14,11 +14,11 @@
     {
       "id": "ai-martech-topic-queue-2026-11-17",
       "kind": "content",
-      "title": "AI marketing and martech topic approval queue",
+      "title": "If AI Shops for Customers, Who Owns the Product Record?",
       "created_at": "2026-11-17T08:00:00-05:00",
-      "updated_at": "2026-11-17T09:55:29-05:00",
-      "status": "drafting",
-      "stage": "writing_and_review",
+      "updated_at": "2026-11-17T10:02:21-05:00",
+      "status": "awaiting_post_approval",
+      "stage": "post_approval",
       "topic_options": [
         {
           "option": 1,
@@ -170,7 +170,7 @@
         {
           "option": 3,
           "rank": 3,
-          "title": "Amazon's plan to index every product reveals what the battle for agentic shopping authority looks like.",
+          "title": "If AI Shops for Customers, Who Owns the Product Record?",
           "event_date": "2026-11-13",
           "proposed_hook": "Reuters reviewed an internal Amazon document describing a plan to index data on virtually every product for sale globally — including products Amazon doesn't sell — so AI shopping agents can't route buyers to competitors with richer product data. Amazon called it a brainstorming document. The race to become the canonical product record for AI agents is confirmed regardless.",
           "marketer_angle": "Brand and ecommerce teams need to audit product data consistency and relationship quality across every platform where AI agents look — Amazon, Google, ChatGPT Business Hub, and their own sites. The race for product data authority means brands that don't actively manage this lose recommendations before the agent reaches their checkout.",
@@ -238,7 +238,8 @@
               "published": "2026-11-13"
             }
           ],
-          "selected": true
+          "selected": true,
+          "research_card_title": "Amazon's plan to index every product reveals what the battle for agentic shopping authority looks like."
         }
       ],
       "research": {
@@ -326,12 +327,36 @@
           "actor": "user_via_discord",
           "detail": "User selected Option 3: Amazon World Product Graph and the competition for product-data authority in AI shopping. Topic approval authorizes writing and review only; cover generation and LinkedIn publication remain unapproved.",
           "message_id": "1572263513978576967"
+        },
+        {
+          "at": "2026-11-17T09:58:37-05:00",
+          "type": "writer_completed",
+          "actor": "claude-opus-5-5",
+          "detail": "Initial 242-word draft completed through the Claude-only writer route; no fallback used."
+        },
+        {
+          "at": "2026-11-17T09:59:34-05:00",
+          "type": "argument_review_passed",
+          "actor": "review_subagent",
+          "detail": "Passed after one correction cycle. Final evidence-cleared pre-style body was exactly 250 words."
+        },
+        {
+          "at": "2026-11-17T10:01:42-05:00",
+          "type": "prose_review_passed",
+          "actor": "review_subagent",
+          "detail": "Final 246-word body passed factual fidelity, accessibility, construction, stop-slop 46/50, and voice fidelity 9/10."
+        },
+        {
+          "at": "2026-11-17T10:02:21-05:00",
+          "type": "post_queued_for_approval",
+          "actor": "workflow",
+          "detail": "Reviewed post deployed for approval. Cover generation remains locked pending explicit post approval; LinkedIn publication remains manual."
         }
       ],
       "topic": {
         "option": 3,
         "rank": 3,
-        "title": "Amazon's plan to index every product reveals what the battle for agentic shopping authority looks like.",
+        "title": "If AI Shops for Customers, Who Owns the Product Record?",
         "event_date": "2026-11-13",
         "proposed_hook": "Reuters reviewed an internal Amazon document describing a plan to index data on virtually every product for sale globally — including products Amazon doesn't sell — so AI shopping agents can't route buyers to competitors with richer product data. Amazon called it a brainstorming document. The race to become the canonical product record for AI agents is confirmed regardless.",
         "marketer_angle": "Brand and ecommerce teams need to audit product data consistency and relationship quality across every platform where AI agents look — Amazon, Google, ChatGPT Business Hub, and their own sites. The race for product data authority means brands that don't actively manage this lose recommendations before the agent reaches their checkout.",
@@ -380,6 +405,12 @@
             "published": "2026-11-13"
           },
           {
+            "type": "syndicated_full_text",
+            "title": "Exclusive-Amazon's plan to own the world's product data and fight AI shopping agents | CNA",
+            "url": "https://www.channelnewsasia.com/business/exclusive-amazons-plan-own-worlds-product-data-and-fight-ai-shopping-agents-6549286",
+            "published": "2026-11-13"
+          },
+          {
             "type": "independent_secondary_coverage",
             "title": "Amazon has a plan to index the world's online shopping data | The Verge",
             "url": "https://www.theverge.com/tech/1033697/amazon-world-product-graph-ai-search",
@@ -389,20 +420,14 @@
             "type": "independent_secondary_coverage",
             "title": "Amazon wants to map the world's products to own shopping discovery | EMARKETER",
             "url": "https://www.emarketer.com/content/amazon-wants-map-worlds-products-own-shopping-discovery",
-            "author": "Rachel Wolff",
-            "published": "2026-11-13"
-          },
-          {
-            "type": "independent_secondary_coverage",
-            "title": "Exclusive-Amazon's plan to own the world's product data and fight AI shopping agents | CNA",
-            "url": "https://www.channelnewsasia.com/business/exclusive-amazons-plan-own-worlds-product-data-and-fight-ai-shopping-agents-6549286",
             "published": "2026-11-13"
           }
         ],
         "selected": true,
         "approved_via": "discord",
         "approved_at": "2026-11-17T09:55:29-05:00",
-        "approval_message_id": "1572263513978576967"
+        "approval_message_id": "1572263513978576967",
+        "research_card_title": "Amazon's plan to index every product reveals what the battle for agentic shopping authority looks like."
       },
       "claim_evidence": {
         "status": "complete",
@@ -417,6 +442,146 @@
           "No confirmed implementation timeline, crawling method, merchant permission model, pricing, participation terms, or reporting interface.",
           "No evidence that the proposal will ship in its current form."
         ]
+      },
+      "editorial_intelligence": {
+        "workflow_version": 2,
+        "deep_review_status": "pass",
+        "confidence": "qualified",
+        "confidence_limitation": "The underlying Amazon PR/FAQ is unpublished and may be outdated. Amazon says it may not reflect current plans. Reuters could not confirm implementation, and the proposal may change or be abandoned.",
+        "novelty": {
+          "status": "distinct",
+          "rationale": "Recent RecruitZero work covered cross-platform business-information consistency and AI-avatar consent. This article addresses product relationships and governance as inputs to AI-assisted shopping."
+        },
+        "operational_impact": {
+          "status": "pass",
+          "chain": "AI shopping systems may rely on product facts and relationships -> inconsistent records can produce conflicts or omissions -> teams need a named owner, an authoritative record, cross-surface checks, correction routes, and an accuracy threshold -> teams pause expansion while material facts remain wrong."
+        },
+        "argument_review": {
+          "status": "pass",
+          "correction_cycles": 1,
+          "unsupported_inferences": [],
+          "missing_qualifications": [],
+          "vendor_framing_risks": [],
+          "counterargument": "Product-data governance is already a standard ecommerce discipline, and one unlaunched Amazon proposal does not prove a new market-wide function or a universal AI-shopping ranking mechanism.",
+          "operational_impact_status": "pass",
+          "operational_impact_rationale": "The body identifies an accountable owner, source-of-truth rule, relationship documentation, cross-surface checks, representative questions, correction paths, and a scale-or-pause accuracy threshold.",
+          "novelty_status": "distinct",
+          "stack_independent_value": "pass",
+          "stack_independent_rationale": "The governance model applies across brand sites, retailer feeds, search and discovery surfaces, and AI assistants even if Amazon abandons the proposal.",
+          "required_corrections": [],
+          "residual_risks": [
+            "The internal PR/FAQ is not public, so details depend on Reuters characterization.",
+            "No evidence establishes that World Product Graph will ship or retain the reported scope.",
+            "No independent evidence establishes product-record accuracy as a ranking factor across AI shopping assistants.",
+            "No benchmark establishes the effect of cross-surface governance on recommendation visibility or conversion."
+          ]
+        },
+        "product_as_evidence": true,
+        "stack_independent_value": "pass"
+      },
+      "post": {
+        "status": "awaiting_approval",
+        "title": "If AI Shops for Customers, Who Owns the Product Record?",
+        "body": "Reuters reviewed an internal Amazon draft proposing a \"World Product Graph,\" a system to gather information on products Amazon sells and does not sell using brand and retailer contributions plus crawling of retail sites. Amazon says the draft may be outdated and may not reflect current plans. The proposal may change or be abandoned.\n\nEven unlaunched, the draft shows one possible direction platform competition could take. It says shoppers leave Amazon for Google, brand sites, review sites, and forums to understand product relationships: newer versions, accessory compatibility, and fit for a specific need.\n\nIf AI shopping assistants rely on these facts and relationships, accurate product records could become part of discovery infrastructure: the information layer that helps products get found and understood. Brands that leave source information to others lose influence over those records and have less leverage to find and correct inconsistent descriptions.\n\nA practical workflow:\n- Assign an owner, typically catalog or ecommerce operations, with brand and analytics review.\n- Keep one source of truth, the authoritative record for material product facts.\n- Record variants, compatibility, successor models, and use-case fit.\n- Compare records across your site and major shopping and discovery sites.\n- Test representative shopping questions for conflicts and omissions.\n- Track each error through the correction route each site or tool provides.\n- Set an accuracy threshold before expanding feeds or automation. Pause while material facts remain wrong.\n\nAmazon may never build this. Marketers should still treat governing product records as discovery work and assign one accountable owner.",
+        "word_count": 246,
+        "sources": [
+          {
+            "type": "primary_news_exclusive",
+            "title": "Exclusive: Amazon's plan to own the world's product data and fight AI shopping agents | Reuters",
+            "url": "https://www.reuters.com/business/media-telecom/amazons-plan-own-worlds-product-data-fight-ai-shopping-agents-2026-11-13/",
+            "author": "Greg Bensinger",
+            "published": "2026-11-13"
+          },
+          {
+            "type": "syndicated_full_text",
+            "title": "Exclusive-Amazon's plan to own the world's product data and fight AI shopping agents | CNA",
+            "url": "https://www.channelnewsasia.com/business/exclusive-amazons-plan-own-worlds-product-data-and-fight-ai-shopping-agents-6549286",
+            "published": "2026-11-13"
+          },
+          {
+            "type": "independent_secondary_coverage",
+            "title": "Amazon has a plan to index the world's online shopping data | The Verge",
+            "url": "https://www.theverge.com/tech/1033697/amazon-world-product-graph-ai-search",
+            "published": "2026-11-15"
+          },
+          {
+            "type": "independent_secondary_coverage",
+            "title": "Amazon wants to map the world's products to own shopping discovery | EMARKETER",
+            "url": "https://www.emarketer.com/content/amazon-wants-map-worlds-products-own-shopping-discovery",
+            "published": "2026-11-13"
+          }
+        ],
+        "stop_slop_score": 46,
+        "stop_slop_breakdown": {
+          "directness": 9,
+          "rhythm": 9,
+          "trust": 10,
+          "authenticity": 9,
+          "density": 9
+        },
+        "voice_fidelity_score": 9,
+        "accessibility_status": "pass",
+        "retained_specialist_terms": [
+          {
+            "term": "World Product Graph",
+            "explanation": "Defined as a system gathering information on products Amazon sells and does not sell."
+          },
+          {
+            "term": "product relationships",
+            "explanation": "Explained through newer versions, accessory compatibility, and fit for a specific need."
+          },
+          {
+            "term": "discovery infrastructure",
+            "explanation": "Defined as the information layer that helps products get found and understood."
+          },
+          {
+            "term": "source of truth",
+            "explanation": "Defined as the authoritative record for material product facts."
+          }
+        ],
+        "construction_pass": true,
+        "factual_fidelity": true,
+        "argument_review": {
+          "status": "pass",
+          "correction_cycles": 1,
+          "unsupported_inferences": [],
+          "missing_qualifications": [],
+          "vendor_framing_risks": [],
+          "counterargument": "Product-data governance is already a standard ecommerce discipline, and one unlaunched Amazon proposal does not prove a new market-wide function or a universal AI-shopping ranking mechanism.",
+          "operational_impact_status": "pass",
+          "operational_impact_rationale": "The body identifies an accountable owner, source-of-truth rule, relationship documentation, cross-surface checks, representative questions, correction paths, and a scale-or-pause accuracy threshold.",
+          "novelty_status": "distinct",
+          "stack_independent_value": "pass",
+          "stack_independent_rationale": "The governance model applies across brand sites, retailer feeds, search and discovery surfaces, and AI assistants even if Amazon abandons the proposal.",
+          "required_corrections": [],
+          "residual_risks": [
+            "The internal PR/FAQ is not public, so details depend on Reuters characterization.",
+            "No evidence establishes that World Product Graph will ship or retain the reported scope.",
+            "No independent evidence establishes product-record accuracy as a ranking factor across AI shopping assistants.",
+            "No benchmark establishes the effect of cross-surface governance on recommendation visibility or conversion."
+          ]
+        },
+        "writer_model": "claude-opus-5-5",
+        "writer_provider": "claude-code",
+        "writer_fallback_used": false,
+        "writer_attempts": [
+          {
+            "model": "opus",
+            "status": "success"
+          }
+        ],
+        "markdown_path": "/home/ranson/.hermes/social-queue/linkedin/2026-11-17-amazon-world-product-graph-reviewed.md",
+        "claim_evidence_path": "/home/ranson/.hermes/social-queue/research/2026-11-17-amazon-world-product-graph-claim-evidence.json",
+        "stack_independent_value": true,
+        "reviewed_at": "2026-11-17T10:02:21-05:00",
+        "cover_status": "not_authorized",
+        "publishing_status": "not_published_manual_only"
+      },
+      "performance_tracking": {
+        "publication_status": "not_published",
+        "publication_url": null,
+        "day_7": null,
+        "day_30": null
       }
     },
     {
