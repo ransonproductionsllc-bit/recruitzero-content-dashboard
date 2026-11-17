@@ -16,9 +16,9 @@
       "kind": "content",
       "title": "AI marketing and martech topic approval queue",
       "created_at": "2026-11-17T08:00:00-05:00",
-      "updated_at": "2026-11-17T08:00:00-05:00",
-      "status": "awaiting_topic_approval",
-      "stage": "topic_approval",
+      "updated_at": "2026-11-17T09:55:29-05:00",
+      "status": "drafting",
+      "stage": "writing_and_review",
       "topic_options": [
         {
           "option": 1,
@@ -94,7 +94,8 @@
               "url": "https://www.bloomberg.com/news/articles/2026-11-13/openai-debuts-new-chatgpt-payment-method-with-card-networks",
               "published": "2026-11-13"
             }
-          ]
+          ],
+          "selected": false
         },
         {
           "option": 2,
@@ -163,7 +164,8 @@
               "title": "AthenaHQ Platform | AthenaHQ",
               "url": "https://athenahq.ai/platform"
             }
-          ]
+          ],
+          "selected": false
         },
         {
           "option": 3,
@@ -235,7 +237,8 @@
               "url": "https://www.channelnewsasia.com/business/exclusive-amazons-plan-own-worlds-product-data-and-fight-ai-shopping-agents-6549286",
               "published": "2026-11-13"
             }
-          ]
+          ],
+          "selected": true
         }
       ],
       "research": {
@@ -316,8 +319,105 @@
           "type": "topic_queue_created",
           "actor": "scheduled_research",
           "detail": "Created exactly three concept-led AI marketing and martech topic options. All three passed all eight materiality gates. Option 1 (ChatGPT Wallet, 29/30) and Option 3 (Amazon World Product Graph, 27/30) are Nov 13 events within the overlap window; Option 2 (Bloomreach/AthenaHQ acquisition, 28/30) is a Nov 16 event within the primary 72h window. All three are distinct from the Nov 13 queue items (still awaiting_topic_approval). Previous Nov 16 run was blocked by missing credential. No window expansion required. Awaiting topic approval."
+        },
+        {
+          "at": "2026-11-17T09:55:29-05:00",
+          "type": "topic_approved",
+          "actor": "user_via_discord",
+          "detail": "User selected Option 3: Amazon World Product Graph and the competition for product-data authority in AI shopping. Topic approval authorizes writing and review only; cover generation and LinkedIn publication remain unapproved.",
+          "message_id": "1572263513978576967"
         }
-      ]
+      ],
+      "topic": {
+        "option": 3,
+        "rank": 3,
+        "title": "Amazon's plan to index every product reveals what the battle for agentic shopping authority looks like.",
+        "event_date": "2026-11-13",
+        "proposed_hook": "Reuters reviewed an internal Amazon document describing a plan to index data on virtually every product for sale globally — including products Amazon doesn't sell — so AI shopping agents can't route buyers to competitors with richer product data. Amazon called it a brainstorming document. The race to become the canonical product record for AI agents is confirmed regardless.",
+        "marketer_angle": "Brand and ecommerce teams need to audit product data consistency and relationship quality across every platform where AI agents look — Amazon, Google, ChatGPT Business Hub, and their own sites. The race for product data authority means brands that don't actively manage this lose recommendations before the agent reaches their checkout.",
+        "why_it_passed": "Reuters published an exclusive on November 13 based on an internal Amazon PR/FAQ document reviewed directly, corroborated by people familiar with the matter. Amazon confirmed the document exists and confirmed the catalog systems unit (Robert Tekiela, VP) leads the work, while calling it 'brainstorming' and disputing specific usage figures. The document describes: Amazon's own Alexa for Shopping producing inaccurate answers; shoppers leaving to research on Google/brand sites/forums; the goal of indexing product relationships across the whole internet including competitors' products; Coca-Cola and Bayer as early data contributors; a CEO-level P&G trial summit. Amazon blocked Meta's Muse agent in September and is in Perplexity litigation — corroborating the defensive posture. EMARKETER, The Verge, Engadget, and others provided independent secondary coverage. The broader operating concept is confirmed by parallel moves: Walmart Agent Gateway (agent-ready product/fulfillment data), OpenAI Business Hub (product feeds), Amazon Shop Direct and Buy for Me.",
+        "operational_impact_chain": "AI shopping agents use product data quality and relationship accuracy to build recommendation sets -> brands with inconsistent, incomplete, or relationship-poor product data are excluded from agent recommendation pools before the purchase decision -> Amazon, Walmart, OpenAI, and others are racing to become the canonical product record that agents use -> brand and ecommerce teams that do not audit and govern their product data across discovery surfaces lose the agent recommendation battle before it starts -> product catalog governance, cross-platform consistency, relationship documentation (variants, compatibility, succession), and feed accuracy become measurable controls.",
+        "scores": {
+          "relevance": 9,
+          "relevance_rationale": "Product catalog quality and relationship documentation directly change what ecommerce, brand, and marketing operations teams are responsible for maintaining across AI discovery surfaces.",
+          "topicality": 9,
+          "topicality_rationale": "Reuters exclusive published November 13 — four days before this run. Broadly reported and generating active practitioner discussion. Operationally current regardless of Amazon's launch status.",
+          "viral_potential": 9,
+          "viral_potential_rationale": "Amazon admitting its own AI shopping assistant produces inaccurate answers while racing to map every product on the internet is a striking concrete tension that immediately raises 'is my product data good enough?' for every brand marketer.",
+          "total": 27
+        },
+        "confidence": "qualified",
+        "confidence_limitation": "Internal document only; Amazon called it 'brainstorming' and disputed specific figures. Reuters could not confirm implementation timeline. Aspirational release date Oct 1, 2027. The World Product Graph itself has not launched. The article angle rests on the confirmed broader race for product data authority (supported by multiple company actions), not on Amazon's specific internal plan.",
+        "novelty": {
+          "result": "distinct",
+          "rationale": "No archived RecruitZero item covers product catalog data quality and relationship architecture as the multi-platform strategic battleground for AI shopping recommendations. ChatGPT Business Profiles (Nov 11) covered cross-platform business information accuracy in a single AI platform context. This covers the broader market structure question of who becomes the canonical product record for AI agents, and what brands should do to maintain their position in that race."
+        },
+        "predicted_audience_response": "Brand and ecommerce teams will ask how good their product data actually is across discovery surfaces, what product relationships they need to document, and whether Amazon's plan to crawl their sites is a threat or an opportunity to get their product record into AI recommendations.",
+        "materiality_gates": {
+          "material_event": "pass_reuters_exclusive_internal_document_plus_people_familiar_amazon_confirmed_existence",
+          "editorial_thesis_fit": "pass",
+          "primary_evidence": "qualified_reuters_exclusive_internal_document_amazon_called_brainstorming_broader_concept_confirmed_by_multiple_company_actions",
+          "availability_clarity": "pass_internal_plan_not_launched_clearly_stated",
+          "claim_discipline": "pass_with_internal_document_caveats_amazon_dispute_unconfirmed_launch_all_stated",
+          "operational_impact": "pass_on_broader_concept_regardless_of_amazon_launch",
+          "contradiction_search": "pass_amazon_ceo_said_few_customers_shopping_via_agents_amazon_called_document_brainstorming_both_noted",
+          "archive_novelty": "pass_distinct"
+        },
+        "coverage_limitations": [
+          "Internal document only; Amazon called it 'draft/brainstorming'; Reuters could not confirm implementation timeline.",
+          "Amazon disputed specific usage figures in the document while confirming the catalog unit leads the work.",
+          "No confirmed pricing, structure, or participation terms for brand data contributors.",
+          "Crawling methodology and merchant permission requirements unknown.",
+          "World Product Graph has not launched and may be abandoned or modified.",
+          "Amazon CEO stated on Q3 earnings that agent-based shopping impact is minimal to date."
+        ],
+        "sources": [
+          {
+            "type": "primary_news_exclusive",
+            "title": "Exclusive: Amazon's plan to own the world's product data and fight AI shopping agents | Reuters",
+            "url": "https://www.reuters.com/business/media-telecom/amazons-plan-own-worlds-product-data-fight-ai-shopping-agents-2026-11-13/",
+            "author": "Greg Bensinger",
+            "published": "2026-11-13"
+          },
+          {
+            "type": "independent_secondary_coverage",
+            "title": "Amazon has a plan to index the world's online shopping data | The Verge",
+            "url": "https://www.theverge.com/tech/1033697/amazon-world-product-graph-ai-search",
+            "published": "2026-11-15"
+          },
+          {
+            "type": "independent_secondary_coverage",
+            "title": "Amazon wants to map the world's products to own shopping discovery | EMARKETER",
+            "url": "https://www.emarketer.com/content/amazon-wants-map-worlds-products-own-shopping-discovery",
+            "author": "Rachel Wolff",
+            "published": "2026-11-13"
+          },
+          {
+            "type": "independent_secondary_coverage",
+            "title": "Exclusive-Amazon's plan to own the world's product data and fight AI shopping agents | CNA",
+            "url": "https://www.channelnewsasia.com/business/exclusive-amazons-plan-own-worlds-product-data-and-fight-ai-shopping-agents-6549286",
+            "published": "2026-11-13"
+          }
+        ],
+        "selected": true,
+        "approved_via": "discord",
+        "approved_at": "2026-11-17T09:55:29-05:00",
+        "approval_message_id": "1572263513978576967"
+      },
+      "claim_evidence": {
+        "status": "complete",
+        "path": "/home/ranson/.hermes/social-queue/research/2026-11-17-amazon-world-product-graph-claim-evidence.json",
+        "source_count": 4,
+        "verified_claim_count": 8,
+        "load_bearing_claims_traceable": true,
+        "qualifications_preserved": true,
+        "prohibited_overstatements_enforced": true,
+        "coverage_gaps": [
+          "The internal PR/FAQ is not public.",
+          "No confirmed implementation timeline, crawling method, merchant permission model, pricing, participation terms, or reporting interface.",
+          "No evidence that the proposal will ship in its current form."
+        ]
+      }
     },
     {
       "id": "ai-martech-topic-queue-2026-11-13",
