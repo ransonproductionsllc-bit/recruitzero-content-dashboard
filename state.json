@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-11-13T09:30:00-05:00",
+  "updated_at": "2026-11-17T08:00:00-05:00",
   "sync": {
     "status": "connected",
     "discord_guild_id": "1553886101003837561",
@@ -11,6 +11,314 @@
     "dashboard_refresh_seconds": 60
   },
   "active_queue": [
+    {
+      "id": "ai-martech-topic-queue-2026-11-17",
+      "kind": "content",
+      "title": "AI marketing and martech topic approval queue",
+      "created_at": "2026-11-17T08:00:00-05:00",
+      "updated_at": "2026-11-17T08:00:00-05:00",
+      "status": "awaiting_topic_approval",
+      "stage": "topic_approval",
+      "topic_options": [
+        {
+          "option": 1,
+          "rank": 1,
+          "title": "OpenAI launched ChatGPT Wallet. Merchants need an agentic checkout policy.",
+          "event_date": "2026-11-13",
+          "proposed_hook": "OpenAI launched ChatGPT Wallet on November 13. Its Dots agents can now complete purchases on behalf of US ChatGPT Pro subscribers, with each transaction approved by Face ID or fingerprint. Merchants need to verify their checkout and payment-risk systems recognize legitimate agent purchases — that decision is live today.",
+          "marketer_angle": "Ecommerce, marketing operations, and analytics teams need a stack-independent policy for agentic purchases: checkout compatibility, attribution rules for agent-initiated orders, customer identity and loyalty mapping, payment-risk exception handling, and a threshold for which agent purchase categories the brand will and won't support.",
+          "why_it_passed": "OpenAI officially launched ChatGPT Wallet on November 13, confirmed by TechCrunch (Sarah Perez), Reuters, and Bloomberg — all independent major news organizations. Built in partnership with American Express, Chase, Mastercard, and Visa. Each purchase requires biometric confirmation; a payment token (not actual card details) is sent to merchants. OpenAI's business guidance states merchants must ensure agents are not inadvertently blocked and that payment/risk systems recognize legitimate agent purchases — a present operational requirement for any US merchant that could receive traffic from Pro subscribers. TechCrunch notes DoorDash and Uber report low agent-originated orders to date, while Meta's Muse has 10 million users for AI-assisted shopping. Bloomberg notes this is a renewed push after OpenAI wound down an earlier Instant Checkout feature.",
+          "operational_impact_chain": "OpenAI Dots agents can complete purchases using biometric-approved payment tokens -> merchants must verify checkout and risk systems accept agent-initiated payments -> ecommerce, analytics, and marketing teams need to distinguish agent-initiated from human-initiated orders in their data -> attribution, loyalty, and CRM decisions diverge for agent vs. human shoppers -> teams set policies for which purchase categories agents may complete, and what evidence standards apply before changing spend based on agent-attributed orders.",
+          "scores": {
+            "relevance": 10,
+            "relevance_rationale": "Directly changes checkout, attribution, loyalty, and payment-risk workflows for any US merchant that sells to ChatGPT Pro subscribers.",
+            "topicality": 10,
+            "topicality_rationale": "Official launch November 13, 2026 — four days before this run; gradual rollout actively in progress.",
+            "viral_potential": 9,
+            "viral_potential_rationale": "An AI agent completing a real purchase with a biometric-approved payment token is a concrete moment that every ecommerce and marketing operations team will want to understand and prepare for.",
+            "total": 29
+          },
+          "confidence": "high",
+          "confidence_limitation": "Limited rollout (US ChatGPT Pro subscribers only; gradual). Future spending-limit controls described as planned, not yet live. No independent merchant implementation reports or agent-order volume data available. Bloomberg notes previous Instant Checkout was wound down — execution risk on adoption is real.",
+          "novelty": {
+            "result": "distinct",
+            "rationale": "No archived RecruitZero item covers payment infrastructure, checkout compatibility, or attribution governance for AI agent-initiated purchases. ChatGPT Business Profiles (Nov 11) covered business data management; OpenAI advertiser governance (Nov 13 queue Option 2) covered ad campaign constraints. This covers the payment layer of agentic commerce."
+          },
+          "predicted_audience_response": "Ecommerce teams will ask what they need to change in their checkout and payment-risk stack; attribution and analytics teams will ask how to distinguish agent-initiated orders; loyalty and CRM teams will ask how agent shoppers map to customer identity.",
+          "materiality_gates": {
+            "material_event": "pass_official_launch_named_financial_partners",
+            "editorial_thesis_fit": "pass",
+            "primary_evidence": "pass_openai_official_announcement_plus_four_independent_news_organizations",
+            "availability_clarity": "pass_us_pro_subscribers_limited_rollout_clearly_stated",
+            "claim_discipline": "pass_with_limited_availability_and_previous_instant_checkout_discontinuation_noted",
+            "operational_impact": "pass",
+            "contradiction_search": "pass_doordash_uber_low_agent_orders_noted_meta_muse_contrast_noted",
+            "archive_novelty": "pass_distinct"
+          },
+          "coverage_limitations": [
+            "Limited rollout — US ChatGPT Pro subscribers only; gradual availability.",
+            "No independent merchant implementation reports yet — rollout just started.",
+            "Future per-category and spending-limit controls described as planned, not live.",
+            "Bloomberg notes OpenAI previously wound down an Instant Checkout feature — adoption risk is real.",
+            "No independent analysis of fraud/dispute rates for agent-initiated purchases."
+          ],
+          "sources": [
+            {
+              "type": "primary_company_announcement",
+              "title": "Introducing ChatGPT Wallet | OpenAI",
+              "url": "https://openai.com/index/introducing-chatgpt-wallet/",
+              "published": "2026-11-13"
+            },
+            {
+              "type": "primary_help_documentation",
+              "title": "Making purchases with ChatGPT Wallet | OpenAI Help Center",
+              "url": "https://help.openai.com/en/articles/20001654-making-purchases-with-chatgpt-wallet",
+              "published": "2026-11-13"
+            },
+            {
+              "type": "independent_staff_reporting",
+              "title": "ChatGPT's new Wallet lets AI agents shop and check out for you | TechCrunch",
+              "url": "https://techcrunch.com/2026/11/13/chatgpts-new-wallet-lets-ai-agents-shop-and-check-out-for-you/",
+              "author": "Sarah Perez",
+              "published": "2026-11-13"
+            },
+            {
+              "type": "independent_staff_reporting",
+              "title": "OpenAI launches ChatGPT Wallet, letting AI agents pay for purchases | Reuters",
+              "url": "https://www.reuters.com/technology/openai-launches-chatgpt-wallet-letting-ai-agents-pay-purchases-2026-11-13/",
+              "published": "2026-11-13"
+            },
+            {
+              "type": "independent_staff_reporting",
+              "title": "OpenAI Debuts New ChatGPT Payment Method With Card Networks | Bloomberg",
+              "url": "https://www.bloomberg.com/news/articles/2026-11-13/openai-debuts-new-chatgpt-payment-method-with-card-networks",
+              "published": "2026-11-13"
+            }
+          ]
+        },
+        {
+          "option": 2,
+          "rank": 2,
+          "title": "Bloomreach acquired an AI visibility measurement company. Answer engine optimization is a martech decision now.",
+          "event_date": "2026-11-16",
+          "proposed_hook": "Bloomreach acquired AthenaHQ on November 16. AthenaHQ predicts whether a brand's content will be cited by AI assistants and identifies what to change to improve that. A platform that connects discovery to engagement is now a purchase decision — not a future-state experiment.",
+          "marketer_angle": "Brand, SEO/GEO, and marketing operations teams need to decide: who owns AI visibility measurement in the org, which platform holds that data, how it connects to engagement and conversion, and whether to buy it integrated or evaluate standalone tools before the category consolidates further.",
+          "why_it_passed": "Bloomreach officially announced the acquisition of AthenaHQ on November 16, 2026. Covered by MarTech (staff), Forbes (staff, Sharon Edelson). AthenaHQ is Y Combinator-backed, founded by Andrew Yan (ex-Google) and Alan Yao (ex-ServiceNow), and serves 300+ brands including Coinbase, Cozy Earth, and Datmos. The acquisition adds the Athena Citation Engine (ACE) — a proprietary ML model that evaluates content to predict AI citation probability and identifies optimization opportunities — to Bloomreach's Loomi engagement suite and its Jan 2026 Loomi Connect (MCP) product discovery integration. First combined product use cases slated for early 2027. Existing AthenaHQ customer accounts and team remain intact.",
+          "operational_impact_chain": "AI assistants increasingly influence product and service discovery before a consumer reaches a brand's owned channels -> brands need to measure whether their content appears in AI-generated answers and what sources AI platforms draw on -> Bloomreach acquires AthenaHQ to connect AI visibility measurement to customer engagement and conversion data -> marketing, brand, and martech teams decide which platform holds this measurement function and how it integrates with existing analytics, SEO, and content workflows -> buy vs. build vs. ignore becomes a present-tense stack decision.",
+          "scores": {
+            "relevance": 9,
+            "relevance_rationale": "Changes the buy/build/ignore decision for AI visibility measurement, and forces an org structure question about who owns GEO/AEO measurement and how it connects to existing engagement and attribution stacks.",
+            "topicality": 10,
+            "topicality_rationale": "Announced November 16, 2026 — yesterday. Combined product is early 2027, but the acquisition and buy decision are present-tense.",
+            "viral_potential": 9,
+            "viral_potential_rationale": "A major engagement platform acquiring the category leader for AI visibility measurement signals that GEO/AEO is becoming a standard martech function — generating a 'do we need this?' discussion across brand and marketing operations teams.",
+            "total": 28
+          },
+          "confidence": "high",
+          "confidence_limitation": "Financial terms not disclosed. AthenaHQ ACE model accuracy not independently benchmarked. Combined product use cases early 2027 — not currently testable. 300+ brand customer claim is Bloomreach's, not independently verified.",
+          "novelty": {
+            "result": "meaningful_advance",
+            "rationale": "Nov 13 queue Option 3 (Mars LLM brand measurement) covers a single brand building an internal measurement program as an organizational decision. This covers vendor-market consolidation creating a purchasable GEO/AEO function integrated into an engagement platform — operationally distinct: Mars = 'do we need this function?'; Bloomreach/AthenaHQ = 'how do we build or buy it, and where does it live in our stack?'"
+          },
+          "predicted_audience_response": "Brand managers and marketing ops leaders will ask whether GEO/AEO measurement belongs in their current engagement platform, whether AthenaHQ is worth evaluating now vs. waiting for the combined product, and what a credible test of AI citation performance looks like.",
+          "materiality_gates": {
+            "material_event": "pass_named_acquisition_official_announcement_staff_coverage",
+            "editorial_thesis_fit": "pass",
+            "primary_evidence": "pass_businesswire_plus_martech_staff_plus_forbes_staff",
+            "availability_clarity": "pass_existing_customers_unaffected_combined_product_early_2027",
+            "claim_discipline": "pass_with_no_financial_terms_model_accuracy_unverified_vendor_stated",
+            "operational_impact": "pass",
+            "contradiction_search": "pass_with_model_accuracy_unverified_independently_and_combined_product_not_yet_live",
+            "archive_novelty": "pass_meaningful_advance"
+          },
+          "coverage_limitations": [
+            "Financial terms not disclosed.",
+            "AthenaHQ ACE model accuracy not independently benchmarked.",
+            "Combined Bloomreach+AthenaHQ product not yet available (early 2027).",
+            "300+ brand customer claim is Bloomreach/AthenaHQ stated, not independently verified.",
+            "No independent analysis of AthenaHQ's predictive accuracy at scale."
+          ],
+          "sources": [
+            {
+              "type": "primary_company_announcement",
+              "title": "As AI Reshapes How Consumers Discover Brands, Bloomreach Acquires AEO Leader AthenaHQ | BusinessWire",
+              "url": "https://www.businesswire.com/news/home/20261116541343/en/As-AI-Reshapes-How-Consumers-Discover-Brands-Bloomreach-Acquires-AEO-Leader-AthenaHQ-to-Turn-AI-Visibility-Into-Measurable-Revenue",
+              "published": "2026-11-16"
+            },
+            {
+              "type": "independent_staff_reporting",
+              "title": "Bloomreach goes back to its roots with AthenaHQ acquisition | MarTech",
+              "url": "https://martech.org/bloomreach-goes-back-to-its-roots-with-athenahq-acquisition",
+              "published": "2026-11-16"
+            },
+            {
+              "type": "independent_staff_reporting",
+              "title": "Bloomreach Acquires AthenaHQ To Help Brands Raise Product Visibility And Revenue | Forbes",
+              "url": "https://forbes.com/sites/sharonedelson/2026/11/16/bloomreach-acquires-athenahq-to-help-brands-raise-product-visibility-and-revenue",
+              "author": "Sharon Edelson (staff)",
+              "published": "2026-11-16"
+            },
+            {
+              "type": "primary_product_documentation",
+              "title": "AthenaHQ Platform | AthenaHQ",
+              "url": "https://athenahq.ai/platform"
+            }
+          ]
+        },
+        {
+          "option": 3,
+          "rank": 3,
+          "title": "Amazon's plan to index every product reveals what the battle for agentic shopping authority looks like.",
+          "event_date": "2026-11-13",
+          "proposed_hook": "Reuters reviewed an internal Amazon document describing a plan to index data on virtually every product for sale globally — including products Amazon doesn't sell — so AI shopping agents can't route buyers to competitors with richer product data. Amazon called it a brainstorming document. The race to become the canonical product record for AI agents is confirmed regardless.",
+          "marketer_angle": "Brand and ecommerce teams need to audit product data consistency and relationship quality across every platform where AI agents look — Amazon, Google, ChatGPT Business Hub, and their own sites. The race for product data authority means brands that don't actively manage this lose recommendations before the agent reaches their checkout.",
+          "why_it_passed": "Reuters published an exclusive on November 13 based on an internal Amazon PR/FAQ document reviewed directly, corroborated by people familiar with the matter. Amazon confirmed the document exists and confirmed the catalog systems unit (Robert Tekiela, VP) leads the work, while calling it 'brainstorming' and disputing specific usage figures. The document describes: Amazon's own Alexa for Shopping producing inaccurate answers; shoppers leaving to research on Google/brand sites/forums; the goal of indexing product relationships across the whole internet including competitors' products; Coca-Cola and Bayer as early data contributors; a CEO-level P&G trial summit. Amazon blocked Meta's Muse agent in September and is in Perplexity litigation — corroborating the defensive posture. EMARKETER, The Verge, Engadget, and others provided independent secondary coverage. The broader operating concept is confirmed by parallel moves: Walmart Agent Gateway (agent-ready product/fulfillment data), OpenAI Business Hub (product feeds), Amazon Shop Direct and Buy for Me.",
+          "operational_impact_chain": "AI shopping agents use product data quality and relationship accuracy to build recommendation sets -> brands with inconsistent, incomplete, or relationship-poor product data are excluded from agent recommendation pools before the purchase decision -> Amazon, Walmart, OpenAI, and others are racing to become the canonical product record that agents use -> brand and ecommerce teams that do not audit and govern their product data across discovery surfaces lose the agent recommendation battle before it starts -> product catalog governance, cross-platform consistency, relationship documentation (variants, compatibility, succession), and feed accuracy become measurable controls.",
+          "scores": {
+            "relevance": 9,
+            "relevance_rationale": "Product catalog quality and relationship documentation directly change what ecommerce, brand, and marketing operations teams are responsible for maintaining across AI discovery surfaces.",
+            "topicality": 9,
+            "topicality_rationale": "Reuters exclusive published November 13 — four days before this run. Broadly reported and generating active practitioner discussion. Operationally current regardless of Amazon's launch status.",
+            "viral_potential": 9,
+            "viral_potential_rationale": "Amazon admitting its own AI shopping assistant produces inaccurate answers while racing to map every product on the internet is a striking concrete tension that immediately raises 'is my product data good enough?' for every brand marketer.",
+            "total": 27
+          },
+          "confidence": "qualified",
+          "confidence_limitation": "Internal document only; Amazon called it 'brainstorming' and disputed specific figures. Reuters could not confirm implementation timeline. Aspirational release date Oct 1, 2027. The World Product Graph itself has not launched. The article angle rests on the confirmed broader race for product data authority (supported by multiple company actions), not on Amazon's specific internal plan.",
+          "novelty": {
+            "result": "distinct",
+            "rationale": "No archived RecruitZero item covers product catalog data quality and relationship architecture as the multi-platform strategic battleground for AI shopping recommendations. ChatGPT Business Profiles (Nov 11) covered cross-platform business information accuracy in a single AI platform context. This covers the broader market structure question of who becomes the canonical product record for AI agents, and what brands should do to maintain their position in that race."
+          },
+          "predicted_audience_response": "Brand and ecommerce teams will ask how good their product data actually is across discovery surfaces, what product relationships they need to document, and whether Amazon's plan to crawl their sites is a threat or an opportunity to get their product record into AI recommendations.",
+          "materiality_gates": {
+            "material_event": "pass_reuters_exclusive_internal_document_plus_people_familiar_amazon_confirmed_existence",
+            "editorial_thesis_fit": "pass",
+            "primary_evidence": "qualified_reuters_exclusive_internal_document_amazon_called_brainstorming_broader_concept_confirmed_by_multiple_company_actions",
+            "availability_clarity": "pass_internal_plan_not_launched_clearly_stated",
+            "claim_discipline": "pass_with_internal_document_caveats_amazon_dispute_unconfirmed_launch_all_stated",
+            "operational_impact": "pass_on_broader_concept_regardless_of_amazon_launch",
+            "contradiction_search": "pass_amazon_ceo_said_few_customers_shopping_via_agents_amazon_called_document_brainstorming_both_noted",
+            "archive_novelty": "pass_distinct"
+          },
+          "coverage_limitations": [
+            "Internal document only; Amazon called it 'draft/brainstorming'; Reuters could not confirm implementation timeline.",
+            "Amazon disputed specific usage figures in the document while confirming the catalog unit leads the work.",
+            "No confirmed pricing, structure, or participation terms for brand data contributors.",
+            "Crawling methodology and merchant permission requirements unknown.",
+            "World Product Graph has not launched and may be abandoned or modified.",
+            "Amazon CEO stated on Q3 earnings that agent-based shopping impact is minimal to date."
+          ],
+          "sources": [
+            {
+              "type": "primary_news_exclusive",
+              "title": "Exclusive: Amazon's plan to own the world's product data and fight AI shopping agents | Reuters",
+              "url": "https://www.reuters.com/business/media-telecom/amazons-plan-own-worlds-product-data-fight-ai-shopping-agents-2026-11-13/",
+              "author": "Greg Bensinger",
+              "published": "2026-11-13"
+            },
+            {
+              "type": "independent_secondary_coverage",
+              "title": "Amazon has a plan to index the world's online shopping data | The Verge",
+              "url": "https://www.theverge.com/tech/1033697/amazon-world-product-graph-ai-search",
+              "published": "2026-11-15"
+            },
+            {
+              "type": "independent_secondary_coverage",
+              "title": "Amazon wants to map the world's products to own shopping discovery | EMARKETER",
+              "url": "https://www.emarketer.com/content/amazon-wants-map-worlds-products-own-shopping-discovery",
+              "author": "Rachel Wolff",
+              "published": "2026-11-13"
+            },
+            {
+              "type": "independent_secondary_coverage",
+              "title": "Exclusive-Amazon's plan to own the world's product data and fight AI shopping agents | CNA",
+              "url": "https://www.channelnewsasia.com/business/exclusive-amazons-plan-own-worlds-product-data-and-fight-ai-shopping-agents-6549286",
+              "published": "2026-11-13"
+            }
+          ]
+        }
+      ],
+      "research": {
+        "source_cutoff": "2026-11-17T08:00:00-05:00",
+        "initial_window_start": "2026-11-14T00:00:00-05:00",
+        "overlap_start": "2026-11-13T00:00:00-05:00",
+        "discovery_window_hours": 72,
+        "discovery_window_expansion": null,
+        "note": "Three qualifying candidates found within primary + overlap window. No expansion required. Previous Nov 16 run was blocked (credential error); this is first successful run since Nov 13.",
+        "event_ledger_path": "/home/ranson/.hermes/social-queue/research/2026-11-17-ai-martech-event-ledger.json",
+        "decision_journal_path": "/home/ranson/.hermes/social-queue/research/2026-11-17-ai-martech-decision-journal.md",
+        "reserve_candidate_count": 3,
+        "reserve_candidates": [
+          "SAP Autonomy Gap report — 90% say ready, 6% have connected systems (Nov 11; generic framing; resurface with stronger primary event)",
+          "Robots.txt AI training opt-out __usage_ai-training token — Microsoft Dec 15 transition deadline approaching (Oct 30 event; outside 14-day window this run; surface when Dec 15 is within window)",
+          "Constant Contact Catalyst AI marketing agent — waitlist-only (Nov 12; resurface at GA)"
+        ],
+        "coverage_gaps": [
+          {
+            "source": "Marketing Week",
+            "status": "not_retrieved",
+            "cutoff_advanced": false,
+            "detail": "Not retrieved this run."
+          },
+          {
+            "source": "CMSWire",
+            "status": "partial_snippet_access",
+            "cutoff_advanced": false,
+            "detail": "Accessed via search snippets; full article text not retrieved."
+          },
+          {
+            "source": "Axios Media Trends",
+            "status": "not_retrieved",
+            "cutoff_advanced": false,
+            "detail": "Not retrieved this run."
+          },
+          {
+            "source": "AdExchanger (full article text)",
+            "status": "web_extract_blocked_cron_context",
+            "cutoff_advanced": false,
+            "detail": "web_extract blocked in cron context. Headlines and snippets accessed via search."
+          },
+          {
+            "source": "EMARKETER (full article text)",
+            "status": "partial_snippet_access",
+            "cutoff_advanced": false,
+            "detail": "Snippet content retrieved via search; full article not retrieved."
+          },
+          {
+            "source": "The Information",
+            "status": "paywalled",
+            "cutoff_advanced": false,
+            "detail": "Not retrieved. Headlines not used as factual evidence."
+          },
+          {
+            "source": "Reddit pool (r/adops, r/PPC, r/analytics, r/SEO, r/MarketingAutomation)",
+            "status": "not_scanned",
+            "cutoff_advanced": false,
+            "detail": "Not scanned this run."
+          },
+          {
+            "source": "X/Twitter named pool",
+            "status": "not_scanned",
+            "cutoff_advanced": false,
+            "detail": "Not scanned this run."
+          },
+          {
+            "source": "Harvard Business Review",
+            "status": "not_retrieved",
+            "cutoff_advanced": false,
+            "detail": "Not retrieved this run."
+          }
+        ]
+      },
+      "events": [
+        {
+          "at": "2026-11-17T08:00:00-05:00",
+          "type": "topic_queue_created",
+          "actor": "scheduled_research",
+          "detail": "Created exactly three concept-led AI marketing and martech topic options. All three passed all eight materiality gates. Option 1 (ChatGPT Wallet, 29/30) and Option 3 (Amazon World Product Graph, 27/30) are Nov 13 events within the overlap window; Option 2 (Bloomreach/AthenaHQ acquisition, 28/30) is a Nov 16 event within the primary 72h window. All three are distinct from the Nov 13 queue items (still awaiting_topic_approval). Previous Nov 16 run was blocked by missing credential. No window expansion required. Awaiting topic approval."
+        }
+      ]
+    },
     {
       "id": "ai-martech-topic-queue-2026-11-13",
       "kind": "content",
