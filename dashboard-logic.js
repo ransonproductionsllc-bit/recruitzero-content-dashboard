@@ -49,6 +49,42 @@
       }));
   }
 
+  function reviewPresentation(item = {}) {
+    if (item.kind === 'test') {
+      return {
+        eyebrow: 'Test review copy',
+        performanceNote: 'TEST artifact only. Performance tracking is not active.',
+        publishingStatus: 'TEST artifact only. Nothing was published to LinkedIn.',
+      };
+    }
+
+    const postStatus = String(item.post?.status || '');
+    const awaitingApproval = item.status === 'awaiting_post_approval'
+      || item.stage === 'post_approval'
+      || postStatus === 'awaiting_approval';
+    if (awaitingApproval) {
+      return {
+        eyebrow: 'Article awaiting approval',
+        performanceNote: 'Publication remains manual. Performance tracking begins after publication.',
+        publishingStatus: 'Draft reviewed. Cover generation and publishing are not authorized.',
+      };
+    }
+
+    if (isFinished(item) || item.stage === 'assets_complete') {
+      return {
+        eyebrow: 'Completed article',
+        performanceNote: 'Publication remains manual. Analytics can be added after publication.',
+        publishingStatus: 'Completed workflow asset. Publishing remains a separate manual action.',
+      };
+    }
+
+    return {
+      eyebrow: 'Article review',
+      performanceNote: 'Publication remains manual. Performance tracking begins after publication.',
+      publishingStatus: 'This article is still moving through the review workflow.',
+    };
+  }
+
   function actionUrl(sync = {}, item = {}, action, option = '') {
     const repo = sync.approval_repo;
     const hasOption = option !== '' && option !== null && option !== undefined;
@@ -70,5 +106,6 @@
     groupFinishedItems,
     isFinished,
     itemDayKey,
+    reviewPresentation,
   };
 });

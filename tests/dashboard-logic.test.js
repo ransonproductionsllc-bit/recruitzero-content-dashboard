@@ -8,6 +8,7 @@ const {
   completionTimestamp,
   groupFinishedItems,
   itemDayKey,
+  reviewPresentation,
 } = require('../dashboard-logic.js');
 
 test('clear action targets only the selected daily search item', () => {
@@ -75,6 +76,19 @@ test('unknown and malformed completion dates sort after valid date groups', () =
 
 test('daily search key comes from the item creation date', () => {
   assert.equal(itemDayKey({ created_at: '2026-11-05T08:17:51-05:00' }), '2026-11-05');
+});
+
+test('review presentation does not label an awaiting draft as completed', () => {
+  const presentation = reviewPresentation({
+    kind: 'content',
+    status: 'awaiting_post_approval',
+    stage: 'post_approval',
+    post: { status: 'awaiting_approval' },
+  });
+
+  assert.equal(presentation.eyebrow, 'Article awaiting approval');
+  assert.equal(presentation.publishingStatus, 'Draft reviewed. Cover generation and publishing are not authorized.');
+  assert.equal(presentation.performanceNote, 'Publication remains manual. Performance tracking begins after publication.');
 });
 
 test('dashboard exposes per-day clear and per-article archive actions', () => {

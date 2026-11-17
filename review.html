@@ -82,6 +82,7 @@
 <main>
   <div id="reviewRoot"><div class="panel">Loading article…</div></div>
 </main>
+<script src="dashboard-logic.js"></script>
 <script>
   const escapeHtml = value => String(value ?? '').replace(/[&<>'"]/g, char => ({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[char]));
   const formatDate = value => value ? new Intl.DateTimeFormat('en-US', {dateStyle:'medium', timeStyle:'short'}).format(new Date(value)) : 'Not recorded';
@@ -94,7 +95,8 @@
     const selectedTopic = item.topic_options?.find(option => option.option === item.topic?.option) || item.topic || {};
     const editorial = item.editorial_intelligence || {};
     const argumentReview = post.argument_review || editorial.argument_review || {};
-    const performance = item.performance || {};
+    const performance = item.performance || item.performance_tracking || {};
+    const presentation = window.RecruitZeroDashboard.reviewPresentation(item);
     const confidence = selectedTopic.confidence || editorial.confidence;
     const novelty = selectedTopic.novelty || editorial.novelty;
     const operationalImpact = selectedTopic.operational_impact || editorial.operational_impact;
@@ -107,7 +109,7 @@
     ];
     document.title = `${title} — RecruitZero Review`;
     document.getElementById('reviewRoot').innerHTML = `
-      <div class="eyebrow">${escapeHtml(item.kind === 'test' ? 'Test review copy' : 'Completed article')}</div>
+      <div class="eyebrow">${escapeHtml(presentation.eyebrow)}</div>
       <h1>${escapeHtml(title)}</h1>
       <p class="lede"><span class="status">${escapeHtml(post.status || item.status || 'complete')}</span> · Updated ${escapeHtml(formatDate(item.updated_at))}</p>
       <div class="layout">
@@ -139,13 +141,13 @@
             <div class="score"><span>Status</span><strong>${escapeHtml(performance.tracking_status || 'Not recorded')}</strong></div>
             <div class="score"><span>7-day results</span><strong>${performance.day_7 ? 'Recorded' : 'Awaiting data'}</strong></div>
             <div class="score"><span>30-day results</span><strong>${performance.day_30 ? 'Recorded' : 'Awaiting data'}</strong></div>
-            <p style="margin-top:10px">Publication remains manual. Analytics can be added later without changing the archived article.</p>
+            <p style="margin-top:10px">${escapeHtml(presentation.performanceNote)}</p>
           </section>
           <section>
             <h2>Sources</h2>
             ${sources.length ? `<ol class="source-list">${sources.map(source => `<li><a href="${escapeHtml(source.url)}" target="_blank" rel="noopener">${escapeHtml(source.title || source.url)}</a></li>`).join('')}</ol>` : '<p>No sources are stored for this item.</p>'}
           </section>
-          <section><h2>Publishing status</h2><p>${item.kind === 'test' ? 'TEST artifact only. Nothing was published to LinkedIn.' : 'Completed workflow asset. Publishing remains a separate manual action.'}</p></section>
+          <section><h2>Publishing status</h2><p>${escapeHtml(presentation.publishingStatus)}</p></section>
         </aside>
       </div>`;
     document.getElementById('copyButton').addEventListener('click', async event => {
