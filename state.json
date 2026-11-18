@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-11-18T14:30:00-05:00",
+  "updated_at": "2026-11-18T13:44:31-05:00",
   "sync": {
     "status": "connected",
     "discord_guild_id": "1553886101003837561",
@@ -11,324 +11,6 @@
     "dashboard_refresh_seconds": 60
   },
   "active_queue": [
-    {
-      "id": "ai-martech-topic-queue-2026-11-18",
-      "kind": "content",
-      "title": "AI marketing and martech topic approval queue — November 18, 2026",
-      "created_at": "2026-11-18T09:00:00-05:00",
-      "updated_at": "2026-11-18T14:30:00-05:00",
-      "status": "awaiting_topic_approval",
-      "stage": "topic_approval",
-      "topic_options": [
-        {
-          "option": 1,
-          "rank": 1,
-          "title": "Amazon is changing how it counts display ad impressions. Your reporting, dashboards, and media mix models need to be ready.",
-          "event_date": "2026-11-12",
-          "proposed_hook": "Amazon told advertisers to expect roughly 63% fewer reported impressions on its Store display ads from January 1, 2027, when it shifts from counting on download to counting on screen. By December 17, 2026, the legacy reporting pages go read-only. By January 31, they're gone — along with every unmigrated report and its history. Ten report types, including the conversion path and Amazon Attribution reports, have no equivalent in the new system yet.",
-          "marketer_angle": "Any team that uses Amazon DVA display impression counts in automated reporting, media mix models, or client dashboards needs to audit those inputs before December 17. The impact is not just a metric drop — it's a measurement baseline break and a data-deletion deadline on the same timeline. Teams must also decide what to do about the ten unsupported report types with no current path to unified reporting.",
-          "why_it_passed": "Amazon published its November 12 Support Center update confirming a five-phase shutdown timeline. Digiday (November 16) reported independently that Amazon's own estimate is a 63% average drop in DVA display impressions on Store placements from January 1, citing named agency respondents (Hannah Schatz at Coegi, Dru Sil at Stagwell, Paul DeJarnatt at Novus). PPC Land confirmed the January 31, 2027 deletion deadline and listed 10 unsupported report types on November 12. Storyboard18 and Brandefyn provided additional independent confirmation. The Dec 17 read-only transition is 29 days from this run. The measurement methodology change and the reporting migration are simultaneous operational decisions with hard deadlines.",
-          "operational_impact_chain": "Amazon shifts DVA display impression counting from on-download to on-screen (avg -63%) effective Jan 1, 2027 -> legacy reporting pages go read-only Dec 17 and are permanently decommissioned Jan 31, 2027 -> all unmigrated saved reports and historical data permanently deleted -> 10 report types including conversion path and Amazon Attribution have no unified reporting equivalent yet -> teams running automated dashboards, media mix models, or client reports from Amazon legacy pages must audit inputs and migrate or rebuild by Dec 17 -> measurement baselines must be reset for any comparison crossing Jan 1 -> decision needed on the 10 unsupported report types: wait for Amazon, extract and preserve, or accept data loss.",
-          "scores": {
-            "relevance": 10,
-            "relevance_rationale": "Every Amazon DVA display advertiser faces a concurrent measurement methodology change and a data-deletion deadline. Teams running automated reporting, MMMs, or client dashboards need to act before December 17.",
-            "topicality": 9,
-            "topicality_rationale": "Amazon Help Center update November 12; Digiday buyer reaction coverage November 16; Dec 17 deadline 29 days away. Operationally current and decision-urgent.",
-            "viral_potential": 9,
-            "viral_potential_rationale": "A platform simultaneously changing how it counts impressions and permanently deleting unmigrated reports on the same 60-day timeline creates a concrete crisis moment every Amazon advertiser will recognize.",
-            "total": 28
-          },
-          "confidence": "high",
-          "confidence_limitation": "63% figure is Amazon's own average estimate; actual impact varies by campaign placement and targeting. Ten unsupported report types have no confirmed addition date. Amazon says ROAS improves under on-screen counting — buyers may not see CPM pressure immediately.",
-          "novelty": {
-            "result": "distinct",
-            "rationale": "No archived RecruitZero item covers platform impression methodology recalibration with hard migration deadlines and data-deletion consequences. The Nov 13 Option 1 (Google AI Mode reporting gap) covered query-level data invisibility in paid search — operationally distinct from a measurement metric redefinition and a report-deletion deadline."
-          },
-          "predicted_audience_response": "Paid media, analytics, and marketing operations teams will check their own account migration status, examine which reports are on the exclusion list, and ask whether their media mix models or dashboards are using impression inputs that will break in January.",
-          "materiality_gates": {
-            "material_event": "pass_amazon_official_notification_digiday_staff_reporting",
-            "editorial_thesis_fit": "pass",
-            "primary_evidence": "pass_amazon_help_center_plus_digiday_staff_nov16_plus_ppcland",
-            "availability_clarity": "pass_dec17_jan1_jan31_deadlines_explicit",
-            "claim_discipline": "pass_63pct_amazon_estimate_attributed_clearly_named_buyer_sources",
-            "operational_impact": "pass",
-            "contradiction_search": "pass_amazon_says_roas_improves_on_screen_counting_buyer_cpm_concern_noted",
-            "archive_novelty": "pass_distinct"
-          },
-          "coverage_limitations": [
-            "63% figure is Amazon's own average estimate; impact varies by placement.",
-            "Ten unsupported report types have no confirmed addition date in unified reporting.",
-            "Amazon has not issued guidance on billing methodology changes corresponding to the impression drop.",
-            "EMARKETER and AdExchanger full text not retrieved (snippet/secondary access only)."
-          ],
-          "sources": [
-            {
-              "type": "primary_help_documentation",
-              "title": "Migrate your scheduled reports to unified reporting | Amazon Ads Help Center",
-              "url": "https://advertising.amazon.com/help/GK3JZZE5QLTF8U8A",
-              "published": "2026-11-12"
-            },
-            {
-              "type": "independent_staff_reporting",
-              "title": "Media buyers grapple with incoming Amazon reporting changes | Digiday",
-              "url": "https://digiday.com/media-buying/media-buying-briefing-buyers-grapple-with-incoming-amazon-reporting-changes/",
-              "published": "2026-11-16"
-            },
-            {
-              "type": "independent_staff_reporting",
-              "title": "Amazon advertisers will lose unmigrated reports on January 31, 2027 | PPC Land",
-              "url": "https://ppc.land/amazon-advertisers-will-lose-unmigrated-reports-on-january-31-2027/",
-              "published": "2026-11-12"
-            },
-            {
-              "type": "independent_secondary_coverage",
-              "title": "Amazon DSP to cut reported display ad impressions by 63% from January 2027 | Storyboard18",
-              "url": "https://www.storyboard18.com/advertising/amazon-dsp-to-cut-reported-display-ad-impressions-by-63-from-january-2027-as-measurement-norms-change-114238.htm",
-              "published": "2026-11-12"
-            }
-          ],
-          "selected": false
-        },
-        {
-          "option": 2,
-          "rank": 2,
-          "title": "Deloitte is selling a marketing operating system directly to CEOs. That's a question about who controls marketing infrastructure.",
-          "event_date": "2026-11-16",
-          "proposed_hook": "Deloitte Digital launched Converge Front Office on November 16 — an AI operating system for marketing and sales teams sold as an enterprise license requiring CEO approval. It orchestrates AI agents across research, brief, campaign execution, and performance monitoring using systems the client already owns. Mark Singer, Deloitte Digital's US CMO, said brands could use it to 'rethink their agency infrastructure.'",
-          "marketer_angle": "Whether your brand buys Converge or not, the operating question it raises is live: who controls the AI operating layer connecting your marketing research, production, and measurement, and what happens to agency scope and in-house capability when a consulting firm can hand you an end-to-end system? That question is now a CEO-level procurement decision in some organizations, not a CMO one.",
-          "why_it_passed": "Deloitte Digital announced Converge Front Office November 16 (PRNewswire official release, Digiday staff coverage by Seb Joseph, Marketing Dive staff, AdExchanger daily roundup Nov 17). The product is live with Marketing and Sales suites; Commerce, Service, and Customer Strategy suites are planned. Mark Singer explicitly said clients can use it to rethink agency infrastructure. Digiday framed it as a threat to holdcos. Sales-side pilot result (outbound response rate from 17% to 30s range at scale after initially reaching ~56%) is vendor-stated, one unnamed client. The operating-model question — who owns the layer connecting marketing agents to execution — is distinct from the product itself.",
-          "operational_impact_chain": "AI tools proliferate but the marketing operating model — how agents connect research, brief, production, and measurement — remains unclear -> consulting firm launches enterprise AI OS sold at CEO level, explicitly designed to let brands run marketing internally or rethink agency scope -> brand marketing teams must now respond to an executive-level conversation about which work stays with agencies, which moves in-house, and who owns the agent orchestration layer -> brands that delay this decision risk having it made for them by consultants or by budget holders who don't understand marketing's existing stack -> decision needed on governance model for agent-driven production: who approves, who sets scope, what constitutes the authoritative system.",
-          "scores": {
-            "relevance": 8,
-            "relevance_rationale": "Forces a present-tense organizational question about who controls the AI operating layer connecting marketing research, production, and measurement — relevant to any brand or CMO now navigating agentic platform choices.",
-            "topicality": 9,
-            "topicality_rationale": "Announced November 16, 2026 — two days before this run. AdExchanger noted it Nov 17.",
-            "viral_potential": 8,
-            "viral_potential_rationale": "A major consulting firm pitching marketing CEOs to bypass agencies and run marketing infrastructure in-house creates an uncomfortable conversation that every holdco and brand marketer will want to engage with.",
-            "total": 25
-          },
-          "confidence": "qualified",
-          "confidence_limitation": "Performance results are vendor-stated from a single unnamed client, Sales-side only. Competing agentic operating systems from holdcos (Publicis Marcel, WPP Open, Omnicom AI) exist. Deloitte does not have media-buying authority or audience data at scale. Commerce and other suites are future.",
-          "novelty": {
-            "result": "distinct",
-            "rationale": "No archived item covers the consulting firm / enterprise marketing OS angle or the CEO-level procurement shift for the agent orchestration layer. Mars LLM measurement (Nov 13 Q3) covered an internal org response; this covers external vendor market consolidation into the operating layer itself."
-          },
-          "predicted_audience_response": "CMOs and marketing operations leaders will ask whether their current agency and tool stack gives them the same integrated orchestration, what the governance model for agent-driven production looks like, and whether the CEO-bypass pitch threatens their authority over marketing infrastructure.",
-          "materiality_gates": {
-            "material_event": "pass_named_product_launch_official_announcement_nov16",
-            "editorial_thesis_fit": "pass",
-            "primary_evidence": "pass_prnewswire_plus_digiday_staff_plus_marketing_dive_staff",
-            "availability_clarity": "pass_marketing_and_sales_live_commerce_future",
-            "claim_discipline": "pass_vendor_stated_results_unnamed_client_attributed_clearly",
-            "operational_impact": "pass",
-            "contradiction_search": "pass_holdcos_competing_agentic_systems_noted",
-            "archive_novelty": "pass_distinct"
-          },
-          "coverage_limitations": [
-            "Performance results (17% → 30s range) vendor-stated, single unnamed client, Sales-side only.",
-            "Competing agentic operating systems from holdcos not independently benchmarked against Converge.",
-            "Digiday full article text not directly extracted (confirmed via snippet and secondary summaries).",
-            "Commerce, Service, and Customer Strategy suites not yet available."
-          ],
-          "sources": [
-            {
-              "type": "primary_company_announcement",
-              "title": "Converge by Deloitte Front Office Launches | PRNewswire",
-              "url": "https://www.prnewswire.com/news-releases/converge-by-deloitte-front-office-launches-to-help-organizations-turn-ai-investments-into-commercial-growth-302939860.html",
-              "published": "2026-11-16"
-            },
-            {
-              "type": "independent_staff_reporting",
-              "title": "Deloitte Digital takes the holdco operating system pitch straight to the CEO | Digiday",
-              "url": "https://digiday.com/marketing/deloitte-digital-takes-the-holdco-operating-system-pitch-straight-to-the-ceo/",
-              "author": "Seb Joseph (staff)",
-              "published": "2026-11-16"
-            },
-            {
-              "type": "independent_staff_reporting",
-              "title": "Deloitte Digital's new agentic tools aim to fix messy marketing workflows | Marketing Dive",
-              "url": "https://www.marketingdive.com/news/deloitte-digitals-new-agentic-tools-aim-to-fix-messy-marketing-workflows/874779/",
-              "published": "2026-11-16"
-            },
-            {
-              "type": "independent_secondary_coverage",
-              "title": "Going Straight To The C-Suite | AdExchanger (daily roundup Nov 17)",
-              "url": "https://www.adexchanger.com/daily-news-roundup/tuesday-17112026/",
-              "published": "2026-11-17"
-            }
-          ],
-          "selected": false
-        },
-        {
-          "option": 3,
-          "rank": 3,
-          "title": "Google and Microsoft are asking you to tell them whether AI can train on your content. The deadline for one decision is December 15.",
-          "event_date": "2026-10-30",
-          "expanded_window_reason": "Primary event October 30 (27 days before this run); surfaced as reserve candidate Nov 13 with note to surface when Dec 15 Bing Webmaster Tools deadline is within operational horizon. That deadline is now 27 days away.",
-          "proposed_hook": "On October 30, Google, Microsoft, OpenAI, and Anthropic announced support for a shared robots.txt token for AI training preferences. Sites that currently use NoArchive or NoCache meta tags need to record a temporary AI grounding preference in Bing Webmaster Tools starting December 15, or risk those pages defaulting to allowing AI grounding after March 1, 2027. The default if no preference is published: allow training, allow grounding.",
-          "marketer_angle": "Content, SEO, and marketing operations teams need to make two distinct governance decisions: (1) whether to opt out of AI training on owned content, and (2) whether and how to control use of content in AI-generated answers (grounding). These are separate controls with different scope and different deadlines. Teams using old meta tags to manage AI visibility have 27 days to record a temporary grounding preference.",
-          "why_it_passed": "Microsoft and Google each published official announcements October 30. Multiple independent explanatory sources (digitaladvisors.com.au, firney.com, marketingpen.com, coheser.com) confirmed consistent detail on deadlines and mechanics. The IETF individual draft (draft-kelley-aipref-training-preference-signal-00) is public. The token is __usage_ai-training under standard robots.txt syntax. December 15 is Bing Webmaster Tools opening date for temporary grounding preferences for NoArchive/NoCache sites. Default is allow if no preference is published — the operative risk is omission.",
-          "operational_impact_chain": "Google, Microsoft, OpenAI, and Anthropic support shared opt-out token for AI model training -> Microsoft adds separate grounding controls (whether content informs AI-generated answers) with on-page meta tag options -> sites using NoArchive or NoCache today have 27 days to record a temporary grounding preference before the Dec 15 Bing Webmaster Tools opening, or risk those pages defaulting to grounding-allowed after March 1 -> content ops, SEO, and legal teams must make two distinct decisions: AI training opt-out (whole-site robots.txt) and AI grounding preference (page-level meta tags) -> decision also needed on 'DisallowExtended' option that blocks Microsoft's resold grounding API access while keeping Copilot/M365 access.",
-          "scores": {
-            "relevance": 8,
-            "relevance_rationale": "Every content and SEO team now has a live governance decision about whether owned content trains AI models and whether it appears in AI-generated answers — with a deadline for one decision class on December 15.",
-            "topicality": 8,
-            "topicality_rationale": "October 30 primary event (27 days old); December 15 operational deadline makes it present-tense. Noted correctly as reserve candidate with anticipation of this surfacing.",
-            "viral_potential": 8,
-            "viral_potential_rationale": "A multi-company announcement asking every content team to make an explicit AI training and grounding preference creates an immediate 'do we have a policy on this?' discussion across brand, SEO, and legal.",
-            "total": 24
-          },
-          "confidence": "qualified",
-          "confidence_limitation": "IETF individual draft — not yet a formal standard. Enforcement is voluntary; compliance depends on each AI company's crawling behavior. This does not remove content from existing training data. Google's implementation timeline is 'during 2027' — less specific than Microsoft's. Effectiveness limited to future crawling.",
-          "novelty": {
-            "result": "distinct",
-            "rationale": "No archived item covers AI training and grounding preferences as a content governance responsibility for marketing and content operations teams. The Nov 17 article covered product data authority for AI shopping; the Nov 11 article covered cross-platform business information consistency. This covers the upstream content policy question of which pages may be used to train models and generate answers."
-          },
-          "predicted_audience_response": "Content, SEO, and marketing operations leaders will ask whether their site has a stated preference, what 'DisallowExtended' means in practice, and whether legal has an opinion on the training opt-out.",
-          "materiality_gates": {
-            "material_event": "pass_microsoft_google_official_announcements_oct30",
-            "editorial_thesis_fit": "pass",
-            "primary_evidence": "pass_microsoft_bing_blog_official_announcement_plus_multiple_independent_confirmations",
-            "availability_clarity": "pass_dec15_feb1_march1_deadlines_explicit",
-            "claim_discipline": "pass_with_voluntary_draft_status_enforcement_limitations_stated",
-            "operational_impact": "pass",
-            "contradiction_search": "pass_noted_draft_not_standard_no_effect_on_existing_training_data_noted",
-            "archive_novelty": "pass_distinct"
-          },
-          "coverage_limitations": [
-            "IETF individual draft — not formal standard; enforcement is voluntary.",
-            "Does not remove content from existing AI training data.",
-            "Microsoft Bing blog post (Oct 30) not directly extracted — confirmed via multiple independent sources.",
-            "Google's implementation timeline is 'during 2027' — less precise than Microsoft's Feb 1, 2027.",
-            "Effectiveness depends on crawler compliance, which varies by AI company."
-          ],
-          "sources": [
-            {
-              "type": "primary_platform_announcement",
-              "title": "Your Content, Your Choice: Clearer Preferences for Training and Grounding | Bing Blog",
-              "url": "https://blogs.bing.com/search/2026/10/your-content-your-choice-clearer-preferences-for-training-and-grounding/",
-              "published": "2026-10-30"
-            },
-            {
-              "type": "independent_explanatory",
-              "title": "Shared AI training opt-out in robots.txt: what to know | Digital Advisors AU",
-              "url": "https://digitaladvisors.com.au/journal/shared-ai-training-opt-out-robots-txt",
-              "published": "2026-11-11"
-            },
-            {
-              "type": "independent_explanatory",
-              "title": "Bing AI Grounding Controls: What UK Sites Need to Know | Firney",
-              "url": "https://firney.com/news-and-insights/bing-ai-training-and-grounding-controls",
-              "published": "2026-11-11"
-            },
-            {
-              "type": "independent_explanatory",
-              "title": "Shared Robots.txt for AI: Google, Bing, OpenAI Rules | MarketingPen",
-              "url": "https://marketingpen.com/shared-robots-txt-ai-training-preferences",
-              "published": "2026-11-14"
-            }
-          ],
-          "selected": false
-        }
-      ],
-      "research": {
-        "source_cutoff": "2026-11-18T09:00:00-05:00",
-        "initial_window_start": "2026-11-15T00:00:00-05:00",
-        "overlap_start": "2026-11-14T00:00:00-05:00",
-        "discovery_window_hours": 72,
-        "discovery_window_expansion": "reserve_candidate_for_option_3",
-        "note": "Three qualifying candidates found. Option 1 and Option 2 within primary + overlap window. Option 3 is reserve candidate (Oct 30 event) surfaced because Dec 15 Bing Webmaster Tools deadline is now within 27-day operational horizon, as anticipated in Nov 13 decision journal.",
-        "event_ledger_path": "/home/ranson/.hermes/social-queue/research/2026-11-18-ai-martech-event-ledger.json",
-        "decision_journal_path": "/home/ranson/.hermes/social-queue/research/2026-11-18-ai-martech-decision-journal.md",
-        "reserve_candidate_count": 4,
-        "reserve_candidates": [
-          "CTV bidstream CIMM study — 22/30 (Nov 12; CTV-specific; resurface if no stronger candidates next run)",
-          "ChatGPT citation volatility (Generative Pulse Oct report) — beyond window; resurface when new primary research event appears",
-          "Constant Contact Catalyst agentic agent — waitlist-only; resurface at GA",
-          "SAP Autonomy Gap report — generic framing; resurface with stronger primary event",
-          "Forrester IT singularity + marketing agent decision-rights (CMSWire Nov18) — lacks single material primary event within 72h; resurface with Forrester published research document",
-          "EMARKETER Invoca survey Nov16 — AI agents not measured on revenue outcomes — vendor-commissioned single study; resurface with independent corroboration",
-          "SEL pharma organic-rankings/AI-citation gap study (Nov18) — sector-specific; resurface if broader industry study published",
-          "Axios ad-tech middlemen squeeze (Nov14) — member-restricted body; resurface if independently available"
-        ],
-        "coverage_gaps": [
-          {
-            "source": "Agent Reach (reddit opencli / direct subreddit)",
-            "status": "upstream_broken",
-            "cutoff_advanced": false,
-            "detail": "opencli backend UPSTREAM_BROKEN; direct subreddit browser route broken. Reddit pool retrieved via public-web/exa search fallback for all five named subreddits (r/adops, r/PPC, r/analytics, r/SEO, r/MarketingAutomation). Coverage is search-result snippets only, not full thread text. This is a route-specific limitation, not total Reddit unavailability."
-          },
-          {
-            "source": "Agent Reach (X/Twitter)",
-            "status": "credentials_pending",
-            "cutoff_advanced": false,
-            "detail": "Twitter login not configured. Named X/Twitter pool not scanned. No blocking action taken; run continued."
-          },
-          {
-            "source": "Marketing Week",
-            "status": "partial_body_retrieved_via_agent_reach",
-            "cutoff_advanced": false,
-            "detail": "Agent Reach web retrieved full text of marketingweek.com/marketers-bin-ai-speak (Oct 21, 2026 — confirmed outside 14-day window). No Nov 15–18 material events found. B2B brand AI visibility survey found (undated); McKinsey State of Marketing Europe (Nov 20, after cutoff) found. Marketing Week staff editorial within window not retrieved."
-          },
-          {
-            "source": "CMSWire",
-            "status": "full_text_retrieved_via_agent_reach",
-            "cutoff_advanced": false,
-            "detail": "Agent Reach web retrieved full CMSWire article bodies for Forrester IT singularity / marketing agent decision-rights piece. No new material events passing gates."
-          },
-          {
-            "source": "Axios Media Trends",
-            "status": "member_restricted_snippets_only",
-            "cutoff_advanced": false,
-            "detail": "Snippets retrieved via search. Nov 14 ad-tech middlemen piece found but body member-restricted. Headlines not used as factual evidence."
-          },
-          {
-            "source": "AdExchanger (full article text)",
-            "status": "web_extract_blocked_cron_context",
-            "cutoff_advanced": false,
-            "detail": "web_extract blocked in cron context. Headlines and snippets accessed via daily roundup search and agent-reach web search."
-          },
-          {
-            "source": "EMARKETER (full article text)",
-            "status": "partial_snippet_retrieved",
-            "cutoff_advanced": false,
-            "detail": "Full snippet text of Nov16 AI agents measurement piece retrieved via agent-reach web search (Invoca-commissioned survey). Not used as primary evidence due to vendor-commissioned source."
-          },
-          {
-            "source": "The Information",
-            "status": "paywalled",
-            "cutoff_advanced": false,
-            "detail": "Not retrieved. Headlines not used as factual evidence."
-          },
-          {
-            "source": "Harvard Business Review",
-            "status": "not_retrieved",
-            "cutoff_advanced": false,
-            "detail": "Not retrieved this run."
-          },
-          {
-            "source": "MIT Sloan Management Review",
-            "status": "on_watchlist_pending_relaunch",
-            "cutoff_advanced": false,
-            "detail": "Legacy publication ending regular digital content November 2026. Monitoring for winter digital relaunch."
-          }
-        ]
-      },
-      "events": [
-        {
-          "at": "2026-11-18T09:00:00-05:00",
-          "type": "topic_queue_created",
-          "actor": "scheduled_research",
-          "detail": "Created exactly three concept-led AI marketing and martech topic options. All three passed all eight materiality gates. Option 1 (Amazon Ads unified reporting + impression methodology, 28/30) and Option 2 (Deloitte Converge Front Office, 25/30) are within primary + overlap window. Option 3 (AI training/grounding robots.txt controls, 24/30) is a reserve candidate surfaced because the December 15 Bing Webmaster Tools deadline is now within the 27-day operational horizon, as anticipated in the November 13 decision journal. Nov 13 queue remains awaiting_topic_approval; Nov 17 queue is complete. Awaiting topic approval."
-        },
-        {
-          "at": "2026-11-18T14:30:00-05:00",
-          "type": "research_redo_with_agent_reach",
-          "actor": "scheduled_research_redo",
-          "detail": "Full Stage 1 redo with Agent Reach integration per run context. Agent Reach doctor: reddit=search_ready (public-web via exa; opencli UPSTREAM_BROKEN; direct subreddit route broken), web=ready (exa), github=ready, youtube=ready, twitter=needs_login (credentials_pending, not blocking). Named publication pool retrieved: AdExchanger (snippets+roundup, full-text blocked in cron), Digiday (snippets+partial), MarTech (snippets+partial), Search Engine Land (search_results), CMSWire (full article bodies via agent-reach web), Marketing Week (full article via agent-reach web, Oct21 article confirmed out of window), EMARKETER (snippet), Axios Media Trends (snippet, member-restricted). Reddit pool searched across r/adops, r/PPC, r/analytics, r/SEO, r/MarketingAutomation via public-web search. Agent Reach web expansion retrieved IAB AI-Era Attribution Blueprint full text (Nov12), CMSWire Forrester IT singularity article (Nov18 candidate), and additional measurement landscape context. New candidates evaluated: (A) EMARKETER Nov16 Invoca survey—AI agents not measured on revenue outcomes—rejected: vendor-commissioned Invoca survey, single study, no independent corroboration within 72h window; (B) SEL pharma organic-rankings/AI-citation gap study—rejected: sector-specific, narrow scope, no primary research artifact retrieved; (C) Forrester/CMSWire IT singularity + marketing agent decision-rights—reserve candidate, lacks material primary event within 72h; (D) LinkedIn 360Brew AI slop ranking shift—confirmed Oct 21 article is outside 14-day window; (E) Axios ad-tech middlemen squeeze Nov14—member-restricted, insufficient body retrieval. All three original Nov18 options confirmed as top-ranked: ranking and evidence do not change with Agent Reach expansion. Reserve candidates updated. Coverage gap for reddit opencli noted; direct subreddit route broken. X/Twitter: credentials_pending."
-        }
-      ]
-    },
     {
       "id": "ai-martech-topic-queue-2026-11-17",
       "kind": "content",
@@ -9007,6 +8689,334 @@
       ],
       "cleared_at": "2026-11-12T10:06:36-05:00",
       "cleared_via": "discord"
+    },
+    {
+      "id": "ai-martech-topic-queue-2026-11-18",
+      "kind": "content",
+      "title": "AI marketing and martech topic approval queue — November 18, 2026",
+      "created_at": "2026-11-18T09:00:00-05:00",
+      "updated_at": "2026-11-18T13:44:31-05:00",
+      "status": "cleared",
+      "stage": "cleared",
+      "topic_options": [
+        {
+          "option": 1,
+          "rank": 1,
+          "title": "Amazon is changing how it counts display ad impressions. Your reporting, dashboards, and media mix models need to be ready.",
+          "event_date": "2026-11-12",
+          "proposed_hook": "Amazon told advertisers to expect roughly 63% fewer reported impressions on its Store display ads from January 1, 2027, when it shifts from counting on download to counting on screen. By December 17, 2026, the legacy reporting pages go read-only. By January 31, they're gone — along with every unmigrated report and its history. Ten report types, including the conversion path and Amazon Attribution reports, have no equivalent in the new system yet.",
+          "marketer_angle": "Any team that uses Amazon DVA display impression counts in automated reporting, media mix models, or client dashboards needs to audit those inputs before December 17. The impact is not just a metric drop — it's a measurement baseline break and a data-deletion deadline on the same timeline. Teams must also decide what to do about the ten unsupported report types with no current path to unified reporting.",
+          "why_it_passed": "Amazon published its November 12 Support Center update confirming a five-phase shutdown timeline. Digiday (November 16) reported independently that Amazon's own estimate is a 63% average drop in DVA display impressions on Store placements from January 1, citing named agency respondents (Hannah Schatz at Coegi, Dru Sil at Stagwell, Paul DeJarnatt at Novus). PPC Land confirmed the January 31, 2027 deletion deadline and listed 10 unsupported report types on November 12. Storyboard18 and Brandefyn provided additional independent confirmation. The Dec 17 read-only transition is 29 days from this run. The measurement methodology change and the reporting migration are simultaneous operational decisions with hard deadlines.",
+          "operational_impact_chain": "Amazon shifts DVA display impression counting from on-download to on-screen (avg -63%) effective Jan 1, 2027 -> legacy reporting pages go read-only Dec 17 and are permanently decommissioned Jan 31, 2027 -> all unmigrated saved reports and historical data permanently deleted -> 10 report types including conversion path and Amazon Attribution have no unified reporting equivalent yet -> teams running automated dashboards, media mix models, or client reports from Amazon legacy pages must audit inputs and migrate or rebuild by Dec 17 -> measurement baselines must be reset for any comparison crossing Jan 1 -> decision needed on the 10 unsupported report types: wait for Amazon, extract and preserve, or accept data loss.",
+          "scores": {
+            "relevance": 10,
+            "relevance_rationale": "Every Amazon DVA display advertiser faces a concurrent measurement methodology change and a data-deletion deadline. Teams running automated reporting, MMMs, or client dashboards need to act before December 17.",
+            "topicality": 9,
+            "topicality_rationale": "Amazon Help Center update November 12; Digiday buyer reaction coverage November 16; Dec 17 deadline 29 days away. Operationally current and decision-urgent.",
+            "viral_potential": 9,
+            "viral_potential_rationale": "A platform simultaneously changing how it counts impressions and permanently deleting unmigrated reports on the same 60-day timeline creates a concrete crisis moment every Amazon advertiser will recognize.",
+            "total": 28
+          },
+          "confidence": "high",
+          "confidence_limitation": "63% figure is Amazon's own average estimate; actual impact varies by campaign placement and targeting. Ten unsupported report types have no confirmed addition date. Amazon says ROAS improves under on-screen counting — buyers may not see CPM pressure immediately.",
+          "novelty": {
+            "result": "distinct",
+            "rationale": "No archived RecruitZero item covers platform impression methodology recalibration with hard migration deadlines and data-deletion consequences. The Nov 13 Option 1 (Google AI Mode reporting gap) covered query-level data invisibility in paid search — operationally distinct from a measurement metric redefinition and a report-deletion deadline."
+          },
+          "predicted_audience_response": "Paid media, analytics, and marketing operations teams will check their own account migration status, examine which reports are on the exclusion list, and ask whether their media mix models or dashboards are using impression inputs that will break in January.",
+          "materiality_gates": {
+            "material_event": "pass_amazon_official_notification_digiday_staff_reporting",
+            "editorial_thesis_fit": "pass",
+            "primary_evidence": "pass_amazon_help_center_plus_digiday_staff_nov16_plus_ppcland",
+            "availability_clarity": "pass_dec17_jan1_jan31_deadlines_explicit",
+            "claim_discipline": "pass_63pct_amazon_estimate_attributed_clearly_named_buyer_sources",
+            "operational_impact": "pass",
+            "contradiction_search": "pass_amazon_says_roas_improves_on_screen_counting_buyer_cpm_concern_noted",
+            "archive_novelty": "pass_distinct"
+          },
+          "coverage_limitations": [
+            "63% figure is Amazon's own average estimate; impact varies by placement.",
+            "Ten unsupported report types have no confirmed addition date in unified reporting.",
+            "Amazon has not issued guidance on billing methodology changes corresponding to the impression drop.",
+            "EMARKETER and AdExchanger full text not retrieved (snippet/secondary access only)."
+          ],
+          "sources": [
+            {
+              "type": "primary_help_documentation",
+              "title": "Migrate your scheduled reports to unified reporting | Amazon Ads Help Center",
+              "url": "https://advertising.amazon.com/help/GK3JZZE5QLTF8U8A",
+              "published": "2026-11-12"
+            },
+            {
+              "type": "independent_staff_reporting",
+              "title": "Media buyers grapple with incoming Amazon reporting changes | Digiday",
+              "url": "https://digiday.com/media-buying/media-buying-briefing-buyers-grapple-with-incoming-amazon-reporting-changes/",
+              "published": "2026-11-16"
+            },
+            {
+              "type": "independent_staff_reporting",
+              "title": "Amazon advertisers will lose unmigrated reports on January 31, 2027 | PPC Land",
+              "url": "https://ppc.land/amazon-advertisers-will-lose-unmigrated-reports-on-january-31-2027/",
+              "published": "2026-11-12"
+            },
+            {
+              "type": "independent_secondary_coverage",
+              "title": "Amazon DSP to cut reported display ad impressions by 63% from January 2027 | Storyboard18",
+              "url": "https://www.storyboard18.com/advertising/amazon-dsp-to-cut-reported-display-ad-impressions-by-63-from-january-2027-as-measurement-norms-change-114238.htm",
+              "published": "2026-11-12"
+            }
+          ],
+          "selected": false
+        },
+        {
+          "option": 2,
+          "rank": 2,
+          "title": "Deloitte is selling a marketing operating system directly to CEOs. That's a question about who controls marketing infrastructure.",
+          "event_date": "2026-11-16",
+          "proposed_hook": "Deloitte Digital launched Converge Front Office on November 16 — an AI operating system for marketing and sales teams sold as an enterprise license requiring CEO approval. It orchestrates AI agents across research, brief, campaign execution, and performance monitoring using systems the client already owns. Mark Singer, Deloitte Digital's US CMO, said brands could use it to 'rethink their agency infrastructure.'",
+          "marketer_angle": "Whether your brand buys Converge or not, the operating question it raises is live: who controls the AI operating layer connecting your marketing research, production, and measurement, and what happens to agency scope and in-house capability when a consulting firm can hand you an end-to-end system? That question is now a CEO-level procurement decision in some organizations, not a CMO one.",
+          "why_it_passed": "Deloitte Digital announced Converge Front Office November 16 (PRNewswire official release, Digiday staff coverage by Seb Joseph, Marketing Dive staff, AdExchanger daily roundup Nov 17). The product is live with Marketing and Sales suites; Commerce, Service, and Customer Strategy suites are planned. Mark Singer explicitly said clients can use it to rethink agency infrastructure. Digiday framed it as a threat to holdcos. Sales-side pilot result (outbound response rate from 17% to 30s range at scale after initially reaching ~56%) is vendor-stated, one unnamed client. The operating-model question — who owns the layer connecting marketing agents to execution — is distinct from the product itself.",
+          "operational_impact_chain": "AI tools proliferate but the marketing operating model — how agents connect research, brief, production, and measurement — remains unclear -> consulting firm launches enterprise AI OS sold at CEO level, explicitly designed to let brands run marketing internally or rethink agency scope -> brand marketing teams must now respond to an executive-level conversation about which work stays with agencies, which moves in-house, and who owns the agent orchestration layer -> brands that delay this decision risk having it made for them by consultants or by budget holders who don't understand marketing's existing stack -> decision needed on governance model for agent-driven production: who approves, who sets scope, what constitutes the authoritative system.",
+          "scores": {
+            "relevance": 8,
+            "relevance_rationale": "Forces a present-tense organizational question about who controls the AI operating layer connecting marketing research, production, and measurement — relevant to any brand or CMO now navigating agentic platform choices.",
+            "topicality": 9,
+            "topicality_rationale": "Announced November 16, 2026 — two days before this run. AdExchanger noted it Nov 17.",
+            "viral_potential": 8,
+            "viral_potential_rationale": "A major consulting firm pitching marketing CEOs to bypass agencies and run marketing infrastructure in-house creates an uncomfortable conversation that every holdco and brand marketer will want to engage with.",
+            "total": 25
+          },
+          "confidence": "qualified",
+          "confidence_limitation": "Performance results are vendor-stated from a single unnamed client, Sales-side only. Competing agentic operating systems from holdcos (Publicis Marcel, WPP Open, Omnicom AI) exist. Deloitte does not have media-buying authority or audience data at scale. Commerce and other suites are future.",
+          "novelty": {
+            "result": "distinct",
+            "rationale": "No archived item covers the consulting firm / enterprise marketing OS angle or the CEO-level procurement shift for the agent orchestration layer. Mars LLM measurement (Nov 13 Q3) covered an internal org response; this covers external vendor market consolidation into the operating layer itself."
+          },
+          "predicted_audience_response": "CMOs and marketing operations leaders will ask whether their current agency and tool stack gives them the same integrated orchestration, what the governance model for agent-driven production looks like, and whether the CEO-bypass pitch threatens their authority over marketing infrastructure.",
+          "materiality_gates": {
+            "material_event": "pass_named_product_launch_official_announcement_nov16",
+            "editorial_thesis_fit": "pass",
+            "primary_evidence": "pass_prnewswire_plus_digiday_staff_plus_marketing_dive_staff",
+            "availability_clarity": "pass_marketing_and_sales_live_commerce_future",
+            "claim_discipline": "pass_vendor_stated_results_unnamed_client_attributed_clearly",
+            "operational_impact": "pass",
+            "contradiction_search": "pass_holdcos_competing_agentic_systems_noted",
+            "archive_novelty": "pass_distinct"
+          },
+          "coverage_limitations": [
+            "Performance results (17% → 30s range) vendor-stated, single unnamed client, Sales-side only.",
+            "Competing agentic operating systems from holdcos not independently benchmarked against Converge.",
+            "Digiday full article text not directly extracted (confirmed via snippet and secondary summaries).",
+            "Commerce, Service, and Customer Strategy suites not yet available."
+          ],
+          "sources": [
+            {
+              "type": "primary_company_announcement",
+              "title": "Converge by Deloitte Front Office Launches | PRNewswire",
+              "url": "https://www.prnewswire.com/news-releases/converge-by-deloitte-front-office-launches-to-help-organizations-turn-ai-investments-into-commercial-growth-302939860.html",
+              "published": "2026-11-16"
+            },
+            {
+              "type": "independent_staff_reporting",
+              "title": "Deloitte Digital takes the holdco operating system pitch straight to the CEO | Digiday",
+              "url": "https://digiday.com/marketing/deloitte-digital-takes-the-holdco-operating-system-pitch-straight-to-the-ceo/",
+              "author": "Seb Joseph (staff)",
+              "published": "2026-11-16"
+            },
+            {
+              "type": "independent_staff_reporting",
+              "title": "Deloitte Digital's new agentic tools aim to fix messy marketing workflows | Marketing Dive",
+              "url": "https://www.marketingdive.com/news/deloitte-digitals-new-agentic-tools-aim-to-fix-messy-marketing-workflows/874779/",
+              "published": "2026-11-16"
+            },
+            {
+              "type": "independent_secondary_coverage",
+              "title": "Going Straight To The C-Suite | AdExchanger (daily roundup Nov 17)",
+              "url": "https://www.adexchanger.com/daily-news-roundup/tuesday-17112026/",
+              "published": "2026-11-17"
+            }
+          ],
+          "selected": false
+        },
+        {
+          "option": 3,
+          "rank": 3,
+          "title": "Google and Microsoft are asking you to tell them whether AI can train on your content. The deadline for one decision is December 15.",
+          "event_date": "2026-10-30",
+          "expanded_window_reason": "Primary event October 30 (27 days before this run); surfaced as reserve candidate Nov 13 with note to surface when Dec 15 Bing Webmaster Tools deadline is within operational horizon. That deadline is now 27 days away.",
+          "proposed_hook": "On October 30, Google, Microsoft, OpenAI, and Anthropic announced support for a shared robots.txt token for AI training preferences. Sites that currently use NoArchive or NoCache meta tags need to record a temporary AI grounding preference in Bing Webmaster Tools starting December 15, or risk those pages defaulting to allowing AI grounding after March 1, 2027. The default if no preference is published: allow training, allow grounding.",
+          "marketer_angle": "Content, SEO, and marketing operations teams need to make two distinct governance decisions: (1) whether to opt out of AI training on owned content, and (2) whether and how to control use of content in AI-generated answers (grounding). These are separate controls with different scope and different deadlines. Teams using old meta tags to manage AI visibility have 27 days to record a temporary grounding preference.",
+          "why_it_passed": "Microsoft and Google each published official announcements October 30. Multiple independent explanatory sources (digitaladvisors.com.au, firney.com, marketingpen.com, coheser.com) confirmed consistent detail on deadlines and mechanics. The IETF individual draft (draft-kelley-aipref-training-preference-signal-00) is public. The token is __usage_ai-training under standard robots.txt syntax. December 15 is Bing Webmaster Tools opening date for temporary grounding preferences for NoArchive/NoCache sites. Default is allow if no preference is published — the operative risk is omission.",
+          "operational_impact_chain": "Google, Microsoft, OpenAI, and Anthropic support shared opt-out token for AI model training -> Microsoft adds separate grounding controls (whether content informs AI-generated answers) with on-page meta tag options -> sites using NoArchive or NoCache today have 27 days to record a temporary grounding preference before the Dec 15 Bing Webmaster Tools opening, or risk those pages defaulting to grounding-allowed after March 1 -> content ops, SEO, and legal teams must make two distinct decisions: AI training opt-out (whole-site robots.txt) and AI grounding preference (page-level meta tags) -> decision also needed on 'DisallowExtended' option that blocks Microsoft's resold grounding API access while keeping Copilot/M365 access.",
+          "scores": {
+            "relevance": 8,
+            "relevance_rationale": "Every content and SEO team now has a live governance decision about whether owned content trains AI models and whether it appears in AI-generated answers — with a deadline for one decision class on December 15.",
+            "topicality": 8,
+            "topicality_rationale": "October 30 primary event (27 days old); December 15 operational deadline makes it present-tense. Noted correctly as reserve candidate with anticipation of this surfacing.",
+            "viral_potential": 8,
+            "viral_potential_rationale": "A multi-company announcement asking every content team to make an explicit AI training and grounding preference creates an immediate 'do we have a policy on this?' discussion across brand, SEO, and legal.",
+            "total": 24
+          },
+          "confidence": "qualified",
+          "confidence_limitation": "IETF individual draft — not yet a formal standard. Enforcement is voluntary; compliance depends on each AI company's crawling behavior. This does not remove content from existing training data. Google's implementation timeline is 'during 2027' — less specific than Microsoft's. Effectiveness limited to future crawling.",
+          "novelty": {
+            "result": "distinct",
+            "rationale": "No archived item covers AI training and grounding preferences as a content governance responsibility for marketing and content operations teams. The Nov 17 article covered product data authority for AI shopping; the Nov 11 article covered cross-platform business information consistency. This covers the upstream content policy question of which pages may be used to train models and generate answers."
+          },
+          "predicted_audience_response": "Content, SEO, and marketing operations leaders will ask whether their site has a stated preference, what 'DisallowExtended' means in practice, and whether legal has an opinion on the training opt-out.",
+          "materiality_gates": {
+            "material_event": "pass_microsoft_google_official_announcements_oct30",
+            "editorial_thesis_fit": "pass",
+            "primary_evidence": "pass_microsoft_bing_blog_official_announcement_plus_multiple_independent_confirmations",
+            "availability_clarity": "pass_dec15_feb1_march1_deadlines_explicit",
+            "claim_discipline": "pass_with_voluntary_draft_status_enforcement_limitations_stated",
+            "operational_impact": "pass",
+            "contradiction_search": "pass_noted_draft_not_standard_no_effect_on_existing_training_data_noted",
+            "archive_novelty": "pass_distinct"
+          },
+          "coverage_limitations": [
+            "IETF individual draft — not formal standard; enforcement is voluntary.",
+            "Does not remove content from existing AI training data.",
+            "Microsoft Bing blog post (Oct 30) not directly extracted — confirmed via multiple independent sources.",
+            "Google's implementation timeline is 'during 2027' — less precise than Microsoft's Feb 1, 2027.",
+            "Effectiveness depends on crawler compliance, which varies by AI company."
+          ],
+          "sources": [
+            {
+              "type": "primary_platform_announcement",
+              "title": "Your Content, Your Choice: Clearer Preferences for Training and Grounding | Bing Blog",
+              "url": "https://blogs.bing.com/search/2026/10/your-content-your-choice-clearer-preferences-for-training-and-grounding/",
+              "published": "2026-10-30"
+            },
+            {
+              "type": "independent_explanatory",
+              "title": "Shared AI training opt-out in robots.txt: what to know | Digital Advisors AU",
+              "url": "https://digitaladvisors.com.au/journal/shared-ai-training-opt-out-robots-txt",
+              "published": "2026-11-11"
+            },
+            {
+              "type": "independent_explanatory",
+              "title": "Bing AI Grounding Controls: What UK Sites Need to Know | Firney",
+              "url": "https://firney.com/news-and-insights/bing-ai-training-and-grounding-controls",
+              "published": "2026-11-11"
+            },
+            {
+              "type": "independent_explanatory",
+              "title": "Shared Robots.txt for AI: Google, Bing, OpenAI Rules | MarketingPen",
+              "url": "https://marketingpen.com/shared-robots-txt-ai-training-preferences",
+              "published": "2026-11-14"
+            }
+          ],
+          "selected": false
+        }
+      ],
+      "research": {
+        "source_cutoff": "2026-11-18T09:00:00-05:00",
+        "initial_window_start": "2026-11-15T00:00:00-05:00",
+        "overlap_start": "2026-11-14T00:00:00-05:00",
+        "discovery_window_hours": 72,
+        "discovery_window_expansion": "reserve_candidate_for_option_3",
+        "note": "Three qualifying candidates found. Option 1 and Option 2 within primary + overlap window. Option 3 is reserve candidate (Oct 30 event) surfaced because Dec 15 Bing Webmaster Tools deadline is now within 27-day operational horizon, as anticipated in Nov 13 decision journal.",
+        "event_ledger_path": "/home/ranson/.hermes/social-queue/research/2026-11-18-ai-martech-event-ledger.json",
+        "decision_journal_path": "/home/ranson/.hermes/social-queue/research/2026-11-18-ai-martech-decision-journal.md",
+        "reserve_candidate_count": 4,
+        "reserve_candidates": [
+          "CTV bidstream CIMM study — 22/30 (Nov 12; CTV-specific; resurface if no stronger candidates next run)",
+          "ChatGPT citation volatility (Generative Pulse Oct report) — beyond window; resurface when new primary research event appears",
+          "Constant Contact Catalyst agentic agent — waitlist-only; resurface at GA",
+          "SAP Autonomy Gap report — generic framing; resurface with stronger primary event",
+          "Forrester IT singularity + marketing agent decision-rights (CMSWire Nov18) — lacks single material primary event within 72h; resurface with Forrester published research document",
+          "EMARKETER Invoca survey Nov16 — AI agents not measured on revenue outcomes — vendor-commissioned single study; resurface with independent corroboration",
+          "SEL pharma organic-rankings/AI-citation gap study (Nov18) — sector-specific; resurface if broader industry study published",
+          "Axios ad-tech middlemen squeeze (Nov14) — member-restricted body; resurface if independently available"
+        ],
+        "coverage_gaps": [
+          {
+            "source": "Agent Reach (reddit opencli / direct subreddit)",
+            "status": "upstream_broken",
+            "cutoff_advanced": false,
+            "detail": "opencli backend UPSTREAM_BROKEN; direct subreddit browser route broken. Reddit pool retrieved via public-web/exa search fallback for all five named subreddits (r/adops, r/PPC, r/analytics, r/SEO, r/MarketingAutomation). Coverage is search-result snippets only, not full thread text. This is a route-specific limitation, not total Reddit unavailability."
+          },
+          {
+            "source": "Agent Reach (X/Twitter)",
+            "status": "credentials_pending",
+            "cutoff_advanced": false,
+            "detail": "Twitter login not configured. Named X/Twitter pool not scanned. No blocking action taken; run continued."
+          },
+          {
+            "source": "Marketing Week",
+            "status": "partial_body_retrieved_via_agent_reach",
+            "cutoff_advanced": false,
+            "detail": "Agent Reach web retrieved full text of marketingweek.com/marketers-bin-ai-speak (Oct 21, 2026 — confirmed outside 14-day window). No Nov 15–18 material events found. B2B brand AI visibility survey found (undated); McKinsey State of Marketing Europe (Nov 20, after cutoff) found. Marketing Week staff editorial within window not retrieved."
+          },
+          {
+            "source": "CMSWire",
+            "status": "full_text_retrieved_via_agent_reach",
+            "cutoff_advanced": false,
+            "detail": "Agent Reach web retrieved full CMSWire article bodies for Forrester IT singularity / marketing agent decision-rights piece. No new material events passing gates."
+          },
+          {
+            "source": "Axios Media Trends",
+            "status": "member_restricted_snippets_only",
+            "cutoff_advanced": false,
+            "detail": "Snippets retrieved via search. Nov 14 ad-tech middlemen piece found but body member-restricted. Headlines not used as factual evidence."
+          },
+          {
+            "source": "AdExchanger (full article text)",
+            "status": "web_extract_blocked_cron_context",
+            "cutoff_advanced": false,
+            "detail": "web_extract blocked in cron context. Headlines and snippets accessed via daily roundup search and agent-reach web search."
+          },
+          {
+            "source": "EMARKETER (full article text)",
+            "status": "partial_snippet_retrieved",
+            "cutoff_advanced": false,
+            "detail": "Full snippet text of Nov16 AI agents measurement piece retrieved via agent-reach web search (Invoca-commissioned survey). Not used as primary evidence due to vendor-commissioned source."
+          },
+          {
+            "source": "The Information",
+            "status": "paywalled",
+            "cutoff_advanced": false,
+            "detail": "Not retrieved. Headlines not used as factual evidence."
+          },
+          {
+            "source": "Harvard Business Review",
+            "status": "not_retrieved",
+            "cutoff_advanced": false,
+            "detail": "Not retrieved this run."
+          },
+          {
+            "source": "MIT Sloan Management Review",
+            "status": "on_watchlist_pending_relaunch",
+            "cutoff_advanced": false,
+            "detail": "Legacy publication ending regular digital content November 2026. Monitoring for winter digital relaunch."
+          }
+        ]
+      },
+      "events": [
+        {
+          "at": "2026-11-18T09:00:00-05:00",
+          "type": "topic_queue_created",
+          "actor": "scheduled_research",
+          "detail": "Created exactly three concept-led AI marketing and martech topic options. All three passed all eight materiality gates. Option 1 (Amazon Ads unified reporting + impression methodology, 28/30) and Option 2 (Deloitte Converge Front Office, 25/30) are within primary + overlap window. Option 3 (AI training/grounding robots.txt controls, 24/30) is a reserve candidate surfaced because the December 15 Bing Webmaster Tools deadline is now within the 27-day operational horizon, as anticipated in the November 13 decision journal. Nov 13 queue remains awaiting_topic_approval; Nov 17 queue is complete. Awaiting topic approval."
+        },
+        {
+          "at": "2026-11-18T14:30:00-05:00",
+          "type": "research_redo_with_agent_reach",
+          "actor": "scheduled_research_redo",
+          "detail": "Full Stage 1 redo with Agent Reach integration per run context. Agent Reach doctor: reddit=search_ready (public-web via exa; opencli UPSTREAM_BROKEN; direct subreddit route broken), web=ready (exa), github=ready, youtube=ready, twitter=needs_login (credentials_pending, not blocking). Named publication pool retrieved: AdExchanger (snippets+roundup, full-text blocked in cron), Digiday (snippets+partial), MarTech (snippets+partial), Search Engine Land (search_results), CMSWire (full article bodies via agent-reach web), Marketing Week (full article via agent-reach web, Oct21 article confirmed out of window), EMARKETER (snippet), Axios Media Trends (snippet, member-restricted). Reddit pool searched across r/adops, r/PPC, r/analytics, r/SEO, r/MarketingAutomation via public-web search. Agent Reach web expansion retrieved IAB AI-Era Attribution Blueprint full text (Nov12), CMSWire Forrester IT singularity article (Nov18 candidate), and additional measurement landscape context. New candidates evaluated: (A) EMARKETER Nov16 Invoca survey—AI agents not measured on revenue outcomes—rejected: vendor-commissioned Invoca survey, single study, no independent corroboration within 72h window; (B) SEL pharma organic-rankings/AI-citation gap study—rejected: sector-specific, narrow scope, no primary research artifact retrieved; (C) Forrester/CMSWire IT singularity + marketing agent decision-rights—reserve candidate, lacks material primary event within 72h; (D) LinkedIn 360Brew AI slop ranking shift—confirmed Oct 21 article is outside 14-day window; (E) Axios ad-tech middlemen squeeze Nov14—member-restricted, insufficient body retrieval. All three original Nov18 options confirmed as top-ranked: ranking and evidence do not change with Agent Reach expansion. Reserve candidates updated. Coverage gap for reddit opencli noted; direct subreddit route broken. X/Twitter: credentials_pending."
+        },
+        {
+          "at": "2026-11-18T13:44:31-05:00",
+          "type": "daily_search_cleared",
+          "actor": "discord_user",
+          "message_id": "1572683750670602373",
+          "detail": "User cleared the November 18, 2026 queue in Discord. Previous lifecycle: awaiting_topic_approval/topic_approval. All topic options, Agent Reach research, sources, reserve candidates, coverage gaps, and event history were preserved in archive."
+        }
+      ],
+      "cleared_at": "2026-11-18T13:44:31-05:00",
+      "cleared_via": "discord",
+      "cleared_message_id": "1572683750670602373"
     }
   ],
   "workflow_config": {
