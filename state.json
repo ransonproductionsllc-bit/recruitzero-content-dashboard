@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-11-18T09:00:00-05:00",
+  "updated_at": "2026-11-18T14:30:00-05:00",
   "sync": {
     "status": "connected",
     "discord_guild_id": "1553886101003837561",
@@ -16,7 +16,7 @@
       "kind": "content",
       "title": "AI marketing and martech topic approval queue — November 18, 2026",
       "created_at": "2026-11-18T09:00:00-05:00",
-      "updated_at": "2026-11-18T09:00:00-05:00",
+      "updated_at": "2026-11-18T14:30:00-05:00",
       "status": "awaiting_topic_approval",
       "stage": "topic_approval",
       "topic_options": [
@@ -245,56 +245,60 @@
           "CTV bidstream CIMM study — 22/30 (Nov 12; CTV-specific; resurface if no stronger candidates next run)",
           "ChatGPT citation volatility (Generative Pulse Oct report) — beyond window; resurface when new primary research event appears",
           "Constant Contact Catalyst agentic agent — waitlist-only; resurface at GA",
-          "SAP Autonomy Gap report — generic framing; resurface with stronger primary event"
+          "SAP Autonomy Gap report — generic framing; resurface with stronger primary event",
+          "Forrester IT singularity + marketing agent decision-rights (CMSWire Nov18) — lacks single material primary event within 72h; resurface with Forrester published research document",
+          "EMARKETER Invoca survey Nov16 — AI agents not measured on revenue outcomes — vendor-commissioned single study; resurface with independent corroboration",
+          "SEL pharma organic-rankings/AI-citation gap study (Nov18) — sector-specific; resurface if broader industry study published",
+          "Axios ad-tech middlemen squeeze (Nov14) — member-restricted body; resurface if independently available"
         ],
         "coverage_gaps": [
           {
-            "source": "Marketing Week",
-            "status": "not_retrieved",
+            "source": "Agent Reach (reddit opencli / direct subreddit)",
+            "status": "upstream_broken",
             "cutoff_advanced": false,
-            "detail": "Not retrieved this run."
+            "detail": "opencli backend UPSTREAM_BROKEN; direct subreddit browser route broken. Reddit pool retrieved via public-web/exa search fallback for all five named subreddits (r/adops, r/PPC, r/analytics, r/SEO, r/MarketingAutomation). Coverage is search-result snippets only, not full thread text. This is a route-specific limitation, not total Reddit unavailability."
+          },
+          {
+            "source": "Agent Reach (X/Twitter)",
+            "status": "credentials_pending",
+            "cutoff_advanced": false,
+            "detail": "Twitter login not configured. Named X/Twitter pool not scanned. No blocking action taken; run continued."
+          },
+          {
+            "source": "Marketing Week",
+            "status": "partial_body_retrieved_via_agent_reach",
+            "cutoff_advanced": false,
+            "detail": "Agent Reach web retrieved full text of marketingweek.com/marketers-bin-ai-speak (Oct 21, 2026 — confirmed outside 14-day window). No Nov 15–18 material events found. B2B brand AI visibility survey found (undated); McKinsey State of Marketing Europe (Nov 20, after cutoff) found. Marketing Week staff editorial within window not retrieved."
           },
           {
             "source": "CMSWire",
-            "status": "partial_snippet_access",
+            "status": "full_text_retrieved_via_agent_reach",
             "cutoff_advanced": false,
-            "detail": "Accessed via search snippets; full article text not retrieved."
+            "detail": "Agent Reach web retrieved full CMSWire article bodies for Forrester IT singularity / marketing agent decision-rights piece. No new material events passing gates."
           },
           {
             "source": "Axios Media Trends",
-            "status": "not_retrieved",
+            "status": "member_restricted_snippets_only",
             "cutoff_advanced": false,
-            "detail": "Not retrieved this run."
+            "detail": "Snippets retrieved via search. Nov 14 ad-tech middlemen piece found but body member-restricted. Headlines not used as factual evidence."
           },
           {
             "source": "AdExchanger (full article text)",
             "status": "web_extract_blocked_cron_context",
             "cutoff_advanced": false,
-            "detail": "web_extract blocked in cron context. Headlines and snippets accessed via daily roundup search."
+            "detail": "web_extract blocked in cron context. Headlines and snippets accessed via daily roundup search and agent-reach web search."
           },
           {
             "source": "EMARKETER (full article text)",
-            "status": "partial_snippet_access",
+            "status": "partial_snippet_retrieved",
             "cutoff_advanced": false,
-            "detail": "Snippet content retrieved via search; full article not retrieved."
+            "detail": "Full snippet text of Nov16 AI agents measurement piece retrieved via agent-reach web search (Invoca-commissioned survey). Not used as primary evidence due to vendor-commissioned source."
           },
           {
             "source": "The Information",
             "status": "paywalled",
             "cutoff_advanced": false,
             "detail": "Not retrieved. Headlines not used as factual evidence."
-          },
-          {
-            "source": "Reddit pool (r/adops, r/PPC, r/analytics, r/SEO, r/MarketingAutomation)",
-            "status": "not_scanned",
-            "cutoff_advanced": false,
-            "detail": "Not scanned this run."
-          },
-          {
-            "source": "X/Twitter named pool",
-            "status": "not_scanned",
-            "cutoff_advanced": false,
-            "detail": "Not scanned this run."
           },
           {
             "source": "Harvard Business Review",
@@ -316,6 +320,12 @@
           "type": "topic_queue_created",
           "actor": "scheduled_research",
           "detail": "Created exactly three concept-led AI marketing and martech topic options. All three passed all eight materiality gates. Option 1 (Amazon Ads unified reporting + impression methodology, 28/30) and Option 2 (Deloitte Converge Front Office, 25/30) are within primary + overlap window. Option 3 (AI training/grounding robots.txt controls, 24/30) is a reserve candidate surfaced because the December 15 Bing Webmaster Tools deadline is now within the 27-day operational horizon, as anticipated in the November 13 decision journal. Nov 13 queue remains awaiting_topic_approval; Nov 17 queue is complete. Awaiting topic approval."
+        },
+        {
+          "at": "2026-11-18T14:30:00-05:00",
+          "type": "research_redo_with_agent_reach",
+          "actor": "scheduled_research_redo",
+          "detail": "Full Stage 1 redo with Agent Reach integration per run context. Agent Reach doctor: reddit=search_ready (public-web via exa; opencli UPSTREAM_BROKEN; direct subreddit route broken), web=ready (exa), github=ready, youtube=ready, twitter=needs_login (credentials_pending, not blocking). Named publication pool retrieved: AdExchanger (snippets+roundup, full-text blocked in cron), Digiday (snippets+partial), MarTech (snippets+partial), Search Engine Land (search_results), CMSWire (full article bodies via agent-reach web), Marketing Week (full article via agent-reach web, Oct21 article confirmed out of window), EMARKETER (snippet), Axios Media Trends (snippet, member-restricted). Reddit pool searched across r/adops, r/PPC, r/analytics, r/SEO, r/MarketingAutomation via public-web search. Agent Reach web expansion retrieved IAB AI-Era Attribution Blueprint full text (Nov12), CMSWire Forrester IT singularity article (Nov18 candidate), and additional measurement landscape context. New candidates evaluated: (A) EMARKETER Nov16 Invoca survey—AI agents not measured on revenue outcomes—rejected: vendor-commissioned Invoca survey, single study, no independent corroboration within 72h window; (B) SEL pharma organic-rankings/AI-citation gap study—rejected: sector-specific, narrow scope, no primary research artifact retrieved; (C) Forrester/CMSWire IT singularity + marketing agent decision-rights—reserve candidate, lacks material primary event within 72h; (D) LinkedIn 360Brew AI slop ranking shift—confirmed Oct 21 article is outside 14-day window; (E) Axios ad-tech middlemen squeeze Nov14—member-restricted, insufficient body retrieval. All three original Nov18 options confirmed as top-ranked: ranking and evidence do not change with Agent Reach expansion. Reserve candidates updated. Coverage gap for reddit opencli noted; direct subreddit route broken. X/Twitter: credentials_pending."
         }
       ]
     },
