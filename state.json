@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-11-18T13:44:31-05:00",
+  "updated_at": "2026-11-19T09:00:00-05:00",
   "sync": {
     "status": "connected",
     "discord_guild_id": "1553886101003837561",
@@ -11,6 +11,299 @@
     "dashboard_refresh_seconds": 60
   },
   "active_queue": [
+    {
+      "id": "ai-martech-topic-queue-2026-11-19",
+      "kind": "content",
+      "title": "AI marketing and martech topic approval queue",
+      "created_at": "2026-11-19T09:00:00-05:00",
+      "updated_at": "2026-11-19T09:00:00-05:00",
+      "status": "awaiting_topic_approval",
+      "stage": "topic_approval",
+      "topic_options": [
+        {
+          "option": 1,
+          "rank": 1,
+          "title": "A marketing tool's trusted CDN script turned hostile and hit 178 organizations. That's a vendor governance problem, not an IT problem.",
+          "event_date": "2026-11-16",
+          "proposed_hook": "On November 16, an attacker exploited a vulnerability in Optimizely's Web Experimentation platform and injected malicious JavaScript into the scripts of 178 organizations — including CNN, BBC, Zoom, Salesforce, and IKEA. The code skimmed payment cards, swapped crypto wallet addresses, and delivered iOS exploit kits. No organization's own server was breached. Marketing-owned vendor code did the damage.",
+          "marketer_angle": "Marketing operations and martech teams often control which JavaScript vendors run on company properties — and configure those vendors' custom code fields. This incident makes the vendor governance question operational: which scripts on your site can inject code into checkout forms, what code-change monitoring exists, what your CSP protects and what it doesn't, and what rights your vendor contracts give you after an incident. The answer determines whether a marketing team is a first responder or a bystander next time.",
+          "why_it_passed": "Optimizely confirmed the incident via its own status page (November 17) with specific details: an attacker exploited a vulnerability in the Experimentation account signup flow, gaining write access to the Project JavaScript field of customer projects. Because modified snippets were served from Optimizely's CDN under its own certificate, allowlisting cdn.optimizely.com in a CSP provided zero protection. Security researcher Scott Helme of Report URI discovered the attack and documented 188 infected snippets belonging to 178 organizations. TechTarget (staff), Infosecurity Magazine (staff), HackerNews, Palo Alto Unit42, StepSecurity, and Malwarebytes all independently confirmed and analyzed. The attack was cleaned within ~16 hours. The marketing-operations angle is specific: Optimizely Web Experimentation is a marketing-owned tool used for A/B testing and personalization; the custom Project JavaScript field is configured in the marketing team's dashboard and runs on every page load.",
+          "operational_impact_chain": "An attacker exploits a marketing A/B-testing platform's signup flow to gain write access to customer JavaScript fields -> modified snippets are served from the vendor's trusted CDN under its own certificate -> organizations' own Content Security Policies provide no protection because the CDN domain is already allowlisted -> visitors to 178 organizations' sites receive card-skimming, crypto-swapping, and iOS exploit code -> marketing and security teams identify which marketing-owned vendors have equivalent trusted-CDN footprints and custom code fields -> vendor governance decisions change: code-change monitoring, contract incident-notification rights, CSP hash pinning, and third-party script review scope.",
+          "scores": {
+            "relevance": 9,
+            "relevance_rationale": "Marketing operations teams often own the vendor relationships and configure the custom code fields in experimentation, analytics, personalization, and testing platforms — the same attack surface exposed here.",
+            "topicality": 10,
+            "topicality_rationale": "November 16 event (3 days before this run). Confirmed and analyzed across multiple independent security sources; operationally active vendor governance question.",
+            "viral_potential": 9,
+            "viral_potential_rationale": "A marketing tool affecting CNN, BBC, Zoom, Salesforce, and 174 other organizations — with payment card skimming and CSP bypass — creates immediate recognition among martech operators who use similar tools.",
+            "total": 28
+          },
+          "confidence": "high",
+          "confidence_limitation": "178 is a lower bound. Attack was remediated within ~16 hours; ongoing risk is at the vendor-script class level. Marketing operations ownership of experimentation platforms varies by organization.",
+          "novelty": {
+            "result": "distinct",
+            "rationale": "No archived RecruitZero item covers vendor-script supply chain security as a marketing technology governance problem."
+          },
+          "predicted_audience_response": "Martech and marketing operations practitioners will check whether their own experimentation or analytics vendors have equivalent custom code fields, ask what a CSP hash pin requires, and question whether vendor incident notification rights are spelled out in existing contracts.",
+          "materiality_gates": {
+            "material_event": "pass_named_incident_vendor_confirmed_178_organizations_documented",
+            "editorial_thesis_fit": "pass",
+            "primary_evidence": "pass_optimizely_status_page_plus_report_uri_plus_multiple_independent_security_sources",
+            "availability_clarity": "pass_incident_resolved_class_risk_ongoing",
+            "claim_discipline": "pass_with_178_lower_bound_noted_attack_remediated_stated",
+            "operational_impact": "pass",
+            "contradiction_search": "pass_with_attack_resolved_quickly_noted_and_it_vs_marketing_ownership_varies",
+            "archive_novelty": "pass_distinct"
+          },
+          "coverage_limitations": [
+            "178 organizations is a lower bound; real number is higher per Report URI.",
+            "The attack was remediated within ~16 hours; ongoing risk is at the vendor-script class level.",
+            "Marketing operations ownership of experimentation platform JavaScript fields varies by organization.",
+            "No practitioner discussion retrieved from named subreddits (direct route broken)."
+          ],
+          "sources": [
+            {
+              "type": "primary_vendor_incident_notice",
+              "title": "Incident notice — Nov 17, 2026 | Optimizely Status",
+              "url": "https://status.optimizely.com/incidents/ftw0fh9wx43z",
+              "published": "2026-11-17"
+            },
+            {
+              "type": "primary_security_researcher_report",
+              "title": "World's largest brands infected with malware via Optimizely | Report URI",
+              "url": "https://blog.report-uri.com/worlds-largest-brands-infected-with-malware-via-optimizely/",
+              "author": "Scott Helme (Report URI)",
+              "published": "2026-11-16"
+            },
+            {
+              "type": "independent_staff_reporting",
+              "title": "Optimizely supply chain attack turns trusted scripts against 178 orgs | TechTarget",
+              "url": "https://techtarget.com/news/optimizely-supply-chain-attack-turns-trusted-scripts-against-178-orgs/874997",
+              "published": "2026-11-17"
+            },
+            {
+              "type": "independent_staff_reporting",
+              "title": "Optimizely Flaw Exploited to Serve Malicious Code to Visitors of 178 Organizations | Infosecurity Magazine",
+              "url": "https://infosecurity-magazine.com/news/optimizely-hack-malware-178-orgs",
+              "published": "2026-11-17"
+            },
+            {
+              "type": "independent_security_analysis",
+              "title": "OPTIMJACK supply chain attack — Palo Alto Unit42",
+              "url": "https://unit42.paloaltonetworks.com/optimjack-supply-chain-attack",
+              "published": "2026-11-17"
+            }
+          ]
+        },
+        {
+          "option": 2,
+          "rank": 2,
+          "title": "Amazon is deleting its display ad reporting history on January 31. The measurement baseline break happens December 17.",
+          "event_date": "2026-11-12",
+          "expanded_window_reason": "Amazon Help Center update November 12 (7 days before this run). Digiday named-agency reaction November 16 (3 days before this run). Re-surfaced from the cleared November 18 queue; December 17 deadline now 28 days away.",
+          "proposed_hook": "Amazon told advertisers to expect roughly 63% fewer reported impressions on its Store display ads from January 1, 2027, when it shifts from counting on download to counting on screen. By December 17, the legacy reporting pages go read-only. By January 31, they're gone — along with every unmigrated report and its history. Ten report types, including the conversion path and Amazon Attribution reports, have no equivalent in the new system yet.",
+          "marketer_angle": "Any team using Amazon DVA display impression counts in automated reporting, media mix models, or client dashboards needs to audit those inputs before December 17. The impact isn't just a metric drop — it's a measurement baseline break and a data-deletion deadline on the same timeline. Teams must also decide what to do about the ten unsupported report types with no current path to unified reporting.",
+          "why_it_passed": "Amazon's Ads Help Center confirmed the timeline on November 12. Digiday reported independently on November 16 with six named agency respondents (Hannah Schatz at Coegi, Dru Sil at Stagwell, Paul DeJarnatt at Novus). PPC Land confirmed the January 31 deletion deadline and listed 10 unsupported report types. The ~63% figure is Amazon's own estimate for DVA display ads specifically. December 17 deadline is 28 days away.",
+          "operational_impact_chain": "Amazon shifts DVA display impression reporting methodology from download-counted to screen-counted -> reported impression counts drop ~63% for Store display campaigns -> December 17: legacy reporting pages go read-only -> January 31: pages deleted and report history permanently removed -> 10 report types with no current equivalent in unified reporting lose their data permanently -> teams using impression counts in automated reporting, MMM inputs, or client dashboards must audit and re-baseline before Dec 17.",
+          "scores": {
+            "relevance": 10,
+            "relevance_rationale": "Directly changes the measurement baseline for any team running Amazon DVA display ads — with hard deletion deadlines requiring present-tense action.",
+            "topicality": 9,
+            "topicality_rationale": "Amazon Help Center update November 12; Digiday named-agency reporting November 16; December 17 deadline 28 days away.",
+            "viral_potential": 9,
+            "viral_potential_rationale": "A platform changing its impression count methodology and permanently deleting report history creates a concrete accountability question for every team that depends on that data.",
+            "total": 28
+          },
+          "confidence": "high",
+          "confidence_limitation": "The ~63% figure is Amazon's estimate for DVA display ads specifically. No independent audit of the new on-screen counting methodology. Some agencies noted potential CPM pressure from lower impression counts.",
+          "novelty": {
+            "result": "distinct",
+            "rationale": "No archived RecruitZero item covers platform impression methodology recalibration with hard migration and data-deletion deadlines."
+          },
+          "predicted_audience_response": "Media buying, analytics, and reporting teams running Amazon display campaigns will check whether their impression counts, MMM models, or client dashboards depend on DVA data, and ask what happens to the 10 report types with no equivalent.",
+          "materiality_gates": {
+            "material_event": "pass_amazon_help_center_plus_digiday_named_respondents_plus_ppcland_confirmed",
+            "editorial_thesis_fit": "pass",
+            "primary_evidence": "pass_amazon_official_help_center_plus_digiday_staff_plus_ppc_land_staff",
+            "availability_clarity": "pass_dec17_readonly_jan31_deleted_clearly_stated",
+            "claim_discipline": "pass_with_63pct_dvadisplay_specific_and_cpm_pressure_counterargument_noted",
+            "operational_impact": "pass",
+            "contradiction_search": "pass_with_amazon_on_screen_counting_more_accurate_counterargument_noted",
+            "archive_novelty": "pass_distinct"
+          },
+          "coverage_limitations": [
+            "The ~63% figure is Amazon's estimate for DVA display ads specifically; impact on other campaign types not separately confirmed.",
+            "10 unsupported report types listed by PPC Land; Amazon has not confirmed when or whether equivalents will ship.",
+            "Some agency respondents noted potential CPM pressure from lower impression counts."
+          ],
+          "sources": [
+            {
+              "type": "primary_platform_documentation",
+              "title": "Amazon Ads DVA reporting migration | Amazon Ads Help Center",
+              "url": "https://advertising.amazon.com/help/GYXL9Y7M5EJNF2X",
+              "published": "2026-11-12"
+            },
+            {
+              "type": "independent_staff_reporting_named_respondents",
+              "title": "Amazon's display ad impression metric is about to drop 63%. Here's what agencies say | Digiday",
+              "url": "https://digiday.com/marketing/amazons-display-ad-impression-metric-is-about-to-drop-63-heres-what-agencies-say/",
+              "published": "2026-11-16"
+            },
+            {
+              "type": "independent_staff_reporting",
+              "title": "Amazon unified reporting migration: 10 unsupported report types | PPC Land",
+              "url": "https://ppc.land/amazon-ads-unified-reporting-migration-10-unsupported-report-types",
+              "published": "2026-11-12"
+            }
+          ]
+        },
+        {
+          "option": 3,
+          "rank": 3,
+          "title": "Google and Microsoft are asking you to tell them whether AI can train on your content. The deadline for one decision is December 15.",
+          "event_date": "2026-10-30",
+          "expanded_window_reason": "October 30 multi-company announcement. Surfaced as reserve candidate in prior runs with note to surface when December 15 enters the operational horizon. December 15 is now 26 days away.",
+          "proposed_hook": "On October 30, Google, Microsoft, OpenAI, and Anthropic announced support for a shared robots.txt token for AI training preferences. Sites using NoArchive or NoCache meta tags need to record a temporary AI grounding preference in Bing Webmaster Tools starting December 15, or risk those pages defaulting to allowing AI grounding after March 1, 2027. If no preference is published, the default is: allow training, allow grounding.",
+          "marketer_angle": "Content, SEO, and marketing operations teams need to make two distinct governance decisions: whether to opt out of AI training on owned content, and whether to control use of that content in AI-generated answers (grounding). These are separate controls, different scopes, different deadlines. Teams using old meta tags to manage AI visibility have 26 days to record a temporary grounding preference.",
+          "why_it_passed": "Multi-company official announcement on October 30 (Google, Microsoft, OpenAI, Anthropic). Bing Blog (Microsoft official), Digital Advisors AU (November 11), Firney (November 11), and MarketingPen (November 14) all confirmed independently. The two-decision structure, specific NoArchive/NoCache impact, and December 15 / March 1 timeline are all documented in primary sources.",
+          "operational_impact_chain": "Google, Microsoft, OpenAI, and Anthropic support a shared __usage_ai-training robots.txt token -> sites must publish training preferences to have them respected -> Bing Webmaster Tools opens December 15 for temporary AI grounding preferences for NoArchive/NoCache sites -> sites without a recorded preference by March 1 default to allow training + allow grounding -> content, SEO, and marketing teams identify affected properties, decide training and grounding preferences separately, and record them in Webmaster Tools before December 15.",
+          "scores": {
+            "relevance": 8,
+            "relevance_rationale": "Requires two distinct operational decisions for every content and SEO team, with a December 15 deadline for teams using existing NoArchive/NoCache tags.",
+            "topicality": 8,
+            "topicality_rationale": "Primary event October 30 (beyond 14-day window); surfaced on the basis of the December 15 operational deadline now 26 days away, as anticipated in prior research runs.",
+            "viral_potential": 8,
+            "viral_potential_rationale": "A multi-company policy with an opt-in/opt-out default and a named deadline creates a concrete governance discussion for every content operations team.",
+            "total": 24
+          },
+          "confidence": "qualified",
+          "confidence_limitation": "IETF individual draft — not a formal standard; enforcement is voluntary. Does not remove existing training data. Google's implementation timeline is 'during 2027,' less specific than Microsoft's February 1, 2027.",
+          "novelty": {
+            "result": "distinct",
+            "rationale": "No archived RecruitZero item covers the AI training/grounding content governance decision with specific deployment timelines and two distinct decision types."
+          },
+          "predicted_audience_response": "Content, SEO, and marketing operations teams will ask which of their properties use NoArchive or NoCache meta tags, what the difference is between training opt-out and grounding preference, and who owns the Webmaster Tools login.",
+          "materiality_gates": {
+            "material_event": "pass_multi_company_official_announcement_plus_bing_blog_primary",
+            "editorial_thesis_fit": "pass",
+            "primary_evidence": "pass_bing_blog_official_plus_multiple_independent_confirmations",
+            "availability_clarity": "pass_dec15_bing_wmt_enrollment_mar1_2027_default_change_clearly_stated",
+            "claim_discipline": "pass_with_ietf_individual_draft_voluntary_enforcement_no_existing_data_removal_all_stated",
+            "operational_impact": "pass",
+            "contradiction_search": "pass_with_enforcement_voluntary_and_crawler_compliance_caveats_noted",
+            "archive_novelty": "pass_distinct"
+          },
+          "coverage_limitations": [
+            "IETF individual draft — not a formal standard; enforcement is voluntary.",
+            "Does not remove content from existing AI training datasets.",
+            "Google's implementation timeline is 'during 2027' with less precision than Microsoft's February 1, 2027.",
+            "October 30 primary event is outside the 14-day window; surfaced on the basis of the December 15 operational deadline."
+          ],
+          "sources": [
+            {
+              "type": "primary_company_blog",
+              "title": "Introducing a new way for websites to manage how AI uses their content | Bing Blog",
+              "url": "https://blogs.bing.com/webmaster/november-2026/Introducing-a-new-way-for-websites-to-manage-how-AI-uses-their-content",
+              "published": "2026-10-30"
+            },
+            {
+              "type": "independent_context",
+              "title": "AI Training Token: What Marketers Need To Know About The December 15 Deadline | Digital Advisors AU",
+              "url": "https://digitaladvisors.com.au/ai-training-token-marketers-december-15",
+              "published": "2026-11-11"
+            },
+            {
+              "type": "independent_context",
+              "title": "AI Training Robots.txt Token: The Two Governance Decisions | MarketingPen",
+              "url": "https://marketingpen.co/ai-training-robots-txt-token-governance",
+              "published": "2026-11-14"
+            }
+          ]
+        }
+      ],
+      "research": {
+        "source_cutoff": "2026-11-19T09:00:00-05:00",
+        "initial_window_start": "2026-11-16T00:00:00-05:00",
+        "overlap_start": "2026-11-15T00:00:00-05:00",
+        "discovery_window_hours": 72,
+        "discovery_window_expansion": "14_days_for_option2_oct30_reserve_surfaced_for_option3",
+        "note": "Option 1 (Optimizely OPTIMJACK) is a new primary event within 72h window. Option 2 (Amazon Ads reporting) re-surfaced from cleared Nov 18 queue; Nov 12 primary event within 14-day window. Option 3 (robots.txt AI training) is the Oct 30 reserve candidate surfaced when Dec 15 operational deadline enters 26-day horizon.",
+        "event_ledger_path": "/home/ranson/.hermes/social-queue/research/2026-11-19-ai-martech-event-ledger.json",
+        "decision_journal_path": "/home/ranson/.hermes/social-queue/research/2026-11-19-ai-martech-decision-journal.md",
+        "reserve_candidate_count": 5,
+        "reserve_candidates": [
+          "Gartner 2026 Marketing Strategy and Engagement Survey (agentic commerce readiness gap) — primary publication date not confirmed within window; resurface when Gartner release URL confirmed",
+          "Visa Agentic Commerce Benchmark (Nov 5; 42.8% failure rate across 22 AI shopping models) — 14-day boundary; resurface if not covered next run",
+          "SAP Autonomy Gap report — generic framing; defer to stronger primary event",
+          "Constant Contact Catalyst AI marketing agent — waitlist-only; resurface at GA",
+          "CTV bidstream signals study (CIMM, Nov 12) — CTV-specific audience limits breadth"
+        ],
+        "coverage_gaps": [
+          {
+            "source": "Marketing Week",
+            "status": "not_retrieved",
+            "cutoff_advanced": false,
+            "detail": "Not retrieved this run."
+          },
+          {
+            "source": "CMSWire",
+            "status": "partial_snippet_access",
+            "cutoff_advanced": false,
+            "detail": "Accessed via search snippets; full article text not retrieved."
+          },
+          {
+            "source": "Axios Media Trends",
+            "status": "not_retrieved",
+            "cutoff_advanced": false,
+            "detail": "Member-only; not retrieved."
+          },
+          {
+            "source": "AdExchanger (full article text)",
+            "status": "web_extract_blocked_cron_context",
+            "cutoff_advanced": false,
+            "detail": "web_extract blocked in cron context. Headlines and roundup snippets accessed via search."
+          },
+          {
+            "source": "EMARKETER (full article text)",
+            "status": "partial_snippet_access",
+            "cutoff_advanced": false,
+            "detail": "Snippet content retrieved; full article not retrieved."
+          },
+          {
+            "source": "The Information",
+            "status": "paywalled",
+            "cutoff_advanced": false,
+            "detail": "Not retrieved. Headlines not used as factual evidence."
+          },
+          {
+            "source": "Reddit pool (r/adops, r/PPC, r/analytics, r/SEO, r/MarketingAutomation)",
+            "status": "public_web_search_returned_no_within_window_results",
+            "cutoff_advanced": false,
+            "detail": "opencli UPSTREAM_BROKEN (paused). Public-web/exa searches returned no within-window practitioner discussion on key topics."
+          },
+          {
+            "source": "X/Twitter named pool",
+            "status": "credentials_pending",
+            "cutoff_advanced": false,
+            "detail": "Credentials pending, not blocking run."
+          },
+          {
+            "source": "Harvard Business Review",
+            "status": "not_retrieved",
+            "cutoff_advanced": false,
+            "detail": "Not retrieved this run."
+          }
+        ]
+      },
+      "events": [
+        {
+          "at": "2026-11-19T09:00:00-05:00",
+          "type": "topic_queue_created",
+          "actor": "scheduled_research",
+          "detail": "Created exactly three topic options. Option 1 (Optimizely OPTIMJACK supply chain attack, 28/30) is a new primary event within the 72h window. Option 2 (Amazon Ads reporting migration, 28/30) re-surfaced from the cleared November 18 queue; November 12 primary event within 14-day window; December 17 operational deadline 28 days away. Option 3 (robots.txt AI training + Bing December 15 grounding preference, 24/30) is the October 30 reserve candidate surfaced as anticipated when the December 15 deadline entered the 26-day horizon. November 13 queue remains awaiting_topic_approval, untouched. Awaiting topic approval."
+        }
+      ]
+    },
     {
       "id": "ai-martech-topic-queue-2026-11-17",
       "kind": "content",
