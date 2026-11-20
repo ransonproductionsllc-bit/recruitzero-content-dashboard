@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-11-19T09:00:00-05:00",
+  "updated_at": "2026-11-20T09:00:00-05:00",
   "sync": {
     "status": "connected",
     "discord_guild_id": "1553886101003837561",
@@ -11,6 +11,282 @@
     "dashboard_refresh_seconds": 60
   },
   "active_queue": [
+    {
+      "id": "ai-martech-topic-queue-2026-11-20",
+      "kind": "content",
+      "title": "AI marketing and martech topic approval queue",
+      "created_at": "2026-11-20T09:00:00-05:00",
+      "updated_at": "2026-11-20T09:00:00-05:00",
+      "status": "awaiting_topic_approval",
+      "stage": "topic_approval",
+      "topic_options": [
+        {
+          "option": 1,
+          "rank": 1,
+          "title": "Intuit just sold Mailchimp for 70 cents on the dollar. That's not just a sale — it's a signal about where email marketing sits in the AI stack.",
+          "event_date": "2026-11-19",
+          "proposed_hook": "On November 19, Intuit announced it is selling Mailchimp to Bending Spoons for $3.68 billion — roughly 30% of the $12 billion Intuit paid in 2021. Mailchimp's revenue fell 1% last quarter. Intuit said selling it sharpens its focus on AI tools that help businesses win customers and manage their sales pipeline. Five years into the most expensive email marketing acquisition ever, the buyer is choosing AI-led lead-to-cash workflows over standalone email automation.",
+          "marketer_angle": "Every marketing team running Mailchimp now has two separate decisions to make: a vendor-continuity decision (what Bending Spoons does with pricing, roadmap, and support after close in early 2027) and a stack-positioning decision (whether email automation as a standalone function is still where you want to invest, or whether it belongs inside an AI-native workflow tool). These are independent questions and the first one has a deadline: the acquisition closes in early 2027.",
+          "why_it_passed": "Both companies issued official press releases on November 19. Intuit's investor relations release confirmed the $3.31B cash + $368M Bending Spoons equity structure and stated the rationale: selling Mailchimp lets Intuit focus on AI-native lead-to-cash capabilities. Mailchimp's revenue fell 1% to $313M last quarter and Intuit cut its full-year growth forecast. Bending Spoons CEO Luca Ferrari stated the company will invest substantially in the product after close. CNBC (Jordan Novet, staff), Reuters, WSJ (Katherine Hamilton, staff), and TNW all covered independently. Bending Spoons has a documented track record: it acquired Vimeo ($1.38B, Jan 2026), Airtable, and previously Evernote — with subsequent price increases and team reductions at several acquisitions.",
+          "operational_impact_chain": "Intuit divests Mailchimp to Bending Spoons at $3.68B (30% of 2021 acquisition price) → teams using Mailchimp face a vendor-continuity audit: contractual rights, pricing, SLA, data export, and migration options before close in early 2027 → simultaneously, Intuit's stated rationale — that standalone email automation is no longer where the AI-era value is — creates a stack-positioning question for any team still treating email as a standalone function → teams decide whether to stay on Mailchimp through the transition, migrate proactively, or reframe email inside a broader AI-native engagement workflow.",
+          "scores": {
+            "relevance": 10,
+            "relevance_rationale": "Mailchimp has millions of business users. Any team on the platform now has a live vendor-continuity decision and a parallel stack-positioning decision.",
+            "topicality": 10,
+            "topicality_rationale": "Announced November 19, 2026 — today. Official press releases from both companies; multiple independent major-outlet confirmations.",
+            "viral_potential": 8,
+            "viral_potential_rationale": "A $12B acquisition selling for $3.68B signals something about email marketing's position in the AI era — a concrete tension every martech operator can recognize.",
+            "total": 28
+          },
+          "confidence": "high",
+          "confidence_limitation": "Bending Spoons has not disclosed pricing or product roadmap plans post-close. The company stated it will invest in the product, but its track record at prior acquisitions includes price increases. Deal subject to regulatory approval; close expected early 2027.",
+          "novelty": {
+            "result": "distinct",
+            "rationale": "No archived RecruitZero item covers email marketing platform vendor risk, the declining value of standalone email automation in the AI-native stack, or Bending Spoons' martech consolidation."
+          },
+          "predicted_audience_response": "Mailchimp users will check their contract terms and data-export options. Martech stack owners will ask whether this is the moment to consolidate email into an AI-native engagement platform.",
+          "materiality_gates": {
+            "material_event": "pass_named_acquisition_official_press_releases_both_companies",
+            "editorial_thesis_fit": "pass",
+            "primary_evidence": "pass_businesswire_plus_intuit_investor_relations_press_release",
+            "availability_clarity": "pass_pending_regulatory_approval_close_early_2027_clearly_stated",
+            "claim_discipline": "pass_with_bending_spoons_track_record_noted_as_signal_not_confirmed_plan",
+            "operational_impact": "pass",
+            "contradiction_search": "pass_bending_spoons_ceo_stated_intent_to_invest_noted",
+            "archive_novelty": "pass_distinct"
+          },
+          "coverage_limitations": [
+            "Bending Spoons pricing and roadmap plans after close not yet disclosed.",
+            "Deal pending regulatory approval; could be modified.",
+            "Track record at prior acquisitions is a practitioner signal, not a confirmed plan for Mailchimp.",
+            "Reddit MarketingAutomation community discussion not retrieved (direct route broken)."
+          ],
+          "sources": [
+            {
+              "type": "primary_company_announcement_acquirer",
+              "title": "Bending Spoons has entered into a definitive agreement to acquire Mailchimp | BusinessWire",
+              "url": "https://www.businesswire.com/news/home/20261119179325/en/Bending-Spoons-has-entered-into-a-definitive-agreement-to-acquire-Mailchimp",
+              "published": "2026-11-19"
+            },
+            {
+              "type": "primary_company_announcement_seller",
+              "title": "Intuit Reports First-Quarter Results and Enters Agreement to Sell Mailchimp to Bending Spoons | Intuit Investor Relations",
+              "url": "https://investors.intuit.com/news-events/press-releases/detail/1331/intuit-reports-first-quarter-results-and-enters-agreement-to-sell-mailchimp-to-bending-spoons",
+              "published": "2026-11-19"
+            },
+            {
+              "type": "independent_staff_reporting",
+              "title": "Intuit to sell Mailchimp to Bending Spoons for $3.68 billion | CNBC",
+              "url": "https://www.cnbc.com/2026/11/19/intuit-mailchimp-sale-bending-spoons.html",
+              "author": "Jordan Novet (staff)",
+              "published": "2026-11-19"
+            },
+            {
+              "type": "independent_staff_reporting",
+              "title": "Intuit to sell Mailchimp at about a third of its 2021 purchase price | Reuters",
+              "url": "https://www.reuters.com/legal/transactional/intuit-sell-mailchimp-bending-spoons-368-billion-2026-11-19/",
+              "published": "2026-11-19"
+            },
+            {
+              "type": "independent_staff_reporting",
+              "title": "Intuit Selling Mailchimp for $3.68 Billion to Berkshire Hathaway-Backed Bending Spoons | WSJ",
+              "url": "https://www.wsj.com/business/earnings/intuit-to-sell-mailchimp-for-3-68-billion-33f03f9c",
+              "author": "Katherine Hamilton (staff)",
+              "published": "2026-11-19"
+            }
+          ]
+        },
+        {
+          "option": 2,
+          "rank": 2,
+          "title": "The AI visibility dashboards most teams are building measure citations, not customers. A case study shows the difference.",
+          "event_date": "2026-11-19",
+          "proposed_hook": "A London car hire company removed a large batch of blog posts. AI impressions — tracked across Google's AI features — fell 62%. Organic clicks rose 14%. The posts that drove 87% of the site's AI impressions had a combined organic click-through rate of 0.27%. The commercial and service pages had a 2.1% CTR and drove the actual business. The blog brought the AI visibility. The commercial pages brought the customers.",
+          "marketer_angle": "Any team building an AI visibility dashboard — tracking citations, mentions, AI impressions, or share of voice across AI platforms — needs to decide what it is measuring before deciding what to do about it. A citation is not a click. A click is not a conversion. And a conversion attributed to a blog post mentioned in an AI answer may not be one at all. The measurement question is: which of your pages drive AI citations, and which drive actual outcomes, and are those the same pages?",
+          "why_it_passed": "Published November 19, 2026 by a named practitioner in Search Engine Land (staff-edited). Client consented to be named: G&M Direct Hire, London. Data exported from Google Search Console AI report and Performance report. The SparkToro/Gumshoe.ai study (January 2026, 3,000 prompts, ChatGPT and Google AI, <1-in-100 chance same brand list returned twice) provides independent corroboration.",
+          "operational_impact_chain": "Teams build AI visibility dashboards tracking citations and impressions → AI visibility metrics rise when informational blog content increases → actual business outcomes (clicks, leads, conversions) may not follow → teams audit which pages generate AI citations vs. which pages drive conversions → measurement framework separates AI visibility from outcome attribution → investment decisions about content production and AI visibility tools are recalibrated against actual business impact.",
+          "scores": {
+            "relevance": 9,
+            "relevance_rationale": "Directly challenges the measurement rationale for AI visibility tools and the content investment decisions built on them.",
+            "topicality": 8,
+            "topicality_rationale": "Case study published November 19, 2026. SparkToro corroboration from January 2026 is 10 months old but the measurement problem is current.",
+            "viral_potential": 8,
+            "viral_potential_rationale": "A practitioner case study showing AI visibility and business outcomes move in opposite directions creates a concrete, discussable tension for every content and analytics team.",
+            "total": 25
+          },
+          "confidence": "qualified",
+          "confidence_limitation": "Single client, single vertical (car hire), UK market. SparkToro study is from January 2026. The case study is a practitioner observation, not a methodologically controlled study.",
+          "novelty": {
+            "result": "distinct",
+            "rationale": "No archived RecruitZero item covers the distinction between AI citation measurement and actual business-outcome measurement."
+          },
+          "predicted_audience_response": "Content strategists and analytics leads will check their own data for the same pattern. Teams that have built AI visibility dashboards will ask whether the data they're tracking connects to anything they can act on.",
+          "materiality_gates": {
+            "material_event": "pass_named_client_consented_case_study_with_before_after_exported_data",
+            "editorial_thesis_fit": "pass",
+            "primary_evidence": "pass_sel_named_practitioner_named_client_exported_search_console_data",
+            "availability_clarity": "pass",
+            "claim_discipline": "pass_with_single_client_single_vertical_clearly_stated",
+            "operational_impact": "pass",
+            "contradiction_search": "pass",
+            "archive_novelty": "pass_distinct"
+          },
+          "coverage_limitations": [
+            "Single client and single vertical (car hire); generalizability limited.",
+            "SparkToro corroboration from January 2026 — 10 months before this run.",
+            "No independent audit of the case study methodology."
+          ],
+          "sources": [
+            {
+              "type": "primary_practitioner_case_study_named_client",
+              "title": "Deleting blog posts hurt AI visibility, but organic clicks told a different story | Search Engine Land",
+              "url": "https://searchengineland.com/deleting-blog-posts-hurt-ai-visibility-organic-clicks-502405",
+              "published": "2026-11-19"
+            },
+            {
+              "type": "independent_research_corroboration",
+              "title": "NEW Research: AIs are highly inconsistent when recommending brands or products | SparkToro",
+              "url": "https://sparktoro.com/blog/new-research-ais-are-highly-inconsistent-when-recommending-brands-or-products-marketers-should-take-care-when-tracking-ai-visibility/",
+              "published": "2026-01-28"
+            }
+          ]
+        },
+        {
+          "option": 3,
+          "rank": 3,
+          "title": "ChatGPT stopped citing journalists and started citing governments. Brand sites picked up the difference.",
+          "event_date": "2026-11-15",
+          "expanded_window_reason": "Published November 15, 2026 — 5 days before this run, within the 7-day secondary window.",
+          "proposed_hook": "Generative Pulse tracked more than 40 million AI responses. Between January and September 2026, journalism's share of ChatGPT citations fell from 33% to 22% — in two clean drops, both coinciding with model launches. Government and NGO citations rose from 10% to 35%. Brand sites' own content rose from 14% to 20%. ChatGPT's reading list changed, without a changelog, without a robots.txt update, and without a notification to any of the publishers that disappeared.",
+          "marketer_angle": "ChatGPT is not a neutral aggregator of published information. It is a system that assigns different weights to different source types, and those weights appear to change with model updates. Brand and content teams building a citation authority strategy need to understand which source-type category their content falls into, whether their category has gained or lost ChatGPT share since January, and whether the investment to maintain or improve that position is justified given the citation instability documented by SparkToro.",
+          "why_it_passed": "Generative Pulse analysis covers 40M+ AI responses. Findings presented by Matt Dzugan (VP, Data and Intelligence, Generative Pulse) at the Generative Pulse Summit, October 28, 2026, New York City. Published November 15, 2026 in Search Engine Land. Government/NGO citations rose from 10% to 35%; journalism fell from 33% to 22%; brand sites rose from 14% to 20%. Claude and Gemini showed minimal changes over the same period.",
+          "operational_impact_chain": "ChatGPT shifts citation share from journalism toward government/NGO sources and brand's own sites without announcement → brands gain marginal citation authority advantage if primary domain is classified as authoritative in new weighting → content teams audit: which source-type category are they in, what has their ChatGPT citation share done since January, what does a change in model weights mean for existing citation-optimization investment → teams decide whether to invest in direct citation authority vs. earned media amplification.",
+          "scores": {
+            "relevance": 8,
+            "relevance_rationale": "Changes the content authority calculus for every brand, content, and SEO team that has been building toward earned media citations in AI platforms.",
+            "topicality": 8,
+            "topicality_rationale": "Published November 15, 2026, covering January–September 2026 data. Active and undisclosed platform shift.",
+            "viral_potential": 8,
+            "viral_potential_rationale": "Journalism losing 11 percentage points of ChatGPT citation share to government sources — without announcement and correlating with model launches — is a concrete tension for every content and media team.",
+            "total": 24
+          },
+          "confidence": "qualified",
+          "confidence_limitation": "Generative Pulse methodology not fully public. Correlation between citation drops and model launch dates — causation not established. ChatGPT-specific finding; Claude and Gemini minimal change. Data covers through September 2026.",
+          "novelty": {
+            "result": "distinct",
+            "rationale": "No archived RecruitZero item covers how AI platform source-type weighting shifts affect brand content authority strategy."
+          },
+          "predicted_audience_response": "Content strategists and SEO leads will ask whether their own content is gaining or losing ChatGPT citation share and what the government/NGO category means for their authority positioning.",
+          "materiality_gates": {
+            "material_event": "pass_40m_response_analysis_named_presenter_conference_presentation_plus_sel_publication",
+            "editorial_thesis_fit": "pass",
+            "primary_evidence": "pass_sel_named_presenter_named_dataset_published_nov_15",
+            "availability_clarity": "pass",
+            "claim_discipline": "pass_with_methodology_not_fully_public_and_correlation_not_causation_noted",
+            "operational_impact": "pass",
+            "contradiction_search": "pass_claude_gemini_minimal_change_noted",
+            "archive_novelty": "pass_distinct"
+          },
+          "coverage_limitations": [
+            "Generative Pulse methodology not fully published.",
+            "Causation between model launches and citation pattern changes not established.",
+            "ChatGPT-specific finding; Claude and Gemini showed minimal change.",
+            "Data covers through September 2026."
+          ],
+          "sources": [
+            {
+              "type": "primary_analysis_named_presenter_named_dataset",
+              "title": "ChatGPT citation drops look like unannounced Google core updates | Search Engine Land",
+              "url": "https://searchengineland.com/chatgpt-citation-drops-unannounced-google-core-updates-501912",
+              "published": "2026-11-15"
+            }
+          ]
+        }
+      ],
+      "research": {
+        "source_cutoff": "2026-11-20T09:00:00-05:00",
+        "initial_window_start": "2026-11-17T00:00:00-05:00",
+        "overlap_start": "2026-11-16T00:00:00-05:00",
+        "discovery_window_hours": 72,
+        "discovery_window_expansion": "7_days_for_option3_nov15_primary_event",
+        "note": "Option 1 (Intuit/Mailchimp/Bending Spoons) is a primary event today within window. Option 2 (AI visibility vs. outcomes case study) published Nov 19 within window. Option 3 (ChatGPT citation source shift) published Nov 15, 5 days before this run, within 7-day secondary window.",
+        "event_ledger_path": "/home/ranson/.hermes/social-queue/research/2026-11-20-ai-martech-event-ledger.json",
+        "decision_journal_path": "/home/ranson/.hermes/social-queue/research/2026-11-20-ai-martech-decision-journal.md",
+        "reserve_candidate_count": 6,
+        "reserve_candidates": [
+          "Gartner 2026 Marketing Strategy Survey — primary URL not confirmed",
+          "Visa Agentic Commerce Benchmark (Nov 5) — 14-day boundary passed; deferred",
+          "Constant Contact Catalyst AI — waitlist-only; resurface at GA",
+          "CTV bidstream signals study (CIMM, Nov 12) — audience too narrow",
+          "Anthropic IPO advertising signal — resurface when actual ad product announced",
+          "Google AI Mode advertiser pullback (Nov 19) — deferred; Nov 13 Option 1 covers core measurement gap"
+        ],
+        "coverage_gaps": [
+          {
+            "source": "Marketing Week",
+            "status": "not_retrieved",
+            "cutoff_advanced": false,
+            "detail": "Not retrieved this run."
+          },
+          {
+            "source": "CMSWire",
+            "status": "partial_snippet_access",
+            "cutoff_advanced": false,
+            "detail": "Accessed via search snippets; full article text not retrieved."
+          },
+          {
+            "source": "Axios Media Trends",
+            "status": "not_retrieved",
+            "cutoff_advanced": false,
+            "detail": "Member-only; not retrieved."
+          },
+          {
+            "source": "AdExchanger (full article text)",
+            "status": "web_extract_blocked_cron_context",
+            "cutoff_advanced": false,
+            "detail": "web_extract blocked in cron context."
+          },
+          {
+            "source": "EMARKETER (full article text)",
+            "status": "partial_snippet_access",
+            "cutoff_advanced": false,
+            "detail": "Snippet content retrieved; full article not retrieved."
+          },
+          {
+            "source": "The Information",
+            "status": "paywalled",
+            "cutoff_advanced": false,
+            "detail": "Not retrieved."
+          },
+          {
+            "source": "Reddit pool (r/adops, r/PPC, r/analytics, r/SEO, r/MarketingAutomation)",
+            "status": "public_web_search_returned_no_within_window_results",
+            "cutoff_advanced": false,
+            "detail": "opencli UPSTREAM_BROKEN (persistent). No within-window practitioner discussion found."
+          },
+          {
+            "source": "X/Twitter named pool",
+            "status": "credentials_pending",
+            "cutoff_advanced": false,
+            "detail": "Credentials pending, not blocking run."
+          },
+          {
+            "source": "Harvard Business Review",
+            "status": "not_retrieved",
+            "cutoff_advanced": false,
+            "detail": "Not retrieved this run."
+          }
+        ]
+      },
+      "events": [
+        {
+          "at": "2026-11-20T09:00:00-05:00",
+          "type": "topic_queue_created",
+          "actor": "scheduled_research",
+          "detail": "Created exactly three topic options. Option 1 (Intuit sells Mailchimp to Bending Spoons for $3.68B, 28/30) is today's primary event within window. Option 2 (AI visibility tools measure citations not conversions, 25/30) is a Nov 19 SEL case study within window. Option 3 (ChatGPT citation source composition shift, 24/30) is a Nov 15 Generative Pulse analysis within 7-day secondary window. Nov 19 and Nov 13 queues remain awaiting_topic_approval, untouched. Awaiting topic approval."
+        }
+      ]
+    },
     {
       "id": "ai-martech-topic-queue-2026-11-19",
       "kind": "content",
