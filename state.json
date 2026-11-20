@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-11-20T09:23:12-05:00",
+  "updated_at": "2026-11-20T11:39:29-05:00",
   "sync": {
     "status": "connected",
     "discord_guild_id": "1553886101003837561",
@@ -14,11 +14,11 @@
     {
       "id": "ai-martech-topic-queue-2026-11-20",
       "kind": "content",
-      "title": "AI Visibility Is Exposure. Your Dashboard Still Needs Customer Outcomes.",
+      "title": "A Company Lost 62% of Its Google AI Visibility. Its Clicks Went Up.",
       "created_at": "2026-11-20T09:00:00-05:00",
-      "updated_at": "2026-11-20T09:23:12-05:00",
-      "status": "awaiting_post_approval",
-      "stage": "post_approval",
+      "updated_at": "2026-11-20T11:39:29-05:00",
+      "status": "complete",
+      "stage": "assets_complete",
       "topic_options": [
         {
           "option": 1,
@@ -100,7 +100,7 @@
         {
           "option": 2,
           "rank": 2,
-          "title": "AI Visibility Is Exposure. Your Dashboard Still Needs Customer Outcomes.",
+          "title": "A Company Lost 62% of Its Google AI Visibility. Its Clicks Went Up.",
           "event_date": "2026-11-19",
           "proposed_hook": "A London car hire company removed a large batch of blog posts. AI impressions — tracked across Google's AI features — fell 62%. Organic clicks rose 14%. The posts that drove 87% of the site's AI impressions had a combined organic click-through rate of 0.27%. The commercial and service pages had a 2.1% CTR and drove the actual business. The blog brought the AI visibility. The commercial pages brought the customers.",
           "marketer_angle": "Any team building an AI visibility dashboard — tracking citations, mentions, AI impressions, or share of voice across AI platforms — needs to decide what it is measuring before deciding what to do about it. A citation is not a click. A click is not a conversion. And a conversion attributed to a blog post mentioned in an AI answer may not be one at all. The measurement question is: which of your pages drive AI citations, and which drive actual outcomes, and are those the same pages?",
@@ -319,12 +319,45 @@
           "type": "post_queued_for_approval",
           "actor": "workflow",
           "detail": "Reviewed post deployed for approval. Cover generation remains locked pending explicit post approval; LinkedIn publication remains manual."
+        },
+        {
+          "at": "2026-11-20T11:37:27-05:00",
+          "type": "user_replacement_received",
+          "actor": "user_via_discord",
+          "message_id": "1573375803352289332",
+          "detail": "User supplied replacement headline and body and explicitly authorized dashboard update plus cover generation."
+        },
+        {
+          "at": "2026-11-20T11:37:27-05:00",
+          "type": "post_revised_and_reviewed",
+          "actor": "workflow",
+          "message_id": "1573375803352289332",
+          "detail": "Replacement was edited only for evidence precision and the 250-word gate. Final 246-word body passed argument, factual-fidelity, accessibility, construction, stop-slop 46/50, and voice 9/10 reviews."
+        },
+        {
+          "at": "2026-11-20T11:37:27-05:00",
+          "type": "post_approved",
+          "actor": "user_via_discord",
+          "message_id": "1573375803352289332",
+          "detail": "User explicitly authorized cover generation for the supplied replacement. LinkedIn publication remains manual and unauthorized."
+        },
+        {
+          "at": "2026-11-20T11:38:50-05:00",
+          "type": "cover_generated",
+          "actor": "openai-codex/gpt-image-2-medium",
+          "detail": "Generated one approved landscape cover showing falling AI exposure and rising customer clicks/outcomes. No readable text, logos, trademarks, or generic robot imagery."
+        },
+        {
+          "at": "2026-11-20T11:39:29-05:00",
+          "type": "assets_completed",
+          "actor": "workflow",
+          "detail": "Exported and visually verified the final cover at exactly 1200x627. Dashboard package completed. LinkedIn remains unpublished and manual."
         }
       ],
       "topic": {
         "option": 2,
         "rank": 2,
-        "title": "AI Visibility Is Exposure. Your Dashboard Still Needs Customer Outcomes.",
+        "title": "A Company Lost 62% of Its Google AI Visibility. Its Clicks Went Up.",
         "research_card_title": "The AI visibility dashboards most teams are building measure citations, not customers. A case study shows the difference.",
         "selected": true,
         "selected_at": "2026-11-20T09:15:21-05:00",
@@ -400,30 +433,26 @@
           "correction_cycles": 1,
           "unsupported_inferences": [],
           "missing_qualifications": [],
-          "vendor_framing_risks": [],
-          "counterargument": "AI citations and impressions can still matter as awareness and research signals, especially before clicks or conversions appear. The correct response is not to discard visibility data, but to stop treating it as interchangeable with customer outcomes.",
+          "counterargument": "AI visibility can still be useful as an awareness and research signal before clicks or conversions appear; the article argues against using it as a standalone business outcome.",
           "operational_impact_status": "pass",
-          "operational_impact_rationale": "The draft identifies an accountable analytics or marketing-operations owner, classifies metrics, compares them with outcomes, defines decision permissions, and applies an explicit scale-or-pause rule.",
           "novelty_status": "distinct",
           "stack_independent_value": "pass",
-          "stack_independent_rationale": "The measurement framework applies regardless of analytics vendor, AI-visibility product, or marketing stack.",
           "required_corrections": [],
           "residual_risks": [
-            "Single client, single vertical, and one national market limit generalization.",
-            "The before-and-after periods include other site changes and seasonality.",
-            "The case study publishes click data but not lead, conversion, or revenue totals.",
-            "SparkToro/Gumshoe.ai research is ten months old and includes a disclosed commercial participant.",
-            "AI products and tracking methods can change quickly."
+            "The evidence comes from one London car-hire company.",
+            "Other site changes and seasonality prevent a causal claim.",
+            "The 2.1% and 0.45% figures are organic click-through rates, not lead, conversion, or revenue measures.",
+            "Google AI impressions and sitewide organic click-through rates are adjacent measures, not direct AI-attributed click paths."
           ]
         },
         "product_as_evidence": true,
         "stack_independent_value": "pass"
       },
       "post": {
-        "status": "reviewed",
-        "title": "AI Visibility Is Exposure. Your Dashboard Still Needs Customer Outcomes.",
-        "body": "A London car-hire company removed many blog posts. Its Google AI impressions, appearances in Google's AI results, fell about 62%. Clicks from unpaid search rose about 14%.\n\nIn his Search Engine Land case study, Luca Tagliaferro says the deletions cannot be credited with the click gain because other site changes and seasonal effects were in play.\n\nAI visibility means how often a brand is mentioned, cited, or shown in AI-generated answers. It measures exposure, not what a customer did next. That matters when visibility dashboards influence content budgets.\n\nOn this site, blogs were 36% of pages earning AI impressions but produced 87% of them. Commercial and service pages turned search appearances into clicks at about 2.1%, compared with 0.45% for blogs. Clicks are still not leads or revenue. Visibility can support topic and source research, but it is not a customer outcome.\n\nGive an accountable analytics or marketing-operations owner, responsible for marketing data and processes, control of the measurement model:\n\n- Classify every metric as exposure, action, or outcome.\n- Compare pages shown in AI answers with clicks, leads that meet sales criteria, completed target actions, and revenue, separated by market and page type.\n- Record which decisions each metric may influence.\n\nScale when a predefined outcome improves or the stated goal is awareness. Pause when exposure rises while selected customer or business outcomes stay flat or fall.\n\nThe takeaway: being seen by a machine is a signal to investigate, not a result to celebrate.",
-        "word_count": 244,
+        "status": "approved",
+        "title": "A Company Lost 62% of Its Google AI Visibility. Its Clicks Went Up.",
+        "body": "A London car-hire company deleted a big chunk of its blog.\n\nBlogs made up 36% of the pages appearing in Google's AI answers but generated 87% of the AI impressions. When the blogs went, daily Google AI impressions fell 62%. Organic clicks rose 14%.\n\nFor most marketers, that would be a conundrum of the highest order. The case study's author is careful: the deletions cannot take credit for the click gain because other site changes and seasonality were in play.\n\nBut look at what those impressions were worth. Commercial and service pages turned search appearances into clicks at 2.1%. Blogs managed 0.45%. The pages AI surfaced most did not have the strongest click-through rate.\n\nThat's the problem with treating AI visibility as a KPI by itself. It records exposure. It does not tell you whether someone became a qualified lead, completed a target action, or paid you. Yet those dashboards can steer content budgets.\n\nIf I were running measurement:\n\n- Tag every metric as exposure, action, or outcome.\n- Compare AI appearances with clicks, qualified leads, completed actions, and revenue, split by market and page type.\n- Record which decisions each metric may influence.\n- Put one person in analytics or marketing operations in charge.\n\nScale when a real outcome improves or awareness is the stated goal. Pause when exposure climbs and selected outcomes stay flat.\n\nBeing surfaced by AI is a signal to investigate, not a result to celebrate.\n\nAre you tying AI visibility to revenue yet?",
+        "word_count": 246,
         "sources": [
           {
             "type": "primary_practitioner_case_study_named_client",
@@ -438,9 +467,9 @@
             "published": "2026-01-28"
           }
         ],
-        "stop_slop_score": 47,
+        "stop_slop_score": 46,
         "stop_slop_breakdown": {
-          "directness": 10,
+          "directness": 9,
           "rhythm": 9,
           "trust": 10,
           "authenticity": 9,
@@ -450,12 +479,12 @@
         "accessibility_review": {
           "status": "pass",
           "remaining_jargon": [
-            "Google AI impressions, explained as appearances in Google's AI results",
-            "AI visibility, defined as mentions, citations, or appearances in AI-generated answers",
-            "marketing-operations owner, explained as responsible for marketing data and processes",
-            "exposure/action/outcome, explained through AI appearances, customer actions, and business results"
+            "Google AI impressions, framed as appearances in Google's AI answers and contrasted with organic clicks",
+            "click-through rate, explained as turning search appearances into clicks",
+            "KPI, followed by a plain explanation of what the metric records and cannot establish",
+            "AI visibility, consistently defined through exposure measures rather than outcomes"
           ],
-          "rationale": "Specialist measurement terms are translated in place, and the workflow uses ordinary language a nonspecialist can act on."
+          "rationale": "The revised copy explains every necessary measurement term in context and remains understandable to nonspecialists."
         },
         "construction_pass": true,
         "construction_checklist": {
@@ -476,24 +505,20 @@
           "correction_cycles": 1,
           "unsupported_inferences": [],
           "missing_qualifications": [],
-          "vendor_framing_risks": [],
-          "counterargument": "AI citations and impressions can still matter as awareness and research signals, especially before clicks or conversions appear. The correct response is not to discard visibility data, but to stop treating it as interchangeable with customer outcomes.",
+          "counterargument": "AI visibility can still be useful as an awareness and research signal before clicks or conversions appear; the article argues against using it as a standalone business outcome.",
           "operational_impact_status": "pass",
-          "operational_impact_rationale": "The draft identifies an accountable analytics or marketing-operations owner, classifies metrics, compares them with outcomes, defines decision permissions, and applies an explicit scale-or-pause rule.",
           "novelty_status": "distinct",
           "stack_independent_value": "pass",
-          "stack_independent_rationale": "The measurement framework applies regardless of analytics vendor, AI-visibility product, or marketing stack.",
           "required_corrections": [],
           "residual_risks": [
-            "Single client, single vertical, and one national market limit generalization.",
-            "The before-and-after periods include other site changes and seasonality.",
-            "The case study publishes click data but not lead, conversion, or revenue totals.",
-            "SparkToro/Gumshoe.ai research is ten months old and includes a disclosed commercial participant.",
-            "AI products and tracking methods can change quickly."
+            "The evidence comes from one London car-hire company.",
+            "Other site changes and seasonality prevent a causal claim.",
+            "The 2.1% and 0.45% figures are organic click-through rates, not lead, conversion, or revenue measures.",
+            "Google AI impressions and sitewide organic click-through rates are adjacent measures, not direct AI-attributed click paths."
           ]
         },
         "factual_fidelity": true,
-        "review_notes": "The 244-word article passed the argument gate after one factual precision correction, then passed factual fidelity, accessibility, construction, stop-slop 47/50, voice fidelity 9/10, operational impact, novelty, and stack-independent-value gates.",
+        "review_notes": "User replacement passed the argument gate and final prose review after evidence corrections: Google-specific headline, commercial-and-service page category, click-through-rate wording, and AI visibility bounded as a standalone KPI. Final body: 246 words; stop-slop 46/50; voice 9/10.",
         "writer_model": "claude-opus-5-5",
         "writer_provider": "claude-code",
         "writer_fallback_used": false,
@@ -507,8 +532,8 @@
         "writer_session_id": "2a5bd5fc-55fc-4115-bdbb-1a66712a1723",
         "markdown_path": "/home/ranson/.hermes/social-queue/linkedin/2026-11-20-ai-visibility-vs-outcomes-reviewed.md",
         "review_status": "pass",
-        "reviewed_at": "2026-11-20T09:23:12-05:00",
-        "cover_authorized": false,
+        "reviewed_at": "2026-11-20T11:37:27-05:00",
+        "cover_authorized": true,
         "linkedin_published": false,
         "revision_history": [
           {
@@ -528,8 +553,23 @@
             "type": "final_prose_review",
             "word_count": 244,
             "note": "Final reviewed body passed all gates."
+          },
+          {
+            "at": "2026-11-20T11:37:27-05:00",
+            "type": "user_replacement_reviewed_and_approved",
+            "message_id": "1573375803352289332",
+            "previous_title": "AI Visibility Is Exposure. Your Dashboard Still Needs Customer Outcomes.",
+            "previous_body": "A London car-hire company removed many blog posts. Its Google AI impressions, appearances in Google's AI results, fell about 62%. Clicks from unpaid search rose about 14%.\n\nIn his Search Engine Land case study, Luca Tagliaferro says the deletions cannot be credited with the click gain because other site changes and seasonal effects were in play.\n\nAI visibility means how often a brand is mentioned, cited, or shown in AI-generated answers. It measures exposure, not what a customer did next. That matters when visibility dashboards influence content budgets.\n\nOn this site, blogs were 36% of pages earning AI impressions but produced 87% of them. Commercial and service pages turned search appearances into clicks at about 2.1%, compared with 0.45% for blogs. Clicks are still not leads or revenue. Visibility can support topic and source research, but it is not a customer outcome.\n\nGive an accountable analytics or marketing-operations owner, responsible for marketing data and processes, control of the measurement model:\n\n- Classify every metric as exposure, action, or outcome.\n- Compare pages shown in AI answers with clicks, leads that meet sales criteria, completed target actions, and revenue, separated by market and page type.\n- Record which decisions each metric may influence.\n\nScale when a predefined outcome improves or the stated goal is awareness. Pause when exposure rises while selected customer or business outcomes stay flat or fall.\n\nThe takeaway: being seen by a machine is a signal to investigate, not a result to celebrate.",
+            "previous_word_count": 244,
+            "word_count": 246,
+            "note": "User supplied replacement copy and authorized cover generation. Editing was allowed; the revision was narrowed only for evidence precision and compressed to the standing 250-word limit before passing review."
           }
-        ]
+        ],
+        "approved_by": "discord_user",
+        "approved_at": "2026-11-20T11:37:27-05:00",
+        "approval_message_id": "1573375803352289332",
+        "cover_authorized_at": "2026-11-20T11:37:27-05:00",
+        "cover_status": "complete"
       },
       "performance": {
         "tracking_status": "awaiting_manual_publication",
@@ -545,6 +585,20 @@
         "day_30": null,
         "qualitative_outcome": null,
         "editorial_lesson": null
+      },
+      "assets": {
+        "cover_status": "complete",
+        "cover_url": "assets/ai-martech-topic-queue-2026-11-20-cover.png",
+        "cover_dimensions": "1200x627",
+        "original_dimensions": "1734x907",
+        "original_path": "/home/ranson/.hermes/social-queue/linkedin/2026-11-20-ai-visibility-vs-outcomes-cover-original.png",
+        "final_path": "/home/ranson/.hermes/social-queue/linkedin/2026-11-20-ai-visibility-vs-outcomes-cover.png",
+        "model": "gpt-image-2-medium",
+        "provider": "openai-codex",
+        "visual_qa": "pass",
+        "final_crop_qa": "pass",
+        "concept": "A marketing analyst sees AI exposure falling while customer clicks and action rise toward a storefront, illustrating the separation between machine visibility and business outcomes.",
+        "review_page_url": "https://ransonproductionsllc-bit.github.io/recruitzero-content-dashboard/review.html?id=ai-martech-topic-queue-2026-11-20"
       }
     },
     {
