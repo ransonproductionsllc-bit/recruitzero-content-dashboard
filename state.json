@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-11-20T11:39:29-05:00",
+  "updated_at": "2026-11-23T09:00:00-05:00",
   "sync": {
     "status": "connected",
     "discord_guild_id": "1553886101003837561",
@@ -11,6 +11,294 @@
     "dashboard_refresh_seconds": 60
   },
   "active_queue": [
+    {
+      "id": "ai-martech-topic-queue-2026-11-23",
+      "kind": "content",
+      "title": "AI marketing and martech topic approval queue",
+      "created_at": "2026-11-23T09:00:00-05:00",
+      "updated_at": "2026-11-23T09:00:00-05:00",
+      "status": "awaiting_topic_approval",
+      "stage": "topic_approval",
+      "topic_options": [
+        {
+          "option": 1,
+          "rank": 1,
+          "title": "The industry spent four months trying to standardize AI attribution. The result was an admission that you can't measure what's inside the black box.",
+          "event_date": "2026-11-12",
+          "expanded_window_reason": "IAB AI-Era Attribution Blueprint published November 12 (11 days before this run). Within the 14-day secondary window. Used as supporting context in the Nov 13 queue; now surfaced as the primary topic from a different angle: the industry-level admission that attribution cannot be standardized, not a single platform's specific reporting gap.",
+          "proposed_hook": "The IAB spent four months — with Walmart, WPP Media, Criteo, Microsoft, Tinuiti, Prudential Financial, and others — trying to build a framework for attributing conversions influenced by AI. What they produced is a framework that classifies the problem. The IAB's VP of AI said publicly: 'I realized what this document was starting to become was more of a call to action to the industry. There are evidence layers that are missing.' The data needed to establish AI's role sits inside AI platforms. Advertisers and measurement providers cannot access it.",
+          "marketer_angle": "Every team buying media near AI platforms — search, chat, social, retail — now has an industry-standard vocabulary for the measurement gap they already know about: who created the intent, who made the decision, who executed the transaction, and what evidence exists for each. The practical work is applying the IAB's three-claim taxonomy to your own AI channels: which conversions are Human-Owned, AI-Assisted, or AI-Executed? Which of your current attribution reports mix these categories without labeling them? And what claim standard will your team require before scaling spend in a channel whose conversion data you cannot independently verify?",
+          "why_it_passed": "IAB published the AI-Era Attribution Blueprint on November 12, 2026 — a four-month working group including Walmart, WPP Media, Criteo, Microsoft, Tinuiti, Prudential Financial, People Inc., Emberos, Bluefish, and Brandlight. The framework classifies AI's role in conversions as Human-Owned, AI-Assisted, or AI-Executed; defines decision claims and contributory claims with evidence requirements; and explicitly concedes that most of the needed evidence sits inside AI platforms that cannot be accessed. Digiday (Sara Guaglione, staff) reported the same day. Similarweb data cited in the framework: AI-recommended consumers are 2.5x more likely to visit a brand website within 7 days, but only 8.8% of those visits register as AI referrals (55.9% attributed to search, 19.9% to direct). Ziff Davis saw 2.7 billion AI Overviews citations in Q3 while Google referrals fell 37% YoY. CMA (UK) requires Google to give publishers AI search clickthrough data by Dec. 3. Framework is distinct from prior use in Nov 13 queue (where it provided market-scale context for the Google AI Mode query-data gap story); this topic treats it as the primary event — the industry admission that the measurement problem cannot be solved with current platform transparency.",
+          "operational_impact_chain": "IAB publishes attribution framework after 4-month working group and concedes core conversion data is inside AI platforms -> brands, agencies, and publishers now have a shared taxonomy (Human-Owned, AI-Assisted, AI-Executed) but not the data to populate it -> measurement teams must audit which channels have enough transparency to support each claim type, and which currently mix AI-influenced and human-driven conversions without labeling -> spend authorization decisions require teams to define what evidence standard they will accept before scaling in black-box channels -> agencies distinguish claims platform-reported from claims independently verified.",
+          "scores": {
+            "relevance": 10,
+            "relevance_rationale": "Every team running media near AI platforms has a present-tense measurement accountability question that the IAB framework codifies; applies to paid search, GEO/AEO, social, retail media, and chat ads simultaneously.",
+            "topicality": 7,
+            "topicality_rationale": "IAB Blueprint published November 12 — 11 days before this run; within the 14-day secondary window. Operationally current; December 3 CMA deadline adds near-term relevance.",
+            "viral_potential": 8,
+            "viral_potential_rationale": "An industry body publishing a four-month measurement framework whose conclusion is 'you can't measure what you can't see' creates a recognizable, discussable tension for every analytics and paid media team.",
+            "total": 25
+          },
+          "confidence": "high",
+          "confidence_limitation": "IAB framework is a standards document, not regulatory. Platforms are not required to disclose the data the framework identifies as missing. CMA enforcement (UK, Dec 3) is UK-specific and may not extend globally. Framework classifies the problem; it does not solve it.",
+          "novelty": {
+            "result": "meaningful_advance",
+            "rationale": "Nov 13 queue Option 1 (Google AI Mode query data gap) used the IAB Blueprint as supporting context for a platform-specific reporting gap. This surfacing treats the blueprint itself as the primary event — the industry-level admission that measurement cannot be standardized — which is a different angle with broader operator implications across all AI channels, not just paid search."
+          },
+          "predicted_audience_response": "Analytics leads, media buyers, and measurement owners will apply the three-pathway taxonomy to their own reporting, ask which of their current dashboards mix AI-influenced and human-driven conversions without labeling them, and question how much spend they are authorizing in channels whose conversion evidence they cannot independently verify.",
+          "materiality_gates": {
+            "material_event": "pass_iab_official_publication_multi_org_working_group",
+            "editorial_thesis_fit": "pass",
+            "primary_evidence": "pass_iab_release_plus_pdf_framework_plus_digiday_staff_reporting",
+            "availability_clarity": "pass_framework_published_data_gaps_documented",
+            "claim_discipline": "pass_iab_acknowledges_evidence_limitations_explicitly",
+            "operational_impact": "pass",
+            "contradiction_search": "pass_framework_itself_concedes_limitations_cma_enforcement_scope_noted",
+            "archive_novelty": "pass_meaningful_advance"
+          },
+          "coverage_limitations": [
+            "IAB framework classifies the problem but does not compel platform transparency.",
+            "CMA enforcement requiring Google to share AI search clickthrough data with publishers (Dec 3) is UK-specific.",
+            "Framework published Nov 12; some practitioners may already have engaged with it.",
+            "Digiday coverage is behind Digiday+ paywall; IAB release and PDF are freely available."
+          ],
+          "sources": [
+            {
+              "type": "primary_industry_standards_publication",
+              "title": "IAB Releases AI-Era Attribution Blueprint | IAB.com",
+              "url": "https://www.iab.com/news/iab-releases-ai-era-attribution-blueprint",
+              "published": "2026-11-12"
+            },
+            {
+              "type": "primary_framework_document",
+              "title": "The AI-Era Attribution Blueprint (PDF) | IAB.com",
+              "url": "https://www.iab.com/wp-content/uploads/2026/11/IAB_AI-Era_Attribution_Blueprint_Nov_2026.pdf",
+              "published": "2026-11-12"
+            },
+            {
+              "type": "independent_staff_reporting",
+              "title": "The IAB finds AI measurement standards elusive amid data gaps | Digiday",
+              "url": "https://digiday.com/media/media-briefing-the-iab-finds-ai-measurement-standards-elusive-for-publishers-amid-platform-data-gaps/",
+              "author": "Sara Guaglione (staff)",
+              "published": "2026-11-12"
+            },
+            {
+              "type": "independent_reporting",
+              "title": "IAB Admits AI Attribution Cannot Be Standardized: Publishers Lack Data | Reach Brief",
+              "url": "https://reachbrief.com/articles/iab-admits-ai-attribution-cannot-be-standardized-publishers-lack-data",
+              "published": "2026-11-18"
+            }
+          ],
+          "selected": false
+        },
+        {
+          "option": 2,
+          "rank": 2,
+          "title": "Three in four brands running AI agents can't tell if they're generating sales. That gap is teaching their ad platforms to optimize the wrong thing.",
+          "event_date": "2026-11-10",
+          "expanded_window_reason": "Invoca Broken Funnel Report published November 10 (13 days before this run). Within the 14-day secondary window. No prior RecruitZero coverage of AI agent bidding feedback loop or conversion signal gap.",
+          "proposed_hook": "Invoca surveyed 451 US B2C marketing leaders. 44% already have conversational AI agents live in at least one channel. 74% cannot track an agent-handled lead from first click to conversion. Only 19% can reliably send agent conversion outcomes back to ad platforms. That last number is the one that matters for paid media: Google, Meta, and Microsoft Smart Bidding learn from what advertisers report back. When an AI agent handles a lead and the outcome never reaches the ad platform, the algorithm keeps optimizing toward whatever signal it does receive.",
+          "marketer_angle": "Any team running AI agents alongside paid media has a closed-loop problem: the agent qualifies or converts a lead, the sale happens offline or at a franchise, and the bidding system never hears about it. The bidding algorithm learns from what it's told. If you're only telling it about the click or the chat started, it scales toward more of those — not toward the sales. The practical question is not whether your agents are busy. It is whether the outcomes reach your ad platforms.",
+          "why_it_passed": "Invoca published the 2026 Broken Funnel Report on November 10. Survey of 451 US B2C marketing leaders fielded by research firm Gather (independent fieldwork) between September 14 and October 5, 2026, across automotive, healthcare/dental, home services, financial services/insurance, and telecom. Key figures: 44% have AI agents live in at least one channel; 74% cannot track agent-handled leads from first click to conversion; 19% reliably send agent conversion outcomes to ad platforms; 26% can tie agent conversations to the campaign or ad that drove them; 73% measure AI agents on factors other than revenue; 56% lose attribution when a lead reaches a dealer, franchise, or local branch. PPC Land independently analyzed the bidding mechanism implication. Invoca sells closed-loop attribution software; commercial interest disclosed. The structural implication for bidding is independently verifiable: Smart Bidding and equivalent systems optimize toward reported signals. Martech.org staff reporting confirmed independently.",
+          "operational_impact_chain": "Teams deploy AI agents to handle inbound leads -> agents qualify or convert leads offline (franchise, phone, branch) -> conversion outcomes are not sent back to ad platforms -> Smart Bidding and equivalent systems optimize toward whatever signal they do receive (clicks, chat starts) instead of sales -> ad spend scales toward channels that drive agent conversations, not channels that drive closed revenue -> marketing ops teams must audit: which agents have conversion event tracking; which outcome signals reach which ad platforms; what the bidding algorithm is currently optimizing toward.",
+          "scores": {
+            "relevance": 9,
+            "relevance_rationale": "Any team running AI agents and paid media simultaneously has a present-tense bidding governance decision: what signal is the algorithm learning from, and is that signal connected to actual revenue?",
+            "topicality": 7,
+            "topicality_rationale": "Report published November 10 — 13 days before this run; within the 14-day secondary window. The bidding loop problem is structurally current regardless of report age.",
+            "viral_potential": 8,
+            "viral_potential_rationale": "A concrete mechanism — AI agent handles the lead, ad platform never hears about the sale, algorithm learns the wrong lesson — creates a shareable, testable argument for every paid media practitioner with AI agents in their stack.",
+            "total": 24
+          },
+          "confidence": "qualified",
+          "confidence_limitation": "Invoca sells closed-loop attribution software; Gather conducted fieldwork independently but Invoca commissioned the research. US B2C only (automotive, home services, healthcare, financial services, telecom). Survey field dates are Sep-Oct 2026; some conditions may have evolved. The bidding mechanism implication is structurally sound but the specific magnitude of the effect cannot be measured from this survey alone.",
+          "novelty": {
+            "result": "distinct",
+            "rationale": "No prior RecruitZero item covers how AI agents break the paid media bidding feedback loop. The Nov 20 post covered AI visibility ≠ clicks (organic/AI impressions). Nov 13 options covered Google AI Mode reporting gap and OpenAI advertiser governance. This covers the agent-to-paid-platform signal gap specifically."
+          },
+          "predicted_audience_response": "Paid media and marketing ops teams will audit which of their AI agents have conversion event tracking connected to ad platforms, and ask what their bidding systems are currently learning from. Teams will recognize the bidding loop implication as a present-tense governance problem, not a future-state concern.",
+          "materiality_gates": {
+            "material_event": "pass_451_respondent_survey_independent_research_firm",
+            "editorial_thesis_fit": "pass",
+            "primary_evidence": "pass_invoca_release_plus_full_report_no_registration_plus_martech_staff",
+            "availability_clarity": "pass_report_published_methodology_disclosed",
+            "claim_discipline": "pass_vendor_interest_noted_gather_fieldwork_independent_ppcland_bidding_analysis_independent",
+            "operational_impact": "pass",
+            "contradiction_search": "pass_vendor_commercial_interest_acknowledged_structural_bidding_mechanism_independently_verifiable",
+            "archive_novelty": "pass_distinct"
+          },
+          "coverage_limitations": [
+            "Invoca commissioned the research; Gather conducted fieldwork independently.",
+            "US B2C only; automotive, home services, healthcare, financial services, telecom.",
+            "Survey field dates Sep-Oct 2026; report released Nov 10.",
+            "The bidding loop implication is structurally sound but magnitude cannot be measured from survey alone."
+          ],
+          "sources": [
+            {
+              "type": "primary_research_report",
+              "title": "New Research: 73% of B2C Marketers Using AI Agents Don't Measure Them on Sales | Invoca Press Release",
+              "url": "https://invoca.com/press-release/new-research-73-of-b2c-marketers-using-ai-agents-dont-measure-them-on-sales",
+              "published": "2026-11-10"
+            },
+            {
+              "type": "primary_full_report",
+              "title": "The Broken Funnel Report 2026 | Invoca",
+              "url": "https://www.invoca.com/reports/broken-funnel-report-2026",
+              "published": "2026-11-10"
+            },
+            {
+              "type": "independent_staff_reporting",
+              "title": "Marketers deploying AI agents faster than they can measure them | MarTech",
+              "url": "https://martech.org/marketers-deploying-ai-agents-faster-than-they-can-measure-them",
+              "published": "2026-11-10"
+            },
+            {
+              "type": "independent_analysis",
+              "title": "74% of marketers can't track if AI agent leads become sales, Invoca finds | PPC Land",
+              "url": "https://ppc.land/74-of-marketers-cant-track-if-ai-agent-leads-become-sales-invoca-finds",
+              "published": "2026-11-10"
+            }
+          ],
+          "selected": false
+        },
+        {
+          "option": 3,
+          "rank": 3,
+          "title": "Marketers now use five measurement methods at once and none of them capture what AI does before the click.",
+          "event_date": "2026-11-20",
+          "proposed_hook": "DoubleVerify surveyed 22,000 consumers and 2,020 marketers across 25 countries. Marketers use platform-native reporting (55%), marketing mix modeling (48%), view-through attribution (40%), multi-touch attribution (38%), and last-click attribution (35%) — sometimes all at the same time. Meanwhile, 17% of consumers now use AI chat tools to research products before buying. AI is shaping the purchase decision before any of those five methods can track it.",
+          "marketer_angle": "Five measurement methods running in parallel without governance is not rigorous — it is a disagreement about what counts. The question behind the DoubleVerify data is not which tool to add: it is which method is authoritative for which decision, and who owns that call. AI research journeys — where a consumer uses ChatGPT to compare options before searching or buying — do not leave referral breadcrumbs in any of the five. That is not a data problem you can solve with another tool. It is a governance problem you solve by assigning ownership of the measurement model before the AI research channel grows from 17% to 25%.",
+          "why_it_passed": "DoubleVerify published its 2026 Global Insights Report on November 20 (Proof Points: Decoding the Path to Purchase). DV surveyed 22,000 consumers and 2,020 marketers across 25 countries, supplemented by proprietary DV Rockerbox attribution data. CEO Mark Zagorski stated: 'Consumers may discover a product online, explore reviews or seek recommendations from AI assistants, ask friends for advice and, ultimately, make the purchase in a physical store. Marketers need measurement that connects these different touchpoints.' Specific finding: five measurement methods used simultaneously without a stated governance model. 17% of consumers use AI chat tools to research products (rising, particularly among older Gen Z and younger millennials). Search (39%) and reviews (40%) still dominate discovery. DV sells measurement infrastructure; Mediashotz.co.uk staff reporting confirmed independently (Nov 20). Published within the 72h primary window.",
+          "operational_impact_chain": "Consumers use AI chat tools before searching or buying — 17% globally and rising among younger cohorts -> AI research journeys do not appear as AI referrals in standard analytics (arrive as direct or branded search) -> teams running five measurement methods simultaneously get five different answers to the same question -> without a governance model that specifies which method is authoritative for which decision, teams cannot reliably determine whether AI is influencing their conversions or by how much -> marketing ops assigns one measurement authority and defines the question each method is permitted to answer before AI research behavior reaches a threshold that breaks existing models.",
+          "scores": {
+            "relevance": 8,
+            "relevance_rationale": "Measurement governance is a present-tense operational responsibility; five-method fragmentation without governance affects every analytics and reporting team regardless of AI channel maturity.",
+            "topicality": 9,
+            "topicality_rationale": "DoubleVerify report published November 20 — within the 72h primary window. Fresh event with global survey scale.",
+            "viral_potential": 7,
+            "viral_potential_rationale": "Five methods running simultaneously resonates with practitioners who live the measurement fragmentation problem; the AI research gap adds a concrete new dimension but the broader tension is familiar rather than novel.",
+            "total": 24
+          },
+          "confidence": "qualified",
+          "confidence_limitation": "DV sells measurement infrastructure; survey scale is genuine (22,000 consumers, 2,020 marketers). Methodology details available in report. 17% AI chat research is global — regional breakdown not in press release. The measurement method percentages show usage, not whether methods are used to answer the same question simultaneously (the governance gap is an inference from the coexistence of methods, not directly stated).",
+          "novelty": {
+            "result": "meaningful_advance",
+            "rationale": "Nov 20 post (AI visibility ≠ business outcome) covered the measurement gap at the case-study/metric level. This covers measurement governance — the structural problem of multiple incompatible methods used simultaneously without a framework for which method answers which question. Different operational angle: not whether a metric is meaningful but who is in charge of the measurement model."
+          },
+          "predicted_audience_response": "Analytics and marketing ops practitioners will recognize the five-method fragmentation as their own situation and ask who owns the measurement governance call in their organization. Teams will also note the 17% AI research figure and ask what it will look like in their own cohort data.",
+          "materiality_gates": {
+            "material_event": "pass_22000_consumer_survey_2020_marketer_survey_25_countries_dv_rockerbox_data",
+            "editorial_thesis_fit": "pass",
+            "primary_evidence": "pass_dv_press_release_plus_mediashotz_staff_reporting_nov_20",
+            "availability_clarity": "pass_report_published_ceo_quoted",
+            "claim_discipline": "pass_dv_commercial_interest_noted_survey_scale_genuine_governance_gap_is_inference_stated",
+            "operational_impact": "pass",
+            "contradiction_search": "pass_17pct_ai_research_not_majority_behavior_search_and_reviews_still_dominate_noted",
+            "archive_novelty": "pass_meaningful_advance"
+          },
+          "coverage_limitations": [
+            "DV sells measurement infrastructure addressed by the report.",
+            "17% AI chat research figure is global; regional/demographic breakdown not in press release.",
+            "Measurement method percentages show usage, not simultaneous use on same question.",
+            "Full report methodology not retrieved; press release and staff coverage are primary evidence."
+          ],
+          "sources": [
+            {
+              "type": "primary_research_report_press_release",
+              "title": "Consumers shop year-round as AI reshapes path to purchase | Mediashotz (DoubleVerify 2026 Global Insights Report)",
+              "url": "https://mediashotz.co.uk/consumers-shop-year-round-as-ai-reshapes-path-to-purchase-study/",
+              "author": "Mark Johnson (staff)",
+              "published": "2026-11-20"
+            }
+          ],
+          "selected": false
+        }
+      ],
+      "research": {
+        "source_cutoff": "2026-11-23T09:00:00-05:00",
+        "initial_window_start": "2026-11-20T09:00:00-05:00",
+        "overlap_start": "2026-11-19T09:00:00-05:00",
+        "discovery_window_hours": 72,
+        "discovery_window_expansion": "14_days_for_options_1_and_2",
+        "note": "Option 1 (IAB AI-Era Attribution Blueprint, 25/30) published Nov 12 — within 14-day secondary window; prior use as supporting context in Nov 13 queue does not preclude surfacing as primary topic from a distinct angle. Option 2 (Invoca Broken Funnel, 24/30) published Nov 10 — within 14-day secondary window; no prior coverage of bidding feedback loop angle. Option 3 (DoubleVerify 2026 Global Insights, 24/30) published Nov 20 — within 72h primary window. Nov 20, Nov 19, and Nov 13 queues remain open/awaiting_topic_approval, untouched. Awaiting topic approval.",
+        "event_ledger_path": "/home/ranson/.hermes/social-queue/research/2026-11-23-ai-martech-event-ledger.json",
+        "decision_journal_path": "/home/ranson/.hermes/social-queue/research/2026-11-23-ai-martech-decision-journal.md",
+        "reserve_candidate_count": 7,
+        "reserve_candidates": [
+          "ChatGPT Ads Manager 'Improve conversion performance' panel (spotted Nov 21, Thomas Eccel/PPC Times) — await OpenAI confirmation",
+          "Robots.txt AI training token / Bing Dec 15 grounding preference deadline — Nov 19 queue Option 3 covers this; resurface if Dec 15 passes without user action",
+          "Constant Contact Catalyst AI marketing agent — waitlist-only; resurface at GA",
+          "Gartner 2026 Marketing Strategy Survey — primary URL not confirmed",
+          "ICO AdTech 3.0 / UK agentic AI advertising compliance (Nov 13) — reserve for UK/EU regulatory primary event",
+          "Anthropic IPO advertising model signal (Nov 2026) — reserve until actual ad product announced",
+          "Yahoo AI/measurement expansion (Nov 20, B&T) — insufficient primary evidence this run"
+        ],
+        "coverage_gaps": [
+          {
+            "source": "Marketing Week",
+            "status": "not_retrieved",
+            "cutoff_advanced": false,
+            "detail": "Persistent non-retrieval."
+          },
+          {
+            "source": "CMSWire",
+            "status": "not_retrieved",
+            "cutoff_advanced": false,
+            "detail": "Not retrieved this run."
+          },
+          {
+            "source": "Axios Media Trends",
+            "status": "not_retrieved",
+            "cutoff_advanced": false,
+            "detail": "Member-only; persistent."
+          },
+          {
+            "source": "AdExchanger (full article text)",
+            "status": "web_extract_blocked_cron_context",
+            "cutoff_advanced": false,
+            "detail": "Persistent; headlines/snippets via search."
+          },
+          {
+            "source": "EMARKETER (full article text)",
+            "status": "partial_snippet_access",
+            "cutoff_advanced": false,
+            "detail": "Snippets via search; full article not retrieved."
+          },
+          {
+            "source": "The Information",
+            "status": "paywalled",
+            "cutoff_advanced": false,
+            "detail": "Persistent."
+          },
+          {
+            "source": "Reddit pool (r/adops, r/PPC, r/analytics, r/SEO, r/MarketingAutomation)",
+            "status": "public_web_exa_operational_no_within_window_primary_discussion",
+            "cutoff_advanced": false,
+            "detail": "opencli UPSTREAM_BROKEN (persistent). exa fallback returned Sep-Oct 2026 vintage discussions; no within-window primary discussion on key topics retrieved."
+          },
+          {
+            "source": "X/Twitter named pool",
+            "status": "need_login",
+            "cutoff_advanced": false,
+            "detail": "Not logged in; credentials pending, not blocking."
+          },
+          {
+            "source": "Harvard Business Review",
+            "status": "not_retrieved",
+            "cutoff_advanced": false,
+            "detail": "Not retrieved this run."
+          }
+        ]
+      },
+      "events": [
+        {
+          "at": "2026-11-23T09:00:00-05:00",
+          "type": "topic_queue_created",
+          "actor": "scheduled_research",
+          "detail": "Created exactly three topic options. Option 1 (IAB AI-Era Attribution Blueprint, 25/30) is a Nov 12 industry standards publication within the 14-day secondary window; prior use as supporting context in Nov 13 queue does not preclude surfacing as primary concept. Option 2 (Invoca Broken Funnel Report, 24/30) is a Nov 10 survey within the 14-day window; no prior coverage of AI agent bidding feedback loop angle. Option 3 (DoubleVerify 2026 Global Insights, 24/30) is a Nov 20 primary-window publication. Nov 20, Nov 19, and Nov 13 queues remain awaiting_topic_approval, untouched. Awaiting topic approval."
+        }
+      ]
+    },
     {
       "id": "ai-martech-topic-queue-2026-11-20",
       "kind": "content",
