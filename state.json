@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-11-24T09:00:00-05:00",
+  "updated_at": "2026-11-24T12:23:03-05:00",
   "sync": {
     "status": "connected",
     "discord_guild_id": "1553886101003837561",
@@ -16,9 +16,9 @@
       "kind": "content",
       "title": "AI marketing and martech topic approval queue",
       "created_at": "2026-11-24T09:00:00-05:00",
-      "updated_at": "2026-11-24T09:00:00-05:00",
-      "status": "awaiting_topic_approval",
-      "stage": "topic_approval",
+      "updated_at": "2026-11-24T12:23:03-05:00",
+      "status": "awaiting_post_approval",
+      "stage": "post_approval",
       "topic_options": [
         {
           "option": 1,
@@ -165,7 +165,7 @@
               "published": "2026-11-24"
             }
           ],
-          "selected": false
+          "selected": true
         },
         {
           "option": 3,
@@ -326,8 +326,190 @@
           "type": "topic_queue_created",
           "actor": "scheduled_research",
           "detail": "Created exactly three concept-led AI marketing and martech topic options for Nov 24, 2026. All three passed all eight materiality gates. Option 1 (Walmart Agent Gateway live with Meta Muse, 28/30) Nov 23 live launch. Option 2 (OpenAI ChatGPT shopping independence disclaimer removed, 27/30) Nov 15 help-page change confirmed widely Nov 23. Option 3 (Google AI Mode + Google Wallet personal financial data, 27/30) Nov 23 Google announcement. No window expansion required. Awaiting topic approval."
+        },
+        {
+          "at": "2026-11-24T12:09:37-05:00",
+          "type": "topic_approved",
+          "actor": "user_via_discord",
+          "message_id": "1574834330381983825",
+          "detail": "User selected Option 2: OpenAI removed the published partnership-independence assurance from its ChatGPT shopping documentation. Topic approval authorizes writing and review only; cover generation and LinkedIn publication remain unapproved."
+        },
+        {
+          "at": "2026-11-24T12:23:03-05:00",
+          "type": "draft_review_completed",
+          "actor": "recruitzero_pipeline",
+          "detail": "Claude Opus draft passed evidence, argument, operational-impact, novelty, stack-independent-value, accessibility, construction, stop-slop 46/50, voice 9/10, and factual-fidelity gates. Awaiting explicit post approval. Cover generation and LinkedIn publication remain unauthorized."
         }
-      ]
+      ],
+      "topic": {
+        "option": 2,
+        "rank": 2,
+        "title": "OpenAI quietly removed its promise that ChatGPT shopping results aren't influenced by partnerships. Brands and agencies can't cite that assurance anymore.",
+        "research_card_title": "OpenAI quietly removed its promise that ChatGPT shopping results aren't influenced by partnerships. Brands and agencies can't cite that assurance anymore.",
+        "selected": true,
+        "selected_at": "2026-11-24T12:09:37-05:00",
+        "approved_by": "discord_user",
+        "approval_message_id": "1574834330381983825",
+        "proposed_hook": "Between November 4 and 15, OpenAI edited its Shopping with ChatGPT Search help page. The old version: 'Product results are selected independently by ChatGPT and are not ads, nor influenced by any OpenAI partnerships.' The new version: 'Product results are not ads; how products and merchants are selected is described below.' Both 'selected independently' and 'nor influenced by any OpenAI partnerships' are gone. The change traveled to 67 of 68 language editions. OpenAI issued no statement.",
+        "marketer_angle": "Any brand, retailer, or agency that cited OpenAI's independence language when telling clients their ChatGPT product recommendations were free of partnership influence no longer has that documentation to stand on. The 'not ads' statement still exists. The independence assurance does not. The practical question is not whether partnerships currently influence results — that is unknown. The question is what claim standard your team now needs before advising on ChatGPT product visibility spend, GEO/AEO strategy, or product-feed optimization aimed at ChatGPT. The standard you held OpenAI to last month no longer exists in writing.",
+        "scores": {
+          "relevance": 9,
+          "relevance_rationale": "Any team advising on ChatGPT product visibility or running GEO/AEO strategy for clients has a present-tense documentation governance problem: the assurance they may have been citing is gone.",
+          "topicality": 8,
+          "topicality_rationale": "Change live November 15; widely reported November 23. First-wave coverage confirms the significance. AdExchanger and Search Engine Roundtable both flagged it in their Nov 24 roundups.",
+          "viral_potential": 10,
+          "viral_potential_rationale": "A major AI platform quietly removing its published neutrality assurance from shopping documentation — with no statement — creates a high-tension, shareable story for every agency, brand, and GEO/AEO practitioner tracking ChatGPT's commercial model.",
+          "total": 27
+        },
+        "confidence": "high",
+        "confidence_limitation": "Removal of the assurance does not confirm partnerships currently influence results. No OpenAI statement exists. Hebrew language edition still carries the old wording — appears to be a stale translation, not a policy exception.",
+        "novelty": {
+          "result": "distinct",
+          "rationale": "Nov 13 covered OpenAI advertiser governance (ChatGPT Ads rules, campaign constraints). Nov 11 covered ChatGPT Business Profiles (business data management). This covers the product recommendation selection governance layer: OpenAI's own published independence assurance, which previously let brands cite neutral selection, is gone."
+        },
+        "operational_impact_chain": "OpenAI removes its published independence assurance from ChatGPT shopping help page -> brands and agencies can no longer point clients to OpenAI's own documentation to establish product recommendations are partnership-free -> teams advising on ChatGPT product visibility or GEO/AEO strategy need to revise the evidentiary basis for that advice -> if OpenAI does introduce partnership-influenced placements, the documentation change will have been the first indicator -> internal claim standards for ChatGPT product recommendation advice need to be explicit about what is and is not documented",
+        "sources": [
+          {
+            "type": "primary_documentation_current",
+            "title": "Shopping with ChatGPT Search (live page) | OpenAI Help Center",
+            "url": "https://help.openai.com/en/articles/11128490-shopping-with-chatgpt-search",
+            "note": "Live as of Nov 24; updated timestamp Nov 15"
+          },
+          {
+            "type": "primary_documentation_archived",
+            "title": "Shopping with ChatGPT Search (archived Nov 4) | Wayback Machine",
+            "url": "https://web.archive.org/web/20261104220014/https://help.openai.com/en/articles/11128490-shopping-with-chatgpt-search",
+            "published": "2026-11-04"
+          },
+          {
+            "type": "independent_staff_reporting",
+            "title": "ChatGPT Product Results May Now Be Influenced By OpenAI Partnerships | Search Engine Roundtable",
+            "url": "https://www.seroundtable.com/chatgpt-product-results-may-be-influenced-by-openai-partnerships-42588.html",
+            "author": "Barry Schwartz (staff)",
+            "published": "2026-11-23"
+          },
+          {
+            "type": "independent_reporting",
+            "title": "OpenAI edits ChatGPT shopping help page wording | AI Visibility Journal",
+            "url": "https://aivisibilityjournal.com/news/2026/11/openai-chatgpt-shopping-help-page-partnerships-line-removed/",
+            "author": "Nhi Phan",
+            "published": "2026-11-19"
+          },
+          {
+            "type": "independent_analysis",
+            "title": "OpenAI Drops ChatGPT Shopping Partnership Disclaimer (67 of 68 editions) | SaaS Link Building",
+            "url": "https://saaslinkbuilding.com/blog/chatgpt-shopping-partnerships-disclaimer/",
+            "published": "2026-11-24"
+          }
+        ],
+        "claim_evidence_path": "/home/ranson/.hermes/social-queue/research/2026-11-24-openai-shopping-documentation-claim-evidence.json"
+      },
+      "post": {
+        "status": "awaiting_approval",
+        "title": "OpenAI Removed a Shopping Assurance. Your Claims Need an Expiration Date.",
+        "body": "OpenAI removed a sentence marketers could quote. Its ChatGPT shopping help page had said product results were selected independently, were not ads, and were not influenced by OpenAI partnerships. Between a November 4 archive and a November 15 live-page check, the independence and partnership lines disappeared. OpenAI has not explained why.\n\nThat does not prove partnerships now shape product results or show the selection process changed. It shows a documented assurance expired.\n\nIf a client deck says \"ChatGPT product results aren't influenced by OpenAI partnerships\" and cites OpenAI, that citation no longer holds. Vendor documentation is evidence with a shelf life.\n\nWhat survives: OpenAI still says product results are not ads. The page lists selection inputs, including structured product information, third-party content, and its safety policies. It says merchants may be ranked on availability, price, quality, and whether they make or primarily sell the product. Those are factors, not guaranteed visibility.\n\nA practical cleanup:\n\n- Find every deck, playbook, and audit that repeats the removed claim.\n- Split it: \"not ads\" is documented; partnership influence on product selection is unresolved.\n- Assign a content, ecommerce, or marketing operations owner to maintain dated snapshots, with legal or client-service review for contracts and client guidance.\n- Keep product-data work tied to documented inputs. Pause pitches that assume partnerships do not affect selection or promise preferential treatment.\n\nThe takeaway: a vendor's documented assurance is only as current as the page it lives on. Date it, own it, and retire it when it changes.",
+        "word_count": 246,
+        "sources": [
+          {
+            "type": "primary_documentation_current",
+            "title": "Shopping with ChatGPT Search (live page) | OpenAI Help Center",
+            "url": "https://help.openai.com/en/articles/11128490-shopping-with-chatgpt-search"
+          },
+          {
+            "type": "primary_documentation_archived",
+            "title": "Shopping with ChatGPT Search (archived Nov 4) | Wayback Machine",
+            "url": "https://web.archive.org/web/20261104220014/https://help.openai.com/en/articles/11128490-shopping-with-chatgpt-search"
+          },
+          {
+            "type": "independent_staff_reporting",
+            "title": "ChatGPT Product Results May Now Be Influenced By OpenAI Partnerships | Search Engine Roundtable",
+            "url": "https://www.seroundtable.com/chatgpt-product-results-may-be-influenced-by-openai-partnerships-42588.html",
+            "author": "Barry Schwartz"
+          },
+          {
+            "type": "independent_reporting",
+            "title": "OpenAI edits ChatGPT shopping help page wording | AI Visibility Journal",
+            "url": "https://aivisibilityjournal.com/news/2026/11/openai-chatgpt-shopping-help-page-partnerships-line-removed/",
+            "author": "Nhi Phan"
+          }
+        ],
+        "stop_slop_score": 46,
+        "stop_slop_breakdown": {
+          "directness": 9,
+          "rhythm": 9,
+          "trust": 10,
+          "authenticity": 9,
+          "density": 9
+        },
+        "voice_fidelity_score": 9,
+        "accessibility_review": {
+          "status": "pass",
+          "remaining_jargon": [
+            "selection inputs — immediately illustrated with examples",
+            "product-data work — tied to the documented inputs described above"
+          ],
+          "rationale": "Necessary platform and commerce terms are explained through ordinary-language examples and decision consequences."
+        },
+        "construction_pass": true,
+        "construction_checklist": {
+          "word_count_150_250": true,
+          "evidence_interpretation_pass": true,
+          "operational_impact_pass": true,
+          "stack_independent_value": true,
+          "novelty_distinct_or_advance": true,
+          "takeaway_summary": true,
+          "bullets_used_only_if_helpful": true,
+          "factual_fidelity": true,
+          "accessibility": true
+        },
+        "argument_review": {
+          "status": "pass",
+          "correction_cycles": 1,
+          "unsupported_inferences": [],
+          "missing_qualifications": [],
+          "counterargument": "The edit may be legal or editorial cleanup rather than evidence of a policy or product change. The article therefore narrows unsupported claims rather than inferring a new partnership mechanism.",
+          "operational_impact_status": "pass",
+          "operational_impact_rationale": "The article identifies affected artifacts, assigns an accountable operating function, adds legal or client-service review boundaries, and gives a stop rule for pitches that exceed the evidence.",
+          "novelty_status": "distinct",
+          "stack_independent_value": "pass",
+          "stack_independent_rationale": "Dated snapshots, ownership, evidence review, claim splitting, and stop rules apply to any vendor documentation.",
+          "required_corrections": [],
+          "residual_risks": [
+            "OpenAI has not explained why the assurance was removed.",
+            "The documentation comparison cannot establish whether the product-selection mechanism changed.",
+            "No evidence shows that an OpenAI partnership currently affects product-result selection.",
+            "The exact edit time is not established beyond the November 4-to-November 15 interval.",
+            "OpenAI may revise the help page again."
+          ]
+        },
+        "factual_fidelity": true,
+        "review_notes": "Claude Opus draft passed the argument gate after one correction cycle, then passed final prose, accessibility, construction, stop-slop, voice, and factual-fidelity review.",
+        "writer_model": "claude-opus-5-5",
+        "writer_provider": "claude-code",
+        "writer_fallback_used": false,
+        "review_model": "gpt-5.6-sol",
+        "review_provider": "openai-codex",
+        "markdown_path": "/home/ranson/.hermes/social-queue/linkedin/2026-11-24-openai-shopping-documentation-reviewed.md",
+        "stack_independent_value": true
+      },
+      "claim_evidence": {
+        "status": "complete",
+        "path": "/home/ranson/.hermes/social-queue/research/2026-11-24-openai-shopping-documentation-claim-evidence.json",
+        "source_count": 5,
+        "load_bearing_claims_traceable": true,
+        "qualifications_preserved": true,
+        "prohibited_overstatements_enforced": true
+      },
+      "assets": {
+        "cover_status": "not_authorized"
+      },
+      "performance": {
+        "tracking_status": "awaiting_publication_data",
+        "publication_url": null,
+        "published_at": null,
+        "day_7": null,
+        "day_30": null
+      }
     },
     {
       "id": "ai-martech-topic-queue-2026-11-20",
