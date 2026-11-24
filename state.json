@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-11-24T12:23:03-05:00",
+  "updated_at": "2026-11-24T12:42:38-05:00",
   "sync": {
     "status": "connected",
     "discord_guild_id": "1553886101003837561",
@@ -16,7 +16,7 @@
       "kind": "content",
       "title": "AI marketing and martech topic approval queue",
       "created_at": "2026-11-24T09:00:00-05:00",
-      "updated_at": "2026-11-24T12:23:03-05:00",
+      "updated_at": "2026-11-24T12:42:38-05:00",
       "status": "awaiting_post_approval",
       "stage": "post_approval",
       "topic_options": [
@@ -339,6 +339,13 @@
           "type": "draft_review_completed",
           "actor": "recruitzero_pipeline",
           "detail": "Claude Opus draft passed evidence, argument, operational-impact, novelty, stack-independent-value, accessibility, construction, stop-slop 46/50, voice 9/10, and factual-fidelity gates. Awaiting explicit post approval. Cover generation and LinkedIn publication remain unauthorized."
+        },
+        {
+          "at": "2026-11-24T12:42:38-05:00",
+          "type": "post_revised",
+          "actor": "user_via_discord",
+          "message_id": "1574840510344986755",
+          "detail": "Reframed the reviewed post around the polarizing position that recommendation platforms cannot seek trust while leaving commercial influence unresolved. Evidence gates preserve that no paid influence or selection-system change has been proven. Cover generation remains unauthorized."
         }
       ],
       "topic": {
@@ -406,9 +413,9 @@
       },
       "post": {
         "status": "awaiting_approval",
-        "title": "OpenAI Removed a Shopping Assurance. Your Claims Need an Expiration Date.",
-        "body": "OpenAI removed a sentence marketers could quote. Its ChatGPT shopping help page had said product results were selected independently, were not ads, and were not influenced by OpenAI partnerships. Between a November 4 archive and a November 15 live-page check, the independence and partnership lines disappeared. OpenAI has not explained why.\n\nThat does not prove partnerships now shape product results or show the selection process changed. It shows a documented assurance expired.\n\nIf a client deck says \"ChatGPT product results aren't influenced by OpenAI partnerships\" and cites OpenAI, that citation no longer holds. Vendor documentation is evidence with a shelf life.\n\nWhat survives: OpenAI still says product results are not ads. The page lists selection inputs, including structured product information, third-party content, and its safety policies. It says merchants may be ranked on availability, price, quality, and whether they make or primarily sell the product. Those are factors, not guaranteed visibility.\n\nA practical cleanup:\n\n- Find every deck, playbook, and audit that repeats the removed claim.\n- Split it: \"not ads\" is documented; partnership influence on product selection is unresolved.\n- Assign a content, ecommerce, or marketing operations owner to maintain dated snapshots, with legal or client-service review for contracts and client guidance.\n- Keep product-data work tied to documented inputs. Pause pitches that assume partnerships do not affect selection or promise preferential treatment.\n\nThe takeaway: a vendor's documented assurance is only as current as the page it lives on. Date it, own it, and retire it when it changes.",
-        "word_count": 246,
+        "title": "Tech Cannot Monetize Recommendations and Demand Blind Trust",
+        "body": "OpenAI removed a published assurance from its ChatGPT shopping documentation. That should bother anyone tired of tech turning useful products into monetizable inventory.\n\nA November 4 archive said product results were selected independently, were not ads, and were not influenced by OpenAI partnerships. By November 15, the independence and partnership lines were gone. The current page still says results are not ads and documents several selection factors. OpenAI has not explained the edit.\n\nThis proves neither paid influence nor a change to the selection system. No evidence shows that an OpenAI partnership affects product results.\n\nAn ordinary shopper now cannot evaluate the platform’s incentives from its documentation. If commercial relationships might shape a recommendation, users deserve to know. Recommendations become less reliable as advice when users cannot distinguish the best match from possible paid influence.\n\nPaid placement is not inherently dishonest. Clearly labeled ads give people context. The trust problem begins when an unresolved documentation gap gets repackaged as confident claims of independence.\n\nMarketing teams should:\n\n- Audit decks, pitches, and guidance that repeat the removed assurance.\n- Separate documented selection factors, unresolved influence, and disclosed paid placement.\n- Stop claiming partnership neutrality without verifiable evidence.\n- Pause guidance or spending claims that depend on neutrality or preferential treatment.\n- Assign a content, ecommerce, or marketing operations owner, with legal review where needed.\n\nThe takeaway: if tech companies want to monetize access to recommendations, they must label the influence. Otherwise, they should stop asking average users for blind trust.",
+        "word_count": 244,
         "sources": [
           {
             "type": "primary_documentation_current",
@@ -441,14 +448,11 @@
           "authenticity": 9,
           "density": 9
         },
-        "voice_fidelity_score": 9,
+        "voice_fidelity_score": 9.4,
         "accessibility_review": {
           "status": "pass",
-          "remaining_jargon": [
-            "selection inputs — immediately illustrated with examples",
-            "product-data work — tied to the documented inputs described above"
-          ],
-          "rationale": "Necessary platform and commerce terms are explained through ordinary-language examples and decision consequences."
+          "remaining_jargon": [],
+          "rationale": "The rewrite uses ordinary language and explains the distinction between documented selection factors, unresolved commercial influence, and paid placement in place."
         },
         "construction_pass": true,
         "construction_checklist": {
@@ -464,33 +468,54 @@
         },
         "argument_review": {
           "status": "pass",
-          "correction_cycles": 1,
+          "correction_cycles": 2,
           "unsupported_inferences": [],
           "missing_qualifications": [],
-          "counterargument": "The edit may be legal or editorial cleanup rather than evidence of a policy or product change. The article therefore narrows unsupported claims rather than inferring a new partnership mechanism.",
+          "counterargument": "The edit may be legal or editorial cleanup rather than monetization or a policy change. OpenAI still says results are not ads and documents selection factors, so the article explicitly treats monetization as a risk and does not infer paid ranking.",
           "operational_impact_status": "pass",
-          "operational_impact_rationale": "The article identifies affected artifacts, assigns an accountable operating function, adds legal or client-service review boundaries, and gives a stop rule for pitches that exceed the evidence.",
+          "operational_impact_rationale": "The article requires an inventory of affected materials, separates documented facts from unresolved influence and paid placement, narrows the stop rule to unsupported neutrality or preferential-treatment claims, assigns an owner, and adds legal review.",
           "novelty_status": "distinct",
           "stack_independent_value": "pass",
-          "stack_independent_rationale": "Dated snapshots, ownership, evidence review, claim splitting, and stop rules apply to any vendor documentation.",
+          "stack_independent_rationale": "The audit, evidence-separation, pause, ownership, and legal-review rules apply to any vendor recommendation platform.",
           "required_corrections": [],
           "residual_risks": [
-            "OpenAI has not explained why the assurance was removed.",
-            "The documentation comparison cannot establish whether the product-selection mechanism changed.",
-            "No evidence shows that an OpenAI partnership currently affects product-result selection.",
-            "The exact edit time is not established beyond the November 4-to-November 15 interval.",
-            "OpenAI may revise the help page again."
+            "OpenAI has not explained the documentation edit.",
+            "The evidence cannot establish whether the product-selection mechanism changed.",
+            "No evidence shows that an OpenAI partnership affects product results.",
+            "The broad criticism of technology monetization is editorial opinion.",
+            "The help page may change again."
           ]
         },
         "factual_fidelity": true,
-        "review_notes": "Claude Opus draft passed the argument gate after one correction cycle, then passed final prose, accessibility, construction, stop-slop, voice, and factual-fidelity review.",
+        "review_notes": "Rewritten at the user’s direction around a stronger, polarizing stance on technology monetization and the reliability cost of unresolved commercial influence. Passed evidence review after two correction cycles and final prose review at 244 words.",
         "writer_model": "claude-opus-5-5",
         "writer_provider": "claude-code",
         "writer_fallback_used": false,
         "review_model": "gpt-5.6-sol",
         "review_provider": "openai-codex",
         "markdown_path": "/home/ranson/.hermes/social-queue/linkedin/2026-11-24-openai-shopping-documentation-reviewed.md",
-        "stack_independent_value": true
+        "stack_independent_value": true,
+        "revision_history": [
+          {
+            "at": "2026-11-24T12:42:38-05:00",
+            "requested_via": "discord",
+            "discord_message_id": "1574840510344986755",
+            "reason": "Revolve the article around a strong polarizing stance on constant technology monetization and explain how unresolved paid influence makes recommendations less reliable to average users.",
+            "previous_title": "OpenAI Removed a Shopping Assurance. Your Claims Need an Expiration Date.",
+            "previous_body": "OpenAI removed a sentence marketers could quote. Its ChatGPT shopping help page had said product results were selected independently, were not ads, and were not influenced by OpenAI partnerships. Between a November 4 archive and a November 15 live-page check, the independence and partnership lines disappeared. OpenAI has not explained why.\n\nThat does not prove partnerships now shape product results or show the selection process changed. It shows a documented assurance expired.\n\nIf a client deck says \"ChatGPT product results aren't influenced by OpenAI partnerships\" and cites OpenAI, that citation no longer holds. Vendor documentation is evidence with a shelf life.\n\nWhat survives: OpenAI still says product results are not ads. The page lists selection inputs, including structured product information, third-party content, and its safety policies. It says merchants may be ranked on availability, price, quality, and whether they make or primarily sell the product. Those are factors, not guaranteed visibility.\n\nA practical cleanup:\n\n- Find every deck, playbook, and audit that repeats the removed claim.\n- Split it: \"not ads\" is documented; partnership influence on product selection is unresolved.\n- Assign a content, ecommerce, or marketing operations owner to maintain dated snapshots, with legal or client-service review for contracts and client guidance.\n- Keep product-data work tied to documented inputs. Pause pitches that assume partnerships do not affect selection or promise preferential treatment.\n\nThe takeaway: a vendor's documented assurance is only as current as the page it lives on. Date it, own it, and retire it when it changes.",
+            "new_title": "Tech Cannot Monetize Recommendations and Demand Blind Trust",
+            "word_count": 244,
+            "review": {
+              "argument": "pass",
+              "operational_impact": "pass",
+              "stack_independent_value": "pass",
+              "accessibility": "pass",
+              "factual_fidelity": "pass",
+              "stop_slop": 46,
+              "voice_fidelity": 9.4
+            }
+          }
+        ]
       },
       "claim_evidence": {
         "status": "complete",
