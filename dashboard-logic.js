@@ -85,6 +85,10 @@
     };
   }
 
+  function displayTitle(item = {}) {
+    return item.post?.title || item.topic?.title || item.title || item.id || '';
+  }
+
   function actionUrl(sync = {}, item = {}, action, option = '') {
     const repo = sync.approval_repo;
     const hasOption = option !== '' && option !== null && option !== undefined;
@@ -103,6 +107,7 @@
     actionUrl,
     completionDateKey,
     completionTimestamp,
+    displayTitle,
     groupFinishedItems,
     isFinished,
     itemDayKey,

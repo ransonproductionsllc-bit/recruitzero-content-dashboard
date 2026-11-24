@@ -6,10 +6,21 @@ const path = require('node:path');
 const {
   actionUrl,
   completionTimestamp,
+  displayTitle,
   groupFinishedItems,
   itemDayKey,
   reviewPresentation,
 } = require('../dashboard-logic.js');
+
+test('review title prefers the reviewed post headline over the research-card title', () => {
+  const item = {
+    id: 'queue-item',
+    topic: { title: 'Research-card framing' },
+    post: { title: 'Reviewed article headline' },
+  };
+
+  assert.equal(displayTitle(item), 'Reviewed article headline');
+});
 
 test('clear action targets only the selected daily search item', () => {
   const url = new URL(actionUrl(
