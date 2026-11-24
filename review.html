@@ -91,7 +91,9 @@
     const post = item.post || {};
     const assets = item.assets || {};
     const sources = post.sources || item.topic_options?.find(option => option.option === item.topic?.option)?.sources || [];
-    const title = window.RecruitZeroDashboard?.displayTitle(item) || post.title || item.topic?.title || item.id;
+    const title = typeof window.RecruitZeroDashboard?.displayTitle === 'function'
+      ? window.RecruitZeroDashboard.displayTitle(item)
+      : post.title || item.topic?.title || item.id;
     const selectedTopic = item.topic_options?.find(option => option.option === item.topic?.option) || item.topic || {};
     const editorial = item.editorial_intelligence || {};
     const argumentReview = post.argument_review || editorial.argument_review || {};

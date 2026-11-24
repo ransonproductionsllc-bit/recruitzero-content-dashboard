@@ -22,6 +22,12 @@ test('review title prefers the reviewed post headline over the research-card tit
   assert.equal(displayTitle(item), 'Reviewed article headline');
 });
 
+test('review page falls back safely when a cached dashboard helper is missing', () => {
+  const html = fs.readFileSync(path.join(__dirname, '..', 'review.html'), 'utf8');
+
+  assert.match(html, /typeof window\.RecruitZeroDashboard\?\.displayTitle === 'function'/);
+});
+
 test('clear action targets only the selected daily search item', () => {
   const url = new URL(actionUrl(
     { approval_repo: 'owner/repo' },
