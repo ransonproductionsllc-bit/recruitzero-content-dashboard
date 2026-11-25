@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-11-24T12:42:38-05:00",
+  "updated_at": "2026-11-25T09:00:00-05:00",
   "sync": {
     "status": "connected",
     "discord_guild_id": "1553886101003837561",
@@ -11,6 +11,311 @@
     "dashboard_refresh_seconds": 60
   },
   "active_queue": [
+    {
+      "id": "ai-martech-topic-queue-2026-11-25",
+      "kind": "content",
+      "title": "AI marketing and martech topic approval queue",
+      "created_at": "2026-11-25T09:00:00-05:00",
+      "updated_at": "2026-11-25T09:00:00-05:00",
+      "status": "awaiting_topic_approval",
+      "stage": "topic_selection",
+      "topic_options": [
+        {
+          "option": 1,
+          "rank": 1,
+          "title": "Amazon is paying ChatGPT to reach shoppers it won't let ChatGPT study. Brands advertising in that gap pay twice.",
+          "event_date": "2026-11-24",
+          "proposed_hook": "Amazon ran a new round of Black Friday ads in ChatGPT this week. The same company that blocks OpenAI crawlers from its product data is paying OpenAI to show those ads. ChatGPT links users to Amazon search results — not product pages — drawing on third-party deal trackers for prices. For brands competing on Amazon, the downstream math is uncomfortable: win a ChatGPT recommendation, then pay again for sponsored listings to stay visible once that shopper lands on Amazon's search page.",
+          "marketer_angle": "Amazon's data-access strategy and advertising strategy are running in opposite directions, and brands advertising in between carry the cost. The operating question for any brand spending on retail media or AI platform ads is what happens to attribution when the platform collecting the ad revenue controls access to the product data that determines what gets recommended. When a retailer controls data flow and sells ad space, the two levers — organic recommendation and paid visibility — are both on the retailer's terms.",
+          "why_it_passed": "Digiday (Krystal Scanlon, staff, Nov 24) confirmed Amazon running Black Friday ads in ChatGPT — same format as other ChatGPT advertisers, directing to Amazon search results. Amazon DSP/OpenAI partnership announced Sep 10 via Amazon Ads official blog and confirmed by CNBC (Annie Palmer), enabling Amazon DSP advertisers to extend campaigns to ChatGPT inventory. Amazon became top retail ChatGPT advertiser Apr–Aug (Sensor Tower data via CNBC). eMarketer's Arielle Feger quote (Nov 24 Digiday body) explicitly names the double-spend risk. Amazon and OpenAI declined to comment on Nov 24 article; buy route (direct vs. DSP) unknown.",
+          "operational_impact_chain": "Amazon buys ChatGPT ads while blocking OpenAI crawlers from product data -> ChatGPT routes shoppers to Amazon search results, not product pages, using third-party deal trackers -> brands earn a ChatGPT recommendation then compete in Amazon's sponsored listings to stay visible at point of purchase -> brands pay for ChatGPT ad visibility and Amazon sponsored placement for the same customer journey -> attribution for the conversion is claimed by Amazon's measurement, not the AI platform that generated the intent -> retail media and AI platform advertising budgets cannot be treated as independent channels when the same retailer controls both data access and sponsored-product placement",
+          "scores": {
+            "relevance": 9,
+            "relevance_rationale": "Any brand running retail media on Amazon or buying AI platform ads faces a present-tense attribution and double-spend governance question when the data-controlling retailer also sells both channels.",
+            "topicality": 10,
+            "topicality_rationale": "Live Black Friday ads confirmed November 24, 2026 by Digiday staff. Active over the highest-traffic shopping week of the year.",
+            "viral_potential": 9,
+            "viral_potential_rationale": "The tension between blocking AI crawlers and buying AI ads in the same news cycle — while shifting the double-spend cost to brands — is a concrete, discussable contradiction every retail media buyer will recognize.",
+            "total": 28
+          },
+          "confidence": "high",
+          "confidence_limitation": "Amazon and OpenAI declined to comment. Whether Amazon buys via own DSP or directly is unknown. eMarketer's double-spend observation is an analyst inference, not a documented mechanism. ChatGPT-side attribution data is not publicly available.",
+          "novelty": {
+            "result": "meaningful_advance",
+            "rationale": "Nov 17 covered product data quality for AI shopping discovery (Amazon World Product Graph). Nov 13 covered ChatGPT Wallet payment infrastructure. This covers advertising economics and data-access asymmetry: a dominant retailer using its data-access control as a structural advantage while selling ad space to the same brands it restricts."
+          },
+          "predicted_audience_response": "Retail media buyers will check whether their ChatGPT ad spend and Amazon sponsored-product spend are attributing to the same purchase event. Marketing ops and analytics teams will ask how to separate AI platform-influenced conversions from Amazon-attributed ones when the same shopper arrives via ChatGPT and completes on Amazon.",
+          "materiality_gates": {
+            "material_event": "pass_live_black_friday_ads_confirmed_digiday_staff_plus_official_dsp_partnership",
+            "editorial_thesis_fit": "pass",
+            "primary_evidence": "pass_digiday_staff_reporting_plus_amazon_official_dsp_announcement_plus_cnbc",
+            "availability_clarity": "pass_live_us_black_friday_ads_confirmed",
+            "claim_discipline": "pass_amazon_openai_declined_comment_buy_route_unknown_emarketer_inference_flagged",
+            "operational_impact": "pass",
+            "contradiction_search": "pass_amazon_data_restrictions_contrasted_buy_route_unconfirmed",
+            "archive_novelty": "pass_meaningful_advance"
+          },
+          "coverage_limitations": [
+            "Amazon and OpenAI declined to comment.",
+            "Whether Amazon buys via own DSP or directly from OpenAI is unknown.",
+            "eMarketer's double-spend observation is analyst inference, not a documented mechanism or disclosed campaign structure.",
+            "ChatGPT-side attribution data is not publicly available.",
+            "Reddit practitioner signal retrieved via public-web search; no within-window r/adops or r/PPC discussion on this specific event found."
+          ],
+          "sources": [
+            {
+              "type": "independent_staff_reporting",
+              "title": "Amazon is buying ChatGPT ads while blocking OpenAI crawlers | Digiday",
+              "url": "https://digiday.com/marketing/amazon-is-buying-chatgpt-ads-while-blocking-openai-crawlers/",
+              "author": "Krystal Scanlon (staff)",
+              "published": "2026-11-24"
+            },
+            {
+              "type": "primary_company_announcement",
+              "title": "Amazon Ads announces new integration with ChatGPT | Amazon Ads",
+              "url": "https://advertising.amazon.com/library/news/amazon-ads-chat-gpt-advertising-integration",
+              "published": "2026-09-10"
+            },
+            {
+              "type": "independent_staff_reporting",
+              "title": "Amazon gives OpenAI's ad business a boost, letting its advertisers into ChatGPT | CNBC",
+              "url": "https://www.cnbc.com/2026/09/10/amazon-chatgptads-open-ai.html",
+              "author": "Annie Palmer (staff)",
+              "published": "2026-09-10"
+            }
+          ],
+          "selected": false
+        },
+        {
+          "option": 2,
+          "rank": 2,
+          "title": "Microsoft just made AI-generated ad disclosure a compliance task, not a creative choice. If you serve ads in New York or the EU, the clock is already running.",
+          "event_date": "2026-11-19",
+          "proposed_hook": "Microsoft Advertising's AI content transparency controls went generally available on November 19. Advertisers can now declare whether ad images and videos include AI-generated content and request a visible 'Made with AI' watermark. The watermark currently shows only where required: the EU and New York State. In New York, it is not optional. The state's synthetic performer law has been in effect since June 9, 2026 — civil penalties run $1,000 for a first violation, $5,000 for each one after. Microsoft is explicit: advertisers remain responsible for every declaration they make.",
+          "marketer_angle": "AI-generated ad creative has moved from a production shortcut to a compliance item. Advertisers running campaigns with AI-generated images or video in New York or the EU now have an affirmative disclosure obligation, and Microsoft's declaration cannot be undone once set via API. The practical question for any team using AI creative tools is whether a declaration inventory exists, who owns it, and whether the legal team has reviewed the requirements in every market where the ads serve.",
+          "why_it_passed": "Microsoft Advertising official blog (Nov 19) announced GA of AI content transparency controls. Microsoft API documentation (official) documents the three declaration values and irreversibility. New York synthetic performer law (S.8420-A/A.8887-B) confirmed in effect Jun 9, 2026 per Useryze/Cooley reporting (Nov 21). Watermark geography limitation (EU and NY State only) confirmed by Microsoft help documentation per multiple secondary sources. Google separately has AI label requirements, confirming cross-platform direction.",
+          "operational_impact_chain": "Microsoft AI content transparency controls go GA -> advertisers using AI-generated images/video in ads must declare AI content per format and can request visible watermarks -> New York synthetic performer law (in effect Jun 9, 2026) requires conspicuous disclosure of synthetic performers in commercial ads -> advertisers with AI-generated ad assets running in New York or EU have an affirmative compliance obligation now -> teams without a declaration inventory or legal review of market-specific requirements have an open compliance gap -> a declaration set via API cannot be cleared, making retrospective correction impractical for labeled assets",
+          "scores": {
+            "relevance": 9,
+            "relevance_rationale": "Any advertiser using AI-generated images or video in paid media campaigns that run in New York or the EU has a present compliance obligation. The declaration is irreversible once set.",
+            "topicality": 8,
+            "topicality_rationale": "Microsoft announcement November 19; New York law in effect since June 9. The compliance window has been open; the disclosure tool is now GA and therefore operational.",
+            "viral_potential": 9,
+            "viral_potential_rationale": "AI-generated ad creative as a compliance item with irreversible API declarations and state penalties creates a sharp, concrete governance question for any team using AI creative tools — a practitioner story, not a future-watch item.",
+            "total": 26
+          },
+          "confidence": "high",
+          "confidence_limitation": "Watermark visibility varies by ad format, placement, and serving environment. Not all ad formats support visible watermarks. NY law applies to synthetic performers (AI-generated people); audio ads are exempt. Exact enforcement track record under the NY law not retrieved.",
+          "novelty": {
+            "result": "distinct",
+            "rationale": "No prior RecruitZero item covers advertiser disclosure requirements for AI-generated content in paid media. Prior coverage addressed AI shopping recommendation governance and platform terms, not creative compliance."
+          },
+          "predicted_audience_response": "Creative, campaign, and legal teams will check whether a declaration inventory exists for AI-generated ad assets. Advertisers running in New York will ask whether the synthetic performer law applies to their current assets and whether their teams have confirmed this with legal.",
+          "materiality_gates": {
+            "material_event": "pass_ga_announcement_official_plus_ny_law_in_effect_jun_2026",
+            "editorial_thesis_fit": "pass",
+            "primary_evidence": "pass_official_microsoft_blog_plus_api_docs",
+            "availability_clarity": "pass_ga_nov_19_watermark_eu_ny_only_documented",
+            "claim_discipline": "pass_watermark_geography_limitation_explicit_ny_law_scope_noted",
+            "operational_impact": "pass",
+            "contradiction_search": "pass_format_variation_explicit_audio_ads_exemption_noted",
+            "archive_novelty": "pass_distinct"
+          },
+          "coverage_limitations": [
+            "Watermark visibility is format- and environment-dependent; not all formats support visible watermarks.",
+            "NY synthetic performer law applies to synthetic performers, not all AI-generated content; audio ads are exempt.",
+            "Enforcement track record under the NY law not retrieved.",
+            "Microsoft AI detection signals are reference only; advertiser declaration governs.",
+            "Once a label is set via API it cannot be cleared — practical implications for retrospective correction not documented by Microsoft."
+          ],
+          "sources": [
+            {
+              "type": "primary_company_announcement",
+              "title": "Put AI to work engaging customers in more places: What's new in Microsoft Advertising this November | Microsoft Advertising",
+              "url": "https://about.ads.microsoft.com/en-us/blog/post/november-2026/put-ai-to-work-engaging-customers-in-more-places-whats-new-in-microsoft-advertising-this-november",
+              "published": "2026-11-19"
+            },
+            {
+              "type": "primary_api_documentation",
+              "title": "AI Content Labels — Microsoft Advertising API | Microsoft Learn",
+              "url": "https://learn.microsoft.com/en-us/advertising/guides/ai-transparency"
+            },
+            {
+              "type": "independent_reporting",
+              "title": "Microsoft Ads rolls out 'Made with AI' labels for ad images | Useryze",
+              "url": "https://useryze.com/news/microsoft-ads-made-with-ai-labels-generally-available-new-york-synthetic-performer-law-us-advertisers",
+              "published": "2026-11-21"
+            }
+          ],
+          "selected": false
+        },
+        {
+          "option": 3,
+          "rank": 3,
+          "title": "OpenAI revised the Business Hub terms after lawyers flagged them. What stays in the terms matters as much as what changed.",
+          "event_date": "2026-11-18",
+          "proposed_hook": "OpenAI launched ChatGPT Business Hub on November 10 and revised its terms eight days later after Digiday reported that lawyers read the original language as potentially making businesses give up legal claims against OpenAI — including claims over content published before they ever signed up. The broad waiver is gone. What remains: a bar on injunctions over customer data, a perpetual and irrevocable licence to basic business information, a prohibition on using text-and-data-mining opt-outs against OpenAI, and OpenAI's right to modify, suspend, or remove any Business Agent at any time, for any reason, without notice.",
+          "marketer_angle": "ChatGPT Business Hub gives businesses their first first-party view of how their content surfaces in ChatGPT — mentions, clicks, discovery topics. The terms that come with it are worth reviewing before claiming a listing. Specifically: the licence to business information is perpetual and irrevocable; the text-and-data-mining opt-out bar means businesses that sign up give up one of the tools publishers have used to limit AI training on their content; and OpenAI retains unilateral authority over any Business Agent a brand builds. Teams deciding whether to claim their Business Hub listing and build an agent need to know what they are agreeing to, not just what the dashboard shows.",
+          "why_it_passed": "Digiday (Sara Guaglione, staff, Nov 20) first reported the revision after contacting OpenAI Nov 18; terms revised same day. OpenAI confirmed revision and stated original terms were not intended to cover the broader scenario. Multiple independent legal analysis sources confirmed the specific remaining clauses (adtestbench Nov 21, BestMediaInfo Nov 23, salesformics). OpenAI Businesses in ChatGPT Terms live document confirms clauses. Business Hub and Business Agents free at launch, US-eligible businesses.",
+          "operational_impact_chain": "OpenAI launches Business Hub (Nov 10) giving businesses first-party ChatGPT appearance data -> original terms included broad legal waiver and arbitration provision -> Digiday legal review prompts revision (Nov 18) narrowing waiver to Business Agent-related claims -> remaining terms include: perpetual/irrevocable licence to business information; bar on text-and-data-mining opt-outs against OpenAI; waiver of injunctions over customer data; OpenAI's right to remove Business Agent without notice -> businesses deciding whether to claim listing or build agents need legal review of these specific remaining clauses -> compliance and legal teams add Business Hub terms review to AI platform participation protocols",
+          "scores": {
+            "relevance": 8,
+            "relevance_rationale": "Any brand or publisher considering ChatGPT Business Hub or Business Agents has a live terms governance decision: the licence is perpetual, the opt-out bar is real, and OpenAI controls the agent.",
+            "topicality": 8,
+            "topicality_rationale": "Terms revision live November 18; Digiday report November 20; multiple legal analysis pieces November 21-23. Within the 7-day secondary window; immediate practitioner relevance given Black Friday timing and businesses reviewing AI platform participation.",
+            "viral_potential": 9,
+            "viral_potential_rationale": "A major AI platform revising legal terms under media pressure — while leaving a text-and-data-mining opt-out bar and an irrevocable licence in place — is a practitioner governance story that legal, digital, and marketing teams will want to review and share.",
+            "total": 25
+          },
+          "confidence": "high",
+          "confidence_limitation": "OpenAI says the original terms were not intended to cover the broader scenario. The arbitration provision location (removed from this page or moved to underlying master terms) is unclear. Terms may change again. Business Agents limited to eligible US businesses at launch.",
+          "novelty": {
+            "result": "qualified_distinct",
+            "rationale": "Nov 24 pending item covers OpenAI shopping documentation governance (removed independence assurance from help page). This covers platform participation terms governance for Business Hub (legal rights when signing up). Different layer, different document, same company. These are distinct operational questions but share the OpenAI governance theme — recommend spacing if both published in the same week."
+          },
+          "predicted_audience_response": "Publishers and digital teams will ask whether they should claim their Business Hub listing now or wait for further terms clarity. Legal and compliance teams will ask what the text-and-data-mining opt-out bar means for their broader AI training consent framework.",
+          "materiality_gates": {
+            "material_event": "pass_terms_revision_documented_digiday_staff_lawyers_on_record",
+            "editorial_thesis_fit": "pass",
+            "primary_evidence": "pass_digiday_staff_plus_live_terms_document_plus_openai_statement",
+            "availability_clarity": "pass_revision_live_nov_18_specific_remaining_clauses_documented",
+            "claim_discipline": "pass_remaining_clauses_explicitly_noted_arbitration_location_uncertainty_flagged",
+            "operational_impact": "pass",
+            "contradiction_search": "pass_openai_said_original_not_intended_to_cover_scenario_noted",
+            "archive_novelty": "pass_qualified_distinct"
+          },
+          "coverage_limitations": [
+            "Terms may change again; this analysis is based on the Nov 18 revision.",
+            "Whether the arbitration provision was removed or moved to the underlying master terms agreement is not confirmed.",
+            "Business Agents limited to eligible US businesses at launch.",
+            "OpenAI stated original terms were not intended to cover the broader claim scenario — intent vs. effect distinction left unresolved by lawyers."
+          ],
+          "sources": [
+            {
+              "type": "independent_staff_reporting",
+              "title": "OpenAI rewrites ChatGPT Business Hub terms after legal language raises concerns | Digiday",
+              "url": "https://digiday.com/media/openai-rewrites-chatgpt-business-hub-terms-after-legal-language-raises-concerns/",
+              "author": "Sara Guaglione (staff)",
+              "published": "2026-11-20"
+            },
+            {
+              "type": "primary_documentation_current",
+              "title": "Businesses in ChatGPT Terms (live, dated Nov 18, 2026) | OpenAI",
+              "url": "https://openai.com/policies/businesses-in-chatgpt-terms",
+              "note": "Terms dated November 18, 2026; may be updated"
+            },
+            {
+              "type": "independent_legal_analysis",
+              "title": "OpenAI narrows the claims waiver in ChatGPT Business Hub terms | adtestbench",
+              "url": "https://adtestbench.com/news/openai-narrows-the-claims-waiver-in-chatgpt-business-hub-terms/",
+              "published": "2026-11-21"
+            }
+          ],
+          "selected": false
+        }
+      ],
+      "research": {
+        "source_cutoff": "2026-11-25T09:00:00-05:00",
+        "initial_window_start": "2026-11-22T00:00:00-05:00",
+        "overlap_start": "2026-11-21T00:00:00-05:00",
+        "discovery_window_hours": 72,
+        "discovery_window_expansion": null,
+        "note": "All three options within the 72-hour primary window. Option 1 (Amazon ChatGPT ads / data asymmetry, 28/30) Nov 24. Option 2 (Microsoft AI content disclosure labels GA, 26/30) Nov 19 — within 7-day secondary window, operational event. Option 3 (OpenAI Business Hub terms revision, 25/30) Nov 18 — within 7-day secondary window. No expansion required.",
+        "event_ledger_path": "/home/ranson/.hermes/social-queue/research/2026-11-25-ai-martech-event-ledger.json",
+        "decision_journal_path": "/home/ranson/.hermes/social-queue/research/2026-11-25-ai-martech-decision-journal.md",
+        "reserve_candidate_count": 5,
+        "reserve_candidates": [
+          "Microsoft robots.txt __usage_ai-training token Dec 15 transition deadline (Oct 30 event; resurface when within 7-day window of deadline)",
+          "Google AI Mode ad clicks value / advertisers cutting Google Ads spend — SEL blocked by Cloudflare this run; revisit with full extraction",
+          "IAB AI-Era Attribution Blueprint (Nov 12) — 13 days old; resurface next run if primary window is thin",
+          "Amazon Branded Conversations (Jan 2027 launch) — announced earlier; resurface when launch is imminent",
+          "SAP AI CX Report 93%/6% readiness gap (Nov 12) — vendor-authored; resurface with stronger independent corroboration"
+        ],
+        "coverage_gaps": [
+          {
+            "source": "Marketing Week",
+            "status": "not_retrieved",
+            "cutoff_advanced": false,
+            "detail": "Not retrieved this run."
+          },
+          {
+            "source": "CMSWire",
+            "status": "not_retrieved",
+            "cutoff_advanced": false,
+            "detail": "Not retrieved this run."
+          },
+          {
+            "source": "Axios Media Trends",
+            "status": "not_retrieved",
+            "cutoff_advanced": false,
+            "detail": "Member-only; persistent."
+          },
+          {
+            "source": "AdExchanger (full article text)",
+            "status": "web_extract_blocked_cron_context",
+            "cutoff_advanced": false,
+            "detail": "Persistent; search snippets only."
+          },
+          {
+            "source": "EMARKETER (full article text)",
+            "status": "partial_snippet_access",
+            "cutoff_advanced": false,
+            "detail": "Snippets only; Arielle Feger quote retrieved via Digiday body."
+          },
+          {
+            "source": "The Information",
+            "status": "paywalled",
+            "cutoff_advanced": false,
+            "detail": "Persistent."
+          },
+          {
+            "source": "Reddit pool (r/adops, r/PPC, r/analytics, r/SEO, r/MarketingAutomation)",
+            "status": "public_web_operational",
+            "cutoff_advanced": false,
+            "detail": "opencli UPSTREAM_BROKEN (persistent); public-web/exa fallback operational. Amazon ChatGPT ad double-standard thread retrieved (r/EcommerceCircle; r/adtech DSP thread). No within-window practitioner discussion on Microsoft disclosure or Business Hub terms."
+          },
+          {
+            "source": "X/Twitter named pool",
+            "status": "credentials_pending",
+            "cutoff_advanced": false,
+            "detail": "Not logged in; not blocking."
+          },
+          {
+            "source": "Harvard Business Review",
+            "status": "not_retrieved",
+            "cutoff_advanced": false,
+            "detail": "Not retrieved this run."
+          },
+          {
+            "source": "Search Engine Land (full article text)",
+            "status": "cloudflare_blocked_cron_browser",
+            "cutoff_advanced": false,
+            "detail": "Browser returns Cloudflare security verification in cron context. Search snippets and descriptions available. SEL AI Mode ad click value article and Q4 AI search meta-analysis deferred to reserve."
+          }
+        ]
+      },
+      "events": [
+        {
+          "at": "2026-11-25T09:00:00-05:00",
+          "type": "topic_queue_created",
+          "actor": "scheduled_research",
+          "detail": "Created exactly three concept-led AI marketing and martech topic options for Nov 25, 2026. All three passed all eight materiality gates. Option 1 (Amazon buys ChatGPT Black Friday ads while blocking OpenAI crawlers / brand double-spend, 28/30) Nov 24 — primary window. Option 2 (Microsoft AI content disclosure labels GA / compliance item, 26/30) Nov 19 — 7-day secondary window, operational GA event. Option 3 (OpenAI Business Hub terms revision / remaining clauses, 25/30) Nov 18 — 7-day secondary window. SEL full articles blocked by Cloudflare in cron; Google AI Mode ad click and advertiser spend-cut stories deferred to reserve. Awaiting topic approval."
+        }
+      ],
+      "topic": null,
+      "post": null,
+      "claim_evidence": null,
+      "assets": {
+        "cover_status": "not_authorized"
+      },
+      "performance": {
+        "tracking_status": "pending_topic_approval",
+        "publication_url": null,
+        "published_at": null,
+        "day_7": null,
+        "day_30": null
+      }
+    },
     {
       "id": "ai-martech-topic-queue-2026-11-24",
       "kind": "content",
