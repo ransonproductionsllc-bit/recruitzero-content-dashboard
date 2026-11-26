@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-11-25T09:00:00-05:00",
+  "updated_at": "2026-11-26T09:00:00-05:00",
   "sync": {
     "status": "connected",
     "discord_guild_id": "1553886101003837561",
@@ -11,6 +11,296 @@
     "dashboard_refresh_seconds": 60
   },
   "active_queue": [
+    {
+      "id": "ai-martech-topic-queue-2026-11-26",
+      "kind": "content",
+      "title": "AI marketing and martech topic approval queue",
+      "created_at": "2026-11-26T09:00:00-05:00",
+      "updated_at": "2026-11-26T09:00:00-05:00",
+      "status": "awaiting_topic_approval",
+      "stage": "topic_selection",
+      "topic_options": [
+        {
+          "option": 1,
+          "rank": 1,
+          "title": "CTV CPM rose 2% last quarter. The effective cost of a quality CTV impression rose 20%. The ANA's Q3 programmatic benchmark shows what 24% non-measurable inventory looks like in dollar terms.",
+          "event_date": "2026-11-20",
+          "proposed_hook": "The ANA's Q3 2026 Programmatic Transparency Benchmark found that 24% of CTV ad spend bought impressions that couldn't be measured — up from 16.9% the quarter before. The stated CTV CPM was $20.37. The TrueCPM — cost per verified, viewable, quality impression — was $32.26. The gap between higher- and lower-performing advertisers is now 23.6 percentage points, the widest the series has recorded. Lower-half advertisers kept $296,000 of every $1 million in programmatic spend. The higher half kept $532,000. The GM Chevrolet case study shows the difference: TrueCPM down 11%, outcomes up 30%, by curating the inclusion list on quality-adjusted cost.",
+          "marketer_angle": "CPM and TrueCPM are measuring different things, and the gap between them grew 20% in a single CTV quarter. For any programmatic buyer managing CTV, the operational question is whether their current reporting tells them what a quality impression costs in their own campaigns — not what the stated CPM is. The ANA benchmark is not a warning about a future risk. It documents a present measurement gap: advertisers who watch CPM alone saw a stable CTV quarter. Advertisers watching TrueCPM saw a fifth more cost for every quality impression, in the same period. The 23.6-point gap between cohorts shows this is a solvable problem — the top half maintains 52-57% TrueAdSpend every quarter — not an industry-wide floor.",
+          "why_it_passed": "ANA official report (Nov 20, ana.net). Developed with TAG TrustNet and Fiducia. 102 marketers, $175.5M spend, 23.1B impressions. GM Chevrolet case study: TrueCPM -11%, CPM -9%, outcomes +30% after curating inclusion list on TrueCPM (Apr-Jul 2026). Google Chrome ad-clutter data added as independent signal (Sep 15 onward). MediaPost analysis (Nov 20 staff). Fiducia detailed findings published independently. AdExchanger daily roundup referenced it Nov 25.",
+          "operational_impact_chain": "CTV non-measurable inventory jumps from 16.9% to 24.0% in Q3 2026 -> TrueCPM for CTV rises 20% while stated CPM rises 2% -> advertisers watching CPM alone miss a fifth of their true quality cost -> market-level TrueAdSpend falls to 43.1%: $431K of every $1M in programmatic spend reaches quality impressions -> lower-performing advertisers keep only $296K; higher-performing keep $532K -> gap between cohorts is now 23.6 points, up from 14 points in Q2 2025 -> programmatic buyers without impression-level measurement cannot see this gap in their own data -> the operational response is TrueCPM-based inclusion list curation, not headline CPM optimization",
+          "scores": {
+            "relevance": 9,
+            "relevance_rationale": "Any programmatic buyer managing CTV has a present measurement problem — CPM conceals a 20% quality-cost increase in a single quarter. The GM case study shows the correction is actionable.",
+            "topicality": 8,
+            "topicality_rationale": "Released Nov 20 (6 days). Within 7-day secondary window. Q3 findings drive 2027 planning. AdExchanger flagged it Nov 25.",
+            "viral_potential": 9,
+            "viral_potential_rationale": "Specific, verifiable, embarrassing numbers: $296K vs $532K of every $1M. CPM rose 2%, TrueCPM rose 20%. Gap between cohorts is widest in series history. GM case study shows it's fixable.",
+            "total": 26
+          },
+          "confidence": "high",
+          "confidence_limitation": "TrueAdSpend metrics are based on participants contributing data — not industry-wide. GM case study covers Chevrolet campaigns Apr-Jul 2026 only. Chrome ad-clutter data covers web only, Chrome traffic only, and is experimental.",
+          "novelty": {
+            "result": "distinct",
+            "rationale": "No prior RecruitZero item covers ANA programmatic transparency benchmark findings or CTV measurement quality gaps at the impression level. IAB AI-Era Attribution Blueprint (Nov 12 reserve) covered a different aspect of attribution; this covers supply-chain measurement quality and cost."
+          },
+          "predicted_audience_response": "Media buyers and analytics leads will check whether their own reporting includes TrueCPM or similar quality-adjusted cost metrics for CTV. Planning leads will ask whether the 23.6-point cohort gap maps to their own programmatic performance split. Teams using CPM-only optimization will need to explain what the quality-adjusted equivalent is.",
+          "materiality_gates": {
+            "material_event": "pass_official_ana_benchmark_report_nov20_impression_level_data_102_advertisers",
+            "editorial_thesis_fit": "pass",
+            "primary_evidence": "pass_ana_official_report_plus_fiducia_detailed_findings_plus_gm_case_study",
+            "availability_clarity": "pass_public_report_plus_ana_webinar_benchmark_updated_quarterly",
+            "claim_discipline": "pass_tps_metrics_participant_based_not_universal_chrome_data_experimental_noted",
+            "operational_impact": "pass",
+            "contradiction_search": "pass_opt_in_participation_noted_q2_record_high_contrasted_with_q3_dip",
+            "archive_novelty": "pass_distinct"
+          },
+          "coverage_limitations": [
+            "TrueAdSpend metrics reflect only participating advertisers (102 in Q3); not a universal industry measurement.",
+            "GM Chevrolet case study covers Apr-Jul 2026 Chevrolet programmatic campaigns only.",
+            "Chrome ad-clutter data: web only, Chrome traffic only, experimental — not yet stable.",
+            "Reddit and X practitioner reaction to the report not retrieved this run.",
+            "EMARKETER reaction/analysis not retrieved (subscription-restricted)."
+          ],
+          "sources": [
+            {
+              "type": "primary_research_report",
+              "title": "Programmatic Transparency Benchmark: Q3 2026 Benchmark Findings | ANA",
+              "url": "https://www.ana.net/miccontent/show/id/rr-2026-11-programmatic-transparency-benchmark-q3",
+              "published": "2026-11-20"
+            },
+            {
+              "type": "primary_detailed_findings",
+              "title": "Always-On Measurement Separates the Leaders: ANA Q3 2026 Benchmark | Fiducia",
+              "url": "https://www.fiducia.eco/post/always-on-measurement-separates-the-leaders-ana-q3-2026-benchmark-shows-performance-gap-widening-to",
+              "published": "2026-11-20"
+            },
+            {
+              "type": "independent_staff_reporting",
+              "title": "ANA Report: Advertisers Are Funding Vendors' Q4 Bonuses | MediaPost",
+              "url": "https://www.mediapost.com/publications/article/419594/ana-report-advertisers-are-funding-vendors-q4-bo.html",
+              "published": "2026-11-20"
+            }
+          ],
+          "selected": false
+        },
+        {
+          "option": 2,
+          "rank": 2,
+          "title": "LLM traffic converts 61% better than paid search. Google won't let you see if your AI Mode ads are part of that.",
+          "event_date": "2026-11-24",
+          "proposed_hook": "An analysis published November 24 by Search Engine Land found that organic traffic from ChatGPT, Perplexity, and Gemini converts at 20% — the highest-converting source in the dataset, 61% better than paid search. Google AI Mode already generates less ad revenue per query than traditional search per Google's Q3 earnings call. Neither fact tells media buyers what their own paid AI Mode placements are doing. Placement-level performance reporting for AI Mode doesn't exist as a separate view. LLM-influenced conversion is measurable for organic referrals and invisible for paid placements, in the same channel.",
+          "marketer_angle": "Any media team making budget allocation decisions across Google AI Mode and traditional search is working with an incomplete signal. The organic LLM conversion data gives a directional benchmark — users arriving from AI platforms are higher-intent. Whether paid AI Mode placements capture that intent, and at what cost, isn't separable from campaign-level reporting. Teams scaling AI Mode spend before placement-level measurement exists are making a bet on a channel they can't audit. The near-term question is what proxy signals — click quality, session depth, conversion rate from AI-referred sessions — a team can use to track AI Mode performance until Google provides placement-level transparency.",
+          "why_it_passed": "SEL Jason Tabeling (staff, Nov 24): LLM referral analysis from GA4; LLM traffic converts at 20%, 61% above paid search in dataset. SEL Danny Goodwin (staff, Nov 19): Google AI Mode generates less ad revenue per query than traditional search per Google Q3 2026 earnings call. Google CFO Anat Ashkenazi confirmed in earnings. Two independent SEL staff pieces; original evidence is Google earnings call and proprietary GA4 analysis (methodology stated).",
+          "operational_impact_chain": "LLM organic referral traffic converts at 20% in practitioner GA4 datasets — 61% better than paid search -> Google AI Mode generates less ad revenue per query than traditional search per earnings call -> paid AI Mode placement performance is not separately reportable in Google Ads UI -> media buyers cannot compare paid AI Mode efficiency to LLM organic conversion in the same period -> budget allocation between AI Mode and traditional search relies on campaign-level blended metrics that obscure the AI placement contribution -> proxy measurement using GA4 LLM source/medium segmentation is currently the operational workaround -> advertisers scaling AI Mode spend before placement-level measurement exists accept an audit gap",
+          "scores": {
+            "relevance": 9,
+            "relevance_rationale": "Media buyers running Google AI Mode placements have a present-tense measurement gap: they can't compare their paid AI placements to the LLM organic conversion benchmark in the same reporting view.",
+            "topicality": 8,
+            "topicality_rationale": "SEL analysis published Nov 24 (2 days). Google earnings reference is Q3 2026. Both within the primary/7-day window and directly operational for teams finishing 2026 budgets and planning 2027.",
+            "viral_potential": 8,
+            "viral_potential_rationale": "61% better conversion from organic LLM traffic in a channel where paid performance can't be isolated is a concrete, discussion-ready tension for every performance media buyer managing Google spend.",
+            "total": 25
+          },
+          "confidence": "high",
+          "confidence_limitation": "LLM conversion data is from one practitioner's GA4 dataset, not a broad sample; individual account results will vary. Google hasn't confirmed whether AI Mode placement-level reporting is coming or when. Google AI Mode ad revenue per query is directional from earnings call, not a disclosed per-advertiser metric. Organic LLM conversion rate may reflect selection bias.",
+          "novelty": {
+            "result": "distinct",
+            "rationale": "Nov 24 Google Personal Intelligence / Wallet (Nov 24 queue Option 3) covered Google's financial data inputs to the auction. This covers advertiser-side performance measurement opacity for AI Mode paid placements — a different operational problem. Reserve candidate 'Google AI Mode ad click value' now surfaced with the Nov 24 SEL analysis as primary evidence."
+          },
+          "predicted_audience_response": "Media buyers will check whether their Google Ads reporting shows AI Mode as a separable placement. Analytics leads will ask how to segment LLM organic traffic in GA4 to get the conversion rate benchmark. Teams presenting 2027 budgets will need to explain AI Mode's expected return against an organic LLM conversion rate they can measure and a paid rate they can't.",
+          "materiality_gates": {
+            "material_event": "pass_sel_practitioner_analysis_plus_google_q3_earnings_call_statement",
+            "editorial_thesis_fit": "pass",
+            "primary_evidence": "pass_sel_staff_nov24_ga4_analysis_plus_google_q3_earnings",
+            "availability_clarity": "pass_ai_mode_placement_reporting_gap_currently_documented",
+            "claim_discipline": "pass_single_ga4_dataset_noted_selection_bias_flagged_earnings_direction_not_per_advertiser",
+            "operational_impact": "pass",
+            "contradiction_search": "pass_google_says_ai_features_drive_more_commercial_queries_noted_as_counterpoint",
+            "archive_novelty": "pass_distinct"
+          },
+          "coverage_limitations": [
+            "LLM conversion data is from one practitioner's GA4 dataset; not a large-sample study.",
+            "Google has not disclosed a timeline for AI Mode placement-level reporting.",
+            "Google AI Mode ad revenue per query is directional from earnings call, not a disclosed metric.",
+            "LLM organic conversion rate may reflect query-intent selection bias.",
+            "Reddit practitioner signal on AI Mode performance not retrieved; X/Twitter credentials pending."
+          ],
+          "sources": [
+            {
+              "type": "independent_staff_analysis",
+              "title": "Are Google AI Mode and AI Overviews ad clicks more valuable? | Search Engine Land",
+              "url": "https://searchengineland.com/google-ai-mode-ai-overviews-ad-clicks-value-502778",
+              "author": "Jason Tabeling (staff)",
+              "published": "2026-11-24"
+            },
+            {
+              "type": "independent_staff_reporting",
+              "title": "Advertisers cut Google Ads spend due to rising costs, AI changes | Search Engine Land",
+              "url": "https://searchengineland.com/advertisers-cut-google-ads-spending-rising-costs-ai-502535",
+              "author": "Danny Goodwin (staff)",
+              "published": "2026-11-19"
+            },
+            {
+              "type": "primary_evidence",
+              "title": "LLM traffic converts differently — here's what to do about it | Search Engine Land",
+              "url": "https://searchengineland.com/llm-traffic-converts-differently-what-to-do-484964",
+              "note": "Original LLM conversion rate study referenced by Nov 24 analysis"
+            }
+          ],
+          "selected": false
+        },
+        {
+          "option": 3,
+          "rank": 3,
+          "title": "OpenAI just allowed healthcare advertisers into ChatGPT — with a rule they can't audit: they can't see which queries triggered their ad.",
+          "event_date": "2026-11-24",
+          "proposed_hook": "OpenAI prohibited healthcare ads entirely when it launched its advertising business. On November 24, WebMD Ignite announced the first healthcare advertising offering in ChatGPT — hospitals, health systems, and urgent care centers, case by case, US only. Healthcare advertising in ChatGPT is now possible. What advertisers cannot do: see what queries their ads appear next to. OpenAI determines whether a conversation is too sensitive to serve against using a subjective standard it evaluates before each impression. Advertisers see view and click counts. They do not see the query context.",
+          "marketer_angle": "ChatGPT's ad inventory is expanding from open consumer categories into regulated ones, and the entry conditions are worth understanding before the category reaches verticals beyond healthcare. The practical gap for any regulated-category advertiser entering ChatGPT: standard brand-safety controls — keyword exclusions, topic exclusions, placement-level reporting — do not transfer from search. OpenAI makes the sensitivity determination for each conversation, opaquely. Advertisers in legal services, financial services, insurance, and pharmaceuticals will face the same constraint when their categories open. The operational question for any team evaluating ChatGPT inventory for a regulated brand is what evidentiary standard they need before committing budget to a placement they cannot directly audit.",
+          "why_it_passed": "AdExchanger staff (Joanna Gerber, Nov 24). WebMD Ignite official announcement (Nov 24). OpenAI confirmed updated ad policies permitting hospital/health system/urgent care case-by-case in US. OpenAI confirmed to AdExchanger that the sensitivity standard is subjective and applies even when a health condition is 'strongly implied.' Advertiser reporting confirmed by WebMD Ignite: view and click counts visible; query adjacency not visible.",
+          "operational_impact_chain": "OpenAI opens healthcare ad category for US hospitals and health systems (case by case) -> advertisers enter ChatGPT inventory without placement-level query visibility -> OpenAI determines sensitivity eligibility per conversation using undisclosed subjective criteria -> advertisers cannot replicate the standard or audit which impressions were served or withheld -> regulated advertisers (legal, financial, pharma) planning future ChatGPT inventory face the same opaque content-adjacency standard -> teams must set a campaign evidence standard that accommodates the absence of query-level reporting before scaling spend",
+          "scores": {
+            "relevance": 7,
+            "relevance_rationale": "Primarily healthcare advertisers; broader signal for regulated categories approaching ChatGPT inventory. Any team evaluating AI platform advertising for regulated clients needs to understand the query-adjacency opacity precedent.",
+            "topicality": 9,
+            "topicality_rationale": "Live announcement Nov 24. WebMD Ignite confirms first healthcare campaigns live. OpenAI confirmed policy change in same week.",
+            "viral_potential": 7,
+            "viral_potential_rationale": "Healthcare+AI platform combination drives professional interest; query-adjacency opacity for regulated categories is a discussable operational constraint, though the vertical scope limits broader viral reach.",
+            "total": 23
+          },
+          "confidence": "high",
+          "confidence_limitation": "Only health systems and providers approved so far; insurance excluded. US only. Case-by-case approval; not all healthcare advertisers qualify. Relying on AdExchanger staff reporting of OpenAI statements; direct ad policy documentation not retrieved.",
+          "novelty": {
+            "result": "distinct",
+            "rationale": "No prior RecruitZero item covers regulated-category advertisers entering ChatGPT inventory or the query-adjacency opacity constraint for sensitive verticals. Prior ChatGPT advertising coverage addressed general ad formats, shopping, and open consumer categories."
+          },
+          "predicted_audience_response": "Healthcare marketing teams and healthcare-focused agencies will evaluate whether the case-by-case approval path is accessible for their client list. Regulated-category marketers (legal, financial, insurance) will ask whether this opens a planning conversation for their own categories and what the query-adjacency constraint means for brand safety diligence.",
+          "materiality_gates": {
+            "material_event": "pass_webmd_ignite_launch_plus_openai_policy_expansion_nov24",
+            "editorial_thesis_fit": "pass",
+            "primary_evidence": "pass_adexchanger_staff_plus_openai_statements_to_adexchanger",
+            "availability_clarity": "pass_case_by_case_us_only_health_systems_only_insurance_excluded_documented",
+            "claim_discipline": "pass_scope_restrictions_documented_policy_text_not_retrieved_directly_flagged",
+            "operational_impact": "pass",
+            "contradiction_search": "pass_insurance_exclusion_noted_sensitivity_standard_subjective_noted",
+            "archive_novelty": "pass_distinct"
+          },
+          "coverage_limitations": [
+            "Only health systems and providers approved; insurance companies excluded as of Nov 24.",
+            "Case-by-case approval — not all healthcare advertisers qualify.",
+            "US only — healthcare ads generally prohibited in other countries per OpenAI policy.",
+            "No direct access to OpenAI ad policy documentation — relying on AdExchanger staff quotes of OpenAI statements.",
+            "Long-term audit of content-adjacency decisions not possible from outside."
+          ],
+          "sources": [
+            {
+              "type": "independent_staff_reporting",
+              "title": "Healthcare Ads Are Coming To ChatGPT | AdExchanger",
+              "url": "https://www.adexchanger.com/marketers/healthcare-ads-are-coming-to-chatgpt/",
+              "author": "Joanna Gerber (staff)",
+              "published": "2026-11-24"
+            },
+            {
+              "type": "primary_company_announcement",
+              "title": "WebMD Ignite ChatGPT advertising offering announcement",
+              "url": "https://www.webmdignite.com/",
+              "note": "Nov 24 announcement",
+              "published": "2026-11-24"
+            }
+          ],
+          "selected": false
+        }
+      ],
+      "research": {
+        "source_cutoff": "2026-11-26T09:00:00-05:00",
+        "initial_window_start": "2026-11-23T00:00:00-05:00",
+        "overlap_start": "2026-11-22T00:00:00-05:00",
+        "discovery_window_hours": 72,
+        "discovery_window_expansion": "7-day secondary window used for Option 1 (ANA benchmark, Nov 20 — 6 days)",
+        "note": "Thanksgiving run. Option 1 (ANA Q3 programmatic benchmark, 26/30) Nov 20 — 7-day secondary window. Option 2 (Google AI Mode performance opacity, 25/30) Nov 24. Option 3 (Healthcare ads in ChatGPT, 23/30) Nov 24. All three passed all eight materiality gates.",
+        "event_ledger_path": "/home/ranson/.hermes/social-queue/research/2026-11-26-ai-martech-event-ledger.json",
+        "decision_journal_path": "/home/ranson/.hermes/social-queue/research/2026-11-26-ai-martech-decision-journal.md",
+        "reserve_candidate_count": 5,
+        "reserve_candidates": [
+          "Microsoft robots.txt __usage_ai-training token Dec 15 transition deadline — resurface in Dec 1-8 window",
+          "Amazon Branded Conversations (Jan 2027 launch) — resurface when imminent",
+          "Creator AI contract clauses (Digiday podcast Nov 24) — seek primary documentation before next surfacing",
+          "SAP AI CX Report 93%/6% readiness gap (Nov 12) — vendor-authored; needs independent corroboration",
+          "Amazon/Meta Muse access negotiation talks (Fortune Nov 25) — defer pending resolution"
+        ],
+        "coverage_gaps": [
+          {
+            "source": "Marketing Week",
+            "status": "not_retrieved",
+            "cutoff_advanced": false,
+            "detail": "Not retrieved this run."
+          },
+          {
+            "source": "CMSWire",
+            "status": "not_retrieved",
+            "cutoff_advanced": false,
+            "detail": "Not retrieved this run."
+          },
+          {
+            "source": "Axios Media Trends",
+            "status": "not_retrieved",
+            "cutoff_advanced": false,
+            "detail": "Member-only access persistent."
+          },
+          {
+            "source": "EMARKETER",
+            "status": "snippet_only",
+            "cutoff_advanced": false,
+            "detail": "Subscription-restricted body."
+          },
+          {
+            "source": "Harvard Business Review",
+            "status": "not_retrieved",
+            "cutoff_advanced": false,
+            "detail": "Paywall."
+          },
+          {
+            "source": "The Information",
+            "status": "not_retrieved",
+            "cutoff_advanced": false,
+            "detail": "Paywall."
+          },
+          {
+            "source": "Reddit (r/adops, r/PPC, r/analytics, r/SEO, r/MarketingAutomation)",
+            "status": "public_web_fallback",
+            "cutoff_advanced": false,
+            "detail": "Direct route UPSTREAM_BROKEN; public-web/exa fallback used. No within-window posts on the three surfaced topics found."
+          },
+          {
+            "source": "X/Twitter named users",
+            "status": "credentials_pending",
+            "cutoff_advanced": false,
+            "detail": "Credentials intentionally pending. Not blocking."
+          }
+        ]
+      },
+      "topic": null,
+      "post": null,
+      "claim_evidence": null,
+      "assets": {
+        "cover_status": "not_authorized"
+      },
+      "performance": {
+        "tracking_status": "pending_topic_approval",
+        "publication_url": null,
+        "published_at": null,
+        "day_7": null,
+        "day_30": null
+      },
+      "events": [
+        {
+          "timestamp": "2026-11-26T09:00:00-05:00",
+          "type": "topic_queue_created",
+          "actor": "scheduled_research",
+          "detail": "Created exactly three concept-led AI marketing and martech topic options for Nov 26, 2026 (Thanksgiving). All three passed all eight materiality gates. Option 1 (ANA Q3 2026 programmatic benchmark — CTV measurement gap, 26/30) Nov 20 — 7-day secondary window. Option 2 (Google AI Mode performance opacity / LLM organic conversion 61% better than paid search, 25/30) Nov 24. Option 3 (Healthcare ads in ChatGPT — query adjacency opacity, 23/30) Nov 24. Awaiting topic approval."
+        }
+      ]
+    },
     {
       "id": "ai-martech-topic-queue-2026-11-25",
       "kind": "content",
