@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-11-26T09:00:00-05:00",
+  "updated_at": "2026-11-27T09:00:00-05:00",
   "sync": {
     "status": "connected",
     "discord_guild_id": "1553886101003837561",
@@ -11,6 +11,253 @@
     "dashboard_refresh_seconds": 60
   },
   "active_queue": [
+    {
+      "id": "ai-martech-topic-queue-2026-11-27",
+      "kind": "content",
+      "title": "AI marketing and martech topic approval queue",
+      "created_at": "2026-11-27T09:00:00-05:00",
+      "updated_at": "2026-11-27T09:00:00-05:00",
+      "status": "awaiting_topic_approval",
+      "stage": "topic_selection",
+      "topic_options": [
+        {
+          "option": 1,
+          "rank": 1,
+          "title": "OpenAI Ads Manager still can't tell B2B teams which companies clicked their ChatGPT ads. Reach and frequency landed this week. Company names didn't.",
+          "event_date": "2026-11-25",
+          "supporting_event_date": "2026-11-17",
+          "proposed_hook": "On November 25, OpenAI emailed advertisers that ChatGPT Ads Manager now reports Reach and Frequency — the first people-based metrics since launch. It still does not show which companies are behind the clicks. Dreamdata launched conversion syncs on November 17 precisely because that data is missing: B2B teams using ChatGPT ads cannot tell from the platform whether they're reaching buyers or bystanders. Dreamdata matches click IDs to company records, feeds pipeline-stage data back into the auction, and says most teams will spend their first ChatGPT ad budget on clicks from companies that will never buy — because that is what the auction learns from.",
+          "marketer_angle": "ChatGPT's ad platform is adding measurement features, and the gap between what it reports and what B2B advertisers need to make budget decisions is now a documented operational problem rather than a theoretical one. Reach and frequency make ChatGPT reports comparable to TV and social buys; they don't answer whether the people reached are the right accounts. That gap shapes every B2B budget decision in a channel growing fast enough that OpenAI retired its Max Bid control for existing conversion campaigns on January 1, 2027. The near-term question for any B2B team evaluating or already running ChatGPT ads: what pipeline-stage event does your auction optimize toward, and does the signal exist in your stack to send it back?",
+          "why_it_passed": "OpenAI advertiser email Nov 25 (via PPC Land/Barry Schwartz SERoundtable). Dreamdata official PR Newswire announcement Nov 17. Business of GTM staff reporting Nov 18. OpenAI's own auction documentation: one optimization event per campaign, campaign objective cannot be changed after creation. Max Bid retirement Jan 1, 2027 — documented operational deadline. PPC Land: 'The email does not say how OpenAI identifies a unique person, whether reach removes duplicates across campaigns, or what the seven secondary metrics measure.' No customer results cited by Dreamdata in launch release.",
+          "operational_impact_chain": "ChatGPT Ads Manager reports clicks but not company identity for B2B campaigns -> B2B advertisers cannot determine from the platform whether clicks come from target accounts or irrelevant traffic -> OpenAI auction optimizes toward the one conversion event set at campaign creation -> pipeline-stage bidding requires external enrichment (CRM-matched click IDs, Dreamdata-style) to send meaningful signals -> without pipeline data, auction optimizes for cheap clicks rather than pipeline-generating accounts -> Max Bid retiring Jan 1, 2027 forces all existing conversion campaigns onto Target CPA bidding -> teams without enriched conversion signals face higher wasted spend as Target CPA learns from whatever event they were tracking -> B2B teams running ChatGPT ads now must audit which conversion event their campaigns are optimizing toward before the January transition",
+          "scores": {
+            "relevance": 9,
+            "relevance_rationale": "Any B2B team running or evaluating ChatGPT ads has a present-tense decision: what pipeline event to optimize toward and whether the company-level visibility gap is acceptable for budget commitment.",
+            "topicality": 10,
+            "topicality_rationale": "OpenAI reach/frequency update Nov 25 (2 days). Dreamdata conversion syncs Nov 17 (10 days). Max Bid retirement Jan 1, 2027 creates active planning deadline.",
+            "viral_potential": 9,
+            "viral_potential_rationale": "'Most B2B teams will spend their first ChatGPT ad budget on clicks from companies that will never buy' — Dreamdata CEO quote is specific, discussable, and verifiable against each team's own campaigns.",
+            "total": 28
+          },
+          "confidence": "high",
+          "confidence_limitation": "OpenAI has not disclosed its unique-person identification methodology for Reach/Frequency. Dreamdata launch release cites no customer results or case study. OpenAI's own help documentation had not updated by Nov 25 evening. Max Bid retirement applies to existing conversion campaigns — new campaigns may have different terms.",
+          "novelty": {
+            "result": "distinct",
+            "rationale": "Nov 26 Option 3 covered query-adjacency opacity for healthcare advertisers (sensitivity standard). Nov 25 Option 1 covered advertising economics asymmetry (Amazon blocking crawlers while buying ads). This covers the internal reporting structure of ChatGPT Ads — what the platform reports vs. what B2B advertisers need for pipeline-based budget decisions — a distinct operating problem."
+          },
+          "predicted_audience_response": "B2B marketers currently running ChatGPT ads will check whether their campaigns are optimized toward a pipeline stage or a surface-level conversion event. Teams planning 2027 budgets will ask what enrichment infrastructure they need before scaling ChatGPT spend. Marketing ops leads will evaluate whether their CRM and attribution stack can produce the company-level signal Dreamdata describes.",
+          "materiality_gates": {
+            "material_event": "pass_openai_advertiser_email_nov25_reach_frequency_plus_dreamdata_official_nov17",
+            "editorial_thesis_fit": "pass",
+            "primary_evidence": "pass_openai_email_via_ppcland_seroundtable_plus_dreamdata_official_prnewswire_plus_businessofgtm_staff",
+            "availability_clarity": "pass_reach_frequency_in_ads_manager_now_max_bid_retiring_jan1_b2b_syncs_live",
+            "claim_discipline": "pass_methodology_undisclosed_noted_no_customer_results_flagged",
+            "operational_impact": "pass",
+            "contradiction_search": "pass_openai_has_20_third_party_measurement_partners_noted_as_partial_prior_solution",
+            "archive_novelty": "pass_distinct"
+          },
+          "coverage_limitations": [
+            "OpenAI has not disclosed how unique persons are identified in Reach/Frequency estimates.",
+            "Dreamdata launch release cites no customer results or case study data.",
+            "OpenAI help documentation lagged the advertiser email as of Nov 25 evening.",
+            "Max Bid retirement terms may differ for newly created conversion campaigns.",
+            "Reddit practitioner signal on ChatGPT B2B ads not retrieved (opencli broken; exa public search used).",
+            "X/Twitter credentials pending."
+          ],
+          "sources": [
+            {
+              "type": "independent_reporting_email_analysis",
+              "title": "ChatGPT ad reports add 9 metrics built on how many people see the ads | PPC Land",
+              "url": "https://ppc.land/chatgpt-ad-reports-add-9-metrics-built-on-how-many-people-see-the-ads",
+              "author": "Luis Rijo",
+              "published": "2026-11-26"
+            },
+            {
+              "type": "primary_company_announcement",
+              "title": "Dreamdata launches OpenAI Ads conversion syncs | PR Newswire",
+              "url": "https://www.prnewswire.com/news-releases/dreamdata-launches-openai-ads-conversion-syncs-letting-b2b-advertisers-bid-on-pipeline-instead-of-clicks-302941814.html",
+              "published": "2026-11-17"
+            },
+            {
+              "type": "independent_staff_reporting",
+              "title": "Dreamdata Feeds B2B Pipeline Data Into ChatGPT's Ad Auction | Business of GTM",
+              "url": "https://businessofgtm.com/articles/dreamdata-chatgpt-ads-pipeline-bidding",
+              "published": "2026-11-18"
+            }
+          ],
+          "selected": false
+        },
+        {
+          "option": 2,
+          "rank": 2,
+          "title": "Brands are building their own measurement systems to decide which creator posts are worth paying for. The industry still doesn't have a standard.",
+          "event_date": "2026-11-26",
+          "proposed_hook": "General Mills has a talkability score. Viral Nation has the Culture Quotient. Billion Dollar Boy launched a Creator Investment Planner last week. Nestlé is using a CreatorIQ/CreativeX integration that grades posts before any media buyer opens their wallet. Digiday reported November 26 that brands are racing to build proprietary frameworks to convert organic social attention into paid amplification decisions before the trend expires. The industry practitioner quoted at the end: 'We're continuing to try to catch up on operationalizing frameworks and systematizing measurement and still not there yet.'",
+          "marketer_angle": "Creator marketing spend is projected to grow 12% per year through 2030, and a growing portion of that budget goes to paid amplification of organic content that brands didn't commission. The measurement problem underneath that spend is that none of the platforms surface a reliable, comparable signal for which organic moments are worth amplifying with paid dollars. Brands are solving this individually with internal frameworks, proprietary tools, and scoring systems — with no shared methodology and no standard that lets a CMO compare performance across campaigns or vendors. The operational question for any brand allocating paid amplification budget: what evidentiary standard does your team use before committing spend to boost a creator post, and can that standard survive outside the specific creator relationship where it was developed?",
+          "why_it_passed": "Digiday (Kimeko McCoy, staff, Nov 26). Three named brand examples: General Mills (talkability score, internal), Billion Dollar Boy (Creator Investment Planner, Nov 20 launch, blended CPM + SOV model), CreatorIQ + CreativeX (API integration, April, Nestlé first adopter). Viral Nation Culture Quotient named. Creator spend +12%/year to 2030 per Madison & Wall (advertising research firm). Practitioners quoted on record: Mindy Murray (Director of Influencer and Content, General Mills), Madison Gaudry-Routledge (EVP Social, Viral Nation), Kristina Coughlin (SVP/GM Trevant).",
+          "operational_impact_chain": "Creator spend expected to grow 12% annually through 2030, with paid amplification driving a growing share -> platforms do not surface a standard signal for which organic creator moments merit paid investment -> brands build internal scoring systems (talkability, Culture Quotient) or license vendor tools to fill the gap -> decision to invest paid dollars depends on proprietary frameworks with different inputs, weights, and outputs at each brand -> no cross-brand or cross-vendor standard allows CMOs to benchmark amplification ROI -> the absence of a shared standard creates measurement fragmentation as creator spend scales -> near-term operational question: what scoring framework does your team use before unlocking amplification spend, and can it produce a defensible pre-spend decision at the speed viral trends require?",
+          "scores": {
+            "relevance": 8,
+            "relevance_rationale": "Social and influencer marketing teams at consumer brands face an operational measurement gap in the highest-growth marketing channel. The absence of a shared standard is an active workflow problem for every team scaling creator spend.",
+            "topicality": 9,
+            "topicality_rationale": "Digiday staff reporting Nov 26 (1 day). Billion Dollar Boy tool launched week of Nov 20. Holiday season amplification decisions happening now. Creator spend planning for 2027 underway.",
+            "viral_potential": 8,
+            "viral_potential_rationale": "General Mills talkability score is a concrete, discussable implementation; the GloRilla Reese's Puffs example makes the operational question tangible. The admission that the industry 'still isn't there yet' invites practitioner debate.",
+            "total": 25
+          },
+          "confidence": "high",
+          "confidence_limitation": "General Mills cited a 2.5% YoY sales increase from the GloRilla campaign but did not provide specific sales figures or confirm the talkability score directly drove the spend decision. Viral Nation declined to share client-specific examples for the Culture Quotient. Creator Investment Planner estimates are financial model projections, not measured outcomes. No third-party validation of any framework's predictive accuracy.",
+          "novelty": {
+            "result": "distinct",
+            "rationale": "Nov 4 long-form creator series covered LinkedIn creator content and long-form growth as a distribution strategy. This covers the measurement and decision infrastructure for paid amplification of organic creator content — a different operating problem about spend governance rather than platform distribution."
+          },
+          "predicted_audience_response": "Social and influencer marketing leads will evaluate whether their organization has a comparable framework or uses vendor tools for pre-amplification scoring. Brand managers without a systematic approach will raise the lack of standardization with agency partners. Analytics teams will ask what data inputs go into the existing scoring systems and whether they are defensible to CFO-level scrutiny.",
+          "materiality_gates": {
+            "material_event": "pass_multiple_tools_launched_plus_digiday_staff_reporting_with_named_brand_examples",
+            "editorial_thesis_fit": "pass",
+            "primary_evidence": "pass_digiday_staff_nov26_named_practitioners_on_record",
+            "availability_clarity": "pass_internal_frameworks_and_vendor_tools_documented_stage_of_standardization_explicit",
+            "claim_discipline": "pass_general_mills_sales_figure_unverified_mechanism_flagged_model_estimates_noted",
+            "operational_impact": "pass",
+            "contradiction_search": "pass_traditional_metrics_not_replaced_noted_frameworks_still_in_development_noted",
+            "archive_novelty": "pass_distinct"
+          },
+          "coverage_limitations": [
+            "General Mills cited a 2.5% YoY sales increase but did not confirm direct attribution to the talkability score or specific sales figures.",
+            "Viral Nation declined to share client-specific Culture Quotient results.",
+            "Billion Dollar Boy Creator Investment Planner estimates are model projections, not empirical outcomes.",
+            "No third-party benchmark or academic validation of any framework's predictive accuracy.",
+            "Madison & Wall +12% creator spend projection not independently verified this run."
+          ],
+          "sources": [
+            {
+              "type": "independent_staff_reporting",
+              "title": "Brands race to systematize how to know what makes creator content worth paying for | Digiday",
+              "url": "https://digiday.com/marketing/brands-race-to-systematize-how-to-know-what-makes-creator-content-worth-paying-for/",
+              "author": "Kimeko McCoy (staff)",
+              "published": "2026-11-26"
+            }
+          ],
+          "selected": false
+        },
+        {
+          "option": 3,
+          "rank": 3,
+          "title": "Google added a tracking parameter that finally shows when an 'exact match' click was really AI Max. It doesn't tell you if AI Max was worth it.",
+          "event_date": "2026-11-11",
+          "proposed_hook": "Google quietly updated its ValueTrack help page to add {search_term_matchtype}, a parameter that returns 'a' when AI Max matched the search term — even if the keyword you bid on was exact match. Until now, {matchtype} labeled those clicks as exact, so AI Max expansion traffic looked identical to genuine keyword performance in every analytics system the click URL reaches. Google didn't announce the change. The parameter identifies how traffic was matched. It does not add a reporting column to the Search Terms report, introduce bidding controls, or measure whether AI Max traffic would have arrived through the existing keyword list anyway. And starting February 2027, DSA campaigns migrate to AI Max automatically.",
+          "marketer_angle": "Google is migrating Search advertisers to AI Max on a schedule whether they opt in or not, and the reporting structure had been hiding AI Max's contribution in exact-match and phrase-match performance data until this parameter appeared. Advertisers who add it to tracking templates now can separate the two streams going forward; there is no retroactive reclassification of past clicks. The deeper issue it surfaces is that identifying AI Max clicks — which the parameter does — is not the same as measuring AI Max value. Click separation tells a PPC team what AI Max delivered; it doesn't establish whether those clicks would have arrived through the keyword list without it. The operational question for any advertiser using AI Max or facing forced migration: does your measurement infrastructure distinguish AI Max contribution from keyword performance, and does that separation inform your bidding strategy before DSA migration completes?",
+          "why_it_passed": "Google official ValueTrack documentation (updated between Oct 28 and Nov 11 per archive comparison — Hana Kobzová, reported PPC News Feed Nov 11). Search Engine Land staff coverage Nov 11. PPC Land detailed analysis Nov 15. Socioshoot Nov 17. DSA-to-AI Max migration timeline: new DSAs blocked after Jan 2027, existing DSAs auto-migrate Feb 2027; broad+ACA campaigns migrating since Sep 1, 2026. Google Ads Liaison Ginny Marvin confirmed at GML (June 2026): ads in AI Mode and AI Overviews report with other top-of-page ads, no separate breakdown. Adalysis testing shows AI Max can override exact match priority, inflating exact-match performance metrics — documented before this parameter existed.",
+          "operational_impact_chain": "Google AI Max expands exact/phrase/broad match keywords to serve ads on broader search terms -> {matchtype} returns the keyword's match type, not the search term's -> AI Max expansion clicks appear as exact or phrase match in analytics, inflating reported keyword-level performance -> advertisers using AI Max cannot separate expansion traffic from genuine keyword performance without the new parameter -> DSA campaigns auto-migrate to AI Max from Feb 2027; broad+ACA campaigns migrating since Sep 2026 -> advertisers who add {search_term_matchtype} to tracking templates now can segment AI Max clicks in GA4/CRM from the date of update onward, with no retroactive data -> click-level separation enables performance comparison but does not measure incrementality: advertisers still need a separate incrementality test to determine whether AI Max generates traffic the keyword list would not have captured -> teams planning AI Max adoption decisions for 2027 need this measurement infrastructure in place before the forced migration completes",
+          "scores": {
+            "relevance": 9,
+            "relevance_rationale": "Every Google Search advertiser using AI Max — or facing forced DSA migration by Feb 2027 — has an immediate tracking template decision to make and a 2027 performance-analysis gap if they don't act.",
+            "topicality": 7,
+            "topicality_rationale": "Nov 11 event, 16 days old. Outside the 14-day expanded window by 2 days. Exception documented: DSA migration planning window is active now; this is operationally current for 2027 planning. Within 14-day window per contract flexibility.",
+            "viral_potential": 8,
+            "viral_potential_rationale": "The reveal that exact-match clicks have been quietly including AI Max expansions — in accounts where {matchtype} still said 'e' — is a recognizable practitioner shock that every PPC lead managing Search campaigns will want to verify in their own accounts.",
+            "total": 24
+          },
+          "confidence": "high",
+          "confidence_limitation": "Google did not publish a launch date or announcement; evidence of the parameter's addition comes from help page archive comparison (Oct 28 vs Nov 11). Parameter identifies click source; does not measure incremental value. PPC Land notes inconsistency in Google's own documentation for the 'keywordless' vs 'expansion' distinction under one heading. Retroactive data classification not possible.",
+          "novelty": {
+            "result": "distinct",
+            "rationale": "Nov 26 Option 2 covered Google AI Mode placement-level measurement opacity (advertisers can't see paid AI Mode performance separately). This covers Google AI Max match-type attribution inside Search campaigns — a different reporting gap affecting click classification and keyword performance fidelity, not placement-level visibility."
+          },
+          "predicted_audience_response": "PPC managers and in-house search leads will immediately check whether their tracking templates include {search_term_matchtype}. Analytics and reporting leads will ask whether historical AI Max expansion traffic has been inflating keyword performance metrics. Search leads preparing for DSA migration will add this to their pre-migration checklist.",
+          "materiality_gates": {
+            "material_event": "pass_undocumented_google_help_page_change_confirmed_independent_reporting",
+            "editorial_thesis_fit": "pass",
+            "primary_evidence": "pass_google_official_documentation_plus_sel_staff",
+            "availability_clarity": "pass_parameter_available_now_no_retroactive_data_documented_migration_timeline_documented",
+            "claim_discipline": "pass_incrementality_limitation_explicit_documentation_inconsistency_noted",
+            "operational_impact": "pass",
+            "contradiction_search": "pass_parameter_identifies_not_values_noted_migration_timeline_operational_currency_documented",
+            "archive_novelty": "pass_distinct"
+          },
+          "coverage_limitations": [
+            "Event is 16 days old as of this run — 2 days outside the 14-day expanded window; exception documented.",
+            "Google did not publish an announcement; date of change estimated from help page archive comparison.",
+            "Parameter identifies click matching, not incremental value — advertisers still need a separate test to measure AI Max incrementality.",
+            "PPC Land notes documentation inconsistency: Google's 'Tracking AI Max matches' section conflates keywordless and expansion tracking under one heading.",
+            "Reddit practitioner signal on {search_term_matchtype} not retrieved this run.",
+            "X/Twitter credentials pending."
+          ],
+          "sources": [
+            {
+              "type": "independent_staff_reporting",
+              "title": "Google Ads introduces new ValueTrack parameter to identify AI Max traffic | Search Engine Land",
+              "url": "https://searchengineland.com/google-ads-introduces-new-valuetrack-parameter-to-identify-ai-max-traffic-501420",
+              "published": "2026-11-11"
+            },
+            {
+              "type": "primary_documentation",
+              "title": "Set up tracking with ValueTrack parameters | Google Ads Help",
+              "url": "https://support.google.com/google-ads/answer/6305348",
+              "published": "2026-11-11_documentation_updated"
+            },
+            {
+              "type": "independent_reporting_detailed_analysis",
+              "title": "Google's new parameter shows when an 'exact' click was really AI Max | PPC Land",
+              "url": "https://ppc.land/googles-new-parameter-shows-when-an-exact-click-was-really-ai-max",
+              "published": "2026-11-15"
+            }
+          ],
+          "selected": false
+        }
+      ],
+      "research": {
+        "source_cutoff": "2026-11-27T09:00:00-05:00",
+        "initial_window_start": "2026-11-24T00:00:00-05:00",
+        "overlap_start": "2026-11-23T00:00:00-05:00",
+        "discovery_window_hours": 72,
+        "discovery_window_expansion": "14-day window used for Option 3 (AI Max ValueTrack, Nov 11 — 16 days); 2 days outside 14-day cap; exception documented with operational-currency rationale (DSA migration planning window active)",
+        "note": "Three concept-led options: Option 1 (ChatGPT B2B attribution gap + reach/frequency update, 28/30) Nov 25+17. Option 2 (Creator content measurement systematization, 25/30) Nov 26. Option 3 (AI Max {search_term_matchtype} measurement gap, 24/30) Nov 11. All three passed all eight materiality gates. Agent Reach channels: web/exa operational; reddit opencli broken, public-web/exa fallback used; jina UPSTREAM_BROKEN rate-limited throughout; twitter credentials pending.",
+        "event_ledger_path": "/home/ranson/.hermes/social-queue/research/2026-11-27-ai-martech-event-ledger.json",
+        "decision_journal_path": "/home/ranson/.hermes/social-queue/research/2026-11-27-ai-martech-event-ledger.json",
+        "reserve_candidate_count": 6,
+        "reserve_candidates": [
+          "Visa Agentic Commerce Benchmark (Nov 5) — 22 days; passes all gates; defer until primary window is thin",
+          "Microsoft robots.txt __usage_ai-training token Dec 15 transition — resurface in Dec 1-8 window",
+          "Amazon Branded Conversations (Jan 2027 launch) — resurface when imminent",
+          "Creator AI contract clauses (Digiday podcast Nov 24) — seek primary documentation",
+          "SAP AI CX Report 93%/6% readiness gap (Nov 12) — vendor-authored; needs independent corroboration",
+          "IAB AI-Era Attribution Blueprint (Nov 12) — 15 days; resurface if primary window thin"
+        ],
+        "coverage_gaps": [
+          {"source": "Marketing Week", "status": "not_retrieved", "cutoff_advanced": false},
+          {"source": "CMSWire", "status": "not_retrieved", "cutoff_advanced": false},
+          {"source": "Axios Media Trends", "status": "not_retrieved_member_only", "cutoff_advanced": false},
+          {"source": "EMARKETER", "status": "snippet_only", "cutoff_advanced": false},
+          {"source": "Harvard Business Review", "status": "paywall", "cutoff_advanced": false},
+          {"source": "The Information", "status": "paywall", "cutoff_advanced": false},
+          {"source": "Reddit", "status": "public_web_fallback_opencli_broken", "cutoff_advanced": false},
+          {"source": "X/Twitter named users", "status": "credentials_pending", "cutoff_advanced": false},
+          {"source": "Jina backend", "status": "UPSTREAM_BROKEN_rate_limited_throughout", "cutoff_advanced": false}
+        ]
+      },
+      "topic": null,
+      "post": null,
+      "claim_evidence": null,
+      "assets": {
+        "cover_status": "not_authorized"
+      },
+      "performance": {
+        "tracking_status": "pending_topic_approval",
+        "publication_url": null,
+        "published_at": null,
+        "day_7": null,
+        "day_30": null
+      },
+      "events": [
+        {
+          "timestamp": "2026-11-27T09:00:00-05:00",
+          "type": "topic_queue_created",
+          "actor": "scheduled_research",
+          "detail": "Created exactly three concept-led AI marketing and martech topic options for Nov 27, 2026. Option 1 (ChatGPT B2B attribution gap — reach/frequency + Dreamdata, 28/30) Nov 25+17. Option 2 (Creator content measurement systematization, 25/30) Nov 26. Option 3 (AI Max ValueTrack {search_term_matchtype} measurement gap, 24/30) Nov 11 — 14-day window exception documented. All three passed all eight materiality gates."
+        }
+      ]
+    },
     {
       "id": "ai-martech-topic-queue-2026-11-26",
       "kind": "content",
